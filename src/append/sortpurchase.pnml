@@ -86,6 +86,7 @@ sort(FEAT_TRAINS, [
         item_BR86_6,
     item_BR87,
     item_BR88,
+    item_BR90,
     item_BR91,
         item_BR91_IC225,
         item_BR91_IC225_P,
