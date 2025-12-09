@@ -656,10 +656,10 @@ STR_NAME_BR86_0				    :BR Class 86/0 "AL6"
 STR_NAME_BR86_1                 :BR Class 86/1 "AL6"
 STR_NAME_BR86_2                 :BR Class 86/2 "AL6"
 STR_NAME_BR86_6                 :BR Class 86/6 "AL6"
-str_BR86_liveries				:BR Blue, InterCity Executive, Rail Express, EWS, Railfraight Distribution, Rail Express Systems
+str_BR86_liveries				:BR Blue, InterCity, RES, EWS, Railfraight, RES
 
 STR_NAME_BR87					:BR Class 87
-str_BR87_liveries				:BR Blue, InterCity Swallow, Railfreight Distribution, Virgin
+str_BR87_liveries				:BR Blue, InterCity, Railfreight, Virgin
 
 STR_NAME_BR88					:BR Class 88
 str_BR88_liveries				:DRS
@@ -668,7 +668,7 @@ STR_NAME_BR89					:BR Class 89 "Badger"
 str_BR89_liveries				:InterCity Swallow, GNER, InterCity
 
 STR_NAME_BR90					:BR Class 90
-str_BR90_liveries				:InterCity Swallow, Freightliner Grey, EWS, DB, Freightliner Green, Freightliner Powerhaul, ONE, Greater Anglie Blue, Greater Anglia White, Virgin, REX, First ScotRail, GNER
+str_BR90_liveries				:InterCity, Railfreight, Parcels, RES, Virgin, First ScotRail, GNER, NXEA, ONE, Abellio GA, Freightliner, DRS, EWS, DB Schenker, LSL
 
 STR_NAME_BR91           		:BR Class 91
 STR_NAME_BR91_IC225				:BR Class 91 "InterCity 225" (10-car)
@@ -1830,6 +1830,8 @@ str_Shell                       : (Shell)
 str_Siemens						: (Siemens Demonstrator)
 str_Silverlink					: (Silverlink)
 str_SilverlinkCentral			: (Silverlink/Central Trains)
+str_SNCB                        : (Société Nationale des Chemins de fer Belges)
+str_SNCF                        : (Société Nationale des Chemins de fer Français)
 str_Southeastern				: (Southeastern)
 str_Southeastern_blue			: (Southeastern - Blue)
 str_Southeastern_blue_refurbished	: (Southeastern - Refurbished Blue)

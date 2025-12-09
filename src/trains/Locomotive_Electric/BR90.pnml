@@ -1,0 +1,486 @@
+
+// basic sprite
+spriteset(spriteset_BR90_Abellio_GA, "gfx/Locomotive_Electric/BR90/BR90_Abellio_GA_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Abellio_GA, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Abellio_GA_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Abellio_GA_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Abellio_GA, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Abellio_GA_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Abellio_GA_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Abellio_GA, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Abellio_GA_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Abellio_GA_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR90_Abellio_GA_purchase, "gfx/Locomotive_Electric/BR90/BR90_Abellio_GA_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR90_Abellio_GA_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Abellio_GA_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Abellio_GA_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_BR_LinedBlack, "gfx/Locomotive_Electric/BR90/BR90_BR_LinedBlack_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_BR_LinedBlack, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_BR_LinedBlack_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_BR_LinedBlack_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_BR_LinedBlack, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_BR_LinedBlack_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_BR_LinedBlack_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_BR_LinedBlack, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_BR_LinedBlack_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_BR_LinedBlack_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_BR_Parcels, "gfx/Locomotive_Electric/BR90/BR90_BR_Parcels_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_BR_Parcels, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_BR_Parcels_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_BR_Parcels_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_BR_Parcels, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_BR_Parcels_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_BR_Parcels_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_BR_Parcels, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_BR_Parcels_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_BR_Parcels_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_DB, "gfx/Locomotive_Electric/BR90/BR90_DB_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_DB, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_DB_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_DB_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_DB, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_DB_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_DB_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_DB, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_DB_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_DB_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_DB_Schenker, "gfx/Locomotive_Electric/BR90/BR90_DB_Schenker_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_DB_Schenker, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_DB_Schenker_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_DB_Schenker_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_DB_Schenker, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_DB_Schenker_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_DB_Schenker_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_DB_Schenker, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_DB_Schenker_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_DB_Schenker_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_DRS, "gfx/Locomotive_Electric/BR90/BR90_DRS_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_DRS, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_DRS_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_DRS_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_DRS, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_DRS_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_DRS_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_DRS, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_DRS_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_DRS_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_EWS, "gfx/Locomotive_Electric/BR90/BR90_EWS_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_EWS, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_EWS_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_EWS_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_EWS, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_EWS_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_EWS_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_EWS, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_EWS_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_EWS_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR90_EWS_purchase, "gfx/Locomotive_Electric/BR90/BR90_EWS_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR90_EWS_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_EWS_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_EWS_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_FirstGroup, "gfx/Locomotive_Electric/BR90/BR90_FirstGroup_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_FirstGroup, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_FirstGroup_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_FirstGroup_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_FirstGroup, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_FirstGroup_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_FirstGroup_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_FirstGroup, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_FirstGroup_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_FirstGroup_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_Freightliner_Green, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Green_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Freightliner_Green, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Green_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Green_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Freightliner_Green, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Green_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Green_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Freightliner_Green, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Green_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Green_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR90_Freightliner_Green_purchase, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Green_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR90_Freightliner_Green_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Green_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Green_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_Freightliner_Grey, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Grey_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Freightliner_Grey, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Grey_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Grey_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Freightliner_Grey, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Grey_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Grey_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Freightliner_Grey, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Grey_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Grey_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_Freightliner_Orange, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Orange_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Freightliner_Orange, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Orange_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Orange_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Freightliner_Orange, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Orange_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Orange_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Freightliner_Orange, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Orange_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Orange_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_Freightliner_Powerhaul, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Powerhaul_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Freightliner_Powerhaul, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Powerhaul_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Powerhaul_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Freightliner_Powerhaul, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Powerhaul_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Powerhaul_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Freightliner_Powerhaul, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Powerhaul_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Powerhaul_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_GCT_Lined, "gfx/Locomotive_Electric/BR90/BR90_GCT_Lined_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_GCT_Lined, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_GCT_Lined_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_GCT_Lined_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_GCT_Lined, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_GCT_Lined_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_GCT_Lined_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_GCT_Lined, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_GCT_Lined_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_GCT_Lined_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_GNER, "gfx/Locomotive_Electric/BR90/BR90_GNER_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_GNER, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_GNER_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_GNER_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_GNER, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_GNER_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_GNER_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_GNER, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_GNER_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_GNER_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_Intercity_Swallow, "gfx/Locomotive_Electric/BR90/BR90_Intercity_Swallow_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Intercity_Swallow, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Intercity_Swallow_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Intercity_Swallow_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Intercity_Swallow, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Intercity_Swallow_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Intercity_Swallow_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Intercity_Swallow, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Intercity_Swallow_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Intercity_Swallow_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR90_Intercity_Swallow_purchase, "gfx/Locomotive_Electric/BR90/BR90_Intercity_Swallow_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR90_Intercity_Swallow_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Intercity_Swallow_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Intercity_Swallow_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_NXEA, "gfx/Locomotive_Electric/BR90/BR90_NXEA_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_NXEA, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_NXEA_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_NXEA_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_NXEA, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_NXEA_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_NXEA_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_NXEA, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_NXEA_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_NXEA_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR90_NXEA_purchase, "gfx/Locomotive_Electric/BR90/BR90_NXEA_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR90_NXEA_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_NXEA_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_NXEA_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_ONE, "gfx/Locomotive_Electric/BR90/BR90_ONE_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_ONE, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_ONE_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_ONE_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_ONE, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_ONE_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_ONE_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_ONE, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_ONE_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_ONE_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR90_ONE_purchase, "gfx/Locomotive_Electric/BR90/BR90_ONE_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR90_ONE_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_ONE_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_ONE_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_Railfreight_Distribution, "gfx/Locomotive_Electric/BR90/BR90_Railfreight_Distribution_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Railfreight_Distribution, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Railfreight_Distribution_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Railfreight_Distribution_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Railfreight_Distribution, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Railfreight_Distribution_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Railfreight_Distribution_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Railfreight_Distribution, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Railfreight_Distribution_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Railfreight_Distribution_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR90_Railfreight_Distribution_purchase, "gfx/Locomotive_Electric/BR90/BR90_Railfreight_Distribution_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR90_Railfreight_Distribution_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Railfreight_Distribution_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Railfreight_Distribution_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_RES, "gfx/Locomotive_Electric/BR90/BR90_RES_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_RES, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_RES_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_RES_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_RES, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_RES_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_RES_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_RES, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_RES_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_RES_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_SNCB, "gfx/Locomotive_Electric/BR90/BR90_SNCB_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_SNCB, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_SNCB_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_SNCB_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_SNCB, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_SNCB_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_SNCB_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_SNCB, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_SNCB_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_SNCB_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_SNCF, "gfx/Locomotive_Electric/BR90/BR90_SNCF_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_SNCF, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_SNCF_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_SNCF_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_SNCF, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_SNCF_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_SNCF_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_SNCF, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_SNCF_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_SNCF_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR90_Virgin, "gfx/Locomotive_Electric/BR90/BR90_Virgin_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Virgin, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Virgin_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Virgin_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Virgin, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Virgin_2x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Virgin_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR90_Virgin, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Virgin_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Virgin_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR90_Virgin_purchase, "gfx/Locomotive_Electric/BR90/BR90_Virgin_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR90_Virgin_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Virgin_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Virgin_1x_mask.png")
+    { template_purchase(0,0) }
+
+switch(FEAT_TRAINS, PARENT, sw_BR90_purchase_sprite, current_year) {
+    1969..1998: spriteset_BR90_Intercity_Swallow_purchase;
+    1999..2003: spriteset_BR90_Virgin_purchase;
+    2004..2007: spriteset_BR90_ONE_purchase;
+    2008..2011: spriteset_BR90_NXEA_purchase;
+    2012..2020: spriteset_BR90_Abellio_GA_purchase;
+        spriteset_BR90_Freightliner_Green_purchase;
+}
+
+// FX effects
+switch(FEAT_TRAINS, SELF, sw_FX_BR90_Electric, position_in_vehid_chain % 3) { // front catenary
+    0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+        return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR90, cargo_subtype) {
+    0:  spriteset_BR90_Intercity_Swallow;
+    1:  spriteset_BR90_Railfreight_Distribution;
+    2:  spriteset_BR90_DB;
+    3:  spriteset_BR90_SNCB;
+    4:  spriteset_BR90_SNCF;
+    5:  spriteset_BR90_BR_Parcels;
+    6:  spriteset_BR90_RES;
+    7:  spriteset_BR90_Virgin;
+    8:  spriteset_BR90_FirstGroup;
+    9:  spriteset_BR90_GNER;
+    10: spriteset_BR90_NXEA;
+    11: spriteset_BR90_ONE;
+    12: spriteset_BR90_Abellio_GA;
+    13: spriteset_BR90_Freightliner_Grey;
+    14: spriteset_BR90_Freightliner_Green;
+    15: spriteset_BR90_Freightliner_Orange;
+    16: spriteset_BR90_Freightliner_Powerhaul;
+    17: spriteset_BR90_DRS;
+    18: spriteset_BR90_EWS;
+    19: spriteset_BR90_DB_Schenker;
+    20: spriteset_BR90_GCT_Lined;
+    21: spriteset_BR90_BR_LinedBlack;
+}
+
+// livery name refit switch
+switch(FEAT_TRAINS, SELF, sw_BR90_cargo_subtype_text, cargo_subtype){
+	0:	return string(str_BRInterCitySwallow);
+    1:  return string(str_RFDistribution);
+    2:  return string(str_DB);
+    3:  return string(str_SNCB);
+    4:  return string(str_SNCF);
+    5:  return string(str_BRParcels);
+    6:  return string(str_REX);
+    7:  return string(str_Virgin);
+    8:  return string(str_FirstScotRail);
+    9:  return string(str_GNER);
+    10: return string(str_NXEA);
+    11: return string(str_ONE);
+    12: return string(str_AGA);
+    13: return string(str_FreightlinerGrey);
+    14: return string(str_FreightlinerGreen);
+    15: return string(str_FreightlinerOrange);
+    16: return string(str_FreightlinerPH);
+    17: return string(str_DRS);
+    18: return string(str_EWSRed);
+    19: return string(str_DBSchenker);
+    20: return string(str_GCLined);
+    21: return string(STR_LIVERY, string(str_abbr_BR), string(str_col_Lined_Black));
+       return CB_RESULT_NO_TEXT;
+}
+
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_BR90, position_in_articulated_veh % 3) {
+	1: sw_livery_BR90;
+	    spriteset_empty; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR90, extra_callback_info1) {
+	1..2: return item_BR90;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+
+// unit definition
+item (FEAT_TRAINS, item_BR90, 9000) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR90);
+        // variant_group:                  ; // unit ID or item
+		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1987,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		// refittable_cargo_classes:        bitmask(CC_PASSENGERS);
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:              [PASS, GOOD];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        loading_speed:				    5; // All freight / Locomotive
+        cost_factor: 					108;
+        running_cost_base:			    RUNNING_COST_STEAM;					
+        running_cost_factor: 			90;
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          110 mph;
+        refit_cost:                     0;
+        track_type:                     ELRL;
+        power:                          5000 hp;
+        weight:                         85 ton;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.08;
+        tractive_effort_coefficient:    0.31;
+        length:                         4;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_BR90;
+        visual_effect_and_powered:      sw_FX_BR90_Electric;
+        purchase:                       sw_BR90_purchase_sprite;
+        sound_effect:                   sw_sound_electric_GEC;
+
+        // internal code
+        articulated_part:               sw_articulated_BR90;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    179;
+        running_cost_factor:            11605;
+        cargo_subtype_text:             sw_BR90_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_loco_with_liveries,
+                                                    string(str_purchase_type_electric),
+                                                    string(str_usage_mixed_traffic),
+                                                    string(str_BR90_liveries)));
+    }
+}
+
