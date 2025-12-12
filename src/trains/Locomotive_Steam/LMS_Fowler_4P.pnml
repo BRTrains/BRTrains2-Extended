@@ -505,8 +505,8 @@ item (FEAT_TRAINS, item_MR_1000, 4102) {
         articulated_part:               sw_articulated_MR_1000;
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
-        cost_factor:                    35;
-        running_cost_factor:            2403;
+        cost_factor:                    72;
+        running_cost_factor:            4822;
         cargo_subtype_text:             sw_MR_1000_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 

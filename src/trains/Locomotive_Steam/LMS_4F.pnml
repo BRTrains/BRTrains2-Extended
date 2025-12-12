@@ -233,7 +233,7 @@ item (FEAT_TRAINS, item_LMS_4F, 4401) {
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
         cost_factor:                    59;
-        running_cost_factor:            4240;
+        running_cost_factor:            3876;
         cargo_subtype_text:             sw_LMS_4F_cargo_subtype_text; 
         // power:                          sw_power_LMS_4F;
         colour_mapping:                 return PALETTE_CC_FIRST;

@@ -81,7 +81,7 @@ item (FEAT_TRAINS, item_BR466, 4660) {
         cargo_capacity:                 1;
         loading_speed:					23;
         cost_factor: 					108;
-        running_cost_base:			    RUNNING_COST_ELECTRIC;					
+        running_cost_base:			    RUNNING_COST_STEAM;					
         running_cost_factor: 			90;
 
         //specific properties

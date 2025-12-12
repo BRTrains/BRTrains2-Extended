@@ -494,6 +494,8 @@ item (FEAT_TRAINS, item_BR303, 3030) {
         articulated_part:               sw_articulated_BR303;
         purchase_cargo_capacity:        return (26 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR303;
+        cost_factor:                    195;
+        running_cost_factor:            4310;
         cargo_subtype_text:             sw_BR303_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
@@ -561,6 +563,8 @@ item (FEAT_TRAINS, item_BR303_RB, 3031) {
         articulated_part:               sw_articulated_BR303_RB;
         purchase_cargo_capacity:        return (17 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR303_RB;
+        cost_factor:                    131;
+        running_cost_factor:            4213;
         cargo_subtype_text:             sw_BR303_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
