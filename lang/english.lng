@@ -687,6 +687,10 @@ STR_NAME_BR101_4                :BR Class 101 "Met-Cam" (4-car)
 STR_NAME_BR102                  :BR Class 102 "Met-Cam" (2-car)
 str_BR101_liveries              :BR Green, BR Blue, Regional Railways, NSE, SPT
 
+STR_NAME_BR120                  :BR Class 120 "Swindon 3-car Cross-country"
+STR_NAME_BR120_1                :BR Class 120/1 "Swindon 3-car Cross-Country"
+str_BR120_liveries              :BR Green, BR Blue
+
 STR_NAME_BR121					:BR Class 121 "Bubble Car" (1-car)
 str_BR121_liveries				:BR Green, BR Blue, Railtrack
 
