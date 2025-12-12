@@ -350,6 +350,9 @@ str_GreatBear_liveries				:GWR Green
 STR_NAME_GWRCastle					:GWR Churchward 4073 Class "Castle"
 str_GWRCastle_liveries				:GWR Green
 
+STR_NAME_GWR_2800                   :GWR 2800 Class
+str_GWR_2800_liveries               :GWR Green, GWR Black, BR Black
+
 STR_NAME_GWR_2900_Curved            :GWR 2900 Class "Saint" (Curved Frame)
 STR_NAME_GWR_2900_Straight          :GWR 2900 Class "Saint" (Straight Frame)
 str_GWR_2900_liveries               :GWR Green, GWR Black, BR Green, BR Black
@@ -1672,6 +1675,7 @@ str_GWR                         : (GWR)
 str_GWRBlack                    : (GWR - Black)
 str_GWRBlack_COA                : (GWR - Black, Coat of Arms)
 str_GWRBlack_Shirtbutton        : (GWR - Black, Shirtbutton)
+str_GWRBlack_Wartime            : (GWR - Wartime Black)
 str_GWRGreen                    : (GWR - Green)
 str_GWRGreenChrome				: (GWR - Chrome Green)
 str_GWRGreen_Lined              : (GWR - Lined Green)

@@ -1,5 +1,6 @@
 sort(FEAT_TRAINS, [
     // GWR Steam Locomotives
+    item_GWR_2800,
     item_GWR_2900_Curved,
         item_GWR_2900_Straight,
     item_GWR_3100,
