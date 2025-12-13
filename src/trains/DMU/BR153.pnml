@@ -199,7 +199,7 @@ item (FEAT_TRAINS, item_BR153, 1530) { // TOPS number range 153000
         default:                        sw_graphics_BR153;
         visual_effect_and_powered:      sw_FX_BR153_Diesel;
         purchase:                       spriteset_BR153_purchase;
-        sound_effect:                       sw_sound_diesel_dmu_gen2; // For dual mode units
+        sound_effect:                   sw_sound_diesel_dmu_gen2; // For dual mode units
 
         // internal code
         length:                         sw_length_BR153;

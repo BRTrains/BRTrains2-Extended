@@ -713,14 +713,10 @@ str_BR142_liveries				:BR Provincial, Regional Railways, Northern Spirit, Arriva
 STR_NAME_BR143					:BR Class 143 "Pacer"
 str_BR143_liveries				:Regional Rail, Valley Lines, WYTPE Metro, Wessex Trains, Northern Rail, GWR
 
-STR_NAME_BR150					:BR Class 150/0 "Sprinter" (3-car)
-str_BR150_liveries				:BR Prototype, Regional Railways, Centro, Central Trains, London Midland, First Great Western
-
+STR_NAME_BR150_0    			:BR Class 150/0 "Sprinter" (3-car)
 STR_NAME_BR150_1				:BR Class 150/1 "Sprinter" (2-car)
-str_BR150_1_liveries			:Regional Railways, Regional Railways (Grey), Centro, Central Trains, Network West Midlands, First North Western, Super Sprinter, Silverlink, Northern Rail, FGW BR Track Test, Railtrack, Network Rail
-
 STR_NAME_BR150_2				:BR Class 150/2 "Sprinter" (2-car)
-str_BR150_2_liveries			:Regional Railways, Regional Railways (Merseyrail), Central Trains, Central/Anglia, East Anglia, Network West Midlands, First North Western, Northern Rail, FGW Arriva Wales, Wessex Trains, ScotRail
+str_BR150_liveries				:BR Provincial, Regional Railways
 
 STR_NAME_BR151					:BR Class 151 "Sprinter"
 str_BR151_liveries				:BR Prototype, Regional Railways
@@ -1550,6 +1546,7 @@ str_BROchre                     : (BR - Golden Ochre)
 str_BRParcels                   : (BR - Parcels)
 str_BRPrototype					: (BR - Prototype)
 str_BRProvincial                : (BR - Provincial)
+str_BRProvincial_Prototype      : (BR - Provincial Prototype)
 str_BRResearch                  : (BR - Research Department)
 str_BRRefurb                    : (BR - Refurbished)
 str_BRTransitionalBlack         : (BR - Transitional Black)

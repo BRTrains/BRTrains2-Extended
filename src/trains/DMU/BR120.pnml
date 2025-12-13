@@ -1291,7 +1291,7 @@ item (FEAT_TRAINS, item_BR120_1, 1201) {
         sound_effect:                   sw_sound_diesel_25;
 
         // internal code
-        articulated_part:               sw_articulated_BR120;
+        articulated_part:               sw_articulated_BR120_1;
         purchase_cargo_capacity:        return ( 18 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR120_1;
         cost_factor:                    183;
