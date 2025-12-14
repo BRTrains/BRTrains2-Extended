@@ -182,7 +182,7 @@ item (FEAT_TRAINS, item_WD_50t_Warflat, 11802) {
         
         refittable_cargo_classes:       bitmask(CC_OVERSIZED, CC_PIECE_GOODS, CC_HAZARDOUS);	
         non_refittable_cargo_classes:   bitmask(CC_POTABLE, CC_REFRIGERATED, CC_LIQUID);
-        cargo_allow_refit:              [VBOD, VENG, VPTS ];
+        cargo_allow_refit:              [VBOD, VENG, VPTS, BOOM ];
         cargo_disallow_refit:           [LVST];
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 32 * param_freight;
