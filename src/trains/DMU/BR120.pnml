@@ -1157,21 +1157,24 @@ switch(FEAT_TRAINS, SELF, sw_BR120_cargo_subtype_text, cargo_subtype){
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR120, position_in_articulated_veh % 9 ) {
-    0: 154 * param_pax; // all the capacity - (vehid chain number)
-    1..8: 1 * param_pax;
+    0: 155 * param_pax; // all the capacity - (vehid chain number)
+    1..7: 1 * param_pax;
+    8:  sw_capacity_BR_Gen1_DMU_B;
     // total 162
 }
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR120_1, position_in_articulated_veh % 9) {
-    0: 162 * param_pax; // all the capacity - (vehid chain number)
-    1..8: 1 * param_pax;
+    0: 163 * param_pax; // all the capacity - (vehid chain number)
+    1..7: 1 * param_pax;
+    8:  sw_capacity_BR_Gen1_DMU_B;
     // total 170
 }
 
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_BR120, extra_callback_info1) {
-	1..8: return item_BR120;
+	1..7: return item_BR120;
+    8:  item_BR_Gen1_DMU_B;
 		return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
@@ -1222,7 +1225,7 @@ item (FEAT_TRAINS, item_BR120, 1200) {
 
         // internal code
         articulated_part:               sw_articulated_BR120;
-        purchase_cargo_capacity:        return ( 18 * param_pax); // divide by number of articulated parts and floor
+        purchase_cargo_capacity:        return ( 20 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR120;
         cost_factor:                    176;
         running_cost_factor:            3764;
@@ -1239,7 +1242,8 @@ item (FEAT_TRAINS, item_BR120, 1200) {
 
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_BR120_1, extra_callback_info1) {
-	1..8: return item_BR120_1;
+	1..7: return item_BR120_1;
+    8:  item_BR_Gen1_DMU_B;
 		return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
@@ -1292,7 +1296,7 @@ item (FEAT_TRAINS, item_BR120_1, 1201) {
 
         // internal code
         articulated_part:               sw_articulated_BR120_1;
-        purchase_cargo_capacity:        return ( 18 * param_pax); // divide by number of articulated parts and floor
+        purchase_cargo_capacity:        return ( 21 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR120_1;
         cost_factor:                    183;
         running_cost_factor:            3774;
