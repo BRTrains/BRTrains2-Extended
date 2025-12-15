@@ -1408,6 +1408,9 @@ STR_NAME_BRT_CovHop             :BRT PAA Covered Hopper
 STR_NAME_BRT_Whisky_CovHop      :BRT PAV Covered Hopper "Whisky CovHop"
 str_BRT_CovHop_liveries         :Grainflow, BR Grey, BR Brown, Private Owner Blue, Private Owner Blue with Advertising, Private Owner Yellow
 
+STR_NAME_BR_PCV                 :BR PCV "Presflo" Wagon
+str_BR_PCV_liveries             :BR Bauxite, BR Grey, ARC, ICI, Private Owners
+
 STR_NAME_BR_PTA                 :BR PTA/JTA/JUA Tippler Gondola
 str_BR_PTA_liveries             :British Steel, Foster Yeoman, ARC, VTG
 
@@ -1690,12 +1693,13 @@ str_GWRGreenUn					: (GWR - Green Unbranded)
 str_GWT                         : (Great Western Trains)
 str_HansonHall                  : (Hanson & Hall)
 str_HarryNeedle					: (Harry Needle Railroad)
+str_HeathrowExpressPurple       : (Heathrow Express - Grey and Purple)
 str_Heidelberg                  : (Heidelberg)
 str_Hitachi						: (Hitachi)
 str_HitachiWhite				: (Hitachi - White)
-str_HeathrowExpressPurple       : (Heathrow Express - Grey and Purple)
 str_HogwartsExpress             : (Hogwarts Express)
 str_HT							: (Hull Trains)
+str_ICI                         : (Imperial Chemical Industries)
 str_Kestrel                     : (Kestrel Prototype - Yellow and Black)
 str_LaPoste					    : (La Poste)
 str_LMSBlack                    : (LMS - Black)

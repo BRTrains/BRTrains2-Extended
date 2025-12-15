@@ -231,6 +231,7 @@ sort(FEAT_TRAINS, [
     item_BR_MBA,
     item_BR_MCV,
     item_BR_OTA,
+    item_BR_PCV,
     item_BR_PTA,
     item_BR_TEA,
     item_BR_TTA,
