@@ -24,6 +24,7 @@ STR_LIVERY_SHORT    : ({STRING})
 STR_LIVERY          : ({STRING} - {STRING})
 STR_LIVERY_EXTENDED : ({STRING} - {STRING}, {STRING})
 STR_LIVERY_SPECIAL  : ({STRING} - {STRING} - {SILVER}{STRING})
+STR_LIVERY_BRANDED  : (Private Owner - {STRING} with {STRING} Branding)
 
 # Abbreviations
 str_abbr_AWC            :AWC
@@ -69,6 +70,7 @@ str_col_Olive                   :Olive
 str_col_Purple                  :Purple
 str_col_Red                     :Red
 str_col_Sage                    :Sage
+str_col_Silver                  :Silver
 str_col_Teak                    :Teak
 str_col_White                   :White
 str_col_Yellow                  :Yellow
@@ -1361,10 +1363,13 @@ STR_NAME_LNER_21t_Hopper_Late   :BR HTO/HTV Hopper
 str_LNER_21t_Hopper_liveries    :LNER Grey, BR Grey, BR Bauxite, NCB Grey, Private Owners
 
 # BR Wagons
-STR_NAME_WD_10t_Chemical_Tank   :WD 10t Chemical Tank
-str_WD_10t_Chemical_Tank_liveries   :WD Grey, LMR, Private Owners
+STR_NAME_WD_10t_Chemical_Tank           :WD 10t Chemical Tank
+str_WD_10t_Chemical_Tank_liveries       :WD Grey, LMR, Private Owners
 
-STR_NAME_WD_50t_Warflat         :WD 50t Flat Wagon 'Warflat'
+STR_NAME_WD_14t_Air_Ministry_Tank       :WD 14t "Air Ministry" Tank
+str_WD_14t_Air_Ministry_Tank_liveries   :Black, Private Owners
+
+STR_NAME_WD_50t_Warflat         :WD 50t Flat Wagon "Warflat"
 str_WD_50t_Warflat_liveries     :WD Olive Green
 
 STR_NAME_BR_CONFLAT_A           :BR Container Flat "Conflat A" Wagon

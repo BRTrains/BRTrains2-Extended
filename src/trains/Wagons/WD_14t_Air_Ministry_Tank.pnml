@@ -1,0 +1,191 @@
+// basic sprite
+spriteset(spriteset_WD_14t_Tank_Black, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Black_1x_8bpp.png")
+    { template_48trains_1x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Black, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Black_1x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Black_1x_mask.png")
+    { template_48trains_1x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Black, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Black_2x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Black_2x_mask.png")
+    { template_48trains_2x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Black, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Black_4x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Black_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_WD_14t_Tank_Black_purchase, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Black_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Black_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Black_1x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Black_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_WD_14t_Tank_Private_Black_var1, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var1_1x_8bpp.png")
+    { template_48trains_1x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Black_var1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var1_1x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var1_1x_mask.png")
+    { template_48trains_1x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Black_var1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var1_2x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var1_2x_mask.png")
+    { template_48trains_2x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Black_var1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var1_4x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var1_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_WD_14t_Tank_Private_Black_var2, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var2_1x_8bpp.png")
+    { template_48trains_1x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Black_var2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var2_1x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var2_1x_mask.png")
+    { template_48trains_1x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Black_var2, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var2_2x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var2_2x_mask.png")
+    { template_48trains_2x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Black_var2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var2_4x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var2_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_WD_14t_Tank_Private_Black_var3, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var3_1x_8bpp.png")
+    { template_48trains_1x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Black_var3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var3_1x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var3_1x_mask.png")
+    { template_48trains_1x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Black_var3, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var3_2x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var3_2x_mask.png")
+    { template_48trains_2x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Black_var3, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var3_4x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Black_var3_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_WD_14t_Tank_Private_Cream, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Cream_1x_8bpp.png")
+    { template_48trains_1x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Cream, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Cream_1x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Cream_1x_mask.png")
+    { template_48trains_1x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Cream, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Cream_2x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Cream_2x_mask.png")
+    { template_48trains_2x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Cream, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Cream_4x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Cream_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_WD_14t_Tank_Private_Silver_Black, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Black_1x_8bpp.png")
+    { template_48trains_1x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Silver_Black, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Black_1x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Black_1x_mask.png")
+    { template_48trains_1x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Silver_Black, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Black_2x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Black_2x_mask.png")
+    { template_48trains_2x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Silver_Black, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Black_4x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Black_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_WD_14t_Tank_Private_Silver_Green, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Green_1x_8bpp.png")
+    { template_48trains_1x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Silver_Green, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Green_1x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Green_1x_mask.png")
+    { template_48trains_1x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Silver_Green, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Green_2x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Green_2x_mask.png")
+    { template_48trains_2x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Silver_Green, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Green_4x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Green_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_WD_14t_Tank_Private_Silver_Red, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Red_1x_8bpp.png")
+    { template_48trains_1x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Silver_Red, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Red_1x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Red_1x_mask.png")
+    { template_48trains_1x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Silver_Red, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Red_2x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Red_2x_mask.png")
+    { template_48trains_2x(0,0) }
+
+    alternative_sprites(spriteset_WD_14t_Tank_Private_Silver_Red, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Red_4x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Private_Silver_Red_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+random_switch(FEAT_TRAINS, SELF, random_WD_14t_Air_Ministry_Tank_Private_Black) {
+    5: spriteset_WD_14t_Tank_Private_Black_var1;
+    5: spriteset_WD_14t_Tank_Private_Black_var2;
+    5: spriteset_WD_14t_Tank_Private_Black_var3;
+    1: spriteset_WD_14t_Tank_Black;
+}
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_WD_14t_Air_Ministry_Tank, cargo_subtype) {
+    0: random_WD_14t_Air_Ministry_Tank_Private_Black;
+    1: spriteset_WD_14t_Tank_Black;
+    2: spriteset_WD_14t_Tank_Private_Cream;
+    3: spriteset_WD_14t_Tank_Private_Silver_Black;
+    4: spriteset_WD_14t_Tank_Private_Silver_Green;
+    5: spriteset_WD_14t_Tank_Private_Silver_Red;
+}
+
+// livery name refit switch
+switch(FEAT_TRAINS, SELF, sw_WD_14t_Air_Ministry_Tank_cargo_subtype_text, cargo_subtype){
+	0:	return string(STR_LIVERY, string(str_col_Black), string(str_var_Random));
+    1:  return string(STR_LIVERY_SHORT, string(str_col_Black));
+    2:  return string(STR_LIVERY, string(str_comp_gen_priv_owner), string(str_col_Cream));
+    3:  return string(STR_LIVERY_BRANDED, string(str_col_Silver), string(str_col_Black));
+    4:  return string(STR_LIVERY_BRANDED, string(str_col_Silver), string(str_col_Green));
+    5:  return string(STR_LIVERY_BRANDED, string(str_col_Silver), string(str_col_Red));
+       return CB_RESULT_NO_TEXT;
+}
+
+// unit definition
+item (FEAT_TRAINS, item_WD_14t_Air_Ministry_Tank, 11803) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_WD_14t_Air_Ministry_Tank);
+        // variant_group:                  ; // unit ID or item
+		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1939,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        refittable_cargo_classes:       bitmask(CC_LIQUID, CC_HAZARDOUS);	
+        // non_refittable_cargo_classes:    bitmask();
+        // cargo_allow_refit:               [MAIL, GOOD, VALU];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 16 * param_freight;
+        loading_speed:				    5; // All freight / Locomotive
+        cost_factor: 					108;
+        running_cost_base:			    RUNNING_COST_STEAM;					
+        running_cost_factor: 			90;
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          50 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        weight:                         10 ton;
+        dual_headed:                    0;
+        length:                         4;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_livery_WD_14t_Air_Ministry_Tank;
+        purchase:                       spriteset_WD_14t_Tank_Black_purchase;
+
+        // internal code
+        cost_factor:                    341;
+        running_cost_factor:            526;
+        cargo_subtype_text:             sw_WD_14t_Air_Ministry_Tank_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_wagon,
+                                                    string(str_WD_14t_Air_Ministry_Tank_liveries)));
+    }
+}
+
