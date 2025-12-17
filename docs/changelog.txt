@@ -1,1 +1,163 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
+
+# v0.0.4 (Alpha)
+- Added GWR 2800 Class
+- Added GWR 2900 Class
+- Added GWR Large Prairies
+- Added GWR 4000 Class
+- Added GWR 5700 Class
+- Added FR 115 Class
+- Added LNER Thompson Class B1
+- Added BR Standard Class 8P
+- Added BR Standard Class 9F
+- Added BR Class 87
+- Added BR Class 90
+- Added BR Class 120
+- Added BR Class 150
+- Added BR Class 159
+- Added BR Class 231
+- Added BR Class 303
+- Added BR Class 318
+- Added BR Class 365
+- Added BR Class 370
+- Added BR Class 404
+- Added BR Class 432
+- Added BR Class 465
+- Added BR Class 710
+- Added BR Class 720
+- Added BR Class 755
+- Added BR Class 756
+- Added Generic 48' Arc T
+- Added LNER Gresley Flying Scotsman BTK
+- Added BR Mark 1 BG
+- Added BR Mark 2 BFK, BSO
+- Added BR Mark 2 Late TSO, BSO, DBSO
+- Added GWR Siphon G 
+- Added GWR Toad Brake Van
+- Added WD 10t Chemical Tank Wagon
+- Added WD 14t Tank Wagon
+- Added BR BAA Flat
+- Added BR FFA Container Flat
+- Added BR PCV Presflo Wagon
+- Added BR PTA Tippler
+- Added BR VEA Van
+- Added additional liveries for GWR 3500gal tender
+- Added NWR liveries to LNER A1/A3
+- Added additional liveries for BR 43
+- Added additional liveries for BR 47
+- Added optional mail capacity for BR 101, 309, 401, 415
+- Added additional liveries for BR 158
+- Added additional liveries and loading sprites for BR 309
+- Reworked BR Class 466
+- Added additional liveries for BR Mark 1 TSO
+- Added additional liveries for BR Mark 2 TSO 
+- Added additional liveries for BR Mark 3 TF, TS
+- Added cargo sprites for RCH 1907 7-plank Wagons
+- Fixed some units purchase and running costs
+- Changed LNER A1/A3 and A4 Apple Green livery
+- Buffed LNER O4/8 and O1 speed
+- Changes to LNER 5000gal tender
+- Fixed LMS Jubilee BR Lined Black missing tender lining
+- Fixed BR Standard 7MT tractive effort
+- Fixed BR 08 animations
+- Fixed BR 37 Railfreight Petroleum livery
+- Fixed BR 68 DRS Compass livery
+- Fixed BR 88 DRS livery
+- Fixed BR 91 IC225 loading speed
+- Fixed BR 101 inaccurate purchase cargo capacity
+- Buffed BR 142, 153, 158, 166 to allow them to reach max speed
+- Fixed BR 142(RF) introduction date
+- Fixed BR 153 introduction date
+- Fixed BR 303 wrong length
+- Changed BR HAA, PTA and LNER 21t Hopper cargo classes
+- Reworked dual-mode units railtypes
+- Reworked Generic 48' Coaches code structure
+- Reworked audio structure
+- Restructured ISO Container code
+- Removed some unnecessary switches
+
+# v0.0.3 (Alpha) 20-09-2025
+- Added MR 483 Class
+- Added MR 1000 Class
+- Added MR 3835 Class
+- Added LMS Fowler Class 2P
+- Added LMS Fowler Class 4P
+- Added GCR Robinson Class 9J
+- Added BR Standard Class 6MT
+- Added BR Standard Class 7MT
+- Added BR Class 48
+- Added Generic 48' Clerestory T
+- Added cargo sprites for RCH 1907 3-plank and 5-plank Wagons
+- Fixed LMS Stanier Class 5 animation and reliability
+- Fixed BR 66 reversed GBRf livery 
+- Fixed BR 91 TfW livery
+- Fixed misaligned BR container
+- Added additional BR container variants
+- Added additional ISO contianer variants
+- Increased loading speed
+- Halved all costs
+
+# v0.0.2 (Alpha) 11-08-2025
+- Added LMS Class 4F
+- Added BR Class 20
+- Added BR Class 43, and InterCity 125 variants
+- Added BR Class 47
+- Added BR Class 73
+- Added BR Class 91, and InterCity 225 variants
+- Added BR Class 142
+- Added BR Class 158
+- Added BR Class 401
+- Added BR Class 415
+- Added GWR Dreadnought TK
+- Added additional liveries for GCR CLsO
+- Added LNER Gresley Flying Scotsman CK
+- Added BR Mark 3 TF, TLUK, TRFB, TRFK, TRSB, TRUB, TRUK, TS
+- Added BR Mark 4 DVT, TFE, TF, TRFB, TRSB, TSD, TSE, TS
+- Added BR Oxfit Cattle Van
+- Added BR MBA Wagon
+- Added BR OTA Wagon
+- Added BR VAA Van
+
+# v0.0.1 (Alpha) 28-07-2025
+- Added GWR 4300 Class
+- Added GWR 5600 Class
+- Added LSWR N15 Class
+- Added LMS Stanier Class 5
+- Added LMS Jubilee Class
+- Added LMS Stanier Class 8F
+- Added LMS Stanier Rebuilt Jubilee Class
+- Added GCR Class 8K
+- Added LNER Gresley Class A1/A3
+- Added LNER Gresley Class A4
+- Added LNER Class O1
+- Added BR Class 08
+- Added BR Class 37
+- Added BR Class 52
+- Added BR Class 55
+- Added BR Class 66
+- Added BR Class 68
+- Added BR Class 86
+- Added BR Class 88
+- Added BR Class 101/102
+- Added BR Class 153
+- Added BR Class 166
+- Added BR Class 309
+- Added BR Class 325
+- Added BR Class 380 
+- Added BR Class 466
+- Added GCR Robinson CLsO
+- Added LNER Gresley Articulated BT-T
+- Added BR Mark 1 BSO, SO/SK, TSO
+- Added BR Mark 2 TSO
+- Added BR Mark 3 TS, TF
+- Added RCH 1907 Spec Wagons
+- Added GCR 10t Cattle Van
+- Added SR 6-wheeled Milk Tank
+- Added LNER 21t Hopper
+- Added WD 50t Warflat
+- Added BR Conflat A
+- Added BR Conflat P
+- Added BR FEA Container Flat
+- Added BR MCV/MCO Wagon
+- Added BR TEA Tank Wagon
+- Added BR TTA Tank Wagon
