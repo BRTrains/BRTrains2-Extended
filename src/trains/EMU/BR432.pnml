@@ -570,14 +570,16 @@ switch(FEAT_TRAINS, SELF, sw_BR432_cargo_subtype_text, cargo_subtype){
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR432, position_in_vehid_chain % 12) {
-    0: 164 * param_pax; // all the capacity - (vehid chain number)
-    1..11: 1 * param_pax;
+    0: 165 * param_pax; // all the capacity - (vehid chain number)
+    1..10: 1 * param_pax;
+    11: sw_capacity_BR_Gen1_DMU_B;
     // total 175
 }
 
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_BR432, extra_callback_info1) {
-	1..11: return item_BR432;
+	1..10: return item_BR432;
+    11: item_BR_Gen1_MU_B;
 		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
 
 // unit definition
@@ -628,7 +630,7 @@ item (FEAT_TRAINS, item_BR432, 4320) {
 
         // internal code
         articulated_part:               sw_articulated_BR432;
-        purchase_cargo_capacity:        return (12 * param_pax); // divide by number of articulated parts and floor
+        purchase_cargo_capacity:        return (15 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR432;
         cost_factor:                    225;
         running_cost_factor:            7538;

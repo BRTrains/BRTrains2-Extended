@@ -1833,14 +1833,19 @@ switch(FEAT_TRAINS, SELF, sw_BR309_cargo_subtype_text, cargo_subtype){
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR309, position_in_vehid_chain % 30) {
-    0: 471 * param_pax; // all the capacity - (vehid chain number)
-    1..29: 1 * param_pax;
+    1: 473 * param_pax; // all the capacity - (vehid chain number)
+    26..27: sw_capacity_BR_Gen1_DMU_B;
+    29: sw_capacity_BR_Gen1_DMU_B;
+        1 * param_pax;
     // total 500
 }
 
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_BR309, extra_callback_info1) {
-	1..29: return item_BR309;
+	1..25: return item_BR309;
+    26..27: return item_BR_Gen1_MU_B;
+    28: return item_BR309;
+    29: return item_BR_Gen1_MU_B;
 		return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
@@ -1887,7 +1892,7 @@ item (FEAT_TRAINS, item_BR309, 3090) {
         
         // internal code
         articulated_part:               sw_articulated_BR309;
-        purchase_cargo_capacity:        return ( 16 * param_pax); // divide by number of articulated parts and floor
+        purchase_cargo_capacity:        return ( 18 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR309;
         cost_factor:                    420;
         running_cost_factor:            9216;
@@ -1991,13 +1996,15 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR309_1, cargo_subtype) {
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR309_1, position_in_vehid_chain % 6) {
-    0: 103 * param_pax; // all the capacity - (vehid chain number)
-    1..5: 1 * param_pax;
+    0: 104 * param_pax; // all the capacity - (vehid chain number)
+    1..4: 1 * param_pax;
+    5:  sw_capacity_BR_Gen1_DMU_B;
     // total 108
 }
 
 switch(FEAT_TRAINS, SELF, sw_articulated_BR309_1, extra_callback_info1) {
-    1..5: return item_BR309_1;
+    1..4: return item_BR309_1;
+    5: item_BR_Gen1_MU_B;
         return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
@@ -2046,7 +2053,7 @@ item (FEAT_TRAINS, item_BR309_1, 3091) {
         
         // internal code
         articulated_part:               sw_articulated_BR309_1;
-        purchase_cargo_capacity:        return ( 18 * param_pax); // divide by number of articulated parts and floor
+        purchase_cargo_capacity:        return ( 21 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR309_1;
         cost_factor:                    143;
         running_cost_factor:            5629;
@@ -2153,13 +2160,15 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR309_2, cargo_subtype) {
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR309_2, position_in_vehid_chain % 12) {
-    0: 169 * param_pax; // all the capacity - (vehid chain number)
-    1..11: 1 * param_pax;
+    0: 170 * param_pax; // all the capacity - (vehid chain number)
+    1..10: 1 * param_pax;
+    11: sw_capacity_BR_Gen1_DMU_B;
     // total 180
 }
 
 switch(FEAT_TRAINS, SELF, sw_articulated_BR309_2, extra_callback_info1) {
-    1..11: return item_BR309_2;
+    1..10: return item_BR309_2;
+    11: return item_BR_Gen1_MU_B;
         return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
@@ -2208,7 +2217,7 @@ item (FEAT_TRAINS, item_BR309_2, 3092) {
         
         // internal code
         articulated_part:               sw_articulated_BR309_2;
-        purchase_cargo_capacity:        return ( 15 * param_pax); // divide by number of articulated parts and floor
+        purchase_cargo_capacity:        return ( 16 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR309_2;
         cost_factor:                    184;
         running_cost_factor:            5680;
@@ -2309,14 +2318,16 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR309_3, cargo_subtype) {
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR309_3, position_in_vehid_chain % 12) {
-    0: 201 * param_pax; // all the capacity - (vehid chain number)
-    1..11: 1 * param_pax;
+    0: 202 * param_pax; // all the capacity - (vehid chain number)
+    1..10: 1 * param_pax;
+    11: sw_capacity_BR_Gen1_DMU_B;
     // total 212
 }
 
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_BR309_3, extra_callback_info1) {
-	1..11: return item_BR309_3;
+	1..10: return item_BR309_3;
+    11: return item_BR_Gen1_MU_B;
 		return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
@@ -2365,7 +2376,7 @@ item (FEAT_TRAINS, item_BR309_3, 3093) {
         
         // internal code
         articulated_part:               sw_articulated_BR309_3;
-        purchase_cargo_capacity:        return ( 17 * param_pax); // divide by number of articulated parts and floor
+        purchase_cargo_capacity:        return ( 19 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR309_3;
         cost_factor:                    202;
         running_cost_factor:            5705;

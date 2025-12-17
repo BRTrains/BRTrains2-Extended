@@ -4,7 +4,7 @@ switch(FEAT_TRAINS, SELF, sw_capacity_BR_Gen1_DMU_B, cargo_classes) {
         8 * param_freight;
 }
 
-item (FEAT_TRAINS, item_BR_Gen1_DMU_B, 1002) {
+item (FEAT_TRAINS, item_BR_Gen1_MU_B, 1002) {
     property {
         // common properties
         name:                           string(STR_NAME_BR_Mk1_Header);

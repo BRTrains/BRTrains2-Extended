@@ -937,7 +937,7 @@ switch(FEAT_TRAINS, SELF, sw_capacity_BR101_2car, position_in_vehid_chain % 6) {
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_BR101_2car, extra_callback_info1) {
     1..4:   return item_BR101;
-    5:  item_BR_Gen1_DMU_B;
+    5:  item_BR_Gen1_MU_B;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
@@ -1101,7 +1101,7 @@ switch(FEAT_TRAINS, SELF, sw_capacity_BR101_3car, position_in_vehid_chain % 9) {
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_BR101_3car, extra_callback_info1) {
     1..7:   return item_BR101_3;
-    8:  item_BR_Gen1_DMU_B;
+    8:  item_BR_Gen1_MU_B;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
 
 // unit definition
@@ -1313,7 +1313,7 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR101_4car, cargo_subtype) {
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_BR101_4car, extra_callback_info1) {
     1..10:   return item_BR101_4;
-    11:  item_BR_Gen1_DMU_B;
+    11:  item_BR_Gen1_MU_B;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
 
 // unit definition
@@ -1385,7 +1385,7 @@ item (FEAT_TRAINS, item_BR101_4, 1014) {
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_BR102, extra_callback_info1) {
     1..4:   return item_BR102;
-    5:  item_BR_Gen1_DMU_B;
+    5:  item_BR_Gen1_MU_B;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 

@@ -924,22 +924,28 @@ switch(FEAT_TRAINS, SELF, sw_BR404_cargo_subtype_text, cargo_subtype){
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR404_COR, position_in_vehid_chain % 12) {
-    0: 215 * param_pax; // all the capacity - (vehid chain number)
-    1..11: 1 * param_pax;
+    1: 218 * param_pax; // all the capacity - (vehid chain number)
+    2: sw_capacity_BR_Gen1_DMU_B;
+    9: sw_capacity_BR_Gen1_DMU_B;
+        1 * param_pax;
     // total 226
 }
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR404_RES, position_in_vehid_chain % 12) {
-    0: 173 * param_pax; // all the capacity - (vehid chain number)
-    1..11: 1 * param_pax;
+    1: 176 * param_pax; // all the capacity - (vehid chain number)
+    2: sw_capacity_BR_Gen1_DMU_B;
+    9: sw_capacity_BR_Gen1_DMU_B;
+        1 * param_pax;
     // total 184
 }
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR404_BUF, position_in_vehid_chain % 12) {
-    0: 163 * param_pax; // all the capacity - (vehid chain number)
-    1..11: 1 * param_pax;
+    1: 166 * param_pax; // all the capacity - (vehid chain number)
+    2: sw_capacity_BR_Gen1_DMU_B;
+    9: sw_capacity_BR_Gen1_DMU_B;
+        1 * param_pax;
     // total 174
 }
 
@@ -958,7 +964,10 @@ switch (FEAT_TRAINS, SELF, sw_name_BR404_BUF, current_year) {
 
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_BR404, extra_callback_info1) {
-	1..11: return item_BR404;
+	1..8: return item_BR404;
+    9:  return item_BR_Gen1_MU_B;
+    10: return item_BR404;
+    11: return item_BR_Gen1_MU_B;
 		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
 
 // unit definition
@@ -1011,7 +1020,7 @@ item (FEAT_TRAINS, item_BR404, 4040) {
         name:                           sw_name_BR404;
         // length:                         sw_length_BR404;
         articulated_part:               sw_articulated_BR404;  
-        purchase_cargo_capacity:        return ( 18 * param_pax); // divide by number of articulated parts and floor
+        purchase_cargo_capacity:        return ( 22 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR404_COR;
         cost_factor:                    188;
         running_cost_factor:            4003;
@@ -1029,7 +1038,10 @@ item (FEAT_TRAINS, item_BR404, 4040) {
 
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_BR404_RES, extra_callback_info1) {
-	1..11: return item_BR404_RES;
+	1..8: return item_BR404_RES;
+    9:  return item_BR_Gen1_MU_B;
+    10: return item_BR404_RES;
+    11: return item_BR_Gen1_MU_B;
 		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
 
 // unit definition
@@ -1082,7 +1094,7 @@ item (FEAT_TRAINS, item_BR404_RES, 4041) {
         name:                           sw_name_BR404_RES;
         // length:                         sw_length_BR404;
         articulated_part:               sw_articulated_BR404_RES;  
-        purchase_cargo_capacity:        return ( 15 * param_pax); // divide by number of articulated parts and floor
+        purchase_cargo_capacity:        return ( 18 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR404_RES;
         cost_factor:                    164;
         running_cost_factor:            3974;
@@ -1101,7 +1113,10 @@ item (FEAT_TRAINS, item_BR404_RES, 4041) {
 
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_BR404_BUF, extra_callback_info1) {
-	1..11: return item_BR404_BUF;
+	1..8: return item_BR404_BUF;
+    9:  return item_BR_Gen1_MU_B;
+    10: return item_BR404_BUF;
+    11: return item_BR_Gen1_MU_B;
 		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
 
 // unit definition
@@ -1154,7 +1169,7 @@ item (FEAT_TRAINS, item_BR404_BUF, 4042) {
         name:                           sw_name_BR404_BUF;
         // length:                         sw_length_BR404;
         articulated_part:               sw_articulated_BR404_BUF;  
-        purchase_cargo_capacity:        return ( 14 * param_pax); // divide by number of articulated parts and floor
+        purchase_cargo_capacity:        return ( 17 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR404_BUF;
         cost_factor:                    159;
         running_cost_factor:            3964;

@@ -1174,7 +1174,7 @@ switch(FEAT_TRAINS, SELF, sw_capacity_BR120_1, position_in_articulated_veh % 9) 
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_BR120, extra_callback_info1) {
 	1..7: return item_BR120;
-    8:  item_BR_Gen1_DMU_B;
+    8:  item_BR_Gen1_MU_B;
 		return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
@@ -1243,7 +1243,7 @@ item (FEAT_TRAINS, item_BR120, 1200) {
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_BR120_1, extra_callback_info1) {
 	1..7: return item_BR120_1;
-    8:  item_BR_Gen1_DMU_B;
+    8:  item_BR_Gen1_MU_B;
 		return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
