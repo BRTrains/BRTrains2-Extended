@@ -1879,7 +1879,7 @@ item (FEAT_TRAINS, item_BR309, 3090) {
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
         air_drag_coefficient:           0.08;
-        tractive_effort_coefficient:    0.04;
+        tractive_effort_coefficient:    0.05;
         length:                         4;
     }
 
@@ -1982,7 +1982,7 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR309_1_BDTS_NSE_Jaffa_Cake, vehicle_is_r
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR309_1_NSE_Jaffa_Cake, position_in_articulated_veh % 6) {
     1:  sw_reverse_BR309_1_DMsOC_NSE_Jaffa_Cake;
-    4:  sw_reverse_BR309_1_BDTS_BR_Maroon;
+    4:  sw_reverse_BR309_1_BDTS_NSE_Jaffa_Cake;
         spriteset_empty;
 }
 
@@ -2040,7 +2040,7 @@ item (FEAT_TRAINS, item_BR309_1, 3091) {
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
         air_drag_coefficient:           0.08;
-        tractive_effort_coefficient:    0.04;
+        tractive_effort_coefficient:    0.05;
         length:                         4;
     }
 
@@ -2204,7 +2204,7 @@ item (FEAT_TRAINS, item_BR309_2, 3092) {
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
         air_drag_coefficient:           0.08;
-        tractive_effort_coefficient:    0.04;
+        tractive_effort_coefficient:    0.05;
         length:                         4;
     }
 
@@ -2363,7 +2363,7 @@ item (FEAT_TRAINS, item_BR309_3, 3093) {
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
         air_drag_coefficient:           0.08;
-        tractive_effort_coefficient:    0.04;
+        tractive_effort_coefficient:    0.05;
         length:                         4;
     }
 
@@ -2380,6 +2380,163 @@ item (FEAT_TRAINS, item_BR309_3, 3093) {
         cargo_capacity:                 sw_capacity_BR309_3;
         cost_factor:                    202;
         running_cost_factor:            5705;
+        cargo_subtype_text:             sw_BR309_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_loco_with_liveries,
+                                                    string(str_purchase_type_emu),
+                                                    string(str_usage_expr_pax),
+                                                    string(str_BR309_liveries)));
+    }
+}
+
+// reversing switches
+switch(FEAT_TRAINS, PARENT, sw_reverse_BR309_4_TSO_TC_BR_Maroon, vehicle_is_reversed) {
+    1:  sw_loadstack_BR309_TC_BR_Maroon_REV;
+        sw_loadstack_BR309_TSO_BR_Maroon;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_reverse_BR309_4_TC_TSO_BR_Maroon, vehicle_is_reversed) {
+    1:  sw_loadstack_BR309_TSO_BR_Maroon_REV;
+        sw_loadstack_BR309_TC_BR_Maroon;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_reverse_BR309_4_TSO_TC_BR_Blue, vehicle_is_reversed) {
+    1:  sw_loadstack_BR309_TC_BR_Blue_REV;
+        sw_loadstack_BR309_TSO_BR_Blue;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_reverse_BR309_4_TC_TSO_BR_Blue, vehicle_is_reversed) {
+    1:  sw_loadstack_BR309_TSO_BR_Blue_REV;
+        sw_loadstack_BR309_TC_BR_Blue;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_reverse_BR309_4_TSO_TC_NSE, vehicle_is_reversed) {
+    1:  sw_loadstack_BR309_TC_NSE_REV;
+        sw_loadstack_BR309_TSO_NSE;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_reverse_BR309_4_TC_TSO_NSE, vehicle_is_reversed) {
+    1:  sw_loadstack_BR309_TSO_NSE_REV;
+        sw_loadstack_BR309_TC_NSE;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_reverse_BR309_4_TSO_TC_NSE_Jaffa_Cake, vehicle_is_reversed) {
+    1:  sw_loadstack_BR309_TC_NSE_Jaffa_Cake_REV;
+        sw_loadstack_BR309_TSO_NSE_Jaffa_Cake;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_reverse_BR309_4_TC_TSO_NSE_Jaffa_Cake, vehicle_is_reversed) {
+    1:  sw_loadstack_BR309_TSO_NSE_Jaffa_Cake_REV;
+        sw_loadstack_BR309_TC_NSE_Jaffa_Cake;
+}
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_BR309_4_BR_Maroon, position_in_articulated_veh % 12) {
+    1:  sw_reverse_BR309_1_DMsOC_BR_Maroon;
+    4:  sw_reverse_BR309_4_TSO_TC_BR_Maroon;
+    7:  sw_reverse_BR309_4_TC_TSO_BR_Maroon;
+    10:  sw_reverse_BR309_1_BDTS_BR_Maroon;
+        spriteset_empty;
+}
+
+switch(FEAT_TRAINS, SELF, sw_graphics_BR309_4_BR_Blue, position_in_articulated_veh % 12) {
+    1:  sw_reverse_BR309_1_DMsOC_BR_Blue;
+    4:  sw_reverse_BR309_4_TSO_TC_BR_Blue;
+    7:  sw_reverse_BR309_4_TC_TSO_BR_Blue;
+    10:  sw_reverse_BR309_1_BDTS_BR_Blue;
+        spriteset_empty;
+}
+
+switch(FEAT_TRAINS, SELF, sw_graphics_BR309_4_NSE, position_in_articulated_veh % 12) {
+    1:  sw_reverse_BR309_1_DMsOC_NSE;
+    4:  sw_reverse_BR309_4_TSO_TC_NSE;
+    7:  sw_reverse_BR309_4_TC_TSO_NSE;
+    10:  sw_reverse_BR309_1_BDTS_NSE;
+        spriteset_empty;
+}
+
+switch(FEAT_TRAINS, SELF, sw_graphics_BR309_4_NSE_Jaffa_Cake, position_in_articulated_veh % 12) {
+    1:  sw_reverse_BR309_1_DMsOC_NSE_Jaffa_Cake;
+    4:  sw_reverse_BR309_4_TSO_TC_NSE_Jaffa_Cake;
+    7:  sw_reverse_BR309_4_TC_TSO_NSE_Jaffa_Cake;
+    10:  sw_reverse_BR309_1_BDTS_NSE_Jaffa_Cake;
+        spriteset_empty;
+}
+
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR309_4, cargo_subtype) {
+    0:  sw_graphics_BR309_4_BR_Maroon;
+    1:  sw_graphics_BR309_4_BR_Blue;
+    2:  sw_graphics_BR309_4_NSE;
+    3:  sw_graphics_BR309_4_NSE_Jaffa_Cake;
+}
+
+// capacity switch
+switch(FEAT_TRAINS, SELF, sw_capacity_BR309_4, position_in_vehid_chain % 12) {
+    0: 190 * param_pax; // all the capacity - (vehid chain number)
+    1..10: 1 * param_pax;
+    11: sw_capacity_BR_Gen1_DMU_B;
+    // total 200
+}
+
+switch(FEAT_TRAINS, SELF, sw_articulated_BR309_4, extra_callback_info1) {
+    1..10: return item_BR309_4;
+    11: return item_BR_Gen1_MU_B;
+        return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// unit definition
+item (FEAT_TRAINS, item_BR309_4, 3094) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR309_4);
+        variant_group:                  item_BR309; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1962,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		refittable_cargo_classes:       bitmask(CC_PASSENGERS);
+        misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        loading_speed:					36;
+        cost_factor: 					108;					
+        running_cost_base:				RUNNING_COST_STEAM;				
+        running_cost_factor: 			90;
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     ELRL;
+        power:                          1128 hp;
+        weight:                         170 ton;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.08;
+        tractive_effort_coefficient:    0.05;
+        length:                         4;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_livery_BR309_4;
+        visual_effect_and_powered:      sw_FX_BR309_2_3_Electric;
+        purchase:                       spriteset_BR309_DMsOC_BR_Blue_purchase;
+        sound_effect:                   sw_sound_electric_GEC;
+        
+        // internal code
+        articulated_part:               sw_articulated_BR309_4;
+        purchase_cargo_capacity:        return ( 18 * param_pax); // divide by number of articulated parts and floor
+        cargo_capacity:                 sw_capacity_BR309_4;
+        cost_factor:                    195;
+        running_cost_factor:            5695;
         cargo_subtype_text:             sw_BR309_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 

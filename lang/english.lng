@@ -1,8 +1,8 @@
 ﻿##grflangid 0x01
 
 # GRF name and description
-STR_GRF_NAME	:British Rail Extended Train Set (BRETS)
-STR_GRF_DESC    :{GOLD}British Rail Extended Train Set{}{BLACK}An extended length, 4x zoom, real livery train set.{}{}{GOLD}Developer: {LTBLUE}Su1phur{}{BLACK}Special Thanks to:{GOLD}Timberwolf{BLACK},{}{GOLD}GarlicBread42 and The GETS Team{BLACK},{}{GOLD}Audigex and The BRTrainsV2 Team{BLACK},{}{GOLD}andythenorth, Simozzz, Emperor Jake, 2TallTyler{BLACK} and the whole {RED}Discord{BLACK}-community.
+STR_GRF_NAME	:British Rail Extra-zoom Train Set (BRETS)
+STR_GRF_DESC    :{GOLD}British Rail Extra-zoom Train Set{}{BLACK}An extended length, 4x zoom, real livery train set.{}{}{GOLD}Developer: {LTBLUE}Su1phur{}{BLACK}Special Thanks to:{GOLD}Timberwolf{BLACK},{}{GOLD}GarlicBread42 and The GETS Team{BLACK},{}{GOLD}Audigex and The BRTrainsV2 Team{BLACK},{}{GOLD}andythenorth, Simozzz, Emperor Jake, 2TallTyler{BLACK} and the whole {RED}Discord{BLACK}-community.
 
 # Concat without spaces etc
 STR_CONCAT_2	:{STRING}{STRING}
@@ -846,6 +846,7 @@ STR_NAME_BR309                  :BR Class 309 "AM9/Clacton Express" (10-car)
 STR_NAME_BR309_1                :BR Class 309/1 "AM9/Clacton Express" (2-car)
 STR_NAME_BR309_2                :BR Class 309/2 "AM9/Clacton Express" (4-car, with Griddle Car)
 STR_NAME_BR309_3                :BR Class 309/3 "AM9/Clacton Express" (4-car)
+STR_NAME_BR309_4                :BR Class 309/4 "AM9/Clacton Express" (4-car)
 str_BR309_usage                 :Express Passenger
 str_BR309_liveries              :BR Maroon, BR Blue/Grey, Network SouthEast
 
