@@ -1,11 +1,15 @@
 // GRF definition block
 grf {
-    grfid: "brx2"; // British Rail Extrazoom Train Set
-    name: string(STR_GRF_NAME);
+    // grfid: "brx2"; // British Rail Extrazoom Train Set
+    // name: string(STR_GRF_NAME);
+	// Testing ID and name
+	// Uncomment before release
+	grfid: "brxt"; 
+	name: string(STR_GRF_NAME_TEST);
 	desc: string(STR_GRF_DESC);
 	// Flatten the version number, eg v0.1.1 becomes 011
 	// 0.0.4 Alpha released 17-12-2025
-	version: 004;
+	version: 005;
 	// Bump up this number if update breaks compatibility 
 	min_compatible_version: 004;
 	param 0 {		
