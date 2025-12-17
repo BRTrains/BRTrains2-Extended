@@ -151,7 +151,7 @@ item (FEAT_TRAINS, item_WD_10t_Chemical_Tank, 11409) {
         refittable_cargo_classes:       bitmask(CC_LIQUID, CC_HAZARDOUS, CC_POWDERIZED, CC_NON_POTABLE);	
         non_refittable_cargo_classes:   bitmask(CC_POTABLE);
         cargo_allow_refit:              [BOOM];
-        cargo_disallow_refit:           [LVST];
+        cargo_disallow_refit:           [EOIL, MILK];
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 10 * param_freight;
         cost_factor: 					108;
