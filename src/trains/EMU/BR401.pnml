@@ -358,7 +358,7 @@ item (FEAT_TRAINS, item_BR401, 4010) {
         weight:                         76 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.11;
+        air_drag_coefficient:           0.09;
         tractive_effort_coefficient:    0.07;
         length:                         4;
     }

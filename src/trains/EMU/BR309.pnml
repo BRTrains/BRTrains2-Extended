@@ -2203,7 +2203,7 @@ item (FEAT_TRAINS, item_BR309_2, 3092) {
         weight:                         171 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.08;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.05;
         length:                         4;
     }
@@ -2362,7 +2362,7 @@ item (FEAT_TRAINS, item_BR309_3, 3093) {
         weight:                         170 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.08;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.05;
         length:                         4;
     }
@@ -2519,7 +2519,7 @@ item (FEAT_TRAINS, item_BR309_4, 3094) {
         weight:                         170 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.08;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.05;
         length:                         4;
     }

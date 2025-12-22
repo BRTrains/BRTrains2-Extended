@@ -1004,7 +1004,7 @@ item (FEAT_TRAINS, item_BR404, 4040) {
         weight:                         161 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.9;
+        air_drag_coefficient:           0.09;
         tractive_effort_coefficient:    0.07;
         length:                         4;
     }
@@ -1078,7 +1078,7 @@ item (FEAT_TRAINS, item_BR404_RES, 4041) {
         weight:                         161 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.9;
+        air_drag_coefficient:           0.09;
         tractive_effort_coefficient:    0.07;
         length:                         4;
     }
@@ -1153,7 +1153,7 @@ item (FEAT_TRAINS, item_BR404_BUF, 4042) {
         weight:                         161 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.9;
+        air_drag_coefficient:           0.09;
         tractive_effort_coefficient:    0.07;
         length:                         4;
     }
