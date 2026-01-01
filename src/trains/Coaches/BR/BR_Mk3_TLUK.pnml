@@ -54,12 +54,6 @@ switch(FEAT_TRAINS, SELF, sw_graphics_BR_Mk3_TLUK, position_in_articulated_veh %
 	1: return sw_livery_BR_Mk3_TLUK;
 	    spriteset_empty; }
 
-// length switch
-switch(FEAT_TRAINS, SELF, sw_length_BR_Mk3_TLUK, position_in_articulated_veh % 3) {
-	0: 4;
-	1: 6;
-	2: 4; }
-
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR_Mk3_TLUK, position_in_vehid_chain % 3) {
     0: 14 * param_pax; // all the capacity - (vehid chain number)

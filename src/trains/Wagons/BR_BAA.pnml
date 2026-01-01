@@ -374,7 +374,7 @@ item (FEAT_TRAINS, item_BR_BAA, 12263) {
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
-        speed:                          60 mph;
+        speed:                          75 mph;
         refit_cost:                     0;
         track_type:                     RAIL;
         weight:                         23 ton;
@@ -388,7 +388,6 @@ item (FEAT_TRAINS, item_BR_BAA, 12263) {
         purchase:                       spriteset_BR_BAA_BR_Bauxite_purchase;
 
         // internal code
-        speed:                          sw_speed_BR_BAA() * 1609 / 1000;  
         cost_factor:                    921;
         running_cost_factor:            1238;
         cargo_subtype_text:             sw_BR_BAA_cargo_subtype_text; 
@@ -441,6 +440,7 @@ item (FEAT_TRAINS, item_BR_BAA_75, 12264) {
         purchase:                       spriteset_BR_BAA_BR_Bauxite_purchase;
 
         // internal code
+        speed:                          sw_speed_BR_BAA() * 1609 / 1000;  
         cost_factor:                    1203;
         running_cost_factor:            1111;
         cargo_subtype_text:             sw_BR_BAA_cargo_subtype_text; 

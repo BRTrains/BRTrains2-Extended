@@ -406,12 +406,6 @@ switch(FEAT_TRAINS, SELF, sw_rear_BR_Mk3_TGS, num_vehs_in_consist > 9 ? position
     4: sw_livery_BR_Mk3_TGS_REV;
         sw_graphics_BR_Mk3_TGS; }
 
-// length switch
-switch(FEAT_TRAINS, SELF, sw_length_BR_Mk3_TGS, position_in_articulated_veh % 3) {
-	1: 6;
-	    4; }
-
-
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR_Mk3_TGS, position_in_vehid_chain % 3) {
     0: 61 * param_pax; // all the capacity - (vehid chain number)
@@ -467,7 +461,7 @@ item (FEAT_TRAINS, item_BR_Mk3_TGS, 12122) {
         purchase:                       sw_BR_Mk3_TGS_purchase_sprite;
 
         // internal code
-        length:                         sw_length_BR_Mk3_TGS;
+        length:                         sw_length_BR_Mk3;
         articulated_part:               sw_articulated_BR_Mk3_TGS;
         speed:                          sw_speed_BR_Mk3() * 1609 / 1000;
         purchase_cargo_capacity:        return (20 * param_pax); // divide by number of articulated parts and floor

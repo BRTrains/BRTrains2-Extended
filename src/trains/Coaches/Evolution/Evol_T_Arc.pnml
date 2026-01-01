@@ -321,7 +321,7 @@ item (FEAT_TRAINS, item_Evol_Arc_T, 11207) {
     graphics {
         // graphics
         default:                        sw_graphics_Evol_Arc_T;
-        purchase:                       sw_Evol_Header_purchase_sprite;
+        purchase:                       sw_spritestack_Evol_Arc_T_purchase;
 
         // internal code
         articulated_part:               sw_articulated_Evol_Arc_T;

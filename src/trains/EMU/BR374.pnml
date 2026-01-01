@@ -551,7 +551,7 @@ spriteset(spriteset_BR374_TMS_Eurostar, "gfx/EMU/BR374/BR374_TMS_Eurostar_1x_8bp
 spriteset(spriteset_BR374_TMS_Eurostar_Loading, "gfx/EMU/BR374/BR374_TMS_Eurostar_Loading_1x_8bpp.png")
     { template_158trains_1x(0,0) }
 
-    alternative_sprites(spriteset_BR374_TMBS_Eurostar_Loading, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR374/BR374_TMS_Eurostar_Loading_1x_32bpp.png", "gfx/EMU/BR374/BR374_TMS_Eurostar_Loading_1x_mask.png")
+    alternative_sprites(spriteset_BR374_TMS_Eurostar_Loading, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR374/BR374_TMS_Eurostar_Loading_1x_32bpp.png", "gfx/EMU/BR374/BR374_TMS_Eurostar_Loading_1x_mask.png")
     { template_158trains_1x(0,0) }
 
     alternative_sprites(spriteset_BR374_TMS_Eurostar_Loading, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR374/BR374_TMS_Eurostar_Loading_2x_32bpp.png", "gfx/EMU/BR374/BR374_TMS_Eurostar_Loading_2x_mask.png")
