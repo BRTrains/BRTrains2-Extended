@@ -1,4 +1,13 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
+# v0.0.5 (Alpha)
+- Added Generic 48' Elliptical T
+- Added Generic 48' F
+- Fixed wrong cargo being available for WD 10t Tank and RCH 1907 Wagons
+- Fixed air drag for BR 404
+- Buffed air drag for BR 309 and BR 401
+- Fixed BR 309 BDTS sprite
+- Fixes to BR BAA wagon speed
+- Fixes to LNER 21t Hopper cargo capacity
 
 # v0.0.4 (Alpha)
 - Added GWR 2800 Class
