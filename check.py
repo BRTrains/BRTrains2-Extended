@@ -30,7 +30,13 @@ FIELDS_MIN = {
 ALL_FIELDS = FIELDS_MAX | FIELDS_MIN
 
 def load_csv_aggregates(csv_path):
-    df = pd.read_csv(csv_path, dtype={"Unit ID": str})
+    df = pd.read_csv(csv_path,
+                     dtype={
+                         "Unit ID": str,
+                         "Cost Factor": int,
+                         "Running Cost Factor": int
+                    },
+                    keep_default_na=False)
     df["Unit ID"] = df["Unit ID"].str.strip()
 
     # Keep only required columns
@@ -70,7 +76,7 @@ ITEM_DECL_RE = re.compile(
 
 FIELD_RE = re.compile(
     r"^(?P<indent>\s*)(?P<field>cost_factor|running_cost_factor|air_drag_coefficient|tractive_effort_coefficient)"
-    r"\s*:\s*(?P<value>[-+]?\d*\.?\d+)\s*;",
+    r"\s*:(?P<spacing>\s*)(?P<value>[-+]?\d*\.?\d+)\s*;",
     re.MULTILINE
 )
 
@@ -126,6 +132,7 @@ def process_pnml_file(path, csv_aggregates, do_check, do_overwrite):
 
         indent = match.group("indent")
         field = match.group("field")
+        spacing = match.group("spacing")
         old_value = float(match.group("value"))
 
         if field not in csv_values:
@@ -141,8 +148,7 @@ def process_pnml_file(path, csv_aggregates, do_check, do_overwrite):
 
         if do_overwrite and old_value != new_value:
             updated = True
-            padding = " " * (max_field_len - len(field) + 1)
-            return f"{indent}{field}{padding}: {new_value};"
+            return f"{indent}{field}:{spacing}{new_value};"
 
         return match.group(0)
 
