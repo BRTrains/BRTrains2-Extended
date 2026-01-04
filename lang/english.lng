@@ -1142,10 +1142,14 @@ str_Evolution_liveries          :Mahogany, Teak, Chocolate and Cream, Maroon, Ol
 
 STR_NAME_Evol_Header			:Generic 48' Coaches
 
+STR_NAME_Evol_Arc_F             :Generic 48' Arc Coach F
 STR_NAME_Evol_Arc_T             :Generic 48' Arc Coach T 
 
+STR_NAME_Evol_Clerestory_F      :Generic 48' Clerestory Coach F
 STR_NAME_Evol_Clerestory_T      :Generic 48' Clerestory Coach T
 
+STR_NAME_Evol_Ellip_F           :Generic 48' Elliptical Coach F
+STR_NAME_Evol_Ellip_T           :Generic 48' Elliptical Coach T
 
 # GWR Coaches
 STR_NAME_GWR_TK_C24             :GWR Churchward "Dreadnought" TK
