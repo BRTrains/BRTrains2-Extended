@@ -299,9 +299,9 @@ item (FEAT_TRAINS, item_LMS_Black_5, 4461) { // BR Number range 44658-45499
         cargo_capacity:                 1;
 		cargo_allow_refit:				[PASS, GOOD];
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					90;
         running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			90;
+        running_cost_factor: 			5695;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -312,7 +312,7 @@ item (FEAT_TRAINS, item_LMS_Black_5, 4461) { // BR Number range 44658-45499
         weight:                         130 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.1;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.09;
         length:                         8;
     }
@@ -363,9 +363,9 @@ item (FEAT_TRAINS, item_LMS_Black_5_Domed, 4462) { // BR Number range 44658-4549
         cargo_capacity:                 1;
 		cargo_allow_refit:				[PASS, GOOD];
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					90;
         running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			90;
+        running_cost_factor: 			5695;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -376,7 +376,7 @@ item (FEAT_TRAINS, item_LMS_Black_5_Domed, 4462) { // BR Number range 44658-4549
         weight:                         130 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.1;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.09;
         length:                         8;
     }
@@ -441,9 +441,9 @@ item (FEAT_TRAINS, item_LMS_Black_5_Domeless, 4463) { // BR Number range 44658-4
         cargo_capacity:                 1;
 		cargo_allow_refit:				[PASS, GOOD];
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					90;
         running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			90;
+        running_cost_factor: 			5695;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -454,7 +454,7 @@ item (FEAT_TRAINS, item_LMS_Black_5_Domeless, 4463) { // BR Number range 44658-4
         weight:                         130 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.1;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.09;
         length:                         8;
     }
@@ -518,9 +518,9 @@ item (FEAT_TRAINS, item_LMS_Black_5_Forward_Top_Feed, 4464) { // BR Number range
         cargo_capacity:                 1;
 		cargo_allow_refit:				[PASS, GOOD];
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					90;
         running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			90;
+        running_cost_factor: 			5695;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -531,7 +531,7 @@ item (FEAT_TRAINS, item_LMS_Black_5_Forward_Top_Feed, 4464) { // BR Number range
         weight:                         130 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.1;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.09;
         length:                         8;
     }
@@ -603,9 +603,9 @@ item (FEAT_TRAINS, item_LMS_Black_5_Named, 4464) { // BR Number range 44658-4549
         cargo_capacity:                 1;
 		cargo_allow_refit:				[PASS, GOOD];
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					90;
         running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			90;
+        running_cost_factor: 			5695;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -616,7 +616,7 @@ item (FEAT_TRAINS, item_LMS_Black_5_Named, 4464) { // BR Number range 44658-4549
         weight:                         130 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.1;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.09;
         length:                         8;
     }

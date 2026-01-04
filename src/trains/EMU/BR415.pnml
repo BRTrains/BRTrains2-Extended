@@ -377,9 +377,9 @@ item (FEAT_TRAINS, item_BR415, 4150) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					36;
-        cost_factor: 					108;
+        cost_factor: 					284;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			4422;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -390,7 +390,7 @@ item (FEAT_TRAINS, item_BR415, 4150) {
         weight:                         135 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.11;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.09;
         length:                         4;
     }
@@ -407,7 +407,7 @@ item (FEAT_TRAINS, item_BR415, 4150) {
         purchase_cargo_capacity:        return ( 38 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR415;
         cost_factor:                    284;
-        running_cost_factor:            4425;
+        running_cost_factor:            4422;
         cargo_subtype_text:             sw_BR415_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;

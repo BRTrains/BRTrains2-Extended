@@ -294,9 +294,9 @@ item (FEAT_TRAINS, item_LNER_B1, 6100) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:				    5; // All freight / Locomotive
-        cost_factor: 					108;
+        cost_factor: 					91;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			5734;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -307,7 +307,7 @@ item (FEAT_TRAINS, item_LNER_B1, 6100) {
         weight:                         173 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.1;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.07;
         length:                         8;
     }
@@ -365,9 +365,9 @@ item (FEAT_TRAINS, item_LNER_B1_Named, 6101) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:				    5; // All freight / Locomotive
-        cost_factor: 					108;
+        cost_factor: 					91;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			5734;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -378,7 +378,7 @@ item (FEAT_TRAINS, item_LNER_B1_Named, 6101) {
         weight:                         173 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.1;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.07;
         length:                         8;
     }

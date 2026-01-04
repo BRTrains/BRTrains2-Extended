@@ -287,9 +287,9 @@ item (FEAT_TRAINS, item_BR380_0, 3800) {
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					34;
-        cost_factor: 					108;				
+        cost_factor: 					179;				
         running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			90;
+        running_cost_factor: 			6675;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -300,7 +300,7 @@ item (FEAT_TRAINS, item_BR380_0, 3800) {
         weight:                         133 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.06;
+        air_drag_coefficient:           0.03;
         tractive_effort_coefficient:    0.16;
         length:                         8;
     }
@@ -347,9 +347,9 @@ item (FEAT_TRAINS, item_BR380_1, 3801) {
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					45;
-        cost_factor: 					108;				
+        cost_factor: 					179;				
         running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			90;
+        running_cost_factor: 			6675;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -360,8 +360,8 @@ item (FEAT_TRAINS, item_BR380_1, 3801) {
         weight:                         168 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.06;
-        tractive_effort_coefficient:    0.13;
+        air_drag_coefficient:           0.03;
+        tractive_effort_coefficient:    0.16;
         length:                         8;
     }
 
@@ -377,8 +377,8 @@ item (FEAT_TRAINS, item_BR380_1, 3801) {
         articulated_part:               sw_articulated_BR380_1;
         purchase_cargo_capacity:        return (22 * param_pax);
         cargo_capacity:                 sw_capacity_BR380_1;
-        cost_factor:                    212;
-        running_cost_factor:            6712;
+        cost_factor:                    179;
+        running_cost_factor:            6675;
         cargo_subtype_text:             sw_BR380_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 

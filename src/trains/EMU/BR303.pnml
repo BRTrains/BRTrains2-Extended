@@ -468,9 +468,9 @@ item (FEAT_TRAINS, item_BR303, 3030) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					34; // Standard Class
-        cost_factor: 					108;
+        cost_factor: 					195;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			4310;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -481,7 +481,7 @@ item (FEAT_TRAINS, item_BR303, 3030) {
         weight:                         126 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.11;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.05;
         length:                         4;
     }
@@ -538,9 +538,9 @@ item (FEAT_TRAINS, item_BR303_RB, 3031) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					15; // Standard Class
-        cost_factor: 					108;
+        cost_factor: 					195;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			4310;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -551,7 +551,7 @@ item (FEAT_TRAINS, item_BR303_RB, 3031) {
         weight:                         126 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.11;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.05;
         length:                         4;
     }
@@ -567,8 +567,8 @@ item (FEAT_TRAINS, item_BR303_RB, 3031) {
         articulated_part:               sw_articulated_BR303_RB;
         purchase_cargo_capacity:        return (20 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR303_RB;
-        cost_factor:                    131;
-        running_cost_factor:            4213;
+        cost_factor:                    195;
+        running_cost_factor:            4310;
         cargo_subtype_text:             sw_BR303_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;

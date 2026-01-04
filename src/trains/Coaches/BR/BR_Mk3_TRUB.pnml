@@ -160,9 +160,9 @@ item (FEAT_TRAINS, item_BR_Mk3_TRUB, 12127) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					10;
-        cost_factor: 					108;			
+        cost_factor: 					843;			
         running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			90;
+        running_cost_factor: 			1882;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -185,8 +185,8 @@ item (FEAT_TRAINS, item_BR_Mk3_TRUB, 12127) {
         speed:                          sw_speed_BR_Mk3() * 1609 / 1000;
         purchase_cargo_capacity:        return (5 * param_pax); // divide by number of articulated parTRUB and floor
         cargo_capacity:                 sw_capacity_BR_Mk3_TRUB;
-        cost_factor:                    1686;
-        running_cost_factor:            2058;
+        cost_factor:                    843;
+        running_cost_factor:            1882;
         cargo_subtype_text:             sw_BR_Mk3_TRUB_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 

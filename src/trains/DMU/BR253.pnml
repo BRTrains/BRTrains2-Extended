@@ -128,9 +128,9 @@ item (FEAT_TRAINS, item_BR253, 2530) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					79;
-        cost_factor: 					108;
+        cost_factor: 					400;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			12814;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -141,7 +141,7 @@ item (FEAT_TRAINS, item_BR253, 2530) {
         weight:                         378 ton;
         engine_class:                   ENGINE_CLASS_DIESEL;
         dual_headed:                    0;
-        air_drag_coefficient:           0.05;
+        air_drag_coefficient:           0.03;
         tractive_effort_coefficient:    0.05;
         length:                         8;
     }

@@ -1865,9 +1865,9 @@ item (FEAT_TRAINS, item_BR309, 3090) {
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					09;
-        cost_factor: 					108;					
+        cost_factor: 					420;					
         running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			90;
+        running_cost_factor: 			9216;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -1878,7 +1878,7 @@ item (FEAT_TRAINS, item_BR309, 3090) {
         weight:                         442 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.08;
+        air_drag_coefficient:           0.03;
         tractive_effort_coefficient:    0.05;
         length:                         4;
     }
@@ -2026,9 +2026,9 @@ item (FEAT_TRAINS, item_BR309_1, 3091) {
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					18;
-        cost_factor: 					108;					
+        cost_factor: 					420;					
         running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			90;
+        running_cost_factor: 			9216;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -2039,7 +2039,7 @@ item (FEAT_TRAINS, item_BR309_1, 3091) {
         weight:                         101 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.08;
+        air_drag_coefficient:           0.03;
         tractive_effort_coefficient:    0.05;
         length:                         4;
     }
@@ -2055,8 +2055,8 @@ item (FEAT_TRAINS, item_BR309_1, 3091) {
         articulated_part:               sw_articulated_BR309_1;
         purchase_cargo_capacity:        return ( 21 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR309_1;
-        cost_factor:                    143;
-        running_cost_factor:            5629;
+        cost_factor:                    420;
+        running_cost_factor:            9216;
         cargo_subtype_text:             sw_BR309_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 
@@ -2190,9 +2190,9 @@ item (FEAT_TRAINS, item_BR309_2, 3092) {
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					36;
-        cost_factor: 					108;					
+        cost_factor: 					420;					
         running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			90;
+        running_cost_factor: 			9216;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -2203,7 +2203,7 @@ item (FEAT_TRAINS, item_BR309_2, 3092) {
         weight:                         171 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.04;
+        air_drag_coefficient:           0.03;
         tractive_effort_coefficient:    0.05;
         length:                         4;
     }
@@ -2219,8 +2219,8 @@ item (FEAT_TRAINS, item_BR309_2, 3092) {
         articulated_part:               sw_articulated_BR309_2;
         purchase_cargo_capacity:        return ( 16 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR309_2;
-        cost_factor:                    184;
-        running_cost_factor:            5680;
+        cost_factor:                    420;
+        running_cost_factor:            9216;
         cargo_subtype_text:             sw_BR309_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 
@@ -2349,9 +2349,9 @@ item (FEAT_TRAINS, item_BR309_3, 3093) {
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					36;
-        cost_factor: 					108;					
+        cost_factor: 					420;					
         running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			90;
+        running_cost_factor: 			9216;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -2362,7 +2362,7 @@ item (FEAT_TRAINS, item_BR309_3, 3093) {
         weight:                         170 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.04;
+        air_drag_coefficient:           0.03;
         tractive_effort_coefficient:    0.05;
         length:                         4;
     }
@@ -2378,8 +2378,8 @@ item (FEAT_TRAINS, item_BR309_3, 3093) {
         articulated_part:               sw_articulated_BR309_3;
         purchase_cargo_capacity:        return ( 19 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR309_3;
-        cost_factor:                    202;
-        running_cost_factor:            5705;
+        cost_factor:                    420;
+        running_cost_factor:            9216;
         cargo_subtype_text:             sw_BR309_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 
@@ -2506,9 +2506,9 @@ item (FEAT_TRAINS, item_BR309_4, 3094) {
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					36;
-        cost_factor: 					108;					
+        cost_factor: 					420;					
         running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			90;
+        running_cost_factor: 			9216;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -2519,7 +2519,7 @@ item (FEAT_TRAINS, item_BR309_4, 3094) {
         weight:                         170 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.04;
+        air_drag_coefficient:           0.03;
         tractive_effort_coefficient:    0.05;
         length:                         4;
     }
@@ -2535,8 +2535,8 @@ item (FEAT_TRAINS, item_BR309_4, 3094) {
         articulated_part:               sw_articulated_BR309_4;
         purchase_cargo_capacity:        return ( 18 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR309_4;
-        cost_factor:                    195;
-        running_cost_factor:            5695;
+        cost_factor:                    420;
+        running_cost_factor:            9216;
         cargo_subtype_text:             sw_BR309_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 

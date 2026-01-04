@@ -991,9 +991,9 @@ item (FEAT_TRAINS, item_BR404, 4040) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					45; // Standard Class
-        cost_factor: 					108;
+        cost_factor: 					188;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			4003;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -1004,7 +1004,7 @@ item (FEAT_TRAINS, item_BR404, 4040) {
         weight:                         161 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.09;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.07;
         length:                         4;
     }
@@ -1065,9 +1065,9 @@ item (FEAT_TRAINS, item_BR404_RES, 4041) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					45; // Standard Class
-        cost_factor: 					108;
+        cost_factor: 					188;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			4003;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -1078,7 +1078,7 @@ item (FEAT_TRAINS, item_BR404_RES, 4041) {
         weight:                         161 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.09;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.07;
         length:                         4;
     }
@@ -1096,8 +1096,8 @@ item (FEAT_TRAINS, item_BR404_RES, 4041) {
         articulated_part:               sw_articulated_BR404_RES;  
         purchase_cargo_capacity:        return ( 18 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR404_RES;
-        cost_factor:                    164;
-        running_cost_factor:            3974;
+        cost_factor:                    188;
+        running_cost_factor:            4003;
         cargo_subtype_text:             sw_BR404_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
@@ -1140,9 +1140,9 @@ item (FEAT_TRAINS, item_BR404_BUF, 4042) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					45; // Standard Class
-        cost_factor: 					108;
+        cost_factor: 					188;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			4003;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -1153,7 +1153,7 @@ item (FEAT_TRAINS, item_BR404_BUF, 4042) {
         weight:                         161 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.09;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.07;
         length:                         4;
     }
@@ -1171,8 +1171,8 @@ item (FEAT_TRAINS, item_BR404_BUF, 4042) {
         articulated_part:               sw_articulated_BR404_BUF;  
         purchase_cargo_capacity:        return ( 17 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR404_BUF;
-        cost_factor:                    159;
-        running_cost_factor:            3964;
+        cost_factor:                    188;
+        running_cost_factor:            4003;
         cargo_subtype_text:             sw_BR404_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;

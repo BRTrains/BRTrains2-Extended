@@ -229,9 +229,9 @@ item (FEAT_TRAINS, item_GWR_4300, 430) {
         // misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					68;
         running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			90;
+        running_cost_factor: 			4564;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -242,7 +242,7 @@ item (FEAT_TRAINS, item_GWR_4300, 430) {
         weight:                         104 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.11;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.11;
         length:                         8;
     }
@@ -260,7 +260,7 @@ item (FEAT_TRAINS, item_GWR_4300, 430) {
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
         cost_factor:                    68;
-        running_cost_factor:            4566;
+        running_cost_factor:            4564;
         cargo_subtype_text:             sw_GWR_4300_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 

@@ -187,9 +187,9 @@ item (FEAT_TRAINS, item_WD_50t_Warflat, 11802) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 32 * param_freight;
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					512;
         running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			90;
+        running_cost_factor: 			570;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

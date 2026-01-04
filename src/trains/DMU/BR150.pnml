@@ -592,9 +592,9 @@ item (FEAT_TRAINS, item_BR150_0, 1500) {
         cargo_capacity:                 1;
         // for MUs, loading speed is multiplied by number of carriages * 0.75
         loading_speed:					34; // Standard Class
-        cost_factor: 					108;
+        cost_factor: 					197;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			4554;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -605,8 +605,8 @@ item (FEAT_TRAINS, item_BR150_0, 1500) {
         weight:                         107ton;
         engine_class:                   ENGINE_CLASS_DIESEL;
         dual_headed:                    0;
-        air_drag_coefficient:           0.11;
-        tractive_effort_coefficient:    0.07;
+        air_drag_coefficient:           0.04;
+        tractive_effort_coefficient:    0.09;
         length:                         4;
     }
 
@@ -671,9 +671,9 @@ item (FEAT_TRAINS, item_BR150_1, 1501) {
         cargo_capacity:                 1;
         // for MUs, loading speed is multiplied by number of carriages * 0.75
         loading_speed:					23; // Standard Class
-        cost_factor: 					108;
+        cost_factor: 					197;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			4554;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -684,8 +684,8 @@ item (FEAT_TRAINS, item_BR150_1, 1501) {
         weight:                         107ton;
         engine_class:                   ENGINE_CLASS_DIESEL;
         dual_headed:                    0;
-        air_drag_coefficient:           0.11;
-        tractive_effort_coefficient:    0.07;
+        air_drag_coefficient:           0.04;
+        tractive_effort_coefficient:    0.09;
         length:                         4;
     }
 
@@ -700,8 +700,8 @@ item (FEAT_TRAINS, item_BR150_1, 1501) {
         articulated_part:               sw_articulated_BR150_1;
         purchase_cargo_capacity:        return (25 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR150_1;
-        cost_factor:                    141;
-        running_cost_factor:            4008;
+        cost_factor:                    197;
+        running_cost_factor:            4554;
         cargo_subtype_text:             sw_BR150_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 
@@ -743,9 +743,9 @@ item (FEAT_TRAINS, item_BR150_2, 1502) {
         cargo_capacity:                 1;
         // for MUs, loading speed is multiplied by number of carriages * 0.75
         loading_speed:					23; // Standard Class
-        cost_factor: 					108;
+        cost_factor: 					197;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			4554;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -756,8 +756,8 @@ item (FEAT_TRAINS, item_BR150_2, 1502) {
         weight:                         107ton;
         engine_class:                   ENGINE_CLASS_DIESEL;
         dual_headed:                    0;
-        air_drag_coefficient:           0.11;
-        tractive_effort_coefficient:    0.07;
+        air_drag_coefficient:           0.04;
+        tractive_effort_coefficient:    0.09;
         length:                         4;
     }
 
@@ -772,8 +772,8 @@ item (FEAT_TRAINS, item_BR150_2, 1502) {
         articulated_part:               sw_articulated_BR150_2;
         purchase_cargo_capacity:        return (25 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR150_1;
-        cost_factor:                    141;
-        running_cost_factor:            4008;
+        cost_factor:                    197;
+        running_cost_factor:            4554;
         cargo_subtype_text:             sw_BR150_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 

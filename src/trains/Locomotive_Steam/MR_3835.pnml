@@ -71,9 +71,9 @@ item (FEAT_TRAINS, item_MR_3835, 4383) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					58;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			3818;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -84,7 +84,7 @@ item (FEAT_TRAINS, item_MR_3835, 4383) {
         weight:                         89 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.16;
+        air_drag_coefficient:           0.06;
         tractive_effort_coefficient:    0.13;
         length:                         8;
     }

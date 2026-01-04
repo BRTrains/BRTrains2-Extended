@@ -37,9 +37,9 @@ item (FEAT_TRAINS, item_RCH_1907_1_Plank, 11404) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 12 * param_freight;
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					206;
         running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			90;
+        running_cost_factor: 			282;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -57,8 +57,8 @@ item (FEAT_TRAINS, item_RCH_1907_1_Plank, 11404) {
         purchase:                       spriteset_RCH_1907_1_Plank_purchase;
         
         // internal code
-        cost_factor:                    414;
-        running_cost_factor:            285;
+        cost_factor:                    206;
+        running_cost_factor:            282;
         cargo_subtype_text:             sw_RCH_1907_1_Plank_cargo_subtype_text; 
         // colour_mapping:                 return PALETTE_CC_FIRST;
         colour_mapping:                 switch_generic_recolour;

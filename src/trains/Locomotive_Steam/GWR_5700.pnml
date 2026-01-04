@@ -314,9 +314,9 @@ item (FEAT_TRAINS, item_GWR_5700, 570) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:				    5; // All freight / Locomotive
-        cost_factor: 					108;
+        cost_factor: 					61;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			3832;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -327,7 +327,7 @@ item (FEAT_TRAINS, item_GWR_5700, 570) {
         weight:                         48 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.16;
+        air_drag_coefficient:           0.06;
         tractive_effort_coefficient:    0.21;
         length:                         6;
     }
@@ -402,9 +402,9 @@ item (FEAT_TRAINS, item_GWR_6400, 640) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:				    5; // All freight / Locomotive
-        cost_factor: 					108;
+        cost_factor: 					61;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			3832;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -415,8 +415,8 @@ item (FEAT_TRAINS, item_GWR_6400, 640) {
         weight:                         46 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.16;
-        tractive_effort_coefficient:    0.16;
+        air_drag_coefficient:           0.06;
+        tractive_effort_coefficient:    0.21;
         length:                         6;
     }
 
@@ -430,8 +430,8 @@ item (FEAT_TRAINS, item_GWR_6400, 640) {
         // internal code
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
-        cost_factor:                    55;
-        running_cost_factor:            3442;
+        cost_factor:                    61;
+        running_cost_factor:            3832;
         cargo_subtype_text:             sw_GWR_6400_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 
@@ -464,9 +464,9 @@ item (FEAT_TRAINS, item_GWR_7400, 740) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:				    5; // All freight / Locomotive
-        cost_factor: 					108;
+        cost_factor: 					61;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			3832;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -477,8 +477,8 @@ item (FEAT_TRAINS, item_GWR_7400, 740) {
         weight:                         46 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.16;
-        tractive_effort_coefficient:    0.18;
+        air_drag_coefficient:           0.06;
+        tractive_effort_coefficient:    0.21;
         length:                         6;
     }
 
@@ -492,8 +492,8 @@ item (FEAT_TRAINS, item_GWR_7400, 740) {
         // internal code
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
-        cost_factor:                    55;
-        running_cost_factor:            3471;
+        cost_factor:                    61;
+        running_cost_factor:            3832;
         cargo_subtype_text:             sw_GWR_6400_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 

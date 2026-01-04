@@ -459,7 +459,7 @@ item (FEAT_TRAINS, item_BR_FFA_2, 12260) {
         cargo_capacity:                 27 * param_freight;
         loading_speed:				    5; // All freight / Locomotive
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			1384;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -517,7 +517,7 @@ item (FEAT_TRAINS, item_BR_FFA_3, 12261) {
         cargo_capacity:                 27 * param_freight;
         loading_speed:				    5; // All freight / Locomotive
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			1384;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -537,8 +537,8 @@ item (FEAT_TRAINS, item_BR_FFA_3, 12261) {
         // internal code
         length:                         sw_length_BR_FFA_3;
         articulated_part:               sw_articulated_BR_FFA_3;
-        cost_factor:                    3118;
-        running_cost_factor:            1623;
+        cost_factor:                    2186;
+        running_cost_factor:            1384;
         cargo_subtype_text:             sw_BR_FFA_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 
@@ -575,7 +575,7 @@ item (FEAT_TRAINS, item_BR_FFA_5, 12262) {
         cargo_capacity:                 27 * param_freight;
         loading_speed:				    5; // All freight / Locomotive
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			1384;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -595,8 +595,8 @@ item (FEAT_TRAINS, item_BR_FFA_5, 12262) {
         // internal code
         length:                         sw_length_BR_FFA_5;
         articulated_part:               sw_articulated_BR_FFA_5;
-        cost_factor:                    4985;
-        running_cost_factor:            2096;
+        cost_factor:                    2186;
+        running_cost_factor:            1384;
         cargo_subtype_text:             sw_BR_FFA_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 

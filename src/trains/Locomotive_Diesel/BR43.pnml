@@ -825,9 +825,9 @@ item (FEAT_TRAINS, item_BR43_HST, 4301) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					133;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			8713;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -838,7 +838,7 @@ item (FEAT_TRAINS, item_BR43_HST, 4301) {
         weight:                         70 ton;
         engine_class:                   ENGINE_CLASS_DIESEL;
         dual_headed:                    0;
-        air_drag_coefficient:           0.05;
+        air_drag_coefficient:           0.03;
         tractive_effort_coefficient:    0.12;
         length:                         8;
     }
@@ -857,7 +857,7 @@ item (FEAT_TRAINS, item_BR43_HST, 4301) {
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
         cost_factor:                    133;
-        running_cost_factor:            9533;
+        running_cost_factor:            8713;
         cargo_subtype_text:             sw_BR43_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 sw_generic_recolour;

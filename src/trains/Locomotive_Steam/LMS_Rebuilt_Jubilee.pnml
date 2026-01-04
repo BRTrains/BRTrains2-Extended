@@ -146,9 +146,9 @@ item (FEAT_TRAINS, item_LMS_Rebuilt_Jubilee, 4570) { // BR Number range 45735, 4
         cargo_capacity:                 1;
 		cargo_allow_refit:				[PASS, GOOD];
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					112;
         running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			90;
+        running_cost_factor: 			6992;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -159,7 +159,7 @@ item (FEAT_TRAINS, item_LMS_Rebuilt_Jubilee, 4570) { // BR Number range 45735, 4
         weight:                         139 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.08;
+        air_drag_coefficient:           0.03;
         tractive_effort_coefficient:    0.1;
         length:                         8;
     }

@@ -471,9 +471,9 @@ item (FEAT_TRAINS, item_BR47, 4700) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					120;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			7923;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -484,7 +484,7 @@ item (FEAT_TRAINS, item_BR47, 4700) {
         weight:                         114 ton;
         engine_class:                   ENGINE_CLASS_DIESEL;
         dual_headed:                    0;
-        air_drag_coefficient:           0.08;
+        air_drag_coefficient:           0.03;
         tractive_effort_coefficient:    0.22;
         length:                         4;
     }
@@ -538,9 +538,9 @@ item (FEAT_TRAINS, item_BR48, 4800) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					120;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			7923;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -551,7 +551,7 @@ item (FEAT_TRAINS, item_BR48, 4800) {
         weight:                         114 ton;
         engine_class:                   ENGINE_CLASS_DIESEL;
         dual_headed:                    0;
-        air_drag_coefficient:           0.09;
+        air_drag_coefficient:           0.03;
         tractive_effort_coefficient:    0.22;
         length:                         4;
     }
@@ -567,8 +567,8 @@ item (FEAT_TRAINS, item_BR48, 4800) {
         articulated_part:               sw_articulated_BR48;
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
-        cost_factor:                    115;
-        running_cost_factor:            7582;
+        cost_factor:                    120;
+        running_cost_factor:            7923;
         cargo_subtype_text:             sw_BR47_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 

@@ -54,9 +54,9 @@ item (FEAT_TRAINS, item_BR_Oxfit, 12255) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 12 * param_freight;
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					351;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			643;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

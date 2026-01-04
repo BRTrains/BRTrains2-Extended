@@ -1192,9 +1192,9 @@ item (FEAT_TRAINS, item_BR365, 3650) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					45; // Standard Class
-        cost_factor: 					108;
+        cost_factor: 					269;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			7733;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -1205,7 +1205,7 @@ item (FEAT_TRAINS, item_BR365, 3650) {
         weight:                         152 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.08;
+        air_drag_coefficient:           0.03;
         tractive_effort_coefficient:    0.07;
         length:                         8;
     }
@@ -1264,9 +1264,9 @@ item (FEAT_TRAINS, item_BR365_RB, 3651) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					45; // Standard Class
-        cost_factor: 					108;
+        cost_factor: 					269;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			7733;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -1277,7 +1277,7 @@ item (FEAT_TRAINS, item_BR365_RB, 3651) {
         weight:                         152 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.08;
+        air_drag_coefficient:           0.03;
         tractive_effort_coefficient:    0.07;
         length:                         8;
     }
@@ -1296,8 +1296,8 @@ item (FEAT_TRAINS, item_BR365_RB, 3651) {
         speed:                          sw_speed_BR365() * 1609 / 1000;  
         purchase_cargo_capacity:        return (21 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR365;
-        cost_factor:                    264;
-        running_cost_factor:            7528;
+        cost_factor:                    269;
+        running_cost_factor:            7733;
         cargo_subtype_text:             sw_BR365_cargo_subtype_text; 
         // power:                          sw_power_BR365;
         colour_mapping:                 return PALETTE_CC_FIRST;

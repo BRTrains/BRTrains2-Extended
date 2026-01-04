@@ -119,9 +119,9 @@ item (FEAT_TRAINS, item_BR_VEA, 12267) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 12 * param_freight;
         loading_speed:				    5; // All freight / Locomotive
-        cost_factor: 					108;
+        cost_factor: 					527;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			1131;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -171,9 +171,9 @@ item (FEAT_TRAINS, item_BR_VWV, 12268) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 12 * param_freight;
         loading_speed:				    5; // All freight / Locomotive
-        cost_factor: 					108;
+        cost_factor: 					527;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			1131;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -190,8 +190,8 @@ item (FEAT_TRAINS, item_BR_VWV, 12268) {
         purchase:                       sw_BR_VEA_purchase_sprite;
 
         // internal code
-        cost_factor:                    394;
-        running_cost_factor:            765;
+        cost_factor:                    527;
+        running_cost_factor:            1131;
         cargo_subtype_text:             sw_BR_VEA_cargo_subtype_text; 
         // power:                          sw_power_BR_VEA;
         colour_mapping:                 return PALETTE_CC_FIRST;

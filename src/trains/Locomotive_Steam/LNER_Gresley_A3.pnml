@@ -241,9 +241,9 @@ item (FEAT_TRAINS, item_LNER_A3, 6002) {
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					111;
         running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			90;
+        running_cost_factor: 			6943;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -254,7 +254,7 @@ item (FEAT_TRAINS, item_LNER_A3, 6002) {
         weight:                         157 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.08;
+        air_drag_coefficient:           0.03;
         tractive_effort_coefficient:    0.09;
         length:                         8;
     }
@@ -380,9 +380,9 @@ item (FEAT_TRAINS, item_LNER_A3_PD, 6003) {
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					111;
         running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			90;
+        running_cost_factor: 			6943;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -393,7 +393,7 @@ item (FEAT_TRAINS, item_LNER_A3_PD, 6003) {
         weight:                         157 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.08;
+        air_drag_coefficient:           0.03;
         tractive_effort_coefficient:    0.09;
         length:                         8;
     }
@@ -519,9 +519,9 @@ item (FEAT_TRAINS, item_LNER_A3_WD, 6006) {
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					111;
         running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			90;
+        running_cost_factor: 			6943;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -532,7 +532,7 @@ item (FEAT_TRAINS, item_LNER_A3_WD, 6006) {
         weight:                         157 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.08;
+        air_drag_coefficient:           0.03;
         tractive_effort_coefficient:    0.09;
         length:                         8;
     }

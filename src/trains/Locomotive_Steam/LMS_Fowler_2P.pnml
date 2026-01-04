@@ -319,9 +319,9 @@ item (FEAT_TRAINS, item_LMS_Fowler_2P, 4056) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:				    5; // All freight / Locomotive
-        cost_factor: 					108;
+        cost_factor: 					58;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			3715;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -332,7 +332,7 @@ item (FEAT_TRAINS, item_LMS_Fowler_2P, 4056) {
         weight:                         98 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.14;
+        air_drag_coefficient:           0.05;
         tractive_effort_coefficient:    0.09;
         length:                         8;
     }
@@ -461,9 +461,9 @@ item (FEAT_TRAINS, item_MR_483, 4048) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:				    5; // All freight / Locomotive
-        cost_factor: 					108;
+        cost_factor: 					58;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			3715;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -474,8 +474,8 @@ item (FEAT_TRAINS, item_MR_483, 4048) {
         weight:                         98 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.16;
-        tractive_effort_coefficient:    0.08;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.09;
         length:                         8;
     }
 
@@ -491,8 +491,8 @@ item (FEAT_TRAINS, item_MR_483, 4048) {
         articulated_part:               sw_articulated_MR_483;
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
-        cost_factor:                    35;
-        running_cost_factor:            2403;
+        cost_factor:                    58;
+        running_cost_factor:            3715;
         cargo_subtype_text:             sw_MR_483_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 
@@ -531,9 +531,9 @@ item (FEAT_TRAINS, item_MR_483_RB, 4049) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:				    5; // All freight / Locomotive
-        cost_factor: 					108;
+        cost_factor: 					58;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			3715;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -544,8 +544,8 @@ item (FEAT_TRAINS, item_MR_483_RB, 4049) {
         weight:                         98 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.14;
-        tractive_effort_coefficient:    0.08;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.09;
         length:                         8;
     }
 
@@ -561,8 +561,8 @@ item (FEAT_TRAINS, item_MR_483_RB, 4049) {
         articulated_part:               sw_articulated_MR_483_RB;
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
-        cost_factor:                    51;
-        running_cost_factor:            3408;
+        cost_factor:                    58;
+        running_cost_factor:            3715;
         cargo_subtype_text:             sw_MR_483_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 

@@ -211,9 +211,9 @@ item (FEAT_TRAINS, item_BR_Mk4_TRFB, 12164) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					15;
-        cost_factor: 					108;
+        cost_factor: 					1075;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			2140;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -235,8 +235,8 @@ item (FEAT_TRAINS, item_BR_Mk4_TRFB, 12164) {
         articulated_part:               sw_articulated_BR_Mk4_TRFB;
         purchase_cargo_capacity:        return (10 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR_Mk4_TRFB;
-        cost_factor:                    2150;
-        running_cost_factor:            2143;
+        cost_factor:                    1075;
+        running_cost_factor:            2140;
         cargo_subtype_text:             sw_BR_Mk4_TRFB_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 

@@ -321,9 +321,9 @@ item (FEAT_TRAINS, item_BR_Standard_9F, 9202) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					94;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			6139;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -334,7 +334,7 @@ item (FEAT_TRAINS, item_BR_Standard_9F, 9202) {
         weight:                         148 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.14;
+        air_drag_coefficient:           0.05;
         tractive_effort_coefficient:    0.12;
         length:                         8;
     }
@@ -392,9 +392,9 @@ item (FEAT_TRAINS, item_BR_Standard_9F_DC, 9203) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					94;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			6139;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -405,7 +405,7 @@ item (FEAT_TRAINS, item_BR_Standard_9F_DC, 9203) {
         weight:                         148 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.14;
+        air_drag_coefficient:           0.05;
         tractive_effort_coefficient:    0.12;
         length:                         8;
     }
@@ -423,8 +423,8 @@ item (FEAT_TRAINS, item_BR_Standard_9F_DC, 9203) {
         speed:                          sw_speed_BR_Standard_9F() * 1609 / 1000;
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
-        cost_factor:                    95;
-        running_cost_factor:            6163;
+        cost_factor:                    94;
+        running_cost_factor:            6139;
         cargo_subtype_text:             sw_BR_Standard_9F_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
@@ -470,9 +470,9 @@ item (FEAT_TRAINS, item_BR_Standard_9F_Named, 9204) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					5;
-        cost_factor: 					108;
+        cost_factor: 					94;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			6139;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -483,7 +483,7 @@ item (FEAT_TRAINS, item_BR_Standard_9F_Named, 9204) {
         weight:                         148 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.09;
+        air_drag_coefficient:           0.05;
         tractive_effort_coefficient:    0.12;
         length:                         8;
     }
@@ -501,8 +501,8 @@ item (FEAT_TRAINS, item_BR_Standard_9F_Named, 9204) {
         speed:                          sw_speed_BR_Standard_9F_Named() * 1609 / 1000;
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
-        cost_factor:                    107;
-        running_cost_factor:            7041;
+        cost_factor:                    94;
+        running_cost_factor:            6139;
         cargo_subtype_text:             sw_BR_Standard_9F_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;

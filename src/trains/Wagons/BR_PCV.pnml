@@ -186,9 +186,9 @@ item (FEAT_TRAINS, item_BR_PCV, 12270) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 22 * param_freight;
         loading_speed:				    5; // All freight / Locomotive
-        cost_factor: 					108;
+        cost_factor: 					465;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			672;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

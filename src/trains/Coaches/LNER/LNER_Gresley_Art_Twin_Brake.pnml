@@ -438,9 +438,9 @@ item (FEAT_TRAINS, item_LNER_BT_T, 11500) {
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					12;
-        cost_factor: 					108;					
+        cost_factor: 					1698;					
         running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			90;
+        running_cost_factor: 			960;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -461,7 +461,7 @@ item (FEAT_TRAINS, item_LNER_BT_T, 11500) {
         articulated_part:               sw_articulated_LNER_BT_T;
         purchase_cargo_capacity:        return ( 23 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_LNER_BT_T;
-        cost_factor:                    3396;
+        cost_factor:                    1698;
         running_cost_factor:            960;
         cargo_subtype_text:             sw_LNER_BT_T_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;

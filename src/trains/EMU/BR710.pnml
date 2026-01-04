@@ -342,9 +342,9 @@ item (FEAT_TRAINS, item_BR710_1_2, 7100) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					45; // Standard Class
-        cost_factor: 					108;
+        cost_factor: 					104;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			6314;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -355,7 +355,7 @@ item (FEAT_TRAINS, item_BR710_1_2, 7100) {
         weight:                         151 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.11;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.09;
         length:                         8;
     }
@@ -373,8 +373,8 @@ item (FEAT_TRAINS, item_BR710_1_2, 7100) {
         speed:                          sw_speed_BR710() * 1609 / 1000;  
         purchase_cargo_capacity:        return (15 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR710_1_2;
-        cost_factor:                    226;
-        running_cost_factor:            7421;
+        cost_factor:                    104;
+        running_cost_factor:            6314;
         cargo_subtype_text:             sw_BR710_cargo_subtype_text; 
         // power:                          sw_power_BR710;
         colour_mapping:                 return PALETTE_CC_FIRST;
@@ -414,9 +414,9 @@ item (FEAT_TRAINS, item_BR710_3, 7103) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					57; // Standard Class
-        cost_factor: 					108;
+        cost_factor: 					104;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			6314;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -427,7 +427,7 @@ item (FEAT_TRAINS, item_BR710_3, 7103) {
         weight:                         182 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.11;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.09;
         length:                         8;
     }
@@ -445,8 +445,8 @@ item (FEAT_TRAINS, item_BR710_3, 7103) {
         speed:                          sw_speed_BR710() * 1609 / 1000;  
         purchase_cargo_capacity:        return (15 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR710_3;
-        cost_factor:                    226;
-        running_cost_factor:            7421;
+        cost_factor:                    104;
+        running_cost_factor:            6314;
         cargo_subtype_text:             sw_BR710_cargo_subtype_text; 
         // power:                          sw_power_BR710;
         colour_mapping:                 return PALETTE_CC_FIRST;

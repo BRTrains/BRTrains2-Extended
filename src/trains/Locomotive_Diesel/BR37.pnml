@@ -469,9 +469,9 @@ item (FEAT_TRAINS, item_BR37, 3700) {
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					5;
-        cost_factor: 					108;			
+        cost_factor: 					90;			
         running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			90;
+        running_cost_factor: 			6070;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -482,7 +482,7 @@ item (FEAT_TRAINS, item_BR37, 3700) {
         weight:                         102 ton;
         engine_class:                   ENGINE_CLASS_DIESEL;
         dual_headed:                    0;
-        air_drag_coefficient:           0.09;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.25;
         length:                         4;
     }

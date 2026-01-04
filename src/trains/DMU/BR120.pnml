@@ -1198,9 +1198,9 @@ item (FEAT_TRAINS, item_BR120, 1200) {
         cargo_capacity:                 1;
         // for MUs, loading speed is multiplied by number of carriages * 0.75
         loading_speed:					34; // Standard Class
-        cost_factor: 					108;
+        cost_factor: 					23;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			1565;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -1211,8 +1211,8 @@ item (FEAT_TRAINS, item_BR120, 1200) {
         weight:                         105 ton;
         engine_class:                   ENGINE_CLASS_DIESEL;
         dual_headed:                    0;
-        air_drag_coefficient:           0.10;
-        tractive_effort_coefficient:    0.06;
+        air_drag_coefficient:           0.12;
+        tractive_effort_coefficient:    0.23;
         length:                         4;
     }
 
@@ -1227,8 +1227,8 @@ item (FEAT_TRAINS, item_BR120, 1200) {
         articulated_part:               sw_articulated_BR120;
         purchase_cargo_capacity:        return ( 20 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR120;
-        cost_factor:                    176;
-        running_cost_factor:            3764;
+        cost_factor:                    23;
+        running_cost_factor:            1565;
         cargo_subtype_text:             sw_BR120_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 
@@ -1269,9 +1269,9 @@ item (FEAT_TRAINS, item_BR120_1, 1201) {
         cargo_capacity:                 1;       
         // for MUs, loading speed is multiplied by number of carriages * 0.75
         loading_speed:					34; // Standard Class
-        cost_factor: 					108;
+        cost_factor: 					23;
         running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_factor: 			1565;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -1282,8 +1282,8 @@ item (FEAT_TRAINS, item_BR120_1, 1201) {
         weight:                         105 ton;
         engine_class:                   ENGINE_CLASS_DIESEL;
         dual_headed:                    0;
-        air_drag_coefficient:           0.10;
-        tractive_effort_coefficient:    0.06;
+        air_drag_coefficient:           0.12;
+        tractive_effort_coefficient:    0.23;
         length:                         4;
     }
 
@@ -1298,8 +1298,8 @@ item (FEAT_TRAINS, item_BR120_1, 1201) {
         articulated_part:               sw_articulated_BR120_1;
         purchase_cargo_capacity:        return ( 21 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR120_1;
-        cost_factor:                    183;
-        running_cost_factor:            3774;
+        cost_factor:                    23;
+        running_cost_factor:            1565;
         cargo_subtype_text:             sw_BR120_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 

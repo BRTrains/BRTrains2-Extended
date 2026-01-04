@@ -246,9 +246,9 @@ item (FEAT_TRAINS, item_BR_Mk1_SO, 12037) { // Diagram 94 BR Mk1 SO
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 16 * param_pax;
         loading_speed:					15;
-        cost_factor: 					108;
+        cost_factor: 					979;
         running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			90;
+        running_cost_factor: 			1355;
 		
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -267,7 +267,7 @@ item (FEAT_TRAINS, item_BR_Mk1_SO, 12037) { // Diagram 94 BR Mk1 SO
         // internal code
         articulated_part:               switch_articulated_BR_Mk1_SO;
         cost_factor:                    979;
-        running_cost_factor:            1358;
+        running_cost_factor:            1355;
         cargo_subtype_text:             sw_BR_Mk1_TSO_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 
@@ -308,9 +308,9 @@ item (FEAT_TRAINS, item_BR_Mk1_TSO, 12038) { // Diagram 93 BR Mk1 TSO
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					15;
-        cost_factor: 					108;
+        cost_factor: 					979;
         running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			90;
+        running_cost_factor: 			1355;
 		
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -330,8 +330,8 @@ item (FEAT_TRAINS, item_BR_Mk1_TSO, 12038) { // Diagram 93 BR Mk1 TSO
         articulated_part:               switch_articulated_BR_Mk1_TSO;
         purchase_cargo_capacity:        return (21 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR_Mk1_TSO;
-        cost_factor:                    1163;
-        running_cost_factor:            1404;
+        cost_factor:                    979;
+        running_cost_factor:            1355;
         cargo_subtype_text:             sw_BR_Mk1_TSO_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 

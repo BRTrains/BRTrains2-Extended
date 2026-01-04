@@ -142,9 +142,9 @@ item (FEAT_TRAINS, item_BR68, 6800) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					5;
-        cost_factor: 					108;				
+        cost_factor: 					164;				
         running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			90;
+        running_cost_factor: 			10386;
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -155,7 +155,7 @@ item (FEAT_TRAINS, item_BR68, 6800) {
         weight:                         85 ton;
         engine_class:                   ENGINE_CLASS_DIESEL;
         dual_headed:                    0;
-        air_drag_coefficient:           0.08;
+        air_drag_coefficient:           0.03;
         tractive_effort_coefficient:    0.38;
         length:                         8;
     }
