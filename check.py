@@ -140,6 +140,9 @@ def process_pnml_file(path, csv_aggregates, do_check, do_overwrite):
 
         new_value = csv_values[field]
 
+        if (new_value > 32767):
+            new_value = 32767
+
         if do_check and old_value != new_value:
             print(
                 f"[MISMATCH] {path.name} | {item_id} | {field}: "
