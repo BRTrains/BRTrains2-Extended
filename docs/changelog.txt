@@ -2,6 +2,7 @@
 # v0.0.5 (Alpha)
 - Added Generic 48' Elliptical T
 - Added Generic 48' F
+- Added RCH 1927 10t Open Wagon and Van
 - Buffed all unit air drag universally
 - Fixed wrong cargo being available for WD 10t Tank and RCH 1907 Wagons
 - Fixed air drag for BR 404

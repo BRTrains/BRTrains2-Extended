@@ -211,6 +211,9 @@ sort(FEAT_TRAINS, [
         item_RCH_1907_5_Plank,
         item_RCH_1907_7_Plank,
         item_RCH_1907_Van,
+    item_RCH_1927_Mixed,
+        item_RCH_1927_10t,
+        item_RCH_1927_Van,
     // GWR Wagons
     item_GWR_SiphonG_O11,
     item_GWR_Brake_Van_Toad,

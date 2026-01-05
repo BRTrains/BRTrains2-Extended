@@ -66,3 +66,54 @@ item (FEAT_TRAINS, item_RCH_1907_7_Plank, 11401) {
                                                     string(str_RCH_1907_liveries)));
     }
 }
+
+// unit definition
+item (FEAT_TRAINS, item_RCH_1927_10t, 11809) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_RCH_1927_10t);
+        variant_group:                  item_RCH_1927_Mixed; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1927,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        refittable_cargo_classes:       bitmask(CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_HAZARDOUS, CC_COVERED, CC_POWDERIZED, CC_NEO_BULK, CC_POTABLE);
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:              [GOOD];
+        cargo_disallow_refit:           [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 10 * param_freight;
+        loading_speed:					5;
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          50 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          0 hp;
+        weight:                         8 ton;
+        length:                         4;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_loadstack_RCH_1907_7_Plank_Cargo;
+        purchase:                       spriteset_RCH_1907_7_Plank_purchase;
+        
+        // internal code
+        speed:                          sw_speed_RCH_1927() * 1609 / 1000;
+        cost_factor:                    276;
+        running_cost_factor:            512;
+        cargo_subtype_text:             sw_RCH_1907_7_Plank_cargo_subtype_text; 
+        colour_mapping:                 switch_generic_recolour;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_wagon,
+                                                    string(str_RCH_1927_liveries)));
+    }
+}
