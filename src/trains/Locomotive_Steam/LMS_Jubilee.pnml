@@ -191,9 +191,7 @@ item (FEAT_TRAINS, item_LMS_Jubilee, 4552) { // BR Number range 45552-45742
         cargo_capacity:                 1;
 		cargo_allow_refit:				[PASS, GOOD];
         loading_speed:					5;
-        cost_factor: 					100;
-        running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			6251;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

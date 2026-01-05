@@ -592,9 +592,7 @@ item (FEAT_TRAINS, item_BR150_0, 1500) {
         cargo_capacity:                 1;
         // for MUs, loading speed is multiplied by number of carriages * 0.75
         loading_speed:					34; // Standard Class
-        cost_factor: 					197;
-        running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			4554;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -671,9 +669,7 @@ item (FEAT_TRAINS, item_BR150_1, 1501) {
         cargo_capacity:                 1;
         // for MUs, loading speed is multiplied by number of carriages * 0.75
         loading_speed:					23; // Standard Class
-        cost_factor: 					197;
-        running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			4554;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -743,9 +739,7 @@ item (FEAT_TRAINS, item_BR150_2, 1502) {
         cargo_capacity:                 1;
         // for MUs, loading speed is multiplied by number of carriages * 0.75
         loading_speed:					23; // Standard Class
-        cost_factor: 					197;
-        running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			4554;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

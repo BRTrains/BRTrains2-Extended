@@ -398,9 +398,7 @@ item (FEAT_TRAINS, item_BR_Mk3_TF, 12121) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					10;
-        cost_factor: 					1213;			
-        running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			1979;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -459,9 +457,7 @@ item (FEAT_TRAINS, item_BR_Mk3a_FO, 12136) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					10;
-        cost_factor: 					1213;			
-        running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			1979;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

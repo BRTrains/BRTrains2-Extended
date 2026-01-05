@@ -359,9 +359,7 @@ item (FEAT_TRAINS, item_UNIT, ) {
         // loading_speed:				   10; // First Class / Restaurant
         // loading_speed:                  12; // Composite, Compartment Stock
         loading_speed:					15; // Standard Class
-        cost_factor: 					108;
-        running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			90;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

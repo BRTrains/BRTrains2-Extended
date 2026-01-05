@@ -458,8 +458,7 @@ item (FEAT_TRAINS, item_BR_FFA_2, 12260) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 27 * param_freight;
         loading_speed:				    5; // All freight / Locomotive
-        running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			1384;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -516,8 +515,7 @@ item (FEAT_TRAINS, item_BR_FFA_3, 12261) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 27 * param_freight;
         loading_speed:				    5; // All freight / Locomotive
-        running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			1384;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -574,9 +572,8 @@ item (FEAT_TRAINS, item_BR_FFA_5, 12262) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 27 * param_freight;
         loading_speed:				    5; // All freight / Locomotive
-        running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			1384;
-
+        running_cost_base:			    RUNNING_COST_STEAM;		
+        
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         speed:                          75 mph;

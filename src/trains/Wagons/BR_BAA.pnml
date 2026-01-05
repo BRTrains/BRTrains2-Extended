@@ -368,9 +368,7 @@ item (FEAT_TRAINS, item_BR_BAA, 12263) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 45 * param_freight;
         loading_speed:				    5; // All freight / Locomotive
-        cost_factor: 					921;
-        running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			1238;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -420,9 +418,7 @@ item (FEAT_TRAINS, item_BR_BAA_75, 12264) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 75 * param_freight;
         loading_speed:				    5; // All freight / Locomotive
-        cost_factor: 					921;
-        running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			1238;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

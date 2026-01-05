@@ -1865,9 +1865,7 @@ item (FEAT_TRAINS, item_BR309, 3090) {
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					09;
-        cost_factor: 					420;					
-        running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			9216;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -2026,9 +2024,7 @@ item (FEAT_TRAINS, item_BR309_1, 3091) {
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					18;
-        cost_factor: 					420;					
-        running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			9216;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -2190,9 +2186,7 @@ item (FEAT_TRAINS, item_BR309_2, 3092) {
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					36;
-        cost_factor: 					420;					
-        running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			9216;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -2349,9 +2343,7 @@ item (FEAT_TRAINS, item_BR309_3, 3093) {
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					36;
-        cost_factor: 					420;					
-        running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			9216;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -2506,9 +2498,7 @@ item (FEAT_TRAINS, item_BR309_4, 3094) {
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					36;
-        cost_factor: 					420;					
-        running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			9216;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

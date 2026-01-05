@@ -963,9 +963,7 @@ item (FEAT_TRAINS, item_BR101, 1010) {
         // misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					18;
-        cost_factor: 					152;					
-        running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			3735;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -1126,9 +1124,7 @@ item (FEAT_TRAINS, item_BR101_3, 1013) {
         // misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					27;
-        cost_factor: 					152;					
-        running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			3735;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -1338,9 +1334,7 @@ item (FEAT_TRAINS, item_BR101_4, 1014) {
         // misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					36;
-        cost_factor: 					152;					
-        running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			3735;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -1411,9 +1405,7 @@ item (FEAT_TRAINS, item_BR102, 1020) {
         // misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					18;
-        cost_factor: 					152;					
-        running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			3735;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

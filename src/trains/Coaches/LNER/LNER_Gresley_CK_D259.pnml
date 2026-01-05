@@ -228,9 +228,7 @@ item (FEAT_TRAINS, item_LNER_Gresley_CK_D259, 11507) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					15;
-        cost_factor: 					916;
-        running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			1116;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

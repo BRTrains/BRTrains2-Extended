@@ -233,9 +233,7 @@ item (FEAT_TRAINS, item_GWR_2800, 280) {
         // cargo_disallow_refit:            [LVST];
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
-        cost_factor: 					76;
-        running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			4939;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

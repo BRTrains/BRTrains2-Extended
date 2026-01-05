@@ -246,9 +246,7 @@ item (FEAT_TRAINS, item_BR_Mk1_SO, 12037) { // Diagram 94 BR Mk1 SO
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 16 * param_pax;
         loading_speed:					15;
-        cost_factor: 					979;
-        running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			1355;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 		
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -308,9 +306,7 @@ item (FEAT_TRAINS, item_BR_Mk1_TSO, 12038) { // Diagram 93 BR Mk1 TSO
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					15;
-        cost_factor: 					979;
-        running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			1355;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 		
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

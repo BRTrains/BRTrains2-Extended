@@ -267,6 +267,12 @@ switch(FEAT_TRAINS, SELF, sw_RCH_1907_Mixed_cargo_subtype_text, cargo_subtype) {
     2:  return string(STR_LIVERY_SHORT, string(str_col_Bauxite));
        return CB_RESULT_NO_TEXT; }
 
+// speed switch
+switch(FEAT_TRAINS, SELF, sw_speed_RCH_1907, param_max_speed) {
+    0: 40; // operational speed
+    1: 50; // design speed
+}
+
 // unit definition
 item (FEAT_TRAINS, item_RCH_1907_Mixed, 11400) {
     property {
@@ -285,18 +291,16 @@ item (FEAT_TRAINS, item_RCH_1907_Mixed, 11400) {
         refittable_cargo_classes:        bitmask(CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_HAZARDOUS, CC_COVERED, CC_POWDERIZED, CC_NEO_BULK, CC_POTABLE);	
         // non_refittable_cargo_classes:    bitmask();
         // cargo_allow_refit:               [PASS, TOUR];
-        // cargo_allow_refit:               [MAIL, GOOD, VALU];
+        cargo_allow_refit:              [GOOD];
         cargo_disallow_refit:           [LVST];
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
-        cargo_capacity:                 12 * param_freight;
+        cargo_capacity:                 10 * param_freight;
         loading_speed:					5;
-        cost_factor: 					206;
-        running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			282;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
-        speed:                          30 mph;
+        speed:                          40 mph;
         refit_cost:                     0;
         track_type:                     RAIL;
         power:                          0 hp;
@@ -310,8 +314,9 @@ item (FEAT_TRAINS, item_RCH_1907_Mixed, 11400) {
         purchase:                       spriteset_RCH_1907_5_Plank_purchase;
         
         // internal code
-        cost_factor:                    206;
-        running_cost_factor:            282;
+        speed:                          sw_speed_RCH_1907() * 1609 / 1000;
+        cost_factor:                    216;
+        running_cost_factor:            365;
         cargo_subtype_text:             sw_RCH_1907_Mixed_cargo_subtype_text; 
         // colour_mapping:                 return PALETTE_CC_FIRST;
         colour_mapping:                 switch_generic_recolour;

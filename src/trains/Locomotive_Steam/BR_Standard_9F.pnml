@@ -321,9 +321,7 @@ item (FEAT_TRAINS, item_BR_Standard_9F, 9202) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					5;
-        cost_factor: 					94;
-        running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			6139;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -392,9 +390,7 @@ item (FEAT_TRAINS, item_BR_Standard_9F_DC, 9203) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					5;
-        cost_factor: 					94;
-        running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			6139;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -470,9 +466,7 @@ item (FEAT_TRAINS, item_BR_Standard_9F_Named, 9204) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					5;
-        cost_factor: 					94;
-        running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			6139;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

@@ -2,10 +2,13 @@
 # v0.0.5 (Alpha)
 - Added Generic 48' Elliptical T
 - Added Generic 48' F
+- Buffed all unit air drag universally
 - Fixed wrong cargo being available for WD 10t Tank and RCH 1907 Wagons
 - Fixed air drag for BR 404
-- Buffed air drag for BR 309 and BR 401
 - Fixed BR 309 BDTS sprite
+- Buffed RCH 1907 speed
+- Reduced RCH 1907 capacity
+- Buffed BR MCV speed
 - Fixes to BR BAA wagon speed
 - Fixes to LNER 21t Hopper cargo capacity
 

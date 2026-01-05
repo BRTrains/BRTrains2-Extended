@@ -36,15 +36,13 @@ item (FEAT_TRAINS, item_RCH_1907_3_Plank, 11403) {
         cargo_allow_refit:              [GOOD];
         cargo_disallow_refit:           [LVST];
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
-        cargo_capacity:                 12 * param_freight;
+        cargo_capacity:                 10 * param_freight;
         loading_speed:					5;
-        cost_factor: 					206;
-        running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			282;
+        running_cost_base:			    RUNNING_COST_STEAM;	
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
-        speed:                          30 mph;
+        speed:                          40 mph;
         refit_cost:                     0;
         track_type:                     RAIL;
         power:                          0 hp;
@@ -58,8 +56,9 @@ item (FEAT_TRAINS, item_RCH_1907_3_Plank, 11403) {
         purchase:                       spriteset_RCH_1907_3_Plank_purchase;
         
         // internal code
-        cost_factor:                    206;
-        running_cost_factor:            282;
+        speed:                          sw_speed_RCH_1907() * 1609 / 1000;
+        cost_factor:                    216;
+        running_cost_factor:            365;
         cargo_subtype_text:             sw_RCH_1907_3_Plank_cargo_subtype_text; 
         colour_mapping:                 switch_generic_recolour;
 

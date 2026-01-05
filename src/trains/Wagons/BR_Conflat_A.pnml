@@ -68,9 +68,7 @@ item (FEAT_TRAINS, item_BR_Conflat_A, 12200) { // Diagram 61/62 12/13 ton contai
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 13 * param_freight;
         loading_speed:					5;
-        cost_factor: 					361;			
-        running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			643;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

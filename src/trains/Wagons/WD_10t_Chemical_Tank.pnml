@@ -154,9 +154,7 @@ item (FEAT_TRAINS, item_WD_10t_Chemical_Tank, 11409) {
         cargo_disallow_refit:           [EOIL, MILK];
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 10 * param_freight;
-        cost_factor: 					216;
-        running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			365;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

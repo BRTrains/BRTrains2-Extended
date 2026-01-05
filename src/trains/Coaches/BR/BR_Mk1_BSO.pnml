@@ -142,9 +142,7 @@ item (FEAT_TRAINS, item_BR_Mk1_BSO, 12006) { // Diagram 183, 184 BR Mk1 BSO
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					10;
-        cost_factor: 					875;
-        running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			1331;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

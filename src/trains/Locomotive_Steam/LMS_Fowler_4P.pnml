@@ -334,9 +334,7 @@ item (FEAT_TRAINS, item_LMS_Fowler_4P, 4090) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:				    5; // All freight / Locomotive
-        cost_factor: 					73;
-        running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			4900;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -475,9 +473,7 @@ item (FEAT_TRAINS, item_MR_1000, 4102) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:				    5; // All freight / Locomotive
-        cost_factor: 					73;
-        running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			4900;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

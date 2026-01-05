@@ -329,10 +329,7 @@ item (FEAT_TRAINS, item_GWR_2900_Curved, 290) {
         // misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					5;
-        cost_factor: 					70;
-        running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			4676;
-
+        running_cost_base:			    RUNNING_COST_STEAM;		
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         speed:                          80 mph;
@@ -398,9 +395,7 @@ item (FEAT_TRAINS, item_GWR_2900_Straight, 291) {
         // misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
         loading_speed:					5;
-        cost_factor: 					70;
-        running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			4676;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

@@ -190,9 +190,7 @@ item (FEAT_TRAINS, item_BR_TTA, 12203) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 39 * param_freight;
         loading_speed:					5;
-        cost_factor: 					704;					
-        running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			843;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

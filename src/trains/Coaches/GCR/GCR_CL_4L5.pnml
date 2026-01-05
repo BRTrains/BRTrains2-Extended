@@ -176,9 +176,7 @@ item (FEAT_TRAINS, item_GCR_CL_4L5, 11200) {
         cargo_capacity:                 1;
         // cargo_capacity:                 * param_freight;
         loading_speed:					12;
-        cost_factor: 					571;
-        running_cost_base:			    RUNNING_COST_STEAM;						
-        running_cost_factor: 			609;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

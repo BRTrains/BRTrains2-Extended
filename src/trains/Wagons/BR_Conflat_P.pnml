@@ -65,9 +65,7 @@ item (FEAT_TRAINS, item_BR_Conflat_P, 12201) {
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 20 * param_freight;
         loading_speed:					5;
-        cost_factor: 					506;	
-        running_cost_base:				RUNNING_COST_STEAM;				
-        running_cost_factor: 			848;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

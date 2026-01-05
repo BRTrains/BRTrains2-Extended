@@ -383,9 +383,7 @@ item (FEAT_TRAINS, item_BR_MBA, 12802) {
         cargo_capacity:                 1;
         cargo_capacity:                 24 * param_freight;
         loading_speed:					5;
-        cost_factor: 					1274;
-        running_cost_base:			    RUNNING_COST_STEAM;					
-        running_cost_factor: 			1340;
+        running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
