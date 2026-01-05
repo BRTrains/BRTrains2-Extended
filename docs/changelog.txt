@@ -6,6 +6,7 @@
 - Fixed wrong cargo being available for WD 10t Tank and RCH 1907 Wagons
 - Fixed air drag for BR 404
 - Fixed BR 309 BDTS sprite
+- Fixed unsynchronized BR 150 and BR 380 reliability
 - Buffed RCH 1907 speed
 - Reduced RCH 1907 capacity
 - Buffed BR MCV speed
