@@ -238,9 +238,9 @@ item (FEAT_TRAINS, item_BR_MCV, 12250) {
         retire_early: 					-10;							
         reliability_decay: 				20;
         
-		refittable_cargo_classes:        bitmask(CC_BULK);
-        // non_refittable_cargo_classes:    bitmask();
-        // cargo_disallow_refit:            [];
+        refittable_cargo_classes:       bitmask(CC_BULK);	
+        non_refittable_cargo_classes:   bitmask(CC_COVERED, CC_POWDERIZED);
+        cargo_disallow_refit:           [GRAI, BEAN, FICR, WDPR, SGBT, SGCN];
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         default_cargo_type:				COAL;
         cargo_capacity:                 16 * param_freight;

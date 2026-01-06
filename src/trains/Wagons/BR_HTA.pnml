@@ -1,0 +1,190 @@
+
+// basic sprite
+spriteset(spriteset_BR_HTA_DB, "gfx/Wagons/BR_HTA/BR_HTA_DB_1x_8bpp.png")
+    { template_118trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_DB, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_HTA/BR_HTA_DB_1x_32bpp.png", "gfx/Wagons/BR_HTA/BR_HTA_DB_1x_mask.png")
+    { template_118trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_DB, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_HTA/BR_HTA_DB_2x_32bpp.png", "gfx/Wagons/BR_HTA/BR_HTA_DB_2x_mask.png")
+    { template_118trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_DB, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_HTA/BR_HTA_DB_4x_32bpp.png", "gfx/Wagons/BR_HTA/BR_HTA_DB_4x_mask.png")
+    { template_118trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR_HTA_DB_purchase, "gfx/Wagons/BR_HTA/BR_HTA_DB_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_DB_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_HTA/BR_HTA_DB_1x_32bpp.png", "gfx/Wagons/BR_HTA/BR_HTA_DB_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_HTA_EWS, "gfx/Wagons/BR_HTA/BR_HTA_EWS_1x_8bpp.png")
+    { template_118trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_EWS, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_HTA/BR_HTA_EWS_1x_32bpp.png", "gfx/Wagons/BR_HTA/BR_HTA_EWS_1x_mask.png")
+    { template_118trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_EWS, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_HTA/BR_HTA_EWS_2x_32bpp.png", "gfx/Wagons/BR_HTA/BR_HTA_EWS_2x_mask.png")
+    { template_118trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_EWS, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_HTA/BR_HTA_EWS_4x_32bpp.png", "gfx/Wagons/BR_HTA/BR_HTA_EWS_4x_mask.png")
+    { template_118trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR_HTA_EWS_purchase, "gfx/Wagons/BR_HTA/BR_HTA_EWS_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_EWS_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_HTA/BR_HTA_EWS_1x_32bpp.png", "gfx/Wagons/BR_HTA/BR_HTA_EWS_1x_mask.png")
+    { template_purchase(0,0) }
+
+
+spriteset(spriteset_BR_HTA_Load_25, "gfx/Wagons/BR_HTA/BR_HTA_Load_25_1x_8bpp.png")
+    { template_118trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_Load_25, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/Wagons/BR_HTA/BR_HTA_Load_25_1x_8bpp.png")
+    { template_118trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_Load_25, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_HTA/BR_HTA_Load_25_2x_8bpp.png")
+    { template_118trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_Load_25, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_HTA/BR_HTA_Load_25_4x_8bpp.png")
+    { template_118trains_4x(0,0) }
+
+spriteset(spriteset_BR_HTA_Load_50, "gfx/Wagons/BR_HTA/BR_HTA_Load_50_1x_8bpp.png")
+    { template_118trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_Load_50, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/Wagons/BR_HTA/BR_HTA_Load_50_1x_8bpp.png")
+    { template_118trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_Load_50, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_HTA/BR_HTA_Load_50_2x_8bpp.png")
+    { template_118trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_Load_50, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_HTA/BR_HTA_Load_50_4x_8bpp.png")
+    { template_118trains_4x(0,0) }
+
+spriteset(spriteset_BR_HTA_Load_75, "gfx/Wagons/BR_HTA/BR_HTA_Load_75_1x_8bpp.png")
+    { template_118trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_Load_75, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/Wagons/BR_HTA/BR_HTA_Load_75_1x_8bpp.png")
+    { template_118trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_Load_75, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_HTA/BR_HTA_Load_75_2x_8bpp.png")
+    { template_118trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_Load_75, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_HTA/BR_HTA_Load_75_4x_8bpp.png")
+    { template_118trains_4x(0,0) }
+
+spriteset(spriteset_BR_HTA_Load_100, "gfx/Wagons/BR_HTA/BR_HTA_Load_100_1x_8bpp.png")
+    { template_118trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_Load_100, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/Wagons/BR_HTA/BR_HTA_Load_100_1x_8bpp.png")
+    { template_118trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_Load_100, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_HTA/BR_HTA_Load_100_2x_8bpp.png")
+    { template_118trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_HTA_Load_100, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_HTA/BR_HTA_Load_100_4x_8bpp.png")
+    { template_118trains_4x(0,0) }
+
+spritegroup spritegroup_BR_HTA_Load {
+    loaded: [spriteset_empty, spriteset_BR_HTA_Load_25, spriteset_BR_HTA_Load_50, spriteset_BR_HTA_Load_75, spriteset_BR_HTA_Load_100];
+    loading: [spriteset_empty, spriteset_BR_HTA_Load_25, spriteset_BR_HTA_Load_50, spriteset_BR_HTA_Load_75, spriteset_BR_HTA_Load_100]; }
+
+switch(FEAT_TRAINS, PARENT, sw_BR_HTA_purchase_sprite, current_year) {
+    1996..2008: spriteset_BR_HTA_EWS_purchase;
+        spriteset_BR_HTA_DB_purchase;}
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR_HTA, cargo_subtype) {
+    0: spriteset_BR_HTA_EWS;
+    1: spriteset_BR_HTA_DB; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_HTA, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
+    0: sw_livery_BR_HTA;
+    1: spritegroup_BR_HTA_Load;
+}
+
+// livery name refit switch
+switch(FEAT_TRAINS, SELF, sw_BR_HTA_cargo_subtype_text, cargo_subtype){
+	0:	return string(str_EWSRed);
+    1:  return string(str_DBSchenker);
+       return CB_RESULT_NO_TEXT; }
+
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_BR_HTA, position_in_articulated_veh % 3) {
+	1: return sw_loadstack_BR_HTA;
+        spriteset_empty; }
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_BR_HTA, position_in_articulated_veh % 3) {
+	1: 3;
+	    4; }
+
+// speed switch
+switch(FEAT_TRAINS, SELF, sw_speed_BR_HTA, param_max_speed) {
+    0: 75; // operational speed
+    1: 100; // design speed
+}
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR_HTA, extra_callback_info1) {
+	1..2: return item_BR_HTA;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+
+// unit definition
+item (FEAT_TRAINS, item_BR_HTA, 12804) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR_HTA);
+        // variant_group:                  ; // unit ID or item
+		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2001,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        refittable_cargo_classes:       bitmask(CC_BULK);	
+        non_refittable_cargo_classes:   bitmask(CC_COVERED, CC_POWDERIZED);
+        cargo_disallow_refit:           [GRAI, BEAN, FICR, WDPR, SGBT, SGCN];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        cargo_capacity:                 25 * param_freight;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          75 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        weight:                         26 ton;
+        dual_headed:                    0;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_BR_HTA;
+        purchase:                       sw_BR_HTA_purchase_sprite;
+
+        // internal code
+        length:                         sw_length_BR_HTA;
+        articulated_part:               sw_articulated_BR_HTA;
+        speed:                          sw_speed_BR_HTA() * 1609 / 1000;  
+        cost_factor:                    1310;
+        running_cost_factor:            1350;
+        cargo_subtype_text:             sw_BR_HTA_cargo_subtype_text; 
+        colour_mapping:                 switch_generic_recolour;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_wagon,
+                                                    string(str_BR_HTA_liveries)));
+    }
+}
+

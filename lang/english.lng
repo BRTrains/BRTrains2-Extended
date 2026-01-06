@@ -1411,10 +1411,13 @@ str_BR_HAA_liveries             :BR Bauxite, Railfreight, Trainload, Mainline Fr
 STR_NAME_BR_HHA					:BR HHA Wagon
 str_BRHHA_liveries				:Freightliner
 
+STR_NAME_BR_HTA                 :BR HTA 101t GLW Hopper
+str_BR_HTA_liveries             :EWS, DB Schenker
+
 STR_NAME_BR_IWB_B_3_Door        :BR IWB-B "Habfis" Cargowaggon Van (3 Doors)
 str_BR_IWB_B_3_Door_liveries    :Grey, Private Owners
 
-STR_NAME_BR_IWB_B_2_Door        :BR IWB-B "Habfis" Cargowaggon Van (2 Doors)
+STR_NAME_BR_IWB_B_2_Door        :BR IWB-B/IPB-B "Habfis" Cargowaggon Van (2 Doors)
 str_BR_IWB_B_2_Door_liveries    :Grey, Bauxite, Blue, Silver, VTG, RailAdventure, Private Owners
 
 STR_NAME_BR_JIA_Polybulk        :BR JIA "Polybulk" Hopper

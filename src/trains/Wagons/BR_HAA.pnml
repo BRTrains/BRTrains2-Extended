@@ -142,8 +142,7 @@ item (FEAT_TRAINS, item_BR_HAA, 12253) {
         
         refittable_cargo_classes:       bitmask(CC_BULK);	
         non_refittable_cargo_classes:   bitmask(CC_COVERED, CC_POWDERIZED);
-        // cargo_allow_refit:               [PASS, TOUR];
-        // cargo_disallow_refit:            [LVST];
+        cargo_disallow_refit:           [GRAI, BEAN, FICR, WDPR, SGBT, SGCN];
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 32 * param_freight;
         loading_speed:					5;
