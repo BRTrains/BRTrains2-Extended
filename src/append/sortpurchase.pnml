@@ -237,6 +237,8 @@ sort(FEAT_TRAINS, [
         item_BR_FFA_3,
         item_BR_FFA_5,
     item_BR_HAA,
+    item_BR_IWB_B_2_Door,
+    item_BR_IWB_B_3_Door,
     item_BR_MBA,
     item_BR_MCV,
     item_BR_OTA,

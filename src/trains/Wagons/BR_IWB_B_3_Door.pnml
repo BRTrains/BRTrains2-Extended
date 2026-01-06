@@ -1,0 +1,114 @@
+// basic sprite
+spriteset(spriteset_BR_IWB_B_3_Door_Cargowaggon, "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Cargowaggon_1x_8bpp.png")
+    { template_138trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_IWB_B_3_Door_Cargowaggon, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Cargowaggon_1x_32bpp.png", "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Cargowaggon_1x_mask.png")
+    { template_138trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_IWB_B_3_Door_Cargowaggon, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Cargowaggon_2x_32bpp.png", "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Cargowaggon_2x_mask.png")
+    { template_138trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_IWB_B_3_Door_Cargowaggon, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Cargowaggon_4x_32bpp.png", "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Cargowaggon_4x_mask.png")
+    { template_138trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR_IWB_B_3_Door_Cargowaggon_purchase, "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Cargowaggon_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR_IWB_B_3_Door_Cargowaggon_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Cargowaggon_1x_32bpp.png", "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Cargowaggon_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_IWB_B_3_Door_Grey, "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Grey_1x_8bpp.png")
+    { template_138trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_IWB_B_3_Door_Grey, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Grey_1x_32bpp.png", "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Grey_1x_mask.png")
+    { template_138trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_IWB_B_3_Door_Grey, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Grey_2x_32bpp.png", "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Grey_2x_mask.png")
+    { template_138trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_IWB_B_3_Door_Grey, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Grey_4x_32bpp.png", "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Grey_4x_mask.png")
+    { template_138trains_4x(0,0) }
+
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR_IWB_B_3_Door, cargo_subtype) {
+    0: spriteset_BR_IWB_B_3_Door_Cargowaggon;
+    1: spriteset_BR_IWB_B_3_Door_Grey; }
+
+// livery name refit switch
+switch(FEAT_TRAINS, SELF, sw_BR_IWB_B_3_Door_cargo_subtype_text, cargo_subtype){
+	0:	return string(STR_LIVERY_BRANDED, string(str_col_Grey), string(str_var_Cargowaggon));
+    1:  return string(STR_LIVERY, string(str_comp_gen_priv_owner), string(str_col_Grey));
+       return CB_RESULT_NO_TEXT; }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_BR_IWB_B_3_Door, position_in_articulated_veh % 3) {
+	1: return sw_livery_BR_IWB_B_3_Door;
+	    spriteset_empty; }
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_BR_IWB_B_3_Door, position_in_articulated_veh % 3) {
+	1: 5;
+        4; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR_IWB_B_3_Door, extra_callback_info1) {
+	1..2: return item_BR_IWB_B_3_Door;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+
+// unit definition
+item (FEAT_TRAINS, item_BR_IWB_B_3_Door, 12271) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR_IWB_B_3_Door);
+        // variant_group:                  ; // unit ID or item
+		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1977,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        refittable_cargo_classes:       bitmask(CC_EXPRESS, CC_PIECE_GOODS, CC_REFRIGERATED, CC_HAZARDOUS, CC_COVERED, CC_NON_POURABLE, CC_NEO_BULK);	
+        // non_refittable_cargo_classes:    bitmask();
+        // cargo_allow_refit:               [MAIL, GOOD, VALU];
+        cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        cargo_capacity:                 18 * param_freight;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          60 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        weight:                         26 ton;
+        dual_headed:                    0;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_BR_IWB_B_3_Door;
+        purchase:                       spriteset_BR_IWB_B_3_Door_Cargowaggon_purchase;
+        
+        // internal code
+        length:                         sw_length_BR_IWB_B_3_Door;
+        articulated_part:               sw_articulated_BR_IWB_B_3_Door;
+        cost_factor:                    952;
+        running_cost_factor:            1048;
+        cargo_subtype_text:             sw_BR_IWB_B_3_Door_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_wagon,
+                                                    string(str_BR_IWB_B_3_Door_liveries)));
+    }
+}
+
