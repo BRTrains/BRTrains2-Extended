@@ -931,17 +931,11 @@ str_BR376_liveries				:Southeastern Yellow
 STR_NAME_BR377_3				:BR Class 377/3 "Electrostar" (3-Car)
 str_BR377_3_liveries			:Southern
 
-STR_NAME_BR377_4				:BR Class 377/1/4 "Electrostar" (4-Car)
-str_BR377_4_liveries			:Southern
-
-STR_NAME_BR377_4_dv				:BR Class 377/2/5 "Electrostar" (4-Car, Dual Voltage)
-str_BR377_4_dv_liveries			:Southern, First Capital Connect, Thameslink (Ex-First Capital Connect)
-
-STR_NAME_BR377_5				:BR Class 377/6 "Electrostar" (5-Car)
-str_BR377_5_liveries			:Southern
-
-STR_NAME_BR377_5dv				:BR Class 377/7 "Electrostar" (5-Car, Dual Voltage)
-str_BR377_5dv_liveries			:Southern
+STR_NAME_BR377_1_4				:BR Class 377/1/4 "Electrostar" (4-Car)
+STR_NAME_BR377_2_5				:BR Class 377/2/5 "Electrostar" (4-Car)
+STR_NAME_BR377_6				:BR Class 377/6 "Electrostar" (5-Car)
+STR_NAME_BR377_7				:BR Class 377/7 "Electrostar" (5-Car)
+str_BR377_liveries			    :Southern, First Capital Connect, First Group, Southeastern
 
 STR_NAME_BR378				    :BR Class 378 "Electrostar" (4-car)
 STR_NAME_BR378_3				:BR Class 378/0 "Electrostar" (3-Car, Dual Voltage)
