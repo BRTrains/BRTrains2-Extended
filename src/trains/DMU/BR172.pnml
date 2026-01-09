@@ -1,0 +1,524 @@
+// basic sprite
+spriteset(spriteset_BR172_2_3_DMSO_London_Midland, "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_1x_8bpp.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_London_Midland, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_1x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_1x_mask.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_London_Midland, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_2x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_2x_mask.png")
+    { template_148trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_London_Midland, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_4x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_4x_mask.png")
+    { template_148trains_4x(0,0) }
+
+spriteset(spriteset_BR172_2_3_DMSO_London_Midland_REV, "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_1x_8bpp.png")
+    { template_148trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_London_Midland_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_1x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_1x_mask.png")
+    { template_148trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_London_Midland_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_2x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_2x_mask.png")
+    { template_148trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_London_Midland_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_4x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_4x_mask.png")
+    { template_148trains_REV_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR172_2_3_DMSO_London_Midland_purchase, "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_London_Midland_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_1x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_1x_mask.png")
+    { template_purchase(0,0) }
+
+spriteset(spriteset_BR172_2_3_DMSO_London_Midland_Loading, "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_Loading_1x_8bpp.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_London_Midland_Loading, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_Loading_1x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_Loading_1x_mask.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_London_Midland_Loading, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_Loading_2x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_Loading_2x_mask.png")
+    { template_148trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_London_Midland_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_Loading_4x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_Loading_4x_mask.png")
+    { template_148trains_4x(0,0) }
+
+spriteset(spriteset_BR172_2_3_DMSO_London_Midland_Loading_REV, "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_Loading_1x_8bpp.png")
+    { template_148trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_London_Midland_Loading_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_Loading_1x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_Loading_1x_mask.png")
+    { template_148trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_London_Midland_Loading_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_Loading_2x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_Loading_2x_mask.png")
+    { template_148trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_London_Midland_Loading_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_Loading_4x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_London_Midland_Loading_4x_mask.png")
+    { template_148trains_REV_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR172_2_3_DMSO_London_Midland_Loading {  
+    loaded: [spriteset_empty];
+    loading: [spriteset_BR172_2_3_DMSO_London_Midland_Loading]; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR172_2_3_DMSO_London_Midland, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR172_2_3_DMSO_London_Midland;
+    1: spritegroup_BR172_2_3_DMSO_London_Midland_Loading; }
+
+// loading sprite
+spritegroup spritegroup_BR172_2_3_DMSO_London_Midland_Loading_REV {  
+    loaded: [spriteset_empty];
+    loading: [spriteset_BR172_2_3_DMSO_London_Midland_Loading_REV]; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR172_2_3_DMSO_London_Midland_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR172_2_3_DMSO_London_Midland_REV;
+    1: spritegroup_BR172_2_3_DMSO_London_Midland_Loading_REV; }
+
+// basic sprite
+spriteset(spriteset_BR172_2_3_DMSO_WMR, "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_1x_8bpp.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_WMR, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_1x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_1x_mask.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_WMR, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_2x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_2x_mask.png")
+    { template_148trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_WMR, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_4x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_4x_mask.png")
+    { template_148trains_4x(0,0) }
+
+spriteset(spriteset_BR172_2_3_DMSO_WMR_REV, "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_1x_8bpp.png")
+    { template_148trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_WMR_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_1x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_1x_mask.png")
+    { template_148trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_WMR_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_2x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_2x_mask.png")
+    { template_148trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_WMR_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_4x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_4x_mask.png")
+    { template_148trains_REV_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR172_2_3_DMSO_WMR_purchase, "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_WMR_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_1x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_1x_mask.png")
+    { template_purchase(0,0) }
+
+spriteset(spriteset_BR172_2_3_DMSO_WMR_Loading, "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_Loading_1x_8bpp.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_WMR_Loading, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_Loading_1x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_Loading_1x_mask.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_WMR_Loading, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_Loading_2x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_Loading_2x_mask.png")
+    { template_148trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_WMR_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_Loading_4x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_Loading_4x_mask.png")
+    { template_148trains_4x(0,0) }
+
+spriteset(spriteset_BR172_2_3_DMSO_WMR_Loading_REV, "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_Loading_1x_8bpp.png")
+    { template_148trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_WMR_Loading_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_Loading_1x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_Loading_1x_mask.png")
+    { template_148trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_WMR_Loading_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_Loading_2x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_Loading_2x_mask.png")
+    { template_148trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSO_WMR_Loading_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_Loading_4x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSO_WMR_Loading_4x_mask.png")
+    { template_148trains_REV_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR172_2_3_DMSO_WMR_Loading {  
+    loaded: [spriteset_empty];
+    loading: [spriteset_BR172_2_3_DMSO_WMR_Loading]; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR172_2_3_DMSO_WMR, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR172_2_3_DMSO_WMR;
+    1: spritegroup_BR172_2_3_DMSO_WMR_Loading; }
+
+// loading sprite
+spritegroup spritegroup_BR172_2_3_DMSO_WMR_Loading_REV {  
+    loaded: [spriteset_empty];
+    loading: [spriteset_BR172_2_3_DMSO_WMR_Loading_REV]; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR172_2_3_DMSO_WMR_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR172_2_3_DMSO_WMR_REV;
+    1: spritegroup_BR172_2_3_DMSO_WMR_Loading_REV; }
+
+// basic sprite
+spriteset(spriteset_BR172_2_3_DMSOD_London_Midland, "gfx/DMU/BR172/BR172_2_3_DMSOD_London_Midland_1x_8bpp.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSOD_London_Midland, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSOD_London_Midland_1x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSOD_London_Midland_1x_mask.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSOD_London_Midland, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSOD_London_Midland_2x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSOD_London_Midland_2x_mask.png")
+    { template_148trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSOD_London_Midland, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSOD_London_Midland_4x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSOD_London_Midland_4x_mask.png")
+    { template_148trains_4x(0,0) }
+
+spriteset(spriteset_BR172_2_3_DMSOD_London_Midland_REV, "gfx/DMU/BR172/BR172_2_3_DMSOD_London_Midland_1x_8bpp.png")
+    { template_148trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSOD_London_Midland_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSOD_London_Midland_1x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSOD_London_Midland_1x_mask.png")
+    { template_148trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSOD_London_Midland_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSOD_London_Midland_2x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSOD_London_Midland_2x_mask.png")
+    { template_148trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSOD_London_Midland_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSOD_London_Midland_4x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSOD_London_Midland_4x_mask.png")
+    { template_148trains_REV_4x(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR172_2_3_DMSOD_London_Midland, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR172_2_3_DMSOD_London_Midland;
+    1: spritegroup_BR172_2_3_DMSO_London_Midland_Loading; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR172_2_3_DMSOD_London_Midland_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR172_2_3_DMSOD_London_Midland_REV;
+    1: spritegroup_BR172_2_3_DMSO_London_Midland_Loading_REV; }
+
+// basic sprite
+spriteset(spriteset_BR172_2_3_DMSOD_WMR, "gfx/DMU/BR172/BR172_2_3_DMSOD_WMR_1x_8bpp.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSOD_WMR, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSOD_WMR_1x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSOD_WMR_1x_mask.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSOD_WMR, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSOD_WMR_2x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSOD_WMR_2x_mask.png")
+    { template_148trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSOD_WMR, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSOD_WMR_4x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSOD_WMR_4x_mask.png")
+    { template_148trains_4x(0,0) }
+
+spriteset(spriteset_BR172_2_3_DMSOD_WMR_REV, "gfx/DMU/BR172/BR172_2_3_DMSOD_WMR_1x_8bpp.png")
+    { template_148trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSOD_WMR_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSOD_WMR_1x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSOD_WMR_1x_mask.png")
+    { template_148trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSOD_WMR_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSOD_WMR_2x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSOD_WMR_2x_mask.png")
+    { template_148trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_DMSOD_WMR_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_DMSOD_WMR_4x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_DMSOD_WMR_4x_mask.png")
+    { template_148trains_REV_4x(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR172_2_3_DMSOD_WMR, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR172_2_3_DMSOD_WMR;
+    1: spritegroup_BR172_2_3_DMSO_WMR_Loading; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR172_2_3_DMSOD_WMR_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR172_2_3_DMSOD_WMR_REV;
+    1: spritegroup_BR172_2_3_DMSO_WMR_Loading_REV; }
+
+// basic sprite
+spriteset(spriteset_BR172_2_3_MSO_London_Midland, "gfx/DMU/BR172/BR172_2_3_MSO_London_Midland_1x_8bpp.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_MSO_London_Midland, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_MSO_London_Midland_1x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_MSO_London_Midland_1x_mask.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_MSO_London_Midland, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_MSO_London_Midland_2x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_MSO_London_Midland_2x_mask.png")
+    { template_148trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_MSO_London_Midland, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_MSO_London_Midland_4x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_MSO_London_Midland_4x_mask.png")
+    { template_148trains_4x(0,0) }
+
+spriteset(spriteset_BR172_2_3_MSO_London_Midland_REV, "gfx/DMU/BR172/BR172_2_3_MSO_London_Midland_1x_8bpp.png")
+    { template_148trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_MSO_London_Midland_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_MSO_London_Midland_1x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_MSO_London_Midland_1x_mask.png")
+    { template_148trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_MSO_London_Midland_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_MSO_London_Midland_2x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_MSO_London_Midland_2x_mask.png")
+    { template_148trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_MSO_London_Midland_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_MSO_London_Midland_4x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_MSO_London_Midland_4x_mask.png")
+    { template_148trains_REV_4x(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR172_2_3_MSO_London_Midland, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR172_2_3_MSO_London_Midland;
+    1: spritegroup_BR172_2_3_DMSO_London_Midland_Loading; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR172_2_3_MSO_London_Midland_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR172_2_3_MSO_London_Midland_REV;
+    1: spritegroup_BR172_2_3_DMSO_London_Midland_Loading_REV; }
+
+// basic sprite
+spriteset(spriteset_BR172_2_3_MSO_WMR, "gfx/DMU/BR172/BR172_2_3_MSO_WMR_1x_8bpp.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_MSO_WMR, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_MSO_WMR_1x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_MSO_WMR_1x_mask.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_MSO_WMR, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_MSO_WMR_2x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_MSO_WMR_2x_mask.png")
+    { template_148trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_MSO_WMR, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_MSO_WMR_4x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_MSO_WMR_4x_mask.png")
+    { template_148trains_4x(0,0) }
+
+spriteset(spriteset_BR172_2_3_MSO_WMR_REV, "gfx/DMU/BR172/BR172_2_3_MSO_WMR_1x_8bpp.png")
+    { template_148trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_MSO_WMR_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_MSO_WMR_1x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_MSO_WMR_1x_mask.png")
+    { template_148trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_MSO_WMR_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_MSO_WMR_2x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_MSO_WMR_2x_mask.png")
+    { template_148trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_BR172_2_3_MSO_WMR_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR172/BR172_2_3_MSO_WMR_4x_32bpp.png", "gfx/DMU/BR172/BR172_2_3_MSO_WMR_4x_mask.png")
+    { template_148trains_REV_4x(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR172_2_3_MSO_WMR, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR172_2_3_MSO_WMR;
+    1: spritegroup_BR172_2_3_DMSO_WMR_Loading; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR172_2_3_MSO_WMR_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR172_2_3_MSO_WMR_REV;
+    1: spritegroup_BR172_2_3_DMSO_WMR_Loading_REV; }
+
+switch(FEAT_TRAINS, PARENT, sw_BR172_2_3_purchase_sprite, current_year) {
+    2011..2017: spriteset_BR172_2_3_DMSO_London_Midland_purchase;
+        spriteset_BR172_2_3_DMSO_WMR_purchase; }
+
+
+// FX effects
+switch(FEAT_TRAINS, SELF, sw_FX_BR172_2_Diesel, position_in_vehid_chain % 6) {
+    2..3: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -1, DISABLE_WAGON_POWER);
+        return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+
+switch(FEAT_TRAINS, SELF, sw_FX_BR172_3_Diesel, position_in_vehid_chain % 9) {
+    2: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -1, DISABLE_WAGON_POWER);
+    5..6: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -1, DISABLE_WAGON_POWER);
+        return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+
+// reverse sprite 
+switch(FEAT_TRAINS, PARENT, sw_BR172_2_3_DMSO_DMSOD_London_Midland, vehicle_is_reversed) {
+    1:  sw_loadstack_BR172_2_3_DMSOD_London_Midland_REV;
+        sw_loadstack_BR172_2_3_DMSO_London_Midland; }
+        
+switch(FEAT_TRAINS, PARENT, sw_BR172_2_3_DMSOD_DMSO_London_Midland, vehicle_is_reversed) {
+    1:  sw_loadstack_BR172_2_3_DMSO_London_Midland;
+        sw_loadstack_BR172_2_3_DMSOD_London_Midland_REV; }
+
+switch(FEAT_TRAINS, PARENT, sw_BR172_2_3_MSO_London_Midland, vehicle_is_reversed) {
+    1:  sw_loadstack_BR172_2_3_MSO_London_Midland_REV;
+        sw_loadstack_BR172_2_3_MSO_London_Midland; }
+
+switch(FEAT_TRAINS, PARENT, sw_BR172_2_3_DMSO_DMSOD_WMR, vehicle_is_reversed) {
+    1:  sw_loadstack_BR172_2_3_DMSOD_WMR_REV;
+        sw_loadstack_BR172_2_3_DMSO_WMR; }
+        
+switch(FEAT_TRAINS, PARENT, sw_BR172_2_3_DMSOD_DMSO_WMR, vehicle_is_reversed) {
+    1:  sw_loadstack_BR172_2_3_DMSO_WMR;
+        sw_loadstack_BR172_2_3_DMSOD_WMR_REV; }
+
+switch(FEAT_TRAINS, PARENT, sw_BR172_2_3_MSO_WMR, vehicle_is_reversed) {
+    1:  sw_loadstack_BR172_2_3_MSO_WMR_REV;
+        sw_loadstack_BR172_2_3_MSO_WMR; }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_BR172_2_London_Midland, position_in_vehid_chain % 6) {
+    1:  sw_BR172_2_3_DMSO_DMSOD_London_Midland;
+    4:  sw_BR172_2_3_DMSOD_DMSO_London_Midland;
+        spriteset_empty; }
+
+switch(FEAT_TRAINS, SELF, sw_BR172_3_London_Midland, position_in_vehid_chain % 9) {
+    1:  sw_BR172_2_3_DMSO_DMSOD_London_Midland;
+    4:  sw_BR172_2_3_MSO_London_Midland;
+    7:  sw_BR172_2_3_DMSOD_DMSO_London_Midland;
+        spriteset_empty; }
+
+switch(FEAT_TRAINS, SELF, sw_BR172_2_WMR, position_in_vehid_chain % 6) {
+    1:  sw_BR172_2_3_DMSO_DMSOD_WMR;
+    4:  sw_BR172_2_3_DMSOD_DMSO_WMR;
+        spriteset_empty; }
+
+switch(FEAT_TRAINS, SELF, sw_BR172_3_WMR, position_in_vehid_chain % 9) {
+    1:  sw_BR172_2_3_DMSO_DMSOD_WMR;
+    4:  sw_BR172_2_3_MSO_WMR;
+    7:  sw_BR172_2_3_DMSOD_DMSO_WMR;
+        spriteset_empty; }
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR172_2, cargo_subtype) {
+    0: sw_BR172_2_London_Midland;
+    1: sw_BR172_2_WMR; }
+    
+switch(FEAT_TRAINS, SELF, sw_livery_BR172_3, cargo_subtype) {
+    0: sw_BR172_3_London_Midland;
+    1: sw_BR172_3_WMR; }
+
+// livery name refit switch
+switch(FEAT_TRAINS, SELF, sw_BR172_2_3_cargo_subtype_text, cargo_subtype){
+	0:	return string(str_LondonMidland);
+    1:  return string(str_WMR);
+       return CB_RESULT_NO_TEXT; }
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_BR172_2, position_in_articulated_veh % 6) {
+	1: 6;
+    4: 6;
+        4; }
+
+// capacity switch
+switch(FEAT_TRAINS, SELF, sw_capacity_BR172_2, position_in_vehid_chain % 6) {
+    0: 115 * param_pax; // all the capacity - (vehid chain number)
+    1..5: 1 * param_pax;
+    // total 120
+}
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR172_2, extra_callback_info1) {
+	1..5: return item_BR172_2;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+
+// unit definition
+item (FEAT_TRAINS, item_BR172_2, 1772) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR172_2);
+        // variant_group:                  ; // unit ID or item
+		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2010,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		refittable_cargo_classes:        bitmask(CC_PASSENGERS);
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [PASS, TOUR];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        // for MUs, loading speed is multiplied by number of carriages * 0.75
+        loading_speed:					23; // Standard Class
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          960 hp;
+        weight:                         84 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.03;
+        tractive_effort_coefficient:    0.1;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_livery_BR172_2;
+        visual_effect_and_powered:      sw_FX_BR172_2_Diesel;
+        purchase:                       sw_BR172_2_3_purchase_sprite;
+        sound_effect:                   sw_sound_diesel_dmu_gen2;
+
+        // internal code
+        length:                         sw_length_BR172_2;
+        articulated_part:               sw_articulated_BR172_2;
+        purchase_cargo_capacity:        return (23 * param_pax); // divide by number of articulated parts and floor
+        cargo_capacity:                 sw_capacity_BR172_2;
+        cost_factor:                    135;
+        running_cost_factor:            5597;
+        cargo_subtype_text:             sw_BR172_2_3_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_loco_with_liveries,
+                                                    string(str_purchase_type_dmu),
+                                                    string(str_usage_pax),
+                                                    string(str_BR172_2_3_liveries)));
+    }
+}
+
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_BR172_3, position_in_articulated_veh % 9) {
+	1: 6;
+    4: 6;
+    7: 6;
+        4; }
+
+// capacity switch
+switch(FEAT_TRAINS, SELF, sw_capacity_BR172_3, position_in_vehid_chain % 9) {
+    0: 184 * param_pax; // all the capacity - (vehid chain number)
+    1..8: 1 * param_pax;
+    // total 192
+}
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR172_3, extra_callback_info1) {
+	1..8: return item_BR172_3;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+
+// unit definition
+item (FEAT_TRAINS, item_BR172_3, 1773) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR172_3);
+        variant_group:                  item_BR172_2; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2010,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		refittable_cargo_classes:        bitmask(CC_PASSENGERS);
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [PASS, TOUR];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        // for MUs, loading speed is multiplied by number of carriages * 0.75
+        loading_speed:					34; // Standard Class
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1440 hp;
+        weight:                         122 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.03;
+        tractive_effort_coefficient:    0.1;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_livery_BR172_3;
+        visual_effect_and_powered:      sw_FX_BR172_3_Diesel;
+        purchase:                       sw_BR172_2_3_purchase_sprite;
+        sound_effect:                   sw_sound_diesel_dmu_gen2;
+
+        // internal code
+        length:                         sw_length_BR172_3;
+        articulated_part:               sw_articulated_BR172_3;
+        purchase_cargo_capacity:        return (21 * param_pax); // divide by number of articulated parts and floor
+        cargo_capacity:                 sw_capacity_BR172_3;
+        cost_factor:                    180;
+        running_cost_factor:            6451;
+        cargo_subtype_text:             sw_BR172_2_3_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_loco_with_liveries,
+                                                    string(str_purchase_type_dmu),
+                                                    string(str_usage_pax),
+                                                    string(str_BR172_2_3_liveries)));
+    }
+}
+

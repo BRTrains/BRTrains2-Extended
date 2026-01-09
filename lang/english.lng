@@ -768,6 +768,10 @@ str_BR171_liveries				:Southern
 STR_NAME_BR171_4				:BR Class 171 "Turbostar" (4-Car)
 str_BR171_4_liveries			:Southern
 
+STR_NAME_BR172_2                :BR Class 172/2 "Turbostar" (2-car)
+STR_NAME_BR172_3                :BR Class 172/3 "Turbostar" (3-car)
+str_BR172_2_3_liveries          :London Midland, WMR
+
 STR_NAME_BR1750					:BR Class 175/0 "Coradia" (2-Car)
 STR_NAME_BR1751					:BR Class 175/1 "Coradia" (3-Car)
 str_BR175_liveries				:Arriva "Ghost", First North Western, Arriva Trains, Transport for Wales

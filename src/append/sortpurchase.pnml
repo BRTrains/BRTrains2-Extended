@@ -108,6 +108,8 @@ sort(FEAT_TRAINS, [
         item_BR158_3,
         item_BR159,
     item_BR166,
+    item_BR172_2,
+        item_BR172_3,
     item_BR231,
     // BR OHLE EMUs
     item_BR303,
