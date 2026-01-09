@@ -295,11 +295,11 @@ switch(FEAT_TRAINS, SELF, sw_FX_BR172_3_Diesel, position_in_vehid_chain % 9) {
 
 // reverse sprite 
 switch(FEAT_TRAINS, PARENT, sw_BR172_2_3_DMSO_DMSOD_London_Midland, vehicle_is_reversed) {
-    1:  sw_loadstack_BR172_2_3_DMSOD_London_Midland_REV;
+    1:  sw_loadstack_BR172_2_3_DMSOD_London_Midland;
         sw_loadstack_BR172_2_3_DMSO_London_Midland; }
         
 switch(FEAT_TRAINS, PARENT, sw_BR172_2_3_DMSOD_DMSO_London_Midland, vehicle_is_reversed) {
-    1:  sw_loadstack_BR172_2_3_DMSO_London_Midland;
+    1:  sw_loadstack_BR172_2_3_DMSO_London_Midland_REV;
         sw_loadstack_BR172_2_3_DMSOD_London_Midland_REV; }
 
 switch(FEAT_TRAINS, PARENT, sw_BR172_2_3_MSO_London_Midland, vehicle_is_reversed) {
@@ -307,11 +307,11 @@ switch(FEAT_TRAINS, PARENT, sw_BR172_2_3_MSO_London_Midland, vehicle_is_reversed
         sw_loadstack_BR172_2_3_MSO_London_Midland; }
 
 switch(FEAT_TRAINS, PARENT, sw_BR172_2_3_DMSO_DMSOD_WMR, vehicle_is_reversed) {
-    1:  sw_loadstack_BR172_2_3_DMSOD_WMR_REV;
+    1:  sw_loadstack_BR172_2_3_DMSOD_WMR;
         sw_loadstack_BR172_2_3_DMSO_WMR; }
         
 switch(FEAT_TRAINS, PARENT, sw_BR172_2_3_DMSOD_DMSO_WMR, vehicle_is_reversed) {
-    1:  sw_loadstack_BR172_2_3_DMSO_WMR;
+    1:  sw_loadstack_BR172_2_3_DMSO_WMR_REV;
         sw_loadstack_BR172_2_3_DMSOD_WMR_REV; }
 
 switch(FEAT_TRAINS, PARENT, sw_BR172_2_3_MSO_WMR, vehicle_is_reversed) {
