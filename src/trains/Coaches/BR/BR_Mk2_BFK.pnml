@@ -184,7 +184,7 @@ switch(FEAT_TRAINS, SELF, sw_graphics_BR_Mk2_BFK, position_in_articulated_veh % 
 switch(FEAT_TRAINS, SELF, sw_capacity_BR_Mk2_BFK, position_in_vehid_chain % 3) {
     0: 23 * param_pax; // all the capacity - (vehid chain number)
     1: 1 * param_pax;
-    2: 42 * param_freight;
+    2: sw_capacity_BR_Mk2_B;
     // total 24
 }
 

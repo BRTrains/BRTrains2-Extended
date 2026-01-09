@@ -521,14 +521,16 @@ switch(FEAT_TRAINS, SELF, sw_graphics_BR_Mk2L_DBSO, position_in_articulated_veh 
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR_Mk2L_DBSO, position_in_vehid_chain % 3) {
-    0: 29 * param_pax; // all the capacity - (vehid chain number)
-    1..2: 1 * param_pax;
+    0: 30 * param_pax; // all the capacity - (vehid chain number)
+    1: 1 * param_pax;
+    2: sw_capacity_BR_Mk2_B;
     // total 31 pax
 }
 
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_BR_Mk2L_DBSO, extra_callback_info1) {
-	1..2:  return item_BR_Mk2L_DBSO;
+	1:  return item_BR_Mk2L_DBSO;
+    2:  return item_BR_Mk2_B;
 		return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 

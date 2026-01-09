@@ -1,3 +1,9 @@
+switch(FEAT_TRAINS, SELF, sw_capacity_BR_Mk1_B, cargo_classes) {
+    bitmask(CC_PASSENGERS): 0;
+    bitmask(CC_MAIL):       36 * param_freight;
+        8 * param_freight;
+}
+
 item (FEAT_TRAINS, item_BR_Mk1_B, 12001) {
     property {
         // common properties
@@ -10,7 +16,7 @@ item (FEAT_TRAINS, item_BR_Mk1_B, 12001) {
         retire_early: 					-10;							
         reliability_decay: 				20;
         
-        refittable_cargo_classes:        bitmask(CC_MAIL);	
+        refittable_cargo_classes:        bitmask(CC_PASSENGERS, CC_MAIL);	
         // non_refittable_cargo_classes:    bitmask();
         cargo_allow_refit:               [MAIL, GOOD, VALU];
         // cargo_disallow_refit:            [];
@@ -30,5 +36,6 @@ item (FEAT_TRAINS, item_BR_Mk1_B, 12001) {
 
     graphics {
         default:                        spriteset_empty;
+        cargo_capacity:                 sw_capacity_BR_Mk1_B;
     }
 }

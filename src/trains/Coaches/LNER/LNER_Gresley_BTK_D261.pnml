@@ -170,7 +170,7 @@ switch(FEAT_TRAINS, SELF, sw_LNER_Gresley_BTK_D261_cargo_subtype_text, cargo_sub
 switch(FEAT_TRAINS, SELF, sw_capacity_LNER_Gresley_BTK_D261, position_in_vehid_chain % 3) {
     0: 23 * param_pax; 
     1: 1 * param_pax;
-    2:  30 * param_freight;
+    2: sw_capacity_LNER_Gresley_B;
     // total 24 pax
 }
 
