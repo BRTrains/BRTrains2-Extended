@@ -963,8 +963,8 @@ STR_NAME_BR378_5dc				:BR Class 378/1 "Electrostar" (5-Car)
 STR_NAME_BR379					:BR Class 379 "Electrostar" (4-car)
 str_BR379_liveries				:Greater Anglia White
 
-STR_NAME_BR387_					:BR Class 387 "Electrostar" (4-Car, Dual Voltage)
-str_BR387__liveries				:Govia Thameslink, Gatwick Express (Branded & Unbranded), GWR Green (Brended & Unbranded), c2c
+STR_NAME_BR387					:BR Class 387 "Electrostar" (4-Car, Dual Voltage)
+str_BR387_liveries				:GWR, Gatwick Express, Govia Great Northern, c2c, Heathrow Express
 
 STR_NAME_BR380_0                :BR Class 380/0 "Desiro" (3-car)
 STR_NAME_BR380_1                :BR Class 380/1 "Desiro" (4-car)
@@ -1664,6 +1664,7 @@ str_GA_Blue                     : (Greater Anglia - Blue)
 str_GA_Pride                    : (Greater Anglia - Pride)
 str_GA_White					: (Greater Anglia - White)
 str_GatEx						: (Gatwick Express)
+str_GatEx_White                 : (Gatwick Express - White)
 str_GatExUn						: (Gatwick Express - Unbranded)
 str_GBRf						: (GBRf)
 str_GBRf2						: (GBRf - 2nd Version Lights)
