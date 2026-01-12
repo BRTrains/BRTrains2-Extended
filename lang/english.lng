@@ -392,6 +392,10 @@ str_GWR_6400_liveries               :GWR Green, GWR Black, BR Green, BR Black
 
 # SR Pre-grouping Steam Locomotives
 
+STR_NAME_LBSCR_A1                   :LBSCR A1 Class "Terrier"
+STR_NAME_LBSCR_A1X                  :LBSCR A1X Class "Terrier"
+str_LBSCR_A1_liveries               :LBSCR Golden Ochre
+
 STR_NAME_LSWR_AdamsRadial		    :LSWR Adams 415 Class 4-4-2T "Adams Radial Tank"
 str_LSWR_AdamsRadial_liveries	    :LSWR Sage Green
 
@@ -1733,6 +1737,7 @@ str_HT							: (Hull Trains)
 str_ICI                         : (Imperial Chemical Industries)
 str_Kestrel                     : (Kestrel Prototype - Yellow and Black)
 str_LaPoste					    : (La Poste)
+str_LBSCR_GoldenOchre           : (LBSCR - Golden Ochre)
 str_LMSBlack                    : (LMS - Black)
 str_LMSRed                      : (LMS - Crimson)
 str_LMR                         : (Longmoor Military Railway)
