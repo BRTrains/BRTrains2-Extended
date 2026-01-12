@@ -1,8 +1,8 @@
 from pathlib import Path
-from sys import argv
 from argparse import ArgumentParser
 from importlib import util
 from collections import OrderedDict
+import logging
 
 RED = "\033[91m"
 YELLOW = "\033[93m" 
@@ -37,7 +37,7 @@ def check_project_structure(src_directory: Path, gfx_directory: Path,
     if not gfx_directory.exists():
         raise FileNotFoundError("\"gfx\" directory not found.  Aborting")
     if not lang_directory.exists():
-        print("\"lang\" directory not found.  Assuming hard-coded strings (this is not best practice)")
+        logging.warning("\"lang\" directory not found.  Assuming hard-coded strings (this is not best practice)")
         has_lang_dir = False
 
     # iterate over KeyFiles, and ensure they exist
@@ -46,9 +46,9 @@ def check_project_structure(src_directory: Path, gfx_directory: Path,
             if file == "grf.pnml" or file == "railtypes.pnml":
                 raise FileNotFoundError(error)
             else:
-                print(f"{YELLOW}WARNING: {error}{RESET}")
+                logging.warning(f"{error}")
 
-    print("Project structure is correct\n")
+    logging.info("Project structure is correct\n")
     return has_lang_dir
 
 
@@ -85,15 +85,14 @@ def write_file(filename: str, nml_file: str):
         makedirs("build")
 
     if filepath.exists():
-        print("'%s.nml' already exists.  Overwriting" % filename)
+        logging.info("'%s.nml' already exists.  Overwriting" % filename)
 
     # Write the internal nml to the file
     with open(filepath, "w") as file_writer:
         for line in nml_file:
             file_writer.write(line)
 
-    print("Written all files to '%s.nml' file\n" % filename)
-    return 0
+    logging.info("Written all files to '%s.nml' file\n" % filename)
 
 
 def compile_grf(has_lang_dir, grf_name, lang_dir):
@@ -112,38 +111,35 @@ def compile_grf(has_lang_dir, grf_name, lang_dir):
         try:
             # Try to compile the nml file
             nml.main.main(parameters)
+            logging.info("Finished compiling grf file\n")
         except SystemExit:
             # nml uses sys.exit(), so catch this to stop the program exiting
-            print("nml tried to exit but was stopped")
-        print("Finished compiling grf file\n")
-        return 1
+            logging.info("nml tried to exit but was stopped")
     else:
         # nml isn't installed
-        print("nml is not installed.  You can get it using 'pip install nml'")
-        return -2
+        logging.warning("nml is not installed.  You can get it using 'pip install nml'")
 
 
 def run_game(grf_name):
     from sys import platform
 
-    print("Detecting platform")
+    logging.info("Detecting platform")
 
     # Change default paths depending on whether we use Linux or Windows (sorry OSX)
     if platform.startswith("linux"):
         newgrf_dir = Path.home().joinpath(".openttd", "newgrf")
         executable_path = "/usr/bin/openttd"
         kill_cmd = ["killall","openttd"]
-        print("Detected as Linux")
+        logging.info("Detected as Linux")
     elif platform.startswith("win32"):
         newgrf_dir = Path.home().joinpath("Documents", "OpenTTD", "newgrf")
         executable_path = "C:/Program Files/OpenTTD/openttd.exe"
         kill_cmd = ["taskkill.exe" "/IM" "OpenTTD.exe"]
-        print("Detected as Windows")
+        logging.info("Detected as Windows")
     else:
-        print("Detected as Other.  Cannot run game.")
-        return -3
+        logging.warning("Detected as Other.  Cannot run game.")
 
-    print("Attempting to read config")
+    logging.info("Attempting to read config")
     json_read_ok = False
     # Check that the config file exists
     if Path("build/build.json").exists():
@@ -154,7 +150,7 @@ def run_game(grf_name):
                 data = load(json_data)
             # Errors if the file in invalid
             except decoder.JSONDecodeError:
-                print("The config file is invalid")
+                logging.error("The config file is invalid")
                 json_read_ok = False
             else:
                 # Read successfully
@@ -164,19 +160,19 @@ def run_game(grf_name):
                     executable_path = data["executable"]
                 # Errors if not all keys are found
                 except KeyError:
-                    print("The config json file is invalid")
+                    logging.error("The config json file is invalid")
                     json_read_ok = False
                 # Read successfully, set read_ok to true
                 else:
                     json_read_ok = True
-                    print("Read config successfully")
+                    logging.info("Read config successfully")
 
     # If reading the json didn't work
     if not json_read_ok:
         from json import dump
         from os import access, X_OK
 
-        print("No config, require user input")
+        logging.info("No config, require user input")
 
         # Prompt the user for the "newgrf" directory until we get something like it
         while not Path(newgrf_dir).exists():
@@ -206,26 +202,28 @@ def run_game(grf_name):
     from os import devnull
 
     # Kill existing processes
-    print("Killing existing processes")
+    logging.info("Killing existing processes")
     try:
         kill_process = Popen(kill_cmd)
         kill_process.wait()
     except:
-        print("Something went wrong when trying to kill processes")
+        logging.warning("Something went wrong when trying to kill processes")
 
     # Copy grf
-    print("Copying grf")
+    logging.info("Copying grf")
     copy("build/" + grf_name + ".grf", Path(newgrf_dir))
 
     # Run the game in it's root directory
-    print("Running game\n")
+    logging.info("Running game\n")
     # Redirect stdout and stderr
     null = open(devnull, "w")
     Popen([executable_path, "-t", "2050", "-g"], cwd=Path(executable_path).parent, stdout=null, stderr=null)
-    return 2
 
 
-def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
+def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game, logging_level=logging.INFO):
+    logger = logging.getLogger()
+    logger.setLevel(logging_level)
+    
     src_directory = Path("src")
     lang_directory = Path("lang")
     gfx_directory = Path("gfx")
@@ -238,12 +236,7 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
 
     # Add the special files to the internal nml file
     for files in KeyFiles.keys():
-        result = copy_file(src_directory.joinpath(files), nml_file)
-        
-        if result == -1:
-            return -1
-        else:
-            nml_file = result
+        nml_file = copy_file(src_directory.joinpath(files), nml_file)
 
     # Get a list of all the pnml files in src
     file_list = dict()
@@ -294,14 +287,14 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
 
     f = lambda a: "src" if a == src_directory else "/".join(directory.parts[1:])
     for directory in file_list.keys():
-        print(f"Found in directory [{f(directory)}]:")
-        print([str(file.stem + file.suffix) for file in file_list[directory]])
+        logging.debug(f"Found in directory [{f(directory)}]:")
+        logging.debug([str(file.stem + file.suffix) for file in file_list[directory]])
 
-    print("Finished finding pnml files\n")
+    logging.info("Finished finding pnml files\n")
 
     # iterate over all pnml files in the dictionary, and append it to the nml file
     for key, file_list in pnml_files.items():
-        print(f"Starting to read {key} files")
+        logging.debug(f"Starting to read {key} files")
         
         for file in sorted(file_list):
             file_name = file.stem + file.suffix
@@ -313,40 +306,32 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
                 engine_company_name = file.stem.rsplit("_")[0]
                 if engine_company_name in tender_files:
                     tender_file = tender_files.pop(engine_company_name)
-                    print(f"Reading Tender file: {tender_file.stem + tender_file.suffix}")
+                    logging.debug(f"Reading Tender file: {tender_file.stem + tender_file.suffix}")
                     nml_file = copy_file(tender_file, nml_file)
 
-            print(f"Reading {key} file: {file_name}")
+            logging.debug(f"Reading {key} file: {file_name}")
             nml_file = copy_file(file, nml_file)
 
             if file_name in SpecialOrderFiles.keys():
                 chain = special_files.get(file_name)
                 if chain is not None:
                     for chain_file in chain:
-                        print(f"Reading Special Order file: {chain_file.stem + chain_file.suffix}")
+                        logging.debug(f"Reading Special Order file: {chain_file.stem + chain_file.suffix}")
                         nml_file = copy_file(chain_file, nml_file)
 
-    print("Copied all files to internal buffer\n")
+    logging.info("Copied all files to internal buffer\n")
 
-    # Try to write the internal nml to a file
-    if write_file(grf_name, nml_file) != 0:
-        print("The nml file failed to compile")
-        return -1
+    # Write the internal nml to a file
+    write_file(grf_name, nml_file)
 
     # If we're compiling or running the game
     if b_compile_grf or b_run_game:
         # Try to compile the GRF
-        error = compile_grf(has_lang_dir, grf_name, lang_directory)
-        if error == -2:
-            return -2
-        elif b_run_game == False:
-            return 1
+        compile_grf(has_lang_dir, grf_name, lang_directory)
 
     # Optionally run the game
     if b_run_game:
         return run_game(grf_name)
-
-    return 0
 
 
 if __name__ == "__main__":
@@ -367,23 +352,37 @@ if __name__ == "__main__":
         "--run",
         action="store_true",
         help="Run the game after compilation (will also compile the file.  Also kills existing instances)")
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument(
+        "--quiet", 
+        action="store_const", 
+        dest="log_level", 
+        const=logging.ERROR )
+    group.add_argument(
+        "--debug", 
+        action="store_const", 
+        dest="log_level", 
+        const=logging.DEBUG )
+
+    parser.set_defaults(log_level=logging.INFO)
     args = parser.parse_args()
 
     # Reports any errors in the nml file compilation process
-    error_code = main(args.grf_name, args.src, args.lang, args.gfx,
-                      args.compile, args.run)
-    if error_code == -1:
-        print(
-            "The nml file failed to compile properly.  Please consult the log")
-    elif error_code == -2:
-        print("The nml file compiled correctly, but nml failed to compile it")
-    elif error_code == -3:
-        print(
-            "The grf file compiled successfully but the game failed to start")
-    elif error_code == 1:
-        print("The grf file was compiled successfully")
-    elif error_code == 2:
-        print(
-            "The grf file was compiled successfully, and the game was started")
-    else:
-        print("The nml file was compiled successfully (this is the not grf)")
+    main(args.grf_name, args.src, args.lang, args.gfx,
+                      args.compile, args.run, args.log_level)
+    
+    # if error_code == -1:
+    #     print(
+    #         "The nml file failed to compile properly.  Please consult the log")
+    # elif error_code == -2:
+    #     print("The nml file compiled correctly, but nml failed to compile it")
+    # elif error_code == -3:
+    #     print(
+    #         "The grf file compiled successfully but the game failed to start")
+    # elif error_code == 1:
+    #     print("The grf file was compiled successfully")
+    # elif error_code == 2:
+    #     print(
+    #         "The grf file was compiled successfully, and the game was started")
+    # else:
+    #     print("The nml file was compiled successfully (this is the not grf)")
