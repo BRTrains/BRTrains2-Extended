@@ -1000,7 +1000,7 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR377_TSOL_Southern_REV, [ STORE_TEMP((ge
     0: spriteset_BR377_PTSOL_Southern_REV;
     1: spritegroup_BR377_PTSOL_Southern_Loading_REV; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR377_PTSOL_Southern_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR377_PTSOL_Southern_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR377_PTSOL_Southern_REV;
     1: spritegroup_BR377_PTSOL_Southern_Loading_REV;
     2: sw_panto_BR377_REV; }
@@ -1074,24 +1074,16 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_2_5_MSOL_PTSOL_Southern, vehicle_is
         sw_loadstack_BR377_MSOL_Southern; }
 
 // 377/3 DMSO - MSOL - DMCO
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_DMSO_First_Group, vehicle_is_reversed) {
-    1:  sw_loadstack_BR377_DMSO_First_Group_REV;
-        sw_loadstack_BR377_DMSO_First_Group; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_DMSO_First_Group_REV, vehicle_is_reversed) {
-    1:  sw_loadstack_BR377_DMSO_First_Group;
-        sw_loadstack_BR377_DMSO_First_Group_REV; }
-
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_3_MSOL_First_Group, vehicle_is_reversed) {
     1:  sw_loadstack_BR377_MSOL_First_Group_REV;
         sw_loadstack_BR377_MSOL_First_Group; }
         
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_DMSO_DMCO_FCC, vehicle_is_reversed) {
-    1:  sw_loadstack_BR377_DMCO_FCC_REV;
+    1:  sw_loadstack_BR377_DMCO_FCC;
         sw_loadstack_BR377_DMSO_FCC; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_DMCO_DMSO_FCC, vehicle_is_reversed) {
-    1:  sw_loadstack_BR377_DMSO_FCC;
+    1:  sw_loadstack_BR377_DMSO_FCC_REV;
         sw_loadstack_BR377_DMCO_FCC_REV; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_3_MSOL_FCC, vehicle_is_reversed) {
@@ -1099,11 +1091,11 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_3_MSOL_FCC, vehicle_is_reversed) {
         sw_loadstack_BR377_MSOL_FCC; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_DMSO_DMCO_Southeastern, vehicle_is_reversed) {
-    1:  sw_loadstack_BR377_DMCO_Southeastern_REV;
+    1:  sw_loadstack_BR377_DMCO_Southeastern;
         sw_loadstack_BR377_DMSO_Southeastern; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_DMCO_DMSO_Southeastern, vehicle_is_reversed) {
-    1:  sw_loadstack_BR377_DMSO_Southeastern;
+    1:  sw_loadstack_BR377_DMSO_Southeastern_REV;
         sw_loadstack_BR377_DMCO_Southeastern_REV; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_3_MSOL_Southeastern, vehicle_is_reversed) {
@@ -1111,11 +1103,11 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_3_MSOL_Southeastern, vehicle_is_rev
         sw_loadstack_BR377_MSOL_Southeastern; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_DMSO_DMCO_Southern, vehicle_is_reversed) {
-    1:  sw_loadstack_BR377_DMCO_Southern_REV;
+    1:  sw_loadstack_BR377_DMCO_Southern;
         sw_loadstack_BR377_DMSO_Southern; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_DMCO_DMSO_Southern, vehicle_is_reversed) {
-    1:  sw_loadstack_BR377_DMSO_Southern;
+    1:  sw_loadstack_BR377_DMSO_Southern_REV;
         sw_loadstack_BR377_DMCO_Southern_REV; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_3_MSOL_Southern, vehicle_is_reversed) {
@@ -1123,6 +1115,14 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_3_MSOL_Southern, vehicle_is_reverse
         sw_loadstack_BR377_MSOL_Southern; }
 
 // 377/6 DMCO - MSO - TSOL - MSOL - DMCO
+switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_6_7_DMSO_DMCO_FCC, vehicle_is_reversed) {
+    1:  sw_loadstack_BR377_6_7_DMCO_FCC;
+        sw_loadstack_BR377_DMSO_FCC; }
+
+switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_6_7_DMCO_DMSO_FCC, vehicle_is_reversed) {
+    1:  sw_loadstack_BR377_DMSO_FCC_REV;
+        sw_loadstack_BR377_6_7_DMCO_FCC_REV; }
+
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_6_7_MSO_MSOL_FCC, vehicle_is_reversed) {
     1:  sw_loadstack_BR377_MSOL_FCC_REV;
         sw_loadstack_BR377_6_7_MSO_FCC; }
@@ -1139,6 +1139,14 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_6_7_MSOL_MSO_First_Group, vehicle_i
     1:  sw_loadstack_BR377_6_7_MSO_First_Group_REV;
         sw_loadstack_BR377_MSOL_First_Group; }
 
+switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_6_7_DMSO_DMCO_Southeastern, vehicle_is_reversed) {
+    1:  sw_loadstack_BR377_6_7_DMCO_Southeastern;
+        sw_loadstack_BR377_DMSO_Southeastern; }
+
+switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_6_7_DMCO_DMSO_Southeastern, vehicle_is_reversed) {
+    1:  sw_loadstack_BR377_DMSO_Southeastern_REV;
+        sw_loadstack_BR377_6_7_DMCO_Southeastern_REV; }
+
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_6_7_MSO_MSOL_Southeastern, vehicle_is_reversed) {
     1:  sw_loadstack_BR377_MSOL_Southeastern_REV;
         sw_loadstack_BR377_6_7_MSO_Southeastern; }
@@ -1146,6 +1154,14 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_6_7_MSO_MSOL_Southeastern, vehicle_
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_6_7_MSOL_MSO_Southeastern, vehicle_is_reversed) {
     1:  sw_loadstack_BR377_6_7_MSO_Southeastern_REV;
         sw_loadstack_BR377_MSOL_Southeastern; }
+
+switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_6_7_DMSO_DMCO_Southern, vehicle_is_reversed) {
+    1:  sw_loadstack_BR377_6_7_DMCO_Southern;
+        sw_loadstack_BR377_DMSO_Southern; }
+
+switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_6_7_DMCO_DMSO_Southern, vehicle_is_reversed) {
+    1:  sw_loadstack_BR377_DMSO_Southern_REV;
+        sw_loadstack_BR377_6_7_DMCO_Southern_REV; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_6_7_MSO_MSOL_Southern, vehicle_is_reversed) {
     1:  sw_loadstack_BR377_MSOL_Southern_REV;
@@ -1190,17 +1206,17 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR377_7_PTSOL_Southern, vehicle_is_revers
 
 // graphics switches
 switch(FEAT_TRAINS, SELF, sw_graphics_BR377_1_4_FCC, position_in_vehid_chain % 12) {
-    1:  sw_loadstack_BR377_DMCO_FCC;
+    1:  sw_reverse_BR377_DMSO_DMCO_FCC;
     4:  sw_reverse_BR377_1_4_TSOL_MSOL_FCC;
     7:  sw_reverse_BR377_1_4_MSOL_TSOL_FCC;
-    10: sw_loadstack_BR377_DMCO_FCC_REV;
+    10: sw_reverse_BR377_DMCO_DMSO_FCC;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR377_2_5_FCC, position_in_vehid_chain % 12) {
-    1:  sw_loadstack_BR377_DMCO_FCC;
+    1:  sw_reverse_BR377_DMSO_DMCO_FCC;
     4:  sw_reverse_BR377_2_5_PTSOL_MSOL_FCC;
     7:  sw_reverse_BR377_2_5_MSOL_PTSOL_FCC;
-    10: sw_loadstack_BR377_DMCO_FCC_REV;
+    10: sw_reverse_BR377_DMCO_DMSO_FCC;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR377_3_FCC, position_in_vehid_chain % 9) {
@@ -1210,19 +1226,19 @@ switch(FEAT_TRAINS, SELF, sw_graphics_BR377_3_FCC, position_in_vehid_chain % 9) 
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR377_6_FCC, position_in_vehid_chain % 15) {
-    1:  sw_loadstack_BR377_6_7_DMCO_FCC;
+    1:  sw_reverse_BR377_6_7_DMSO_DMCO_FCC;
     4:  sw_reverse_BR377_6_7_MSO_MSOL_FCC;
     7:  sw_reverse_BR377_6_TSOL_FCC;
     10: sw_reverse_BR377_6_7_MSOL_MSO_FCC;
-    13: sw_loadstack_BR377_6_7_DMCO_FCC_REV;
+    13: sw_reverse_BR377_6_7_DMCO_DMSO_FCC;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR377_7_FCC, position_in_vehid_chain % 15) {
-    1:  sw_loadstack_BR377_6_7_DMCO_FCC;
+    1:  sw_reverse_BR377_6_7_DMSO_DMCO_FCC;
     4:  sw_reverse_BR377_6_7_MSO_MSOL_FCC;
     7:  sw_reverse_BR377_7_PTSOL_FCC;
     10: sw_reverse_BR377_6_7_MSOL_MSO_FCC;
-    13: sw_loadstack_BR377_6_7_DMCO_FCC_REV;
+    13: sw_reverse_BR377_6_7_DMCO_DMSO_FCC;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR377_1_4_First_Group, position_in_vehid_chain % 12) {
@@ -1240,9 +1256,9 @@ switch(FEAT_TRAINS, SELF, sw_graphics_BR377_2_5_First_Group, position_in_vehid_c
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR377_3_First_Group, position_in_vehid_chain % 9) {
-    1:  sw_reverse_BR377_DMSO_First_Group;
+    1:  sw_loadstack_BR377_DMSO_First_Group;
     4:  sw_reverse_BR377_3_MSOL_First_Group;
-    7:  sw_reverse_BR377_DMSO_First_Group_REV;
+    7:  sw_loadstack_BR377_DMSO_First_Group_REV;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR377_6_First_Group, position_in_vehid_chain % 15) {
@@ -1262,17 +1278,17 @@ switch(FEAT_TRAINS, SELF, sw_graphics_BR377_7_First_Group, position_in_vehid_cha
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR377_1_4_Southeastern, position_in_vehid_chain % 12) {
-    1:  sw_loadstack_BR377_DMCO_Southeastern;
+    1:  sw_reverse_BR377_DMSO_DMCO_Southeastern;
     4:  sw_reverse_BR377_1_4_TSOL_MSOL_Southeastern;
     7:  sw_reverse_BR377_1_4_MSOL_TSOL_Southeastern;
-    10: sw_loadstack_BR377_DMCO_Southeastern_REV;
+    10: sw_reverse_BR377_DMCO_DMSO_Southeastern;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR377_2_5_Southeastern, position_in_vehid_chain % 12) {
-    1:  sw_loadstack_BR377_DMCO_Southeastern;
+    1:  sw_reverse_BR377_DMSO_DMCO_Southeastern;
     4:  sw_reverse_BR377_2_5_PTSOL_MSOL_Southeastern;
     7:  sw_reverse_BR377_2_5_MSOL_PTSOL_Southeastern;
-    10: sw_loadstack_BR377_DMCO_Southeastern_REV;
+    10: sw_reverse_BR377_DMCO_DMSO_Southeastern;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR377_3_Southeastern, position_in_vehid_chain % 9) {
@@ -1282,33 +1298,33 @@ switch(FEAT_TRAINS, SELF, sw_graphics_BR377_3_Southeastern, position_in_vehid_ch
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR377_6_Southeastern, position_in_vehid_chain % 15) {
-    1:  sw_loadstack_BR377_6_7_DMCO_Southeastern;
+    1:  sw_reverse_BR377_6_7_DMSO_DMCO_Southeastern;
     4:  sw_reverse_BR377_6_7_MSO_MSOL_Southeastern;
     7:  sw_reverse_BR377_6_TSOL_Southeastern;
     10: sw_reverse_BR377_6_7_MSOL_MSO_Southeastern;
-    13: sw_loadstack_BR377_6_7_DMCO_Southeastern_REV;
+    13: sw_reverse_BR377_6_7_DMCO_DMSO_Southeastern;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR377_7_Southeastern, position_in_vehid_chain % 15) {
-    1:  sw_loadstack_BR377_6_7_DMCO_Southeastern;
+    1:  sw_reverse_BR377_6_7_DMSO_DMCO_Southeastern;
     4:  sw_reverse_BR377_6_7_MSO_MSOL_Southeastern;
     7:  sw_reverse_BR377_7_PTSOL_Southeastern;
     10: sw_reverse_BR377_6_7_MSOL_MSO_Southeastern;
-    13: sw_loadstack_BR377_6_7_DMCO_Southeastern_REV;
+    13: sw_reverse_BR377_6_7_DMCO_DMSO_Southeastern;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR377_1_4_Southern, position_in_vehid_chain % 12) {
-    1:  sw_loadstack_BR377_DMCO_Southern;
+    1:  sw_reverse_BR377_DMSO_DMCO_Southern;
     4:  sw_reverse_BR377_1_4_TSOL_MSOL_Southern;
     7:  sw_reverse_BR377_1_4_MSOL_TSOL_Southern;
-    10: sw_loadstack_BR377_DMCO_Southern_REV;
+    10: sw_reverse_BR377_DMCO_DMSO_Southern;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR377_2_5_Southern, position_in_vehid_chain % 12) {
-    1:  sw_loadstack_BR377_DMCO_Southern;
+    1:  sw_reverse_BR377_DMSO_DMCO_Southern;
     4:  sw_reverse_BR377_2_5_PTSOL_MSOL_Southern;
     7:  sw_reverse_BR377_2_5_MSOL_PTSOL_Southern;
-    10: sw_loadstack_BR377_DMCO_Southern_REV;
+    10: sw_reverse_BR377_DMCO_DMSO_Southern;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR377_3_Southern, position_in_vehid_chain % 9) {
@@ -1318,19 +1334,19 @@ switch(FEAT_TRAINS, SELF, sw_graphics_BR377_3_Southern, position_in_vehid_chain 
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR377_6_Southern, position_in_vehid_chain % 15) {
-    1:  sw_loadstack_BR377_6_7_DMCO_Southern;
+    1:  sw_reverse_BR377_6_7_DMSO_DMCO_Southern;
     4:  sw_reverse_BR377_6_7_MSO_MSOL_Southern;
     7:  sw_reverse_BR377_6_TSOL_Southern;
     10: sw_reverse_BR377_6_7_MSOL_MSO_Southern;
-    13: sw_loadstack_BR377_6_7_DMCO_Southern_REV;
+    13: sw_reverse_BR377_6_7_DMCO_DMSO_Southern;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR377_7_Southern, position_in_vehid_chain % 15) {
-    1:  sw_loadstack_BR377_6_7_DMCO_Southern;
+    1:  sw_reverse_BR377_6_7_DMSO_DMCO_Southern;
     4:  sw_reverse_BR377_6_7_MSO_MSOL_Southern;
     7:  sw_reverse_BR377_7_PTSOL_Southern;
     10: sw_reverse_BR377_6_7_MSOL_MSO_Southern;
-    13: sw_loadstack_BR377_6_7_DMCO_Southern_REV;
+    13: sw_reverse_BR377_6_7_DMCO_DMSO_Southern;
         spriteset_empty; }
 
 // livery switches

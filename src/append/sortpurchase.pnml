@@ -17,6 +17,8 @@ sort(FEAT_TRAINS, [
     item_GWR_6400,
         item_GWR_7400,
     // SR Pre-Grouping Steam Locomotives
+    item_LBSCR_A1,
+        item_LBSCR_A1X,
     item_LSWR_N15,
     // SR Steam Locomotives
     item_SR_N15,
