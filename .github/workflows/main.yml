@@ -54,7 +54,7 @@ jobs:
           pip3 install nml
 
       - name: Build
-        run: python3 build.py BRTrainsv2XL --compile
+        run: python3 build.py BRTrainsv2XL --compile --debug
         working-directory: ${{ github.workspace }}
 
       - name: Upload artifact

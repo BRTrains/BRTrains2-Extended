@@ -48,7 +48,7 @@ def check_project_structure(src_directory: Path, gfx_directory: Path,
             else:
                 logging.warning(f"{error}")
 
-    logging.info("Project structure is correct\n")
+    logging.info("Project structure is correct")
     return has_lang_dir
 
 
@@ -111,7 +111,7 @@ def compile_grf(has_lang_dir, grf_name, lang_dir):
         try:
             # Try to compile the nml file
             nml.main.main(parameters)
-            logging.info("Finished compiling grf file\n")
+            logging.info("Finished compiling grf file")
         except SystemExit:
             # nml uses sys.exit(), so catch this to stop the program exiting
             logging.info("nml tried to exit but was stopped")
@@ -290,11 +290,11 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game, loggin
         logging.debug(f"Found in directory [{f(directory)}]:")
         logging.debug([str(file.stem + file.suffix) for file in file_list[directory]])
 
-    logging.info("Finished finding pnml files\n")
+    logging.info("Finished finding pnml files")
 
     # iterate over all pnml files in the dictionary, and append it to the nml file
     for key, file_list in pnml_files.items():
-        logging.debug(f"Starting to read {key} files")
+        logging.info(f"Starting to read {key} files")
         
         for file in sorted(file_list):
             file_name = file.stem + file.suffix
