@@ -1,17 +1,19 @@
 PNML_TEMPLATE = """
 // basic sprite
-spriteset(spriteset_{unit}, "{path}/{unit}_1x_8bpp.png")
-    {{ template_XXtrains_1x(0,0) }}
+spriteset(spriteset_{unit}{rev}, "{path}/{unit}_1x_8bpp.png")
+    {{ template_XXtrains{rev}_1x(0,0) }}
 
-    alternative_sprites(spriteset_{unit}, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "{path}/{unit}_1x_32bpp.png", "{path}/{unit}_1x_mask.png")
-    {{ template_XXtrains_1x(0,0) }}
+    alternative_sprites(spriteset_{unit}{rev}, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "{path}/{unit}_1x_32bpp.png", "{path}/{unit}_1x_mask.png")
+    {{ template_XXtrains{rev}_1x(0,0) }}
 
-    alternative_sprites(spriteset_{unit}, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "{path}/{unit}_2x_32bpp.png", "{path}/{unit}_2x_mask.png")
-    {{ template_XXtrains_2x(0,0) }}
+    alternative_sprites(spriteset_{unit}{rev}, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "{path}/{unit}_2x_32bpp.png", "{path}/{unit}_2x_mask.png")
+    {{ template_XXtrains{rev}_2x(0,0) }}
 
-    alternative_sprites(spriteset_{unit}, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "{path}/{unit}_4x_32bpp.png", "{path}/{unit}_4x_mask.png")
-    {{ template_XXtrains_4x(0,0) }}
+    alternative_sprites(spriteset_{unit}{rev}, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "{path}/{unit}_4x_32bpp.png", "{path}/{unit}_4x_mask.png")
+    {{ template_XXtrains{rev}_4x(0,0) }}
+"""
 
+PURCHASE_TEMPLATE = """
 // purchase sprite
 spriteset(spriteset_{unit}_purchase, "{path}/{unit}_1x_8bpp.png")
     {{ template_purchase(0,0) }}
@@ -21,17 +23,17 @@ spriteset(spriteset_{unit}_purchase, "{path}/{unit}_1x_8bpp.png")
 """
 
 LOADING_TEMPLATE = """
-spriteset(spriteset_{unit}_Loading, "{path}/{unit}_Loading_1x_8bpp.png")
-    {{ template_XXtrains_1x(0,0) }}
+spriteset(spriteset_{unit}_Loading{rev}, "{path}/{unit}_Loading_1x_8bpp.png")
+    {{ template_XXtrains{rev}_1x(0,0) }}
 
-    alternative_sprites(spriteset_{unit}_Loading, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "{path}/{unit}_Loading_1x_32bpp.png", "{path}/{unit}_Loading_1x_mask.png")
-    {{ template_XXtrains_1x(0,0) }}
+    alternative_sprites(spriteset_{unit}_Loading{rev}, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "{path}/{unit}_Loading_1x_32bpp.png", "{path}/{unit}_Loading_1x_mask.png")
+    {{ template_XXtrains{rev}_1x(0,0) }}
 
-    alternative_sprites(spriteset_{unit}_Loading, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "{path}/{unit}_Loading_2x_32bpp.png", "{path}/{unit}_Loading_2x_mask.png")
-    {{ template_XXtrains_2x(0,0) }}
+    alternative_sprites(spriteset_{unit}_Loading{rev}, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "{path}/{unit}_Loading_2x_32bpp.png", "{path}/{unit}_Loading_2x_mask.png")
+    {{ template_XXtrains{rev}_2x(0,0) }}
 
-    alternative_sprites(spriteset_{unit}_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "{path}/{unit}_Loading_4x_32bpp.png", "{path}/{unit}_Loading_4x_mask.png")
-    {{ template_XXtrains_4x(0,0) }}
+    alternative_sprites(spriteset_{unit}_Loading{rev}, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "{path}/{unit}_Loading_4x_32bpp.png", "{path}/{unit}_Loading_4x_mask.png")
+    {{ template_XXtrains{rev}_4x(0,0) }}
 
 // loading sprite
 spritegroup spritegroup_{unit}_Loading {{  

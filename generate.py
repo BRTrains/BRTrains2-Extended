@@ -6,7 +6,6 @@ from template.spriteset_template import *
 from template.keywords import keyword_map
 
 gfx_directory = Path("gfx")
-src_directory = Path("src")
 voxel_directory = Path("voxels")
 
 def classify_vox_files(vox_files: set[Path]):
@@ -32,7 +31,7 @@ def generate_pnml(vox_files):
     unit_base_name = os.path.commonprefix(stems).rstrip("_")
 
     rel_path = next(iter(vox_files)).parent.relative_to(voxel_directory)
-
+    
     output_dir = Path("template/autogen")
     output_dir.mkdir(parents=True, exist_ok=True)
     
@@ -45,39 +44,60 @@ def generate_pnml(vox_files):
         for f_default in groups['default']:
             p.write(PNML_TEMPLATE.format(
                 unit = f_default.stem,
-                path = gfx_path
-            ) + "\n")
+                path = gfx_path,
+                rev = ""
+            ))
 
+            p.write(PURCHASE_TEMPLATE.format(
+                unit = f_default.stem,
+                path = gfx_path
+            ))
+            
             if Path(voxel_directory / rel_path / f"{f_default.stem}_Loading.vox").exists():
                 p.write(LOADING_TEMPLATE.format(
                     unit = f_default.stem,
-                    path = gfx_path
+                    path = gfx_path,
+                    rev = ""
                 ))
+                
+            if "MU" in rel_path.__str__():
+                p.write(PNML_TEMPLATE.format(
+                    unit = f"{f_default.stem}",
+                    path = gfx_path,
+                    rev = "_REV"
+                ))
+                
+                if Path(voxel_directory / rel_path / f"{f_default.stem}_Loading.vox").exists():
+                    p.write(LOADING_TEMPLATE.format(
+                        unit = f"{f_default.stem}",
+                        path = gfx_path,
+                        rev = "_REV"
+                    ))
 
         if Path(voxel_directory / rel_path / f"{unit_base_name}_Loading.vox").exists():
             p.write(LOADING_TEMPLATE.format(
                 unit = unit_base_name,
                 path = gfx_path
-            ) + "\n")
+            ))
 
         if len(groups["dual_mode"]) == 2:
             p.write(DUAL_MODE_TEMPLATE.format(
                 unit = unit_base_name,
                 path = gfx_path
-            ) + "\n")
+            ))
 
         if len(groups["anim"]) == 4:
             p.write(ANIM_TEMPLATE.format(
                 unit = unit_base_name,
                 path = gfx_path
-            ) + "\n")
+            ))
 
         if len(groups["bulk"]) >= 1:
             for f_bulk in groups["bulk"]:
                 p.write(BULK_TEMPLATE.format(
                     unit = f_bulk.stem,
                     path = gfx_path
-                ) + "\n" )
+                ))
 
             p.write(BULK_SPRITEGROUP.format(
                 unit = unit_base_name,
@@ -89,6 +109,6 @@ def generate_pnml(vox_files):
                 unit = f_cargo.stem,
                 base_unit = unit_base_name,
                 path = gfx_path
-            ) + "\n")
+            ))
     
     print(f"\nGenerated: {pnml_file}")

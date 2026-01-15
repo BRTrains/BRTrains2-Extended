@@ -105,7 +105,7 @@ def main(input_folder,
          generate=False):
 
     # validate if GoRender is installed
-    if not gorender_path.is_file():
+    if not gorender_path.is_file() & generate == False:
         raise GoRenderNotFoundError(gorender_path)
     
     validate_needed_files(palette_path)
