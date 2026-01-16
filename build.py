@@ -24,7 +24,8 @@ SpecialOrderFiles = {
     "RCH_1907_graphics.pnml": ["1_Plank_Open_Wagons_Load.pnml", "3_Plank_Open_Wagons_Load.pnml", "5_Plank_Open_Wagons_Load.pnml", "7_Plank_Open_Wagons_Load.pnml", "RCH_1907.pnml", "RCH_1907_1_plank.pnml", "RCH_1907_3_plank.pnml", "RCH_1907_5_plank.pnml", "RCH_1907_7_plank.pnml", "RCH_1907_Van.pnml"],
     "60Long_Cont20_Side.pnml": ["60Long_Cont30_Side.pnml", "60Long_Cont40_Side.pnml", "BR_FFA.pnml","BR_FEA.pnml"],
     "LMS_4F.pnml" : ["MR_Tenders.pnml", "MR_3835.pnml", "LMS_Fowler_2P.pnml", "LMS_Fowler_4P.pnml",],
-    "Evol_Header.pnml": ["Evol_B.pnml", "Evol_F.pnml", "Evol_T.pnml"]
+    "Evol_Header.pnml": ["Evol_B.pnml", "Evol_F.pnml", "Evol_T.pnml"],
+    "BR_Mk2_BSO.pnml": ["BR_Mk2L_BSO.pnml", "BR_Mk2L_DBSO.pnml"]
 }
 
 def check_project_structure(src_directory: Path, gfx_directory: Path,
@@ -328,7 +329,7 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game, loggin
     # If we're compiling or running the game
     if b_compile_grf or b_run_game:
         # Try to compile the GRF
-        logger.setLevel(logging.INFO)
+        logger.setLevel(logging.INFO) # so PIL doesn't spam us
         compile_grf(has_lang_dir, grf_name, lang_directory)
 
     # Optionally run the game
