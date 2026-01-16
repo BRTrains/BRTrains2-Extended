@@ -871,6 +871,9 @@ STR_NAME_BR310_0				:BR Class 310/0 "AM10" (4-Car)
 STR_NAME_BR310_1				:BR Class 310/1 (3-Car)
 str_BR310_liveries			    :BR Blue/Grey, Network South East, Regional Rail
 
+STR_NAME_BR313                  :BR Class 313
+str_BR313_liveries              :NSE
+
 STR_NAME_BR315					:BR Class 315 (4-car)
 str_BR315_liveries				:BR Blue/Grey, NSE, Network SouthEast Alternative Scheme, WAGN, One, First Great Eastern, National Express East Anglia, Abellio Greater Anglia, TfL Rail, London Overground
 
