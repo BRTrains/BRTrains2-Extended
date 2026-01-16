@@ -296,7 +296,8 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game, loggin
     for key, file_list in pnml_files.items():
         logging.info(f"Starting to read {key} files")
         
-        for file in sorted(file_list):
+        file_list.sort()
+        for file in file_list:
             file_name = file.stem + file.suffix
 
             if file_name in in_chain:
@@ -327,6 +328,7 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game, loggin
     # If we're compiling or running the game
     if b_compile_grf or b_run_game:
         # Try to compile the GRF
+        logger.setLevel(logging.INFO)
         compile_grf(has_lang_dir, grf_name, lang_directory)
 
     # Optionally run the game
