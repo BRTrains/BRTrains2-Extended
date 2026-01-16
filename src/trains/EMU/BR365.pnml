@@ -1159,7 +1159,7 @@ switch(FEAT_TRAINS, SELF, sw_capacity_BR365, position_in_vehid_chain % 12) {
 // speed switch
 switch(FEAT_TRAINS, PARENT, sw_speed_BR365_25kV, tile_powers_railtype("ELRL")) {
     1: 100;
-        75; }	
+        90; }	
 
 switch(FEAT_TRAINS, SELF, sw_speed_BR365, param_max_speed) {
     0: return sw_speed_BR365_25kV; // operational speed
