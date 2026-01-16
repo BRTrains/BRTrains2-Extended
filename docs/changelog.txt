@@ -1,20 +1,31 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
-# v0.0.5 (Alpha)
+# v0.0.6 (Alpha)
+
+# v0.0.5 (Alpha) 16-01-2025
+- Added LBSCR A1 and A1X "Terrier"
+- Added BR Class 172
+- Added BR Class 313
+- Added BR Class 377
+- Added BR class 387
+- Added ability for all Brake coaches to not carry mail
 - Added Generic 48' Elliptical T
 - Added Generic 48' F
 - Added RCH 1927 10t Open Wagon and Van
-- Buffed all unit air drag universally
+- Fixed all unit air drag universally, now all units will accelerate faster
+- Fixed BR37 BR Blue Large Logo sprite
+- Fixed air drag for BR404
+- Fixed BR309 BDTS BR Blue sprite
+- Fixed unsynchronized BR150 and BR380 reliability
+- Fixed BR720 c2c livery
+- Fixed BR Mk1 TK/SK BR Blue sprite
 - Fixed wrong cargo being available for WD 10t Tank and RCH 1907 Wagons
-- Fixed air drag for BR 404
-- Fixed BR 309 BDTS sprite
-- Fixed unsynchronized BR 150 and BR 380 reliability
-- Buffed RCH 1907 speed
-- Reduced RCH 1907 capacity
-- Buffed BR MCV speed
 - Fixes to BR BAA wagon speed
 - Fixes to LNER 21t Hopper cargo capacity
+- Buffed RCH 1907 speed
+- Buffed BR MCV speed
+- Reduced RCH 1907 capacity
 
-# v0.0.4 (Alpha)
+# v0.0.4 (Alpha) 17-12-2025
 - Added GWR 2800 Class
 - Added GWR 2900 Class
 - Added GWR Large Prairies
