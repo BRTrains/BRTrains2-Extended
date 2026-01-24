@@ -576,6 +576,40 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk3_TSO_EWS, [ STORE_TEMP((getbits(ext
     1: spritegroup_BR_Mk3_EWS_Loading; }
 
 // basic sprite
+spriteset(spriteset_BR_Mk3_TSO_NatEx, "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TSO_NatEx_1x_8bpp.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Mk3_TSO_NatEx, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TSO_NatEx_1x_32bpp.png", "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TSO_NatEx_1x_mask.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Mk3_TSO_NatEx, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TSO_NatEx_2x_32bpp.png", "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TSO_NatEx_2x_mask.png")
+    { template_148trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_Mk3_TSO_NatEx, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TSO_NatEx_4x_32bpp.png", "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TSO_NatEx_4x_mask.png")
+    { template_148trains_4x(0,0) }
+        
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk3_TSO_NatEx, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR_Mk3_TSO_NatEx;
+    1: spritegroup_BR_Mk3_EC_Loading; }
+
+// basic sprite
+spriteset(spriteset_BR_Mk3_TSO_ONE, "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TSO_ONE_1x_8bpp.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Mk3_TSO_ONE, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TSO_ONE_1x_32bpp.png", "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TSO_ONE_1x_mask.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Mk3_TSO_ONE, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TSO_ONE_2x_32bpp.png", "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TSO_ONE_2x_mask.png")
+    { template_148trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_Mk3_TSO_ONE, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TSO_ONE_4x_32bpp.png", "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TSO_ONE_4x_mask.png")
+    { template_148trains_4x(0,0) }
+        
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk3_TSO_ONE, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR_Mk3_TSO_ONE;
+    1: spritegroup_BR_Mk3_ONE_Loading; }
+
+// basic sprite
 spriteset(spriteset_BR_Mk3_TSO_RCS, "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TSO_RCS_1x_8bpp.png")
     { template_148trains_1x(0,0) }
 
@@ -646,15 +680,17 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk3_TSO_Wrexham_And_Shropshire, [ STOR
 switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk3_TSO, cargo_subtype) {
     0:  sw_loadstack_BR_Mk3_TSO_BR_Blue;
     1:  sw_loadstack_BR_Mk3_TSO_BR_Scotrail;
-    2:  sw_loadstack_BR_Mk3_TSO_DRS;
+    2:  sw_loadstack_BR_Mk3_TSO_Chiltern;
     3:  sw_loadstack_BR_Mk3_TSO_EWS;
-    4:  sw_loadstack_BR_Mk3_TSO_Chiltern;
-    5:  sw_loadstack_BR_Mk3_TSO_Arriva_Trains_Executive;
-    6:  sw_loadstack_BR_Mk3_TSO_Wrexham_And_Shropshire;
-    7:  sw_loadstack_BR_Mk3_TSO_Virgin_Pretendolino;
-    8:  sw_loadstack_BR_Mk3_TSO_Stobart;
-    9:  sw_loadstack_BR_Mk3_TSO_Abellio_GA;
-    10: sw_loadstack_BR_Mk3_TSO_RCS; }
+    4:  sw_loadstack_BR_Mk3_TSO_Arriva_Trains_Executive;
+    5:  sw_loadstack_BR_Mk3_TSO_NatEx;
+    6:  sw_loadstack_BR_Mk3_TSO_ONE;
+    7:  sw_loadstack_BR_Mk3_TSO_Wrexham_And_Shropshire;
+    8:  sw_loadstack_BR_Mk3_TSO_Virgin_Pretendolino;
+    9:  sw_loadstack_BR_Mk3_TSO_DRS;
+    10: sw_loadstack_BR_Mk3_TSO_Abellio_GA;
+    11: sw_loadstack_BR_Mk3_TSO_Stobart;
+    12: sw_loadstack_BR_Mk3_TSO_RCS; }
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_EWS_DB_company_train_name, current_year) {
@@ -664,15 +700,17 @@ switch(FEAT_TRAINS, SELF, sw_EWS_DB_company_train_name, current_year) {
 switch(FEAT_TRAINS, SELF, sw_BR_Mk3_TSO_cargo_subtype_text, cargo_subtype){
 	0:	return string(str_BRBlueGrey);
     1:  return string(str_BRScotRail);
-    2:  return string(str_DRS);
+    2:  return string(str_Chiltern);
     3:  return sw_EWS_DB_company_train_name;
-    3:  return string(str_Chiltern);
-    4:  return string(str_Wrexham);
-    5:  return string(str_ArrivaWales);
-    6:  return string(str_VirginPretendolino);
-    7:  return string(str_AGA);
-    8:  return string(str_StobartRail);
-    9:  return string(str_RCS);
+    4:  return string(str_ArrivaWales);
+    5:  return string(str_NatEx);
+    6:  return string(str_ONE);
+    7:  return string(str_Wrexham);
+    8:  return string(str_VirginPretendolino);
+    9:  return string(str_DRS);
+    10: return string(str_AGA);
+    11: return string(str_StobartRail);
+    12: return string(str_RCS);
        return CB_RESULT_NO_TEXT; }
 
 // graphics switch

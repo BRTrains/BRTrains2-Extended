@@ -1297,7 +1297,7 @@ STR_NAME_BR_Mk3a_TSO            :BR Mark 3a Coach (TSO)
 STR_NAME_BR_Mk3Sleeper			:BR Mark 3 Sleeper Coach
 str_BR_Mk3Sleeper_liveries	    :BR Blue, InterCity, First ScotRail, ScotRail, Caledonian Sleaper, Great Western, GWR
 
-STR_NAME_BR_Mk3DVT				:BR Mark 3 DVT
+STR_NAME_BR_Mk3DVT				:BR Mark 3 Driving Trailer (DVT)
 str_BR_Mk3DVT_liveries			:InterCity Swallow, Virgin, ONE, Chiltern, Greater Anglia, Transport for Wales, Virgin "Pretendolino", Arriva Wales, Network Rail
 
 str_BR_Mk3_liveries			    :BR Blue, InterCity, Midland Mainline, East Midlands Trains, Virgin Trains, Cross Country, Grand Central, FGW, GNER
@@ -1305,7 +1305,7 @@ str_BR_Mk3a_liveries			:BR Blue, InterCity, Midland Mainline, East Midlands Trai
 
 STR_NAME_BR_Mk4_Header			:BR Mark 4 Coaches
 
-STR_NAME_BR_Mk4_DVT				:BR Mark 4 DVT
+STR_NAME_BR_Mk4_DVT				:BR Mark 4 Driving Trailer (DVT)
 STR_NAME_BR_Mk4_TF				:BR Mark 4 Coach (TF)
 STR_NAME_BR_Mk4_TFE             :BR Mark 4 Coach (TFE)
 STR_NAME_BR_Mk4_TRFB            :BR Mark 4 Coach (TRFB)
