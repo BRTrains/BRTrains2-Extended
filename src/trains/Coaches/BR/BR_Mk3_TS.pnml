@@ -382,7 +382,6 @@ switch(FEAT_TRAINS, SELF, sw_BR_Mk3_TS_cargo_subtype_text, cargo_subtype){
     19: return string(str_LNERRedWhite);
     20: return string(str_NetworkRail);
     21: return string(str_BRNankingBlue);
-    22: return string(str_ColasRail);
        return CB_RESULT_NO_TEXT; }
 
 // graphics switch
@@ -693,10 +692,6 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk3_TSO, cargo_subtype) {
     12: sw_loadstack_BR_Mk3_TSO_RCS; }
 
 // livery name refit switch
-switch(FEAT_TRAINS, SELF, sw_EWS_DB_company_train_name, current_year) {
-    0..2012: string(str_EWSCompany);
-        return string(str_DBSCompany); }
-
 switch(FEAT_TRAINS, SELF, sw_BR_Mk3_TSO_cargo_subtype_text, cargo_subtype){
 	0:	return string(str_BRBlueGrey);
     1:  return string(str_BRScotRail);

@@ -558,3 +558,7 @@ spritegroup spritegroup_BR_Mk3_XC_Loading {
 switch(FEAT_TRAINS, SELF, sw_length_BR_Mk3, position_in_articulated_veh % 3) {
 	1: 6;
 	    4; }
+
+switch(FEAT_TRAINS, SELF, sw_EWS_DB_company_train_name, current_year) {
+    0..2012: string(str_EWSCompany);
+        return string(str_DBSCompany); }
