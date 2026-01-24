@@ -1,4 +1,21 @@
 // basic sprites
+spriteset(spriteset_BR_Mk3_TF_Blue_Pullman, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_Blue_Pullman_1x_8bpp.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Mk3_TF_Blue_Pullman, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_Blue_Pullman_1x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_Blue_Pullman_1x_mask.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Mk3_TF_Blue_Pullman, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_Blue_Pullman_2x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_Blue_Pullman_2x_mask.png")
+    { template_148trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_Mk3_TF_Blue_Pullman, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_Blue_Pullman_4x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_Blue_Pullman_4x_mask.png")
+    { template_148trains_4x(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk3_TF_Blue_Pullman, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR_Mk3_TF_Blue_Pullman;
+    1: spritegroup_BR_Mk3_Blue_Pullman_Loading; }
+
+// basic sprites
 spriteset(spriteset_BR_Mk3_TF_BR_Blue, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_BR_Blue_1x_8bpp.png")
     { template_148trains_1x(0,0) }
 
@@ -214,7 +231,7 @@ spriteset(spriteset_BR_Mk3_TF_Midland_Mainline, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF
 
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk3_TF_Midland_Mainline, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR_Mk3_TF_Midland_Mainline;
-    1: spritegroup_BR_Mk3_Midland_Mainline_Loading; }
+    1: spritegroup_BR_Mk3_MML_Loading; }
 
 // basic sprite
 spriteset(spriteset_BR_Mk3_TF_RCS, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_RCS_1x_8bpp.png")
@@ -238,7 +255,7 @@ spriteset(spriteset_BR_Mk3_TF_RCS_purchase, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_RCS
 
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk3_TF_RCS, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR_Mk3_TF_RCS;
-    1: spritegroup_BR_Mk3_RCS_Loading; }
+    1: spritegroup_BR_Mk3_RCS_Loco_Loading; }
 
 // basic sprite
 spriteset(spriteset_BR_Mk3_TF_Virgin, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_Virgin_1x_8bpp.png")

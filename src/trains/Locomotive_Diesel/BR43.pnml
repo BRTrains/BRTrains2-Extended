@@ -711,9 +711,9 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR43, cargo_subtype) {
     17: spriteset_BR43_ScotRail;
     18: spriteset_BR43_GWR;
     19: spriteset_BR43_LNER;
-    20: spriteset_BR43_Colas;
-    21: spriteset_BR43_NetworkRail;
-    22: spriteset_BR43_Blue_Pullman;
+    20: spriteset_BR43_NetworkRail;
+    21: spriteset_BR43_Blue_Pullman;
+    22: spriteset_BR43_Colas;
     23: spriteset_BR43_RailAdventure;
     24: spriteset_BR43_RCS;
 }
@@ -739,16 +739,16 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR43_REV, cargo_subtype) {
     17: spriteset_BR43_ScotRail_REV;
     18: spriteset_BR43_GWR_REV;
     19: spriteset_BR43_LNER_REV;
-    20: spriteset_BR43_Colas_REV;
-    21: spriteset_BR43_NetworkRail_REV;
-    22: spriteset_BR43_Blue_Pullman_REV;
+    20: spriteset_BR43_NetworkRail_REV;
+    21: spriteset_BR43_Blue_Pullman_REV;
+    22: spriteset_BR43_Colas_REV;
     23: spriteset_BR43_RailAdventure_REV;
     24: spriteset_BR43_RCS_REV;
 }
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR43_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_BRBlue);
+	0:	return string(str_BRBlueGrey);
     1:  return string(str_BRInterCityExecutive);
     2:  return string(str_BRInterCitySwallow);
     3:  return string(str_GWT);
@@ -768,9 +768,9 @@ switch(FEAT_TRAINS, SELF, sw_BR43_cargo_subtype_text, cargo_subtype){
     17: return string(str_ScotRail_I7C);
     18: return string(str_GWR);
     19: return string(str_LNERRedWhite);
-    20: return string(str_ColasRail);
-    21: return string(str_NetworkRail);
-    22: return string(str_BRNankingBlue);
+    20: return string(str_NetworkRail);
+    21: return string(str_BRNankingBlue);
+    22: return string(str_ColasRail);
     23: return string(str_RailAdventure);
     24: return string(str_RCS);
        return CB_RESULT_NO_TEXT;
