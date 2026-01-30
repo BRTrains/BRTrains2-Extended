@@ -479,7 +479,8 @@ STR_NAME_GCR_9J                     :GCR Robinson Class 9J
 STR_NAME_GCR_9J_LNER                :LNER Robinson Class J11
 str_GCR_9J_liveries                 :GCR Black, LNER Black, BR Black
 
-STR_NAME_GER_L77			        :GER Hill Class L77 0-6-2T (LNER Class N7)
+STR_NAME_GER_L77			        :GER Class L77
+STR_NAME_GER_L77_LNER               :LNER Class N7
 str_GER_L77_liveries			    :GER Blue, GER Black, LNER Apple Green, LNER Black, BR Black
 
 # LNER Steam Locomotives
