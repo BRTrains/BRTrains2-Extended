@@ -698,7 +698,7 @@ item (FEAT_TRAINS, item_GWR_8100, 810) {
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
         air_drag_coefficient:           0.06;
-        tractive_effort_coefficient:    0.15;
+        tractive_effort_coefficient:    0.16;
         length:                         8;
     }
 
