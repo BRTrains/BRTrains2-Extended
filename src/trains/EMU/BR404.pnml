@@ -915,7 +915,7 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR404_BUF, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR404_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_SROlive);
+	0:	return string(str_SR_Olive);
     1:  return string(str_BRMalachite);
     2:  return string(str_BRGreenPanel);
     3:  return string(str_BRGreenFront);

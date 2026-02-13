@@ -299,7 +299,7 @@ switch(FEAT_TRAINS, SELF, sw_SR_Green_BR401, cargo_subtype) {
     3: sw_graphics_BR401_BR_Blue; }
 
 switch(FEAT_TRAINS, SELF, sw_BR401_cargo_subtype_text, cargo_subtype) {
-    0: return string(str_SROlive);
+    0: return string(str_SR_Olive);
     1: return string(str_BRGreen);
     2: return string(str_BRMalachite);
     3: return string(str_BRBlue);

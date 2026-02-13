@@ -123,7 +123,7 @@ switch(FEAT_TRAINS, SELF, sw_livery_Milk_Tank, cargo_subtype) {
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_Milk_Tank_cargo_subtype_text, cargo_subtype){
 	0:	return string(str_var_Random);
-    1:  return string(str_SRGrey);
+    1:  return string(str_SR_Grey);
     2:  return string(STR_LIVERY_SHORT, string(str_col_White));
     3:  return string(STR_LIVERY_SHORT, string(str_col_Red));
     4:  return string(STR_LIVERY_SHORT, string(str_col_Cream));
