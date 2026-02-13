@@ -116,6 +116,19 @@ spriteset(spriteset_GWR_3500gal_GWR_Black_Shirtbutton, "gfx/Tender/GWR_3500gal/G
     { template_58trains_4x(0,0) }
 
 // basic sprite
+spriteset(spriteset_GWR_3500gal_GWR_Indian_Red, "gfx/Tender/GWR_3500gal/GWR_3500gal_GWR_Indian_Red_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_3500gal_GWR_Indian_Red, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Tender/GWR_3500gal/GWR_3500gal_GWR_Indian_Red_1x_32bpp.png", "gfx/Tender/GWR_3500gal/GWR_3500gal_GWR_Indian_Red_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_3500gal_GWR_Indian_Red, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Tender/GWR_3500gal/GWR_3500gal_GWR_Indian_Red_2x_32bpp.png", "gfx/Tender/GWR_3500gal/GWR_3500gal_GWR_Indian_Red_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_3500gal_GWR_Indian_Red, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Tender/GWR_3500gal/GWR_3500gal_GWR_Indian_Red_4x_32bpp.png", "gfx/Tender/GWR_3500gal/GWR_3500gal_GWR_Indian_Red_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
 spriteset(spriteset_GWR_3500gal_GWR_Lined_Green_COA, "gfx/Tender/GWR_3500gal/GWR_3500gal_GWR_Lined_Green_COA_1x_8bpp.png")
     { template_58trains_1x(0,0) }
 

@@ -38,6 +38,19 @@ spriteset(spriteset_GWR_2900_Curved_GWR_Black, "gfx/Locomotive_Steam/GWR_2900/GW
     { template_78trains_4x(0,0) }
 
 // basic sprite
+spriteset(spriteset_GWR_2900_Curved_GWR_Indian_Red, "gfx/Locomotive_Steam/GWR_2900/GWR_2900_Curved_GWR_Indian_Red_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_2900_Curved_GWR_Indian_Red, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GWR_2900/GWR_2900_Curved_GWR_Indian_Red_1x_32bpp.png", "gfx/Locomotive_Steam/GWR_2900/GWR_2900_Curved_GWR_Indian_Red_1x_mask.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_2900_Curved_GWR_Indian_Red, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GWR_2900/GWR_2900_Curved_GWR_Indian_Red_2x_32bpp.png", "gfx/Locomotive_Steam/GWR_2900/GWR_2900_Curved_GWR_Indian_Red_2x_mask.png")
+    { template_78trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_2900_Curved_GWR_Indian_Red, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GWR_2900/GWR_2900_Curved_GWR_Indian_Red_4x_32bpp.png", "gfx/Locomotive_Steam/GWR_2900/GWR_2900_Curved_GWR_Indian_Red_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// basic sprite
 spriteset(spriteset_GWR_2900_Curved_GWR_Lined_Green, "gfx/Locomotive_Steam/GWR_2900/GWR_2900_Curved_GWR_Lined_Green_1x_8bpp.png")
     { template_78trains_1x(0,0) }
 
@@ -107,6 +120,19 @@ spriteset(spriteset_GWR_2900_Straight_GWR_Black, "gfx/Locomotive_Steam/GWR_2900/
     { template_78trains_2x(0,0) }
 
     alternative_sprites(spriteset_GWR_2900_Straight_GWR_Black, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GWR_2900/GWR_2900_Straight_GWR_Black_4x_32bpp.png", "gfx/Locomotive_Steam/GWR_2900/GWR_2900_Straight_GWR_Black_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_GWR_2900_Straight_GWR_Indian_Red, "gfx/Locomotive_Steam/GWR_2900/GWR_2900_Straight_GWR_Indian_Red_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_2900_Straight_GWR_Indian_Red, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GWR_2900/GWR_2900_Straight_GWR_Indian_Red_1x_32bpp.png", "gfx/Locomotive_Steam/GWR_2900/GWR_2900_Straight_GWR_Indian_Red_1x_mask.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_2900_Straight_GWR_Indian_Red, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GWR_2900/GWR_2900_Straight_GWR_Indian_Red_2x_32bpp.png", "gfx/Locomotive_Steam/GWR_2900/GWR_2900_Straight_GWR_Indian_Red_2x_mask.png")
+    { template_78trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_2900_Straight_GWR_Indian_Red, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GWR_2900/GWR_2900_Straight_GWR_Indian_Red_4x_32bpp.png", "gfx/Locomotive_Steam/GWR_2900/GWR_2900_Straight_GWR_Indian_Red_4x_mask.png")
     { template_78trains_4x(0,0) }
 
 // basic sprite
@@ -213,36 +239,39 @@ switch(FEAT_TRAINS, SELF, sw_livery_GWR_2900_Curved, cargo_subtype) {
     0:  spriteset_GWR_2900_Curved_GWR_Lined_Green;
     1:  spriteset_GWR_2900_Curved_GWR_Lined_Green;
     2:  spriteset_GWR_2900_Curved_GWR_Lined_Green;
-    3:  spriteset_GWR_2900_Curved_GWR_Unlined_Green;
-    4:  spriteset_GWR_2900_Curved_GWR_Black;
-    5:  spriteset_GWR_2900_Curved_BR_Black;
+    3:  spriteset_GWR_2900_Curved_GWR_Indian_Red;
+    4:  spriteset_GWR_2900_Curved_GWR_Unlined_Green;
+    5:  spriteset_GWR_2900_Curved_GWR_Black;
     6:  spriteset_GWR_2900_Curved_BR_Black;
-    7:  spriteset_GWR_2900_Curved_BR_Green;
+    7:  spriteset_GWR_2900_Curved_BR_Black;
     8:  spriteset_GWR_2900_Curved_BR_Green;
+    9:  spriteset_GWR_2900_Curved_BR_Green;
 }
 
 switch(FEAT_TRAINS, SELF, sw_livery_GWR_2900_Straight, cargo_subtype) {
     0:  spriteset_GWR_2900_Straight_GWR_Lined_Green;
     1:  spriteset_GWR_2900_Straight_GWR_Lined_Green;
     2:  spriteset_GWR_2900_Straight_GWR_Lined_Green;
-    3:  spriteset_GWR_2900_Straight_GWR_Unlined_Green;
-    4:  spriteset_GWR_2900_Straight_GWR_Black;
-    5:  spriteset_GWR_2900_Straight_BR_Black;
+    3:  spriteset_GWR_2900_Straight_GWR_Indian_Red;
+    4:  spriteset_GWR_2900_Straight_GWR_Unlined_Green;
+    5:  spriteset_GWR_2900_Straight_GWR_Black;
     6:  spriteset_GWR_2900_Straight_BR_Black;
-    7:  spriteset_GWR_2900_Straight_BR_Green;
+    7:  spriteset_GWR_2900_Straight_BR_Black;
     8:  spriteset_GWR_2900_Straight_BR_Green;
+    9:  spriteset_GWR_2900_Straight_BR_Green;
 }
 
 switch(FEAT_TRAINS, SELF, sw_livery_GWR_3500gal_2900, cargo_subtype) {
     0:  spriteset_GWR_3500gal_GWR_Lined_Green_Crest;
     1:  spriteset_GWR_3500gal_GWR_Lined_Green_No_Crest;
     2:  spriteset_GWR_3500gal_GWR_Lined_Green_Shirtbutton;
-    3:  spriteset_GWR_3500gal_GWR_Unlined_Green;
-    4:  spriteset_GWR_3500gal_GWR_Black;
-    5:  spriteset_GWR_3500gal_BRBlack_Early_Emblem;
-    6:  spriteset_GWR_3500gal_BRBlack_Late_Crest;
-    7:  spriteset_GWR_3500gal_BRGreen_Early_Emblem;
-    8:  spriteset_GWR_3500gal_BRGreen_Late_Crest;
+    3:  spriteset_GWR_3500gal_GWR_Indian_Red;
+    4:  spriteset_GWR_3500gal_GWR_Unlined_Green;
+    5:  spriteset_GWR_3500gal_GWR_Black;
+    6:  spriteset_GWR_3500gal_BRBlack_Early_Emblem;
+    7:  spriteset_GWR_3500gal_BRBlack_Late_Crest;
+    8:  spriteset_GWR_3500gal_BRGreen_Early_Emblem;
+    9:  spriteset_GWR_3500gal_BRGreen_Late_Crest;
 }
 
 // Animation sprite stacking
@@ -283,12 +312,13 @@ switch(FEAT_TRAINS, SELF, sw_GWR_2900_cargo_subtype_text, cargo_subtype){
 	0:	return string(str_GWRGreen_LinedGC);
     1:  return string(str_GWRGreen_LinedFull);
     2:  return string(str_GWRGreen_LinedShirtbutton);
-    3:  return string(str_GWRGreen_Unlined);
-    4:  return string(str_GWRBlack);
-    5:  return string(str_BRPlainBlack_Early);
-    6:  return string(str_BRPlainBlack_Late);
-    7:  return string(str_BRGreen_Early);
-    8:  return string(str_BRGreen_Late);
+    3:  return string(str_GWRGreen_LinedIndianRed);
+    4:  return string(str_GWRGreen_Unlined);
+    5:  return string(str_GWRBlack);
+    6:  return string(str_BRPlainBlack_Early);
+    7:  return string(str_BRPlainBlack_Late);
+    8:  return string(str_BRGreen_Early);
+    9:  return string(str_BRGreen_Late);
        return CB_RESULT_NO_TEXT;
 }
 
