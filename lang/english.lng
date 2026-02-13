@@ -394,7 +394,7 @@ str_GWR_6400_liveries               :GWR Green, GWR Black, BR Green, BR Black
 
 STR_NAME_LBSCR_A1                   :LBSCR A1 Class "Terrier"
 STR_NAME_LBSCR_A1X                  :LBSCR A1X Class "Terrier"
-str_LBSCR_A1_liveries               :LBSCR Golden Ochre
+str_LBSCR_A1_liveries               :LBSCR Golden Ochre, LBSCR Marsh Umbre, SR Olive, SR Malachite, SR Black, BR Black
 
 STR_NAME_LSWR_AdamsRadial		    :LSWR Adams 415 Class 4-4-2T "Adams Radial Tank"
 str_LSWR_AdamsRadial_liveries	    :LSWR Sage Green
@@ -480,7 +480,8 @@ STR_NAME_GCR_9J_LNER                :LNER Robinson Class J11
 str_GCR_9J_liveries                 :GCR Black, LNER Black, BR Black
 
 STR_NAME_GER_L77			        :GER Class L77
-STR_NAME_GER_L77_LNER               :LNER Class N7
+STR_NAME_GER_L77_LNER               :LNER Hill Class N7
+STR_NAME_LNER_N7_3                  :LNER Hill Class N7/3
 str_GER_L77_liveries			    :GER Blue, GER Black, LNER Apple Green, LNER Black, BR Black
 
 # LNER Steam Locomotives
@@ -1720,6 +1721,7 @@ str_GWRGreenChrome				: (GWR - Chrome Green)
 str_GWRGreen_Lined              : (GWR - Lined Green)
 str_GWRGreen_LinedCOA           : (GWR - Lined Green, Coat of Arms)
 str_GWRGreen_LinedGC            : (GWR - Lined Green, Garter Crest)
+str_GWRGreen_LinedIndianRed     : (GWR - Lined Green, Indian Red Frames)
 str_GWRGreen_LinedFull          : (GWR - Lined Green, full lettering)
 str_GWRGreen_LinedShirtbutton   : (GWR - Lined Green, Shirtbutton)
 str_GWRGreen_Unlined            : (GWR - Unlined Green)
@@ -1742,6 +1744,8 @@ str_ICI                         : (Imperial Chemical Industries)
 str_Kestrel                     : (Kestrel Prototype - Yellow and Black)
 str_LaPoste					    : (La Poste)
 str_LBSCR_GoldenOchre           : (LBSCR - Golden Ochre)
+str_LBSCR_MarshUmbre_Named      : (LBSCR - Marsh Umbre, Named)
+str_LBSCR_MarshUmbre_Unnamed    : (LBSCR - Marsh Umbre, Unnamed)
 str_LMSBlack                    : (LMS - Black)
 str_LMSRed                      : (LMS - Crimson)
 str_LMR                         : (Longmoor Military Railway)
@@ -1889,11 +1893,13 @@ str_Southeastern_TBW			: (Southeastern - Tunbridge Wells)
 str_Southeastern_yellow			: (Southeastern - Yellow)
 str_Southeastern_yellow_stripe	: (Southeastern - Yellow with Stripe)
 str_Southern					: (Southern)
-str_SRBlack                     : (Southern Railway - Black)
-str_SRGrey                      : (Southern Railway - Grey)
-str_SROlive                     : (Southern Railway - Olive Green)
-str_SRMalachite                 : (Southern Railway - Malachite Green)
-str_SRWartimeBlack              : (Southern Railway - Wartime Black)
+str_SR_Black                    : (Southern Railway - Black)
+str_SR_Grey                     : (Southern Railway - Grey)
+str_SR_Olive                    : (Southern Railway - Olive Green)
+str_SR_IOWOlive                 : (Southern Railway - IOW Olive Green)
+str_SR_IOWOlive_Extended        : (Southern Railway - IOW Olive Green, Extended)
+str_SR_Malachite                : (Southern Railway - Malachite Green)
+str_SR_WartimeBlack             : (Southern Railway - Wartime Black)
 str_Stagecoach                  : (Stagecoach)
 str_StagecoachWhite             : (Stagecoach - White)
 str_StagecoachBlue              : (Stagecoach - Blue)

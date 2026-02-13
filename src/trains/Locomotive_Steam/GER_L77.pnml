@@ -386,3 +386,208 @@ item (FEAT_TRAINS, item_GER_L77, 6960) {
                                                     string(str_GER_L77_liveries)));
     }
 }
+
+// basic sprite
+spriteset(spriteset_LNER_N7_3_BR_Lined_Black_Early_Emblem, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_BR_Lined_Black_Early_Emblem_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_BR_Lined_Black_Early_Emblem, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_BR_Lined_Black_Early_Emblem_1x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_BR_Lined_Black_Early_Emblem_1x_mask.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_BR_Lined_Black_Early_Emblem, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_BR_Lined_Black_Early_Emblem_2x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_BR_Lined_Black_Early_Emblem_2x_mask.png")
+    { template_78trains_2x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_BR_Lined_Black_Early_Emblem, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_BR_Lined_Black_Early_Emblem_4x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_BR_Lined_Black_Early_Emblem_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_LNER_N7_3_BR_Lined_Black_Early_Emblem_purchase, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_BR_Lined_Black_Early_Emblem_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_BR_Lined_Black_Early_Emblem_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_BR_Lined_Black_Early_Emblem_1x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_BR_Lined_Black_Early_Emblem_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_LNER_N7_3_BR_Lined_Black_Late_Crest, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_BR_Lined_Black_Late_Crest_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_BR_Lined_Black_Late_Crest, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_BR_Lined_Black_Late_Crest_1x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_BR_Lined_Black_Late_Crest_1x_mask.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_BR_Lined_Black_Late_Crest, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_BR_Lined_Black_Late_Crest_2x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_BR_Lined_Black_Late_Crest_2x_mask.png")
+    { template_78trains_2x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_BR_Lined_Black_Late_Crest, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_BR_Lined_Black_Late_Crest_4x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_BR_Lined_Black_Late_Crest_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_LNER_N7_3_GER_Black, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_GER_Black_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_GER_Black, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_GER_Black_1x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_GER_Black_1x_mask.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_GER_Black, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_GER_Black_2x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_GER_Black_2x_mask.png")
+    { template_78trains_2x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_GER_Black, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_GER_Black_4x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_GER_Black_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_LNER_N7_3_GER_Blue, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_GER_Blue_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_GER_Blue, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_GER_Blue_1x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_GER_Blue_1x_mask.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_GER_Blue, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_GER_Blue_2x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_GER_Blue_2x_mask.png")
+    { template_78trains_2x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_GER_Blue, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_GER_Blue_4x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_GER_Blue_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_LNER_N7_3_GER_Blue_purchase, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_GER_Blue_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_GER_Blue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_GER_Blue_1x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_GER_Blue_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_LNER_N7_3_LNER_Black, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Black_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_LNER_Black, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Black_1x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Black_1x_mask.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_LNER_Black, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Black_2x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Black_2x_mask.png")
+    { template_78trains_2x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_LNER_Black, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Black_4x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Black_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_LNER_N7_3_LNER_Black_purchase, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Black_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_LNER_Black_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Black_1x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Black_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_LNER_N7_3_LNER_Green, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Green_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_LNER_Green, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Green_1x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Green_1x_mask.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_LNER_Green, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Green_2x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Green_2x_mask.png")
+    { template_78trains_2x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_LNER_Green, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Green_4x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Green_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_LNER_N7_3_LNER_Wartime_Black, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Wartime_Black_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_LNER_Wartime_Black, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Wartime_Black_1x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Wartime_Black_1x_mask.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_LNER_Wartime_Black, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Wartime_Black_2x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Wartime_Black_2x_mask.png")
+    { template_78trains_2x(0,0) }
+
+    alternative_sprites(spriteset_LNER_N7_3_LNER_Wartime_Black, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Wartime_Black_4x_32bpp.png", "gfx/Locomotive_Steam/GER_L77/LNER_N7_3_LNER_Wartime_Black_4x_mask.png")
+    { template_78trains_4x(0,0) }
+    
+switch(FEAT_TRAINS, SELF, sw_spritestack_LNER_N7_3_GER_Blue_purchase, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_LNER_N7_3_GER_Blue_purchase;
+    1: spriteset_GER_L77_Red_Anim_purchase; }
+    
+switch(FEAT_TRAINS, SELF, sw_spritestack_LNER_N7_3_LNER_Black_purchase, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_LNER_N7_3_LNER_Black_purchase;
+    1: spriteset_GER_L77_Anim_purchase; }
+
+switch(FEAT_TRAINS, SELF, sw_spritestack_LNER_N7_3_BR_Black_purchase, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_LNER_N7_3_BR_Lined_Black_Early_Emblem_purchase;
+    1: spriteset_GER_L77_Anim_purchase; }
+
+switch(FEAT_TRAINS, PARENT, sw_LNER_N7_3_purchase_sprite, current_year) {
+    1924..1948: sw_spritestack_LNER_N7_3_LNER_Black_purchase;
+    1948..1968: sw_spritestack_LNER_N7_3_BR_Black_purchase;
+        sw_spritestack_LNER_N7_3_GER_Blue_purchase; }
+
+// Animation sprite stacking
+switch(FEAT_TRAINS, SELF, sw_livery_LNER_N7_3, cargo_subtype) {
+    0:  spriteset_LNER_N7_3_GER_Blue;
+    1:  spriteset_LNER_N7_3_GER_Black;
+    2:  spriteset_LNER_N7_3_LNER_Green;
+    3:  spriteset_LNER_N7_3_LNER_Black;
+    4:  spriteset_LNER_N7_3_LNER_Wartime_Black;
+    5:  spriteset_LNER_N7_3_BR_Lined_Black_Early_Emblem;
+    6:  spriteset_LNER_N7_3_BR_Lined_Black_Late_Crest; }
+
+switch(FEAT_TRAINS, SELF, sw_spritestack_LNER_N7_3, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
+    0: sw_livery_LNER_N7_3;
+    1: sw_livery_GER_L77_Anim; }
+
+// unit definition
+item (FEAT_TRAINS, item_LNER_N7_3, 6961) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_LNER_N7_3);
+        variant_group:                  item_GER_L77; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1927,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		// refittable_cargo_classes:        bitmask(CC_PASSENGERS);
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [PASS, GOOD];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        // for MUs, loading speed is multiplied by number of carriages * 0.75
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          60 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1210 hp;
+        weight:                         66 ton;
+        engine_class:                   ENGINE_CLASS_STEAM;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.14;
+        length:                         7;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_spritestack_LNER_N7_3;
+        visual_effect_and_powered:      sw_FX_GER_L77_Steam;
+        purchase:                       sw_LNER_N7_3_purchase_sprite; // For dual mode units
+        sound_effect:                   sw_sound_steam_generic;
+
+        // internal code
+        speed:                          sw_speed_GER_L77() * 1609 / 1000;  
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    65;
+        running_cost_factor:            4115;
+        cargo_subtype_text:             sw_GER_L77_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_loco_with_liveries,
+                                                    string(str_purchase_type_steam),
+                                                    string(str_usage_pax),
+                                                    string(str_GER_L77_liveries)));
+    }
+}
