@@ -174,9 +174,9 @@ switch(FEAT_TRAINS, SELF, sw_spritestack_LSWR_N15, [STORE_TEMP((getbits(extra_ca
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_LSWR_N15_cargo_subtype_text, cargo_subtype){
 	0:	return string(str_LSWRSageGreen);
-    1:  return string(str_SR_Olive);
-    2:  return string(str_SR_WartimeBlack);
-    3:  return string(str_SR_Malachite);
+    1:  return string(str_SROlive);
+    2:  return string(str_SRWartimeBlack);
+    3:  return string(str_SRMalachite);
     4:  return string(str_BRGreen_Early);
     5:  return string(str_BRGreen_Late);
        return CB_RESULT_NO_TEXT;

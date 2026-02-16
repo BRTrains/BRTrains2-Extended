@@ -504,11 +504,11 @@ switch(FEAT_TRAINS, SELF, sw_LBSCR_A1_cargo_subtype_text, cargo_subtype){
 	0:	return string(str_LBSCR_GoldenOchre);
     1:  return string(str_LBSCR_MarshUmbre_Named);
     2:  return string(str_LBSCR_MarshUmbre_Unnamed);
-    3:  return string(str_SR_Olive);
-    4:  return string(str_SR_IOWOlive);
-    5:  return string(str_SR_IOWOlive_Extended);
-    6:  return string(str_SR_Malachite);
-    7:  return string(str_SR_Black);
+    3:  return string(str_SROlive);
+    4:  return string(str_SRIOWOlive);
+    5:  return string(str_SRIOWOlive_Extended);
+    6:  return string(str_SRMalachite);
+    7:  return string(str_SRBlack);
     8:  return string(str_BRLinedBlack_Early);
     9:  return string(str_BRPlainBlack_Early);
     10: return string(str_BRLinedBlack_Late);

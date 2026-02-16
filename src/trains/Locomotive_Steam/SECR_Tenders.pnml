@@ -1,0 +1,77 @@
+// basic sprite
+spriteset(spriteset_SECR_3500gal_BR_LinedBlack_EarlyEmblem, "gfx/Tender/SECR_3500gal/SECR_3500gal_BR_LinedBlack_EarlyEmblem_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_SECR_3500gal_BR_LinedBlack_EarlyEmblem, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Tender/SECR_3500gal/SECR_3500gal_BR_LinedBlack_EarlyEmblem_1x_32bpp.png", "gfx/Tender/SECR_3500gal/SECR_3500gal_BR_LinedBlack_EarlyEmblem_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_SECR_3500gal_BR_LinedBlack_EarlyEmblem, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Tender/SECR_3500gal/SECR_3500gal_BR_LinedBlack_EarlyEmblem_2x_32bpp.png", "gfx/Tender/SECR_3500gal/SECR_3500gal_BR_LinedBlack_EarlyEmblem_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_SECR_3500gal_BR_LinedBlack_EarlyEmblem, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Tender/SECR_3500gal/SECR_3500gal_BR_LinedBlack_EarlyEmblem_4x_32bpp.png", "gfx/Tender/SECR_3500gal/SECR_3500gal_BR_LinedBlack_EarlyEmblem_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_SECR_3500gal_BR_LinedBlack_LateCrest, "gfx/Tender/SECR_3500gal/SECR_3500gal_BR_LinedBlack_LateCrest_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_SECR_3500gal_BR_LinedBlack_LateCrest, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Tender/SECR_3500gal/SECR_3500gal_BR_LinedBlack_LateCrest_1x_32bpp.png", "gfx/Tender/SECR_3500gal/SECR_3500gal_BR_LinedBlack_LateCrest_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_SECR_3500gal_BR_LinedBlack_LateCrest, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Tender/SECR_3500gal/SECR_3500gal_BR_LinedBlack_LateCrest_2x_32bpp.png", "gfx/Tender/SECR_3500gal/SECR_3500gal_BR_LinedBlack_LateCrest_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_SECR_3500gal_BR_LinedBlack_LateCrest, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Tender/SECR_3500gal/SECR_3500gal_BR_LinedBlack_LateCrest_4x_32bpp.png", "gfx/Tender/SECR_3500gal/SECR_3500gal_BR_LinedBlack_LateCrest_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_SECR_3500gal_SECR_Green, "gfx/Tender/SECR_3500gal/SECR_3500gal_SECR_Green_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_SECR_3500gal_SECR_Green, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Tender/SECR_3500gal/SECR_3500gal_SECR_Green_1x_32bpp.png", "gfx/Tender/SECR_3500gal/SECR_3500gal_SECR_Green_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_SECR_3500gal_SECR_Green, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Tender/SECR_3500gal/SECR_3500gal_SECR_Green_2x_32bpp.png", "gfx/Tender/SECR_3500gal/SECR_3500gal_SECR_Green_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_SECR_3500gal_SECR_Green, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Tender/SECR_3500gal/SECR_3500gal_SECR_Green_4x_32bpp.png", "gfx/Tender/SECR_3500gal/SECR_3500gal_SECR_Green_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_SECR_3500gal_SR_Black, "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Black_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_SECR_3500gal_SR_Black, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Black_1x_32bpp.png", "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Black_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_SECR_3500gal_SR_Black, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Black_2x_32bpp.png", "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Black_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_SECR_3500gal_SR_Black, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Black_4x_32bpp.png", "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Black_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_SECR_3500gal_SR_Malachite_Green, "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Malachite_Green_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_SECR_3500gal_SR_Malachite_Green, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Malachite_Green_1x_32bpp.png", "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Malachite_Green_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_SECR_3500gal_SR_Malachite_Green, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Malachite_Green_2x_32bpp.png", "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Malachite_Green_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_SECR_3500gal_SR_Malachite_Green, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Malachite_Green_4x_32bpp.png", "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Malachite_Green_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_SECR_3500gal_SR_Olive, "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Olive_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_SECR_3500gal_SR_Olive, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Olive_1x_32bpp.png", "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Olive_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_SECR_3500gal_SR_Olive, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Olive_2x_32bpp.png", "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Olive_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_SECR_3500gal_SR_Olive, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Olive_4x_32bpp.png", "gfx/Tender/SECR_3500gal/SECR_3500gal_SR_Olive_4x_mask.png")
+    { template_58trains_4x(0,0) }

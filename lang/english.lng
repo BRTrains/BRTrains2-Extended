@@ -404,6 +404,10 @@ STR_NAME_LSWR_N15_SR                :LSWR N15 Class "Urie Arthurs"
 STR_NAME_SR_N15                     :SR King Arthur Class "Eastleigh Arthurs/Scotch Arthurs"
 str_LSWR_N15_liveries               :LSWR Green, SR Olive Green, SR Wartime Black, SR Malachite Green, BR Brunswick Green
 
+STR_NAME_SECR_N                     :SECR N Class
+STR_NAME_SECR_N1                    :SECR N1 Class
+str_SECR_N_liveries                 :SECR Green, SR Olive Green, SR Malachite, SR Black, BR Lined Black
+
 # SR Steam Locomotive
 
 STR_NAME_SRQ1                       :SR Bulleid Q1 Class 0-6-0
@@ -1878,6 +1882,7 @@ str_ScotRailPride				: (ScotRail Pride)
 str_ScotRail_I7C                : (ScotRail - Inter7City)
 str_ScotRailSaltire				: (ScotRail - Saltire)
 str_SDJRBlue                    : (S&DJR - Blue)
+str_SECR_Green                  : (SECR - Green)
 str_SET                         : (South Eastern Trains)
 str_Shell                       : (Shell)
 str_Siemens						: (Siemens Demonstrator)
@@ -1893,13 +1898,13 @@ str_Southeastern_TBW			: (Southeastern - Tunbridge Wells)
 str_Southeastern_yellow			: (Southeastern - Yellow)
 str_Southeastern_yellow_stripe	: (Southeastern - Yellow with Stripe)
 str_Southern					: (Southern)
-str_SR_Black                    : (Southern Railway - Black)
-str_SR_Grey                     : (Southern Railway - Grey)
-str_SR_Olive                    : (Southern Railway - Olive Green)
-str_SR_IOWOlive                 : (Southern Railway - IOW Olive Green)
-str_SR_IOWOlive_Extended        : (Southern Railway - IOW Olive Green, Extended)
-str_SR_Malachite                : (Southern Railway - Malachite Green)
-str_SR_WartimeBlack             : (Southern Railway - Wartime Black)
+str_SRBlack                    : (Southern Railway - Black)
+str_SRGrey                     : (Southern Railway - Grey)
+str_SROlive                    : (Southern Railway - Olive Green)
+str_SRIOWOlive                 : (Southern Railway - IOW Olive Green)
+str_SRIOWOlive_Extended        : (Southern Railway - IOW Olive Green, Extended)
+str_SRMalachite                : (Southern Railway - Malachite Green)
+str_SRWartimeBlack             : (Southern Railway - Wartime Black)
 str_Stagecoach                  : (Stagecoach)
 str_StagecoachWhite             : (Stagecoach - White)
 str_StagecoachBlue              : (Stagecoach - Blue)

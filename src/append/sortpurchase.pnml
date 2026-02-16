@@ -20,6 +20,7 @@ sort(FEAT_TRAINS, [
     item_LBSCR_A1,
         item_LBSCR_A1X,
     item_LSWR_N15,
+    item_SECR_N,
     // SR Steam Locomotives
     item_SR_N15,
     // LMS Pre-Grouping Steam Locomotives
