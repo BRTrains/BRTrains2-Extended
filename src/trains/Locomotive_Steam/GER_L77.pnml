@@ -266,7 +266,7 @@ switch(FEAT_TRAINS, SELF, sw_spritestack_GER_L77_BR_Black_purchase, [ STORE_TEMP
     1: spriteset_GER_L77_Anim_purchase; }
 
 switch(FEAT_TRAINS, PARENT, sw_GER_L77_purchase_sprite, current_year) {
-    1901..1924: sw_spritestack_GER_L77_GER_Blue_purchase;
+    1901..1923: sw_spritestack_GER_L77_GER_Blue_purchase;
     1924..1948: sw_spritestack_GER_L77_LNER_Black_purchase;
     1948..1968: sw_spritestack_GER_L77_BR_Black_purchase;
         sw_spritestack_GER_L77_GER_Blue_purchase; }
