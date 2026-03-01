@@ -1,0 +1,103 @@
+// basic sprite
+spriteset(spriteset_LBSCR_3500gal_BR_LinedBlack_EarlyEmblem, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_BR_LinedBlack_EarlyEmblem_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_BR_LinedBlack_EarlyEmblem, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_BR_LinedBlack_EarlyEmblem_1x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_BR_LinedBlack_EarlyEmblem_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_BR_LinedBlack_EarlyEmblem, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_BR_LinedBlack_EarlyEmblem_2x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_BR_LinedBlack_EarlyEmblem_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_BR_LinedBlack_EarlyEmblem, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_BR_LinedBlack_EarlyEmblem_4x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_BR_LinedBlack_EarlyEmblem_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_LBSCR_3500gal_BR_LinedBlack_LateCrest, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_BR_LinedBlack_LateCrest_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_BR_LinedBlack_LateCrest, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_BR_LinedBlack_LateCrest_1x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_BR_LinedBlack_LateCrest_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_BR_LinedBlack_LateCrest, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_BR_LinedBlack_LateCrest_2x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_BR_LinedBlack_LateCrest_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_BR_LinedBlack_LateCrest, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_BR_LinedBlack_LateCrest_4x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_BR_LinedBlack_LateCrest_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_LBSCR_3500gal_Marsh_Umber, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_Marsh_Umber_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_Marsh_Umber, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_Marsh_Umber_1x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_Marsh_Umber_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_Marsh_Umber, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_Marsh_Umber_2x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_Marsh_Umber_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_Marsh_Umber, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_Marsh_Umber_4x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_Marsh_Umber_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_LBSCR_3500gal_SR_Black, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Black_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_SR_Black, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Black_1x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Black_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_SR_Black, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Black_2x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Black_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_SR_Black, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Black_4x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Black_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_LBSCR_3500gal_SR_Malachite, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Malachite_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_SR_Malachite, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Malachite_1x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Malachite_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_SR_Malachite, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Malachite_2x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Malachite_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_SR_Malachite, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Malachite_4x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Malachite_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_LBSCR_3500gal_SR_Olive_2037, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Olive_2037_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_SR_Olive_2037, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Olive_2037_1x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Olive_2037_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_SR_Olive_2037, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Olive_2037_2x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Olive_2037_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_SR_Olive_2037, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Olive_2037_4x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Olive_2037_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_LBSCR_3500gal_SR_Olive_2421, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Olive_2421_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_SR_Olive_2421, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Olive_2421_1x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Olive_2421_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_SR_Olive_2421, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Olive_2421_2x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Olive_2421_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_SR_Olive_2421, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Olive_2421_4x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_SR_Olive_2421_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_LBSCR_3500gal_Stroudley_Golden_Ochre, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_Stroudley_Golden_Ochre_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_Stroudley_Golden_Ochre, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_Stroudley_Golden_Ochre_1x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_Stroudley_Golden_Ochre_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_Stroudley_Golden_Ochre, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_Stroudley_Golden_Ochre_2x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_Stroudley_Golden_Ochre_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_LBSCR_3500gal_Stroudley_Golden_Ochre, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_Stroudley_Golden_Ochre_4x_32bpp.png", "gfx/Tender/LBSCR_3500gal/LBSCR_3500gal_Stroudley_Golden_Ochre_4x_mask.png")
+    { template_58trains_4x(0,0) }

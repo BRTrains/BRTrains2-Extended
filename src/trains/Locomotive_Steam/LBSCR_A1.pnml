@@ -502,8 +502,8 @@ switch(FEAT_TRAINS, SELF, sw_spritestack_LBSCR_A1X, [STORE_TEMP((getbits(extra_c
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_LBSCR_A1_cargo_subtype_text, cargo_subtype){
 	0:	return string(str_LBSCR_GoldenOchre);
-    1:  return string(str_LBSCR_MarshUmbre_Named);
-    2:  return string(str_LBSCR_MarshUmbre_Unnamed);
+    1:  return string(str_LBSCR_MarshUmber_Named);
+    2:  return string(str_LBSCR_MarshUmber_Unnamed);
     3:  return string(str_SROlive);
     4:  return string(str_SRIOWOlive);
     5:  return string(str_SRIOWOlive_Extended);
