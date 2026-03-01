@@ -259,7 +259,7 @@ item (FEAT_TRAINS, item_LNER_Gresley_CK_D259, 11507) {
 
         // purchase menu text
         additional_text:                return( string(str_purchase_coach,
-                                                string(str_coach_TK),
+                                                string(str_coach_CK),
                                                 string(str_LNER_Gresley_FS_liveries)));
     }
 }
