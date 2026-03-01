@@ -241,8 +241,8 @@ item (FEAT_TRAINS, item_LNER_Gresley_BTK_D261, 11505) {
         speed:                          sw_speed_LNER_Gresley_BTK_D261() * 1609 / 1000;  
         purchase_cargo_capacity:        return (12 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_LNER_Gresley_BTK_D261;
-        cost_factor:                    725;
-        running_cost_factor:            1067;
+        cost_factor:                    916;
+        running_cost_factor:            1116;
         cargo_subtype_text:             sw_LNER_Gresley_BTK_D261_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;

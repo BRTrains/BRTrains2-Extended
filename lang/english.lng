@@ -1205,8 +1205,9 @@ STR_NAME_LNER_CorSet_OT_OT      :LNER Coronation Articulated Coach (OT + OT)
 STR_LNER_CorSet_liveries        :LNER Coronation Garter Blue, BR Carmine and Cream
 
 STR_NAME_LNER_Gresley_FS            :LNER Gresley "Flying Scotsman" Coaches
-STR_NAME_LNER_Gresley_CK_D259       :LNER Gresley 61'6" Flying Scotsman CK
-STR_NAME_LNER_Gresley_BTK_D261      :LNER Gresley 61'6" Flying Scotsman BTK
+STR_NAME_LNER_Gresley_TK_D256       :LNER Gresley "Flying Scotsman" TK
+STR_NAME_LNER_Gresley_CK_D259       :LNER Gresley "Flying Scotsman" CK
+STR_NAME_LNER_Gresley_BTK_D261      :LNER Gresley "Flying Scotsman" BTK
 str_LNER_Gresley_FS_liveries        :LNER Teak, BR Maroon, BR Carmine and Cream, BR Blue
 
 STR_NAME_LNER_Gresley_616TK		    :LNER Gresley 61' 6" TK
