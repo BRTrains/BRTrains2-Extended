@@ -127,6 +127,30 @@ spriteset(spriteset_BR91_LNER_purchase, "gfx/Locomotive_Electric/BR91/BR91_LNER_
     alternative_sprites(spriteset_BR91_LNER_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR91/BR91_LNER_1x_32bpp.png", "gfx/Locomotive_Electric/BR91/BR91_LNER_1x_mask.png")
     { template_purchase(0,0) }
 
+// basic sprite
+spriteset(spriteset_BR91_LNER_Oxblood, "gfx/Locomotive_Electric/BR91/BR91_LNER_Oxblood_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR91_LNER_Oxblood, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR91/BR91_LNER_Oxblood_1x_32bpp.png", "gfx/Locomotive_Electric/BR91/BR91_LNER_Oxblood_1x_mask.png")
+        { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR91_LNER_Oxblood, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR91/BR91_LNER_Oxblood_2x_32bpp.png", "gfx/Locomotive_Electric/BR91/BR91_LNER_Oxblood_2x_mask.png")
+        { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR91_LNER_Oxblood, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR91/BR91_LNER_Oxblood_4x_32bpp.png", "gfx/Locomotive_Electric/BR91/BR91_LNER_Oxblood_4x_mask.png")
+        { template_128trains_4x(0,0) }
+
+spriteset(spriteset_BR91_LNER_Oxblood_REV, "gfx/Locomotive_Electric/BR91/BR91_LNER_Oxblood_1x_8bpp.png")
+    { template_128trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR91_LNER_Oxblood_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR91/BR91_LNER_Oxblood_1x_32bpp.png", "gfx/Locomotive_Electric/BR91/BR91_LNER_Oxblood_1x_mask.png")
+        { template_128trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR91_LNER_Oxblood_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR91/BR91_LNER_Oxblood_2x_32bpp.png", "gfx/Locomotive_Electric/BR91/BR91_LNER_Oxblood_2x_mask.png")
+        { template_128trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_BR91_LNER_Oxblood_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR91/BR91_LNER_Oxblood_4x_32bpp.png", "gfx/Locomotive_Electric/BR91/BR91_LNER_Oxblood_4x_mask.png")
+        { template_128trains_REV_4x(0,0) }
 
 // basic sprite
 spriteset(spriteset_BR91_TfW, "gfx/Locomotive_Electric/BR91/BR91_TfW_1x_8bpp.png")
@@ -172,14 +196,16 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR91, cargo_subtype) {
     1: spriteset_BR91_GNER;
     2: spriteset_BR91_EastCoast;
     3: spriteset_BR91_LNER; 
-    4: spriteset_BR91_TfW; }
+    4: spriteset_BR91_LNER_Oxblood;
+    5: spriteset_BR91_TfW; }
 
 switch(FEAT_TRAINS, SELF, sw_livery_BR91_REV, cargo_subtype) {
     0: spriteset_BR91_Intercity_Swallow_REV; 
     1: spriteset_BR91_GNER_REV;
     2: spriteset_BR91_EastCoast_REV;
     3: spriteset_BR91_LNER_REV;
-    4: spriteset_BR91_TfW; }
+    4: spriteset_BR91_LNER_Oxblood_REV;
+    5: spriteset_BR91_TfW_REV; }
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR91_cargo_subtype_text, cargo_subtype){
@@ -187,7 +213,8 @@ switch(FEAT_TRAINS, SELF, sw_BR91_cargo_subtype_text, cargo_subtype){
     1:  return string(str_GNER);
     2:  return string(str_EastCoast);
     3:  return string(str_LNERRedWhite);
-    4:  return string(str_TfW);
+    4:  return string(str_LNEROxblood);
+    5:  return string(str_TfW);
        return CB_RESULT_NO_TEXT; }
 
 // graphics switch

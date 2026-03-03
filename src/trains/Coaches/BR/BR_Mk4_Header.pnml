@@ -70,3 +70,38 @@ spriteset(spriteset_BR_Mk4_TS_GNER_Loading, "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_GNE
 spritegroup spritegroup_BR_Mk4_TS_GNER_Loading {  
     loaded: [spriteset_empty];
     loading: [spriteset_BR_Mk4_TS_GNER_Loading]; }
+
+spriteset(spriteset_BR_Mk4_TF_EastCoast_Loading, "gfx/Coaches/BR_Mk4_TF/BR_Mk4_TF_EastCoast_Loading_1x_8bpp.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Mk4_TF_EastCoast_Loading, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_TF/BR_Mk4_TF_EastCoast_Loading_1x_32bpp.png", "gfx/Coaches/BR_Mk4_TF/BR_Mk4_TF_EastCoast_Loading_1x_mask.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Mk4_TF_EastCoast_Loading, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_TF/BR_Mk4_TF_EastCoast_Loading_2x_32bpp.png", "gfx/Coaches/BR_Mk4_TF/BR_Mk4_TF_EastCoast_Loading_2x_mask.png")
+    { template_148trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_Mk4_TF_EastCoast_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_TF/BR_Mk4_TF_EastCoast_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk4_TF/BR_Mk4_TF_EastCoast_Loading_4x_mask.png")
+    { template_148trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_Mk4_TF_EastCoast_Loading {  
+    loaded: [spriteset_empty];
+    loading: [spriteset_BR_Mk4_TF_EastCoast_Loading]; }
+
+
+spriteset(spriteset_BR_Mk4_TF_LNER_Oxblood_Loading, "gfx/Coaches/BR_Mk4_TF/BR_Mk4_TF_LNER_Oxblood_Loading_1x_8bpp.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Mk4_TF_LNER_Oxblood_Loading, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_TF/BR_Mk4_TF_LNER_Oxblood_Loading_1x_32bpp.png", "gfx/Coaches/BR_Mk4_TF/BR_Mk4_TF_LNER_Oxblood_Loading_1x_mask.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Mk4_TF_LNER_Oxblood_Loading, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_TF/BR_Mk4_TF_LNER_Oxblood_Loading_2x_32bpp.png", "gfx/Coaches/BR_Mk4_TF/BR_Mk4_TF_LNER_Oxblood_Loading_2x_mask.png")
+    { template_148trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_Mk4_TF_LNER_Oxblood_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_TF/BR_Mk4_TF_LNER_Oxblood_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk4_TF/BR_Mk4_TF_LNER_Oxblood_Loading_4x_mask.png")
+    { template_148trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_Mk4_TF_LNER_Oxblood_Loading {  
+    loaded: [spriteset_empty];
+    loading: [spriteset_BR_Mk4_TF_LNER_Oxblood_Loading]; }

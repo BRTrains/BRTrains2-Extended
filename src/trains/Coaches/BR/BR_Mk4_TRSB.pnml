@@ -99,13 +99,11 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk4_TRSB_TfW, [ STORE_TEMP((getbits(ex
     0: spriteset_BR_Mk4_TRSB_TfW;
     1: spritegroup_BR_Mk4_TRSB_LNER_Loading; }
 
-
-
 // purchase year switch
 switch(FEAT_TRAINS, PARENT, sw_BR_Mk4_TRSB_purchase_sprite, current_year) {
     1989..1993: spriteset_BR_Mk4_TRSB_Intercity_purchase;
     1994..2007: spriteset_BR_Mk4_TRSB_GNER_purchase;
-    // 2008..2015: spriteset_BR_Mk4_TRFB_EastCoast_purchase;
+    2008..2015: spriteset_BR_Mk4_TRSB_EastCoast_purchase;
     2016..2024: spriteset_BR_Mk4_TRSB_LNER_purchase;
         spriteset_BR_Mk4_TRSB_Intercity_purchase; }
 
@@ -113,15 +111,19 @@ switch(FEAT_TRAINS, PARENT, sw_BR_Mk4_TRSB_purchase_sprite, current_year) {
 switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk4_TRSB, cargo_subtype) {
     0: sw_loadstack_BR_Mk4_TRSB_Intercity;
     1: sw_loadstack_BR_Mk4_TRSB_GNER;
-    2: sw_loadstack_BR_Mk4_TRSB_LNER;
-    3: sw_loadstack_BR_Mk4_TRSB_TfW; }
+    2: sw_loadstack_BR_Mk4_TRSB_EastCoast;
+    3: sw_loadstack_BR_Mk4_TRSB_LNER;
+    4: sw_loadstack_BR_Mk4_TRSB_LNER_Oxblood;
+    5: sw_loadstack_BR_Mk4_TRSB_TfW; }
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR_Mk4_TRSB_cargo_subtype_text, cargo_subtype) {
 	0:	return string(str_BRInterCitySwallow);
     1:  return string(str_GNER);
-    2:  return string(str_LNERRedWhite);
-    3:  return string(str_TfW);
+    2:  return string(str_EastCoast);
+    3:  return string(str_LNERRedWhite);
+    4:  return string(str_LNEROxblood);
+    5:  return string(str_TfW);
        return CB_RESULT_NO_TEXT; }
 
 
