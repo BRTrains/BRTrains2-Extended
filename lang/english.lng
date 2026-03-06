@@ -736,8 +736,8 @@ STR_NAME_BR143					:BR Class 143 "Pacer"
 str_BR143_liveries				:Regional Rail, Valley Lines, WYTPE Metro, Wessex Trains, Northern Rail, GWR
 
 STR_NAME_BR150_0    			:BR Class 150/0 "Sprinter" (3-car)
-STR_NAME_BR150_1				:BR Class 150/1 "Sprinter" (2-car)
-STR_NAME_BR150_2				:BR Class 150/2 "Sprinter" (2-car)
+STR_NAME_BR150_1				:BR Class 150/1 "Sprinter"
+STR_NAME_BR150_2				:BR Class 150/2 "Sprinter"
 str_BR150_liveries				:BR Provincial, Regional Railways
 
 STR_NAME_BR151					:BR Class 151 "Sprinter"
@@ -752,7 +752,7 @@ str_BR155_liveries				:Regional Railways, WYPTE Metro, Northern Rail
 STR_NAME_BR156					:BR Class 156 "Super Sprinter"
 str_BR156_liveries				:Regional Railways, Strathclyde Orange, Strathclyde PTE, ScotRail, First ScotRail, Central Trains, East Midlands Trains, Northern Spirit, Northern Rail (Porterbrook), Northern Rail Experimental, Northern Rail, One (Various), National Express
 
-STR_NAME_BR158					:BR Class 158 "Express Sprinter" (2-Car)
+STR_NAME_BR158					:BR Class 158 "Express Sprinter"
 STR_NAME_BR158_3				:BR Class 158 "Express Sprinter" (3-Car)
 str_BR158_liveries				:Regional Railways, NSE, WYPTE, SWT, NatEx Scotrail, Northern Spirit, Alphaline Wessex, Arriva Trains Wales, First Transpennine, First Scotrail, Northern Rail, ScotRail Saltire, GWR, Northern, SWR, TfW
 
@@ -872,7 +872,7 @@ str_BR305_1_liveries			:BR Green, BR Blue, BR Blue Grey, NSE, Regional Railways 
 STR_NAME_BR305_2				:BR Class 305/2 "AM5" (4-car)
 str_BR305_2_liveries			:BR Green, BR Blue, BR Blue Grey, NSE, Regional Railways - Ex-NSE, Regional Railways, GMPTE
 
-STR_NAME_BR309                  :BR Class 309 "AM9/Clacton Express" (10-car)
+STR_NAME_BR309                  :BR Class 309 "AM9/Clacton Express"
 STR_NAME_BR309_1                :BR Class 309/1 "AM9/Clacton Express" (2-car)
 STR_NAME_BR309_2                :BR Class 309/2 "AM9/Clacton Express" (4-car, with Griddle Car)
 STR_NAME_BR309_3                :BR Class 309/3 "AM9/Clacton Express" (4-car)
@@ -946,7 +946,7 @@ str_BR373_liveries				:Eurostar
 STR_NAME_BR373_2				:BR Class 373/2 "North of London" (16-car)
 str_BR373_2_liveries			:Eurostar Debranded, GNER
 
-STR_NAME_BR374					:BR Class 374 "Velaro" (16-car)
+STR_NAME_BR374					:BR Class 374 "Velaro"
 STR_NAME_BR374_1                :BR Class 374 "Velaro D" (8-car)
 str_BR374_liveries				:Eurostar, DB
 
@@ -962,8 +962,8 @@ str_BR376_liveries				:Southeastern Yellow
 STR_NAME_BR377_3				:BR Class 377/3 "Electrostar" (3-Car)
 str_BR377_3_liveries			:Southern
 
-STR_NAME_BR377_1_4				:BR Class 377/1/4 "Electrostar" (4-Car)
-STR_NAME_BR377_2_5				:BR Class 377/2/5 "Electrostar" (4-Car)
+STR_NAME_BR377_1_4				:BR Class 377/1/4 "Electrostar"
+STR_NAME_BR377_2_5				:BR Class 377/2/5 "Electrostar"
 STR_NAME_BR377_6				:BR Class 377/6 "Electrostar" (5-Car)
 STR_NAME_BR377_7				:BR Class 377/7 "Electrostar" (5-Car)
 str_BR377_liveries			    :Southern, First Capital Connect, First Group, Southeastern
@@ -982,12 +982,12 @@ STR_NAME_BR378_4dc				:BR Class 378/1 "Electrostar" (4-Car)
 STR_NAME_BR378_5dc				:BR Class 378/1 "Electrostar" (5-Car)
 
 STR_NAME_BR379					:BR Class 379 "Electrostar" (4-car)
-str_BR379_liveries				:Greater Anglia White
+str_BR379_liveries				:Greater Anglia, Great Northern
 
-STR_NAME_BR387					:BR Class 387 "Electrostar" (4-Car, Dual Voltage)
+STR_NAME_BR387					:BR Class 387 "Electrostar"
 str_BR387_liveries				:GWR, Gatwick Express, Govia Great Northern, c2c, Heathrow Express
 
-STR_NAME_BR380_0                :BR Class 380/0 "Desiro" (3-car)
+STR_NAME_BR380_0                :BR Class 380/0 "Desiro"
 STR_NAME_BR380_1                :BR Class 380/1 "Desiro" (4-car)
 str_BR380_liveries              :ScotRail Saltire
 
@@ -1134,13 +1134,13 @@ STR_NAME_BR700_2				:BR Class 700/1 "Desiro City" (10-car)
 STR_NAME_BR707					:BR Class 707 "Desiro City"
 str_BR707_liveries				:South Western Trains, Southeastern
 
-STR_NAME_BR710_1_2              :BR Class 710/1/2 "Aventra Overground" (4-car)
+STR_NAME_BR710_1_2              :BR Class 710/1/2 "Aventra Overground"
 STR_NAME_BR710_3                :BR Class 710/3 "Aventra Overground" (5-car)
 str_BR710_liveries              :London Overground
 
-STR_NAME_BR720_1                :BR Class 720/1/5 "Aventra" (5-car)
+STR_NAME_BR720_1                :BR Class 720/1/5 "Aventra"
 STR_NAME_BR720_1_10             :BR Class 720/1 "Aventra" (10-car)
-STR_NAME_BR720_6                :BR Class 720/6 "Aventra" (5-car)
+STR_NAME_BR720_6                :BR Class 720/6 "Aventra"
 STR_NAME_BR720_6_10             :BR Class 720/6 "Aventra" (10-car)
 str_BR720_1_liveries            :Greater Anglia, c2c
 str_BR720_6_liveries            :c2c, Greater Anglia

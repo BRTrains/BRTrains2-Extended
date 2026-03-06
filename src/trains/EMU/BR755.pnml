@@ -758,7 +758,7 @@ item (FEAT_TRAINS, item_BR755_3, 7550) {
         weight:                         98 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.03;
+        air_drag_coefficient:           0.06;
         tractive_effort_coefficient:    0.13;
         length:                         8;
     }
