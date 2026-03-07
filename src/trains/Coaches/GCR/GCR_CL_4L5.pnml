@@ -183,7 +183,7 @@ item (FEAT_TRAINS, item_GCR_CL_4L5, 11200) {
         speed:                          60 mph;
         refit_cost:                     0;
         track_type:                     RAIL;
-        weight:                         18 ton;
+        weight:                         30 ton;
         dual_headed:                    0;
         length:                         8;
     }

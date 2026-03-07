@@ -170,7 +170,7 @@ switch(FEAT_TRAINS, SELF, sw_LNER_Gresley_BTK_D261_cargo_subtype_text, cargo_sub
 switch(FEAT_TRAINS, SELF, sw_capacity_LNER_Gresley_BTK_D261, position_in_vehid_chain % 3) {
     0: 23 * param_pax; 
     1: 1 * param_pax;
-    2: sw_capacity_LNER_Gresley_B;
+    2: sw_capacity_Grouping;
     // total 24 pax
 }
 
@@ -193,7 +193,7 @@ switch(FEAT_TRAINS, SELF, sw_length_LNER_Gresley_BTK_D261, position_in_articulat
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_LNER_Gresley_BTK_D261, extra_callback_info1) {
 	1: return item_LNER_Gresley_BTK_D261;
-    2: return item_LNER_Gresley_B;
+    2: return item_Brake_Grouping;
 		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
 
 

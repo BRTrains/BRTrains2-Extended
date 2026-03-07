@@ -372,14 +372,10 @@ switch(FEAT_TRAINS, SELF, sw_check_reverse_LNER_BT_T_LNER_Teak, position_in_cons
 
 // position switch
 switch(FEAT_TRAINS, SELF, sw_check_position_LNER_BT_T_BR_Maroon, position_in_consist) {
-    // 1:  sw_loadstack_LNER_Gresley_BT6_BR_Maroon;
-    // 4:  sw_loadstack_LNER_Gresley_T8_BR_Maroon;
     1:  sw_graphics_LNER_BT_T_BR_Maroon;
         return sw_check_reverse_LNER_BT_T_BR_Maroon; }
 
 switch(FEAT_TRAINS, SELF, sw_check_position_LNER_BT_T_LNER_Teak, position_in_consist) {
-    // 1:  sw_loadstack_LNER_Gresley_BT6_LNER_Teak;
-    // 4:  sw_loadstack_LNER_Gresley_T8_LNER_Teak;
     1:  sw_graphics_LNER_BT_T_LNER_Teak;
         return sw_check_reverse_LNER_BT_T_LNER_Teak; }
 
@@ -409,14 +405,16 @@ switch(FEAT_TRAINS, SELF, sw_length_LNER_BT_T, position_in_articulated_veh % 6) 
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_LNER_BT_T, position_in_vehid_chain % 6) {
-    0: 135 * param_pax; // all the capacity - (vehid chain number)
-    1..5: 1 * param_pax;
+    0: 136 * param_pax; // all the capacity - (vehid chain number)
+    1..4: 1 * param_pax;
+    5: sw_capacity_Grouping;
     // total 140
 }
 
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_LNER_BT_T, extra_callback_info1) {
-	1..5: return item_LNER_BT_T;
+	1..4: return item_LNER_BT_T;
+    5:  return item_Brake_Grouping;
 		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
 
 // unit definition
@@ -424,7 +422,6 @@ item (FEAT_TRAINS, item_LNER_BT_T, 11500) {
     property {
         // common properties
         name:                           string(STR_NAME_LNER_BT_T);
-        // variant_group:                  ; // unit ID or item
 		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(1940,01,01); 
@@ -457,7 +454,7 @@ item (FEAT_TRAINS, item_LNER_BT_T, 11500) {
         // internal code
         length:                         sw_length_LNER_BT_T;
         articulated_part:               sw_articulated_LNER_BT_T;
-        purchase_cargo_capacity:        return ( 23 * param_pax); // divide by number of articulated parts and floor
+        purchase_cargo_capacity:        return ( 28 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_LNER_BT_T;
         cost_factor:                    1698;
         running_cost_factor:            960;
