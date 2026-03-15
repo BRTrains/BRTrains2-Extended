@@ -412,6 +412,10 @@ STR_NAME_SECR_N                     :SECR N Class
 STR_NAME_SECR_N1                    :SECR N1 Class
 str_SECR_N_liveries                 :SECR Green, SR Olive Green, SR Malachite, SR Black, BR Lined Black
 
+STR_NAME_SECR_K                     :SECR K Class "River"
+STR_NAME_SECR_K1                    :SECR K1 Class "River"
+str_SECR_K_liveries                 :SECR Green, SR Olive Green, SR Malachite, SR Black, BR Lined Black
+
 # SR Steam Locomotive
 
 STR_NAME_SRQ1                       :SR Bulleid Q1 Class 0-6-0
