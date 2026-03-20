@@ -53,6 +53,7 @@ sort(FEAT_TRAINS, [
     item_GER_L77,
         item_LNER_N7_3,
     item_GER_Y65,
+    item_Metropolitan_K,
     // LNER Steam Locomotives
     item_LNER_A1,
     item_LNER_A3,

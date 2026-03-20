@@ -500,6 +500,10 @@ STR_NAME_GER_Y65                    :GER Class Y65
 STR_NAME_GER_Y65_LNER               :LNER Holden Class F7
 str_GER_Y65_liveries                :GER Blue, GER Black, LNER Black, BR Black
 
+STR_NAME_Metropolitan_K             :Metropolitan Railway K Class
+STR_NAME_Metropolitan_K_LNER        :LNER Hally L2 Class
+str_Metropolitan_K_liveries         :Metropolitan Red, LNER Black, LNER Apple Green, BR Black
+
 # LNER Steam Locomotives
 STR_NAME_LNER_A1                    :LNER Gresley Class A1
 STR_NAME_LNER_A3					:LNER Gresley Class A3
@@ -1807,6 +1811,7 @@ str_MerseyRail					: (MerseyRail)
 str_MerseyRailGoodComs			: (MerseyRail - Good Communications)
 str_MerseyRailOld				: (MerseyRail - Old)
 str_MetrolinkYellow             : (Manchester Metrolink - Yellow)
+str_MetropolitanRed             : (Metropolitan Railway - Red)
 str_Maersk      				: (Maersk)
 str_MaerskEyeCandy 				: (Maersk - Always show container)
 str_MRCrimson                   : (MR - Crimson)
