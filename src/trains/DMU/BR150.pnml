@@ -696,8 +696,8 @@ item (FEAT_TRAINS, item_BR150_1, 1501) {
         articulated_part:               sw_articulated_BR150_1;
         purchase_cargo_capacity:        return (25 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR150_1;
-        cost_factor:                    197;
-        running_cost_factor:            4554;
+        cost_factor:                    141;
+        running_cost_factor:            4008;
         cargo_subtype_text:             sw_BR150_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 
@@ -766,8 +766,8 @@ item (FEAT_TRAINS, item_BR150_2, 1502) {
         articulated_part:               sw_articulated_BR150_2;
         purchase_cargo_capacity:        return (25 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR150_1;
-        cost_factor:                    197;
-        running_cost_factor:            4554;
+        cost_factor:                    141;
+        running_cost_factor:            4008;
         cargo_subtype_text:             sw_BR150_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 
