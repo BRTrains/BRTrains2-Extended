@@ -814,7 +814,7 @@ str_BR180_liveries				:FGW First Great Western - Dynamic Lines, Grand Central, N
 STR_NAME_BR185					:BR Class 185 "Desiro" (3-car)
 str_BR185_liveries				:First Group, First TransPennine
 
-STR_NAME_BR220					:BR Class 220 "Voyager" (4-car)
+STR_NAME_BR220					:BR Class 220 "Voyager"
 str_BR220_liveries				:Virgin Trains, CrossCountry
 
 STR_NAME_BR221					:BR Class 221 "Super Voyager" (5-Car)
