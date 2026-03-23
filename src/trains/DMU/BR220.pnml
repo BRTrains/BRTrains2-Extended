@@ -556,7 +556,7 @@ item (FEAT_TRAINS, item_BR220, 2201) {
         default:                        sw_livery_BR220;
         visual_effect_and_powered:      sw_FX_BR220_Diesel;
         purchase:                       sw_purchase_sprite_BR220;
-        // sound_effect:                   ;
+        sound_effect:                   sw_sound_diesel_220;
 
         // internal code
         length:                         sw_length_BR220;
