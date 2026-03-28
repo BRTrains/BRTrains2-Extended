@@ -1984,6 +1984,9 @@ str_Wrexham						: (Wrexham & Shropshire)
 str_WYPTEMetro					: (WYPTE Metro)
 str_WYPTEVerona                 : (WYPTE Verona - Green and Cream)
 str_XC							: (CrossCountry)
+str_XC_Pride                    : (CrossCountry - Pride)
+str_XC_Refurb                   : (CrossCountry - Refurbished)
+str_XC_Refurb_Concept           : (CrossCountry - Refurbished, Concept)
 str_xfcc						: (Thameslink - ex-First Capital Connect)
 
 # Power types
