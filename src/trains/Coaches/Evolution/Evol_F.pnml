@@ -313,7 +313,7 @@ item (FEAT_TRAINS, item_Evol_Arc_F, 11206) {
         variant_group:                  item_Evol_Header; // unit ID or item
 		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              date(1880,01,01); 
+        introduction_date:              date(1885,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
         vehicle_life: 					40;
         retire_early: 					-10;							
@@ -329,7 +329,7 @@ item (FEAT_TRAINS, item_Evol_Arc_F, 11206) {
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
-        speed:                          80 mph;
+        speed:                          70 mph;
         refit_cost:                     0;
         track_type:                     RAIL;
         weight:                         20 ton;
@@ -346,8 +346,8 @@ item (FEAT_TRAINS, item_Evol_Arc_F, 11206) {
         articulated_part:               sw_articulated_Evol_Arc_F;
         purchase_cargo_capacity:        return (12 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_Evol_F;
-        cost_factor:                    471;
-        running_cost_factor:            653;
+        cost_factor:                    445;
+        running_cost_factor:            580;
         cargo_subtype_text:             sw_Evol_Arc_F_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 
@@ -429,7 +429,7 @@ item (FEAT_TRAINS, item_Evol_Clerestory_F, 11211) {
         variant_group:                  item_Evol_Header; // unit ID or item
 		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              date(1880,01,01); 
+        introduction_date:              date(1885,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
         vehicle_life: 					40;
         retire_early: 					-10;							
@@ -445,7 +445,7 @@ item (FEAT_TRAINS, item_Evol_Clerestory_F, 11211) {
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
-        speed:                          80 mph;
+        speed:                          70 mph;
         refit_cost:                     0;
         track_type:                     RAIL;
         weight:                         20 ton;
@@ -462,8 +462,8 @@ item (FEAT_TRAINS, item_Evol_Clerestory_F, 11211) {
         articulated_part:               sw_articulated_Evol_Clerestory_F;
         purchase_cargo_capacity:        return (12 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_Evol_F;
-        cost_factor:                    471;
-        running_cost_factor:            653;
+        cost_factor:                    445;
+        running_cost_factor:            580;
         cargo_subtype_text:             sw_Evol_Clerestory_F_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 
@@ -545,7 +545,7 @@ item (FEAT_TRAINS, item_Evol_Ellip_F, 11216) {
         variant_group:                  item_Evol_Header; // unit ID or item
 		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              date(1880,01,01); 
+        introduction_date:              date(1885,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
         vehicle_life: 					40;
         retire_early: 					-10;							
@@ -561,7 +561,7 @@ item (FEAT_TRAINS, item_Evol_Ellip_F, 11216) {
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
-        speed:                          80 mph;
+        speed:                          70 mph;
         refit_cost:                     0;
         track_type:                     RAIL;
         weight:                         20 ton;
@@ -578,8 +578,8 @@ item (FEAT_TRAINS, item_Evol_Ellip_F, 11216) {
         articulated_part:               sw_articulated_Evol_Ellip_F;
         purchase_cargo_capacity:        return (12 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_Evol_F;
-        cost_factor:                    471;
-        running_cost_factor:            653;
+        cost_factor:                    445;
+        running_cost_factor:            580;
         cargo_subtype_text:             sw_Evol_Ellip_F_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 

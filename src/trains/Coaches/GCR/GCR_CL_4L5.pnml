@@ -126,16 +126,14 @@ switch(FEAT_TRAINS, SELF, sw_GCR_CL_4L5_cargo_subtype_text, cargo_subtype){
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_GCR_CL_4L5, position_in_articulated_veh % 3) {
-	0: spriteset_empty;
-	1: return sw_livery_GCR_CL_4L5;
-	2: spriteset_empty;
+	1: sw_livery_GCR_CL_4L5;
+	    spriteset_empty;
 }
 
 // length switch
 switch(FEAT_TRAINS, SELF, sw_length_GCR_CL_4L5, position_in_articulated_veh % 3) {
-	0: 4;
 	1: 2;
-	2: 4;
+	    4;
 }
 
 
@@ -143,13 +141,12 @@ switch(FEAT_TRAINS, SELF, sw_length_GCR_CL_4L5, position_in_articulated_veh % 3)
 switch(FEAT_TRAINS, SELF, sw_capacity_GCR_CL_4L5, position_in_vehid_chain % 3) {
     0: 38 * param_pax; // all the capacity - (vehid chain number)
     1..2: 1 * param_pax;
-    // total
+    // total 40
 }
 
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_GCR_CL_4L5, extra_callback_info1) {
-	1: return item_GCR_CL_4L5;
-	2: return item_GCR_CL_4L5;
+	1..2: return item_GCR_CL_4L5;
 		return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
@@ -180,7 +177,7 @@ item (FEAT_TRAINS, item_GCR_CL_4L5, 11200) {
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
-        speed:                          60 mph;
+        speed:                          70 mph;
         refit_cost:                     0;
         track_type:                     RAIL;
         weight:                         30 ton;
@@ -201,8 +198,8 @@ item (FEAT_TRAINS, item_GCR_CL_4L5, 11200) {
         articulated_part:               sw_articulated_GCR_CL_4L5; 
         purchase_cargo_capacity:        return ( 13 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_GCR_CL_4L5;
-        cost_factor:                    571;
-        running_cost_factor:            609;
+        cost_factor:                    600;
+        running_cost_factor:            692;
         cargo_subtype_text:             sw_GCR_CL_4L5_cargo_subtype_text; 
         // power:                          sw_power_GCR_CL_4L5;
         colour_mapping:                 return PALETTE_CC_FIRST;
