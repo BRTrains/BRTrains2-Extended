@@ -2328,20 +2328,20 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_DMRFO_DMSO_EMR_Maroon, vehicle_is_r
         sw_loadstack_BR222_DMRFO_EMR_Maroon_REV; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSO_TMFO_EMR_Maroon, vehicle_is_reversed) {
-    1:  sw_loadstack_BR222_TMFO_EMR_Maroon;
+    1:  sw_loadstack_BR222_TMFO_EMR_Maroon_REV;
         sw_loadstack_BR222_TMSO_EMR_Maroon; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMFO_TMSO_EMR_Maroon, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMSO_EMR_Maroon_REV;
-        sw_loadstack_BR222_TMFO_EMR_Maroon_REV; }
+        sw_loadstack_BR222_TMFO_EMR_Maroon; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSO_TMCO_EMR_Maroon, vehicle_is_reversed) {
-    1:  sw_loadstack_BR222_TMCO_EMR_Maroon;
+    1:  sw_loadstack_BR222_TMCO_EMR_Maroon_REV;
         sw_loadstack_BR222_TMSO_EMR_Maroon; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMCO_TMSO_EMR_Maroon, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMSO_EMR_Maroon_REV;
-        sw_loadstack_BR222_TMCO_EMR_Maroon_REV; }
+        sw_loadstack_BR222_TMCO_EMR_Maroon; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSRMB_TMCO_EMR_Maroon, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMCO_EMR_Maroon;
@@ -2376,20 +2376,20 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_DMRFO_DMSO_EMR_MaroonWhite, vehicle
         sw_loadstack_BR222_DMRFO_EMR_MaroonWhite_REV; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSO_TMFO_EMR_MaroonWhite, vehicle_is_reversed) {
-    1:  sw_loadstack_BR222_TMFO_EMR_MaroonWhite;
+    1:  sw_loadstack_BR222_TMFO_EMR_MaroonWhite_REV;
         sw_loadstack_BR222_TMSO_EMR_MaroonWhite; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMFO_TMSO_EMR_MaroonWhite, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMSO_EMR_MaroonWhite_REV;
-        sw_loadstack_BR222_TMFO_EMR_MaroonWhite_REV; }
+        sw_loadstack_BR222_TMFO_EMR_MaroonWhite; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSO_TMCO_EMR_MaroonWhite, vehicle_is_reversed) {
-    1:  sw_loadstack_BR222_TMCO_EMR_MaroonWhite;
+    1:  sw_loadstack_BR222_TMCO_EMR_MaroonWhite_REV;
         sw_loadstack_BR222_TMSO_EMR_MaroonWhite; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMCO_TMSO_EMR_MaroonWhite, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMSO_EMR_MaroonWhite_REV;
-        sw_loadstack_BR222_TMCO_EMR_MaroonWhite_REV; }
+        sw_loadstack_BR222_TMCO_EMR_MaroonWhite; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSRMB_TMCO_EMR_MaroonWhite, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMCO_EMR_MaroonWhite;
@@ -2424,20 +2424,20 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_DMRFO_DMSO_EMT, vehicle_is_reversed
         sw_loadstack_BR222_DMRFO_EMT_REV; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSO_TMFO_EMT, vehicle_is_reversed) {
-    1:  sw_loadstack_BR222_TMFO_EMT;
+    1:  sw_loadstack_BR222_TMFO_EMT_REV;
         sw_loadstack_BR222_TMSO_EMT; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMFO_TMSO_EMT, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMSO_EMT_REV;
-        sw_loadstack_BR222_TMFO_EMT_REV; }
+        sw_loadstack_BR222_TMFO_EMT; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSO_TMCO_EMT, vehicle_is_reversed) {
-    1:  sw_loadstack_BR222_TMCO_EMT;
+    1:  sw_loadstack_BR222_TMCO_EMT_REV;
         sw_loadstack_BR222_TMSO_EMT; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMCO_TMSO_EMT, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMSO_EMT_REV;
-        sw_loadstack_BR222_TMCO_EMT_REV; }
+        sw_loadstack_BR222_TMCO_EMT; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSRMB_TMCO_EMT, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMCO_EMT;
@@ -2472,20 +2472,20 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_DMRFO_DMSO_HullTrains, vehicle_is_r
         sw_loadstack_BR222_DMRFO_HullTrains_REV; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSO_TMFO_HullTrains, vehicle_is_reversed) {
-    1:  sw_loadstack_BR222_TMFO_HullTrains;
+    1:  sw_loadstack_BR222_TMFO_HullTrains_REV;
         sw_loadstack_BR222_TMSO_HullTrains; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMFO_TMSO_HullTrains, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMSO_HullTrains_REV;
-        sw_loadstack_BR222_TMFO_HullTrains_REV; }
+        sw_loadstack_BR222_TMFO_HullTrains; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSO_TMCO_HullTrains, vehicle_is_reversed) {
-    1:  sw_loadstack_BR222_TMCO_HullTrains;
+    1:  sw_loadstack_BR222_TMCO_HullTrains_REV;
         sw_loadstack_BR222_TMSO_HullTrains; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMCO_TMSO_HullTrains, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMSO_HullTrains_REV;
-        sw_loadstack_BR222_TMCO_HullTrains_REV; }
+        sw_loadstack_BR222_TMCO_HullTrains; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSRMB_TMCO_HullTrains, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMCO_HullTrains;
@@ -2572,20 +2572,20 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_DMRFO_DMSO_ScotRail, vehicle_is_rev
         sw_loadstack_BR222_DMRFO_ScotRail_REV; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSO_TMFO_ScotRail, vehicle_is_reversed) {
-    1:  sw_loadstack_BR222_TMFO_ScotRail;
+    1:  sw_loadstack_BR222_TMFO_ScotRail_REV;
         sw_loadstack_BR222_TMSO_ScotRail; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMFO_TMSO_ScotRail, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMSO_ScotRail_REV;
-        sw_loadstack_BR222_TMFO_ScotRail_REV; }
+        sw_loadstack_BR222_TMFO_ScotRail; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSO_TMCO_ScotRail, vehicle_is_reversed) {
-    1:  sw_loadstack_BR222_TMCO_ScotRail;
+    1:  sw_loadstack_BR222_TMCO_ScotRail_REV;
         sw_loadstack_BR222_TMSO_ScotRail; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMCO_TMSO_ScotRail, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMSO_ScotRail_REV;
-        sw_loadstack_BR222_TMCO_ScotRail_REV; }
+        sw_loadstack_BR222_TMCO_ScotRail; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSRMB_TMCO_ScotRail, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMCO_ScotRail;
@@ -2775,7 +2775,7 @@ item (FEAT_TRAINS, item_BR222_9, 2220) {
         refit_cost:                     0;
         track_type:                     RAIL;
         power:                          6750 hp;
-        weight:                         510 ton;
+        weight:                         428 ton;
         engine_class:                   ENGINE_CLASS_DIESEL;
         dual_headed:                    0;
         air_drag_coefficient:           0.05;
@@ -2921,7 +2921,7 @@ item (FEAT_TRAINS, item_BR222_4, 2221) {
         refit_cost:                     0;
         track_type:                     RAIL;
         power:                          3000 hp;
-        weight:                         227 ton;
+        weight:                         190 ton;
         engine_class:                   ENGINE_CLASS_DIESEL;
         dual_headed:                    0;
         air_drag_coefficient:           0.05;
@@ -3076,7 +3076,7 @@ item (FEAT_TRAINS, item_BR222_5, 2222) {
         refit_cost:                     0;
         track_type:                     RAIL;
         power:                          3750 hp;
-        weight:                         283 ton;
+        weight:                         238 ton;
         engine_class:                   ENGINE_CLASS_DIESEL;
         dual_headed:                    0;
         air_drag_coefficient:           0.05;
@@ -3247,7 +3247,7 @@ item (FEAT_TRAINS, item_BR222_7, 2223) {
         refit_cost:                     0;
         track_type:                     RAIL;
         power:                          5250 hp;
-        weight:                         395 ton;
+        weight:                         332 ton;
         engine_class:                   ENGINE_CLASS_DIESEL;
         dual_headed:                    0;
         air_drag_coefficient:           0.05;
