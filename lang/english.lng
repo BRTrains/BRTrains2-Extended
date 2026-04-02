@@ -821,14 +821,11 @@ STR_NAME_BR221_5			    :BR Class 221 "Super Voyager" (5-Car)
 STR_NAME_BR221_4				:BR Class 221 "Super Voyager" (4-Car)
 str_BR221_liveries				:Virgin Trains, Avanti West Coast, CrossCountry, Grand Central
 
-STR_NAME_BR222					:BR Class 222 "Meridian" (7-Car)
-str_BR222_liveries				:Midland Mainline, East Midlands Trains
-
+STR_NAME_BR222_9                :BR Class 222 "Meridian" (9-car)
+STR_NAME_BR222_4				:BR Class 222 "Meridian" (4-Car)
+STR_NAME_BR222_7				:BR Class 222 "Meridian" (7-Car)
 STR_NAME_BR222_5				:BR Class 222 "Meridian" (5-Car)
-str_BR222_5_liveries			:Midland Mainline, East Midlands Trains
-
-STR_NAME_BR222_1				:BR Class 222/1 "Pioneer" (4-Car)
-str_BR222_1_liveries			:Hull Trains, East Midlands Trains
+str_BR222_liveries              :MML, EMT, Hull Trains, EMR, Lumo, ScotRail Saltire
 
 STR_NAME_BR230				    :BR Class 230 "D-Train"
 STR_NAME_BR230_2CAR				:BR Class 230 (2-Car)
@@ -856,7 +853,7 @@ STR_NAME_BR254					:BR Class 254 "Eastern" (8-car)
 str_BR254_liveries				:BR Blue, InterCity, CrossCountry, GNER, NatEx
 
 STR_NAME_BR255					:BR Class 255 "Challenger" (5-car)
-str_BR255_liveries				:Cross Country, Grand Central, Grand Central Lined
+str_BR255_liveries				:CrossCountry, Grand Central, Grand Central Lined
 
 STR_NAME_BR256                  :BR Class 256 "Castle" (4-car)
 str_BR256_liveries              :GWR
@@ -1321,8 +1318,8 @@ str_BR_Mk3Sleeper_liveries	    :BR Blue, InterCity, First ScotRail, ScotRail, Ca
 STR_NAME_BR_Mk3DVT				:BR Mark 3 Driving Trailer (DVT)
 str_BR_Mk3DVT_liveries			:InterCity Swallow, Virgin, ONE, Chiltern, Greater Anglia, Transport for Wales, Virgin "Pretendolino", Arriva Wales, Network Rail
 
-str_BR_Mk3_liveries			    :BR Blue, InterCity, Midland Mainline, East Midlands Trains, Virgin Trains, Cross Country, Grand Central, FGW, GNER
-str_BR_Mk3a_liveries			:BR Blue, InterCity, Midland Mainline, East Midlands Trains, Virgin Trains, Cross Country, Grand Central, FGW, GNER
+str_BR_Mk3_liveries			    :BR Blue, InterCity, MML, EMT, Virgin Trains, CrossCountry, Grand Central, FGW, GNER
+str_BR_Mk3a_liveries			:BR Blue, InterCity, MML, EMT, Virgin Trains, CrossCountry, Grand Central, FGW, GNER
 
 STR_NAME_BR_Mk4_Header			:BR Mark 4 Coaches
 
@@ -1801,6 +1798,7 @@ str_LU_Unpainted                : (London Underground - Unpainted)
 str_LU_86Green                  : (London Underground - Green (Experimental))
 str_LU_86Blue                   : (London Underground - Blue (Experimental))
 str_LU_86Red                    : (London Underground - Red (Experimental))
+str_Lumo                        : (Lumo)
 str_MainlineFreight             : (Mainline Freight)
 str_Mainline_Blue				: (Mainline Freight - Blue)
 str_Mainline_Grey				: (Mainline Freight - Grey)
