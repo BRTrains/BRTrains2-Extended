@@ -127,8 +127,8 @@ spriteset(spriteset_LNER_Gresley_BTK_D261_LNER_Teak_purchase, "gfx/Coaches/LNER_
 // purchase sprite stacking
 switch(FEAT_TRAINS, PARENT, sw_LNER_Gresley_BTK_D261_purchase_sprite, current_year) {
     1934..1948: spriteset_LNER_Gresley_BTK_D261_LNER_Teak_purchase;
-    1949..1968: spriteset_LNER_Gresley_BTK_D261_BR_Maroon_purchase;
-    1969..1998: spriteset_LNER_Gresley_BTK_D261_BR_Blue_purchase;
+    1949..1965: spriteset_LNER_Gresley_BTK_D261_BR_Maroon_purchase;
+    1965..1998: spriteset_LNER_Gresley_BTK_D261_BR_Blue_purchase;
         spriteset_LNER_Gresley_BTK_D261_LNER_Teak_purchase; }
 
 

@@ -65,7 +65,7 @@ spriteset(spriteset_BR55_BRBlue_purchase, "gfx/Locomotive_Diesel/BR55/BR55_BRBlu
     { template_purchase(0,0) }
 
 switch(FEAT_TRAINS, SELF, sw_BR55_purchase_year, current_year) {
-    1952..1965: spriteset_BR55_BRGreen_purchase;
+    1948..1965: spriteset_BR55_BRGreen_purchase;
         spriteset_BR55_BRBlue_purchase;
 }
 

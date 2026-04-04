@@ -310,8 +310,8 @@ switch(FEAT_TRAINS, SELF, sw_graphics_BR415_NSE, position_in_articulated_veh % 1
 	    spriteset_empty; }
 
 switch(FEAT_TRAINS, PARENT, sw_BR415_purchase_sprite, current_year) {
-    1948..1968: spriteset_BR415_DMBSO_BR_Green_purchase;
-    1969..1985: spriteset_BR415_DMBSO_BR_Blue_purchase;
+    1948..1965: spriteset_BR415_DMBSO_BR_Green_purchase;
+    1966..1985: spriteset_BR415_DMBSO_BR_Blue_purchase;
     1986..1995: spriteset_BR415_DMBSO_NSE_purchase;
     spriteset_BR415_DMBSO_BR_Blue_purchase; }
 

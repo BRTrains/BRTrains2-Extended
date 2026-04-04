@@ -242,8 +242,8 @@ spriteset(spriteset_BR86_Virgin_purchase, "gfx/Locomotive_Electric/BR86/BR86_Vir
     { template_purchase(0,0) }
 
 switch(FEAT_TRAINS, PARENT, sw_BR86_purchase_sprite, current_year) {
-    1948..1968: spriteset_BR86_BRElectricBlue_purchase;
-    1969..1982: spriteset_BR86_BRBlue_YellowFront_purchase;
+    1948..1965: spriteset_BR86_BRElectricBlue_purchase;
+    1966..1982: spriteset_BR86_BRBlue_YellowFront_purchase;
     1983..1994: spriteset_BR86_BR_Intercity_Mainline_purchase;
     1995..1996: spriteset_BR86_Freightliner_purchase;
     1997..2003: spriteset_BR86_Virgin_purchase;

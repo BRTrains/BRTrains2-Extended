@@ -195,7 +195,7 @@ switch(FEAT_TRAINS, SELF, sw_spritestack_BR52_BRBlue_purchase, [STORE_TEMP((getb
 
 // purchase year sprite switch
 switch(FEAT_TRAINS, SELF, sw_BR52_purchase, current_year) {
-	1961..1965: sw_spritestack_BR52_BRGreen_purchase;
+	1948..1965: sw_spritestack_BR52_BRGreen_purchase;
 		sw_spritestack_BR52_BRBlue_purchase;
 }
 

@@ -339,6 +339,13 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR309_DMsOC_BR_Blue_REV, [ STORE_TEMP((ge
     1: spritegroup_BR309_DMsOC_BR_Blue_Loading_REV;
 }
 
+// purchase sprite
+spriteset(spriteset_BR309_DMsOC_BR_Blue_purchase, "gfx/EMU/BR309/BR309_DMsOC_BR_Blue_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR309_DMsOC_BR_Blue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR309/BR309_DMsOC_BR_Blue_1x_32bpp.png", "gfx/EMU/BR309/BR309_DMsOC_BR_Blue_1x_mask.png")
+    { template_purchase(0,0) }
+
 // basic sprite
 spriteset(spriteset_BR309_DMsOC_BR_Maroon, "gfx/EMU/BR309/BR309_DMsOC_BR_Maroon_1x_8bpp.png")
     { template_128trains_1x(0,0) }
@@ -351,6 +358,13 @@ spriteset(spriteset_BR309_DMsOC_BR_Maroon, "gfx/EMU/BR309/BR309_DMsOC_BR_Maroon_
 
     alternative_sprites(spriteset_BR309_DMsOC_BR_Maroon, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR309/BR309_DMsOC_BR_Maroon_4x_32bpp.png", "gfx/EMU/BR309/BR309_DMsOC_BR_Maroon_4x_mask.png")
     { template_128trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR309_DMsOC_BR_Maroon_purchase, "gfx/EMU/BR309/BR309_DMsOC_BR_Maroon_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR309_DMsOC_BR_Maroon_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR309/BR309_DMsOC_BR_Maroon_1x_32bpp.png", "gfx/EMU/BR309/BR309_DMsOC_BR_Maroon_1x_mask.png")
+    { template_purchase(0,0) }
 
 spriteset(spriteset_BR309_DMsOC_BR_Maroon_Loading, "gfx/EMU/BR309/BR309_DMsOC_BR_Maroon_Loading_1x_8bpp.png")
     { template_128trains_1x(0,0) }
@@ -418,6 +432,13 @@ spriteset(spriteset_BR309_DMsOC_NSE, "gfx/EMU/BR309/BR309_DMsOC_NSE_1x_8bpp.png"
 
     alternative_sprites(spriteset_BR309_DMsOC_NSE, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR309/BR309_DMsOC_NSE_4x_32bpp.png", "gfx/EMU/BR309/BR309_DMsOC_NSE_4x_mask.png")
     { template_128trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR309_DMsOC_NSE_purchase, "gfx/EMU/BR309/BR309_DMsOC_NSE_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR309_DMsOC_NSE_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR309/BR309_DMsOC_NSE_1x_32bpp.png", "gfx/EMU/BR309/BR309_DMsOC_NSE_1x_mask.png")
+    { template_purchase(0,0) }
 
 spriteset(spriteset_BR309_DMsOC_NSE_Loading, "gfx/EMU/BR309/BR309_DMsOC_NSE_Loading_1x_8bpp.png")
     { template_128trains_1x(0,0) }
@@ -1620,11 +1641,12 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR309_TSO_NSE_Jaffa_Cake_REV, [ STORE_TEM
     1: spritegroup_BR309_TSO_NSE_Jaffa_Cake_Loading_REV; }
 
 // purchase sprite
-spriteset(spriteset_BR309_DMsOC_BR_Blue_purchase, "gfx/EMU/BR309/BR309_DMsOC_BR_Blue_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR309_DMsOC_BR_Blue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR309/BR309_DMsOC_BR_Blue_1x_32bpp.png", "gfx/EMU/BR309/BR309_DMsOC_BR_Blue_1x_mask.png")
-    { template_purchase(0,0) }
+switch(FEAT_TRAINS, SELF, sw_purchase_sprite_BR309, current_year) {
+    1948..1965: spriteset_BR309_DMsOC_BR_Maroon_purchase;
+    1966..1985: spriteset_BR309_DMsOC_BR_Blue_purchase;
+    1986..1995: spriteset_BR309_DMsOC_NSE_purchase;
+        spriteset_BR309_DMsOC_BR_Blue_purchase;
+}
 
 // reversing switches
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR309_BDTS_TSO_BR_Maroon, vehicle_is_reversed) {
@@ -1885,7 +1907,7 @@ item (FEAT_TRAINS, item_BR309, 3090) {
         // graphics
         default:                        sw_livery_BR309;
         visual_effect_and_powered:      sw_FX_BR309_Electric;
-        purchase:                       spriteset_BR309_DMsOC_BR_Blue_purchase;
+        purchase:                       sw_purchase_sprite_BR309;
         sound_effect:                   sw_sound_electric_GEC;
         
         // internal code
@@ -2044,7 +2066,7 @@ item (FEAT_TRAINS, item_BR309_1, 3091) {
         // graphics
         default:                        sw_livery_BR309_1;
         visual_effect_and_powered:      sw_FX_BR309_1_Electric;
-        purchase:                       spriteset_BR309_DMsOC_BR_Blue_purchase;
+        purchase:                       sw_purchase_sprite_BR309;
         sound_effect:                   sw_sound_electric_GEC;
         
         // internal code
@@ -2206,7 +2228,7 @@ item (FEAT_TRAINS, item_BR309_2, 3092) {
         // graphics
         default:                        sw_livery_BR309_2;
         visual_effect_and_powered:      sw_FX_BR309_2_3_Electric;
-        purchase:                       spriteset_BR309_DMsOC_BR_Blue_purchase;
+        purchase:                       sw_purchase_sprite_BR309;
         sound_effect:                   sw_sound_electric_GEC;
         
         // internal code
@@ -2363,7 +2385,7 @@ item (FEAT_TRAINS, item_BR309_3, 3093) {
         // graphics
         default:                        sw_livery_BR309_3;
         visual_effect_and_powered:      sw_FX_BR309_2_3_Electric;
-        purchase:                       spriteset_BR309_DMsOC_BR_Blue_purchase;
+        purchase:                       sw_purchase_sprite_BR309;
         sound_effect:                   sw_sound_electric_GEC;
         
         // internal code
@@ -2518,7 +2540,7 @@ item (FEAT_TRAINS, item_BR309_4, 3094) {
         // graphics
         default:                        sw_livery_BR309_4;
         visual_effect_and_powered:      sw_FX_BR309_2_3_Electric;
-        purchase:                       spriteset_BR309_DMsOC_BR_Blue_purchase;
+        purchase:                       sw_purchase_sprite_BR309;
         sound_effect:                   sw_sound_electric_GEC;
         
         // internal code

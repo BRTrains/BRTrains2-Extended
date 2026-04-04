@@ -91,6 +91,12 @@ spriteset(spriteset_BR_Mk1_BG_BR_Southern_Green, "gfx/Coaches/BR_Mk1_BG/BR_Mk1_B
     alternative_sprites(spriteset_BR_Mk1_BG_BR_Southern_Green, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_BG/BR_Mk1_BG_BR_Southern_Green_4x_32bpp.png", "gfx/Coaches/BR_Mk1_BG/BR_Mk1_BG_BR_Southern_Green_4x_mask.png")
     { template_118trains_4x(0,0) }
 
+// purchase sprite
+switch(FEAT_TRAINS, SELF, sw_purchase_sprite_BR_Mk1_BG, current_year) {
+    // 1948..1965: spriteset_BR_Mk1_BG_BR_Southern_Green_purchase;
+    1966..2002: spriteset_BR_Mk1_BG_BR_BlueGrey_purchase;
+    spriteset_BR_Mk1_BG_BR_Maroon_purchase; }
+
 // livery switch
 switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk1_BG, cargo_subtype) {
     0: spriteset_BR_Mk1_BG_BR_Maroon;
@@ -157,7 +163,7 @@ item (FEAT_TRAINS, item_BR_Mk1_BG, 12004) { // Diagram 711 BR Mk1 BG
 	graphics {
         // graphics
         default:                        switch_BR_Mk1_BG_graphics;
-        purchase:                       spriteset_BR_Mk1_BG_BR_Maroon_purchase;
+        purchase:                       sw_purchase_sprite_BR_Mk1_BG;
 
         // internal code
         length:                         switch_length_BR_Mk1_BG;

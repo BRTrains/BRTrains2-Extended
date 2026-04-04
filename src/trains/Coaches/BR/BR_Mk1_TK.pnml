@@ -90,6 +90,13 @@ spritegroup spritegroup_BR_Mk1_TK_BR_Blue_Loading {
     loading: [spriteset_BR_Mk1_TK_BR_Blue_Loading];
 }
 
+// purchase sprite switch
+spriteset(spriteset_BR_Mk1_TK_BR_Blue_purchase, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Blue_1x_8bpp.png")
+	{ template_purchase(0,0) }
+
+	alternative_sprites (spriteset_BR_Mk1_TK_BR_Blue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Blue_1x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Blue_1x_mask.png")
+		{ template_purchase(0, 0) }
+
 // BR Blue sprites for use with BR 309 Clacton Express
 spriteset(spriteset_BR_Mk1_TK_BR_Blue_REV, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Blue_1x_8bpp.png")
     { template_128trains_REV_1x(0,0) }
@@ -137,11 +144,17 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_TK_BR_Blue, [ STORE_TEMP((getbits(
 }
 
 // purchase sprite switch
-spriteset(spriteset_BR_Mk1_TK_purchase, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Maroon_1x_8bpp.png")
+spriteset(spriteset_BR_Mk1_TK_BR_Maroon_purchase, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Maroon_1x_8bpp.png")
 	{ template_purchase(0,0) }
 
-	alternative_sprites (spriteset_BR_Mk1_TK_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Maroon_1x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Maroon_1x_mask.png")
+	alternative_sprites (spriteset_BR_Mk1_TK_BR_Maroon_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Maroon_1x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Maroon_1x_mask.png")
 		{ template_purchase(0, 0) }
+
+switch(FEAT_TRAINS, SELF, sw_purchase_sprite_BR_Mk1_TK, current_year) {
+	// 1948..1965: spriteset_BR_Mk1_TK_BR_Blue_purchase;
+    1966..2002: spriteset_BR_Mk1_TK_BR_Blue_purchase;
+        spriteset_BR_Mk1_TK_BR_Maroon_purchase;
+}
 
 // livery switch
 switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk1_TK, cargo_subtype) {
@@ -160,16 +173,8 @@ switch(FEAT_TRAINS, SELF, sw_BR_Mk1_TK_cargo_subtype_text, cargo_subtype){
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, switch_BR_Mk1_TK_graphics, position_in_articulated_veh % 3) {
-	0: spriteset_empty;
 	1: return sw_livery_BR_Mk1_TK;
-	2: spriteset_empty;
-}
-
-// length switch
-switch(FEAT_TRAINS, SELF, switch_length_BR_Mk1_TK, position_in_articulated_veh % 3) {
-	0: 4;
-	1: 4;
-	2: 4;
+	    spriteset_empty;
 }
 
 // capacity switch
@@ -181,19 +186,18 @@ switch(FEAT_TRAINS, SELF, sw_capacity_BR_Mk1_TK, position_in_vehid_chain % 3) {
 
 // articulation switch
 switch(FEAT_TRAINS, SELF, switch_articulated_BR_Mk1_TK, extra_callback_info1) {
-	1: return item_BR_Mk1_TK;
-	2: return item_BR_Mk1_TK;
+	1..2: return item_BR_Mk1_TK;
 		return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
 // year name switch
 switch(FEAT_TRAINS, PARENT, sw_BR_Mk1_TK_name, current_year) {
-    1952..1956: string(STR_NAME_BR_Mk1_TK);
+    0..1956: string(STR_NAME_BR_Mk1_TK);
     string(STR_NAME_BR_Mk1_SK);
 }
 
 switch(FEAT_TRAINS, PARENT, sw_BR_Mk1_TK_desc, current_year) {
-    1952..1956: string(str_purchase_coach, string(str_coach_TK), string(str_BR_Mk1_liveries));
+    0..1956: string(str_purchase_coach, string(str_coach_TK), string(str_BR_Mk1_liveries));
         string(str_purchase_coach, string(str_coach_SK), string(str_BR_Mk1_liveries)); }
 
 item (FEAT_TRAINS, item_BR_Mk1_TK, 12031) { // Diagram 146/147 BR Mk1 TK/SK
@@ -221,17 +225,16 @@ item (FEAT_TRAINS, item_BR_Mk1_TK, 12031) { // Diagram 146/147 BR Mk1 TK/SK
         refit_cost:                     0;
         track_type:                     RAIL;
         weight:                         36 ton;
-        length:                         8;
+        length:                         4;
 	}
     
 	graphics {
         // graphics
         default:                        switch_BR_Mk1_TK_graphics;
-        purchase:                       spriteset_BR_Mk1_TK_purchase;
+        purchase:                       sw_purchase_sprite_BR_Mk1_TK;
 
         // internal code
         name:                           sw_BR_Mk1_TK_name;
-        length:                         switch_length_BR_Mk1_TK;
         articulated_part:               switch_articulated_BR_Mk1_TK;
         purchase_cargo_capacity:        return (21 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR_Mk1_TK;

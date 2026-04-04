@@ -531,7 +531,7 @@ spriteset(spriteset_BR08_RES_purchase, "gfx/Locomotive_Diesel/BR08/BR08_RES_1x_8
 
 switch(FEAT_TRAINS, PARENT, sw_BR08_purchase_sprite, current_year) {
     1952..1965: sw_spritestack_BR08_BR_Black_Purchase;
-    1965..1982: sw_spritestack_BR08_BR_Black_Arrow_Purchase;
+    1966..1982: sw_spritestack_BR08_BR_Black_Arrow_Purchase;
         sw_spritestack_BR08_BR_Blue_Purchase; }
 
 // FX effects

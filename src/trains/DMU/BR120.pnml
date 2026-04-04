@@ -966,7 +966,7 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR120_TSLRB_BR_Green_REV, [ STORE_TEMP((g
     1: spritegroup_BR120_TSLRB_BR_Green_Loading_REV; }
 
 switch(FEAT_TRAINS, PARENT, sw_BR120_purchase_sprite, current_year) {
-    1948..1968: spriteset_BR120_DMSL_BR_Green_purchase;
+    1948..1965: spriteset_BR120_DMSL_BR_Green_purchase;
         spriteset_BR120_DMSL_BR_BlueGrey_purchase;
 }
 
