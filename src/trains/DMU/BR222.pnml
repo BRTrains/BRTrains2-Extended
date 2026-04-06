@@ -2336,12 +2336,12 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMFO_TMSO_EMR_Maroon, vehicle_is_re
         sw_loadstack_BR222_TMFO_EMR_Maroon; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSO_TMCO_EMR_Maroon, vehicle_is_reversed) {
-    1:  sw_loadstack_BR222_TMCO_EMR_Maroon_REV;
+    1:  sw_loadstack_BR222_TMCO_EMR_Maroon;
         sw_loadstack_BR222_TMSO_EMR_Maroon; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMCO_TMSO_EMR_Maroon, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMSO_EMR_Maroon_REV;
-        sw_loadstack_BR222_TMCO_EMR_Maroon; }
+        sw_loadstack_BR222_TMCO_EMR_Maroon_REV; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSRMB_TMCO_EMR_Maroon, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMCO_EMR_Maroon;
@@ -2384,12 +2384,12 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMFO_TMSO_EMR_MaroonWhite, vehicle_
         sw_loadstack_BR222_TMFO_EMR_MaroonWhite; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSO_TMCO_EMR_MaroonWhite, vehicle_is_reversed) {
-    1:  sw_loadstack_BR222_TMCO_EMR_MaroonWhite_REV;
+    1:  sw_loadstack_BR222_TMCO_EMR_MaroonWhite;
         sw_loadstack_BR222_TMSO_EMR_MaroonWhite; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMCO_TMSO_EMR_MaroonWhite, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMSO_EMR_MaroonWhite_REV;
-        sw_loadstack_BR222_TMCO_EMR_MaroonWhite; }
+        sw_loadstack_BR222_TMCO_EMR_MaroonWhite_REV; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSRMB_TMCO_EMR_MaroonWhite, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMCO_EMR_MaroonWhite;
@@ -2432,12 +2432,12 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMFO_TMSO_EMT, vehicle_is_reversed)
         sw_loadstack_BR222_TMFO_EMT; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSO_TMCO_EMT, vehicle_is_reversed) {
-    1:  sw_loadstack_BR222_TMCO_EMT_REV;
+    1:  sw_loadstack_BR222_TMCO_EMT;
         sw_loadstack_BR222_TMSO_EMT; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMCO_TMSO_EMT, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMSO_EMT_REV;
-        sw_loadstack_BR222_TMCO_EMT; }
+        sw_loadstack_BR222_TMCO_EMT_REV; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSRMB_TMCO_EMT, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMCO_EMT;
@@ -2480,12 +2480,12 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMFO_TMSO_HullTrains, vehicle_is_re
         sw_loadstack_BR222_TMFO_HullTrains; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSO_TMCO_HullTrains, vehicle_is_reversed) {
-    1:  sw_loadstack_BR222_TMCO_HullTrains_REV;
+    1:  sw_loadstack_BR222_TMCO_HullTrains;
         sw_loadstack_BR222_TMSO_HullTrains; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMCO_TMSO_HullTrains, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMSO_HullTrains_REV;
-        sw_loadstack_BR222_TMCO_HullTrains; }
+        sw_loadstack_BR222_TMCO_HullTrains_REV; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSRMB_TMCO_HullTrains, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMCO_HullTrains;
@@ -2580,12 +2580,12 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMFO_TMSO_ScotRail, vehicle_is_reve
         sw_loadstack_BR222_TMFO_ScotRail; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSO_TMCO_ScotRail, vehicle_is_reversed) {
-    1:  sw_loadstack_BR222_TMCO_ScotRail_REV;
+    1:  sw_loadstack_BR222_TMCO_ScotRail;
         sw_loadstack_BR222_TMSO_ScotRail; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMCO_TMSO_ScotRail, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMSO_ScotRail_REV;
-        sw_loadstack_BR222_TMCO_ScotRail; }
+        sw_loadstack_BR222_TMCO_ScotRail_REV; }
 
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR222_TMSRMB_TMCO_ScotRail, vehicle_is_reversed) {
     1:  sw_loadstack_BR222_TMCO_ScotRail;
