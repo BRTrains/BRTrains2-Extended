@@ -3,4 +3,9 @@
 
 // Disable some trains that only exist for template alignment or debugging
 	// disable_item(FEAT_TRAINS, 9999); // Debug variant header
+	// WIP Class 800s; requires alignment fix
+	disable_item(FEAT_TRAINS, 8000);
+	disable_item(FEAT_TRAINS, 8001); 
+	disable_item(FEAT_TRAINS, 8002); 
+	disable_item(FEAT_TRAINS, 8003);
  }

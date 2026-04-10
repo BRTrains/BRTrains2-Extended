@@ -178,6 +178,9 @@ sort(FEAT_TRAINS, [
         item_BR755_4,
     item_BR756_0,
         item_BR756_1,
+    item_BR800_0,
+        item_BR800_1,
+        item_BR800_2,
     // Generic Coaches
     item_Evol_Header,
         item_Evol_Arc_F,
