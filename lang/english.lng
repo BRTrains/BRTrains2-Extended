@@ -1160,8 +1160,8 @@ STR_NAME_BR756_1                :BR Class 756/1 "FLIRT" (4-car)
 str_BR756_liveries              :TfW, Greater Anglia
 
 STR_NAME_BR800_0                :BR Class 800/0 "IET" (5-car)
-STR_NAME_BR800_1                :BR Class 800/1 "Azuma" (5-car)
-STR_NAME_BR800_2                :BR Class 800/2 "Azuma" (9-car)
+STR_NAME_BR800_1                :BR Class 800/1 "Azuma" (9-car)
+STR_NAME_BR800_2                :BR Class 800/2 "Azuma" (5-car)
 STR_NAME_BR800_3                :BR Class 800/3 "IET" (9-car)
 STR_NAME_BR800_TEST             :Class 800 TEST
 
