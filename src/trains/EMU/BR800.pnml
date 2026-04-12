@@ -1058,85 +1058,85 @@ switch(FEAT_TRAINS, PARENT, sw_power_BR800_9car, tile_powers_railtype("ELRL")){
 // 9-car:       DPTS - MS - MS - TSRB - MS - TS   - MC - MF - DPTF
 // 9-car rev:   DPTF - MF - MC - TS   - MS - TSRB - MS - MS - DPTS
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_DPTS_DPTF_GWR, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_DPTF_GWR;
-        sw_loadstack_BR800_DPTS_GWR; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_DPTS_DPTF_GWR, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_DPTF_GWR;
+//         sw_loadstack_BR800_DPTS_GWR; }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_DPTF_DPTS_GWR, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_DPTS_GWR_REV;
-        sw_loadstack_BR800_DPTF_GWR_REV; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_DPTF_DPTS_GWR, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_DPTS_GWR_REV;
+//         sw_loadstack_BR800_DPTF_GWR_REV; }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MS_MC_GWR, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_MC_GWR_Leading;
-        sw_loadstack_BR800_MS_GWR_Leading; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MS_MC_GWR, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_MC_GWR_Leading;
+//         sw_loadstack_BR800_MS_GWR_Leading; }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MC_MS_GWR, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_MS_GWR_Leading_REV;
-        sw_loadstack_BR800_MC_GWR_Leading_REV; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MC_MS_GWR, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_MS_GWR_Leading_REV;
+//         sw_loadstack_BR800_MC_GWR_Leading_REV; }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MS_GWR, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_MS_GWR_Middle_REV;
-        sw_loadstack_BR800_MS_GWR_Middle; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MS_GWR, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_MS_GWR_Middle_REV;
+//         sw_loadstack_BR800_MS_GWR_Middle; }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MS_MF_GWR, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_MF_GWR;
-        sw_loadstack_BR800_MS_GWR_Leading; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MS_MF_GWR, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_MF_GWR;
+//         sw_loadstack_BR800_MS_GWR_Leading; }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MF_MS_GWR, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_MS_GWR_Leading_REV;
-        sw_loadstack_BR800_MF_GWR_REV; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MF_MS_GWR, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_MS_GWR_Leading_REV;
+//         sw_loadstack_BR800_MF_GWR_REV; }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_TS_GWR, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_TS_GWR_Leading_REV;
-        sw_loadstack_BR800_TS_GWR_Leading; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_TS_GWR, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_TS_GWR_Leading_REV;
+//         sw_loadstack_BR800_TS_GWR_Leading; }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_TS_GWR_REV, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_TS_GWR_Leading;
-        sw_loadstack_BR800_TS_GWR_Leading_REV; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_TS_GWR_REV, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_TS_GWR_Leading;
+//         sw_loadstack_BR800_TS_GWR_Leading_REV; }
         
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_DPTS_DPTF_LNER, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_DPTF_LNER;
-        sw_loadstack_BR800_DPTS_LNER; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_DPTS_DPTF_LNER, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_DPTF_LNER;
+//         sw_loadstack_BR800_DPTS_LNER; }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_DPTF_DPTS_LNER, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_DPTS_LNER_REV;
-        sw_loadstack_BR800_DPTF_LNER_REV; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_DPTF_DPTS_LNER, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_DPTS_LNER_REV;
+//         sw_loadstack_BR800_DPTF_LNER_REV; }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MS_MC_LNER, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_MC_LNER;
-        sw_loadstack_BR800_MS_LNER; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MS_MC_LNER, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_MC_LNER;
+//         sw_loadstack_BR800_MS_LNER; }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MC_MS_LNER, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_MS_LNER_REV;
-        sw_loadstack_BR800_MC_LNER_REV; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MC_MS_LNER, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_MS_LNER_REV;
+//         sw_loadstack_BR800_MC_LNER_REV; }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MS_LNER, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_MS_LNER_REV;
-        sw_loadstack_BR800_MS_LNER; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MS_LNER, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_MS_LNER_REV;
+//         sw_loadstack_BR800_MS_LNER; }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MS_MF_LNER, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_MF_LNER;
-        sw_loadstack_BR800_MS_LNER; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MS_MF_LNER, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_MF_LNER;
+//         sw_loadstack_BR800_MS_LNER; }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MF_MS_LNER, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_MS_LNER_REV;
-        sw_loadstack_BR800_MF_LNER_REV; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MF_MS_LNER, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_MS_LNER_REV;
+//         sw_loadstack_BR800_MF_LNER_REV; }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_TSRB_TS_LNER, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_TS_LNER;
-        sw_loadstack_BR800_TSRB_LNER; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_TSRB_TS_LNER, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_TS_LNER;
+//         sw_loadstack_BR800_TSRB_LNER; }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_TS_TSRB_LNER, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_TSRB_LNER_REV;
-        sw_loadstack_BR800_TS_LNER_REV; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_TS_TSRB_LNER, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_TSRB_LNER_REV;
+//         sw_loadstack_BR800_TS_LNER_REV; }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MSRB_MC_LNER, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_MC_LNER;
-        sw_loadstack_BR800_MSRB_LNER; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MSRB_MC_LNER, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_MC_LNER;
+//         sw_loadstack_BR800_MSRB_LNER; }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MC_MSRB_LNER, vehicle_is_reversed) {
-    1: sw_loadstack_BR800_MSRB_LNER_REV;
-        sw_loadstack_BR800_MC_LNER_REV; }
+// switch(FEAT_TRAINS, PARENT, sw_reverse_BR800_MC_MSRB_LNER, vehicle_is_reversed) {
+//     1: sw_loadstack_BR800_MSRB_LNER_REV;
+//         sw_loadstack_BR800_MC_LNER_REV; }
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR800_GWR, position_in_articulated_veh % 15) {
@@ -1436,7 +1436,7 @@ item (FEAT_TRAINS, item_BR800_1, 8001) {
         cargo_capacity:                 sw_capacity_BR800_1;
         cost_factor:                    454;
         running_cost_factor:            13302;
-        cargo_subtype_text:             sw_BR800_GWR_cargo_subtype_text; 
+        cargo_subtype_text:             sw_BR800_LNER_cargo_subtype_text; 
         power:                          sw_power_BR800_9car;
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
@@ -1516,7 +1516,7 @@ item (FEAT_TRAINS, item_BR800_2, 8002) {
         cargo_capacity:                 sw_capacity_BR800_2;
         cost_factor:                    275;
         running_cost_factor:            9903;
-        cargo_subtype_text:             sw_BR800_GWR_cargo_subtype_text; 
+        cargo_subtype_text:             sw_BR800_LNER_cargo_subtype_text; 
         power:                          sw_power_BR800_5car;
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
