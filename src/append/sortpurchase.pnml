@@ -70,6 +70,7 @@ sort(FEAT_TRAINS, [
     item_BR_Standard_9F,
         item_BR_Standard_9F_DC,
         item_BR_Standard_9F_Named,
+    item_BR_GT3,
     // BR Diesel Locomotives
     item_BR08,
         item_BR09,

@@ -1,0 +1,328 @@
+
+// basic sprite
+spriteset(spriteset_BR_GT3_Beech_Leaf_Brown, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Beech_Leaf_Brown_1x_8bpp.png")
+    { template_88trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Beech_Leaf_Brown, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Beech_Leaf_Brown_1x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Beech_Leaf_Brown_1x_mask.png")
+    { template_88trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Beech_Leaf_Brown, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Beech_Leaf_Brown_2x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Beech_Leaf_Brown_2x_mask.png")
+    { template_88trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Beech_Leaf_Brown, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Beech_Leaf_Brown_4x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Beech_Leaf_Brown_4x_mask.png")
+    { template_88trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR_GT3_Beech_Leaf_Brown_purchase, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Beech_Leaf_Brown_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Beech_Leaf_Brown_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Beech_Leaf_Brown_1x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Beech_Leaf_Brown_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_GT3_BR_Black, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Black_1x_8bpp.png")
+    { template_88trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_BR_Black, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Black_1x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Black_1x_mask.png")
+    { template_88trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_BR_Black, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Black_2x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Black_2x_mask.png")
+    { template_88trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_BR_Black, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Black_4x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Black_4x_mask.png")
+    { template_88trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_GT3_BR_Blue, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Blue_1x_8bpp.png")
+    { template_88trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_BR_Blue, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Blue_1x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Blue_1x_mask.png")
+    { template_88trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_BR_Blue, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Blue_2x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Blue_2x_mask.png")
+    { template_88trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_BR_Blue, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Blue_4x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Blue_4x_mask.png")
+    { template_88trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_GT3_BR_Green, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Green_1x_8bpp.png")
+    { template_88trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_BR_Green, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Green_1x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Green_1x_mask.png")
+    { template_88trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_BR_Green, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Green_2x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Green_2x_mask.png")
+    { template_88trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_BR_Green, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Green_4x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_BR_Green_4x_mask.png")
+    { template_88trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_GT3_Tender_Beech_Leaf_Brown, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_Beech_Leaf_Brown_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Tender_Beech_Leaf_Brown, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_Beech_Leaf_Brown_1x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_Beech_Leaf_Brown_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Tender_Beech_Leaf_Brown, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_Beech_Leaf_Brown_2x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_Beech_Leaf_Brown_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Tender_Beech_Leaf_Brown, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_Beech_Leaf_Brown_4x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_Beech_Leaf_Brown_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_GT3_Tender_BR_Black_Early_Emblem, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Black_Early_Emblem_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Tender_BR_Black_Early_Emblem, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Black_Early_Emblem_1x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Black_Early_Emblem_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Tender_BR_Black_Early_Emblem, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Black_Early_Emblem_2x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Black_Early_Emblem_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Tender_BR_Black_Early_Emblem, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Black_Early_Emblem_4x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Black_Early_Emblem_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_GT3_Tender_BR_Black_Late_Crest, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Black_Late_Crest_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Tender_BR_Black_Late_Crest, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Black_Late_Crest_1x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Black_Late_Crest_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Tender_BR_Black_Late_Crest, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Black_Late_Crest_2x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Black_Late_Crest_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Tender_BR_Black_Late_Crest, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Black_Late_Crest_4x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Black_Late_Crest_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_GT3_Tender_BR_Blue, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Blue_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Tender_BR_Blue, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Blue_1x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Blue_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Tender_BR_Blue, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Blue_2x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Blue_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Tender_BR_Blue, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Blue_4x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Blue_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_GT3_Tender_BR_Green_Early_Emblem, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Green_Early_Emblem_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Tender_BR_Green_Early_Emblem, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Green_Early_Emblem_1x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Green_Early_Emblem_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Tender_BR_Green_Early_Emblem, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Green_Early_Emblem_2x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Green_Early_Emblem_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Tender_BR_Green_Early_Emblem, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Green_Early_Emblem_4x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Green_Early_Emblem_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_GT3_Tender_BR_Green_Late_Crest, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Green_Late_Crest_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Tender_BR_Green_Late_Crest, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Green_Late_Crest_1x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Green_Late_Crest_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Tender_BR_Green_Late_Crest, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Green_Late_Crest_2x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Green_Late_Crest_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Tender_BR_Green_Late_Crest, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Green_Late_Crest_4x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Tender_BR_Green_Late_Crest_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+
+// Anim_sprites
+spriteset(spriteset_BR_GT3_Anim1, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_1_1x_8bpp.png")
+    { template_88trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Anim1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_1_1x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_1_1x_mask.png")
+    { template_88trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Anim1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_1_2x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_1_2x_mask.png")
+    { template_88trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Anim1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_1_4x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_1_4x_mask.png")
+    { template_88trains_4x(0,0) }
+
+spriteset(spriteset_BR_GT3_Anim2, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_2_1x_8bpp.png")
+    { template_88trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Anim2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_2_1x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_2_1x_mask.png")
+    { template_88trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Anim2, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_2_2x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_2_2x_mask.png")
+    { template_88trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Anim2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_2_4x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_2_4x_mask.png")
+    { template_88trains_4x(0,0) }
+
+spriteset(spriteset_BR_GT3_Anim3, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_3_1x_8bpp.png")
+    { template_88trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Anim3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_3_1x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_3_1x_mask.png")
+    { template_88trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Anim3, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_3_2x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_3_2x_mask.png")
+    { template_88trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Anim3, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_3_4x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_3_4x_mask.png")
+    { template_88trains_4x(0,0) }
+
+spriteset(spriteset_BR_GT3_Anim4, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_4_1x_8bpp.png")
+    { template_88trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Anim4, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_4_1x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_4_1x_mask.png")
+    { template_88trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Anim4, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_4_2x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_4_2x_mask.png")
+    { template_88trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Anim4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_4_4x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_4_4x_mask.png")
+    { template_88trains_4x(0,0) }
+
+spriteset(spriteset_BR_GT3_Anim_purchase, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_1_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR_GT3_Anim_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_1_1x_32bpp.png", "gfx/Locomotive_Diesel/BR_GT3/BR_GT3_Anim_1_1x_mask.png")
+    { template_purchase(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_animation_BR_GT3, motion_counter % 4) {
+    0: spriteset_BR_GT3_Anim1;
+    1: spriteset_BR_GT3_Anim2;
+    2: spriteset_BR_GT3_Anim3;
+    3: spriteset_BR_GT3_Anim4; }
+
+switch(FEAT_TRAINS, SELF, sw_spritestack_BR_GT3_purchase, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR_GT3_Beech_Leaf_Brown_purchase;
+    1: spriteset_BR_GT3_Anim_purchase; }
+
+
+
+// FX effects
+switch(FEAT_TRAINS, SELF, sw_FX_BR_GT3_Diesel, position_in_vehid_chain % 2) {
+    0: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -1, DISABLE_WAGON_POWER);
+        return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR_GT3, cargo_subtype) {
+    0: spriteset_BR_GT3_Beech_Leaf_Brown;
+    1: spriteset_BR_GT3_BR_Black;
+    2: spriteset_BR_GT3_BR_Black;
+    3: spriteset_BR_GT3_BR_Green;
+    4: spriteset_BR_GT3_BR_Green;
+    5: spriteset_BR_GT3_BR_Blue;
+}
+
+switch(FEAT_TRAINS, SELF, sw_livery_BR_GT3_Tender, cargo_subtype) {
+    0: spriteset_BR_GT3_Tender_Beech_Leaf_Brown;
+    1: spriteset_BR_GT3_Tender_BR_Black_Early_Emblem;
+    2: spriteset_BR_GT3_Tender_BR_Black_Late_Crest;
+    3: spriteset_BR_GT3_Tender_BR_Green_Early_Emblem;
+    4: spriteset_BR_GT3_Tender_BR_Green_Late_Crest;
+    5: spriteset_BR_GT3_Tender_BR_Blue;
+}
+
+
+switch(FEAT_TRAINS, SELF, sw_spritestack_BR_GT3, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
+    0: sw_livery_BR_GT3;
+    1: sw_animation_BR_GT3; }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_BR_GT3, position_in_articulated_veh % 2) {
+	0: sw_spritestack_BR_GT3;
+	1: sw_livery_BR_GT3_Tender;
+}
+
+// livery name refit switch
+switch(FEAT_TRAINS, SELF, sw_BR_GT3_cargo_subtype_text, cargo_subtype){
+	0:	return string(str_BRBeechLeafBrown);
+    1:  return string(str_BRLinedBlack_Early);
+    2:  return string(str_BRLinedBlack_Late);
+    3:  return string(str_BRGreen_Early);
+    4:  return string(str_BRGreen_Late);
+    5:  return string(str_BRBlue);
+       return CB_RESULT_NO_TEXT;
+}
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_BR_GT3, position_in_articulated_veh % 2) {
+	0: 8;
+	1: 5;
+}
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR_GT3, extra_callback_info1) {
+	1: return item_BR_GT3;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+
+// unit definition
+item (FEAT_TRAINS, item_BR_GT3, 9807) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR_GT3);
+        // variant_group:                  ; // unit ID or item
+		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1958,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		// refittable_cargo_classes:        bitmask(CC_PASSENGERS);
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [PASS, GOOD];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        // for MUs, loading speed is multiplied by number of carriages * 0.75
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          90 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          2750 hp;
+        weight:                         126 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.07;
+        tractive_effort_coefficient:    0.14;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_BR_GT3;
+        visual_effect_and_powered:      sw_FX_BR_GT3_Diesel;
+        purchase:                       sw_spritestack_BR_GT3_purchase; // For dual mode units
+        sound_effect:                   sw_sound_diesel_50;
+
+        // internal code
+        length:                         sw_length_BR_GT3;
+        articulated_part:               sw_articulated_BR_GT3; 
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    114;
+        running_cost_factor:            7533;
+        cargo_subtype_text:             sw_BR_GT3_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_loco_with_liveries,
+                                                    string(str_purchase_type_gtu),
+                                                    string(str_usage_experimental),
+                                                    string(str_BR_GT3_liveries)));
+    }
+}
+

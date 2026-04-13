@@ -542,6 +542,9 @@ STR_NAME_BR_Standard_9F				:BR Standard Class 9F
 STR_NAME_BR_Standard_9F_DC          :BR Standard Class 9F (Double Chimney)
 STR_NAME_BR_Standard_9F_Named       :BR Standard Class 9F (Named)
 
+STR_NAME_BR_GT3                 :BR GT3 "Gas Turbine 3"
+str_BR_GT3_liveries             :Beech Leaf Brown, BR Black, BR Green, BR Blue
+
 # BR Diesel Locomotives
 STR_NAME_BR08					:BR Class 08 "Gronk"
 STR_NAME_BR09                   :BR Class 09 "Supergronk"
@@ -1560,6 +1563,7 @@ str_BP                          : (BP)
 str_BR2ToneGrey                 : (BR - 2 Tone Grey)
 str_BRAppleGreen                : (BR - Apple Green)
 str_BRBauxite                   : (BR - Bauxite)
+str_BRBeechLeafBrown            : (BR - Beech Leaf Brown)
 str_BRBlack						: (BR - Black)
 str_BRLion                      : (BR - Black & Lion)
 str_BRPlainBlack_Early          : (BR - Black, Early Emblem)
