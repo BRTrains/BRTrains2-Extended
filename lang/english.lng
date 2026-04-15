@@ -421,6 +421,9 @@ str_SECR_K_liveries                 :SECR Green, SR Olive Green, SR Malachite, S
 STR_NAME_SRQ1                       :SR Bulleid Q1 Class 0-6-0
 str_SRQ1_liveries                   :SR Black, BR Black
 
+STR_NAME_SR_W                       :SR W Class
+str_SR_W_liveries                   :SR Black, BR Black
+
 STR_NAME_SRZClass			        :SR Maunsell Z Class 0-8-0T
 str_SRZClass_liveries			    :SR Black, BR Black
 
