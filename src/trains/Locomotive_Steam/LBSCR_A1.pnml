@@ -447,7 +447,7 @@ switch(FEAT_TRAINS, SELF, sw_LBSCR_A1_purchase_sprite, current_year) {
     1906..1923: spriteset_LBSCR_A1_LBSCR_Marsh_Umber_Unnamed_purchase;
     1924..1939: spriteset_LBSCR_A1_SR_Olive_purchase;
     1940..1948: spriteset_LBSCR_A1_SR_Black_purchase;
-    1949..1968: spriteset_LBSCR_A1_BR_Early;
+    1949..1968: spriteset_LBSCR_A1_BR_Early_purchase;
         spriteset_LBSCR_A1_Stroudley_Golden_Ochre_purchase; }
 
 switch(FEAT_TRAINS, SELF, sw_spritestack_LBSCR_A1_purchase, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {

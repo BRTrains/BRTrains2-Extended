@@ -240,7 +240,7 @@ sort(FEAT_TRAINS, [
         item_BR_Mk4_TS,
         item_BR_Mk4_TSD,
         item_BR_Mk4_TSE,
-    // RCH standard Wagons
+    // Generic Wagons
     item_RCH_1907_Mixed,
         item_RCH_1907_1_Plank,
         item_RCH_1907_3_Plank,
@@ -250,11 +250,11 @@ sort(FEAT_TRAINS, [
     item_RCH_1927_Mixed,
         item_RCH_1927_10t,
         item_RCH_1927_Van,
+    item_Milk_Tank,
     // GWR Wagons
     item_GWR_SiphonG_O11,
     item_GWR_Brake_Van_Toad,
     // SR Wagons
-    item_Milk_Tank,
     // LNER Pre-Grouping Wagons
     item_GCR_10t_Cattle_Van,
     // LNER Wagons

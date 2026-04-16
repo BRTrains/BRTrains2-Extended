@@ -250,8 +250,8 @@ switch(FEAT_TRAINS, SELF, sw_Metropolitan_K_cargo_subtype_text, cargo_subtype){
 
 // purchase year name
 switch(FEAT_TRAINS, PARENT, sw_Metropolitan_K_name, current_year) {
-    1937..1968: string(STR_NAME_Metropolitan_K_LNER);
-        string(STR_NAME_Metropolitan_K); }
+    1924..1937: string(STR_NAME_Metropolitan_K);
+        string(STR_NAME_Metropolitan_K_LNER); }
 
 // unit definition
 item (FEAT_TRAINS, item_Metropolitan_K, 6615) {
