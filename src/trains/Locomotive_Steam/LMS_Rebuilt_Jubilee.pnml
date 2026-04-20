@@ -104,7 +104,7 @@ switch(FEAT_TRAINS, SELF, sw_livery_LMS_Rebuilt_Jubilee, cargo_subtype) {
 // purchase sprite stacking
 switch(FEAT_TRAINS, PARENT, sw_LMS_Rebuilt_Jubilee_purchase_sprite, current_year) {
     1949..1968: spriteset_LMS_Rebuilt_Jubilee_BR_Green_Purchase;
-        spriteset_LMS_Rebuilt_Jubilee_LMS_Crimson_purchase
+        spriteset_LMS_Rebuilt_Jubilee_LMS_Crimson_purchase;
 }
 
 switch (FEAT_TRAINS, SELF, sw_spritestack_LMS_Rebuilt_Jubilee_purchase, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
