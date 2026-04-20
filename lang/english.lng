@@ -536,6 +536,9 @@ str_LNERV2_liveries				    :LNER Green
 STR_NAME_WDTank				        :WD Austerity "Austerity Tank" 0-6-0ST 
 str_WDTank_liveries			        :Wartime Black
 
+STR_NAME_BR_Standard_4MT_Tank       :BR Standard Class 4MT Tank
+str_BR_Small_Standards_liveries     :BR Black, BR Green, BR Express Blue
+
 STR_NAME_BR_Standard_6              :BR Standard Class 6MT "Clan"
 STR_NAME_BR_Standard_7              :BR Standard Class 7MT "Britannia"
 STR_NAME_BR_Standard_8              :BR Standard Class 8P "Duke"
