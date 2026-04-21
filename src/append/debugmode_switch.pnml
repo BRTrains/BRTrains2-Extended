@@ -1,6 +1,6 @@
- if (param[1] == 0) {
+ if (param[0] == 0) {
 // Disable some trams that aren't finished
 
 // Disable some trains that only exist for template alignment or debugging
-	// disable_item(FEAT_TRAINS, 9999); // Debug variant header
+	disable_item(FEAT_TRAINS, 12210); // Debug variant header
  }

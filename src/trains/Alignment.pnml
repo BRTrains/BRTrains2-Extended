@@ -1,0 +1,2420 @@
+// basic sprite
+spriteset(spriteset_AT48, "gfx/Alignment/AT48_1x_8bpp.png")
+    { template_48trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT48, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT48_1x_32bpp.png", "gfx/Alignment/AT48_1x_mask.png")
+    { template_48trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT48, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT48_2x_32bpp.png", "gfx/Alignment/AT48_2x_mask.png")
+    { template_48trains_2x(0,0) }
+
+    alternative_sprites(spriteset_AT48, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT48_4x_32bpp.png", "gfx/Alignment/AT48_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_AT48_purchase, "gfx/Alignment/AT48_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_AT48_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT48_1x_32bpp.png", "gfx/Alignment/AT48_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_AT48_REV, "gfx/Alignment/AT48_1x_8bpp.png")
+    { template_48trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT48_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT48_1x_32bpp.png", "gfx/Alignment/AT48_1x_mask.png")
+    { template_48trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT48_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT48_2x_32bpp.png", "gfx/Alignment/AT48_2x_mask.png")
+    { template_48trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_AT48_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT48_4x_32bpp.png", "gfx/Alignment/AT48_4x_mask.png")
+    { template_48trains_REV_4x(0,0) }
+
+// unit definition
+item (FEAT_TRAINS, item_AT48, 12214) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT48);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         4;
+    }
+
+    graphics {
+        // graphics
+        default:                        spriteset_AT48;
+        purchase:                       spriteset_AT48_purchase;
+
+        // internal code
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// unit definition
+item (FEAT_TRAINS, item_AT48_REV, 12234) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT48);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         4;
+    }
+
+    graphics {
+        // graphics
+        default:                        spriteset_AT48_REV;
+        purchase:                       spriteset_AT48_purchase;
+
+        // internal code
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// basic sprite
+spriteset(spriteset_AT58, "gfx/Alignment/AT58_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT58, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT58_1x_32bpp.png", "gfx/Alignment/AT58_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT58, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT58_2x_32bpp.png", "gfx/Alignment/AT58_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_AT58, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT58_4x_32bpp.png", "gfx/Alignment/AT58_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_AT58_purchase, "gfx/Alignment/AT58_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_AT58_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT58_1x_32bpp.png", "gfx/Alignment/AT58_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_AT58_REV, "gfx/Alignment/AT58_1x_8bpp.png")
+    { template_58trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT58_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT58_1x_32bpp.png", "gfx/Alignment/AT58_1x_mask.png")
+    { template_58trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT58_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT58_2x_32bpp.png", "gfx/Alignment/AT58_2x_mask.png")
+    { template_58trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_AT58_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT58_4x_32bpp.png", "gfx/Alignment/AT58_4x_mask.png")
+    { template_58trains_REV_4x(0,0) }
+
+// unit definition
+item (FEAT_TRAINS, item_AT58, 12215) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT58);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         5;
+    }
+
+    graphics {
+        // graphics
+        default:                        spriteset_AT58;
+        purchase:                       spriteset_AT58_purchase;
+
+        // internal code
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// unit definition
+item (FEAT_TRAINS, item_AT58_REV, 12235) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT58);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         5;
+    }
+
+    graphics {
+        // graphics
+        default:                        spriteset_AT58_REV;
+        purchase:                       spriteset_AT58_purchase;
+
+        // internal code
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// basic sprite
+spriteset(spriteset_AT68, "gfx/Alignment/AT68_1x_8bpp.png")
+    { template_68trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT68, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT68_1x_32bpp.png", "gfx/Alignment/AT68_1x_mask.png")
+    { template_68trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT68, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT68_2x_32bpp.png", "gfx/Alignment/AT68_2x_mask.png")
+    { template_68trains_2x(0,0) }
+
+    alternative_sprites(spriteset_AT68, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT68_4x_32bpp.png", "gfx/Alignment/AT68_4x_mask.png")
+    { template_68trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_AT68_purchase, "gfx/Alignment/AT68_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_AT68_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT68_1x_32bpp.png", "gfx/Alignment/AT68_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_AT68_REV, "gfx/Alignment/AT68_1x_8bpp.png")
+    { template_68trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT68_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT68_1x_32bpp.png", "gfx/Alignment/AT68_1x_mask.png")
+    { template_68trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT68_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT68_2x_32bpp.png", "gfx/Alignment/AT68_2x_mask.png")
+    { template_68trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_AT68_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT68_4x_32bpp.png", "gfx/Alignment/AT68_4x_mask.png")
+    { template_68trains_REV_4x(0,0) }
+
+// unit definition
+item (FEAT_TRAINS, item_AT68, 12216) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT68);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         6;
+    }
+
+    graphics {
+        // graphics
+        default:                        spriteset_AT68;
+        purchase:                       spriteset_AT68_purchase;
+
+        // internal code
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// unit definition
+item (FEAT_TRAINS, item_AT68_REV, 12236) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT68);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         6;
+    }
+
+    graphics {
+        // graphics
+        default:                        spriteset_AT68_REV;
+        purchase:                       spriteset_AT68_purchase;
+
+        // internal code
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// basic sprite
+spriteset(spriteset_AT78, "gfx/Alignment/AT78_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT78, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT78_1x_32bpp.png", "gfx/Alignment/AT78_1x_mask.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT78, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT78_2x_32bpp.png", "gfx/Alignment/AT78_2x_mask.png")
+    { template_78trains_2x(0,0) }
+
+    alternative_sprites(spriteset_AT78, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT78_4x_32bpp.png", "gfx/Alignment/AT78_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_AT78_purchase, "gfx/Alignment/AT78_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_AT78_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT78_1x_32bpp.png", "gfx/Alignment/AT78_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_AT78_REV, "gfx/Alignment/AT78_1x_8bpp.png")
+    { template_78trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT78_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT78_1x_32bpp.png", "gfx/Alignment/AT78_1x_mask.png")
+    { template_78trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT78_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT78_2x_32bpp.png", "gfx/Alignment/AT78_2x_mask.png")
+    { template_78trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_AT78_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT78_4x_32bpp.png", "gfx/Alignment/AT78_4x_mask.png")
+    { template_78trains_REV_4x(0,0) }
+
+// unit definition
+item (FEAT_TRAINS, item_AT78, 12217) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT78);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         7;
+    }
+
+    graphics {
+        // graphics
+        default:                        spriteset_AT78;
+        purchase:                       spriteset_AT78_purchase;
+
+        // internal code
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// unit definition
+item (FEAT_TRAINS, item_AT78_REV, 12237) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT78);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         7;
+    }
+
+    graphics {
+        // graphics
+        default:                        spriteset_AT78_REV;
+        purchase:                       spriteset_AT78_purchase;
+
+        // internal code
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// basic sprite
+spriteset(spriteset_AT88, "gfx/Alignment/AT88_1x_8bpp.png")
+    { template_88trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT88, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT88_1x_32bpp.png", "gfx/Alignment/AT88_1x_mask.png")
+    { template_88trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT88, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT88_2x_32bpp.png", "gfx/Alignment/AT88_2x_mask.png")
+    { template_88trains_2x(0,0) }
+
+    alternative_sprites(spriteset_AT88, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT88_4x_32bpp.png", "gfx/Alignment/AT88_4x_mask.png")
+    { template_88trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_AT88_purchase, "gfx/Alignment/AT88_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_AT88_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT88_1x_32bpp.png", "gfx/Alignment/AT88_1x_mask.png")
+    { template_purchase(0,0) }
+    
+// basic sprite
+spriteset(spriteset_AT88_REV, "gfx/Alignment/AT88_1x_8bpp.png")
+    { template_88trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT88_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT88_1x_32bpp.png", "gfx/Alignment/AT88_1x_mask.png")
+    { template_88trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT88_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT88_2x_32bpp.png", "gfx/Alignment/AT88_2x_mask.png")
+    { template_88trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_AT88_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT88_4x_32bpp.png", "gfx/Alignment/AT88_4x_mask.png")
+    { template_88trains_REV_4x(0,0) }
+
+// unit definition
+item (FEAT_TRAINS, item_AT88, 12218) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT88);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        spriteset_AT88;
+        purchase:                       spriteset_AT88_purchase;
+
+        // internal code
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// unit definition
+item (FEAT_TRAINS, item_AT88_REV, 12238) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT88);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        spriteset_AT88_REV;
+        purchase:                       spriteset_AT88_purchase;
+
+        // internal code
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// basic sprite
+spriteset(spriteset_AT98, "gfx/Alignment/AT98_1x_8bpp.png")
+    { template_98trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT98, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT98_1x_32bpp.png", "gfx/Alignment/AT98_1x_mask.png")
+    { template_98trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT98, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT98_2x_32bpp.png", "gfx/Alignment/AT98_2x_mask.png")
+    { template_98trains_2x(0,0) }
+
+    alternative_sprites(spriteset_AT98, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT98_4x_32bpp.png", "gfx/Alignment/AT98_4x_mask.png")
+    { template_98trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_AT98_purchase, "gfx/Alignment/AT98_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_AT98_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT98_1x_32bpp.png", "gfx/Alignment/AT98_1x_mask.png")
+    { template_purchase(0,0) }
+    
+// basic sprite
+spriteset(spriteset_AT98_REV, "gfx/Alignment/AT98_1x_8bpp.png")
+    { template_98trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT98_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT98_1x_32bpp.png", "gfx/Alignment/AT98_1x_mask.png")
+    { template_98trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT98_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT98_2x_32bpp.png", "gfx/Alignment/AT98_2x_mask.png")
+    { template_98trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_AT98_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT98_4x_32bpp.png", "gfx/Alignment/AT98_4x_mask.png")
+    { template_98trains_REV_4x(0,0) }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT98, position_in_articulated_veh % 3) {
+	1: spriteset_AT98;
+	    spriteset_empty; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT98, extra_callback_info1) {
+	1..2: return item_AT98;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT98, 12219) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT98);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         3;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT98;
+        purchase:                       spriteset_AT98_purchase;
+
+        // internal code
+        articulated_part:               sw_articulated_AT98;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT98_REV, position_in_articulated_veh % 3) {
+	1: spriteset_AT98_REV;
+	    spriteset_empty; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT98_REV, extra_callback_info1) {
+	1..2: return item_AT98_REV;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT98_REV, 12239) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT98);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         3;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT98_REV;
+        purchase:                       spriteset_AT98_purchase;
+
+        // internal code
+        articulated_part:               sw_articulated_AT98_REV;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+
+// basic sprite
+spriteset(spriteset_AT108, "gfx/Alignment/AT108_1x_8bpp.png")
+    { template_108trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT108, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT108_1x_32bpp.png", "gfx/Alignment/AT108_1x_mask.png")
+    { template_108trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT108, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT108_2x_32bpp.png", "gfx/Alignment/AT108_2x_mask.png")
+    { template_108trains_2x(0,0) }
+
+    alternative_sprites(spriteset_AT108, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT108_4x_32bpp.png", "gfx/Alignment/AT108_4x_mask.png")
+    { template_108trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_AT108_purchase, "gfx/Alignment/AT108_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_AT108_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT108_1x_32bpp.png", "gfx/Alignment/AT108_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_AT108_REV, "gfx/Alignment/AT108_1x_8bpp.png")
+    { template_108trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT108_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT108_1x_32bpp.png", "gfx/Alignment/AT108_1x_mask.png")
+    { template_108trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT108_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT108_2x_32bpp.png", "gfx/Alignment/AT108_2x_mask.png")
+    { template_108trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_AT108_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT108_4x_32bpp.png", "gfx/Alignment/AT108_4x_mask.png")
+    { template_108trains_REV_4x(0,0) }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT108, position_in_articulated_veh % 3) {
+	1: spriteset_AT108;
+	    spriteset_empty; }
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_AT108, position_in_articulated_veh % 3) {
+	1: 2;
+	    4; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT108, extra_callback_info1) {
+	1..2: return item_AT108;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT108, 12220) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT108);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT108;
+        purchase:                       spriteset_AT108_purchase;
+
+        // internal code
+        length:                         sw_length_AT108;
+        articulated_part:               sw_articulated_AT108;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT108_REV, position_in_articulated_veh % 3) {
+	1: spriteset_AT108_REV;
+	    spriteset_empty; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT108_REV, extra_callback_info1) {
+	1..2: return item_AT108_REV;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT108_REV, 12240) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT108);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT108_REV;
+        purchase:                       spriteset_AT108_purchase;
+
+        // internal code
+        length:                         sw_length_AT108;
+        articulated_part:               sw_articulated_AT108_REV;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// basic sprite
+spriteset(spriteset_AT118, "gfx/Alignment/AT118_1x_8bpp.png")
+    { template_118trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT118, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT118_1x_32bpp.png", "gfx/Alignment/AT118_1x_mask.png")
+    { template_118trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT118, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT118_2x_32bpp.png", "gfx/Alignment/AT118_2x_mask.png")
+    { template_118trains_2x(0,0) }
+
+    alternative_sprites(spriteset_AT118, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT118_4x_32bpp.png", "gfx/Alignment/AT118_4x_mask.png")
+    { template_118trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_AT118_purchase, "gfx/Alignment/AT118_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_AT118_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT118_1x_32bpp.png", "gfx/Alignment/AT118_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_AT118_REV, "gfx/Alignment/AT118_1x_8bpp.png")
+    { template_118trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT118_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT118_1x_32bpp.png", "gfx/Alignment/AT118_1x_mask.png")
+    { template_118trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT118_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT118_2x_32bpp.png", "gfx/Alignment/AT118_2x_mask.png")
+    { template_118trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_AT118_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT118_4x_32bpp.png", "gfx/Alignment/AT118_4x_mask.png")
+    { template_118trains_REV_4x(0,0) }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT118, position_in_articulated_veh % 3) {
+	1: spriteset_AT118;
+	    spriteset_empty; }
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_AT118, position_in_articulated_veh % 3) {
+	1: 3;
+	    4; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT118, extra_callback_info1) {
+	1..2: return item_AT118;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT118, 12221) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT118);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT118;
+        purchase:                       spriteset_AT118_purchase;
+
+        // internal code
+        length:                         sw_length_AT118;
+        articulated_part:               sw_articulated_AT118;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT118_REV, position_in_articulated_veh % 3) {
+	1: spriteset_AT118_REV;
+	    spriteset_empty; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT118_REV, extra_callback_info1) {
+	1..2: return item_AT118_REV;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT118_REV, 12241) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT118);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT118_REV;
+        purchase:                       spriteset_AT118_purchase;
+
+        // internal code
+        length:                         sw_length_AT118;
+        articulated_part:               sw_articulated_AT118_REV;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// basic sprite
+spriteset(spriteset_AT128, "gfx/Alignment/AT128_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT128, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT128_1x_32bpp.png", "gfx/Alignment/AT128_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT128, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT128_2x_32bpp.png", "gfx/Alignment/AT128_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_AT128, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT128_4x_32bpp.png", "gfx/Alignment/AT128_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_AT128_purchase, "gfx/Alignment/AT128_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_AT128_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT128_1x_32bpp.png", "gfx/Alignment/AT128_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_AT128_REV, "gfx/Alignment/AT128_1x_8bpp.png")
+    { template_128trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT128_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT128_1x_32bpp.png", "gfx/Alignment/AT128_1x_mask.png")
+    { template_128trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT128_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT128_2x_32bpp.png", "gfx/Alignment/AT128_2x_mask.png")
+    { template_128trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_AT128_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT128_4x_32bpp.png", "gfx/Alignment/AT128_4x_mask.png")
+    { template_128trains_REV_4x(0,0) }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT128, position_in_articulated_veh % 3) {
+	1: spriteset_AT128;
+	    spriteset_empty; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT128, extra_callback_info1) {
+	1..2: return item_AT128;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT128, 12222) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT128);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         4;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT128;
+        purchase:                       spriteset_AT128_purchase;
+
+        // internal code
+        articulated_part:               sw_articulated_AT128;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT128_REV, position_in_articulated_veh % 3) {
+	1: spriteset_AT128_REV;
+	    spriteset_empty; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT128_REV, extra_callback_info1) {
+	1..2: return item_AT128_REV;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT128_REV, 12242) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT128);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         4;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT128_REV;
+        purchase:                       spriteset_AT128_purchase;
+
+        // internal code
+        articulated_part:               sw_articulated_AT128_REV;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// basic sprite
+spriteset(spriteset_AT138, "gfx/Alignment/AT138_1x_8bpp.png")
+    { template_138trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT138, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT138_1x_32bpp.png", "gfx/Alignment/AT138_1x_mask.png")
+    { template_138trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT138, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT138_2x_32bpp.png", "gfx/Alignment/AT138_2x_mask.png")
+    { template_138trains_2x(0,0) }
+
+    alternative_sprites(spriteset_AT138, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT138_4x_32bpp.png", "gfx/Alignment/AT138_4x_mask.png")
+    { template_138trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_AT138_purchase, "gfx/Alignment/AT138_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_AT138_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT138_1x_32bpp.png", "gfx/Alignment/AT138_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_AT138_REV, "gfx/Alignment/AT138_1x_8bpp.png")
+    { template_138trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT138_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT138_1x_32bpp.png", "gfx/Alignment/AT138_1x_mask.png")
+    { template_138trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT138_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT138_2x_32bpp.png", "gfx/Alignment/AT138_2x_mask.png")
+    { template_138trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_AT138_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT138_4x_32bpp.png", "gfx/Alignment/AT138_4x_mask.png")
+    { template_138trains_REV_4x(0,0) }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT138, position_in_articulated_veh % 3) {
+	1: spriteset_AT138;
+	    spriteset_empty; }
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_AT138, position_in_articulated_veh % 3) {
+	1: 5;
+	    4; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT138, extra_callback_info1) {
+	1..2: return item_AT138;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT138, 12223) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT138);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT138;
+        purchase:                       spriteset_AT138_purchase;
+
+        // internal code
+        length:                         sw_length_AT138;
+        articulated_part:               sw_articulated_AT138;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT138_REV, position_in_articulated_veh % 3) {
+	1: spriteset_AT138_REV;
+	    spriteset_empty; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT138_REV, extra_callback_info1) {
+	1..2: return item_AT138_REV;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT138_REV, 12243) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT138);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT138_REV;
+        purchase:                       spriteset_AT138_purchase;
+
+        // internal code
+        length:                         sw_length_AT138;
+        articulated_part:               sw_articulated_AT138_REV;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// basic sprite
+spriteset(spriteset_AT148, "gfx/Alignment/AT148_1x_8bpp.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT148, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT148_1x_32bpp.png", "gfx/Alignment/AT148_1x_mask.png")
+    { template_148trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT148, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT148_2x_32bpp.png", "gfx/Alignment/AT148_2x_mask.png")
+    { template_148trains_2x(0,0) }
+
+    alternative_sprites(spriteset_AT148, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT148_4x_32bpp.png", "gfx/Alignment/AT148_4x_mask.png")
+    { template_148trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_AT148_purchase, "gfx/Alignment/AT148_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_AT148_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT148_1x_32bpp.png", "gfx/Alignment/AT148_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_AT148_REV, "gfx/Alignment/AT148_1x_8bpp.png")
+    { template_148trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT148_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT148_1x_32bpp.png", "gfx/Alignment/AT148_1x_mask.png")
+    { template_148trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT148_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT148_2x_32bpp.png", "gfx/Alignment/AT148_2x_mask.png")
+    { template_148trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_AT148_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT148_4x_32bpp.png", "gfx/Alignment/AT148_4x_mask.png")
+    { template_148trains_REV_4x(0,0) }
+    
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT148, position_in_articulated_veh % 3) {
+	1: spriteset_AT148;
+	    spriteset_empty; }
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_AT148, position_in_articulated_veh % 3) {
+	1: 6;
+	    4; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT148, extra_callback_info1) {
+	1..2: return item_AT148;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT148, 12224) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT148);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT148;
+        purchase:                       spriteset_AT148_purchase;
+
+        // internal code
+        length:                         sw_length_AT148;
+        articulated_part:               sw_articulated_AT148;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT148_REV, position_in_articulated_veh % 3) {
+	1: spriteset_AT148_REV;
+	    spriteset_empty; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT148_REV, extra_callback_info1) {
+	1..2: return item_AT148_REV;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT148_REV, 12244) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT148);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT148_REV;
+        purchase:                       spriteset_AT148_purchase;
+
+        // internal code
+        length:                         sw_length_AT148;
+        articulated_part:               sw_articulated_AT148_REV;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// basic sprite
+spriteset(spriteset_AT158, "gfx/Alignment/AT158_1x_8bpp.png")
+    { template_158trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT158, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT158_1x_32bpp.png", "gfx/Alignment/AT158_1x_mask.png")
+    { template_158trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT158, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT158_2x_32bpp.png", "gfx/Alignment/AT158_2x_mask.png")
+    { template_158trains_2x(0,0) }
+
+    alternative_sprites(spriteset_AT158, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT158_4x_32bpp.png", "gfx/Alignment/AT158_4x_mask.png")
+    { template_158trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_AT158_purchase, "gfx/Alignment/AT158_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_AT158_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT158_1x_32bpp.png", "gfx/Alignment/AT158_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_AT158_REV, "gfx/Alignment/AT158_1x_8bpp.png")
+    { template_158trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT158_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT158_1x_32bpp.png", "gfx/Alignment/AT158_1x_mask.png")
+    { template_158trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT158_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT158_2x_32bpp.png", "gfx/Alignment/AT158_2x_mask.png")
+    { template_158trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_AT158_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT158_4x_32bpp.png", "gfx/Alignment/AT158_4x_mask.png")
+    { template_158trains_REV_4x(0,0) }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT158, position_in_articulated_veh % 3) {
+	1: spriteset_AT158;
+	    spriteset_empty; }
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_AT158, position_in_articulated_veh % 3) {
+	1: 7;
+	    4; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT158, extra_callback_info1) {
+	1..2: return item_AT158;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT158, 12225) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT158);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT158;
+        purchase:                       spriteset_AT158_purchase;
+
+        // internal code
+        length:                         sw_length_AT158;
+        articulated_part:               sw_articulated_AT158;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT158_REV, position_in_articulated_veh % 3) {
+	1: spriteset_AT158_REV;
+	    spriteset_empty; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT158_REV, extra_callback_info1) {
+	1..2: return item_AT158_REV;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT158_REV, 12245) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT158);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT158_REV;
+        purchase:                       spriteset_AT158_purchase;
+
+        // internal code
+        length:                         sw_length_AT158;
+        articulated_part:               sw_articulated_AT158_REV;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// basic sprite
+spriteset(spriteset_AT1558_Front, "gfx/Alignment/AT168_1x_8bpp.png")
+    { template_1558fronttrains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT1558_Front, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_1x_32bpp.png", "gfx/Alignment/AT168_1x_mask.png")
+    { template_1558fronttrains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT1558_Front, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_2x_32bpp.png", "gfx/Alignment/AT168_2x_mask.png")
+    { template_1558fronttrains_2x(0,0) }
+
+    alternative_sprites(spriteset_AT1558_Front, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_4x_32bpp.png", "gfx/Alignment/AT168_4x_mask.png")
+    { template_1558fronttrains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_AT1558_Front_REV, "gfx/Alignment/AT168_1x_8bpp.png")
+    { template_1558fronttrains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT1558_Front_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_1x_32bpp.png", "gfx/Alignment/AT168_1x_mask.png")
+    { template_1558fronttrains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT1558_Front_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_2x_32bpp.png", "gfx/Alignment/AT168_2x_mask.png")
+    { template_1558fronttrains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_AT1558_Front_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_4x_32bpp.png", "gfx/Alignment/AT168_4x_mask.png")
+    { template_1558fronttrains_REV_4x(0,0) }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT1558_Front, position_in_articulated_veh % 3) {
+	1: spriteset_AT1558_Front;
+	    spriteset_empty; }
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_AT1558_Front, position_in_articulated_veh % 3) {
+	1: 8;
+	    4; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT1558_Front, extra_callback_info1) {
+	1..2: return item_AT1558_Front;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT1558_Front, 12227) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT1558_Front);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT1558_Front;
+        purchase:                       spriteset_AT168_purchase;
+
+        // internal code
+        length:                         sw_length_AT1558_Front;
+        articulated_part:               sw_articulated_AT1558_Front;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT1558_Front_REV, position_in_articulated_veh % 3) {
+	1: spriteset_AT1558_Front_REV;
+	    spriteset_empty; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT1558_Front_REV, extra_callback_info1) {
+	1..2: return item_AT1558_Front_REV;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT1558_Front_REV, 12247) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT1558_Front);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT1558_Front_REV;
+        purchase:                       spriteset_AT168_purchase;
+
+        // internal code
+        length:                         sw_length_AT1558_Front;
+        articulated_part:               sw_articulated_AT1558_Front_REV;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// basic sprite
+spriteset(spriteset_AT1558_Back, "gfx/Alignment/AT168_1x_8bpp.png")
+    { template_1558backtrains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT1558_Back, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_1x_32bpp.png", "gfx/Alignment/AT168_1x_mask.png")
+    { template_1558backtrains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT1558_Back, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_2x_32bpp.png", "gfx/Alignment/AT168_2x_mask.png")
+    { template_1558backtrains_2x(0,0) }
+
+    alternative_sprites(spriteset_AT1558_Back, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_4x_32bpp.png", "gfx/Alignment/AT168_4x_mask.png")
+    { template_1558backtrains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_AT1558_Back_REV, "gfx/Alignment/AT168_1x_8bpp.png")
+    { template_1558backtrains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT1558_Back_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_1x_32bpp.png", "gfx/Alignment/AT168_1x_mask.png")
+    { template_1558backtrains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT1558_Back_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_2x_32bpp.png", "gfx/Alignment/AT168_2x_mask.png")
+    { template_1558backtrains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_AT1558_Back_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_4x_32bpp.png", "gfx/Alignment/AT168_4x_mask.png")
+    { template_1558backtrains_REV_4x(0,0) }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT1558_Back, position_in_articulated_veh % 3) {
+	1: spriteset_AT1558_Back;
+	    spriteset_empty; }
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_AT1558_Back, position_in_articulated_veh % 3) {
+	1: 7;
+    2: 3;
+	    4; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT1558_Back, extra_callback_info1) {
+	1..2: return item_AT1558_Back;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT1558_Back, 12229) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT1558_Back);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT1558_Back;
+        purchase:                       spriteset_AT168_purchase;
+
+        // internal code
+        length:                         sw_length_AT1558_Back;
+        articulated_part:               sw_articulated_AT1558_Back;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT1558_Back_REV, position_in_articulated_veh % 3) {
+	1: spriteset_AT1558_Back_REV;
+	    spriteset_empty; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT1558_Back_REV, extra_callback_info1) {
+	1..2: return item_AT1558_Back_REV;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT1558_Back_REV, 12249) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT1558_Back);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT1558_Back_REV;
+        purchase:                       spriteset_AT168_purchase;
+
+        // internal code
+        length:                         sw_length_AT1558_Back;
+        articulated_part:               sw_articulated_AT1558_Back_REV;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// basic sprite
+spriteset(spriteset_AT1558_Middle, "gfx/Alignment/AT158_1x_8bpp.png")
+    { template_1558middletrains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT1558_Middle, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT158_1x_32bpp.png", "gfx/Alignment/AT158_1x_mask.png")
+    { template_1558middletrains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT1558_Middle, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT158_2x_32bpp.png", "gfx/Alignment/AT158_2x_mask.png")
+    { template_1558middletrains_2x(0,0) }
+
+    alternative_sprites(spriteset_AT1558_Middle, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT158_4x_32bpp.png", "gfx/Alignment/AT158_4x_mask.png")
+    { template_1558middletrains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_AT1558_Middle_REV, "gfx/Alignment/AT158_1x_8bpp.png")
+    { template_1558middletrains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT1558_Middle_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT158_1x_32bpp.png", "gfx/Alignment/AT158_1x_mask.png")
+    { template_1558middletrains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT1558_Middle_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT158_2x_32bpp.png", "gfx/Alignment/AT158_2x_mask.png")
+    { template_1558middletrains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_AT1558_Middle_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT158_4x_32bpp.png", "gfx/Alignment/AT158_4x_mask.png")
+    { template_1558middletrains_REV_4x(0,0) }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT1558_Middle, position_in_articulated_veh % 3) {
+	1: spriteset_AT1558_Middle;
+	    spriteset_empty; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT1558_Middle, extra_callback_info1) {
+	1..2: return item_AT1558_Middle;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT1558_Middle, 12228) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT1558_Middle);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT1558_Middle;
+        purchase:                       spriteset_AT158_purchase;
+
+        // internal code
+        length:                         sw_length_AT158;
+        articulated_part:               sw_articulated_AT1558_Middle;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT1558_Middle_REV, position_in_articulated_veh % 3) {
+	1: spriteset_AT1558_Middle_REV;
+	    spriteset_empty; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT1558_Middle_REV, extra_callback_info1) {
+	1..2: return item_AT1558_Middle_REV;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT1558_Middle_REV, 12248) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT1558_Middle);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT1558_Middle_REV;
+        purchase:                       spriteset_AT158_purchase;
+
+        // internal code
+        length:                         sw_length_AT158;
+        articulated_part:               sw_articulated_AT1558_Middle_REV;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// basic sprite
+spriteset(spriteset_AT168, "gfx/Alignment/AT168_1x_8bpp.png")
+    { template_168trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT168, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_1x_32bpp.png", "gfx/Alignment/AT168_1x_mask.png")
+    { template_168trains_1x(0,0) }
+
+    alternative_sprites(spriteset_AT168, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_2x_32bpp.png", "gfx/Alignment/AT168_2x_mask.png")
+    { template_168trains_2x(0,0) }
+
+    alternative_sprites(spriteset_AT168, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_4x_32bpp.png", "gfx/Alignment/AT168_4x_mask.png")
+    { template_168trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_AT168_purchase, "gfx/Alignment/AT168_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_AT168_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_1x_32bpp.png", "gfx/Alignment/AT168_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_AT168_REV, "gfx/Alignment/AT168_1x_8bpp.png")
+    { template_168trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT168_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_1x_32bpp.png", "gfx/Alignment/AT168_1x_mask.png")
+    { template_168trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_AT168_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_2x_32bpp.png", "gfx/Alignment/AT168_2x_mask.png")
+    { template_168trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_AT168_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Alignment/AT168_4x_32bpp.png", "gfx/Alignment/AT168_4x_mask.png")
+    { template_168trains_REV_4x(0,0) }
+    
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT168, position_in_articulated_veh % 3) {
+	1: spriteset_AT168;
+	    spriteset_empty; }
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_AT168, position_in_articulated_veh % 3) {
+	1: 4;
+	    4; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT168, extra_callback_info1) {
+	1..2: return item_AT168;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT168, 12226) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT168);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT168;
+        purchase:                       spriteset_AT168_purchase;
+
+        // internal code
+        length:                         sw_length_AT168;
+        articulated_part:               sw_articulated_AT168;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_AT168_REV, position_in_articulated_veh % 3) {
+	1: spriteset_AT168_REV;
+	    spriteset_empty; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_AT168_REV, extra_callback_info1) {
+	1..2: return item_AT168_REV;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_AT168_REV, 12246) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_AT168);
+        variant_group:                  item_Alignment_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1781,06,09); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 0;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          1000 hp;
+        weight:                         100 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.05;
+        tractive_effort_coefficient:    0.3;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_AT168_REV;
+        purchase:                       spriteset_AT168_purchase;
+
+        // internal code
+        length:                         sw_length_AT168;
+        articulated_part:               sw_articulated_AT168_REV;
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 return 0;
+        cost_factor:                    0;
+        running_cost_factor:            0;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(STR_DESC_Alignment));
+    }
+}
+
+item(FEAT_TRAINS, item_Alignment_Header, 12210) {
+    property {
+        name:                           string(STR_NAME_Alignment_Header);
+		climates_available: 			NO_CLIMATE;					
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+	}
+	graphics {	
+		purchase:						spriteset_AT168_purchase;	
+        colour_mapping:                 return PALETTE_CC_FIRST;
+	}
+}

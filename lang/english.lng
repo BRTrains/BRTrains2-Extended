@@ -158,18 +158,24 @@ STR_PARAM_HALF                  :1/2x
 
 # Vehicle names
 
-STR_NAME_Utility4px                     :DEBUG UNIT 4px alignment/test unit
-STR_NAME_Utility8px                     :DEBUG UNIT 8px alignment/test unit
-STR_NAME_Utility12px                    :DEBUG UNIT 12px alignment/test unit
-STR_NAME_Utility16px                    :DEBUG UNIT 16px alignment/test unit
-STR_NAME_Utility20px                    :DEBUG UNIT 20px alignment/test unit
-STR_NAME_Utility24px                    :DEBUG UNIT 24px alignment/test unit
-STR_NAME_Utility28px                    :DEBUG UNIT 28px alignment/test unit
-STR_NAME_Utility32px                    :DEBUG UNIT 32px alignment/test unit
-STR_NAME_Utility28pxOLD                 :DEBUG UNIT 28px alignment/test unit (OLD TEMPLATE)
-STR_NAME_Utility32pxOLD                 :DEBUG UNIT 32px alignment/test unit (OLD TEMPLATE)
-STR_NAME_Utility48px                    :DEBUG UNIT 48px alignment/test unit
-STR_DESC_Utility                        :This unit is used to debug alignment and scale issues with the set, and is only visible with the Developer Mode parameter enabled. It is not intended for gameplay use
+STR_NAME_Alignment_Header               :DEBUG UNIT Alignment test units
+STR_NAME_AT48                           :DEBUG UNIT 4/8 Alignment test unit
+STR_NAME_AT58                           :DEBUG UNIT 5/8 Alignment test unit
+STR_NAME_AT68                           :DEBUG UNIT 6/8 Alignment test unit
+STR_NAME_AT78                           :DEBUG UNIT 7/8 Alignment test unit
+STR_NAME_AT88                           :DEBUG UNIT 8/8 Alignment test unit
+STR_NAME_AT98                           :DEBUG UNIT 9/8 Alignment test unit
+STR_NAME_AT108                          :DEBUG UNIT 10/8 Alignment test unit
+STR_NAME_AT118                          :DEBUG UNIT 11/8 Alignment test unit
+STR_NAME_AT128                          :DEBUG UNIT 12/8 Alignment test unit
+STR_NAME_AT138                          :DEBUG UNIT 13/8 Alignment test unit
+STR_NAME_AT148                          :DEBUG UNIT 14/8 Alignment test unit
+STR_NAME_AT158                          :DEBUG UNIT 15/8 Alignment test unit
+STR_NAME_AT168                          :DEBUG UNIT 16/8 Alignment test unit
+STR_NAME_AT1558_Front                   :DEBUG UNIT 155/8 Front Alignment test unit
+STR_NAME_AT1558_Middle                  :DEBUG UNIT 155/8 Middle Alignment test unit
+STR_NAME_AT1558_Back                    :DEBUG UNIT 155/8 Back Alignment test unit
+STR_DESC_Alignment                      :This unit is used to debug alignment and scale issues with the set, and should only be visible with the Developer Mode parameter enabled. It is not intended for gameplay use.
 
 STR_NAME_EyeCandy                       :Invisible Locomotive (Eyecandy)
 STR_DESC_EyeCandy                       :An invisible locomotive intended for use for eyecandy (eg putting freight wagons in a siding).{}VERY expensive to run when moving, free when stationary
@@ -235,7 +241,7 @@ str_coach_F                     :{PURPLE}Compartment First
 str_coach_FK                    :{PURPLE}Corridor First
 str_coach_FO                    :{PURPLE}Open First
 str_coach_FOT                   :{PURPLE}First Open Trolley
-str_coach_GUV                   :{GREEN}General Utility Van
+str_coach_GUV                   :{GREEN}General AT Van
 str_coach_HB                    :{BROWN}Horse Box
 str_coach_IFV                   :{BROWN}Insulated Fish Van
 str_coach_LFK                   :{PURPLE}Lounge First
