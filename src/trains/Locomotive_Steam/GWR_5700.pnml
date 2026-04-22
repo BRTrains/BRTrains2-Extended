@@ -242,7 +242,7 @@ switch(FEAT_TRAINS, SELF, sw_animation_GWR_5700_REV, motion_counter % 4) {
     2: spriteset_GWR_5700_Anim3;
     3: spriteset_GWR_5700_Anim2; }
 
-switch(FEAT_TRAINS, SELF, sw_pick_animation_GWR_5700, vehicle_is_reversed) {
+switch(FEAT_TRAINS, SELF, sw_pick_animation_GWR_5700, vehicle_is_flipped) {
     0:  sw_animation_GWR_5700;
         sw_animation_GWR_5700_REV; }
 

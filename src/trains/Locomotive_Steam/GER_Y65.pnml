@@ -165,7 +165,7 @@ switch(FEAT_TRAINS, SELF, sw_animation_GER_Y65_REV, motion_counter % 4) {
     2: spriteset_GER_Y65_Anim3;
     3: spriteset_GER_Y65_Anim2; }
 
-switch(FEAT_TRAINS, SELF, sw_pick_animation_GER_Y65, vehicle_is_reversed) {
+switch(FEAT_TRAINS, SELF, sw_pick_animation_GER_Y65, vehicle_is_flipped) {
     0:  sw_animation_GER_Y65;
         sw_animation_GER_Y65_REV; }
 

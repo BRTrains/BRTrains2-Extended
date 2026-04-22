@@ -65,7 +65,7 @@ switch(FEAT_TRAINS, SELF, sw_animation_GER_L77_REV, motion_counter % 4) {
     2: spriteset_GER_L77_Anim3;
     3: spriteset_GER_L77_Anim2; }
 
-switch(FEAT_TRAINS, SELF, sw_pick_animation_GER_L77, vehicle_is_reversed) {
+switch(FEAT_TRAINS, SELF, sw_pick_animation_GER_L77, vehicle_is_flipped) {
     0:  sw_animation_GER_L77;
         sw_animation_GER_L77_REV; }
 
@@ -132,12 +132,12 @@ switch (FEAT_TRAINS, SELF, sw_animation_GER_L77_Red, motion_counter % 4) {
     3: spriteset_GER_L77_Red_Anim4; }
 
 switch(FEAT_TRAINS, SELF, sw_animation_GER_L77_Red_REV, motion_counter % 4) {
-    0: spriteset_GER_L77_Anim1;
-    1: spriteset_GER_L77_Anim4;
-    2: spriteset_GER_L77_Anim3;
-    3: spriteset_GER_L77_Anim2; }
+    0: spriteset_GER_L77_Red_Anim1;
+    1: spriteset_GER_L77_Red_Anim4;
+    2: spriteset_GER_L77_Red_Anim3;
+    3: spriteset_GER_L77_Red_Anim2; }
 
-switch(FEAT_TRAINS, SELF, sw_pick_animation_GER_L77_Red, vehicle_is_reversed) {
+switch(FEAT_TRAINS, SELF, sw_pick_animation_GER_L77_Red, vehicle_is_flipped) {
     0:  sw_animation_GER_L77_Red;
         sw_animation_GER_L77_Red_REV; }
 

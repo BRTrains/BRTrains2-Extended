@@ -154,7 +154,7 @@ switch(FEAT_TRAINS, SELF, sw_animation_{unit}_REV, motion_counter % 4) {{
     2: spriteset_{unit}_Anim3;
     3: spriteset_{unit}_Anim2; }}
 
-switch(FEAT_TRAINS, SELF, sw_pick_animation_{unit}, vehicle_is_reversed) {{
+switch(FEAT_TRAINS, SELF, sw_pick_animation_{unit}, vehicle_is_flipped) {{
     0:  sw_animation_{unit};
         sw_animation_{unit}_REV; }}
 
