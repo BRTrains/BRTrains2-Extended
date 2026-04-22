@@ -426,8 +426,8 @@ item (FEAT_TRAINS, item_GWR_6400, 640) {
         // internal code
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
-        cost_factor:                    61;
-        running_cost_factor:            3832;
+        cost_factor:                    55;
+        running_cost_factor:            3442;
         cargo_subtype_text:             sw_GWR_6400_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 
@@ -486,8 +486,8 @@ item (FEAT_TRAINS, item_GWR_7400, 740) {
         // internal code
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
-        cost_factor:                    61;
-        running_cost_factor:            3832;
+        cost_factor:                    55;
+        running_cost_factor:            3471;
         cargo_subtype_text:             sw_GWR_6400_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 

@@ -465,8 +465,8 @@ item (FEAT_TRAINS, item_GWR_3150, 315) {
         speed:                          sw_speed_GWR_3100() * 1609 / 1000;  
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
-        cost_factor:                    57;
-        running_cost_factor:            3798;
+        cost_factor:                    58;
+        running_cost_factor:            3808;
         cargo_subtype_text:             sw_GWR_5101_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
@@ -527,8 +527,8 @@ item (FEAT_TRAINS, item_GWR_5101, 510) {
         speed:                          sw_speed_GWR_5101() * 1609 / 1000;  
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
-        cost_factor:                    57;
-        running_cost_factor:            3798;
+        cost_factor:                    73;
+        running_cost_factor:            4534;
         cargo_subtype_text:             sw_GWR_5101_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
@@ -589,8 +589,8 @@ item (FEAT_TRAINS, item_GWR_6100, 610) {
         speed:                          sw_speed_GWR_5101() * 1609 / 1000;  
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
-        cost_factor:                    57;
-        running_cost_factor:            3798;
+        cost_factor:                    73;
+        running_cost_factor:            4544;
         cargo_subtype_text:             sw_GWR_5101_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
@@ -651,8 +651,8 @@ item (FEAT_TRAINS, item_GWR_Collett_3100, 311) {
         speed:                          sw_speed_GWR_5101() * 1609 / 1000;  
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
-        cost_factor:                    57;
-        running_cost_factor:            3798;
+        cost_factor:                    73;
+        running_cost_factor:            4573;
         cargo_subtype_text:             sw_GWR_5101_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
@@ -713,8 +713,8 @@ item (FEAT_TRAINS, item_GWR_8100, 810) {
         speed:                          sw_speed_GWR_5101() * 1609 / 1000;  
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
-        cost_factor:                    57;
-        running_cost_factor:            3798;
+        cost_factor:                    73;
+        running_cost_factor:            4573;
         cargo_subtype_text:             sw_GWR_5101_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
