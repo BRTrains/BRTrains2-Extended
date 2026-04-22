@@ -285,7 +285,7 @@ switch(FEAT_TRAINS, SELF, sw_LNER_A1_purchase_sprite, current_year) {
         sw_spritestack_LNER_A1_LNER_Apple_Green_purchase; }
 
 // FX effects
-switch(FEAT_TRAINS, SELF, sw_FX_LNER_A1_Steam, position_in_vehid_chain % 3) {
+switch(FEAT_TRAINS, SELF, sw_FX_LNER_A1_Steam, position_in_vehid_chain % 4) {
     0: return visual_effect_and_powered(VISUAL_EFFECT_STEAM, -2, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
