@@ -2285,7 +2285,7 @@ switch(FEAT_TRAINS, SELF, sw_graphics_AT168, position_in_articulated_veh % 3) {
 
 // length switch
 switch(FEAT_TRAINS, SELF, sw_length_AT168, position_in_articulated_veh % 3) {
-	1: 4;
+	1: 8;
 	    4; }
 
 // articulation switch
