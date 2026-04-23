@@ -786,8 +786,8 @@ STR_NAME_BR165_0_2				:BR Class 165/0 "Chiltern Turbo" (2-Car)
 STR_NAME_BR165_0_3				:BR Class 165/0 "Chiltern Turbo" (3-Car)
 STR_NAME_BR165_1_2				:BR Class 165/1 "Thames Turbo" (2-Car)
 STR_NAME_BR165_1_3				:BR Class 165/1 "Thames Turbo" (3-Car)
-str_BR1650_liveries				:NSE, Chiltern Railways
-str_BR1651_liveries				:NSE, Thames Trains, FGWL, GWR
+str_BR165_0_liveries			:NSE, Chiltern Railways, FGWL, FGW, GWR
+str_BR165_1_liveries			:NSE, Thames Trains, FGWL, GWR, Chiltern Railways
 
 STR_NAME_BR166					:BR Class 166 "Thames Turbo" (3-car)
 str_BR166_liveries				:NSE, FGWL, FGW, GWR
@@ -1644,6 +1644,7 @@ str_Central						: (Central Trains)
 str_CentralAnglia				: (Central/Anglia Hybrid)
 str_Centro						: (Centro)
 str_Chiltern                    : (Chiltern Railways)
+str_ChilternRevised             : (Chiltern Railways - Revised)
 str_ChilternTurboBlue           : (Chiltern - Blue, Turbostar Cab)
 str_ChilternNetworkBlue			: (Chiltern - Blue, Networker Cab)
 str_ChilternTurboGrey           : (Chiltern - Grey, Turbostar Cab)
