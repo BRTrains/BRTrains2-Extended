@@ -25,7 +25,8 @@ SpecialOrderFiles = {
     "60Long_Cont20_Side.pnml": ["60Long_Cont30_Side.pnml", "60Long_Cont40_Side.pnml", "BR_FFA.pnml","BR_FEA.pnml"],
     "LMS_4F.pnml" : ["MR_Tenders.pnml", "MR_3835.pnml", "LMS_Fowler_2P.pnml", "LMS_Fowler_4P.pnml",],
     "Evol_Header.pnml": ["Evol_F.pnml", "Evol_T.pnml"],
-    "BR_Mk2_BSO.pnml": ["BR_Mk2L_BSO.pnml", "BR_Mk2L_DBSO.pnml"]
+    "BR_Mk2_BSO.pnml": ["BR_Mk2L_BSO.pnml", "BR_Mk2L_DBSO.pnml"],
+    "BR_Mk5A_All.pnml": ["BR68.pnml", "BR_Mk5A_Nova.pnml"]
 }
 
 def check_project_structure(src_directory: Path, gfx_directory: Path,

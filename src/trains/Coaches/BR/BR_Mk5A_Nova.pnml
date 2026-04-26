@@ -1,0 +1,129 @@
+switch(FEAT_TRAINS, SELF, sw_purchase_sprite_BR68_Nova, current_year) {
+    2017..2025: spriteset_BR68_TPE_purchase;
+        spriteset_BR68_Chiltern_Explorer_purchase; }
+
+
+switch(FEAT_TRAINS, SELF, sw_name_BR68_Nova, current_year) {
+    2017..2025: return string(STR_NAME_BR68_Nova);
+        return string(STR_NAME_BR68_Chiltern); }
+
+// FX effects
+switch(FEAT_TRAINS, SELF, sw_FX_BR68_Nova_Diesel, position_in_vehid_chain % 18) {
+    1: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -1, DISABLE_WAGON_POWER);
+        return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_BR68_Nova_TPE, position_in_articulated_veh % 18) {
+    1:  spriteset_BR68_TPE;
+    4:  sw_loadstack_BR_Mk5A_TFO_TPE;
+    7:  sw_loadstack_BR_Mk5A_TSO_TPE;
+    10: sw_loadstack_BR_Mk5A_TSO_TPE;
+    13: sw_loadstack_BR_Mk5A_TSOD_TPE;
+    16: sw_loadstack_BR_Mk5A_DTSO_TPE_REV;
+	    spriteset_empty; }
+
+switch(FEAT_TRAINS, SELF, sw_graphics_BR68_Nova_Chiltern, position_in_articulated_veh % 18) {
+    1:  spriteset_BR68_Chiltern_Explorer;
+    4:  sw_loadstack_BR_Mk5A_TFO_Chiltern;
+    7:  sw_loadstack_BR_Mk5A_TSO_Chiltern;
+    10: sw_loadstack_BR_Mk5A_TSO_Chiltern;
+    13: sw_loadstack_BR_Mk5A_TSOD_Chiltern;
+    16: sw_loadstack_BR_Mk5A_DTSO_Chiltern_REV;
+	    spriteset_empty; }
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR68_Nova, cargo_subtype) {
+    0: sw_graphics_BR68_Nova_TPE;
+    1: sw_graphics_BR68_Nova_Chiltern; }
+
+// livery name refit switch
+switch(FEAT_TRAINS, SELF, sw_BR68_Nova_cargo_subtype_text, cargo_subtype){
+	0:	return string(str_TPE);
+    1:  return string(str_ChilternExplorer);
+       return CB_RESULT_NO_TEXT; }
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_BR68_Nova, position_in_articulated_veh % 18) {
+	1:  5;
+    4:  6;
+    7:  6;
+    10: 6;
+    13: 6;
+    16: 6;
+        4; }
+
+// capacity switch
+switch(FEAT_TRAINS, SELF, sw_capacity_BR68_Nova, position_in_vehid_chain % 18) {
+    0: 274 * param_pax; // all the capacity - (vehid chain number)
+    1..17: 1 * param_pax;
+    // total 291
+}
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR68_Nova, extra_callback_info1) {
+	1..17: return item_BR68_Nova;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+
+// unit definition
+item (FEAT_TRAINS, item_BR68_Nova, 6801) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR68);
+        variant_group:                  item_BR68; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2017,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		refittable_cargo_classes:        bitmask(CC_PASSENGERS);
+        // non_refittable_cargo_classes:    bitmask();
+        // cargo_allow_refit:               [PASS, GOOD];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        loading_speed:					57;
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          3800 hp;
+        weight:                         300 ton;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.06;
+        tractive_effort_coefficient:    0.11;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_livery_BR68_Nova;
+        visual_effect_and_powered:      sw_FX_BR68_Nova_Diesel;
+        purchase:                       sw_purchase_sprite_BR68_Nova;
+        sound_effect:                   sw_sound_diesel_68;
+
+        // internal code
+        name:                           sw_name_BR68_Nova;
+        length:                         sw_length_BR68_Nova;
+        articulated_part:               sw_articulated_BR68_Nova;
+        speed:                          sw_speed_BR68() * 1609 / 1000;  
+        purchase_cargo_capacity:        return (16 * param_pax);
+        cargo_capacity:                 sw_capacity_BR68_Nova;
+        cost_factor:                    292;
+        running_cost_factor:            10527;
+        cargo_subtype_text:             sw_BR68_Nova_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_loco_with_liveries,
+                                                    string(str_purchase_type_dmu),
+                                                    string(str_usage_mixed_traffic),
+                                                    string(str_BR_Mk5A_liveries)));
+    }
+}
