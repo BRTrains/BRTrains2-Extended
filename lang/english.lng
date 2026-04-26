@@ -330,6 +330,8 @@ str_coach_TSO_T                 :{BLUE}Tourist Second Open Trolley (Micro Buffet
 str_coach_TU                    :Trailing Unclassified
 str_coach_VFV                   :{BROWN}Ventilated Fruit Van
 
+str_coach_Train_Set             :{PURPLE}Semi-permanent Train Set
+
 # Usage Type
 str_usage_pax                   :{GREEN}Passenger
 str_usage_expr_pax              :{PURPLE}Express Passenger
@@ -662,6 +664,9 @@ str_BR67EWS_liveries			:EWS Company Train, DB Schenker Company Train
 
 STR_NAME_BR68					:BR Class 68 "UKLight"
 str_BR68_liveries				:DRS, ScotRail, Chiltern Railways
+
+STR_NAME_BR68_Nova              :BR Class 68 "Nova 3"
+STR_NAME_BR68_Chiltern          :BR Class 68 "Chiltern Explorer" 
 
 STR_NAME_BR70OG					:Southern Railway Class CC (BR Class 70)
 str_BR70OG_liveries				:BR Green, BR Blue
@@ -1357,14 +1362,12 @@ str_BR_Mk4_liveries			    :InterCity, National Express, GNER, East Coast, Virgin
 
 STR_NAME_BRMk5_Header			:BR Mark 5 Coaches
 
-STR_NAME_BRMk5DVT				:BR Mark 5a DVT
-str_BRMk5DVT_liveries			:Transpennine Express
-
-STR_NAME_BRMk5a				    :BR Mark 5a Coach
-str_BRMk5a_liveries			    :Transpennine Express
-
 STR_NAME_BRMk5Sleeper			:BR Mark 5 Sleeper Coach
 str_BRMk5Sleeper_liveries		:Caledonian Sleaper
+
+STR_NAME_BR_Mk5A_Nova3          :BR Mark 5a Train Set "Nova 3"
+STR_NAME_BR_Mk5A_Chiltern       :BR Mark 5a Train Set "Chiltern Explorer"
+str_BR_Mk5A_liveries            :Transpennine Express, Chiltern Railways
 
 # Miscellaneous
 STR_NAME_RMTPO					:Royal Mail Travelling Post Office
@@ -1645,6 +1648,7 @@ str_CentralAnglia				: (Central/Anglia Hybrid)
 str_Centro						: (Centro)
 str_Chiltern                    : (Chiltern Railways)
 str_ChilternRevised             : (Chiltern Railways - Revised)
+str_ChilternExplorer            : (Chiltern Railways - Chiltern Explorer)
 str_ChilternTurboBlue           : (Chiltern - Blue, Turbostar Cab)
 str_ChilternNetworkBlue			: (Chiltern - Blue, Networker Cab)
 str_ChilternTurboGrey           : (Chiltern - Grey, Turbostar Cab)

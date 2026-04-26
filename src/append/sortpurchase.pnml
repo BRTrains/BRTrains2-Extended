@@ -90,6 +90,7 @@ sort(FEAT_TRAINS, [
     item_BR55,
     item_BR66,
     item_BR68,
+        item_BR68_Nova,
     // BR 3rd Rail Electric Locomotives
     item_BR73_0,
         item_BR73_1,
@@ -245,6 +246,7 @@ sort(FEAT_TRAINS, [
         item_BR_Mk4_TS,
         item_BR_Mk4_TSD,
         item_BR_Mk4_TSE,
+    item_BR_Mk5A_Nova3,
     // Generic Wagons
     item_RCH_1907_Mixed,
         item_RCH_1907_1_Plank,
