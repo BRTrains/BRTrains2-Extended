@@ -75,14 +75,6 @@ switch(FEAT_TRAINS, SELF, sw_length_BR_IIA_D, position_in_articulated_veh % 3) {
 	1: 3;
 	    4; }
 
-
-// capacity switch
-switch(FEAT_TRAINS, SELF, sw_capacity_BR_IIA_D, position_in_vehid_chain % 3) {
-    0: 15 * param_freight; // all the capacity - (vehid chain number)
-    1..2: 1 * param_freight;
-    // total 17
-}
-
 // speed switch
 switch(FEAT_TRAINS, SELF, sw_speed_BR_IIA_D, param_max_speed) {
     0: 75; // operational speed
@@ -116,7 +108,7 @@ item (FEAT_TRAINS, item_BR_IIA_D, 12806) {
         // cargo_disallow_refit:           [FERT, KAOL, WDPR, WOOL];
         default_cargo_type:             PEAT;
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
-        cargo_capacity:                 1;
+        cargo_capacity:                 24 * param_freight;
         loading_speed:				    5; // All freight / Locomotive
         running_cost_base:			    RUNNING_COST_STEAM;		
 
@@ -126,7 +118,7 @@ item (FEAT_TRAINS, item_BR_IIA_D, 12806) {
         refit_cost:                     0;
         track_type:                     RAIL;
         power:                          0 hp;
-        weight:                         13 ton;
+        weight:                         30 ton;
         dual_headed:                    0;
         length:                         8;
     }
@@ -141,9 +133,8 @@ item (FEAT_TRAINS, item_BR_IIA_D, 12806) {
         articulated_part:               sw_articulated_BR_IIA_D;
         speed:                          sw_speed_BR_IIA_D() * 1609 / 1000;  
         purchase_cargo_capacity:        return (5 * param_freight); // divide by number of articulated parts and floor
-        cargo_capacity:                 sw_capacity_BR_IIA_D;
-        cost_factor:                    593;
-        running_cost_factor:            1150;
+        cost_factor:                    1274;
+        running_cost_factor:            1340;
         cargo_subtype_text:             sw_BR_IIA_D_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 
