@@ -1467,6 +1467,9 @@ str_BRHHA_liveries				:Freightliner
 STR_NAME_BR_HTA                 :BR HTA 104t Hopper
 str_BR_HTA_liveries             :EWS, DB Schenker
 
+STR_NAME_BR_IIA_D               :BR IIA-D Drax Biomass Hopper
+str_BR_IIA_D_liveries           :Private Owners
+
 STR_NAME_BR_IWB_B_3_Door        :BR IWB-B "Habfis" Cargowaggon Van (3 Doors)
 str_BR_IWB_B_3_Door_liveries    :Grey, Private Owners
 
