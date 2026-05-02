@@ -12,6 +12,19 @@ spriteset(spriteset_BR_HAA_BR_Bauxite, "gfx/Wagons/BR_HAA/BR_HAA_BR_Bauxite_1x_8
         { template_58trains_4x(0,0) }
 
 // basic sprite
+spriteset(spriteset_BR_HAA_EWS, "gfx/Wagons/BR_HAA/BR_HAA_EWS_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_HAA_EWS, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_HAA/BR_HAA_EWS_1x_32bpp.png", "gfx/Wagons/BR_HAA/BR_HAA_EWS_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_HAA_EWS, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_HAA/BR_HAA_EWS_2x_32bpp.png", "gfx/Wagons/BR_HAA/BR_HAA_EWS_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_HAA_EWS, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_HAA/BR_HAA_EWS_4x_32bpp.png", "gfx/Wagons/BR_HAA/BR_HAA_EWS_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
 spriteset(spriteset_BR_HAA_Mainline, "gfx/Wagons/BR_HAA/BR_HAA_Mainline_1x_8bpp.png")
     { template_58trains_1x(0,0) }
 
@@ -104,7 +117,8 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR_HAA, cargo_subtype) {
     1: spriteset_BR_HAA_BR_Bauxite;
     2: spriteset_BR_HAA_Railfreight_Red;
     3: spriteset_BR_HAA_Trainload;
-    4: spriteset_BR_HAA_Mainline; }
+    4: spriteset_BR_HAA_Mainline;
+    5: spriteset_BR_HAA_EWS; }
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR_HAA_cargo_subtype_text, cargo_subtype){
@@ -113,6 +127,7 @@ switch(FEAT_TRAINS, SELF, sw_BR_HAA_cargo_subtype_text, cargo_subtype){
     2:  return string(str_Railfreight);
     3:  return string(str_Trainload);
     4:  return string(str_MainlineFreight);
+    5:  return string(str_EWSRed);
        return CB_RESULT_NO_TEXT;
 }
 
@@ -140,9 +155,10 @@ item (FEAT_TRAINS, item_BR_HAA, 12253) {
         retire_early: 					-10;							
         reliability_decay: 				20;
         
-        refittable_cargo_classes:       bitmask(CC_BULK);	
-        non_refittable_cargo_classes:   bitmask(CC_COVERED, CC_POWDERIZED);
-        cargo_disallow_refit:           [GRAI, BEAN, FICR, WDPR, SGBT, SGCN];
+        // refittable_cargo_classes:       bitmask(CC_BULK);	
+        // non_refittable_cargo_classes:   bitmask(CC_COVERED, CC_POWDERIZED);
+        cargo_allow_refit:              [COAL, IORE, CORE, AORE, BDMT, CLAY, CMNT, FECR, GRVL, LIME, PHOS, PORE, SAND, SCMT, COKE, MNO2, NITR, NKOR, RCYC, SLAG];
+        // cargo_disallow_refit:           [GRAI, BEAN, FICR, WDPR, SGBT, SGCN];
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 32 * param_freight;
         loading_speed:					5;
