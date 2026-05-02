@@ -233,9 +233,10 @@ item (FEAT_TRAINS, item_LNER_21t_Hopper, 11801) {
         retire_early: 					-10;							
         reliability_decay: 				20;
         
-        refittable_cargo_classes:       bitmask(CC_BULK);	
-        non_refittable_cargo_classes:   bitmask(CC_COVERED, CC_POWDERIZED);
-        cargo_disallow_refit:           [GRAI, BEAN, FICR, WDPR, SGBT, SGCN];
+        // refittable_cargo_classes:       bitmask(CC_BULK);	
+        // non_refittable_cargo_classes:   bitmask(CC_COVERED, CC_POWDERIZED);
+        cargo_allow_refit:              [COAL, IORE, CORE, AORE, BDMT, CLAY, CMNT, FECR, GRVL, LIME, PHOS, PORE, SAND, SCMT, COKE, MNO2, NITR, NKOR, RCYC, SLAG];
+        // cargo_disallow_refit:           [GRAI, BEAN, FICR, WDPR, SGBT, SGCN];
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 12 * param_freight;
         loading_speed:					5;
