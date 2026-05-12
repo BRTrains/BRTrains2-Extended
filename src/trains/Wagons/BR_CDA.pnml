@@ -93,7 +93,7 @@ item (FEAT_TRAINS, item_BR_CDA, 12274) {
         
 		// refittable_cargo_classes:       bitmask(CC_COVERED, CC_POWDERIZED);	
         // non_refittable_cargo_classes:   bitmask(CC_NON_POTABLE, CC_NON_POURABLE);
-        cargo_allow_refit:              [CBLK, CLAY, CMNT, KAOL, OLSD, PEAT, POTA, COBL, QLME, SALT, SASH];
+        cargo_allow_refit:              [CBLK, CLAY, CMNT, KAOL, OLSD, PEAT, POTA, SAND, COBL, QLME, SALT, SASH];
         // cargo_disallow_refit:           [FERT, KAOL, WDPR, WOOL];
         default_cargo_type:             CLAY;
         misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
