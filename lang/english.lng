@@ -1453,6 +1453,10 @@ str_BR_BAA_liveries             :BR Bauxite, Railfreight, EWS
 STR_NAME_BR_CDA                 :BR CDA China Clay Hopper
 str_BR_CDA_liveries             :ECC, EWs, DB Schenker
 
+STR_NAME_BR_CHO                 :BR CHO/CHP/CHV 24t Covered Hopper
+STR_NAME_BR_CHO_PreTOPS         :BR 24t Covered Hopper
+str_BR_CHO_liveries             :BR Bauxite, BR Grey, Private Owner
+
 STR_NAME_BR_FEA                 :BR FEA Container Flat Wagon
 str_BR_FEA_liveries             :Random, Black, Blue, Green, Yellow
 

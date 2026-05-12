@@ -1,0 +1,116 @@
+
+// basic sprite
+spriteset(spriteset_BR_CHO_BR_Bauxite, "gfx/Wagons/BR_CHO/BR_CHO_BR_Bauxite_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_CHO_BR_Bauxite, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_CHO/BR_CHO_BR_Bauxite_1x_32bpp.png", "gfx/Wagons/BR_CHO/BR_CHO_BR_Bauxite_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_CHO_BR_Bauxite, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_CHO/BR_CHO_BR_Bauxite_2x_32bpp.png", "gfx/Wagons/BR_CHO/BR_CHO_BR_Bauxite_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_CHO_BR_Bauxite, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_CHO/BR_CHO_BR_Bauxite_4x_32bpp.png", "gfx/Wagons/BR_CHO/BR_CHO_BR_Bauxite_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR_CHO_BR_Bauxite_purchase, "gfx/Wagons/BR_CHO/BR_CHO_BR_Bauxite_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR_CHO_BR_Bauxite_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_CHO/BR_CHO_BR_Bauxite_1x_32bpp.png", "gfx/Wagons/BR_CHO/BR_CHO_BR_Bauxite_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_CHO_BR_Grey, "gfx/Wagons/BR_CHO/BR_CHO_BR_Grey_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_CHO_BR_Grey, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_CHO/BR_CHO_BR_Grey_1x_32bpp.png", "gfx/Wagons/BR_CHO/BR_CHO_BR_Grey_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_CHO_BR_Grey, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_CHO/BR_CHO_BR_Grey_2x_32bpp.png", "gfx/Wagons/BR_CHO/BR_CHO_BR_Grey_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_CHO_BR_Grey, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_CHO/BR_CHO_BR_Grey_4x_32bpp.png", "gfx/Wagons/BR_CHO/BR_CHO_BR_Grey_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_CHO_Private_Bauxite_White, "gfx/Wagons/BR_CHO/BR_CHO_Private_Bauxite_White_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_CHO_Private_Bauxite_White, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_CHO/BR_CHO_Private_Bauxite_White_1x_32bpp.png", "gfx/Wagons/BR_CHO/BR_CHO_Private_Bauxite_White_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_CHO_Private_Bauxite_White, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_CHO/BR_CHO_Private_Bauxite_White_2x_32bpp.png", "gfx/Wagons/BR_CHO/BR_CHO_Private_Bauxite_White_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_CHO_Private_Bauxite_White, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_CHO/BR_CHO_Private_Bauxite_White_4x_32bpp.png", "gfx/Wagons/BR_CHO/BR_CHO_Private_Bauxite_White_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR_CHO, cargo_subtype) {
+    0: spriteset_BR_CHO_BR_Bauxite;
+    1: spriteset_BR_CHO_BR_Grey;
+    2: spriteset_BR_CHO_Private_Bauxite_White;
+}
+
+// livery name refit switch
+switch(FEAT_TRAINS, SELF, sw_BR_CHO_cargo_subtype_text, cargo_subtype) {
+    0:  return string(str_BRBauxite);
+    1:  return string(str_BRGrey);
+    2:	return string(STR_LIVERY_BRANDED, string(str_col_Bauxite), string(str_col_White));
+        return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR_CHO_name, current_year) {
+    0..1972: return string(STR_NAME_BR_CHO_PreTOPS);
+    1973..1990: return string(STR_NAME_BR_CHO);
+}
+
+// unit definition
+item (FEAT_TRAINS, item_BR_CHO, 12275) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR_CHO);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1952,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		// refittable_cargo_classes:       bitmask(CC_COVERED, CC_POWDERIZED);	
+        // non_refittable_cargo_classes:   bitmask(CC_NON_POTABLE, CC_NON_POURABLE);
+        cargo_allow_refit:              [CBLK, CLAY, CMNT, KAOL, OLSD, PEAT, POTA, SAND, COBL, QLME, SALT, SASH];
+        // cargo_disallow_refit:           [FERT, KAOL, WDPR, WOOL];
+        default_cargo_type:             SAND;
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 24 * param_freight;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          50 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        weight:                         11 ton;
+        dual_headed:                    0;
+        length:                         5;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_livery_BR_CHO;
+        purchase:                       spriteset_BR_CHO_BR_Bauxite_purchase;
+
+        // internal code
+        name:                           sw_BR_CHO_name;
+        cost_factor:                    489;
+        running_cost_factor:            677;
+        cargo_subtype_text:             sw_BR_CHO_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_wagon,
+                                                    string(str_BR_CHO_liveries)));
+    }
+}
