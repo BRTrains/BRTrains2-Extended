@@ -359,7 +359,7 @@ item (FEAT_TRAINS, item_BR_Standard_9F, 9202) {
         // purchase menu text
         additional_text:                return( string(str_purchase_loco_with_liveries,
                                                     string(str_purchase_type_steam),
-                                                    string(str_usage_mixed_traffic),
+                                                    string(str_usage_heavy_freight),
                                                     string(str_BR_Big_Standards_liveries)));
     }
 }
@@ -428,7 +428,7 @@ item (FEAT_TRAINS, item_BR_Standard_9F_DC, 9203) {
         // purchase menu text
         additional_text:                return( string(str_purchase_loco_with_liveries,
                                                     string(str_purchase_type_steam),
-                                                    string(str_usage_mixed_traffic),
+                                                    string(str_usage_heavy_freight),
                                                     string(str_BR_Big_Standards_liveries)));
     }
 }
@@ -504,7 +504,7 @@ item (FEAT_TRAINS, item_BR_Standard_9F_Named, 9204) {
         // purchase menu text
         additional_text:                return( string(str_purchase_loco_with_liveries,
                                                     string(str_purchase_type_steam),
-                                                    string(str_usage_mixed_traffic),
+                                                    string(str_usage_heavy_freight),
                                                     string(str_BR_Big_Standards_liveries)));
     }
 }

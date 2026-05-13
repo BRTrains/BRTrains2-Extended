@@ -201,14 +201,14 @@ item (FEAT_TRAINS, item_BR_Standard_6, 7201) {
 
         //specific properties
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
-        speed:                          100 mph;
+        speed:                          90 mph;
         refit_cost:                     0;
         track_type:                     RAIL;
         power:                          1895 hp;
         weight:                         140 ton;
         engine_class:                   ENGINE_CLASS_STEAM;
         dual_headed:                    0;
-        air_drag_coefficient:           0.03;
+        air_drag_coefficient:           0.04;
         tractive_effort_coefficient:    0.09;
         length:                         8;
     }
@@ -225,8 +225,8 @@ item (FEAT_TRAINS, item_BR_Standard_6, 7201) {
         articulated_part:               sw_articulated_BR_Standard_6;
         purchase_cargo_capacity:        0;
         cargo_capacity:                 return 0;
-        cost_factor:                    92;
-        running_cost_factor:            6158;
+        cost_factor:                    88;
+        running_cost_factor:            5866;
         cargo_subtype_text:             sw_BR_Standard_67_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
@@ -299,7 +299,7 @@ item (FEAT_TRAINS, item_BR_Standard_7, 7002) {
         // purchase menu text
         additional_text:                return( string(str_purchase_loco_with_liveries,
                                                     string(str_purchase_type_steam),
-                                                    string(str_usage_expr_pax),
+                                                    string(str_usage_mixed_traffic),
                                                     string(str_BR_Big_Standards_liveries)));
     }
 }
