@@ -1457,6 +1457,9 @@ STR_NAME_BR_CHO                 :BR CHO/CHP/CHV 24t Covered Hopper
 STR_NAME_BR_CHO_PreTOPS         :BR 24t Covered Hopper
 str_BR_CHO_liveries             :BR Bauxite, BR Grey, Private Owner
 
+STR_NAME_BR_Consett_Hopper      :BR 56t Consett Iron Ore Hopper
+str_BR_Consett_Hopper_liveries  :BR Bauxite
+
 STR_NAME_BR_FEA                 :BR FEA Container Flat Wagon
 str_BR_FEA_liveries             :Random, Black, Blue, Green, Yellow
 

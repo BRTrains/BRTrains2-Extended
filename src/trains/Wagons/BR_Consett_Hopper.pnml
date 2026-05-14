@@ -1,0 +1,164 @@
+// basic sprite
+spriteset(spriteset_BR_Consett_Hopper, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_1x_32bpp.png", "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_1x_mask.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_2x_32bpp.png", "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_2x_mask.png")
+    { template_78trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_4x_32bpp.png", "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR_Consett_Hopper_purchase, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_1x_32bpp.png", "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_Consett_Hopper_Load_25, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_25_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper_Load_25, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_25_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper_Load_25, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_25_2x_8bpp.png")
+    { template_78trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper_Load_25, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_25_4x_8bpp.png")
+    { template_78trains_4x(0,0) }
+
+spriteset(spriteset_BR_Consett_Hopper_Load_50, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_50_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper_Load_50, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_50_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper_Load_50, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_50_2x_8bpp.png")
+    { template_78trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper_Load_50, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_50_4x_8bpp.png")
+    { template_78trains_4x(0,0) }
+
+spriteset(spriteset_BR_Consett_Hopper_Load_75, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_75_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper_Load_75, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_75_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper_Load_75, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_75_2x_8bpp.png")
+    { template_78trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper_Load_75, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_75_4x_8bpp.png")
+    { template_78trains_4x(0,0) }
+
+spriteset(spriteset_BR_Consett_Hopper_Load_100, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_100_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper_Load_100, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_100_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper_Load_100, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_100_2x_8bpp.png")
+    { template_78trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper_Load_100, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_100_4x_8bpp.png")
+    { template_78trains_4x(0,0) }
+
+spritegroup spritegroup_BR_Consett_Hopper_Load {
+    loaded: [spriteset_empty, spriteset_BR_Consett_Hopper_Load_25, spriteset_BR_Consett_Hopper_Load_50, spriteset_BR_Consett_Hopper_Load_75, spriteset_BR_Consett_Hopper_Load_100];
+    loading: [spriteset_empty, spriteset_BR_Consett_Hopper_Load_25, spriteset_BR_Consett_Hopper_Load_50, spriteset_BR_Consett_Hopper_Load_75, spriteset_BR_Consett_Hopper_Load_100]; }
+
+// basic sprites
+spriteset(spriteset_BR_Consett_Hopper_Unloading, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Unloading_1x_8bpp.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper_Unloading, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Unloading_1x_32bpp.png", "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Unloading_1x_mask.png")
+    { template_78trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper_Unloading, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Unloading_2x_32bpp.png", "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Unloading_2x_mask.png")
+    { template_78trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_Consett_Hopper_Unloading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Unloading_4x_32bpp.png", "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Unloading_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_BR_Consett_Hopper_Unloading, vehicle_is_unloading) {
+    1:  spriteset_BR_Consett_Hopper_Unloading;
+        spriteset_empty; }
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR_Consett_Hopper, cargo_subtype) {
+    0: spriteset_BR_Consett_Hopper; }
+
+// livery name refit switch
+switch(FEAT_TRAINS, SELF, sw_BR_Consett_Hopper_cargo_subtype_text, cargo_subtype){
+	0:	return string(str_BRBauxite);
+       return CB_RESULT_NO_TEXT; }															
+
+switch(FEAT_TRAINS, SELF, sw_spritestack_BR_Consett_Hopper, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
+    0: sw_livery_BR_Consett_Hopper;
+    1: spritegroup_BR_Consett_Hopper_Load;
+    2: sw_BR_Consett_Hopper_Unloading; }
+
+// speed switch
+switch(FEAT_TRAINS, SELF, sw_speed_BR_Consett_Hopper, param_max_speed) {
+    0: 40; // operational speed
+    1: 65; // design speed
+}
+
+// unit definition
+item (FEAT_TRAINS, item_BR_Consett_Hopper, 12276) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR_Consett_Hopper);
+        // variant_group:                  ; // unit ID or item
+		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1951,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		// refittable_cargo_classes:       bitmask(CC_BULK);	
+        // non_refittable_cargo_classes:   bitmask(CC_COVERED, CC_POWDERIZED);
+        cargo_allow_refit:              [COAL, IORE, CORE, AORE, BDMT, CLAY, CMNT, FECR, GRVL, LIME, PHOS, PORE, SAND, SCMT, COKE, MNO2, NITR, NKOR, RCYC, SLAG];
+        // cargo_disallow_refit:           [GRAI, BEAN, FICR, WDPR, SGBT, SGCN];
+        default_cargo_type:             IORE;
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        cargo_capacity:                 56 * param_freight;
+        // for MUs, loading speed is multiplied by number of carriages * 0.75
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          40 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        weight:                         29 ton;
+        dual_headed:                    0;
+        length:                         7;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_spritestack_BR_Consett_Hopper;
+        purchase:                       spriteset_BR_Consett_Hopper_purchase;
+
+        // internal code
+        speed:                          sw_speed_BR_Consett_Hopper() * 1609 / 1000;  
+        cost_factor:                    815;
+        running_cost_factor:            648;
+        cargo_subtype_text:             sw_BR_Consett_Hopper_cargo_subtype_text; 
+        colour_mapping:                 switch_generic_recolour;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_wagon,
+                                                    string(str_BR_Consett_Hopper_liveries)));
+    }
+}
+
