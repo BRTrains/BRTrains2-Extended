@@ -856,6 +856,11 @@ str_BR230_3CAR_liveries			:Transport for Wales
 STR_NAME_BR231                  :BR Class 231 "FLIRT" 
 str_BR231_liveries              :Transport for Wales
 
+STR_NAME_BR25_1                 :BR Class 25/0, /1 "Rat"
+STR_NAME_BR25_2                 :BR Class 25/2 "Rat"
+STR_NAME_BR25_3                 :BR Class 25/3 "Rat"
+str_BR25_liveries               :BR Green, BR Blue
+
 STR_NAME_BR251_6		        :BR "Blue Pullman" (6 car)
 STR_NAME_BR251_8        		:BR "Blue Pullman" (8 car)
 str_BR251_liveries		        :Blue Pullman, Blue Pullman (Warning Panels), BR Grey and Blue
