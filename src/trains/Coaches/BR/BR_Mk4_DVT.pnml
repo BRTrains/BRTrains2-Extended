@@ -257,7 +257,7 @@ item (FEAT_TRAINS, item_BR_Mk4_DVT, 12161) {
         // common properties
         name:                           string(STR_NAME_BR_Mk4_DVT);
         variant_group:                  item_BR_Mk4_Header; // unit ID or item
-		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB, VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(1988,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -280,12 +280,8 @@ item (FEAT_TRAINS, item_BR_Mk4_DVT, 12161) {
         speed:                          125 mph;
         refit_cost:                     0;
         track_type:                     RAIL;
-        power:                          10 hp;
         weight:                         44 ton;
-        engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
-        air_drag_coefficient:           0.03;
-        tractive_effort_coefficient:    0.03;
         length:                         4;
     }
 
@@ -298,8 +294,8 @@ item (FEAT_TRAINS, item_BR_Mk4_DVT, 12161) {
         // internal code
         articulated_part:               sw_articulated_BR_Mk4_DVT;
         speed:                          sw_speed_BR_Mk4_DVT() * 1609 / 1000;  
-        cost_factor:                    94;
-        running_cost_factor:            4920;
+        cost_factor:                    1356;
+        running_cost_factor:            2018;
         cargo_subtype_text:             sw_BR_Mk4_DVT_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;

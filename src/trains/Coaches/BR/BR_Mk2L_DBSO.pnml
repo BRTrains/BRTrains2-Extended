@@ -541,7 +541,7 @@ item (FEAT_TRAINS, item_BR_Mk2L_DBSO, 12103) {
         // common properties
         name:                           string(STR_NAME_BR_Mk2L_DBSO);
         variant_group:                  item_BR_Mk2L_Header; // unit ID or item
-		extra_flags:                    bitmask(VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(1979,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -562,13 +562,10 @@ item (FEAT_TRAINS, item_BR_Mk2L_DBSO, 12103) {
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         speed:                          110 mph;
         refit_cost:                     0;
-        track_type:                     RAIL;
-        power:                          10 hp;    
+        track_type:                     RAIL; 
         weight:                         34 ton;
         engine_class:                   ENGINE_CLASS_DIESEL;
         dual_headed:                    0;
-        air_drag_coefficient:           0.03;
-        tractive_effort_coefficient:    0.03;
         length:                         4;
     }
 
@@ -582,8 +579,8 @@ item (FEAT_TRAINS, item_BR_Mk2L_DBSO, 12103) {
         articulated_part:               sw_articulated_BR_Mk2L_DBSO;
         purchase_cargo_capacity:        return (10 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR_Mk2L_DBSO;
-        cost_factor:                    73;
-        running_cost_factor:            4320;
+        cost_factor:                    933;
+        running_cost_factor:            1706;
         cargo_subtype_text:             sw_BR_Mk2L_DBSO_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 

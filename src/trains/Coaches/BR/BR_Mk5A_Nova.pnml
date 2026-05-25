@@ -71,7 +71,7 @@ item (FEAT_TRAINS, item_BR68_Nova, 6801) {
         // common properties
         name:                           string(STR_NAME_BR68);
         variant_group:                  item_BR68; // unit ID or item
-		extra_flags:                    bitmask(VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2017,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
