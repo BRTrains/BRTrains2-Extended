@@ -3,4 +3,37 @@
 
 // Disable some trains that only exist for template alignment or debugging
 	disable_item(FEAT_TRAINS, 12210); // Debug variant header
+	disable_item(FEAT_TRAINS, 12214); // Alignment unit - non-reversed
+	disable_item(FEAT_TRAINS, 12215);
+	disable_item(FEAT_TRAINS, 12216);
+	disable_item(FEAT_TRAINS, 12217);
+	disable_item(FEAT_TRAINS, 12218);
+	disable_item(FEAT_TRAINS, 12219);
+	disable_item(FEAT_TRAINS, 12220);
+	disable_item(FEAT_TRAINS, 12221);
+	disable_item(FEAT_TRAINS, 12222);
+	disable_item(FEAT_TRAINS, 12223);
+	disable_item(FEAT_TRAINS, 12224);
+	disable_item(FEAT_TRAINS, 12225);
+	disable_item(FEAT_TRAINS, 12226);
+	disable_item(FEAT_TRAINS, 12227);
+	disable_item(FEAT_TRAINS, 12228);
+	disable_item(FEAT_TRAINS, 12229);
+
+	disable_item(FEAT_TRAINS, 12234); // Alignment unit - reversed
+	disable_item(FEAT_TRAINS, 12235);
+	disable_item(FEAT_TRAINS, 12236);
+	disable_item(FEAT_TRAINS, 12237);
+	disable_item(FEAT_TRAINS, 12238);
+	disable_item(FEAT_TRAINS, 12239);
+	disable_item(FEAT_TRAINS, 12240);
+	disable_item(FEAT_TRAINS, 12241);
+	disable_item(FEAT_TRAINS, 12242);
+	disable_item(FEAT_TRAINS, 12243);
+	disable_item(FEAT_TRAINS, 12244);
+	disable_item(FEAT_TRAINS, 12245);
+	disable_item(FEAT_TRAINS, 12246);
+	disable_item(FEAT_TRAINS, 12247);
+	disable_item(FEAT_TRAINS, 12248);
+	disable_item(FEAT_TRAINS, 12249);
  }
