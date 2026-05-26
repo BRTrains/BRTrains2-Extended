@@ -244,6 +244,13 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR800_DPTF_LNER_REV, [ STORE_TEMP((getbit
     3: sw_BR800_lights_back;
     4: sw_panto_BR800_REV; }
 
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR801_DPTF_LNER_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 5 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR800_DPTF_LNER_REV;
+    1: spritegroup_BR800_DPTF_LNER_Loading_REV;
+    2: sw_BR800_LNER_NoseClosed_REV;
+    3: sw_BR800_lights_back;
+    4: spriteset_BR800_panto_up_REV; }
+
 // basic sprite
 spriteset(spriteset_BR800_DPTS_GWR, "gfx/EMU/BR800/BR800_DPTS_GWR_1x_8bpp.png")
     { template_1558fronttrains_1x(0,0) }
@@ -331,6 +338,13 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR800_DPTS_LNER, [ STORE_TEMP((getbits(ex
     2: sw_BR800_LNER_NoseClosed;
     3: sw_BR800_lights_front;
     4: sw_panto_BR800; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR801_DPTS_LNER, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 5 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR800_DPTS_LNER;
+    1: spritegroup_BR800_DPTS_LNER_Loading;
+    2: sw_BR800_LNER_NoseClosed;
+    3: sw_BR800_lights_front;
+    4: spriteset_BR800_panto_up; }
 
 spriteset(spriteset_BR800_MC_GWR_Loading, "gfx/EMU/BR800/BR800_MC_GWR_Leading_Loading_1x_8bpp.png")
     { template_158trains_1x(0,0) }
@@ -997,6 +1011,179 @@ item (FEAT_TRAINS, item_BR800_2, 8002) {
         running_cost_factor:            9903;
         cargo_subtype_text:             sw_BR800_LNER_cargo_subtype_text; 
         power:                          sw_power_BR800_5car;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+        // colour_mapping:                 switch_generic_recolour;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_loco_with_liveries,
+                                                    string(str_purchase_type_bmu),
+                                                    string(str_usage_expr_pax),
+                                                    string(str_BR800_1_2_liveries)));
+    }
+}
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_BR801_1_LNER, position_in_articulated_veh % 15) {
+    1:  sw_loadstack_BR801_DPTS_LNER;
+    4:  sw_loadstack_BR800_MSRB_LNER;
+    7:  sw_loadstack_BR800_MS_LNER;
+    10: sw_loadstack_BR800_MC_LNER_REV;
+    13: sw_loadstack_BR801_DPTF_LNER_REV;
+	    spriteset_empty; }
+
+switch(FEAT_TRAINS, SELF, sw_graphics_BR801_2_LNER, position_in_articulated_veh % 27) {
+    1:  sw_loadstack_BR801_DPTS_LNER;
+    4:  sw_loadstack_BR800_MS_LNER;
+    7:  sw_loadstack_BR800_MS_LNER;
+    10: sw_loadstack_BR800_TSRB_LNER;
+    13: sw_loadstack_BR800_MS_LNER;
+    16: sw_loadstack_BR800_TS_LNER_REV;
+    19: sw_loadstack_BR800_MC_LNER_9car_REV;
+    22: sw_loadstack_BR800_MF_LNER_REV;
+    25: sw_loadstack_BR801_DPTF_LNER_REV;
+        spriteset_empty; }
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR801_1, cargo_subtype) {
+    0:  sw_graphics_BR801_1_LNER; }
+
+switch(FEAT_TRAINS, SELF, sw_livery_BR801_2, cargo_subtype) {
+    0:  sw_graphics_BR801_2_LNER; }
+
+// livery name refit switch
+switch(FEAT_TRAINS, SELF, sw_BR801_cargo_subtype_text, cargo_subtype){
+	0:	return string(str_LNEROxblood);
+       return CB_RESULT_NO_TEXT; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR801_1, extra_callback_info1) {
+	1..14: return item_BR801_1;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_BR801_1, 8011) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR801_1);
+        // variant_group:                  item_BR800_0; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2017,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		refittable_cargo_classes:        bitmask(CC_PASSENGERS);
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [PASS, TOUR];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        // for MUs, loading speed is multiplied by number of carriages * 0.75
+        loading_speed:					56; // Standard Class
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          125 mph;
+        refit_cost:                     0;
+        track_type:                     ELRL;
+        power:                          3640 hp;
+        weight:                         221 ton;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.06;
+        tractive_effort_coefficient:    0.07;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_livery_BR801_1;
+        visual_effect_and_powered:      sw_FX_BR800_5car_Electric;
+        purchase:                       sw_spritestack_BR800_1_2_purchase;
+        sound_effect:                   sw_sound_electric_88;
+
+        // internal code
+        length:                         sw_length_BR800_5car;
+        articulated_part:               sw_articulated_BR801_1;
+        speed:                          sw_speed_BR800() * 1609 / 1000;  
+        purchase_cargo_capacity:        return (20 * param_pax); // divide by number of articulated parts and floor
+        cargo_capacity:                 sw_capacity_BR800_2;
+        cost_factor:                    267;
+        running_cost_factor:            9893;
+        cargo_subtype_text:             sw_BR801_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+        // colour_mapping:                 switch_generic_recolour;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_loco_with_liveries,
+                                                    string(str_purchase_type_bmu),
+                                                    string(str_usage_expr_pax),
+                                                    string(str_BR800_1_2_liveries)));
+    }
+}
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR801_2, extra_callback_info1) {
+	1..26: return item_BR801_2;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+// unit definition
+item (FEAT_TRAINS, item_BR801_2, 8012) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR801_2);
+        variant_group:                  item_BR801_1; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB, VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2017,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		refittable_cargo_classes:        bitmask(CC_PASSENGERS);
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [PASS, TOUR];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        // for MUs, loading speed is multiplied by number of carriages * 0.75
+        loading_speed:					101; // Standard Class
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          125 mph;
+        refit_cost:                     0;
+        track_type:                     ELRL;
+        power:                          6070 hp;
+        weight:                         398 ton;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.06;
+        tractive_effort_coefficient:    0.07;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_livery_BR801_2;
+        visual_effect_and_powered:      sw_FX_BR800_9car_Electric;
+        purchase:                       sw_spritestack_BR800_1_2_purchase;
+        sound_effect:                   sw_sound_electric_88;
+
+        // internal code
+        length:                         sw_length_BR800_9car;
+        articulated_part:               sw_articulated_BR801_2;
+        speed:                          sw_speed_BR800() * 1609 / 1000;  
+        purchase_cargo_capacity:        return (22 * param_pax); // divide by number of articulated parts and floor
+        cargo_capacity:                 sw_capacity_BR800_1;
+        cost_factor:                    417;
+        running_cost_factor:            13263;
+        cargo_subtype_text:             sw_BR801_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
 
