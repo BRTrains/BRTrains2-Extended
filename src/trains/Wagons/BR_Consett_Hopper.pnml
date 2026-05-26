@@ -22,9 +22,6 @@ spriteset(spriteset_BR_Consett_Hopper_purchase, "gfx/Wagons/BR_Consett_Hopper/BR
 spriteset(spriteset_BR_Consett_Hopper_Load_25, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_25_1x_8bpp.png")
     { template_78trains_1x(0,0) }
 
-    alternative_sprites(spriteset_BR_Consett_Hopper_Load_25, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_25_1x_8bpp.png")
-    { template_78trains_1x(0,0) }
-
     alternative_sprites(spriteset_BR_Consett_Hopper_Load_25, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_25_2x_8bpp.png")
     { template_78trains_2x(0,0) }
 
@@ -32,9 +29,6 @@ spriteset(spriteset_BR_Consett_Hopper_Load_25, "gfx/Wagons/BR_Consett_Hopper/BR_
     { template_78trains_4x(0,0) }
 
 spriteset(spriteset_BR_Consett_Hopper_Load_50, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_50_1x_8bpp.png")
-    { template_78trains_1x(0,0) }
-
-    alternative_sprites(spriteset_BR_Consett_Hopper_Load_50, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_50_1x_8bpp.png")
     { template_78trains_1x(0,0) }
 
     alternative_sprites(spriteset_BR_Consett_Hopper_Load_50, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_50_2x_8bpp.png")
@@ -46,9 +40,6 @@ spriteset(spriteset_BR_Consett_Hopper_Load_50, "gfx/Wagons/BR_Consett_Hopper/BR_
 spriteset(spriteset_BR_Consett_Hopper_Load_75, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_75_1x_8bpp.png")
     { template_78trains_1x(0,0) }
 
-    alternative_sprites(spriteset_BR_Consett_Hopper_Load_75, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_75_1x_8bpp.png")
-    { template_78trains_1x(0,0) }
-
     alternative_sprites(spriteset_BR_Consett_Hopper_Load_75, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_75_2x_8bpp.png")
     { template_78trains_2x(0,0) }
 
@@ -56,9 +47,6 @@ spriteset(spriteset_BR_Consett_Hopper_Load_75, "gfx/Wagons/BR_Consett_Hopper/BR_
     { template_78trains_4x(0,0) }
 
 spriteset(spriteset_BR_Consett_Hopper_Load_100, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_100_1x_8bpp.png")
-    { template_78trains_1x(0,0) }
-
-    alternative_sprites(spriteset_BR_Consett_Hopper_Load_100, ZOOM_LEVEL_NORMAL, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_100_1x_8bpp.png")
     { template_78trains_1x(0,0) }
 
     alternative_sprites(spriteset_BR_Consett_Hopper_Load_100, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_Consett_Hopper/BR_Consett_Hopper_Load_100_2x_8bpp.png")
