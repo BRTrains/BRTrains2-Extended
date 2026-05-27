@@ -1119,7 +1119,7 @@ item (FEAT_TRAINS, item_BR801_1, 8011) {
 
         // purchase menu text
         additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_bmu),
+                                                    string(str_purchase_type_emu),
                                                     string(str_usage_expr_pax),
                                                     string(str_BR800_1_2_liveries)));
     }
@@ -1189,7 +1189,7 @@ item (FEAT_TRAINS, item_BR801_2, 8012) {
 
         // purchase menu text
         additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_bmu),
+                                                    string(str_purchase_type_emu),
                                                     string(str_usage_expr_pax),
                                                     string(str_BR800_1_2_liveries)));
     }
