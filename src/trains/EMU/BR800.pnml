@@ -347,16 +347,16 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR801_DPTS_LNER, [ STORE_TEMP((getbits(ex
     4: spriteset_BR800_panto_up; }
 
 spriteset(spriteset_BR800_MC_GWR_Loading, "gfx/EMU/BR800/BR800_MC_GWR_Leading_Loading_1x_8bpp.png")
-    { template_158trains_1x(0,0) }
+    { template_1558middletrains_1x(0,0) }
 
     alternative_sprites(spriteset_BR800_MC_GWR_Loading, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR800/BR800_MC_GWR_Leading_Loading_1x_32bpp.png", "gfx/EMU/BR800/BR800_MC_GWR_Leading_Loading_1x_mask.png")
-    { template_158trains_1x(0,0) }
+    { template_1558middletrains_1x(0,0) }
 
     alternative_sprites(spriteset_BR800_MC_GWR_Loading, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR800/BR800_MC_GWR_Leading_Loading_2x_32bpp.png", "gfx/EMU/BR800/BR800_MC_GWR_Leading_Loading_2x_mask.png")
-    { template_158trains_2x(0,0) }
+    { template_1558middletrains_2x(0,0) }
 
     alternative_sprites(spriteset_BR800_MC_GWR_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR800/BR800_MC_GWR_Leading_Loading_4x_32bpp.png", "gfx/EMU/BR800/BR800_MC_GWR_Leading_Loading_4x_mask.png")
-    { template_158trains_4x(0,0) }
+    { template_1558middletrains_4x(0,0) }
 
 // loading sprite
 spritegroup spritegroup_BR800_MC_GWR_Loading {  
