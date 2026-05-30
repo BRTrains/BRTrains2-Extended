@@ -142,10 +142,6 @@ spritegroup spritegroup_BR755_DMSO_GA_Loading_REV {
     loaded: [spriteset_empty];
     loading: [spriteset_BR755_DMSO_GA_Loading_REV]; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR755_DMSO_GA_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR755_DMSO_GA_REV;
-    1: spritegroup_BR755_DMSO_GA_Loading_REV; }
-
 // basic sprite
 spriteset(spriteset_BR755_DMSO_GA_Pride, "gfx/EMU/BR755/BR755_DMSO_GA_Pride_1x_8bpp.png")
     { template_138trains_1x(0,0) }
@@ -159,39 +155,11 @@ spriteset(spriteset_BR755_DMSO_GA_Pride, "gfx/EMU/BR755/BR755_DMSO_GA_Pride_1x_8
     alternative_sprites(spriteset_BR755_DMSO_GA_Pride, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_DMSO_GA_Pride_4x_32bpp.png", "gfx/EMU/BR755/BR755_DMSO_GA_Pride_4x_mask.png")
     { template_138trains_4x(0,0) }
 
-spriteset(spriteset_BR755_DMSO_GA_Pride_REV, "gfx/EMU/BR755/BR755_DMSO_GA_Pride_1x_8bpp.png")
-    { template_138trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR755_DMSO_GA_Pride_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_DMSO_GA_Pride_1x_32bpp.png", "gfx/EMU/BR755/BR755_DMSO_GA_Pride_1x_mask.png")
-    { template_138trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR755_DMSO_GA_Pride_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_DMSO_GA_Pride_2x_32bpp.png", "gfx/EMU/BR755/BR755_DMSO_GA_Pride_2x_mask.png")
-    { template_138trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR755_DMSO_GA_Pride_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_DMSO_GA_Pride_4x_32bpp.png", "gfx/EMU/BR755/BR755_DMSO_GA_Pride_4x_mask.png")
-    { template_138trains_REV_4x(0,0) }
-
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR755_DMSO_GA_Pride, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR755_DMSO_GA_Pride;
     1: spritegroup_BR755_DMSO_GA_Loading; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR755_DMSO_GA_Pride_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR755_DMSO_GA_Pride_REV;
-    1: spritegroup_BR755_DMSO_GA_Loading_REV; }
-
 // basic sprite
-spriteset(spriteset_BR755_DMSOB_GA, "gfx/EMU/BR755/BR755_DMSOB_GA_1x_8bpp.png")
-    { template_138trains_1x(0,0) }
-
-    alternative_sprites(spriteset_BR755_DMSOB_GA, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_DMSOB_GA_1x_32bpp.png", "gfx/EMU/BR755/BR755_DMSOB_GA_1x_mask.png")
-    { template_138trains_1x(0,0) }
-
-    alternative_sprites(spriteset_BR755_DMSOB_GA, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_DMSOB_GA_2x_32bpp.png", "gfx/EMU/BR755/BR755_DMSOB_GA_2x_mask.png")
-    { template_138trains_2x(0,0) }
-
-    alternative_sprites(spriteset_BR755_DMSOB_GA, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_DMSOB_GA_4x_32bpp.png", "gfx/EMU/BR755/BR755_DMSOB_GA_4x_mask.png")
-    { template_138trains_4x(0,0) }
-
 spriteset(spriteset_BR755_DMSOB_GA_REV, "gfx/EMU/BR755/BR755_DMSOB_GA_1x_8bpp.png")
     { template_138trains_REV_1x(0,0) }
 
@@ -204,27 +172,11 @@ spriteset(spriteset_BR755_DMSOB_GA_REV, "gfx/EMU/BR755/BR755_DMSOB_GA_1x_8bpp.pn
     alternative_sprites(spriteset_BR755_DMSOB_GA_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_DMSOB_GA_4x_32bpp.png", "gfx/EMU/BR755/BR755_DMSOB_GA_4x_mask.png")
     { template_138trains_REV_4x(0,0) }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR755_DMSOB_GA, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR755_DMSOB_GA;
-    1: spritegroup_BR755_DMSO_GA_Loading; }
-
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR755_DMSOB_GA_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR755_DMSOB_GA_REV;
     1: spritegroup_BR755_DMSO_GA_Loading_REV; }
 
 // basic sprite
-spriteset(spriteset_BR755_DMSOB_GA_Pride, "gfx/EMU/BR755/BR755_DMSOB_GA_Pride_1x_8bpp.png")
-    { template_138trains_1x(0,0) }
-
-    alternative_sprites(spriteset_BR755_DMSOB_GA_Pride, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_DMSOB_GA_Pride_1x_32bpp.png", "gfx/EMU/BR755/BR755_DMSOB_GA_Pride_1x_mask.png")
-    { template_138trains_1x(0,0) }
-
-    alternative_sprites(spriteset_BR755_DMSOB_GA_Pride, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_DMSOB_GA_Pride_2x_32bpp.png", "gfx/EMU/BR755/BR755_DMSOB_GA_Pride_2x_mask.png")
-    { template_138trains_2x(0,0) }
-
-    alternative_sprites(spriteset_BR755_DMSOB_GA_Pride, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_DMSOB_GA_Pride_4x_32bpp.png", "gfx/EMU/BR755/BR755_DMSOB_GA_Pride_4x_mask.png")
-    { template_138trains_4x(0,0) }
-
 spriteset(spriteset_BR755_DMSOB_GA_Pride_REV, "gfx/EMU/BR755/BR755_DMSOB_GA_Pride_1x_8bpp.png")
     { template_138trains_REV_1x(0,0) }
 
@@ -236,10 +188,6 @@ spriteset(spriteset_BR755_DMSOB_GA_Pride_REV, "gfx/EMU/BR755/BR755_DMSOB_GA_Prid
 
     alternative_sprites(spriteset_BR755_DMSOB_GA_Pride_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_DMSOB_GA_Pride_4x_32bpp.png", "gfx/EMU/BR755/BR755_DMSOB_GA_Pride_4x_mask.png")
     { template_138trains_REV_4x(0,0) }
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR755_DMSOB_GA_Pride, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR755_DMSOB_GA_Pride;
-    1: spritegroup_BR755_DMSO_GA_Loading; }
 
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR755_DMSOB_GA_Pride_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR755_DMSOB_GA_Pride_REV;
@@ -257,19 +205,6 @@ spriteset(spriteset_BR755_PP_GA, "gfx/EMU/BR755/BR755_PP_GA_1x_8bpp.png")
 
     alternative_sprites(spriteset_BR755_PP_GA, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_PP_GA_4x_32bpp.png", "gfx/EMU/BR755/BR755_PP_GA_4x_mask.png")
     { template_58trains_4x(0,0) }
-
-spriteset(spriteset_BR755_PP_GA_REV, "gfx/EMU/BR755/BR755_PP_GA_1x_8bpp.png")
-    { template_58trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR755_PP_GA_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_PP_GA_1x_32bpp.png", "gfx/EMU/BR755/BR755_PP_GA_1x_mask.png")
-    { template_58trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR755_PP_GA_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_PP_GA_2x_32bpp.png", "gfx/EMU/BR755/BR755_PP_GA_2x_mask.png")
-    { template_58trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR755_PP_GA_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_PP_GA_4x_32bpp.png", "gfx/EMU/BR755/BR755_PP_GA_4x_mask.png")
-    { template_58trains_REV_4x(0,0) }
-
 // basic sprite
 spriteset(spriteset_BR755_PP_TfW, "gfx/EMU/BR755/BR755_PP_TfW_1x_8bpp.png")
     { template_58trains_1x(0,0) }
@@ -282,18 +217,6 @@ spriteset(spriteset_BR755_PP_TfW, "gfx/EMU/BR755/BR755_PP_TfW_1x_8bpp.png")
 
     alternative_sprites(spriteset_BR755_PP_TfW, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_PP_TfW_4x_32bpp.png", "gfx/EMU/BR755/BR755_PP_TfW_4x_mask.png")
     { template_58trains_4x(0,0) }
-
-spriteset(spriteset_BR755_PP_TfW_REV, "gfx/EMU/BR755/BR755_PP_TfW_1x_8bpp.png")
-    { template_58trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR755_PP_TfW_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_PP_TfW_1x_32bpp.png", "gfx/EMU/BR755/BR755_PP_TfW_1x_mask.png")
-    { template_58trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR755_PP_TfW_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_PP_TfW_2x_32bpp.png", "gfx/EMU/BR755/BR755_PP_TfW_2x_mask.png")
-    { template_58trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR755_PP_TfW_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR755/BR755_PP_TfW_4x_32bpp.png", "gfx/EMU/BR755/BR755_PP_TfW_4x_mask.png")
-    { template_58trains_REV_4x(0,0) }
 
 // basic sprite
 spriteset(spriteset_BR755_PTSO_GA, "gfx/EMU/BR755/BR755_PTSO_GA_1x_8bpp.png")
@@ -567,11 +490,7 @@ spriteset(spriteset_BR755_panto_down_purchase, "gfx/EMU/BR755/BR755_panto_down_1
 // dual mode switches							
 switch(FEAT_TRAINS, PARENT, sw_panto_BR755, tile_powers_railtype("ELRL")) {
     1: return spriteset_BR755_panto_up;
-        return spriteset_BR755_panto_down; }	
-        
-switch(FEAT_TRAINS, PARENT, sw_panto_BR755_REV, tile_powers_railtype("ELRL")) {
-    1: return spriteset_BR755_panto_up_REV;
-        return spriteset_BR755_panto_down_REV; }	
+        return spriteset_BR755_panto_down; }		
         
 switch(FEAT_TRAINS, PARENT, sw_power_BR755_3, tile_powers_railtype("ELRL")){
     1: 3500;
@@ -583,16 +502,6 @@ switch(FEAT_TRAINS, PARENT, sw_power_BR755_4, tile_powers_railtype("ELRL")){
 
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR755_PTSO_GA, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR755_PTSO_GA;
-    1: spritegroup_BR755_PTSO_GA_Loading;
-    2: return sw_panto_BR755; }
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR755_PTSO_GA_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR755_PTSO_GA_REV;
-    1: spritegroup_BR755_PTSO_GA_Loading_REV;
-    2: spriteset_BR755_panto_down_REV; }
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR755_PTSOD_GA, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR755_PTSOD_GA;
     1: spritegroup_BR755_PTSO_GA_Loading;
     2: return sw_panto_BR755; }
 
@@ -610,39 +519,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR756_PTSO_TfW_REV, [ STORE_TEMP((getbits
     0: spriteset_BR755_231_756_TS_TfW_REV;
     1: spritegroup_BR756_PTS_TfW_Loading_REV;
     2: spriteset_BR755_panto_down_REV; }
-
-// Reversing switches
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR755_DMSO_DMSOB_GA, vehicle_is_reversed) {
-    1: return sw_loadstack_BR755_DMSOB_GA;
-        return sw_loadstack_BR755_DMSO_GA; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR755_DMSOB_DMSO_GA, vehicle_is_reversed) {
-    1: return sw_loadstack_BR755_DMSO_GA_REV;
-        return sw_loadstack_BR755_DMSOB_GA_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR755_DMSO_DMSOB_GA_Pride, vehicle_is_reversed) {
-    1: return sw_loadstack_BR755_DMSOB_GA_Pride;
-        return sw_loadstack_BR755_DMSO_GA_Pride; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR755_DMSOB_DMSO_GA_Pride, vehicle_is_reversed) {
-    1: return sw_loadstack_BR755_DMSO_GA_Pride_REV;
-        return sw_loadstack_BR755_DMSOB_GA_Pride_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR755_PP_GA, vehicle_is_reversed) {
-    1: spriteset_BR755_PP_GA_REV;
-        spriteset_BR755_PP_GA; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR755_PTSO_PTSOD_GA, vehicle_is_reversed) {
-    1: return sw_loadstack_BR755_PTSOD_GA;
-        return sw_loadstack_BR755_PTSO_GA; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR755_PTSOD_PTSO_GA, vehicle_is_reversed) {
-    1: return sw_loadstack_BR755_PTSO_GA_REV;
-        return sw_loadstack_BR755_PTSOD_GA_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR756_PP_TfW, vehicle_is_reversed) {
-    1: spriteset_BR755_PP_TfW_REV;
-        spriteset_BR755_PP_TfW; }
 
 // FX effects
 switch(FEAT_TRAINS, SELF, sw_FX_BR755_3_Diesel, position_in_vehid_chain % 10) {
@@ -731,7 +607,8 @@ item (FEAT_TRAINS, item_BR755_3, 7550) {
         // common properties
         name:                           string(STR_NAME_BR755_3);
         // variant_group:                  ; // unit ID or item
-		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);
+
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2018,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -811,27 +688,27 @@ switch(FEAT_TRAINS, SELF, sw_FX_BR755_4, tile_powers_railtype("ELRL")) {
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR755_4_GA, position_in_articulated_veh % 13) {
-	1: sw_reverse_BR755_DMSO_DMSOB_GA;
-    4: sw_reverse_BR755_PTSO_PTSOD_GA;
-    6: sw_reverse_BR755_PP_GA;
-    8: sw_reverse_BR755_PTSOD_PTSO_GA;
-    11: sw_reverse_BR755_DMSOB_DMSO_GA;
+	1: sw_loadstack_BR755_DMSO_GA;
+    4: sw_loadstack_BR755_PTSO_GA;
+    6: spriteset_BR755_PP_GA;
+    8: sw_loadstack_BR755_PTSOD_GA_REV;
+    11: sw_loadstack_BR755_DMSOB_GA_REV;
 	    spriteset_empty;
 }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR755_4_GA_Pride, position_in_articulated_veh % 13) {
-	1: sw_reverse_BR755_DMSO_DMSOB_GA_Pride;
-    4: sw_reverse_BR755_PTSO_PTSOD_GA;
-    6: sw_reverse_BR755_PP_GA;
-    8: sw_reverse_BR755_PTSOD_PTSO_GA;
-    11: sw_reverse_BR755_DMSOB_DMSO_GA_Pride;
+	1: sw_loadstack_BR755_DMSO_GA_Pride;
+    4: sw_loadstack_BR755_PTSO_GA;
+    6: spriteset_BR755_PP_GA;
+    8: sw_loadstack_BR755_PTSOD_GA_REV;
+    11: sw_loadstack_BR755_DMSOB_GA_Pride_REV;
 	    spriteset_empty;
 }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR756_1_TfW, position_in_articulated_veh % 13) {
 	1: sw_loadstack_BR755_231_756_DMSO_TfW;
     4: sw_loadstack_BR756_PTSO_TfW;
-    6: sw_reverse_BR756_PP_TfW;
+    6: spriteset_BR755_PP_TfW;
     8: sw_loadstack_BR756_PTSO_TfW_REV;
     11: sw_loadstack_BR755_231_756_DMSO_TfW_REV;
 	    spriteset_empty;
@@ -857,9 +734,9 @@ switch(FEAT_TRAINS, SELF, sw_length_BR755_4, position_in_articulated_veh % 13) {
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR755_4, position_in_vehid_chain % 13) {
-    0: 135 * param_pax; // all the capacity - (vehid chain number)
+    0: 190 * param_pax; // all the capacity - (vehid chain number)
     1..12: 1 * param_pax;
-    // total 144
+    // total 202
 }
 
 // articulation switch
@@ -874,7 +751,7 @@ item (FEAT_TRAINS, item_BR755_4, 7551) {
         // common properties
         name:                           string(STR_NAME_BR755_4);
         variant_group:                  item_BR755_3; // unit ID or item
-		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB, VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2018,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -918,8 +795,8 @@ item (FEAT_TRAINS, item_BR755_4, 7551) {
         articulated_part:               sw_articulated_BR755_4;
         purchase_cargo_capacity:        return (15 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR755_4;
-        cost_factor:                    189;
-        running_cost_factor:            8660;
+        cost_factor:                    215;
+        running_cost_factor:            8689;
         cargo_subtype_text:             sw_BR755_cargo_subtype_text; 
         power:                          sw_power_BR755_4;
         colour_mapping:                 return PALETTE_CC_FIRST;
@@ -969,7 +846,7 @@ item (FEAT_TRAINS, item_BR756_0, 7560) {
         // common properties
         name:                           string(STR_NAME_BR756_0);
         // variant_group:                  ; // unit ID or item
-		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2021,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -1013,8 +890,8 @@ item (FEAT_TRAINS, item_BR756_0, 7560) {
         articulated_part:               sw_articulated_BR756_0;
         purchase_cargo_capacity:        return (11 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR756_0;
-        cost_factor:                    189;
-        running_cost_factor:            8660;
+        cost_factor:                    164;
+        running_cost_factor:            7675;
         cargo_subtype_text:             sw_BR756_cargo_subtype_text; 
         power:                          sw_power_BR756;
         colour_mapping:                 return PALETTE_CC_FIRST;
@@ -1052,7 +929,7 @@ item (FEAT_TRAINS, item_BR756_1, 7561) {
         // common properties
         name:                           string(STR_NAME_BR756_1);
         variant_group:                  item_BR756_0; // unit ID or item
-		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB, VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2021,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -1096,8 +973,8 @@ item (FEAT_TRAINS, item_BR756_1, 7561) {
         articulated_part:               sw_articulated_BR756_1;
         purchase_cargo_capacity:        return (12 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR756_1;
-        cost_factor:                    189;
-        running_cost_factor:            8660;
+        cost_factor:                    182;
+        running_cost_factor:            7694;
         cargo_subtype_text:             sw_BR756_cargo_subtype_text; 
         power:                          sw_power_BR756;
         colour_mapping:                 return PALETTE_CC_FIRST;
@@ -1113,7 +990,7 @@ item (FEAT_TRAINS, item_BR756_1, 7561) {
 switch(FEAT_TRAINS, SELF, sw_graphics_BR231_TfW, position_in_articulated_veh % 13) {
 	1: sw_loadstack_BR755_231_756_DMSO_TfW;
     4: sw_loadstack_BR755_231_TS_TfW_Loading;
-    6: sw_reverse_BR756_PP_TfW;
+    6: spriteset_BR755_PP_TfW;
     8: sw_loadstack_BR755_231_TS_TfW_Loading_REV;
     11: sw_loadstack_BR755_231_756_DMSO_TfW_REV;
 	    spriteset_empty;
@@ -1130,7 +1007,7 @@ switch(FEAT_TRAINS, SELF, sw_BR231_cargo_subtype_text, cargo_subtype){
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR231, position_in_vehid_chain % 13) {
-    0: 135 * param_pax; // all the capacity - (vehid chain number)
+    0: 158 * param_pax; // all the capacity - (vehid chain number)
     1..12: 1 * param_pax;
     // total 170
 }
@@ -1147,7 +1024,7 @@ item (FEAT_TRAINS, item_BR231, 2310) {
         // common properties
         name:                           string(STR_NAME_BR231);
         // variant_group:                  ; // unit ID or item
-		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2021,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -1189,10 +1066,10 @@ item (FEAT_TRAINS, item_BR231, 2310) {
         // internal code
         length:                         sw_length_BR755_4;
         articulated_part:               sw_articulated_BR231;
-        purchase_cargo_capacity:        return (11 * param_pax); // divide by number of articulated parts and floor
+        purchase_cargo_capacity:        return (13 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR231;
-        cost_factor:                    189;
-        running_cost_factor:            8660;
+        cost_factor:                    181;
+        running_cost_factor:            7007;
         cargo_subtype_text:             sw_BR231_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
 
