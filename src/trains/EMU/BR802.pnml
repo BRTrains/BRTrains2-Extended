@@ -631,23 +631,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR802_MS_HullTrains_Leading, [ STORE_TEMP
     1: spritegroup_BR802_MC_FirstGroup_Loading; }
 
 // basic sprite
-spriteset(spriteset_BR802_MS_HullTrains_Leading_REV, "gfx/EMU/BR802/BR802_MS_HullTrains_Leading_1x_8bpp.png")
-    { template_1558middletrains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR802_MS_HullTrains_Leading_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR802/BR802_MS_HullTrains_Leading_1x_32bpp.png", "gfx/EMU/BR802/BR802_MS_HullTrains_Leading_1x_mask.png")
-    { template_1558middletrains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR802_MS_HullTrains_Leading_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR802/BR802_MS_HullTrains_Leading_2x_32bpp.png", "gfx/EMU/BR802/BR802_MS_HullTrains_Leading_2x_mask.png")
-    { template_1558middletrains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR802_MS_HullTrains_Leading_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR802/BR802_MS_HullTrains_Leading_4x_32bpp.png", "gfx/EMU/BR802/BR802_MS_HullTrains_Leading_4x_mask.png")
-    { template_1558middletrains_REV_4x(0,0) }
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR802_MS_HullTrains_Leading_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR802_MS_HullTrains_Leading_REV;
-    1: spritegroup_BR802_MC_FirstGroup_Loading_REV; }
-
-// basic sprite
 spriteset(spriteset_BR802_MS_HullTrains_Middle, "gfx/EMU/BR802/BR802_MS_HullTrains_Middle_1x_8bpp.png")
     { template_1558middletrains_1x(0,0) }
 
@@ -663,6 +646,19 @@ spriteset(spriteset_BR802_MS_HullTrains_Middle, "gfx/EMU/BR802/BR802_MS_HullTrai
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR802_MS_HullTrains_Middle, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR802_MS_HullTrains_Middle;
     1: spritegroup_BR802_MC_FirstGroup_Loading; }
+
+// basic sprite
+spriteset(spriteset_BR802_MS_TPE_Var1, "gfx/EMU/BR802/BR802_MS_TPE_Var1_1x_8bpp.png")
+    { template_1558middletrains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR802_MS_TPE_Var1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR802/BR802_MS_TPE_Var1_1x_32bpp.png", "gfx/EMU/BR802/BR802_MS_TPE_Var1_1x_mask.png")
+    { template_1558middletrains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR802_MS_TPE_Var1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR802/BR802_MS_TPE_Var1_2x_32bpp.png", "gfx/EMU/BR802/BR802_MS_TPE_Var1_2x_mask.png")
+    { template_1558middletrains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR802_MS_TPE_Var1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR802/BR802_MS_TPE_Var1_4x_32bpp.png", "gfx/EMU/BR802/BR802_MS_TPE_Var1_4x_mask.png")
+    { template_1558middletrains_4x(0,0) }
 
 // basic sprite
 spriteset(spriteset_BR802_MS_TPE_Loading, "gfx/EMU/BR802/BR802_MS_TPE_Var1_Loading_1x_8bpp.png")
@@ -682,18 +678,9 @@ spritegroup spritegroup_BR802_MS_TPE_Loading {
     loaded: [spriteset_empty];
     loading: [spriteset_BR802_MS_TPE_Loading]; }
 
-// basic sprite
-spriteset(spriteset_BR802_MS_TPE_Var1_REV, "gfx/EMU/BR802/BR802_MS_TPE_Var1_1x_8bpp.png")
-    { template_1558middletrains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR802_MS_TPE_Var1_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR802/BR802_MS_TPE_Var1_1x_32bpp.png", "gfx/EMU/BR802/BR802_MS_TPE_Var1_1x_mask.png")
-    { template_1558middletrains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR802_MS_TPE_Var1_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR802/BR802_MS_TPE_Var1_2x_32bpp.png", "gfx/EMU/BR802/BR802_MS_TPE_Var1_2x_mask.png")
-    { template_1558middletrains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR802_MS_TPE_Var1_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR802/BR802_MS_TPE_Var1_4x_32bpp.png", "gfx/EMU/BR802/BR802_MS_TPE_Var1_4x_mask.png")
-    { template_1558middletrains_REV_4x(0,0) }
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR802_MS_TPE_Var1, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR802_MS_TPE_Var1;
+    1: spritegroup_BR802_MS_TPE_Loading; }
 
 spriteset(spriteset_BR802_MS_TPE_Loading_REV, "gfx/EMU/BR802/BR802_MS_TPE_Var1_Loading_1x_8bpp.png")
     { template_1558middletrains_REV_1x(0,0) }
@@ -711,10 +698,6 @@ spriteset(spriteset_BR802_MS_TPE_Loading_REV, "gfx/EMU/BR802/BR802_MS_TPE_Var1_L
 spritegroup spritegroup_BR802_MS_TPE_Loading_REV {  
     loaded: [spriteset_empty];
     loading: [spriteset_BR802_MS_TPE_Loading_REV]; }
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR802_MS_TPE_Var1_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR802_MS_TPE_Var1_REV;
-    1: spritegroup_BR802_MS_TPE_Loading_REV; }
 
 // basic sprite
 spriteset(spriteset_BR802_MS_TPE_Var2, "gfx/EMU/BR802/BR802_MS_TPE_Var2_1x_8bpp.png")
@@ -734,21 +717,21 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR802_MS_TPE_Var2, [ STORE_TEMP((getbits(
     1: spritegroup_BR802_MS_TPE_Loading; }
 
 // basic sprite
-spriteset(spriteset_BR802_MS_TPE_Var3, "gfx/EMU/BR802/BR802_MS_TPE_Var3_1x_8bpp.png")
-    { template_1558middletrains_1x(0,0) }
+spriteset(spriteset_BR802_MS_TPE_Var3_REV, "gfx/EMU/BR802/BR802_MS_TPE_Var3_1x_8bpp.png")
+    { template_1558middletrains_REV_1x(0,0) }
 
-    alternative_sprites(spriteset_BR802_MS_TPE_Var3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR802/BR802_MS_TPE_Var3_1x_32bpp.png", "gfx/EMU/BR802/BR802_MS_TPE_Var3_1x_mask.png")
-    { template_1558middletrains_1x(0,0) }
+    alternative_sprites(spriteset_BR802_MS_TPE_Var3_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR802/BR802_MS_TPE_Var3_1x_32bpp.png", "gfx/EMU/BR802/BR802_MS_TPE_Var3_1x_mask.png")
+    { template_1558middletrains_REV_1x(0,0) }
 
-    alternative_sprites(spriteset_BR802_MS_TPE_Var3, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR802/BR802_MS_TPE_Var3_2x_32bpp.png", "gfx/EMU/BR802/BR802_MS_TPE_Var3_2x_mask.png")
-    { template_1558middletrains_2x(0,0) }
+    alternative_sprites(spriteset_BR802_MS_TPE_Var3_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR802/BR802_MS_TPE_Var3_2x_32bpp.png", "gfx/EMU/BR802/BR802_MS_TPE_Var3_2x_mask.png")
+    { template_1558middletrains_REV_2x(0,0) }
 
-    alternative_sprites(spriteset_BR802_MS_TPE_Var3, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR802/BR802_MS_TPE_Var3_4x_32bpp.png", "gfx/EMU/BR802/BR802_MS_TPE_Var3_4x_mask.png")
-    { template_1558middletrains_4x(0,0) }
+    alternative_sprites(spriteset_BR802_MS_TPE_Var3_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR802/BR802_MS_TPE_Var3_4x_32bpp.png", "gfx/EMU/BR802/BR802_MS_TPE_Var3_4x_mask.png")
+    { template_1558middletrains_REV_4x(0,0) }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR802_MS_TPE_Var3, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR802_MS_TPE_Var3;
-    1: spritegroup_BR802_MS_TPE_Loading; }
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR802_MS_TPE_Var3_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR802_MS_TPE_Var3_REV;
+    1: spritegroup_BR802_MS_TPE_Loading_REV; }
 
 // basic sprite
 spriteset(spriteset_BR802_TS_GWR_Leading, "gfx/EMU/BR802/BR802_TS_GWR_Leading_1x_8bpp.png")
@@ -834,9 +817,9 @@ switch(FEAT_TRAINS, SELF, sw_graphics_BR802_2_TPE, position_in_articulated_veh %
         
 switch(FEAT_TRAINS, SELF, sw_graphics_BR802_2_TPE_Pride, position_in_articulated_veh % 15) {
     1:  sw_loadstack_BR802_DPTS_TPE_Pride;
-    4:  sw_loadstack_BR802_MS_TPE_Var3;
+    4:  sw_loadstack_BR802_MS_TPE_Var1;
     7:  sw_loadstack_BR802_MS_TPE_Var2;
-    10: sw_loadstack_BR802_MS_TPE_Var1_REV;
+    10: sw_loadstack_BR802_MS_TPE_Var3_REV;
     13: sw_loadstack_BR802_DPTF_TPE_Pride_REV;
         spriteset_empty; }
         
@@ -947,7 +930,7 @@ item (FEAT_TRAINS, item_BR802_0, 8020) {
         refit_cost:                     0;
         track_type:                     [RAIL, ELRL];
         power:                          3640 hp;
-        weight:                         221 ton;
+        weight:                         243 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
         air_drag_coefficient:           0.05;
@@ -1021,7 +1004,7 @@ item (FEAT_TRAINS, item_BR802_1, 8021) {
         refit_cost:                     0;
         track_type:                     [RAIL, ELRL];
         power:                          3640 hp;
-        weight:                         221 ton;
+        weight:                         438 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
         air_drag_coefficient:           0.05;
@@ -1094,7 +1077,7 @@ item (FEAT_TRAINS, item_BR802_2, 8022) {
         refit_cost:                     0;
         track_type:                     [RAIL, ELRL];
         power:                          3640 hp;
-        weight:                         221 ton;
+        weight:                         243 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
         air_drag_coefficient:           0.05;
@@ -1167,7 +1150,7 @@ item (FEAT_TRAINS, item_BR802_3, 8023) {
         refit_cost:                     0;
         track_type:                     [RAIL, ELRL];
         power:                          3640 hp;
-        weight:                         221 ton;
+        weight:                         243 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
         air_drag_coefficient:           0.05;
@@ -1188,8 +1171,8 @@ item (FEAT_TRAINS, item_BR802_3, 8023) {
         speed:                          sw_speed_BR800() * 1609 / 1000;  
         purchase_cargo_capacity:        return (21 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR802_3;
-        cost_factor:                    267;
-        running_cost_factor:            9893;
+        cost_factor:                    286;
+        running_cost_factor:            9913;
         cargo_subtype_text:             sw_BR802_3_cargo_subtype_text; 
         power:                          sw_power_BR802_5car;
         colour_mapping:                 return PALETTE_CC_FIRST;

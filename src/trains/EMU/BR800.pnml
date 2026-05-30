@@ -828,7 +828,7 @@ item (FEAT_TRAINS, item_BR800_0, 8000) {
         refit_cost:                     0;
         track_type:                     [RAIL, ELRL];
         power:                          3640 hp;
-        weight:                         221 ton;
+        weight:                         243 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
         air_drag_coefficient:           0.06;
@@ -907,7 +907,7 @@ item (FEAT_TRAINS, item_BR800_1, 8001) {
         refit_cost:                     0;
         track_type:                     [RAIL, ELRL];
         power:                          6070 hp;
-        weight:                         398 ton;
+        weight:                         438 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
         air_drag_coefficient:           0.06;
@@ -986,7 +986,7 @@ item (FEAT_TRAINS, item_BR800_2, 8002) {
         refit_cost:                     0;
         track_type:                     [RAIL, ELRL];
         power:                          3640 hp;
-        weight:                         221 ton;
+        weight:                         243 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
         air_drag_coefficient:           0.06;
@@ -1090,7 +1090,7 @@ item (FEAT_TRAINS, item_BR801_1, 8011) {
         refit_cost:                     0;
         track_type:                     ELRL;
         power:                          3640 hp;
-        weight:                         221 ton;
+        weight:                         243 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
         air_drag_coefficient:           0.06;
@@ -1160,7 +1160,7 @@ item (FEAT_TRAINS, item_BR801_2, 8012) {
         refit_cost:                     0;
         track_type:                     ELRL;
         power:                          6070 hp;
-        weight:                         398 ton;
+        weight:                         438 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
         air_drag_coefficient:           0.06;
