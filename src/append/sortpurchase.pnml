@@ -269,6 +269,7 @@ sort(FEAT_TRAINS, [
         item_RCH_1927_Van,
     item_Milk_Tank,
     // GWR Wagons
+    item_GWR_Open_C,
     item_GWR_SiphonG_O11,
     item_GWR_Brake_Van_Toad,
     // SR Wagons

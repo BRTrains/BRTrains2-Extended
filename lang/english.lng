@@ -1414,6 +1414,9 @@ STR_NAME_RCH_1927_Van           :RCH 1927 Spec Van
 str_RCH_1927_liveries           :Grey, Bauxite, Private Owners
 
 # GWR Wagons
+STR_NAME_GWR_Open_C             :GWR "Open C" Open Wagon
+str_GWR_Open_C_liveries         :GWR Grey, BR Bauxite, BR Grey, Private Owners
+
 STR_NAME_GWR_Mink_G             :GWR "Mink G" Goods Van
 str_GWR_Mink_G_liveries         :GWR Grey, BR Bauxite
 
@@ -1797,6 +1800,7 @@ str_GWRGreen_UnlinedFull        : (GWR - Unlined Green, full lettering)
 str_GWRGreen_UnlinedShirtbutton : (GWR - Unlined Green, Shirtbutton)
 str_GWRPride                    : (GWR - Pride)
 str_GWRGreenUn					: (GWR - Green Unbranded)
+str_GWRGrey                     : (GWR - Grey)
 str_GWT                         : (Great Western Trains)
 str_HansonHall                  : (Hanson & Hall)
 str_HarryNeedle					: (Harry Needle Railroad)
@@ -1901,6 +1905,7 @@ str_ONE							: (One)
 str_ONEChapelf					: (One - Chapelfield)
 str_ONEGhost					: (One - Ghost White)
 str_ONETrans					: (One - Transitional)
+str_PLA                         : (Port of London Authority)
 str_Police						: (Police)
 str_PPMProto                    : (Parry People Mover - Prototype)
 str_Porterbrook					: (Porterbrook - Purple)

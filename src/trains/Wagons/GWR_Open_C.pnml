@@ -1,0 +1,436 @@
+// basic sprite
+spriteset(spriteset_GWR_Open_C_BR_Bauxite, "gfx/Wagons/GWR_Open_C/GWR_Open_C_BR_Bauxite_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_BR_Bauxite, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_BR_Bauxite_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_BR_Bauxite_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_BR_Bauxite, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_BR_Bauxite_2x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_BR_Bauxite_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_BR_Bauxite, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_BR_Bauxite_4x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_BR_Bauxite_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_GWR_Open_C_BR_Grey, "gfx/Wagons/GWR_Open_C/GWR_Open_C_BR_Grey_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_BR_Grey, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_BR_Grey_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_BR_Grey_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_BR_Grey, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_BR_Grey_2x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_BR_Grey_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_BR_Grey, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_BR_Grey_4x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_BR_Grey_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_GWR_Open_C_BR_Grey_purchase, "gfx/Wagons/GWR_Open_C/GWR_Open_C_BR_Grey_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_BR_Grey_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_BR_Grey_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_BR_Grey_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_GWR_Open_C_GWR_Grey, "gfx/Wagons/GWR_Open_C/GWR_Open_C_GWR_Grey_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_GWR_Grey, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_GWR_Grey_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_GWR_Grey_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_GWR_Grey, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_GWR_Grey_2x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_GWR_Grey_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_GWR_Grey, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_GWR_Grey_4x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_GWR_Grey_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_GWR_Open_C_GWR_Grey_purchase, "gfx/Wagons/GWR_Open_C/GWR_Open_C_GWR_Grey_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_GWR_Grey_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_GWR_Grey_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_GWR_Grey_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_GWR_Open_C_PLA, "gfx/Wagons/GWR_Open_C/GWR_Open_C_PLA_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_PLA, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_PLA_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_PLA_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_PLA, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_PLA_2x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_PLA_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_PLA, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_PLA_4x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_PLA_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_GWR_Open_C_Beam_100, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Beam_100_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Beam_100, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Beam_100_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Beam_100_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Beam_100, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Beam_100_2x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Beam_100_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Beam_100, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Beam_100_4x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Beam_100_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_GWR_Open_C_Beam_50, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Beam_50_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Beam_50, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Beam_50_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Beam_50_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Beam_50, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Beam_50_2x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Beam_50_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Beam_50, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Beam_50_4x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Beam_50_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+spritegroup spritegroup_GWR_Open_C_Beams {
+    loaded: [spriteset_empty, spriteset_GWR_Open_C_Beam_50, spriteset_GWR_Open_C_Beam_100];
+    loading: [spriteset_empty, spriteset_GWR_Open_C_Beam_50, spriteset_GWR_Open_C_Beam_100]; }
+
+spriteset(spriteset_GWR_Open_C_Bulk, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Bulk_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Bulk, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Bulk_2x_8bpp.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Bulk, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Bulk_4x_8bpp.png")
+    { template_58trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_GWR_Open_C_Bulk {  
+    loaded: [spriteset_empty, spriteset_GWR_Open_C_Bulk];
+    loading: [spriteset_empty, spriteset_GWR_Open_C_Bulk]; }
+
+spriteset(spriteset_GWR_Open_C_Box_1, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Box_1_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Box_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Box_1_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Box_1_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Box_1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Box_1_2x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Box_1_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Box_1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Box_1_4x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Box_1_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_GWR_Open_C_Box_1 {  
+    loaded: [spriteset_empty, spriteset_GWR_Open_C_Box_1];
+    loading: [spriteset_empty, spriteset_GWR_Open_C_Box_1]; }
+
+spriteset(spriteset_GWR_Open_C_Box_2, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Box_2_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Box_2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Box_2_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Box_2_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Box_2, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Box_2_2x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Box_2_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Box_2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Box_2_4x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Box_2_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_GWR_Open_C_Box_2 {  
+    loaded: [spriteset_empty, spriteset_GWR_Open_C_Box_2];
+    loading: [spriteset_empty, spriteset_GWR_Open_C_Box_2]; }
+
+random_switch(FEAT_TRAINS, SELF, random_choose_GWR_Open_C_Box, bitmask(TRIGGER_VEHICLE_UNLOAD_ALL, TRIGGER_VEHICLE_NEW_LOAD)) {
+    1: spritegroup_GWR_Open_C_Box_1;
+    2: spritegroup_GWR_Open_C_Box_2; }
+
+spriteset(spriteset_GWR_Open_C_Logs_100, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Logs_100_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Logs_100, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Logs_100_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Logs_100_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Logs_100, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Logs_100_2x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Logs_100_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Logs_100, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Logs_100_4x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Logs_100_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+spriteset(spriteset_GWR_Open_C_Logs_50, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Logs_50_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Logs_50, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Logs_50_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Logs_50_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Logs_50, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Logs_50_2x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Logs_50_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Logs_50, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Logs_50_4x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Logs_50_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_GWR_Open_C_Logs {  
+    loaded: [spriteset_empty, spriteset_GWR_Open_C_Logs_50, spriteset_GWR_Open_C_Logs_100];
+    loading: [spriteset_empty, spriteset_GWR_Open_C_Logs_50, spriteset_GWR_Open_C_Logs_100]; }
+
+// basic sprite
+spriteset(spriteset_GWR_Open_C_Pipes_1, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Pipes_1_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Pipes_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Pipes_1_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Pipes_1_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Pipes_1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Pipes_1_2x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Pipes_1_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Pipes_1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Pipes_1_4x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Pipes_1_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+spritegroup spritegroup_GWR_Open_C_Pipes_1 {
+    loaded: [spriteset_empty, spriteset_GWR_Open_C_Pipes_1];
+    loading: [spriteset_empty, spriteset_GWR_Open_C_Pipes_1]; }
+
+// basic sprite
+spriteset(spriteset_GWR_Open_C_Pipes_2, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Pipes_2_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Pipes_2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Pipes_2_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Pipes_2_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Pipes_2, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Pipes_2_2x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Pipes_2_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Pipes_2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Pipes_2_4x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Pipes_2_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+spritegroup spritegroup_GWR_Open_C_Pipes_2 {
+    loaded: [spriteset_empty, spriteset_GWR_Open_C_Pipes_2];
+    loading: [spriteset_empty, spriteset_GWR_Open_C_Pipes_2]; }
+
+random_switch(FEAT_TRAINS, SELF, random_choose_GWR_Open_C_Pipes, bitmask(TRIGGER_VEHICLE_UNLOAD_ALL, TRIGGER_VEHICLE_NEW_LOAD)) {
+    1: spritegroup_GWR_Open_C_Pipes_1;
+    2: spritegroup_GWR_Open_C_Pipes_2; }
+
+spriteset(spriteset_GWR_Open_C_Steel_100, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Steel_100_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Steel_100, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Steel_100_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Steel_100_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Steel_100, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Steel_100_2x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Steel_100_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Steel_100, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Steel_100_4x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Steel_100_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+spriteset(spriteset_GWR_Open_C_Steel_50, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Steel_50_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Steel_50, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Steel_50_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Steel_50_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Steel_50, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Steel_50_2x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Steel_50_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Steel_50, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Steel_50_4x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Steel_50_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_GWR_Open_C_Steel {  
+    loaded: [spriteset_empty, spriteset_GWR_Open_C_Steel_50, spriteset_GWR_Open_C_Steel_100];
+    loading: [spriteset_empty, spriteset_GWR_Open_C_Steel_50, spriteset_GWR_Open_C_Steel_100]; }
+
+spriteset(spriteset_GWR_Open_C_Tarp_1, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Tarp_1_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Tarp_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Tarp_1_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Tarp_1_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Tarp_1, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Tarp_1_2x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Tarp_1_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Tarp_1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Tarp_1_4x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Tarp_1_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_GWR_Open_C_Tarp_1 {  
+    loaded: [spriteset_empty, spriteset_GWR_Open_C_Tarp_1];
+    loading: [spriteset_empty, spriteset_GWR_Open_C_Tarp_1]; }
+
+spriteset(spriteset_GWR_Open_C_Tarp_2, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Tarp_2_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Tarp_2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Tarp_2_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Tarp_2_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Tarp_2, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Tarp_2_2x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Tarp_2_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Tarp_2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Tarp_2_4x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Tarp_2_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_GWR_Open_C_Tarp_2 {  
+    loaded: [spriteset_empty, spriteset_GWR_Open_C_Tarp_2];
+    loading: [spriteset_empty, spriteset_GWR_Open_C_Tarp_2]; }
+
+random_switch(FEAT_TRAINS, SELF, random_choose_GWR_Open_C_Tarp, bitmask(TRIGGER_VEHICLE_UNLOAD_ALL, TRIGGER_VEHICLE_NEW_LOAD)) {
+    1: spritegroup_GWR_Open_C_Tarp_1;
+    2: spritegroup_GWR_Open_C_Tarp_2; }
+
+// basic sprite
+spriteset(spriteset_GWR_Open_C_Timber_100, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Timber_100_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Timber_100, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Timber_100_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Timber_100_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Timber_100, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Timber_100_2x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Timber_100_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Timber_100, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Timber_100_4x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Timber_100_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_GWR_Open_C_Timber_50, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Timber_50_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Timber_50, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Timber_50_1x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Timber_50_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Timber_50, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Timber_50_2x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Timber_50_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_GWR_Open_C_Timber_50, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/GWR_Open_C/GWR_Open_C_Timber_50_4x_32bpp.png", "gfx/Wagons/GWR_Open_C/GWR_Open_C_Timber_50_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+spritegroup spritegroup_GWR_Open_C_Timber {
+    loaded: [spriteset_empty, spriteset_GWR_Open_C_Timber_50, spriteset_GWR_Open_C_Timber_100];
+    loading: [spriteset_empty, spriteset_GWR_Open_C_Timber_50, spriteset_GWR_Open_C_Timber_100]; }
+
+
+switch(FEAT_TRAINS, SELF, sw_GWR_Open_C_purchase_sprite, current_year) {
+    1948..1968:  return spriteset_GWR_Open_C_GWR_Grey_purchase;
+        spriteset_GWR_Open_C_BR_Grey_purchase; }
+
+switch(FEAT_TRAINS, SELF, sw_GWR_Open_C_cargo_type, cargo_type_in_veh) {
+    STAL: return spritegroup_GWR_Open_C_Steel;
+    ALUM: return spritegroup_GWR_Open_C_Steel;
+    STCB: return spritegroup_GWR_Open_C_Steel;
+    STST: return spritegroup_GWR_Open_C_Steel;
+    STSH: return spritegroup_GWR_Open_C_Steel;
+
+    POWR: return random_choose_GWR_Open_C_Box;
+    VENG: return random_choose_GWR_Open_C_Box;
+    VPTS: return random_choose_GWR_Open_C_Box;
+    GOOD: return random_choose_GWR_Open_C_Box;
+    GLAS: return random_choose_GWR_Open_C_Box;
+
+    ENSP: return random_choose_GWR_Open_C_Box;
+    FMSP: return random_choose_GWR_Open_C_Box;
+
+    STEL: return spritegroup_GWR_Open_C_Beams;
+    STSE: return spritegroup_GWR_Open_C_Beams;
+
+    PIPE: return random_choose_GWR_Open_C_Pipes;
+
+    BDMT: return spritegroup_GWR_Open_C_Timber;
+    WDPR: return spritegroup_GWR_Open_C_Timber;
+
+    WOOD: return spritegroup_GWR_Open_C_Logs;
+
+    MNSP: return random_choose_GWR_Open_C_Box;
+    MPTS: return random_choose_GWR_Open_C_Box;
+    PAPR: return random_choose_GWR_Open_C_Box;
+
+        return random_choose_GWR_Open_C_Tarp;
+}
+
+switch(FEAT_TRAINS, SELF, sw_GWR_Open_C_Bulk, hasbit(cargo_classes, CC_BULK)) {
+    1:  spritegroup_GWR_Open_C_Bulk;
+        return sw_GWR_Open_C_cargo_type; }
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_GWR_Open_C_livery, cargo_subtype) {
+    0:  spriteset_GWR_Open_C_GWR_Grey;
+    1:  spriteset_GWR_Open_C_BR_Bauxite;
+    2:  spriteset_GWR_Open_C_BR_Grey;
+    3:  spriteset_GWR_Open_C_PLA; }													
+
+switch(FEAT_TRAINS, SELF, sw_spritestack_GWR_Open_C, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
+    0: sw_GWR_Open_C_livery;
+    1: return sw_GWR_Open_C_Bulk; }
+
+// livery name refit switch
+switch(FEAT_TRAINS, SELF, sw_GWR_Open_C_cargo_subtype_text, cargo_subtype){
+	0:	return string(str_GWRGrey);
+    1:  return string(str_BRBauxite);
+    2:  return string(str_BRGrey);
+    3:  return string(str_PLA);
+       return CB_RESULT_NO_TEXT;
+}
+
+// speed switch
+switch(FEAT_TRAINS, SELF, sw_speed_GWR_Open_C, param_max_speed) {
+    0: 40; // operational speed
+    1: 60; // design speed
+}
+
+// unit definition
+item (FEAT_TRAINS, item_GWR_Open_C, 11816) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_GWR_Open_C);
+        // variant_group:                  ; // unit ID or item
+
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1913,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		// refittable_cargo_classes:        bitmask(CC_PASSENGERS);
+        // refittable_cargo_classes:        bitmask(CC_EXPRESS);
+        // refittable_cargo_classes:        bitmask(CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_HAZARDOUS, CC_COVERED, CC_OVERSIZED, CC_POWDERIZED, CC_NON_POURABLE, CC_NEO_BULK, CC_POTABLE, CC_NON_POTABLE);	
+        // non_refittable_cargo_classes:    bitmask();
+        // cargo_allow_refit:               [PASS, TOUR];
+        // cargo_allow_refit:               [PASS, GOOD];
+        cargo_allow_refit:              [BDMT, COPR, CSTI, ENSP, FMSP, SCMT, VEHI, WDPR, ZINC, ALUM, IRON, METL, MNSP, MPTS, MNSP, PIPE, STAL, STCB, STSE, STSH, STST, STWR, TWOD, VBOD, VENG, VPTS, BATT];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        cargo_capacity:                 15 * param_freight;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          40 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        weight:                         8 ton;
+        dual_headed:                    0;
+        length:                         5;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_spritestack_GWR_Open_C;
+        purchase:                       sw_GWR_Open_C_purchase_sprite;
+
+        // internal code
+        speed:                          sw_speed_GWR_Open_C() * 1609 / 1000;  
+        cost_factor:                    266;
+        running_cost_factor:            375;
+        cargo_subtype_text:             sw_GWR_Open_C_cargo_subtype_text; 
+        colour_mapping:                 switch_generic_recolour;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_wagon,
+                                                    string(str_GWR_Open_C_liveries)));
+    }
+}
+
