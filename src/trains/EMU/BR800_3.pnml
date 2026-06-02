@@ -114,18 +114,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR800_3_MF_GWR_Leading, [ STORE_TEMP((get
     1: spritegroup_BR800_3_MF_GWR_Leading_Loading; }
 
 // basic sprite
-spriteset(spriteset_BR800_3_MF_GWR_Leading_REV, "gfx/EMU/BR800_3/BR800_3_MF_GWR_Leading_1x_8bpp.png")
-    { template_1558middletrains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR800_3_MF_GWR_Leading_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR800_3/BR800_3_MF_GWR_Leading_1x_32bpp.png", "gfx/EMU/BR800_3/BR800_3_MF_GWR_Leading_1x_mask.png")
-    { template_1558middletrains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR800_3_MF_GWR_Leading_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR800_3/BR800_3_MF_GWR_Leading_2x_32bpp.png", "gfx/EMU/BR800_3/BR800_3_MF_GWR_Leading_2x_mask.png")
-    { template_1558middletrains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR800_3_MF_GWR_Leading_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR800_3/BR800_3_MF_GWR_Leading_4x_32bpp.png", "gfx/EMU/BR800_3/BR800_3_MF_GWR_Leading_4x_mask.png")
-    { template_1558middletrains_REV_4x(0,0) }
-
 spriteset(spriteset_BR800_3_MF_GWR_Leading_Loading_REV, "gfx/EMU/BR800_3/BR800_3_MF_GWR_Leading_Loading_1x_8bpp.png")
     { template_1558middletrains_REV_1x(0,0) }
 
@@ -143,10 +131,6 @@ spritegroup spritegroup_BR800_3_MF_GWR_Leading_Loading_REV {
     loaded: [spriteset_empty];
     loading: [spriteset_BR800_3_MF_GWR_Leading_Loading_REV]; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR800_3_MF_GWR_Leading_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR800_3_MF_GWR_Leading_REV;
-    1: spritegroup_BR800_3_MF_GWR_Leading_Loading_REV; }
-
 // basic sprite
 spriteset(spriteset_BR800_3_MS_GWR_Leading, "gfx/EMU/BR800_3/BR800_3_MS_GWR_Leading_1x_8bpp.png")
     { template_1558middletrains_1x(0,0) }
@@ -160,26 +144,9 @@ spriteset(spriteset_BR800_3_MS_GWR_Leading, "gfx/EMU/BR800_3/BR800_3_MS_GWR_Lead
     alternative_sprites(spriteset_BR800_3_MS_GWR_Leading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR800_3/BR800_3_MS_GWR_Leading_4x_32bpp.png", "gfx/EMU/BR800_3/BR800_3_MS_GWR_Leading_4x_mask.png")
     { template_1558middletrains_4x(0,0) }
 
-// basic sprite
-spriteset(spriteset_BR800_3_MS_GWR_Leading_REV, "gfx/EMU/BR800_3/BR800_3_MS_GWR_Leading_1x_8bpp.png")
-    { template_1558middletrains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR800_3_MS_GWR_Leading_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR800_3/BR800_3_MS_GWR_Leading_1x_32bpp.png", "gfx/EMU/BR800_3/BR800_3_MS_GWR_Leading_1x_mask.png")
-    { template_1558middletrains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR800_3_MS_GWR_Leading_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR800_3/BR800_3_MS_GWR_Leading_2x_32bpp.png", "gfx/EMU/BR800_3/BR800_3_MS_GWR_Leading_2x_mask.png")
-    { template_1558middletrains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR800_3_MS_GWR_Leading_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR800_3/BR800_3_MS_GWR_Leading_4x_32bpp.png", "gfx/EMU/BR800_3/BR800_3_MS_GWR_Leading_4x_mask.png")
-    { template_1558middletrains_REV_4x(0,0) }
-
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR800_3_MS_GWR_Leading, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR800_3_MS_GWR_Leading;
     1: spritegroup_BR800_3_MF_GWR_Leading_Loading; }
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR800_3_MS_GWR_Leading_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR800_3_MS_GWR_Leading_REV;
-    1: spritegroup_BR800_3_MF_GWR_Leading_Loading_REV; }
 
 // basic sprite
 spriteset(spriteset_BR800_3_MS_GWR_Leading_NoBatteries, "gfx/EMU/BR800_3/BR800_3_MS_GWR_Leading_NoBatteries_1x_8bpp.png")
@@ -337,7 +304,7 @@ item (FEAT_TRAINS, item_BR800_3, 8003) {
         refit_cost:                     0;
         track_type:                     [RAIL, ELRL];
         power:                          6070 hp;
-        weight:                         398 ton;
+        weight:                         438 ton;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         dual_headed:                    0;
         air_drag_coefficient:           0.06;
