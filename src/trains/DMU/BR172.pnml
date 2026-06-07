@@ -370,23 +370,6 @@ switch(FEAT_TRAINS, SELF, sw_FX_BR172_2car_Diesel, position_in_vehid_chain % 6) 
     2..3: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -1, DISABLE_WAGON_POWER);
         return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
-// reverse sprite 
-switch(FEAT_TRAINS, PARENT, sw_BR172_0_1_DMSO_DMSOD_WMR, vehicle_is_reversed) {
-    1:  sw_loadstack_BR172_0_1_DMSOD_WMR;
-        sw_loadstack_BR172_0_1_DMSO_WMR; }
-        
-switch(FEAT_TRAINS, PARENT, sw_BR172_0_1_DMSOD_DMSO_WMR, vehicle_is_reversed) {
-    1:  sw_loadstack_BR172_0_1_DMSO_WMR_REV;
-        sw_loadstack_BR172_0_1_DMSOD_WMR_REV; }
-        
-switch(FEAT_TRAINS, PARENT, sw_BR172_0_1_DMSO_DMSOD_Chiltern, vehicle_is_reversed) {
-    1:  sw_loadstack_BR172_0_1_DMSOD_Chiltern;
-        sw_loadstack_BR172_0_1_DMSO_Chiltern; }
-        
-switch(FEAT_TRAINS, PARENT, sw_BR172_0_1_DMSOD_DMSO_Chiltern, vehicle_is_reversed) {
-    1:  sw_loadstack_BR172_0_1_DMSO_Chiltern_REV;
-        sw_loadstack_BR172_0_1_DMSOD_Chiltern_REV; }
-
 // length switch
 switch(FEAT_TRAINS, SELF, sw_length_BR172_2car, position_in_articulated_veh % 6) {
 	1: 6;
@@ -400,13 +383,13 @@ switch(FEAT_TRAINS, SELF, sw_BR172_0_LO, position_in_vehid_chain % 6) {
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_BR172_1_Chiltern, position_in_vehid_chain % 6) {
-    1:  sw_BR172_0_1_DMSO_DMSOD_Chiltern;
-    4:  sw_BR172_0_1_DMSOD_DMSO_Chiltern;
+    1:  sw_loadstack_BR172_0_1_DMSO_Chiltern;
+    4:  sw_loadstack_BR172_0_1_DMSOD_Chiltern_REV;
         spriteset_empty; }
         
 switch(FEAT_TRAINS, SELF, sw_BR172_0_1_WMR, position_in_vehid_chain % 6) {
-    1:  sw_BR172_0_1_DMSO_DMSOD_WMR;
-    4:  sw_BR172_0_1_DMSOD_DMSO_WMR;
+    1:  sw_loadstack_BR172_0_1_DMSO_WMR;
+    4:  sw_loadstack_BR172_0_1_DMSOD_WMR_REV;
         spriteset_empty; }
 
 // livery switch
@@ -439,7 +422,7 @@ item (FEAT_TRAINS, item_BR172_0, 1770) {
         // common properties
         name:                           string(STR_NAME_BR172_0);
         // variant_group:                  ; // unit ID or item
-		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2010,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -527,7 +510,7 @@ item (FEAT_TRAINS, item_BR172_1, 1771) {
         // common properties
         name:                           string(STR_NAME_BR172_1);
         variant_group:                  item_BR172_0; // unit ID or item
-		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB, VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2010,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -867,25 +850,25 @@ switch(FEAT_TRAINS, PARENT, sw_BR172_2_3_MSO_WMR, vehicle_is_reversed) {
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_BR172_2_London_Midland, position_in_vehid_chain % 6) {
-    1:  sw_BR172_2_3_DMSO_DMSOD_London_Midland;
-    4:  sw_BR172_2_3_DMSOD_DMSO_London_Midland;
+    1:  sw_loadstack_BR172_2_3_DMSO_London_Midland;
+    4:  sw_loadstack_BR172_2_3_DMSOD_London_Midland;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_BR172_3_London_Midland, position_in_vehid_chain % 9) {
-    1:  sw_BR172_2_3_DMSO_DMSOD_London_Midland;
-    4:  sw_BR172_2_3_MSO_London_Midland;
-    7:  sw_BR172_2_3_DMSOD_DMSO_London_Midland;
+    1:  sw_loadstack_BR172_2_3_DMSO_London_Midland;
+    4:  sw_loadstack_BR172_2_3_MSO_London_Midland;
+    7:  sw_loadstack_BR172_2_3_DMSOD_London_Midland;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_BR172_2_WMR, position_in_vehid_chain % 6) {
-    1:  sw_BR172_2_3_DMSO_DMSOD_WMR;
-    4:  sw_BR172_2_3_DMSOD_DMSO_WMR;
+    1:  sw_loadstack_BR172_2_3_DMSO_WMR;
+    4:  sw_loadstack_BR172_2_3_DMSOD_WMR;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_BR172_3_WMR, position_in_vehid_chain % 9) {
-    1:  sw_BR172_2_3_DMSO_DMSOD_WMR;
-    4:  sw_BR172_2_3_MSO_WMR;
-    7:  sw_BR172_2_3_DMSOD_DMSO_WMR;
+    1:  sw_loadstack_BR172_2_3_DMSO_WMR;
+    4:  sw_loadstack_BR172_2_3_MSO_WMR;
+    7:  sw_loadstack_BR172_2_3_DMSOD_WMR;
         spriteset_empty; }
 
 // livery switch
@@ -922,7 +905,7 @@ item (FEAT_TRAINS, item_BR172_2, 1772) {
         // common properties
         name:                           string(STR_NAME_BR172_2);
         variant_group:                  item_BR172_0; // unit ID or item
-		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB, VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2010,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -1006,7 +989,7 @@ item (FEAT_TRAINS, item_BR172_3, 1773) {
         // common properties
         name:                           string(STR_NAME_BR172_3);
         variant_group:                  item_BR172_0; // unit ID or item
-		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB, VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2010,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
