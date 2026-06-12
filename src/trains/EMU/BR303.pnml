@@ -176,58 +176,6 @@ spriteset(spriteset_BR303_DTS_SPTE_REV, "gfx/EMU/BR303/BR303_DTS_SPTE_1x_8bpp.pn
     alternative_sprites(spriteset_BR303_DTS_SPTE_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR303/BR303_DTS_SPTE_4x_32bpp.png", "gfx/EMU/BR303/BR303_DTS_SPTE_4x_mask.png")
     { template_128trains_REV_4x(0,0) }
 
-// basic sprite
-spriteset(spriteset_BR303_PTMBS_BR_Blue_REV, "gfx/EMU/BR303/BR303_PTMBS_BR_Blue_1x_8bpp.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR303_PTMBS_BR_Blue_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR303/BR303_PTMBS_BR_Blue_1x_32bpp.png", "gfx/EMU/BR303/BR303_PTMBS_BR_Blue_1x_mask.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR303_PTMBS_BR_Blue_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR303/BR303_PTMBS_BR_Blue_2x_32bpp.png", "gfx/EMU/BR303/BR303_PTMBS_BR_Blue_2x_mask.png")
-    { template_128trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR303_PTMBS_BR_Blue_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR303/BR303_PTMBS_BR_Blue_4x_32bpp.png", "gfx/EMU/BR303/BR303_PTMBS_BR_Blue_4x_mask.png")
-    { template_128trains_REV_4x(0,0) }
-
-// basic sprite
-spriteset(spriteset_BR303_PTMBS_BR_BlueGrey_REV, "gfx/EMU/BR303/BR303_PTMBS_BR_BlueGrey_1x_8bpp.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR303_PTMBS_BR_BlueGrey_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR303/BR303_PTMBS_BR_BlueGrey_1x_32bpp.png", "gfx/EMU/BR303/BR303_PTMBS_BR_BlueGrey_1x_mask.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR303_PTMBS_BR_BlueGrey_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR303/BR303_PTMBS_BR_BlueGrey_2x_32bpp.png", "gfx/EMU/BR303/BR303_PTMBS_BR_BlueGrey_2x_mask.png")
-    { template_128trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR303_PTMBS_BR_BlueGrey_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR303/BR303_PTMBS_BR_BlueGrey_4x_32bpp.png", "gfx/EMU/BR303/BR303_PTMBS_BR_BlueGrey_4x_mask.png")
-    { template_128trains_REV_4x(0,0) }
-
-// basic sprite
-spriteset(spriteset_BR303_PTMBS_Caledonian_Blue_REV, "gfx/EMU/BR303/BR303_PTMBS_Caledonian_Blue_1x_8bpp.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR303_PTMBS_Caledonian_Blue_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR303/BR303_PTMBS_Caledonian_Blue_1x_32bpp.png", "gfx/EMU/BR303/BR303_PTMBS_Caledonian_Blue_1x_mask.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR303_PTMBS_Caledonian_Blue_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR303/BR303_PTMBS_Caledonian_Blue_2x_32bpp.png", "gfx/EMU/BR303/BR303_PTMBS_Caledonian_Blue_2x_mask.png")
-    { template_128trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR303_PTMBS_Caledonian_Blue_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR303/BR303_PTMBS_Caledonian_Blue_4x_32bpp.png", "gfx/EMU/BR303/BR303_PTMBS_Caledonian_Blue_4x_mask.png")
-    { template_128trains_REV_4x(0,0) }
-
-// basic sprite
-spriteset(spriteset_BR303_PTMBS_SPTE_REV, "gfx/EMU/BR303/BR303_PTMBS_SPTE_1x_8bpp.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR303_PTMBS_SPTE_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR303/BR303_PTMBS_SPTE_1x_32bpp.png", "gfx/EMU/BR303/BR303_PTMBS_SPTE_1x_mask.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR303_PTMBS_SPTE_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR303/BR303_PTMBS_SPTE_2x_32bpp.png", "gfx/EMU/BR303/BR303_PTMBS_SPTE_2x_mask.png")
-    { template_128trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR303_PTMBS_SPTE_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR303/BR303_PTMBS_SPTE_4x_32bpp.png", "gfx/EMU/BR303/BR303_PTMBS_SPTE_4x_mask.png")
-    { template_128trains_REV_4x(0,0) }
-
 // Loading sprites
 spriteset(spriteset_BR303_DTS_Loading, "gfx/EMU/BR303/BR303_DTS_Loading_1x_8bpp.png")
     { template_128trains_1x(0,0) }
@@ -277,22 +225,6 @@ spritegroup spritegroup_BR303_PTMBS_Loading {
     loaded: [spriteset_empty];
     loading: [spriteset_BR303_PTMBS_Loading]; }
 
-spriteset(spriteset_BR303_PTMBS_Loading_REV, "gfx/EMU/BR303/BR303_PTMBS_Loading_1x_8bpp.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR303_PTMBS_Loading_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR303/BR303_PTMBS_Loading_1x_32bpp.png", "gfx/EMU/BR303/BR303_PTMBS_Loading_1x_mask.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR303_PTMBS_Loading_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR303/BR303_PTMBS_Loading_2x_32bpp.png", "gfx/EMU/BR303/BR303_PTMBS_Loading_2x_mask.png")
-    { template_128trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR303_PTMBS_Loading_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR303/BR303_PTMBS_Loading_4x_32bpp.png", "gfx/EMU/BR303/BR303_PTMBS_Loading_4x_mask.png")
-    { template_128trains_REV_4x(0,0) }
-
-spritegroup spritegroup_BR303_PTMBS_Loading_REV {
-    loaded: [spriteset_empty];
-    loading: [spriteset_BR303_PTMBS_Loading_REV]; }
-
 // purchase sprite
 switch(FEAT_TRAINS, PARENT, sw_BR303_purchase_sprite, current_year) {
     1948..1965: spriteset_BR303_DTS_Caledonian_Blue_purchase;
@@ -313,14 +245,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR303_PTMBS_BR_Blue, [ STORE_TEMP((getbit
     0: spriteset_BR303_PTMBS_BR_Blue;
     1: spritegroup_BR303_PTMBS_Loading; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR303_PTMBS_BR_Blue_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR303_PTMBS_BR_Blue_REV;
-    1: spritegroup_BR303_PTMBS_Loading_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR303_PTMBS_BR_Blue, vehicle_is_reversed) {
-    0: sw_loadstack_BR303_PTMBS_BR_Blue;
-        sw_loadstack_BR303_PTMBS_BR_Blue_REV; }
-
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR303_DTS_BR_BlueGrey, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR303_DTS_BR_BlueGrey;
     1: spritegroup_BR303_DTS_Loading; }
@@ -333,14 +257,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR303_PTMBS_BR_BlueGrey, [ STORE_TEMP((ge
     0: spriteset_BR303_PTMBS_BR_BlueGrey;
     1: spritegroup_BR303_PTMBS_Loading; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR303_PTMBS_BR_BlueGrey_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR303_PTMBS_BR_BlueGrey_REV;
-    1: spritegroup_BR303_PTMBS_Loading_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR303_PTMBS_BR_BlueGrey, vehicle_is_reversed) {
-    0: sw_loadstack_BR303_PTMBS_BR_BlueGrey;
-        sw_loadstack_BR303_PTMBS_BR_BlueGrey_REV; }
-
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR303_DTS_Caledonian_Blue, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR303_DTS_Caledonian_Blue;
     1: spritegroup_BR303_DTS_Loading; }
@@ -352,14 +268,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR303_DTS_Caledonian_Blue_REV, [ STORE_TE
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR303_PTMBS_Caledonian_Blue, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR303_PTMBS_Caledonian_Blue;
     1: spritegroup_BR303_PTMBS_Loading; }
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR303_PTMBS_Caledonian_Blue_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR303_PTMBS_Caledonian_Blue_REV;
-    1: spritegroup_BR303_PTMBS_Loading_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR303_PTMBS_Caledonian_Blue, vehicle_is_reversed) {
-    0: sw_loadstack_BR303_PTMBS_Caledonian_Blue;
-        sw_loadstack_BR303_PTMBS_Caledonian_Blue_REV; }
         
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR303_DTS_SPTE, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR303_DTS_SPTE;
@@ -373,36 +281,28 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR303_PTMBS_SPTE, [ STORE_TEMP((getbits(e
     0: spriteset_BR303_PTMBS_SPTE;
     1: spritegroup_BR303_PTMBS_Loading; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR303_PTMBS_SPTE_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR303_PTMBS_SPTE_REV;
-    1: spritegroup_BR303_PTMBS_Loading_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR303_PTMBS_SPTE, vehicle_is_reversed) {
-    0: sw_loadstack_BR303_PTMBS_SPTE;
-        sw_loadstack_BR303_PTMBS_SPTE_REV; }
-
 // graphics switch
-switch(FEAT_TRAINS, SELF, sw_graphics_BR303_BR_Blue, position_in_articulated_veh % 12) {
+switch(FEAT_TRAINS, SELF, sw_graphics_BR303_BR_Blue, position_in_articulated_veh % 9) {
 	1:  sw_loadstack_BR303_DTS_BR_Blue;
-    4:  sw_reverse_BR303_PTMBS_BR_Blue;
+    4:  sw_loadstack_BR303_PTMBS_BR_Blue;
     7:  sw_loadstack_BR303_DTS_BR_Blue_REV;
 	    spriteset_empty; }
         
-switch(FEAT_TRAINS, SELF, sw_graphics_BR303_BR_BlueGrey, position_in_articulated_veh % 12) {
+switch(FEAT_TRAINS, SELF, sw_graphics_BR303_BR_BlueGrey, position_in_articulated_veh % 9) {
 	1:  sw_loadstack_BR303_DTS_BR_BlueGrey;
-    4:  sw_reverse_BR303_PTMBS_BR_BlueGrey;
+    4:  sw_loadstack_BR303_PTMBS_BR_BlueGrey;
     7:  sw_loadstack_BR303_DTS_BR_BlueGrey_REV;
 	    spriteset_empty; }
         
-switch(FEAT_TRAINS, SELF, sw_graphics_BR303_Caledonian_Blue, position_in_articulated_veh % 12) {
+switch(FEAT_TRAINS, SELF, sw_graphics_BR303_Caledonian_Blue, position_in_articulated_veh % 9) {
 	1:  sw_loadstack_BR303_DTS_Caledonian_Blue;
-    4:  sw_reverse_BR303_PTMBS_Caledonian_Blue;
+    4:  sw_loadstack_BR303_PTMBS_Caledonian_Blue;
     7:  sw_loadstack_BR303_DTS_Caledonian_Blue_REV;
 	    spriteset_empty; }
         
 switch(FEAT_TRAINS, SELF, sw_graphics_BR303_SPTE, position_in_articulated_veh % 9) {
 	1:  sw_loadstack_BR303_DTS_SPTE;
-    4:  sw_reverse_BR303_PTMBS_SPTE;
+    4:  sw_loadstack_BR303_PTMBS_SPTE;
     7:  sw_loadstack_BR303_DTS_SPTE_REV;
 	    spriteset_empty; }
 
@@ -453,7 +353,7 @@ item (FEAT_TRAINS, item_BR303, 3030) {
         // common properties
         name:                           string(STR_NAME_BR303);
         // variant_group:                  ; // unit ID or item
-		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(1959,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -521,7 +421,7 @@ item (FEAT_TRAINS, item_BR303_RB, 3031) {
         // common properties
         name:                           string(STR_NAME_BR303_RB);
         variant_group:                  item_BR303; // unit ID or item
-		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB, VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(1984,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;

@@ -23,38 +23,10 @@ spriteset(spriteset_BR710_panto_down, "gfx/EMU/BR710/BR710_panto_down_1x_8bpp.pn
     alternative_sprites(spriteset_BR710_panto_down, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR710/BR710_panto_down_4x_32bpp.png", "gfx/EMU/BR710/BR710_panto_down_4x_mask.png")
     { template_128trains_4x(0,0) }
 
-spriteset(spriteset_BR710_panto_up_REV, "gfx/EMU/BR710/BR710_panto_up_1x_8bpp.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR710_panto_up_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR710/BR710_panto_up_1x_32bpp.png", "gfx/EMU/BR710/BR710_panto_up_1x_mask.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR710_panto_up_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR710/BR710_panto_up_2x_32bpp.png", "gfx/EMU/BR710/BR710_panto_up_2x_mask.png")
-    { template_128trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR710_panto_up_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR710/BR710_panto_up_4x_32bpp.png", "gfx/EMU/BR710/BR710_panto_up_4x_mask.png")
-    { template_128trains_REV_4x(0,0) }
-
-spriteset(spriteset_BR710_panto_down_REV, "gfx/EMU/BR710/BR710_panto_down_1x_8bpp.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR710_panto_down_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR710/BR710_panto_down_1x_32bpp.png", "gfx/EMU/BR710/BR710_panto_down_1x_mask.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR710_panto_down_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR710/BR710_panto_down_2x_32bpp.png", "gfx/EMU/BR710/BR710_panto_down_2x_mask.png")
-    { template_128trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR710_panto_down_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR710/BR710_panto_down_4x_32bpp.png", "gfx/EMU/BR710/BR710_panto_down_4x_mask.png")
-    { template_128trains_REV_4x(0,0) }
-
 // dual mode switches							
 switch(FEAT_TRAINS, PARENT, sw_panto_BR710, tile_powers_railtype("ELRL")) {
     1: return spriteset_BR710_panto_up;
         return spriteset_BR710_panto_down; }
-
-switch(FEAT_TRAINS, PARENT, sw_panto_BR710_REV, tile_powers_railtype("ELRL")) {
-    1: return spriteset_BR710_panto_up_REV;
-        return spriteset_BR710_panto_down_REV; }
 
 // basic sprite
 spriteset(spriteset_BR710_DMSO_LO, "gfx/EMU/BR710/BR710_DMSO_LO_1x_8bpp.png")
@@ -212,28 +184,10 @@ spriteset(spriteset_BR710_PMSO_LO, "gfx/EMU/BR710/BR710_PMSO_LO_1x_8bpp.png")
     alternative_sprites(spriteset_BR710_PMSO_LO, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR710/BR710_PMSO_LO_4x_32bpp.png", "gfx/EMU/BR710/BR710_PMSO_LO_4x_mask.png")
     { template_128trains_4x(0,0) }
 
-// basic sprite
-spriteset(spriteset_BR710_PMSO_LO_REV, "gfx/EMU/BR710/BR710_PMSO_LO_1x_8bpp.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR710_PMSO_LO_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR710/BR710_PMSO_LO_1x_32bpp.png", "gfx/EMU/BR710/BR710_PMSO_LO_1x_mask.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR710_PMSO_LO_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR710/BR710_PMSO_LO_2x_32bpp.png", "gfx/EMU/BR710/BR710_PMSO_LO_2x_mask.png")
-    { template_128trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR710_PMSO_LO_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR710/BR710_PMSO_LO_4x_32bpp.png", "gfx/EMU/BR710/BR710_PMSO_LO_4x_mask.png")
-    { template_128trains_REV_4x(0,0) }
-
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR710_PMSO_LO, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR710_PMSO_LO;
     1: spritegroup_BR710_MSO_LO_Loading; 
     2: sw_panto_BR710; }
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR710_PMSO_LO_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR710_PMSO_LO_REV;
-    1: spritegroup_BR710_MSO_LO_Loading_REV; 
-    2: sw_panto_BR710_REV; }
 
 // FX effects
 switch(FEAT_TRAINS, SELF, sw_FX_BR710_1_2_Electric, position_in_vehid_chain % 12) { // rear catenary
@@ -244,24 +198,11 @@ switch(FEAT_TRAINS, SELF, sw_FX_BR710_3_Electric, position_in_vehid_chain % 15) 
     7: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC,-2, DISABLE_WAGON_POWER);
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
-// reversing switches
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR710_PMSO_MSO_LO, vehicle_is_reversed) {
-    0:  sw_loadstack_BR710_PMSO_LO;
-        sw_loadstack_BR710_MSO_LO_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR710_MSO_PMSO_LO, vehicle_is_reversed) {
-    0:  sw_loadstack_BR710_MSO_LO;
-        sw_loadstack_BR710_PMSO_LO_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR710_PMSO_LO, vehicle_is_reversed) {
-    0:  sw_loadstack_BR710_PMSO_LO;
-        sw_loadstack_BR710_PMSO_LO_REV; }
-
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR710_1_2, position_in_articulated_veh % 12) {
 	1:  sw_loadstack_BR710_DMSO_LO;
-    4:  sw_reverse_BR710_PMSO_MSO_LO;
-    7:  sw_reverse_BR710_MSO_PMSO_LO;
+    4:  sw_loadstack_BR710_PMSO_LO;
+    7:  sw_loadstack_BR710_MSO_LO;
     10: sw_loadstack_BR710_DMSO_LO_REV;
 	    spriteset_empty; }
 
@@ -269,7 +210,7 @@ switch(FEAT_TRAINS, SELF, sw_graphics_BR710_1_2, position_in_articulated_veh % 1
 switch(FEAT_TRAINS, SELF, sw_graphics_BR710_3, position_in_articulated_veh % 15) {
 	1:  sw_loadstack_BR710_DMSO_LO;
     4:  sw_loadstack_BR710_MSO_LO;
-    7:  sw_reverse_BR710_PMSO_LO;
+    7:  sw_loadstack_BR710_PMSO_LO;
     10: sw_loadstack_BR710_MSO_LO_REV;
     13: sw_loadstack_BR710_DMSO_LO_REV;
 	    spriteset_empty; }

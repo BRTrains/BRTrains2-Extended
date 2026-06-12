@@ -6,23 +6,23 @@ switch(FEAT_TRAINS, PARENT, sw_BR466_purchase_sprite, current_year) {
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR466_NSE, position_in_articulated_veh % 6) {
-	1: return sw_loadstack_BR465_DMOS_NSE;
-    4: return sw_loadstack_BR465_DMOS_NSE_REV;
+	1:  sw_loadstack_BR465_DMOS_NSE;
+    4:  sw_loadstack_BR465_DMOS_NSE_REV;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR466_Connex, position_in_articulated_veh % 6) {
-	1: return sw_loadstack_BR465_DMOS_Connex;
-    4: return sw_loadstack_BR465_DMOS_Connex_REV;
+	1:  sw_loadstack_BR465_DMOS_Connex;
+    4:  sw_loadstack_BR465_DMOS_Connex_REV;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR466_SET, position_in_articulated_veh % 6) {
-	1: return sw_loadstack_BR465_DMOS_SET;
-    4: return sw_loadstack_BR465_DMOS_SET_REV;
+	1:  sw_loadstack_BR465_DMOS_SET;
+    4:  sw_loadstack_BR465_DMOS_SET_REV;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR466_Southeastern, position_in_articulated_veh % 6) {
-	1: return sw_loadstack_BR465_DMOS_Southeastern;
-    4: return sw_loadstack_BR465_DMOS_Southeastern_REV;
+	1:  sw_loadstack_BR465_DMOS_Southeastern;
+    4:  sw_loadstack_BR465_DMOS_Southeastern_REV;
         spriteset_empty; }
 
 // livery switch
@@ -65,7 +65,7 @@ item (FEAT_TRAINS, item_BR466, 4660) {
         // common properties
         name:                           string(STR_NAME_BR466);
         // variant_group:                  ; // unit ID or item
-		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(1993,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
