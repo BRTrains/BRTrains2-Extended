@@ -336,30 +336,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSO_RF_SPTE, [ STORE_TEMP((getbits
     0: spriteset_BR318_DMSO_SPTE;
     1: spritegroup_BR318_DMSO_Loading; }
     
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSO_RF_ScotRail_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_DMSO_ScotRail_REV;
-    1: spritegroup_BR318_DMSO_Loading_REV; }
-    
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSO_RF_SPT_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_DMSO_SPT_REV;
-    1: spritegroup_BR318_DMSO_Loading_REV; }
-    
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSO_RF_SPTE_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_DMSO_SPTE_REV;
-    1: spritegroup_BR318_DMSO_Loading_REV; }
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSOL_RF_ScotRail, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_DMSOL_ScotRail;
-    1: spritegroup_BR318_DMSO_Loading; }
-    
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSOL_RF_SPT, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_DMSOL_SPT;
-    1: spritegroup_BR318_DMSO_Loading; }
-    
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSOL_RF_SPTE, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_DMSOL_SPTE;
-    1: spritegroup_BR318_DMSO_Loading; }
-    
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSOL_RF_ScotRail_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR318_DMSOL_ScotRail_REV;
     1: spritegroup_BR318_DMSO_Loading_REV; }
@@ -383,18 +359,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_PMO_SPT, [ STORE_TEMP((getbits(extr
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_PMO_SPTE, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR318_PMO_SPTE;
     1: spritegroup_BR318_DMSO_Loading; }
-    
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_PMO_ScotRail_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_PMO_ScotRail_REV;
-    1: spritegroup_BR318_DMSO_Loading_REV; }
-    
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_PMO_SPT_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_PMO_SPT_REV;
-    1: spritegroup_BR318_DMSO_Loading_REV; }
-    
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_PMO_SPTE_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_PMO_SPTE_REV;
-    1: spritegroup_BR318_DMSO_Loading_REV; }
 
 // non-refurb
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSO_ScotRail, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
@@ -411,37 +375,7 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSO_SPTE, [ STORE_TEMP((getbits(ex
     0: spriteset_BR318_DMSO_SPTE;
     1: spritegroup_BR318_DMSO_Loading;
     2: spriteset_BR318_DMSO_Gangway; }
-    
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSO_ScotRail_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_DMSO_ScotRail_REV;
-    1: spritegroup_BR318_DMSO_Loading_REV;
-    2: spriteset_BR318_DMSO_Gangway_REV; }
-    
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSO_SPT_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_DMSO_SPT_REV;
-    1: spritegroup_BR318_DMSO_Loading_REV;
-    2: spriteset_BR318_DMSO_Gangway_REV; }
-    
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSO_SPTE_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_DMSO_SPTE_REV;
-    1: spritegroup_BR318_DMSO_Loading_REV;
-    2: spriteset_BR318_DMSO_Gangway_REV; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSOL_ScotRail, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_DMSOL_ScotRail;
-    1: spritegroup_BR318_DMSO_Loading;
-    2: spriteset_BR318_DMSO_Gangway; }
-    
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSOL_SPT, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_DMSOL_SPT;
-    1: spritegroup_BR318_DMSO_Loading;
-    2: spriteset_BR318_DMSO_Gangway; }
-    
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSOL_SPTE, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_DMSOL_SPTE;
-    1: spritegroup_BR318_DMSO_Loading;
-    2: spriteset_BR318_DMSO_Gangway; }
-    
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSOL_ScotRail_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR318_DMSOL_ScotRail_REV;
     1: spritegroup_BR318_DMSO_Loading_REV;
@@ -482,67 +416,6 @@ switch(FEAT_TRAINS, PARENT, sw_BR318_RF_purchase_sprite, current_year) {
     2015..2030: spriteset_BR318_DMSO_ScotRail_purchase;
         spriteset_BR318_DMSO_ScotRail_purchase; }
 
-// reversing switches
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR318_DMSO_DMSOL_ScotRail, vehicle_is_reversed) {
-    0: sw_loadstack_BR318_DMSO_ScotRail;
-        sw_loadstack_BR318_DMSOL_ScotRail; }
-        
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR318_DMSOL_DMSO_ScotRail, vehicle_is_reversed) {
-    0: sw_loadstack_BR318_DMSOL_ScotRail_REV;
-        sw_loadstack_BR318_DMSO_ScotRail_REV; }
-        
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR318_DMSO_RF_DMSOL_RF_ScotRail, vehicle_is_reversed) {
-    0: sw_loadstack_BR318_DMSO_RF_ScotRail;
-        sw_loadstack_BR318_DMSOL_RF_ScotRail; }
-        
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR318_DMSOL_RF_DMSO_RF_ScotRail, vehicle_is_reversed) {
-    0: sw_loadstack_BR318_DMSOL_RF_ScotRail_REV;
-        sw_loadstack_BR318_DMSO_RF_ScotRail_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR318_PMO_ScotRail, vehicle_is_reversed) {
-    0: sw_loadstack_BR318_PMO_ScotRail;
-        sw_loadstack_BR318_PMO_ScotRail_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR318_DMSO_DMSOL_SPT, vehicle_is_reversed) {
-    0: sw_loadstack_BR318_DMSO_SPT;
-        sw_loadstack_BR318_DMSOL_SPT; }
-        
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR318_DMSOL_DMSO_SPT, vehicle_is_reversed) {
-    0: sw_loadstack_BR318_DMSOL_SPT_REV;
-        sw_loadstack_BR318_DMSO_SPT_REV; }
-        
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR318_DMSO_RF_DMSOL_RF_SPT, vehicle_is_reversed) {
-    0: sw_loadstack_BR318_DMSO_RF_SPT;
-        sw_loadstack_BR318_DMSOL_RF_SPT; }
-        
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR318_DMSOL_RF_DMSO_RF_SPT, vehicle_is_reversed) {
-    0: sw_loadstack_BR318_DMSOL_RF_SPT_REV;
-        sw_loadstack_BR318_DMSO_RF_SPT_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR318_PMO_SPT, vehicle_is_reversed) {
-    0: sw_loadstack_BR318_PMO_SPT;
-        sw_loadstack_BR318_PMO_SPT_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR318_DMSO_DMSOL_SPTE, vehicle_is_reversed) {
-    0: sw_loadstack_BR318_DMSO_SPTE;
-        sw_loadstack_BR318_DMSOL_SPTE; }
-        
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR318_DMSOL_DMSO_SPTE, vehicle_is_reversed) {
-    0: sw_loadstack_BR318_DMSOL_SPTE_REV;
-        sw_loadstack_BR318_DMSO_SPTE_REV; }
-        
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR318_DMSO_RF_DMSOL_RF_SPTE, vehicle_is_reversed) {
-    0: sw_loadstack_BR318_DMSO_RF_SPTE;
-        sw_loadstack_BR318_DMSOL_RF_SPTE; }
-        
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR318_DMSOL_RF_DMSO_RF_SPTE, vehicle_is_reversed) {
-    0: sw_loadstack_BR318_DMSOL_RF_SPTE_REV;
-        sw_loadstack_BR318_DMSO_RF_SPTE_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR318_PMO_SPTE, vehicle_is_reversed) {
-    0: sw_loadstack_BR318_PMO_SPTE;
-        sw_loadstack_BR318_PMO_SPTE_REV; }
-
 // FX effects
 switch(FEAT_TRAINS, SELF, sw_FX_BR318_Electric, position_in_vehid_chain % 9) { // front catenary
     4: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
@@ -550,39 +423,39 @@ switch(FEAT_TRAINS, SELF, sw_FX_BR318_Electric, position_in_vehid_chain % 9) { /
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR318_ScotRail, position_in_articulated_veh % 9) {
-	1: sw_reverse_BR318_DMSO_DMSOL_ScotRail;
-    4: sw_reverse_BR318_PMO_ScotRail;
-    7: sw_reverse_BR318_DMSOL_DMSO_ScotRail;
+	1: sw_loadstack_BR318_DMSO_ScotRail;
+    4: sw_loadstack_BR318_PMO_ScotRail;
+    7: sw_loadstack_BR318_DMSOL_ScotRail_REV;
 	    spriteset_empty; }
         
 switch(FEAT_TRAINS, SELF, sw_graphics_BR318_SPT, position_in_articulated_veh % 9) {
-	1: sw_reverse_BR318_DMSO_DMSOL_SPT;
-    4: sw_reverse_BR318_PMO_SPT;
-    7: sw_reverse_BR318_DMSOL_DMSO_SPT;
+	1: sw_loadstack_BR318_DMSO_SPT;
+    4: sw_loadstack_BR318_PMO_SPT;
+    7: sw_loadstack_BR318_DMSOL_SPT_REV;
 	    spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR318_SPTE, position_in_articulated_veh % 9) {
-	1: sw_reverse_BR318_DMSO_DMSOL_SPTE;
-    4: sw_reverse_BR318_PMO_SPTE;
-    7: sw_reverse_BR318_DMSOL_DMSO_SPTE;
+	1: sw_loadstack_BR318_DMSO_SPTE;
+    4: sw_loadstack_BR318_PMO_SPTE;
+    7: sw_loadstack_BR318_DMSOL_SPTE_REV;
 	    spriteset_empty; }
         
 switch(FEAT_TRAINS, SELF, sw_graphics_BR318_RF_ScotRail, position_in_articulated_veh % 9) {
-	1: sw_reverse_BR318_DMSO_RF_DMSOL_RF_ScotRail;
-    4: sw_reverse_BR318_PMO_ScotRail;
-    7: sw_reverse_BR318_DMSOL_RF_DMSO_RF_ScotRail;
+	1: sw_loadstack_BR318_DMSO_RF_ScotRail;
+    4: sw_loadstack_BR318_PMO_ScotRail;
+    7: sw_loadstack_BR318_DMSOL_RF_ScotRail_REV;
 	    spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR318_RF_SPT, position_in_articulated_veh % 9) {
-	1: sw_reverse_BR318_DMSO_RF_DMSOL_RF_SPT;
-    4: sw_reverse_BR318_PMO_SPT;
-    7: sw_reverse_BR318_DMSOL_RF_DMSO_RF_SPT;
+	1: sw_loadstack_BR318_DMSO_RF_SPT;
+    4: sw_loadstack_BR318_PMO_SPT;
+    7: sw_loadstack_BR318_DMSOL_RF_SPT_REV;
 	    spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR318_RF_SPTE, position_in_articulated_veh % 9) {
-	1: sw_reverse_BR318_DMSO_RF_DMSOL_RF_SPTE;
-    4: sw_reverse_BR318_PMO_SPTE;
-    7: sw_reverse_BR318_DMSOL_RF_DMSO_RF_SPTE;
+	1: sw_loadstack_BR318_DMSO_RF_SPTE;
+    4: sw_loadstack_BR318_PMO_SPTE;
+    7: sw_loadstack_BR318_DMSOL_RF_SPTE_REV;
 	    spriteset_empty; }
 
 // livery switch
@@ -621,7 +494,7 @@ item (FEAT_TRAINS, item_BR318, 3180) {
         // common properties
         name:                           string(STR_NAME_BR318);
         // variant_group:                  ; // unit ID or item
-		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(1985,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -687,7 +560,7 @@ item (FEAT_TRAINS, item_BR318_RF, 3181) {
         // common properties
         name:                           string(STR_NAME_BR318_RF);
         variant_group:                  item_BR318; // unit ID or item
-		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB, VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2005,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
