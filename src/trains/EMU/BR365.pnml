@@ -1004,115 +1004,88 @@ switch(FEAT_TRAINS, PARENT, sw_BR365_RB_purchase_sprite, current_year) {
     2022: spriteset_BR365_DMOC_RB_Abellio_Scotrail_purchase;
         spriteset_BR365_DMOC_RB_NSE_purchase; }
 
-// reversing switches
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR365_PTSO_TSOL_Abellio_Scotrail, vehicle_is_reversed) {
-    0: sw_loadstack_BR365_PTSO_Abellio_Scotrail;
-        sw_loadstack_BR365_TSOL_Abellio_Scotrail_REV; }
+// FX switch
+switch(FEAT_TRAINS, SELF, sw_FX_BR365_OHLE, position_in_vehid_chain % 12) {
+    5:  visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC,-2, DISABLE_WAGON_POWER);
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR365_TSOL_PTSO_Abellio_Scotrail, vehicle_is_reversed) {
-    0: sw_loadstack_BR365_TSOL_Abellio_Scotrail;
-        sw_loadstack_BR365_PTSO_Abellio_Scotrail_REV; }
+switch(FEAT_TRAINS, SELF, sw_FX_BR365_SAA3, position_in_vehid_chain % 12) {
+    0:  electric_create_visual_effect_SAA3;
+    11: electric_create_visual_effect_SAA3;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR365_PTSO_TSOL_Connex, vehicle_is_reversed) {
-    0: sw_loadstack_BR365_PTSO_Connex;
-        sw_loadstack_BR365_TSOL_Connex_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR365_TSOL_PTSO_Connex, vehicle_is_reversed) {
-    0: sw_loadstack_BR365_TSOL_Connex;
-        sw_loadstack_BR365_PTSO_Connex_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR365_PTSO_TSOL_FCC, vehicle_is_reversed) {
-    0: sw_loadstack_BR365_PTSO_FCC;
-        sw_loadstack_BR365_TSOL_FCC_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR365_TSOL_PTSO_FCC, vehicle_is_reversed) {
-    0: sw_loadstack_BR365_TSOL_FCC;
-        sw_loadstack_BR365_PTSO_FCC_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR365_PTSO_TSOL_GN, vehicle_is_reversed) {
-    0: sw_loadstack_BR365_PTSO_GN;
-        sw_loadstack_BR365_TSOL_GN_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR365_TSOL_PTSO_GN, vehicle_is_reversed) {
-    0: sw_loadstack_BR365_TSOL_GN;
-        sw_loadstack_BR365_PTSO_GN_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR365_PTSO_TSOL_NSE, vehicle_is_reversed) {
-    0: sw_loadstack_BR365_PTSO_NSE;
-        sw_loadstack_BR365_TSOL_NSE_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR365_TSOL_PTSO_NSE, vehicle_is_reversed) {
-    0: sw_loadstack_BR365_TSOL_NSE;
-        sw_loadstack_BR365_PTSO_NSE_REV; }
+switch(FEAT_TRAINS, SELF, sw_FX_BR365, tile_powers_railtype("ELRL")) {
+    1:  sw_FX_BR365_OHLE;
+        sw_FX_BR365_SAA3; }
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR365_Abellio_Scotrail, position_in_vehid_chain % 12) {
     1:  sw_loadstack_BR365_DMOC_Abellio_Scotrail;
-    4:  sw_reverse_BR365_PTSO_TSOL_Abellio_Scotrail;
-    7:  sw_reverse_BR365_TSOL_PTSO_Abellio_Scotrail;
+    4:  sw_loadstack_BR365_PTSO_Abellio_Scotrail;
+    7:  sw_loadstack_BR365_TSOL_Abellio_Scotrail;
     10: sw_loadstack_BR365_DMOC_Abellio_Scotrail_REV; 
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR365_RB_Abellio_Scotrail, position_in_vehid_chain % 12) {
     1:  sw_loadstack_BR365_DMOC_RB_Abellio_Scotrail;
-    4:  sw_reverse_BR365_PTSO_TSOL_Abellio_Scotrail;
-    7:  sw_reverse_BR365_TSOL_PTSO_Abellio_Scotrail;
+    4:  sw_loadstack_BR365_PTSO_Abellio_Scotrail;
+    7:  sw_loadstack_BR365_TSOL_Abellio_Scotrail;
     10: sw_loadstack_BR365_DMOC_RB_Abellio_Scotrail_REV; 
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR365_Connex, position_in_vehid_chain % 12) {
     1:  sw_loadstack_BR365_DMOC_Connex;
-    4:  sw_reverse_BR365_PTSO_TSOL_Connex;
-    7:  sw_reverse_BR365_TSOL_PTSO_Connex;
+    4:  sw_loadstack_BR365_PTSO_Connex;
+    7:  sw_loadstack_BR365_TSOL_Connex;
     10: sw_loadstack_BR365_DMOC_Connex_REV; 
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR365_RB_Connex, position_in_vehid_chain % 12) {
     1:  sw_loadstack_BR365_DMOC_RB_Connex;
-    4:  sw_reverse_BR365_PTSO_TSOL_Connex;
-    7:  sw_reverse_BR365_TSOL_PTSO_Connex;
+    4:  sw_loadstack_BR365_PTSO_Connex;
+    7:  sw_loadstack_BR365_TSOL_Connex;
     10: sw_loadstack_BR365_DMOC_RB_Connex_REV; 
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR365_FCC, position_in_vehid_chain % 12) {
     1:  sw_loadstack_BR365_DMOC_FCC;
-    4:  sw_reverse_BR365_PTSO_TSOL_FCC;
-    7:  sw_reverse_BR365_TSOL_PTSO_FCC;
+    4:  sw_loadstack_BR365_PTSO_FCC;
+    7:  sw_loadstack_BR365_TSOL_FCC;
     10: sw_loadstack_BR365_DMOC_FCC_REV; 
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR365_RB_FCC, position_in_vehid_chain % 12) {
     1:  sw_loadstack_BR365_DMOC_RB_FCC;
-    4:  sw_reverse_BR365_PTSO_TSOL_FCC;
-    7:  sw_reverse_BR365_TSOL_PTSO_FCC;
+    4:  sw_loadstack_BR365_PTSO_FCC;
+    7:  sw_loadstack_BR365_TSOL_FCC;
     10: sw_loadstack_BR365_DMOC_RB_FCC_REV; 
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR365_GN, position_in_vehid_chain % 12) {
     1:  sw_loadstack_BR365_DMOC_GN;
-    4:  sw_reverse_BR365_PTSO_TSOL_GN;
-    7:  sw_reverse_BR365_TSOL_PTSO_GN;
+    4:  sw_loadstack_BR365_PTSO_GN;
+    7:  sw_loadstack_BR365_TSOL_GN;
     10: sw_loadstack_BR365_DMOC_GN_REV; 
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR365_RB_GN, position_in_vehid_chain % 12) {
     1:  sw_loadstack_BR365_DMOC_RB_GN;
-    4:  sw_reverse_BR365_PTSO_TSOL_GN;
-    7:  sw_reverse_BR365_TSOL_PTSO_GN;
+    4:  sw_loadstack_BR365_PTSO_GN;
+    7:  sw_loadstack_BR365_TSOL_GN;
     10: sw_loadstack_BR365_DMOC_RB_GN_REV; 
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR365_NSE, position_in_vehid_chain % 12) {
     1:  sw_loadstack_BR365_DMOC_NSE;
-    4:  sw_reverse_BR365_PTSO_TSOL_NSE;
-    7:  sw_reverse_BR365_TSOL_PTSO_NSE;
+    4:  sw_loadstack_BR365_PTSO_NSE;
+    7:  sw_loadstack_BR365_TSOL_NSE;
     10: sw_loadstack_BR365_DMOC_NSE_REV; 
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR365_RB_NSE, position_in_vehid_chain % 12) {
     1:  sw_loadstack_BR365_DMOC_RB_NSE;
-    4:  sw_reverse_BR365_PTSO_TSOL_NSE;
-    7:  sw_reverse_BR365_TSOL_PTSO_NSE;
+    4:  sw_loadstack_BR365_PTSO_NSE;
+    7:  sw_loadstack_BR365_TSOL_NSE;
     10: sw_loadstack_BR365_DMOC_RB_NSE_REV; 
         spriteset_empty; }
 
@@ -1161,8 +1134,8 @@ switch(FEAT_TRAINS, PARENT, sw_speed_BR365_25kV, tile_powers_railtype("ELRL")) {
     1: 100;
         90; }	
 
-switch(FEAT_TRAINS, SELF, sw_speed_BR365, param_max_speed) {
-    0: return sw_speed_BR365_25kV; // operational speed
+switch(FEAT_TRAINS, SELF, sw_speed_BR365, param_max_speed || tile_powers_railtype("ELRL")) {
+    0: 90; // operational speed
     1: 100 ; // design speed
 }
 
@@ -1177,7 +1150,7 @@ item (FEAT_TRAINS, item_BR365, 3650) {
         // common properties
         name:                           string(STR_NAME_BR365);
         // variant_group:                  ; // unit ID or item
-		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(1994,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -1211,7 +1184,7 @@ item (FEAT_TRAINS, item_BR365, 3650) {
     graphics {
         // graphics
         default:                        sw_livery_BR365;
-        // visual_effect_and_powered:      sw_FX_BR365_Electric;
+        visual_effect_and_powered:      sw_FX_BR365;
         purchase:                       sw_BR365_purchase_sprite;
         sound_effect:                   sw_sound_electric_GEC;
 
@@ -1247,7 +1220,7 @@ item (FEAT_TRAINS, item_BR365_RB, 3651) {
         // common properties
         name:                           string(STR_NAME_BR365_RB);
         variant_group:                  item_BR365; // unit ID or item
-		extra_flags:                    bitmask(VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2001,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -1281,10 +1254,9 @@ item (FEAT_TRAINS, item_BR365_RB, 3651) {
     graphics {
         // graphics
         default:                        sw_livery_BR365_RB;
-        // visual_effect_and_powered:      sw_FX_BR365_Electric;
+        visual_effect_and_powered:      sw_FX_BR365;
         purchase:                       sw_BR365_RB_purchase_sprite;
-        // purchase:                       sw_spritestack_BR365_purchase; // For dual mode units
-        // sound_effect:                   ;
+        sound_effect:                   sw_sound_electric_88;
 
         // internal code
         length:                         sw_length_BR365;
