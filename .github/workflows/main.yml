@@ -37,11 +37,12 @@ jobs:
             echo "found_commits=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Stop scheduled runs if no commits found 
+      - name: Mark scheduled runs with no commits
         if: github.event_name == 'schedule' && steps.commits.outputs.found_commits == 'false'
-        run: echo "No commits this week — skipping." && exit 0
+        run: echo "No commits this week — skipping remaining steps."
 
       - name: Restore cache
+        if: github.event_name != 'schedule' || steps.commits.outputs.found_commits == 'true'
         uses: actions/cache@v4
         with:
           path: ~/.cache/example
@@ -49,21 +50,25 @@ jobs:
           restore-keys: example-cache-${{ runner.os }}-
 
       - name: Install dependencies
+        if: github.event_name != 'schedule' || steps.commits.outputs.found_commits == 'true'
         run: |
           python3 -m pip install --upgrade pip setuptools
           pip3 install nml
 
       - name: Build
+        if: github.event_name != 'schedule' || steps.commits.outputs.found_commits == 'true'
         run: python3 build.py BRTrainsv2XL --compile --debug
         working-directory: ${{ github.workspace }}
 
       - name: Upload artifact
+        if: github.event_name != 'schedule' || steps.commits.outputs.found_commits == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: BRTrainsv2XL
           path: build/BRTrainsv2XL.*
 
       - name: Determine release metadata
+        if: github.event_name != 'schedule' || steps.commits.outputs.found_commits == 'true'
         id: metadata
         run: |
           if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event.inputs.release_type }}" = "weekly" ]; then
@@ -84,6 +89,7 @@ jobs:
           echo "prerelease=$PRERELEASE" >> $GITHUB_OUTPUT
 
       - name: Create GitHub Release
+        if: github.event_name != 'schedule' || steps.commits.outputs.found_commits == 'true'
         id: create_release
         uses: actions/create-release@v1
         with:
@@ -94,6 +100,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload Release Asset to Github
+        if: github.event_name != 'schedule' || steps.commits.outputs.found_commits == 'true'
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
