@@ -23,39 +23,10 @@ spriteset(spriteset_BR745_panto_down, "gfx/EMU/BR745/BR745_panto_down_1x_8bpp.pn
     alternative_sprites(spriteset_BR745_panto_down, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_panto_down_4x_32bpp.png", "gfx/EMU/BR745/BR745_panto_down_4x_mask.png")
     { template_128trains_4x(0,0) }
 
-// pantograph sprite
-spriteset(spriteset_BR745_panto_up_REV, "gfx/EMU/BR745/BR745_panto_up_1x_8bpp.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR745_panto_up_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_panto_up_1x_32bpp.png", "gfx/EMU/BR745/BR745_panto_up_1x_mask.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR745_panto_up_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_panto_up_2x_32bpp.png", "gfx/EMU/BR745/BR745_panto_up_2x_mask.png")
-    { template_128trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR745_panto_up_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_panto_up_4x_32bpp.png", "gfx/EMU/BR745/BR745_panto_up_4x_mask.png")
-    { template_128trains_REV_4x(0,0) }
-
-spriteset(spriteset_BR745_panto_down_REV, "gfx/EMU/BR745/BR745_panto_down_1x_8bpp.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR745_panto_down_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_panto_down_1x_32bpp.png", "gfx/EMU/BR745/BR745_panto_down_1x_mask.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR745_panto_down_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_panto_down_2x_32bpp.png", "gfx/EMU/BR745/BR745_panto_down_2x_mask.png")
-    { template_128trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR745_panto_down_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_panto_down_4x_32bpp.png", "gfx/EMU/BR745/BR745_panto_down_4x_mask.png")
-    { template_128trains_REV_4x(0,0) }
-    
 // dual mode switches
 switch(FEAT_TRAINS, PARENT, sw_panto_BR745, !train_is_driving_backwards) {
     1:  spriteset_BR745_panto_up;
         spriteset_BR745_panto_down; }	
-    
-switch(FEAT_TRAINS, PARENT, sw_panto_BR745_REV, train_is_driving_backwards) {
-    1:  spriteset_BR745_panto_up_REV;
-        spriteset_BR745_panto_down_REV; }	
 
 // basic sprite
 spriteset(spriteset_BR745_DMFO_GA, "gfx/EMU/BR745/BR745_DMFO_GA_1x_8bpp.png")
@@ -261,18 +232,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR745_PTFO_GA, [ STORE_TEMP((getbits(extr
     2: sw_panto_BR745; }
 
 // basic sprite
-spriteset(spriteset_BR745_PTFO_GA_REV, "gfx/EMU/BR745/BR745_PTFO_GA_1x_8bpp.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR745_PTFO_GA_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_PTFO_GA_1x_32bpp.png", "gfx/EMU/BR745/BR745_PTFO_GA_1x_mask.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR745_PTFO_GA_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_PTFO_GA_2x_32bpp.png", "gfx/EMU/BR745/BR745_PTFO_GA_2x_mask.png")
-    { template_128trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR745_PTFO_GA_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_PTFO_GA_4x_32bpp.png", "gfx/EMU/BR745/BR745_PTFO_GA_4x_mask.png")
-    { template_128trains_REV_4x(0,0) }
-
 spriteset(spriteset_BR745_PTFO_GA_Loading_REV, "gfx/EMU/BR745/BR745_PTFO_GA_Loading_1x_8bpp.png")
     { template_128trains_REV_1x(0,0) }
 
@@ -289,11 +248,6 @@ spriteset(spriteset_BR745_PTFO_GA_Loading_REV, "gfx/EMU/BR745/BR745_PTFO_GA_Load
 spritegroup spritegroup_BR745_PTFO_GA_Loading_REV {  
     loaded: [spriteset_empty];
     loading: [spriteset_BR745_PTFO_GA_Loading_REV]; }
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR745_PTFO_GA_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR745_PTFO_GA_REV;
-    1: spritegroup_BR745_PTFO_GA_Loading_REV;
-    2: sw_panto_BR745_REV; }
 
 // basic sprite
 spriteset(spriteset_BR745_PTSO_GA, "gfx/EMU/BR745/BR745_PTSO_GA_1x_8bpp.png")
@@ -398,19 +352,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR745_TSO_Front_GA_REV, [ STORE_TEMP((get
     1: spritegroup_BR745_TSO_Front_GA_Loading_REV; }
 
 // basic sprite
-spriteset(spriteset_BR745_TSO_Rear_GA, "gfx/EMU/BR745/BR745_TSO_Rear_GA_1x_8bpp.png")
-    { template_128trains_1x(0,0) }
-
-    alternative_sprites(spriteset_BR745_TSO_Rear_GA, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_TSO_Rear_GA_1x_32bpp.png", "gfx/EMU/BR745/BR745_TSO_Rear_GA_1x_mask.png")
-    { template_128trains_1x(0,0) }
-
-    alternative_sprites(spriteset_BR745_TSO_Rear_GA, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_TSO_Rear_GA_2x_32bpp.png", "gfx/EMU/BR745/BR745_TSO_Rear_GA_2x_mask.png")
-    { template_128trains_2x(0,0) }
-
-    alternative_sprites(spriteset_BR745_TSO_Rear_GA, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_TSO_Rear_GA_4x_32bpp.png", "gfx/EMU/BR745/BR745_TSO_Rear_GA_4x_mask.png")
-    { template_128trains_4x(0,0) }
-
-// basic sprite
 spriteset(spriteset_BR745_TSO_Rear_GA_REV, "gfx/EMU/BR745/BR745_TSO_Rear_GA_1x_8bpp.png")
     { template_128trains_REV_1x(0,0) }
 
@@ -422,10 +363,6 @@ spriteset(spriteset_BR745_TSO_Rear_GA_REV, "gfx/EMU/BR745/BR745_TSO_Rear_GA_1x_8
 
     alternative_sprites(spriteset_BR745_TSO_Rear_GA_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_TSO_Rear_GA_4x_32bpp.png", "gfx/EMU/BR745/BR745_TSO_Rear_GA_4x_mask.png")
     { template_128trains_REV_4x(0,0) }
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR745_TSO_Rear_GA, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR745_TSO_Rear_GA;
-    1: spritegroup_BR745_PTFO_GA_Loading; }
 
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR745_TSO_Rear_GA_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR745_TSO_Rear_GA_REV;
@@ -444,26 +381,9 @@ spriteset(spriteset_BR745_TSOB_GA, "gfx/EMU/BR745/BR745_TSOB_GA_1x_8bpp.png")
     alternative_sprites(spriteset_BR745_TSOB_GA, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_TSOB_GA_4x_32bpp.png", "gfx/EMU/BR745/BR745_TSOB_GA_4x_mask.png")
     { template_128trains_4x(0,0) }
 
-// basic sprite
-spriteset(spriteset_BR745_TSOB_GA_REV, "gfx/EMU/BR745/BR745_TSOB_GA_1x_8bpp.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR745_TSOB_GA_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_TSOB_GA_1x_32bpp.png", "gfx/EMU/BR745/BR745_TSOB_GA_1x_mask.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR745_TSOB_GA_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_TSOB_GA_2x_32bpp.png", "gfx/EMU/BR745/BR745_TSOB_GA_2x_mask.png")
-    { template_128trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR745_TSOB_GA_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_TSOB_GA_4x_32bpp.png", "gfx/EMU/BR745/BR745_TSOB_GA_4x_mask.png")
-    { template_128trains_REV_4x(0,0) }
-
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR745_TSOB_GA, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR745_TSOB_GA;
     1: spritegroup_BR745_PTFO_GA_Loading; }
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR745_TSOB_GA_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR745_TSOB_GA_REV;
-    1: spritegroup_BR745_PTFO_GA_Loading_REV; }
 
 // basic sprite
 spriteset(spriteset_BR745_TSOD_GA, "gfx/EMU/BR745/BR745_TSOD_GA_1x_8bpp.png")
@@ -498,40 +418,6 @@ spritegroup spritegroup_BR745_TSOD_GA_Loading {
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR745_TSOD_GA, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR745_TSOD_GA;
     1: spritegroup_BR745_TSOD_GA_Loading; }
-
-// basic sprite
-spriteset(spriteset_BR745_TSOD_GA_REV, "gfx/EMU/BR745/BR745_TSOD_GA_1x_8bpp.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR745_TSOD_GA_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_TSOD_GA_1x_32bpp.png", "gfx/EMU/BR745/BR745_TSOD_GA_1x_mask.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR745_TSOD_GA_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_TSOD_GA_2x_32bpp.png", "gfx/EMU/BR745/BR745_TSOD_GA_2x_mask.png")
-    { template_128trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR745_TSOD_GA_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_TSOD_GA_4x_32bpp.png", "gfx/EMU/BR745/BR745_TSOD_GA_4x_mask.png")
-    { template_128trains_REV_4x(0,0) }
-
-spriteset(spriteset_BR745_TSOD_GA_Loading_REV, "gfx/EMU/BR745/BR745_TSOD_GA_Loading_1x_8bpp.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR745_TSOD_GA_Loading_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_TSOD_GA_Loading_1x_32bpp.png", "gfx/EMU/BR745/BR745_TSOD_GA_Loading_1x_mask.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR745_TSOD_GA_Loading_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_TSOD_GA_Loading_2x_32bpp.png", "gfx/EMU/BR745/BR745_TSOD_GA_Loading_2x_mask.png")
-    { template_128trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR745_TSOD_GA_Loading_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_TSOD_GA_Loading_4x_32bpp.png", "gfx/EMU/BR745/BR745_TSOD_GA_Loading_4x_mask.png")
-    { template_128trains_REV_4x(0,0) }
-
-// loading sprite
-spritegroup spritegroup_BR745_TSOD_GA_Loading_REV {  
-    loaded: [spriteset_empty];
-    loading: [spriteset_BR745_TSOD_GA_Loading_REV]; }
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR745_TSOD_GA_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR745_TSOD_GA_REV;
-    1: spritegroup_BR745_TSOD_GA_Loading_REV; }
 
 // FX switch
 switch(FEAT_TRAINS, SELF, sw_FX_BR745_Electric_Front, position_in_vehid_chain % 36) { // rear catenary
