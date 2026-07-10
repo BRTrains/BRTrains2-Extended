@@ -461,8 +461,8 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR370_TS_Intercity_REV, [ STORE_TEMP((get
 
 // FX effects
 switch(FEAT_TRAINS, SELF, sw_FX_BR370_Electric, position_in_vehid_chain % 42) {
-    23: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
-        return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+    23: electric_create_visual_effect;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
 
 // reversing switches

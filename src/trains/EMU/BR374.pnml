@@ -843,13 +843,13 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR374_TPSD_DB_REV, [ STORE_TEMP((getbits(
 
 // FX effects
 switch(FEAT_TRAINS, SELF, sw_FX_BR374_Electric, position_in_vehid_chain % 48) { // rear catenary
-    5:  return  visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -2, DISABLE_WAGON_POWER);
-    42: return  visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -2, DISABLE_WAGON_POWER);
-        return  visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+    5:  electric_create_visual_effect;
+    42: electric_create_visual_effect;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
 switch(FEAT_TRAINS, SELF, sw_FX_BR374_1_Electric, position_in_vehid_chain % 24) { // rear catenary
-    5:  return  visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -2, DISABLE_WAGON_POWER);
-        return  visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+    5:  electric_create_visual_effect;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
 // reversing switches
 switch(FEAT_TRAINS, PARENT, sw_reverse_BR374_DMF_DMS_DB, vehicle_is_reversed ) {

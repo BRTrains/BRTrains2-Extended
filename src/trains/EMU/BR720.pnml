@@ -492,7 +492,7 @@ switch(FEAT_TRAINS, SELF, sw_FX_BR720_5_car_Electric, position_in_vehid_chain % 
 
 switch(FEAT_TRAINS, SELF, sw_FX_BR720_10_car_Electric, position_in_vehid_chain % 30) { // rear catenary
     5: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
-    24: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC,-2, DISABLE_WAGON_POWER);
+    24: electric_create_visual_effect;
         return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
 // graphics switch

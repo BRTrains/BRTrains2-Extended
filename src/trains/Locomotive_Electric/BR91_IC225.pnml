@@ -1,6 +1,6 @@
 // FX effects
 switch(FEAT_TRAINS, SELF, sw_FX_BR91_IC225_Electric, position_in_vehid_chain % 33) { // rear catenary 
-    2: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC,-2, DISABLE_WAGON_POWER); 
+    2:  electric_create_visual_effect; 
         visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
 // graphics switch

@@ -177,7 +177,7 @@ switch(FEAT_TRAINS, PARENT, sw_BR325_TAV_PMV_RoyalMail, vehicle_is_reversed) {
 
 // FX switch
 switch(FEAT_TRAINS, SELF, sw_FX_BR325_Electric, position_in_vehid_chain % 12) { // rear catenary
-    6: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC,-2, DISABLE_WAGON_POWER);
+    6: electric_create_visual_effect;
         return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 

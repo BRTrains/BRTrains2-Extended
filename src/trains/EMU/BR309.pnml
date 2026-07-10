@@ -1209,6 +1209,25 @@ switch(FEAT_TRAINS, SELF, sw_purchase_sprite_BR309, current_year) {
         spriteset_BR309_DMsOC_BR_Blue_purchase;
 }
 
+// FX switches
+switch(FEAT_TRAINS, SELF, sw_FX_BR309_OHLE, position_in_vehid_chain % 30) { // rear catenary
+    5:  electric_create_visual_effect;
+    11: electric_create_visual_effect;
+    23: electric_create_visual_effect;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+        
+switch(FEAT_TRAINS, SELF, sw_FX_BR309_1_OHLE, position_in_vehid_chain % 6) { // rear catenary
+    6:  electric_create_visual_effect;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+        
+switch(FEAT_TRAINS, SELF, sw_FX_BR309_2_3_OHLE, position_in_vehid_chain % 12) { // rear catenary
+    6:  electric_create_visual_effect;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+        
+switch(FEAT_TRAINS, SELF, sw_FX_BR309_4_OHLE, position_in_vehid_chain % 12) { // rear catenary
+    11:  electric_create_visual_effect;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+
 // reversing switches
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR309_BR_Maroon, position_in_articulated_veh % 30) {
@@ -1267,13 +1286,6 @@ switch(FEAT_TRAINS, SELF, sw_graphics_BR309_NSE_Jaffa_Cake, position_in_articula
     25: sw_loadstack_BR309_TSO_NSE_Jaffa_Cake_REV;
     28: sw_loadstack_BR309_DMsOC_NSE_Jaffa_Cake_REV;
         spriteset_empty;
-}
-
-switch(FEAT_TRAINS, SELF, sw_FX_BR309_Electric, position_in_vehid_chain % 30) { // middle catenary
-    4: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
-    10: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
-    22: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
-        return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);	
 }
 
 // livery switch
@@ -1346,7 +1358,7 @@ item (FEAT_TRAINS, item_BR309, 3090) {
     graphics {
         // graphics
         default:                        sw_livery_BR309;
-        visual_effect_and_powered:      sw_FX_BR309_Electric;
+        visual_effect_and_powered:      sw_FX_BR309_OHLE;
         purchase:                       sw_purchase_sprite_BR309;
         sound_effect:                   sw_sound_electric_GEC;
         
@@ -1365,14 +1377,6 @@ item (FEAT_TRAINS, item_BR309, 3090) {
                                                     string(str_usage_expr_pax),
                                                     string(str_BR309_liveries)));
     }
-}
-
-// FX effects
-switch(FEAT_TRAINS, SELF, sw_FX_BR309_1_Electric, position_in_vehid_chain % 6) { // middle catenary
-    0..2: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-    3: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-    4: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
-        return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);	
 }
 
 // graphics switch
@@ -1458,7 +1462,7 @@ item (FEAT_TRAINS, item_BR309_1, 3091) {
     graphics {
         // graphics
         default:                        sw_livery_BR309_1;
-        visual_effect_and_powered:      sw_FX_BR309_1_Electric;
+        visual_effect_and_powered:      sw_FX_BR309_1_OHLE;
         purchase:                       sw_purchase_sprite_BR309;
         sound_effect:                   sw_sound_electric_GEC;
         
@@ -1477,12 +1481,6 @@ item (FEAT_TRAINS, item_BR309_1, 3091) {
                                                     string(str_usage_expr_pax),
                                                     string(str_BR309_liveries)));
     }
-}
-
-// FX effects
-switch(FEAT_TRAINS, SELF, sw_FX_BR309_2_3_Electric, position_in_vehid_chain % 12) { // middle catenary
-    4: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
-        return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);	
 }
 
 // graphics switch
@@ -1578,7 +1576,7 @@ item (FEAT_TRAINS, item_BR309_2, 3092) {
     graphics {
         // graphics
         default:                        sw_livery_BR309_2;
-        visual_effect_and_powered:      sw_FX_BR309_2_3_Electric;
+        visual_effect_and_powered:      sw_FX_BR309_2_3_OHLE;
         purchase:                       sw_purchase_sprite_BR309;
         sound_effect:                   sw_sound_electric_GEC;
         
@@ -1695,7 +1693,7 @@ item (FEAT_TRAINS, item_BR309_3, 3093) {
     graphics {
         // graphics
         default:                        sw_livery_BR309_3;
-        visual_effect_and_powered:      sw_FX_BR309_2_3_Electric;
+        visual_effect_and_powered:      sw_FX_BR309_2_3_OHLE;
         purchase:                       sw_purchase_sprite_BR309;
         sound_effect:                   sw_sound_electric_GEC;
         
@@ -1808,7 +1806,7 @@ item (FEAT_TRAINS, item_BR309_4, 3094) {
     graphics {
         // graphics
         default:                        sw_livery_BR309_4;
-        visual_effect_and_powered:      sw_FX_BR309_2_3_Electric;
+        visual_effect_and_powered:      sw_FX_BR309_4_OHLE;
         purchase:                       sw_purchase_sprite_BR309;
         sound_effect:                   sw_sound_electric_GEC;
         

@@ -1143,6 +1143,19 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR387_PTSOL_HeathEx_REV, [ STORE_TEMP((ge
     1: spritegroup_BR387_DMCO_HeathEx_Loading_REV;
     2: sw_panto_BR387_REV;  }
 
+// FX switches
+switch(FEAT_TRAINS, SELF, sw_FX_BR387_OHLE, position_in_vehid_chain % 12) {
+    5:  electric_create_visual_effect;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+
+switch(FEAT_TRAINS, SELF, sw_FX_BR387_SAA3, position_in_vehid_chain % 12) {
+    0:  electric_create_visual_effect_SAA3;
+    11: electric_create_visual_effect_SAA3;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+
+switch(FEAT_TRAINS, SELF, sw_FX_BR387_Electric, tile_powers_railtype("ELRL")) {
+    1:  sw_FX_BR387_OHLE;
+        sw_FX_BR387_SAA3; }
 
 // reverseing switches
 switch(FEAT_TRAINS, PARENT, sw_BR387_DMCO_DMSO_C2C, vehicle_is_reversed) {
@@ -1235,45 +1248,45 @@ switch(FEAT_TRAINS, PARENT, sw_BR387_PTSOL_MSO_HeathEx, vehicle_is_reversed) {
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_BR387_C2C, position_in_vehid_chain % 12) {
-    1:  sw_BR387_DMSO_DMCO_C2C;
-    4:  sw_BR387_PTSOL_MSO_C2C;
-    7:  sw_BR387_MSO_PTSOL_C2C;
-    10: sw_BR387_DMCO_DMSO_C2C;
+    1:  sw_loadstack_BR387_DMSO_C2C;
+    4:  sw_loadstack_BR387_PTSOL_C2C;
+    7:  sw_loadstack_BR387_MSO_C2C;
+    10: sw_loadstack_BR387_DMCO_C2C_REV;
         spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_BR387_GatEx, position_in_vehid_chain % 12) {
-    1:  sw_BR387_DMSO_DMCO_GatEx;
-    4:  sw_BR387_PTSOL_MSO_GatEx;
-    7:  sw_BR387_MSO_PTSOL_GatEx;
-    10: sw_BR387_DMCO_DMSO_GatEx;
+    1:  sw_loadstack_BR387_DMSO_GatEx;
+    4:  sw_loadstack_BR387_PTSOL_GatEx;
+    7:  sw_loadstack_BR387_MSO_GatEx;
+    10: sw_loadstack_BR387_DMCO_GatEx_REV;
         spriteset_empty;  }
 
 switch(FEAT_TRAINS, SELF, sw_BR387_GatEx_White, position_in_vehid_chain % 12) {
-    1:  sw_BR387_DMSO_DMCO_GatEx_White;
-    4:  sw_BR387_PTSOL_MSO_GatEx_White;
-    7:  sw_BR387_MSO_PTSOL_GatEx_White;
-    10: sw_BR387_DMCO_DMSO_GatEx_White;
+    1:  sw_loadstack_BR387_DMSO_GatEx_White;
+    4:  sw_loadstack_BR387_PTSOL_GatEx_White;
+    7:  sw_loadstack_BR387_MSO_GatEx_White;
+    10: sw_loadstack_BR387_DMCO_GatEx_White_REV;
         spriteset_empty;  }
 
 switch(FEAT_TRAINS, SELF, sw_BR387_GN, position_in_vehid_chain % 12) {
-    1:  sw_BR387_DMSO_DMCO_GN;
-    4:  sw_BR387_PTSOL_MSO_GN;
-    7:  sw_BR387_MSO_PTSOL_GN;
-    10: sw_BR387_DMCO_DMSO_GN;
+    1:  sw_loadstack_BR387_DMSO_GN;
+    4:  sw_loadstack_BR387_PTSOL_GN;
+    7:  sw_loadstack_BR387_MSO_GN;
+    10: sw_loadstack_BR387_DMCO_GN_REV;
         spriteset_empty;  }
 
 switch(FEAT_TRAINS, SELF, sw_BR387_GWR, position_in_vehid_chain % 12) {
     1:  sw_loadstack_BR387_DMSO_GWR;
-    4:  sw_BR387_PTSOL_MSO_GWR;
-    7:  sw_BR387_MSO_PTSOL_GWR;
+    4:  sw_loadstack_BR387_PTSOL_GWR;
+    7:  sw_loadstack_BR387_MSO_GWR;
     10: sw_loadstack_BR387_DMSO_GWR_REV;
         spriteset_empty;  }
 
 switch(FEAT_TRAINS, SELF, sw_BR387_HeathEx, position_in_vehid_chain % 12) {
-    1:  sw_BR387_DMSO_DMCO_HeathEx;
-    4:  sw_BR387_PTSOL_MSO_HeathEx;
-    7:  sw_BR387_MSO_PTSOL_HeathEx;
-    10: sw_BR387_DMCO_DMSO_HeathEx;
+    1:  sw_loadstack_BR387_DMSO_HeathEx;
+    4:  sw_loadstack_BR387_PTSOL_HeathEx;
+    7:  sw_loadstack_BR387_MSO_HeathEx;
+    10: sw_loadstack_BR387_DMCO_HeathEx_REV;
         spriteset_empty;  }
 
 // livery switch
@@ -1322,7 +1335,7 @@ item (FEAT_TRAINS, item_BR387, 3870) {
         // common properties
         name:                           string(STR_NAME_BR387);
         // variant_group:                  ; // unit ID or item
-		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2014,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -1357,9 +1370,9 @@ item (FEAT_TRAINS, item_BR387, 3870) {
     graphics {
         // graphics
         default:                        sw_livery_BR387;
-        // visual_effect_and_powered:      sw_FX_BR387_Electric;
+        visual_effect_and_powered:      sw_FX_BR387_Electric;
         purchase:                       spriteset_BR387_DMSO_GWR_purchase;
-        // sound_effect:                   ;
+        sound_effect:                   sw_sound_electric_88;
 
         // internal code
         length:                         sw_length_BR387;

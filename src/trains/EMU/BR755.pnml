@@ -522,15 +522,15 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR756_PTSO_TfW_REV, [ STORE_TEMP((getbits
 
 // FX effects
 switch(FEAT_TRAINS, SELF, sw_FX_BR755_3_Diesel, position_in_vehid_chain % 10) {
-    6: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -1, DISABLE_WAGON_POWER);
-        return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+    6:  visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -1, DISABLE_WAGON_POWER);
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
 switch(FEAT_TRAINS, SELF, sw_FX_BR755_3_Electric, position_in_vehid_chain % 10) { // front catenary
-    3: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
-        return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+    3:  electric_create_visual_effect;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
 switch(FEAT_TRAINS, SELF, sw_FX_BR755_3, tile_powers_railtype("ELRL")) { 
-    1: sw_FX_BR755_3_Electric;
+    1:  sw_FX_BR755_3_Electric;
         sw_FX_BR755_3_Diesel; }
 
 // SFX effects

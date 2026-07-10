@@ -137,39 +137,19 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR380_ScotRail_TSO_REV, [ STORE_TEMP((get
     1: spritegroup_BR380_ScotRail_loading;
 }
 
-
-// reversing switches
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR380_PTSO_ScotRail, vehicle_is_reversed) {
-    0: sw_loadstack_BR380_ScotRail_PTSO;
-        sw_loadstack_BR380_ScotRail_PTSO_REV;
-}
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR380_1_PTSO_ScotRail, vehicle_is_reversed) {
-    0: sw_loadstack_BR380_ScotRail_PTSO;
-        sw_loadstack_BR380_ScotRail_TSO_REV;
-}
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR380_1_TSO_ScotRail, vehicle_is_reversed) {
-    0: sw_loadstack_BR380_ScotRail_TSO;
-        sw_loadstack_BR380_ScotRail_PTSO_REV;
-}
-
-
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR380_0_ScotRail, position_in_vehid_chain % 9) {
-    1: return sw_loadstack_BR380_ScotRail_DMSO;
-    4: return sw_reverse_BR380_PTSO_ScotRail;
-    7: return sw_loadstack_BR380_ScotRail_DMSO_REV;
-        spriteset_empty;
-}
+    1:  sw_loadstack_BR380_ScotRail_DMSO;
+    4:  sw_loadstack_BR380_ScotRail_PTSO;
+    7:  sw_loadstack_BR380_ScotRail_DMSO_REV;
+        spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR380_1_ScotRail, position_in_vehid_chain % 12) {
-    1: return sw_loadstack_BR380_ScotRail_DMSO;
-    4: return sw_reverse_BR380_1_PTSO_ScotRail;
-    7: return sw_reverse_BR380_1_TSO_ScotRail;
-    10: return sw_loadstack_BR380_ScotRail_DMSO_REV;
-        spriteset_empty;
-}
+    1:  sw_loadstack_BR380_ScotRail_DMSO;
+    4:  sw_loadstack_BR380_ScotRail_PTSO;
+    7:  sw_loadstack_BR380_ScotRail_TSO;
+    10: sw_loadstack_BR380_ScotRail_DMSO_REV;
+        spriteset_empty; }
 
 
 // livery switch
@@ -191,31 +171,17 @@ switch(FEAT_TRAINS, SELF, sw_BR380_cargo_subtype_text, cargo_subtype) {
 
 // length switch
 switch(FEAT_TRAINS, SELF, sw_length_BR380_0, position_in_vehid_chain % 9) {
-    0: 4;
     1: 6;
-    2: 4;
-    3: 4;
     4: 6;
-    5: 4;
-    6: 4;
     7: 6;
-    8: 4;
-}
+        4; }
 
 switch(FEAT_TRAINS, SELF, sw_length_BR380_1, position_in_vehid_chain % 12) {
-    0: 4;
     1: 6;
-    2: 4;
-    3: 4;
     4: 6;
-    5: 4;
-    6: 4;
     7: 6;
-    8: 4;
-    9: 4;
     10: 6;
-    11: 4;
-}
+        4; }
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR380_0, position_in_vehid_chain % 9) {
@@ -230,53 +196,30 @@ switch(FEAT_TRAINS, SELF, sw_capacity_BR380_1, position_in_vehid_chain % 12) {
     // total 265
 }
 
-// fx disable switch
+// FX switch
 switch(FEAT_TRAINS, SELF, sw_FX_BR380_0, position_in_vehid_chain % 9) {
-    0..2: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-    3: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-    4: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC,-2, DISABLE_WAGON_POWER);	
-    5: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-    6..8: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-}
+    4: electric_create_visual_effect;	
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
-switch(FEAT_TRAINS, SELF, sw_FX_BR380_1_NONREV, position_in_vehid_chain % 9) {
-    0..5: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-    6: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-    7: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC,-2, DISABLE_WAGON_POWER);	
-    8: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-    9..11: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-}
-
-switch(FEAT_TRAINS, SELF, sw_FX_BR380_1_REV, position_in_vehid_chain % 9) {
-    0..2: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-    3: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-    4: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC,-2, DISABLE_WAGON_POWER);	
-    5: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-    6..11: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-}
-
-switch(FEAT_TRAINS, PARENT, sw_FX_BR380_1, vehicle_is_reversed) {
-    0: sw_FX_BR380_1_NONREV;
-        sw_FX_BR380_1_REV;
-}
+switch(FEAT_TRAINS, SELF, sw_FX_BR380_1, position_in_vehid_chain % 9) {
+    7: electric_create_visual_effect;	
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_BR380_0, extra_callback_info1) {
     1..8: return item_BR380_0;
-    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
-}
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
 
 switch(FEAT_TRAINS, SELF, sw_articulated_BR380_1, extra_callback_info1) {
     1..11: return item_BR380_1;
-    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
-}
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
 
 item (FEAT_TRAINS, item_BR380_0, 3800) {
     property {
         // common properties
         name:                           string(STR_NAME_BR380_0);
         // variant_group:                  ; // unit ID or item
-        extra_flags:					bitmask(VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW);
+        extra_flags:					bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2010,08,01);
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -334,7 +277,7 @@ item (FEAT_TRAINS, item_BR380_1, 3801) {
         // common properties
         name:                           string(STR_NAME_BR380_1);
         variant_group:                  item_BR380_0; // unit ID or item
-        extra_flags:					bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        extra_flags:					bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB, VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2010,08,01);
         model_life:                     VEHICLE_NEVER_EXPIRES;

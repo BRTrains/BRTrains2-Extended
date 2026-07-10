@@ -598,51 +598,13 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR377_PTSOL_Southern, [ STORE_TEMP((getbi
     1: spritegroup_BR377_PTSOL_Southern_Loading;
     2: sw_panto_BR377; }
 
-spriteset(spriteset_BR377_PTSOL_Southern_REV, "gfx/EMU/BR377/BR377_PTSOL_Southern_1x_8bpp.png")
-    { template_138trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR377_PTSOL_Southern_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR377/BR377_PTSOL_Southern_1x_32bpp.png", "gfx/EMU/BR377/BR377_PTSOL_Southern_1x_mask.png")
-    { template_138trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR377_PTSOL_Southern_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR377/BR377_PTSOL_Southern_2x_32bpp.png", "gfx/EMU/BR377/BR377_PTSOL_Southern_2x_mask.png")
-    { template_138trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR377_PTSOL_Southern_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR377/BR377_PTSOL_Southern_4x_32bpp.png", "gfx/EMU/BR377/BR377_PTSOL_Southern_4x_mask.png")
-    { template_138trains_REV_4x(0,0) }
-
-spriteset(spriteset_BR377_PTSOL_Southern_Loading_REV, "gfx/EMU/BR377/BR377_PTSOL_Southern_Loading_1x_8bpp.png")
-    { template_138trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR377_PTSOL_Southern_Loading_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR377/BR377_PTSOL_Southern_Loading_1x_32bpp.png", "gfx/EMU/BR377/BR377_PTSOL_Southern_Loading_1x_mask.png")
-    { template_138trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR377_PTSOL_Southern_Loading_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR377/BR377_PTSOL_Southern_Loading_2x_32bpp.png", "gfx/EMU/BR377/BR377_PTSOL_Southern_Loading_2x_mask.png")
-    { template_138trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR377_PTSOL_Southern_Loading_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR377/BR377_PTSOL_Southern_Loading_4x_32bpp.png", "gfx/EMU/BR377/BR377_PTSOL_Southern_Loading_4x_mask.png")
-    { template_138trains_REV_4x(0,0) }
-
-// loading sprite
-spritegroup spritegroup_BR377_PTSOL_Southern_Loading_REV {  
-    loaded: [spriteset_empty];
-    loading: [spriteset_BR377_PTSOL_Southern_Loading_REV]; }
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR377_TSOL_Southern_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR377_PTSOL_Southern_REV;
-    1: spritegroup_BR377_PTSOL_Southern_Loading_REV; }
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR377_PTSOL_Southern_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR377_PTSOL_Southern_REV;
-    1: spritegroup_BR377_PTSOL_Southern_Loading_REV;
-    2: sw_panto_BR377_REV; }
-
 // FX switches
 switch(FEAT_TRAINS, SELF, sw_FX_BR377_2_5_OHLE, position_in_vehid_chain % 12) {
-    5:  visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC,-2, DISABLE_WAGON_POWER);
+    5:  electric_create_visual_effect;
         visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
         
 switch(FEAT_TRAINS, SELF, sw_FX_BR377_6_7_OHLE, position_in_vehid_chain % 15) {
-    8:  visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC,-2, DISABLE_WAGON_POWER);
+    8:  electric_create_visual_effect;
         visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
 switch(FEAT_TRAINS, SELF, sw_FX_BR377_1_4_SAA3, position_in_vehid_chain % 12) {

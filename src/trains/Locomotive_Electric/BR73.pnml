@@ -131,14 +131,12 @@ switch(FEAT_TRAINS, PARENT, sw_BR73_0_purchase_sprite, current_year) {
 
 // FX effects
 switch(FEAT_TRAINS, SELF, sw_FX_BR73_Diesel, position_in_vehid_chain % 3) {
-    0: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-    1: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -1, DISABLE_WAGON_POWER);
-        return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+    1:  visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -1, DISABLE_WAGON_POWER);
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
 switch(FEAT_TRAINS, SELF, sw_FX_BR73_Electric, position_in_vehid_chain % 3) { // middle catenary
-    0: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-    1: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
-        return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+    1:  electric_create_visual_effect_SAA3;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
 switch(FEAT_TRAINS, PARENT, sw_FX_BR73, tile_powers_railtype("BR_3RDR")) {
     1: sw_FX_BR73_Electric;

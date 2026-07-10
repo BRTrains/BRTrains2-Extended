@@ -656,11 +656,11 @@ switch(FEAT_TRAINS, SELF, sw_FX_BR800_5car_Diesel, position_in_vehid_chain % 15)
         visual_effect_and_powered(VISUAL_EFFECT_DISABLE, -1, DISABLE_WAGON_POWER); }
 
 switch(FEAT_TRAINS, SELF, sw_FX_BR800_5car_Leading_Electric, position_in_vehid_chain % 15) {
-    2:  visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -2, DISABLE_WAGON_POWER);
+    2:  electric_create_visual_effect;
         visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
 switch(FEAT_TRAINS, SELF, sw_FX_BR800_5car_Rear_Electric, position_in_vehid_chain % 15) {
-    12:  visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -2, DISABLE_WAGON_POWER);
+    12: electric_create_visual_effect;
         visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
 switch(FEAT_TRAINS, SELF, sw_FX_BR800_5car_Electric, train_is_driving_backwards) {

@@ -323,8 +323,8 @@ switch(FEAT_TRAINS, SELF, sw_BR303_cargo_subtype_text, cargo_subtype){
 
 // FX effects
 switch(FEAT_TRAINS, SELF, sw_FX_BR303_Electric, position_in_vehid_chain % 9) { // rear catenary
-    5: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC,-2, DISABLE_WAGON_POWER);
-    return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+    5:  electric_create_visual_effect;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR303, position_in_vehid_chain % 9) {

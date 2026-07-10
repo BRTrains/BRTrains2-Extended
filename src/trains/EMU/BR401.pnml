@@ -232,63 +232,27 @@ switch(FEAT_TRAINS, PARENT, sw_BR401_purchase_sprite, current_year) {
 
 // FX effects
 switch(FEAT_TRAINS, SELF, sw_FX_BR401_Electric, position_in_vehid_chain % 3) { // front catenary
-    0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
-        return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
-
-// reversing switches
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR401_DMBTK_DTCK_SR_Green, vehicle_is_reversed) {
-    0: spriteset_BR401_DMBTK_SR_Green;
-        spriteset_BR401_DTCK_SR_Green; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR401_DTCK_DMBTK_SR_Green, vehicle_is_reversed) {
-    0: spriteset_BR401_DTCK_SR_Green_REV;
-        spriteset_BR401_DMBTK_SR_Green_REV; }
+    0:  electric_create_visual_effect_SAA3;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR401_SR_Green, position_in_vehid_chain % 6) {
-    1: return sw_reverse_BR401_DMBTK_DTCK_SR_Green;
-    4: return sw_reverse_BR401_DTCK_DMBTK_SR_Green; 
+    1:  spriteset_BR401_DMBTK_SR_Green;
+    4:  spriteset_BR401_DTCK_SR_Green; 
         spriteset_empty; }
-
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR401_DMBTK_DTCK_BR_Green, vehicle_is_reversed) {
-    0: spriteset_BR401_DMBTK_BR_Green;
-        spriteset_BR401_DTCK_BR_Green; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR401_DTCK_DMBTK_BR_Green, vehicle_is_reversed) {
-    0: spriteset_BR401_DTCK_BR_Green_REV;
-        spriteset_BR401_DMBTK_BR_Green_REV; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR401_BR_Green, position_in_vehid_chain % 6) {
-    1: return sw_reverse_BR401_DMBTK_DTCK_BR_Green;
-    4: return sw_reverse_BR401_DTCK_DMBTK_BR_Green; 
+    1:  spriteset_BR401_DMBTK_BR_Green;
+    4:  spriteset_BR401_DTCK_BR_Green;
         spriteset_empty; }
-
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR401_DMBTK_DTCK_BR_Southern_Green, vehicle_is_reversed) {
-    0: spriteset_BR401_DMBTK_BR_Southern_Green;
-        spriteset_BR401_DTCK_BR_Southern_Green; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR401_DTCK_DMBTK_BR_Southern_Green, vehicle_is_reversed) {
-    0: spriteset_BR401_DTCK_BR_Southern_Green_REV;
-        spriteset_BR401_DMBTK_BR_Southern_Green_REV; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR401_BR_Southern_Green, position_in_vehid_chain % 6) {
-    1: return sw_reverse_BR401_DMBTK_DTCK_BR_Southern_Green;
-    4: return sw_reverse_BR401_DTCK_DMBTK_BR_Southern_Green; 
+    1:  spriteset_BR401_DMBTK_BR_Southern_Green;
+    4:  spriteset_BR401_DTCK_BR_Southern_Green;
         spriteset_empty; }
 
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR401_DMBTK_DTCK_BR_Blue, vehicle_is_reversed) {
-    0: spriteset_BR401_DMBTK_BR_Blue;
-        spriteset_BR401_DTCK_BR_Blue; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR401_DTCK_DMBTK_BR_Blue, vehicle_is_reversed) {
-    0: spriteset_BR401_DTCK_BR_Blue_REV;
-        spriteset_BR401_DMBTK_BR_Blue_REV; }
-
 switch(FEAT_TRAINS, SELF, sw_graphics_BR401_BR_Blue, position_in_vehid_chain % 6) {
-    1: return sw_reverse_BR401_DMBTK_DTCK_BR_Blue;
-    4: return sw_reverse_BR401_DTCK_DMBTK_BR_Blue; 
+    1:  spriteset_BR401_DMBTK_BR_Blue;
+    4:  spriteset_BR401_DTCK_BR_Blue;
         spriteset_empty; }
 
 // livery switch
@@ -330,7 +294,7 @@ item (FEAT_TRAINS, item_BR401, 4010) {
         // common properties
         name:                           string(STR_NAME_BR401);
         // variant_group:                  ; // unit ID or item
-		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(1935,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;

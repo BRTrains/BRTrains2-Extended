@@ -80,6 +80,20 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR313_MSO_NSE, [ STORE_TEMP((getbits(extr
     1: spriteset_empty;
     2: sw_panto_BR313;  }
 
+// FX switch
+switch(FEAT_TRAINS, SELF, sw_FX_BR313_OHLE, position_in_vehid_chain % 9) { // rear catenary
+    6:  electric_create_visual_effect;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+
+switch(FEAT_TRAINS, SELF, sw_FX_BR313_SAA3, position_in_vehid_chain % 9) {
+    0:  electric_create_visual_effect_SAA3;
+    8:  electric_create_visual_effect_SAA3;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+
+switch(FEAT_TRAINS, SELF, sw_FX_BR313_Electric, tile_powers_railtype("ELRL")) {
+    1:  sw_FX_BR313_OHLE;
+        sw_FX_BR313_SAA3; }
+
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_BR313_NSE, position_in_vehid_chain % 9) {
     1:  spriteset_BR313_DMSO_NSE;
@@ -149,7 +163,7 @@ item (FEAT_TRAINS, item_BR313, 3130) {
     graphics {
         // graphics
         default:                        sw_livery_BR313;
-        // visual_effect_and_powered:      sw_FX_BR313_Electric;
+        visual_effect_and_powered:      sw_FX_BR313_Electric;
         purchase:                       spriteset_BR313_DMSO_NSE_purchase;
         sound_effect:                   sw_sound_electric_GEC;
 

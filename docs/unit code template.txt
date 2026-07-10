@@ -221,19 +221,26 @@ switch(FEAT_TRAINS, SELF, sw_FX_UNIT_Diesel, position_in_vehid_chain % 3) {
     1: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -1, DISABLE_WAGON_POWER);
         return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
-switch(FEAT_TRAINS, SELF, sw_FX_UNIT_Electric, position_in_vehid_chain % 3) { // front catenary
-    0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
-        return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+switch(FEAT_TRAINS, SELF, sw_FX_UNIT_OHLE, position_in_vehid_chain % 3) { // front catenary
+    0:  electric_create_visual_effect;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
 
-switch(FEAT_TRAINS, SELF, sw_FX_UNIT_Electric, position_in_vehid_chain % 3) { // middle catenary
-    0: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-    1: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
-        return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);	 }
+switch(FEAT_TRAINS, SELF, sw_FX_UNIT_OHLE, position_in_vehid_chain % 3) { // middle catenary
+    1:  electric_create_visual_effect;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);	 }
 
-switch(FEAT_TRAINS, SELF, sw_FX_UNIT_Electric, position_in_vehid_chain % 3) { // rear catenary
-    0: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-    1: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-    2: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC,-2, DISABLE_WAGON_POWER); }
+switch(FEAT_TRAINS, SELF, sw_FX_UNIT_OHLE, position_in_vehid_chain % 3) { // rear catenary
+    2:  electric_create_visual_effect;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+
+switch(FEAT_TRAINS, SELF, sw_FX_UNIT_SAA3, position_in_vehid_chain % 3) {
+    0:  electric_create_visual_effect_SAA3;
+    2:  electric_create_visual_effect_SAA3;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+
+switch(FEAT_TRAINS, SELF, sw_FX_UNIT_Electric, tile_powers_railtype("ELRL")) {
+    1:  sw_FX_UNIT_OHLE;
+        sw_FX_UNIT_SAA3; }
 
 switch(FEAT_TRAINS, SELF, sw_FX_UNIT_Steam, position_in_vehid_chain % 3) {
     0: return visual_effect_and_powered(VISUAL_EFFECT_STEAM, -2, DISABLE_WAGON_POWER);

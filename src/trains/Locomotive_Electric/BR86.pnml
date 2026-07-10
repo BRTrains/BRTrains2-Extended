@@ -252,7 +252,7 @@ switch(FEAT_TRAINS, PARENT, sw_BR86_purchase_sprite, current_year) {
 
 // FX effects
 switch(FEAT_TRAINS, SELF, sw_FX_BR86_Electric, position_in_vehid_chain % 3) { // rear catenary
-    2: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC,-2, DISABLE_WAGON_POWER); 
+    2: electric_create_visual_effect; 
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);}
 
 // livery switch

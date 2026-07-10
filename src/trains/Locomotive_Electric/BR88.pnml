@@ -52,10 +52,17 @@ spriteset(spriteset_BR88_panto_down_purchase, "gfx/Locomotive_Electric/BR88/BR88
     { template_purchase(0,0) }
 
 // FX effects
+switch(FEAT_TRAINS, SELF, sw_FX_BR88_Diesel, position_in_vehid_chain % 3) {
+    1:  visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -1, DISABLE_WAGON_POWER);
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+
 switch(FEAT_TRAINS, SELF, sw_FX_BR88_Electric, position_in_vehid_chain % 3) { // front catenary
-    0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
-        return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-}
+    0:  electric_create_visual_effect;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+
+switch(FEAT_TRAINS, PARENT, sw_FX_BR88, tile_powers_railtype("ELRL")) {
+    1: sw_FX_BR88_Electric;
+        sw_FX_BR88_Diesel; }
 
 // dual mode switches
 switch(FEAT_TRAINS, SELF, sw_spritestack_BR88_purchase, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
@@ -151,7 +158,7 @@ item (FEAT_TRAINS, item_BR88, 8800) {
     graphics {
         // graphics
         default:                        sw_graphics_BR88;
-        visual_effect_and_powered:      sw_FX_BR88_Electric;
+        visual_effect_and_powered:      sw_FX_BR88;
         purchase:                       sw_spritestack_BR88_purchase; // For dual mode units
         sound_effect:                   sw_sound_hybrid_88;
 
