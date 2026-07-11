@@ -33,25 +33,37 @@ spriteset(spriteset_BR318_DMSO_Gangway_REV, "gfx/EMU/BR318/BR318_DMSO_Gangway_1x
     { template_128trains_REV_4x(0,0) }
 
 // basic sprite
-spriteset(spriteset_BR318_DMSO_ScotRail, "gfx/EMU/BR318/BR318_DMSO_ScotRail_1x_8bpp.png")
+spriteset(spriteset_BR318_DMSOB_ScotRail, "gfx/EMU/BR318/BR318_DMSOB_ScotRail_1x_8bpp.png")
     { template_128trains_1x(0,0) }
 
-    alternative_sprites(spriteset_BR318_DMSO_ScotRail, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSO_ScotRail_1x_32bpp.png", "gfx/EMU/BR318/BR318_DMSO_ScotRail_1x_mask.png")
+    alternative_sprites(spriteset_BR318_DMSOB_ScotRail, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSOB_ScotRail_1x_32bpp.png", "gfx/EMU/BR318/BR318_DMSOB_ScotRail_1x_mask.png")
     { template_128trains_1x(0,0) }
 
-    alternative_sprites(spriteset_BR318_DMSO_ScotRail, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSO_ScotRail_2x_32bpp.png", "gfx/EMU/BR318/BR318_DMSO_ScotRail_2x_mask.png")
+    alternative_sprites(spriteset_BR318_DMSOB_ScotRail, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSOB_ScotRail_2x_32bpp.png", "gfx/EMU/BR318/BR318_DMSOB_ScotRail_2x_mask.png")
     { template_128trains_2x(0,0) }
 
-    alternative_sprites(spriteset_BR318_DMSO_ScotRail, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSO_ScotRail_4x_32bpp.png", "gfx/EMU/BR318/BR318_DMSO_ScotRail_4x_mask.png")
+    alternative_sprites(spriteset_BR318_DMSOB_ScotRail, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSOB_ScotRail_4x_32bpp.png", "gfx/EMU/BR318/BR318_DMSOB_ScotRail_4x_mask.png")
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR318_DMSO_ScotRail_purchase, "gfx/EMU/BR318/BR318_DMSO_ScotRail_1x_8bpp.png")
+spriteset(spriteset_BR318_DMSOB_ScotRail_purchase, "gfx/EMU/BR318/BR318_DMSOB_ScotRail_1x_8bpp.png")
     { template_purchase(0,0) }
 
-    alternative_sprites(spriteset_BR318_DMSO_ScotRail_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSO_ScotRail_1x_32bpp.png", "gfx/EMU/BR318/BR318_DMSO_ScotRail_1x_mask.png")
+    alternative_sprites(spriteset_BR318_DMSOB_ScotRail_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSOB_ScotRail_1x_32bpp.png", "gfx/EMU/BR318/BR318_DMSOB_ScotRail_1x_mask.png")
     { template_purchase(0,0) }
 
+// basic sprite
+spriteset(spriteset_BR318_DMSOD_ScotRail_REV, "gfx/EMU/BR318/BR318_DMSOD_ScotRail_1x_8bpp.png")
+    { template_128trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR318_DMSOD_ScotRail_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSOD_ScotRail_1x_32bpp.png", "gfx/EMU/BR318/BR318_DMSOD_ScotRail_1x_mask.png")
+    { template_128trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR318_DMSOD_ScotRail_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSOD_ScotRail_2x_32bpp.png", "gfx/EMU/BR318/BR318_DMSOD_ScotRail_2x_mask.png")
+    { template_128trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_BR318_DMSOD_ScotRail_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSOD_ScotRail_4x_32bpp.png", "gfx/EMU/BR318/BR318_DMSOD_ScotRail_4x_mask.png")
+    { template_128trains_REV_4x(0,0) }
 
 // basic sprite
 spriteset(spriteset_BR318_DMSO_SPT, "gfx/EMU/BR318/BR318_DMSO_SPT_1x_8bpp.png")
@@ -134,19 +146,6 @@ spriteset(spriteset_BR318_DMSO_SPTE_REV, "gfx/EMU/BR318/BR318_DMSO_SPTE_1x_8bpp.
     { template_128trains_REV_4x(0,0) }
 
 // basic sprite
-spriteset(spriteset_BR318_DMSOL_ScotRail, "gfx/EMU/BR318/BR318_DMSOL_ScotRail_1x_8bpp.png")
-    { template_128trains_1x(0,0) }
-
-    alternative_sprites(spriteset_BR318_DMSOL_ScotRail, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSOL_ScotRail_1x_32bpp.png", "gfx/EMU/BR318/BR318_DMSOL_ScotRail_1x_mask.png")
-    { template_128trains_1x(0,0) }
-
-    alternative_sprites(spriteset_BR318_DMSOL_ScotRail, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSOL_ScotRail_2x_32bpp.png", "gfx/EMU/BR318/BR318_DMSOL_ScotRail_2x_mask.png")
-    { template_128trains_2x(0,0) }
-
-    alternative_sprites(spriteset_BR318_DMSOL_ScotRail, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSOL_ScotRail_4x_32bpp.png", "gfx/EMU/BR318/BR318_DMSOL_ScotRail_4x_mask.png")
-    { template_128trains_4x(0,0) }
-
-// basic sprite
 spriteset(spriteset_BR318_DMSOL_SPT, "gfx/EMU/BR318/BR318_DMSOL_SPT_1x_8bpp.png")
     { template_128trains_1x(0,0) }
 
@@ -171,19 +170,6 @@ spriteset(spriteset_BR318_DMSOL_SPTE, "gfx/EMU/BR318/BR318_DMSOL_SPTE_1x_8bpp.pn
 
     alternative_sprites(spriteset_BR318_DMSOL_SPTE, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSOL_SPTE_4x_32bpp.png", "gfx/EMU/BR318/BR318_DMSOL_SPTE_4x_mask.png")
     { template_128trains_4x(0,0) }
-
-// basic sprite
-spriteset(spriteset_BR318_DMSOL_ScotRail_REV, "gfx/EMU/BR318/BR318_DMSOL_ScotRail_1x_8bpp.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR318_DMSOL_ScotRail_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSOL_ScotRail_1x_32bpp.png", "gfx/EMU/BR318/BR318_DMSOL_ScotRail_1x_mask.png")
-    { template_128trains_REV_1x(0,0) }
-
-    alternative_sprites(spriteset_BR318_DMSOL_ScotRail_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSOL_ScotRail_2x_32bpp.png", "gfx/EMU/BR318/BR318_DMSOL_ScotRail_2x_mask.png")
-    { template_128trains_REV_2x(0,0) }
-
-    alternative_sprites(spriteset_BR318_DMSOL_ScotRail_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSOL_ScotRail_4x_32bpp.png", "gfx/EMU/BR318/BR318_DMSOL_ScotRail_4x_mask.png")
-    { template_128trains_REV_4x(0,0) }
 
 // basic sprite
 spriteset(spriteset_BR318_DMSOL_SPT_REV, "gfx/EMU/BR318/BR318_DMSOL_SPT_1x_8bpp.png")
@@ -324,8 +310,8 @@ spritegroup spritegroup_BR318_DMSO_Loading_REV {
     loading: [spriteset_BR318_DMSO_Loading_REV]; }
 
 // loadstack
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSO_RF_ScotRail, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_DMSO_ScotRail;
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSOB_RF_ScotRail, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR318_DMSOB_ScotRail;
     1: spritegroup_BR318_DMSO_Loading; }
     
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSO_RF_SPT, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
@@ -336,8 +322,8 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSO_RF_SPTE, [ STORE_TEMP((getbits
     0: spriteset_BR318_DMSO_SPTE;
     1: spritegroup_BR318_DMSO_Loading; }
     
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSOL_RF_ScotRail_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_DMSOL_ScotRail_REV;
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSOD_RF_ScotRail_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR318_DMSOD_ScotRail_REV;
     1: spritegroup_BR318_DMSO_Loading_REV; }
     
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSOL_RF_SPT_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
@@ -361,8 +347,8 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_PMO_SPTE, [ STORE_TEMP((getbits(ext
     1: spritegroup_BR318_DMSO_Loading; }
 
 // non-refurb
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSO_ScotRail, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_DMSO_ScotRail;
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSOB_ScotRail, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR318_DMSOB_ScotRail;
     1: spritegroup_BR318_DMSO_Loading;
     2: spriteset_BR318_DMSO_Gangway; }
     
@@ -376,8 +362,8 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSO_SPTE, [ STORE_TEMP((getbits(ex
     1: spritegroup_BR318_DMSO_Loading;
     2: spriteset_BR318_DMSO_Gangway; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSOL_ScotRail_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_DMSOL_ScotRail_REV;
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSOD_ScotRail_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR318_DMSOD_ScotRail_REV;
     1: spritegroup_BR318_DMSO_Loading_REV;
     2: spriteset_BR318_DMSO_Gangway_REV; }
     
@@ -392,8 +378,8 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSOL_SPTE_REV, [ STORE_TEMP((getbi
     2: spriteset_BR318_DMSO_Gangway_REV; }
  
 // purchase sprites
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSO_ScotRail_purchase, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR318_DMSO_ScotRail_purchase;
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSOB_ScotRail_purchase, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR318_DMSOB_ScotRail_purchase;
     1:  spriteset_BR318_DMSO_Gangway_purchase; }
     
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSO_SPT_purchase, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
@@ -407,14 +393,14 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR318_DMSO_SPTE_purchase, [ STORE_TEMP((g
 switch(FEAT_TRAINS, PARENT, sw_BR318_purchase_sprite, current_year) {
     1983..1996: sw_loadstack_BR318_DMSO_SPTE_purchase;
     1997..2014: sw_loadstack_BR318_DMSO_SPT_purchase;
-    2015..2030: sw_loadstack_BR318_DMSO_ScotRail_purchase; 
-        sw_loadstack_BR318_DMSO_ScotRail_purchase; }
+    2015..2030: sw_loadstack_BR318_DMSOB_ScotRail_purchase; 
+        sw_loadstack_BR318_DMSOB_ScotRail_purchase; }
     
 switch(FEAT_TRAINS, PARENT, sw_BR318_RF_purchase_sprite, current_year) {
     1983..1996: spriteset_BR318_DMSO_SPTE_purchase;
     1997..2014: spriteset_BR318_DMSO_SPT_purchase;
-    2015..2030: spriteset_BR318_DMSO_ScotRail_purchase;
-        spriteset_BR318_DMSO_ScotRail_purchase; }
+    2015..2030: spriteset_BR318_DMSOB_ScotRail_purchase;
+        spriteset_BR318_DMSOB_ScotRail_purchase; }
 
 // FX effects
 switch(FEAT_TRAINS, SELF, sw_FX_BR318_Electric, position_in_vehid_chain % 9) { // front catenary
@@ -423,9 +409,9 @@ switch(FEAT_TRAINS, SELF, sw_FX_BR318_Electric, position_in_vehid_chain % 9) { /
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR318_ScotRail, position_in_articulated_veh % 9) {
-	1: sw_loadstack_BR318_DMSO_ScotRail;
+	1: sw_loadstack_BR318_DMSOB_ScotRail;
     4: sw_loadstack_BR318_PMO_ScotRail;
-    7: sw_loadstack_BR318_DMSOL_ScotRail_REV;
+    7: sw_loadstack_BR318_DMSOD_ScotRail_REV;
 	    spriteset_empty; }
         
 switch(FEAT_TRAINS, SELF, sw_graphics_BR318_SPT, position_in_articulated_veh % 9) {
@@ -441,9 +427,9 @@ switch(FEAT_TRAINS, SELF, sw_graphics_BR318_SPTE, position_in_articulated_veh % 
 	    spriteset_empty; }
         
 switch(FEAT_TRAINS, SELF, sw_graphics_BR318_RF_ScotRail, position_in_articulated_veh % 9) {
-	1: sw_loadstack_BR318_DMSO_RF_ScotRail;
+	1: sw_loadstack_BR318_DMSOB_RF_ScotRail;
     4: sw_loadstack_BR318_PMO_ScotRail;
-    7: sw_loadstack_BR318_DMSOL_RF_ScotRail_REV;
+    7: sw_loadstack_BR318_DMSOD_RF_ScotRail_REV;
 	    spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR318_RF_SPT, position_in_articulated_veh % 9) {
