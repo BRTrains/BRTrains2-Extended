@@ -124,21 +124,6 @@ STR_PARAM_NAME_COST_MULTIPLIER  :Purchase Cost Level
 STR_PARAM_NAME_RUNNING_COST     :Running Cost Level
 STR_PARAM_DESC_COST_MULTIPLIER  :Increase or decrease purchase price and running costs, if you find they aren't balanced to your taste
 
-STR_PARAM_NAME_TRAMMETRO        :Metro Trains and Tram availability
-STR_PARAM_DESC_TRAMMETRO        :Should Trams and Metro units be available as trams or trains?
-STR_TRAM_DEFAULT                :(Default) Realistic Heavy/Light rail split (Trams and light rail as trams, heavy rail as trains)
-STR_TRAM_TRAINONLY              :Display all Metro units as Trains only (no trams)
-STR_TRAM_TRAMONLY               :Display all Metro Units as Trams only (no London Underground trains etc, only as trams)
-STR_TRAM_BOTH                   :Display Trams and Trains as both Trams and Trains (all purchaseable as either)
-STR_TRAM_EXTRA                  :(Experimental) Display as both AND include some extra heavy rail units (Thameslink, Crossrail etc)
-STR_TRAM_SUPEREXTRA             :(Experimental) Include a slightly ridiculous number of extra units (London Overground, trains used for suburban routes)
-
-STR_PARAM_NAME_METRO            :Metro-as-Tram availability
-STR_PARAM_DESC_METRO            :Should Metro units be available as trams?
-STR_METRO_OFF                   :No
-STR_METRO_ON                    :Yes
-STR_METRO_SUPER                 :Yes (And include some suburban trains)
-
 STR_PARAM_NAME_2CC              :Parameter not in use (yet)
 STR_PARAM_DESC_2CC              :Parameter reserved for future feature
 STR_NO_2CC                      :No
@@ -1620,6 +1605,7 @@ str_BRBlueWrap					: (BR - Blue, Wraparound)
 str_BRBlueHeadlight				: (BR - Blue with Headlight)
 str_BRBlueGrey					: (BR - Blue and Grey)
 str_BRBlueCentre				: (BR - Blue, Centre Headcode)
+str_BRBlueHeritage              : (BR - Blue, Heritage)
 str_BRBlueSplit					: (BR - Blue, Split Box)
 str_BRBlueFront				    : (BR - Blue, Yellow Front)
 str_BRBluePanel                 : (BR - Blue, Yellow Panel)
@@ -1843,6 +1829,7 @@ str_LSE							: (London and South East - Jaffa Cake)
 str_LSWRSageGreen               : (LSWR - Sage Green)
 str_LTS							: (LTS Rail)
 str_LO					        : (London Overground)
+str_LO_exSilverlink             : (London Overground - ex-Silverlink)
 str_LO_Aventra			        : (London Overground - Fake Aventra)
 str_LO_5_Celeb					: (London Overground - 5-Car Celebration)
 str_LO_Pride       				: (London Overground - Pride)
@@ -1972,6 +1959,7 @@ str_Southeastern_TBW			: (Southeastern - Tunbridge Wells)
 str_Southeastern_yellow			: (Southeastern - Yellow)
 str_Southeastern_yellow_stripe	: (Southeastern - Yellow with Stripe)
 str_Southern					: (Southern)
+str_SouthernCoastway            : (Southern - Coastway)
 str_SRBlack                    : (Southern Railway - Black)
 str_SRGrey                     : (Southern Railway - Grey)
 str_SROlive                    : (Southern Railway - Olive Green)
