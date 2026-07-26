@@ -220,8 +220,9 @@ str_coach_CL                    :{BLUE}Lavatory Composite
 str_coach_CLso                  :{BLUE}Lavatory Composite Semi-Open
 str_coach_CO                    :{BLUE}Composite Open
 str_coach_CTO                   :{BROWN}Open Carriage Truck
-str_coach_DBSO                  :{GREEN}Driving Brake Second Open
+str_coach_DBSO                  :{GREEN}Driving Brake Standard Open
 str_coach_DVT                   :{GREEN}Driving Van Trailer
+str_coach_DTSO                  :{GREEN}Driving Trailer Standard Open
 str_coach_F                     :{PURPLE}Compartment First
 str_coach_FK                    :{PURPLE}Corridor First
 str_coach_FO                    :{PURPLE}Open First
@@ -1366,6 +1367,12 @@ str_BRMk5Sleeper_liveries		:Caledonian Sleaper
 STR_NAME_BR_Mk5A_Nova3          :BR Mark 5a Train Set "Nova 3"
 STR_NAME_BR_Mk5A_Chiltern       :BR Mark 5a Train Set "Chiltern Explorer"
 str_BR_Mk5A_liveries            :Transpennine Express, Chiltern Railways
+
+STR_NAME_BR_Mk5A_DTSO           :BR Mark 5a Coach (DTSO)
+STR_NAME_BR_Mk5A_TFOE           :BR Mark 5a Coach (TFOE)
+STR_NAME_BR_Mk5A_TSO            :BR Mark 5a Coach (TSO)
+STR_NAME_BR_Mk5A_TSOD           :BR Mark 5a Coach (TSOD)
+STR_NAME_BR_Mk5A_TSOE           :BR Mark 5a Coach (TSOE)
 
 # Miscellaneous
 STR_NAME_RMTPO					:Royal Mail Travelling Post Office

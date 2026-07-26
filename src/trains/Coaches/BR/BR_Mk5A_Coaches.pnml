@@ -1,0 +1,372 @@
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_BR_Mk5A_DTSO, position_in_articulated_veh % 3) {
+    1:  6;
+        4; }
+
+// capacity switch
+switch(FEAT_TRAINS, SELF, sw_capacity_BR_Mk5A_DTSO, position_in_articulated_veh % 3) {
+    0: 62 * param_pax; // all the capacity - (vehid chain number)
+    1..2: 1 * param_pax;
+    // total 64
+}
+
+// purchase sprites
+switch(FEAT_TRAINS, SELF, sw_purchase_BR_Mk5A_DTSO, current_year) {
+    2017..2025: spriteset_BR_Mk5A_DTSO_TPE_purchase;
+        spriteset_BR_Mk5A_DTSO_Chiltern_purchase; }
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk5A_DTSO, cargo_subtype) {
+    0: sw_loadstack_BR_Mk5A_DTSO_TPE;
+    1: sw_loadstack_BR_Mk5A_DTSO_Chiltern; }
+
+// livery name refit switch
+switch(FEAT_TRAINS, SELF, sw_BR_Mk5A_cargo_subtype_text, cargo_subtype){
+	0:	string(str_TPE);
+    1:  string(str_ChilternExplorer);
+       return CB_RESULT_NO_TEXT; }
+
+switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk5A_DTSO_REV, cargo_subtype) {
+    0: sw_loadstack_BR_Mk5A_DTSO_TPE_REV;
+    1: sw_loadstack_BR_Mk5A_DTSO_Chiltern_REV; }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_BR_Mk5A_DTSO, position_in_articulated_veh % 3) {
+    1:  sw_livery_BR_Mk5A_DTSO;
+        spriteset_empty; }
+
+switch(FEAT_TRAINS, SELF, sw_graphics_BR_Mk5A_DTSO_REV, position_in_articulated_veh % 3) {
+    1:  sw_livery_BR_Mk5A_DTSO_REV;
+        spriteset_empty; }
+
+switch(FEAT_TRAINS, SELF, sw_rear_BR_Mk5A_DTSO, num_vehs_in_consist > 3 ? position_in_consist_from_end : -1) {
+    1:  sw_graphics_BR_Mk5A_DTSO_REV;
+        sw_graphics_BR_Mk5A_DTSO; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR_Mk5A_DTSO, extra_callback_info1) {
+    1..2: return item_BR_Mk5A_DTSO;
+        return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+
+// BR_Mk5A_DTSO definition
+item (FEAT_TRAINS, item_BR_Mk5A_DTSO, 12191) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR_Mk5A_DTSO);
+        variant_group:                  item_BR_Mk5A_Nova3; // BR_Mk5A_DTSO ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY, VEHICLE_FLAG_TRAIN_HAS_CAB);
+
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2017,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		refittable_cargo_classes:        bitmask(CC_PASSENGERS);	
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [PASS, TOUR];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        loading_speed:					15; // Standard Class
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          125 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          0 hp;
+        weight:                         43 ton;
+        dual_headed:                    0;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_rear_BR_Mk5A_DTSO;
+        purchase:                       sw_purchase_BR_Mk5A_DTSO;
+
+        // internal code
+        length:                         sw_length_BR_Mk5A_DTSO;
+        articulated_part:               sw_articulated_BR_Mk5A_DTSO;
+        speed:                          sw_speed_BR_Mk5A_Nova3() * 1609 / 1000;  
+        purchase_cargo_capacity:        return (21 * param_pax); // divide by number of articulated parts and floor
+        cargo_capacity:                 sw_capacity_BR_Mk5A_DTSO;
+        cost_factor:                    1431;
+        running_cost_factor:            2043;
+        cargo_subtype_text:             sw_BR_Mk5A_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+        // colour_mapping:                 switch_generic_recolour;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_coach,
+                                                    string(str_coach_DTSO),
+                                                    string(str_BR_Mk5A_liveries)));
+    }
+}
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_BR_Mk5A_TFOE, position_in_articulated_veh % 3) {
+    1:  6;
+        4; }
+
+// purchase sprites
+switch(FEAT_TRAINS, SELF, sw_purchase_BR_Mk5A_TFOE, current_year) {
+    2017..2025: spriteset_BR_Mk5A_TFO_TPE_purchase;
+        spriteset_BR_Mk5A_TFO_Chiltern_purchase; }
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk5A_TFOE, cargo_subtype) {
+    0: sw_loadstack_BR_Mk5A_TFO_TPE;
+    1: sw_loadstack_BR_Mk5A_TFO_Chiltern; }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_BR_Mk5A_TFOE, position_in_articulated_veh % 3) {
+    1:  sw_livery_BR_Mk5A_TFOE;
+        spriteset_empty; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR_Mk5A_TFOE, extra_callback_info1) {
+    1..2: return item_BR_Mk5A_TFOE;
+        return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+
+// BR_Mk5A_TFOE definition
+item (FEAT_TRAINS, item_BR_Mk5A_TFOE, 12192) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR_Mk5A_TFOE);
+        variant_group:                  item_BR_Mk5A_Nova3; // BR_Mk5A_TFOE ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2017,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		refittable_cargo_classes:        bitmask(CC_PASSENGERS);	
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [PASS, TOUR];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 10 * param_pax;
+        loading_speed:					15; // Standard Class
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          125 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          0 hp;
+        weight:                         43 ton;
+        dual_headed:                    0;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_BR_Mk5A_TFOE;
+        purchase:                       sw_purchase_BR_Mk5A_TFOE;
+
+        // internal code
+        length:                         sw_length_BR_Mk5A_TFOE;
+        articulated_part:               sw_articulated_BR_Mk5A_TFOE;
+        speed:                          sw_speed_BR_Mk5A_Nova3() * 1609 / 1000;  
+        // purchase_cargo_capacity:        return (21 * param_pax); // divide by number of articulated parts and floor
+        cost_factor:                    1010;
+        running_cost_factor:            1930;
+        cargo_subtype_text:             sw_BR_Mk5A_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+        // colour_mapping:                 switch_generic_recolour;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_coach,
+                                                    string(str_coach_TFE),
+                                                    string(str_BR_Mk5A_liveries)));
+    }
+}
+
+
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_BR_Mk5A_TSO, position_in_articulated_veh % 3) {
+    1:  6;
+        4; }
+
+// purchase sprites
+switch(FEAT_TRAINS, SELF, sw_purchase_BR_Mk5A_TSO, current_year) {
+    2017..2025: spriteset_BR_Mk5A_TSO_TPE_purchase;
+        spriteset_BR_Mk5A_TSO_Chiltern_purchase; }
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk5A_TSO, cargo_subtype) {
+    0: sw_loadstack_BR_Mk5A_TSO_TPE;
+    1: sw_loadstack_BR_Mk5A_TSO_Chiltern; }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_BR_Mk5A_TSO, position_in_articulated_veh % 3) {
+    1:  sw_livery_BR_Mk5A_TSO;
+        spriteset_empty; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR_Mk5A_TSO, extra_callback_info1) {
+    1..2: return item_BR_Mk5A_TSO;
+        return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+
+// BR_Mk5A_TSO definition
+item (FEAT_TRAINS, item_BR_Mk5A_TSO, 12193) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR_Mk5A_TSO);
+        variant_group:                  item_BR_Mk5A_Nova3; // BR_Mk5A_TSO ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2017,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		refittable_cargo_classes:        bitmask(CC_PASSENGERS);	
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [PASS, TOUR];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 23 * param_pax;
+        loading_speed:					15; // Standard Class
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          125 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          0 hp;
+        weight:                         43 ton;
+        dual_headed:                    0;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_BR_Mk5A_TSO;
+        purchase:                       sw_purchase_BR_Mk5A_TSO;
+
+        // internal code
+        length:                         sw_length_BR_Mk5A_TSO;
+        articulated_part:               sw_articulated_BR_Mk5A_TSO;
+        speed:                          sw_speed_BR_Mk5A_Nova3() * 1609 / 1000;  
+        // purchase_cargo_capacity:        return (21 * param_pax); // divide by number of articulated parts and floor
+        cost_factor:                    1493;
+        running_cost_factor:            2062;
+        cargo_subtype_text:             sw_BR_Mk5A_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+        // colour_mapping:                 switch_generic_recolour;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_coach,
+                                                    string(str_coach_TSO),
+                                                    string(str_BR_Mk5A_liveries)));
+    }
+}
+
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_BR_Mk5A_TSOD, position_in_articulated_veh % 3) {
+    1:  6;
+        4; }
+
+// capacity switch
+switch(FEAT_TRAINS, SELF, sw_capacity_BR_Mk5A_TSOD, position_in_articulated_veh % 3) {
+    0:  57 * param_pax; // all the capacity - (vehid chain number)
+    1..2: 1 * param_pax;
+    // total 59
+}
+
+// purchase sprites
+switch(FEAT_TRAINS, SELF, sw_purchase_BR_Mk5A_TSOD, current_year) {
+    2017..2025: spriteset_BR_Mk5A_TSOD_TPE_purchase;
+        spriteset_BR_Mk5A_TSOD_Chiltern_purchase; }
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk5A_TSOD, cargo_subtype) {
+    0: sw_loadstack_BR_Mk5A_TSOD_TPE;
+    1: sw_loadstack_BR_Mk5A_TSOD_Chiltern; }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_BR_Mk5A_TSOD, position_in_articulated_veh % 3) {
+    1:  sw_livery_BR_Mk5A_TSOD;
+        spriteset_empty; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR_Mk5A_TSOD, extra_callback_info1) {
+    1..2: return item_BR_Mk5A_TSOD;
+        return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+
+// BR_Mk5A_TSOD definition
+item (FEAT_TRAINS, item_BR_Mk5A_TSOD, 12194) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR_Mk5A_TSOD);
+        variant_group:                  item_BR_Mk5A_Nova3; // BR_Mk5A_TSOD ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2017,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		refittable_cargo_classes:        bitmask(CC_PASSENGERS);	
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [PASS, TOUR];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        loading_speed:					15; // Standard Class
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          125 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        power:                          0 hp;
+        weight:                         43 ton;
+        dual_headed:                    0;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_BR_Mk5A_TSOD;
+        purchase:                       sw_purchase_BR_Mk5A_TSOD;
+
+        // internal code
+        length:                         sw_length_BR_Mk5A_TSOD;
+        articulated_part:               sw_articulated_BR_Mk5A_TSOD;
+        speed:                          sw_speed_BR_Mk5A_Nova3() * 1609 / 1000;  
+        purchase_cargo_capacity:        return (19 * param_pax); // divide by number of articulated parts and floor
+        cargo_capacity:                 sw_capacity_BR_Mk5A_TSOD;
+        cost_factor:                    1368;
+        running_cost_factor:            2028;
+        cargo_subtype_text:             sw_BR_Mk5A_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+        // colour_mapping:                 switch_generic_recolour;
+
+        // purchase menu text
+        additional_text:                return( string(str_purchase_coach,
+                                                    string(str_coach_TSOD),
+                                                    string(str_BR_Mk5A_liveries)));
+    }
+}
