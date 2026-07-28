@@ -493,6 +493,16 @@ STR_NAME_GER_L77_LNER               :LNER Hill Class N7
 STR_NAME_LNER_N7_3                  :LNER Hill Class N7/3
 str_GER_L77_liveries			    :GER Blue, GER Black, LNER Apple Green, LNER Black, BR Black
 
+STR_NAME_GER_S46                    :GER Class S46 "Claud Hamilton"
+STR_NAME_GER_S46_LNER               :LNER Holden Class D14 "Claud Hamilton"
+str_GER_S46_liveries                :GER Blue, GER Black, LNER Apple Green, LNER Black
+
+STR_NAME_GER_D56_H88                :GER Class D56/H88 "Super Claud"
+STR_NAME_GER_D56_H88_LNER           :LNER Holden Class D15/D16 "Super Claud"
+str_GER_D56_H88_liveries            :GER Blue, GER Black, LNER Apple Green, LNER Black, BR Green, BR Black
+
+STR_NAME_LNER_D16_3                 :LNER D16/3 "Gresley Clauds"
+
 STR_NAME_GER_Y65                    :GER Class Y65
 STR_NAME_GER_Y65_LNER               :LNER Holden Class F7
 str_GER_Y65_liveries                :GER Blue, GER Black, LNER Black, BR Black
