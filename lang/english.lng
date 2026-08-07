@@ -460,6 +460,9 @@ str_LMS_Fowler_4P_liveries          :LMS Crimson, LMS Black, BR Black, MR Crimso
 STR_NAME_LMS_4F                     :LMS Fowler Class 4F
 str_LMS_4F_liveries                 :LMS Black, BR Black, MR Black, SDJR Blue
 
+STR_NAME_LMS_Ivatt_2                :LMS Ivatt Class 2
+str_LMS_Ivatt_2_liveries            :LMS Black, BR Black, BR Green, BR Crimson
+
 STR_NAME_LMS_Jubilee				:LMS Jubilee Class
 STR_NAME_LMS_Rebuilt_Jubilee        :LMS Rebuilt Jubilee Class
 str_LMS_Jubilee_liveries			:LMS Crimson, LMS Black, BR Black, BR Brunswick Green, BR Express Blue
@@ -1630,6 +1633,7 @@ str_BRBlue125                   : (BR - InterCity 125 Blue and Grey)
 str_BRCarmCream					: (BR - Carmine and Cream)
 str_BRCaledonianBlue            : (BR - Caledonian Blue)
 str_BRChocCream					: (BR - Chocolate and Cream)
+str_BRCrimson                   : (BR - Crimson)
 str_BRDesertSand                : (BR - Desert Sands)
 str_BRExpressBlue               : (BR - Express Passenger Blue)
 str_BRElectricBlue              : (BR - Electric Blue)

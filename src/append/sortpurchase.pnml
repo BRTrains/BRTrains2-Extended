@@ -38,6 +38,7 @@ sort(FEAT_TRAINS, [
     item_LMS_Fowler_2P,
     item_LMS_Fowler_4P,
     item_LMS_4F,
+    item_LMS_Ivatt_2,
     item_LMS_Black_5,
         item_LMS_Black_5_Domed,
         item_LMS_Black_5_Domeless,
