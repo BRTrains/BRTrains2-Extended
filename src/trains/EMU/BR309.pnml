@@ -1338,7 +1338,7 @@ item (FEAT_TRAINS, item_BR309, 3090) {
 		refittable_cargo_classes:       bitmask(CC_PASSENGERS);
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
         cargo_capacity:                 1;
-        loading_speed:					09;
+        loading_speed:					68;
         running_cost_base:			    RUNNING_COST_STEAM;		
 
         //specific properties
