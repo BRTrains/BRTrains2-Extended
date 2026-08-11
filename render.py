@@ -125,7 +125,16 @@ def main(input_folder,
 
         all_vox_files = find_filter_vox_files(input_folder)
         process_vox_files(all_vox_files, palette_path, manifest_path)
-        
+
+    if missing:
+        input_folder = Path(input_folder)
+        missing_vox_files = find_filter_vox_files(input_folder, only_missing=True)
+        total = len(missing_vox_files)
+
+        if total != 0:
+            print(f"\nTotal {total} .vox files have missing gfx images.")
+            process_vox_files(missing_vox_files, palette_path, manifest_path, output)
+    
     else:
         input_folder = Path(input_folder)
         if not input_folder.is_dir():
@@ -141,14 +150,6 @@ def main(input_folder,
         process_vox_files(vox_files, palette_path, manifest_path, output_path)
 
         generate_pnml(vox_files)
-
-    if missing:
-        missing_vox_files = find_filter_vox_files(voxel_directory, only_missing=True)
-        total = len(missing_vox_files)
-
-        if total != 0:
-            print(f"\nTotal {total} .vox files have missing gfx images.")
-            process_vox_files(missing_vox_files, palette_path, manifest_path, output)
     
 
 if __name__ == "__main__":
