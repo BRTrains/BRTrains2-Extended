@@ -466,6 +466,47 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR313_DMSO_SN_Plain_REV, [ STORE_TEMP((ge
     1: spritegroup_BR313_DMSO_Loading_REV; }
 
 // basic sprite
+spriteset(spriteset_BR313_DMSO_WAGN, "gfx/EMU/BR313/BR313_DMSO_WAGN_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR313_DMSO_WAGN, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR313/BR313_DMSO_WAGN_1x_32bpp.png", "gfx/EMU/BR313/BR313_DMSO_WAGN_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR313_DMSO_WAGN, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR313/BR313_DMSO_WAGN_2x_32bpp.png", "gfx/EMU/BR313/BR313_DMSO_WAGN_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR313_DMSO_WAGN, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR313/BR313_DMSO_WAGN_4x_32bpp.png", "gfx/EMU/BR313/BR313_DMSO_WAGN_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR313_DMSO_WAGN_purchase, "gfx/EMU/BR313/BR313_DMSO_WAGN_1x_8bpp.png")
+    { template_purchase(0,0) }
+
+    alternative_sprites(spriteset_BR313_DMSO_WAGN_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR313/BR313_DMSO_WAGN_1x_32bpp.png", "gfx/EMU/BR313/BR313_DMSO_WAGN_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR313_DMSO_WAGN_REV, "gfx/EMU/BR313/BR313_DMSO_WAGN_1x_8bpp.png")
+    { template_128trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR313_DMSO_WAGN_REV, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR313/BR313_DMSO_WAGN_1x_32bpp.png", "gfx/EMU/BR313/BR313_DMSO_WAGN_1x_mask.png")
+    { template_128trains_REV_1x(0,0) }
+
+    alternative_sprites(spriteset_BR313_DMSO_WAGN_REV, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR313/BR313_DMSO_WAGN_2x_32bpp.png", "gfx/EMU/BR313/BR313_DMSO_WAGN_2x_mask.png")
+    { template_128trains_REV_2x(0,0) }
+
+    alternative_sprites(spriteset_BR313_DMSO_WAGN_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR313/BR313_DMSO_WAGN_4x_32bpp.png", "gfx/EMU/BR313/BR313_DMSO_WAGN_4x_mask.png")
+    { template_128trains_REV_4x(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR313_DMSO_WAGN, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR313_DMSO_WAGN;
+    1: spritegroup_BR313_DMSO_Loading; }
+    
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR313_DMSO_WAGN_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR313_DMSO_WAGN_REV;
+    1: spritegroup_BR313_DMSO_Loading_REV; }
+
+// basic sprite
 spriteset(spriteset_BR313_MSO_BR_Blue, "gfx/EMU/BR313/BR313_MSO_BR_Blue_1x_8bpp.png")
     { template_128trains_1x(0,0) }
 
@@ -534,6 +575,24 @@ spriteset(spriteset_BR313_MSO_GN_exFCC, "gfx/EMU/BR313/BR313_MSO_GN_exFCC_1x_8bp
 
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR313_MSO_GN_exFCC, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR313_MSO_GN_exFCC;
+    1: spritegroup_BR313_MSO_Loading;
+    2: sw_panto_BR313;  }
+
+// basic sprite
+spriteset(spriteset_BR313_MSO_NR, "gfx/EMU/BR313/BR313_MSO_NR_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR313_MSO_NR, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR313/BR313_MSO_NR_1x_32bpp.png", "gfx/EMU/BR313/BR313_MSO_NR_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR313_MSO_NR, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR313/BR313_MSO_NR_2x_32bpp.png", "gfx/EMU/BR313/BR313_MSO_NR_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR313_MSO_NR, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR313/BR313_MSO_NR_4x_32bpp.png", "gfx/EMU/BR313/BR313_MSO_NR_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR313_MSO_NR, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR313_MSO_NR;
     1: spritegroup_BR313_MSO_Loading;
     2: sw_panto_BR313;  }
 
@@ -609,6 +668,33 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR313_MSO_SN_Plain, [ STORE_TEMP((getbits
     1: spritegroup_BR313_MSO_Loading;
     2: sw_panto_BR313;  }
 
+// basic sprite
+spriteset(spriteset_BR313_MSO_WAGN, "gfx/EMU/BR313/BR313_MSO_WAGN_1x_8bpp.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR313_MSO_WAGN, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR313/BR313_MSO_WAGN_1x_32bpp.png", "gfx/EMU/BR313/BR313_MSO_WAGN_1x_mask.png")
+    { template_128trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR313_MSO_WAGN, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/EMU/BR313/BR313_MSO_WAGN_2x_32bpp.png", "gfx/EMU/BR313/BR313_MSO_WAGN_2x_mask.png")
+    { template_128trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR313_MSO_WAGN, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR313/BR313_MSO_WAGN_4x_32bpp.png", "gfx/EMU/BR313/BR313_MSO_WAGN_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR313_MSO_WAGN, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR313_MSO_WAGN;
+    1: spritegroup_BR313_MSO_Loading;
+    2: sw_panto_BR313;  }
+
+// purchase sprite
+switch(FEAT_TRAINS, SELF, sw_BR313_purchase_sprite, current_year) {
+    1966..1985: spriteset_BR313_DMSO_BR_Blue_purchase;
+    1986..1996: spriteset_BR313_DMSO_NSE_purchase;
+    1997..2008: spriteset_BR313_DMSO_Silverlink_purchase;
+    2007..2014: spriteset_BR313_DMSO_FCC_purchase;
+    2014..2023: spriteset_BR313_DMSO_SN_Plain_purchase;
+        spriteset_BR313_DMSO_NSE_purchase; }
+
 // FX switch
 switch(FEAT_TRAINS, SELF, sw_FX_BR313_OHLE, position_in_vehid_chain % 9) { // rear catenary
     6:  electric_create_visual_effect;
@@ -654,11 +740,11 @@ switch(FEAT_TRAINS, SELF, sw_BR313_LO_exSL, position_in_vehid_chain % 9) {
     7:  sw_loadstack_BR313_DMSO_LO_exSL_REV;
         spriteset_empty; }
         
-// switch(FEAT_TRAINS, SELF, sw_BR313_NR, position_in_vehid_chain % 9) {
-//     1:  sw_loadstack_BR313_DMSO_NR;
-//     4:  sw_loadstack_BR313_MSO_NR;
-//     7:  sw_loadstack_BR313_DMSO_NR_REV;
-//         spriteset_empty; }
+switch(FEAT_TRAINS, SELF, sw_BR313_NR, position_in_vehid_chain % 9) {
+    1:  sw_loadstack_BR313_DMSO_NR;
+    4:  sw_loadstack_BR313_MSO_NR;
+    7:  sw_loadstack_BR313_DMSO_NR_REV;
+        spriteset_empty; }
         
 switch(FEAT_TRAINS, SELF, sw_BR313_NSE, position_in_vehid_chain % 9) {
     1:  sw_loadstack_BR313_DMSO_NSE;
@@ -683,6 +769,12 @@ switch(FEAT_TRAINS, SELF, sw_BR313_SN_Plain, position_in_vehid_chain % 9) {
     4:  sw_loadstack_BR313_MSO_SN_Plain;
     7:  sw_loadstack_BR313_DMSO_SN_Plain_REV;
         spriteset_empty; }
+
+switch(FEAT_TRAINS, SELF, sw_BR313_WAGN, position_in_vehid_chain % 9) {
+    1:  sw_loadstack_BR313_DMSO_WAGN;
+    4:  sw_loadstack_BR313_MSO_WAGN;
+    7:  sw_loadstack_BR313_DMSO_WAGN_REV;
+        spriteset_empty; }
         
 // livery switch
 switch(FEAT_TRAINS, SELF, sw_livery_BR313, cargo_subtype) {
@@ -690,12 +782,13 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR313, cargo_subtype) {
     1:  sw_BR313_NSE;
     2:  sw_BR313_Silverlink;
     3:  sw_BR313_LO_exSL;
-    4:  sw_BR313_FCC;
-    5:  sw_BR313_GN_exFCC;
-    6:  sw_BR313_SN_Plain;
-    7:  sw_BR313_SN_Coastway;
-    8:  sw_BR313_BR_Heritage;
-    // 9:  sw_BR313_NR;
+    4:  sw_BR313_WAGN;
+    5:  sw_BR313_FCC;
+    6:  sw_BR313_GN_exFCC;
+    7:  sw_BR313_SN_Plain;
+    8:  sw_BR313_SN_Coastway;
+    9:  sw_BR313_BR_Heritage;
+    10:  sw_BR313_NR;
 }
 
 // livery name refit switch
@@ -704,11 +797,13 @@ switch(FEAT_TRAINS, SELF, sw_BR313_cargo_subtype_text, cargo_subtype) {
     1:  return string(str_NSE);
     2:  return string(str_Silverlink);
     3:  return string(str_LO_exSilverlink);
-    4:  return string(str_FCC);
-    5:  return string(str_GGN);
-    6:  return string(str_Southern);
-    7:  return string(str_SouthernCoastway);
-    8:  return string(str_BRBlueHeritage);
+    4:  return string(str_WAGNPu);
+    5:  return string(str_FCC);
+    6:  return string(str_GGN);
+    7:  return string(str_Southern);
+    8:  return string(str_SouthernCoastway);
+    9:  return string(str_BRBlueHeritage);
+    10: return string(str_NRYellow);
         return CB_RESULT_NO_TEXT; }
 
 // capacity switch
@@ -765,7 +860,7 @@ item (FEAT_TRAINS, item_BR313, 3130) {
         // graphics
         default:                        sw_livery_BR313;
         visual_effect_and_powered:      sw_FX_BR313_Electric;
-        purchase:                       spriteset_BR313_DMSO_NSE_purchase;
+        purchase:                       sw_BR313_purchase_sprite;
         sound_effect:                   sw_sound_electric_GEC;
 
         // internal code
