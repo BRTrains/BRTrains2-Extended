@@ -657,6 +657,7 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR150_MSO_Regional_Railways, [ STORE_TEMP
 // purchase sprite
 switch(FEAT_TRAINS, PARENT, sw_BR150_purchase_sprite, current_year) {
     1969..1998: spriteset_BR150_DMSO_Regional_Railways_purchase;
+    1999..2007: spriteset_BR150_DMSO_Central_purchase;
     2016..2030: spriteset_BR150_DMSO_Northern_purchase;
         spriteset_BR150_DMSO_Regional_Railways_purchase;
 }
