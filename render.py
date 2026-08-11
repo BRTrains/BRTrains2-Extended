@@ -105,7 +105,7 @@ def main(input_folder,
          generate=False):
 
     # validate if GoRender is installed
-    if not gorender_path.is_file() & generate == False:
+    if not gorender_path.is_file() and generate == False:
         raise GoRenderNotFoundError(gorender_path)
     
     validate_needed_files(palette_path)
@@ -126,7 +126,16 @@ def main(input_folder,
         all_vox_files = find_filter_vox_files(input_folder)
         process_vox_files(all_vox_files, palette_path, manifest_path)
 
-    if missing:
+    elif all and missing:
+        input_folder = voxel_directory
+        missing_vox_files = find_filter_vox_files(input_folder, only_missing=True)
+        total = len(missing_vox_files)
+
+        if total != 0:
+            print(f"\nTotal {total} .vox files have missing gfx images.")
+            process_vox_files(missing_vox_files, palette_path, manifest_path)
+
+    elif missing:
         input_folder = Path(input_folder)
         missing_vox_files = find_filter_vox_files(input_folder, only_missing=True)
         total = len(missing_vox_files)
