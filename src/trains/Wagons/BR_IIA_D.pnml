@@ -132,7 +132,6 @@ item (FEAT_TRAINS, item_BR_IIA_D, 12806) {
         length:                         sw_length_BR_IIA_D;
         articulated_part:               sw_articulated_BR_IIA_D;
         speed:                          sw_speed_BR_IIA_D() * 1609 / 1000;  
-        purchase_cargo_capacity:        return (5 * param_freight); // divide by number of articulated parts and floor
         cost_factor:                    1274;
         running_cost_factor:            1340;
         cargo_subtype_text:             sw_BR_IIA_D_cargo_subtype_text; 
