@@ -905,9 +905,9 @@ switch(FEAT_TRAINS, PARENT, sw_reverse_BR374_TPS_TPSD_DB, vehicle_is_reversed ) 
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR374_Eurostar, position_in_articulated_veh % 48) {
-	1: sw_loadstack_BR374_DMF_Eurostar;
-    4: sw_loadstack_BR374_TPF_Eurostar;
-    7: sw_loadstack_BR374_TMF_Eurostar;
+	1:  sw_loadstack_BR374_DMF_Eurostar;
+    4:  sw_loadstack_BR374_TPF_Eurostar;
+    7:  sw_loadstack_BR374_TMF_Eurostar;
     10: sw_loadstack_BR374_TPS_Eurostar;
     13: sw_loadstack_BR374_TPS_Eurostar;
     16: sw_loadstack_BR374_TMS_Eurostar;
@@ -924,25 +924,25 @@ switch(FEAT_TRAINS, SELF, sw_graphics_BR374_Eurostar, position_in_articulated_ve
 	    spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR374_1_Eurostar, position_in_articulated_veh % 24) {
-	1: sw_loadstack_BR374_DMF_Eurostar;
-    4: sw_reverse_BR374_TPF_TPS_Eurostar;
-    7: sw_reverse_BR374_TMBS_TMS_Eurostar;
+	1:  sw_loadstack_BR374_DMF_Eurostar;
+    4:  sw_loadstack_BR374_TPF_Eurostar;
+    7:  sw_loadstack_BR374_TMBS_Eurostar;
     10: sw_loadstack_BR374_TMS_Eurostar;
     13: sw_loadstack_BR374_TMS_Eurostar_REV;
-    16: sw_reverse_BR374_TMS_TMBS_Eurostar;
-    19: sw_reverse_BR374_TPS_TPF_Eurostar;
+    16: sw_loadstack_BR374_TMS_Eurostar_REV;
+    19: sw_loadstack_BR374_TPS_Eurostar_REV;
     22: sw_loadstack_BR374_DMF_Eurostar_REV;
 	    spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR374_1_DB, position_in_articulated_veh % 24) {
-	1:  sw_reverse_BR374_DMF_DMS_DB;
-    4:  sw_reverse_BR374_TPF_TPS_DB;
-    7:  sw_reverse_BR374_TMRF_TMS_DB;
-    10: sw_reverse_BR374_TPSD_TPS_DB;
-    13: sw_reverse_BR374_TPS_TPSD_DB;
-    16: sw_reverse_BR374_TMS_TMRF_DB;
-    19: sw_reverse_BR374_TPS_TPF_DB;
-    22: sw_reverse_BR374_DMS_DMF_DB;
+	1:  sw_loadstack_BR374_DMF_DB;
+    4:  sw_loadstack_BR374_TPF_DB;
+    7:  sw_loadstack_BR374_TMRF_DB;
+    10: sw_loadstack_BR374_TPSD_DB;
+    13: sw_loadstack_BR374_TPS_DB_REV;
+    16: sw_loadstack_BR374_TMS_DB_REV;
+    19: sw_loadstack_BR374_TPS_DB_REV;
+    22: sw_loadstack_BR374_DMS_DB_REV;
 	    spriteset_empty; }
 
 // livery switch
@@ -955,13 +955,13 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR374_1, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR374_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_Eurostar);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY, string(str_Eurostar));
+        CB_RESULT_NO_TEXT; }
 
 switch(FEAT_TRAINS, SELF, sw_BR374_1_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_DB);
-    1:  return string(str_Eurostar);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY, string(str_DB));
+    1:  string(STR_LIVERY, string(str_Eurostar));
+        CB_RESULT_NO_TEXT; }
 
 
 // length switch
@@ -986,6 +986,7 @@ item (FEAT_TRAINS, item_BR374, 3740) {
     property {
         // common properties
         name:                           string(STR_NAME_BR374);
+        extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2015,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -1033,12 +1034,6 @@ item (FEAT_TRAINS, item_BR374, 3740) {
         cargo_subtype_text:             sw_BR374_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_BR374_liveries)));
     }
 }
 
@@ -1059,7 +1054,7 @@ item (FEAT_TRAINS, item_BR374_1, 3741) {
         // common properties
         name:                           string(STR_NAME_BR374_1);
         variant_group:                  item_BR374; // unit ID or item
-		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB, VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2015,01,01); 
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -1107,11 +1102,5 @@ item (FEAT_TRAINS, item_BR374_1, 3741) {
         cargo_subtype_text:             sw_BR374_1_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_BR374_liveries)));
     }
 }

@@ -309,14 +309,14 @@ switch(FEAT_TRAINS, SELF, sw_spritestack_GER_L77, [STORE_TEMP((getbits(extra_cal
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_GER_L77_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_GERBlue);
-    1:  return string(str_GERBlack);
-    2:  return string(str_LNERAppleGreen);
-    3:  return string(str_LNERBlack);
-    4:  return string(str_LNERWartimeBlack);
-    5:  return string(str_BRLinedBlack_Early);
-    6:  return string(str_BRLinedBlack_Late);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY_DESC, string(str_GCR), string(str_col_Blue));
+    1:  string(STR_LIVERY_DESC, string(str_GCR), string(str_col_Black));
+    2:  string(STR_LIVERY_DESC, string(str_LNER), string(str_LNER_AppleGreen));
+    3:  string(STR_LIVERY_DESC, string(str_LNER), string(str_col_Black));
+    4:  string(STR_LIVERY_DESC, string(str_LNER), string(str_col_WartimeBlack));
+    5:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_LinedBlack), string(str_BR_EarlyEmblem));
+    6:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_LinedBlack), string(str_BR_LateCrest));
+        CB_RESULT_NO_TEXT; }
 
 // speed switch
 switch(FEAT_TRAINS, SELF, sw_speed_GER_L77, param_max_speed) {
@@ -378,12 +378,6 @@ item (FEAT_TRAINS, item_GER_L77, 6960) {
         running_cost_factor:            3774;
         cargo_subtype_text:             sw_GER_L77_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_pax),
-                                                    string(str_GER_L77_liveries)));
     }
 }
 
@@ -583,11 +577,5 @@ item (FEAT_TRAINS, item_LNER_N7_3, 6961) {
         running_cost_factor:            4115;
         cargo_subtype_text:             sw_GER_L77_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_pax),
-                                                    string(str_GER_L77_liveries)));
     }
 }

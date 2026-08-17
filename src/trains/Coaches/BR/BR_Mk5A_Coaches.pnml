@@ -22,9 +22,9 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk5A_DTSO, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR_Mk5A_cargo_subtype_text, cargo_subtype){
-	0:	string(str_TPE);
-    1:  string(str_ChilternExplorer);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY, string(str_TPE));
+    1:  string(STR_LIVERY_DESC, string(str_Chiltern), string(str_Chiltern_Explorer));
+        CB_RESULT_NO_TEXT; }
 
 switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk5A_DTSO_REV, cargo_subtype) {
     0: sw_loadstack_BR_Mk5A_DTSO_TPE_REV;
@@ -103,8 +103,7 @@ item (FEAT_TRAINS, item_BR_Mk5A_DTSO, 12191) {
 
         // purchase menu text
         additional_text:                return( string(str_purchase_coach,
-                                                    string(str_coach_DTSO),
-                                                    string(str_BR_Mk5A_liveries)));
+                                                    string(str_coach_DTSO)));
     }
 }
 
@@ -187,8 +186,7 @@ item (FEAT_TRAINS, item_BR_Mk5A_TFOE, 12192) {
 
         // purchase menu text
         additional_text:                return( string(str_purchase_coach,
-                                                    string(str_coach_TFE),
-                                                    string(str_BR_Mk5A_liveries)));
+                                                    string(str_coach_TFE)));
     }
 }
 
@@ -273,8 +271,7 @@ item (FEAT_TRAINS, item_BR_Mk5A_TSO, 12193) {
 
         // purchase menu text
         additional_text:                return( string(str_purchase_coach,
-                                                    string(str_coach_TSO),
-                                                    string(str_BR_Mk5A_liveries)));
+                                                    string(str_coach_TSO)));
     }
 }
 
@@ -366,7 +363,6 @@ item (FEAT_TRAINS, item_BR_Mk5A_TSOD, 12194) {
 
         // purchase menu text
         additional_text:                return( string(str_purchase_coach,
-                                                    string(str_coach_TSOD),
-                                                    string(str_BR_Mk5A_liveries)));
+                                                    string(str_coach_TSOD)));
     }
 }

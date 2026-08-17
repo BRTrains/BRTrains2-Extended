@@ -309,18 +309,17 @@ switch(FEAT_TRAINS, SELF, sw_graphics_GWR_2900_Straight, position_in_articulated
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_GWR_2900_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_GWRGreen_LinedGC);
-    1:  return string(str_GWRGreen_LinedFull);
-    2:  return string(str_GWRGreen_LinedShirtbutton);
-    3:  return string(str_GWRGreen_LinedIndianRed);
-    4:  return string(str_GWRGreen_Unlined);
-    5:  return string(str_GWRBlack);
-    6:  return string(str_BRPlainBlack_Early);
-    7:  return string(str_BRPlainBlack_Late);
-    8:  return string(str_BRGreen_Early);
-    9:  return string(str_BRGreen_Late);
-       return CB_RESULT_NO_TEXT;
-}
+	0:	string(STR_LIVERY_EXTENDED, string(str_GWR), string(str_col_Green), string(str_GWR_GarterCrest));
+    1:  string(STR_LIVERY_EXTENDED, string(str_GWR), string(str_col_Green), string(str_GWR_Lettering));
+    2:  string(STR_LIVERY_EXTENDED, string(str_GWR), string(str_col_Green), string(str_GWR_Shirtbutton));
+    3:  string(STR_LIVERY_DESC, string(str_GWR), string(str_GWR_IndianRed));
+    4:  string(STR_LIVERY_DESC, string(str_GWR), string(str_col_Green));
+    5:  string(STR_LIVERY_DESC, string(str_GWR), string(str_col_Black));
+    6:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_PlainBlack), string(str_BR_EarlyEmblem));
+    7:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_PlainBlack), string(str_BR_LateCrest));
+    8:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_EarlyEmblem));
+    9:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_LateCrest));
+        CB_RESULT_NO_TEXT; }
 
 // length switch
 switch(FEAT_TRAINS, SELF, sw_length_GWR_2900, position_in_articulated_veh % 2) {
@@ -391,12 +390,6 @@ item (FEAT_TRAINS, item_GWR_2900_Curved, 290) {
         running_cost_factor:            4676;
         cargo_subtype_text:             sw_GWR_2900_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_GWR_2900_liveries)));
     }
 }
 
@@ -458,11 +451,5 @@ item (FEAT_TRAINS, item_GWR_2900_Straight, 291) {
         running_cost_factor:            4676;
         cargo_subtype_text:             sw_GWR_2900_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_GWR_2900_liveries)));
     }
 }

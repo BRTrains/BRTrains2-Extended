@@ -411,32 +411,32 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR47, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR47_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_BRGreenFront);
-    1:  return string(str_BRGreenPanel);
-    2:  return string(str_BRBlue);
-    3:  return string(str_BRLLogo);
-    4:  return string(str_BRInterCity);
-    5:  return string(str_BRInterCityExecutive);
-    6:  return string(str_BRInterCitySwallow);
-    7:  return string(str_BRScotRail);
-    8:  return string(str_BRProvincial);
-    9:  return string(str_NSE);
-    10: return string(str_NSEAlt);
-    11: return string(str_RailfreightGrey_RedStripe);
-    12: return string(str_RFConstruction);
-    13: return string(str_RFDistribution);
-    14: return string(str_RFMetal);
-    15: return string(str_RFPetrol);
-    16: return string(str_BRParcels);
-    17: return string(str_REX);
-    18: return string(str_CivilDutch);
-    19: return string(str_FreightlinerGrey);
-    20: return string(str_FreightlinerGreen);
-    21: return string(str_Virgin);
-    22: return string(str_Fragonset);
-    23: return string(str_Anglia);
-    24: return string(str_Caledonian);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_YellowFront));
+    1:	string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_YellowPanel));
+    2:	string(STR_LIVERY_DESC, string(str_BR), string(str_col_Blue));
+    3:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_LLogo));
+    4:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_InterCity));
+    5:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_InterCityExecutive));
+    6:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_InterCitySwallow));
+    7:  string(STR_LIVERY_DESC, string(str_BR), string(str_ScotRail));
+    8:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_Provincial));
+    9:  string(STR_LIVERY, string(str_NSE));
+    10: string(STR_LIVERY_DESC, string(str_NSE), string(str_var_Alternate));
+    11: string(STR_LIVERY_EXTENDED, string(str_Railfreight), string(str_col_Grey), string(str_Railfreight_RedStripe));
+    12: string(STR_LIVERY_EXTENDED, string(str_Railfreight), string(str_Railfreight_TripleGrey), string(str_Railfreight_Construction));
+    13: string(STR_LIVERY_EXTENDED, string(str_Railfreight), string(str_Railfreight_TripleGrey), string(str_Railfreight_Distribution));
+    14: string(STR_LIVERY_EXTENDED, string(str_Railfreight), string(str_Railfreight_TripleGrey), string(str_Railfreight_Metal));
+    15: string(STR_LIVERY_EXTENDED, string(str_Railfreight), string(str_Railfreight_TripleGrey), string(str_Railfreight_Petrol));
+    16: string(STR_LIVERY_DESC, string(str_BR), string(str_BR_Parcels));
+    17: string(STR_LIVERY, string(str_REX));
+    18: string(STR_LIVERY_DESC, string(str_BR), string(str_BR_CivilDutch));
+    19: string(STR_LIVERY_DESC, string(str_Freightliner), string(str_col_Grey));
+    20: string(STR_LIVERY_DESC, string(str_Freightliner), string(str_col_Green));
+    21: string(STR_LIVERY, string(str_Virgin));
+    22: string(STR_LIVERY, string(str_Fragonset));
+    23: string(STR_LIVERY, string(str_Anglia));
+    24: string(STR_LIVERY, string(str_Caledonian));
+        CB_RESULT_NO_TEXT; }
 
 
 // graphics switch
@@ -502,12 +502,6 @@ item (FEAT_TRAINS, item_BR47, 4700) {
         running_cost_factor:            7923;
         cargo_subtype_text:             sw_BR47_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_diesel),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_BR47_liveries)));
     }
 }
 
@@ -567,11 +561,5 @@ item (FEAT_TRAINS, item_BR48, 4800) {
         running_cost_factor:            7923;
         cargo_subtype_text:             sw_BR47_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_diesel),
-                                                    string(str_usage_experimental),
-                                                    string(str_BR47_liveries)));
     }
 }

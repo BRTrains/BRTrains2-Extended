@@ -496,8 +496,8 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR370, cargo_subtype) {
     0:  sw_graphics_BR370_Intercity; }
 
 switch(FEAT_TRAINS, SELF, sw_BR370_cargo_subtype_text, cargo_subtype) {
-    0:  return string(str_BRInterCity);
-        return CB_RESULT_NO_TEXT; }
+    0:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_InterCity));
+        CB_RESULT_NO_TEXT; }
 
 // length switch
 switch(FEAT_TRAINS, SELF, sw_length_BR370, position_in_articulated_veh % 42) {
@@ -582,12 +582,6 @@ item (FEAT_TRAINS, item_BR370, 3701) {
         running_cost_factor:            18007;
         cargo_subtype_text:             sw_BR370_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_BR370_liveries)));
     }
 }
 

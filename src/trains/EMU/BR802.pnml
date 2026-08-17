@@ -839,18 +839,18 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR802_3, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR802_0_1_GWR_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_GWR);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY, string(str_GWR));
+        CB_RESULT_NO_TEXT; }
 
 switch(FEAT_TRAINS, SELF, sw_BR802_2_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_TPE);
-    1:  return string(str_TPEPride);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY, string(str_TPE));
+    1:  string(STR_LIVERY_DESC, string(str_TPE), string(str_var_Pride));
+        CB_RESULT_NO_TEXT; }
 
 switch(FEAT_TRAINS, SELF, sw_BR802_3_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_HT);
-    1:  return string(str_FirstGroup);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY, string(str_HT));
+    1:  string(STR_LIVERY, string(str_FirstGroup));
+        CB_RESULT_NO_TEXT; }
 
 // capacity switch 
 switch(FEAT_TRAINS, SELF, sw_capacity_BR802_0, position_in_vehid_chain % 15) {
@@ -940,12 +940,6 @@ item (FEAT_TRAINS, item_BR802_0, 8020) {
         power:                          sw_power_BR802_5car;
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_bmu),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_BR800_0_liveries)));
     }
 }
 
@@ -1014,12 +1008,6 @@ item (FEAT_TRAINS, item_BR802_1, 8021) {
         power:                          sw_power_BR802_9car;
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_bmu),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_BR800_0_liveries)));
     }
 }
 
@@ -1087,12 +1075,6 @@ item (FEAT_TRAINS, item_BR802_2, 8022) {
         power:                          sw_power_BR802_5car;
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_bmu),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_BR802_2_liveries)));
     }
 }
 
@@ -1160,11 +1142,5 @@ item (FEAT_TRAINS, item_BR802_3, 8023) {
         power:                          sw_power_BR802_5car;
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_bmu),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_BR802_3_liveries)));
     }
 }

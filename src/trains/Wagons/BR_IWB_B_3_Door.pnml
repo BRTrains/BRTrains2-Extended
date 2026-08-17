@@ -39,9 +39,9 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR_IWB_B_3_Door, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR_IWB_B_3_Door_cargo_subtype_text, cargo_subtype){
-	0:	return string(STR_LIVERY_BRANDED, string(str_col_Grey), string(str_var_Cargowaggon));
-    1:  return string(STR_LIVERY, string(str_comp_gen_priv_owner), string(str_col_Grey));
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY_BRANDED, string(str_col_Grey), string(str_var_Cargowaggon));
+    1:  string(STR_LIVERY_DESC, string(str_comp_gen_priv_owner), string(str_col_Grey));
+        CB_RESULT_NO_TEXT; }
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR_IWB_B_3_Door, position_in_articulated_veh % 3) {
@@ -105,10 +105,5 @@ item (FEAT_TRAINS, item_BR_IWB_B_3_Door, 12271) {
         running_cost_factor:            1048;
         cargo_subtype_text:             sw_BR_IWB_B_3_Door_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_wagon,
-                                                    string(str_BR_IWB_B_3_Door_liveries)));
     }
 }
-

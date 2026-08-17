@@ -184,19 +184,18 @@ switch(FEAT_TRAINS, SELF, sw_graphics_GWR_4300, position_in_articulated_veh % 2)
 }
 
 // livery name refit switch
-switch(FEAT_TRAINS, SELF, sw_GWR_4300_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_GWRGreen_LinedGC);
-    1:  return string(str_GWRGreen_LinedFull);
-    2:  return string(str_GWRGreen_LinedShirtbutton);
-    3:  return string(str_GWRGreen_Unlined);
-    4:  return string(str_GWRBlack);
-    5:  return string(str_BRPlainBlack_Early);
-    6:  return string(str_BRPlainBlack_Late);
-    7:  return string(str_BRGreen_Early);
-    8:  return string(str_BRGreen_Late);
-    9:  return string(str_ROD);
-       return CB_RESULT_NO_TEXT;
-}
+switch(FEAT_TRAINS, SELF, sw_GWR_4300_cargo_subtype_text, cargo_subtype){0:	string(STR_LIVERY_EXTENDED, string(str_GWR), string(str_col_Green), string(str_GWR_GarterCrest));
+    1:  string(STR_LIVERY_EXTENDED, string(str_GWR), string(str_col_Green), string(str_GWR_Lettering));
+    2:  string(STR_LIVERY_EXTENDED, string(str_GWR), string(str_col_Green), string(str_GWR_Shirtbutton));
+    3:  string(STR_LIVERY_DESC, string(str_GWR), string(str_col_PlainGreen));
+    4:  string(STR_LIVERY_DESC, string(str_GWR), string(str_col_Black));
+    5:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_PlainBlack), string(str_BR_EarlyEmblem));
+    6:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_PlainBlack), string(str_BR_LateCrest));
+    7:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_EarlyEmblem));
+    8:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_LateCrest));
+    9:  string(STR_LIVERY, string(str_ROD));
+        CB_RESULT_NO_TEXT; }
+	
 
 // length switch
 switch(FEAT_TRAINS, SELF, sw_length_GWR_4300, position_in_articulated_veh % 2) {
@@ -261,11 +260,5 @@ item (FEAT_TRAINS, item_GWR_4300, 430) {
         running_cost_factor:            4564;
         cargo_subtype_text:             sw_GWR_4300_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_GWR_4300_liveries)));
     }
 }

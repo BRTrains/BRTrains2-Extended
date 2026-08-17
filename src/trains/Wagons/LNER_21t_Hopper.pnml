@@ -195,17 +195,16 @@ switch(FEAT_TRAINS, SELF, sw_livery_LNER_21t_Hopper, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_LNER_21t_Hopper_cargo_subtype_text, cargo_subtype){
-	0:	return string(STR_LIVERY_SHORT, string(str_var_Random));
-    1:  return string(STR_LIVERY_SHORT, string(str_col_Grey));
-    2:  return string(STR_LIVERY, string(str_abbr_LNER), string(str_col_Grey));
-    3:  return string(str_BRGrey);
-    4:  return string(str_BRBauxite);
-    5:  return string(STR_LIVERY, string(str_abbr_NCB), string(str_col_Grey));
-    6:  return string(STR_LIVERY, string(str_comp_gen_priv_owner), string(str_col_Grey));
-    7:  return string(STR_LIVERY, string(str_comp_gen_priv_owner), string(str_col_Red));
-    8:  return string(STR_LIVERY, string(str_comp_gen_priv_owner), string(str_col_Yellow));
-       return CB_RESULT_NO_TEXT;
-}
+	0:	string(STR_LIVERY, string(str_var_Random));
+    1:  string(STR_LIVERY, string(str_col_Grey));
+    2:  string(STR_LIVERY_DESC, string(str_LNER), string(str_col_Grey));
+    3:  string(STR_LIVERY_DESC, string(str_BR), string(str_col_Grey));
+    4:  string(STR_LIVERY_DESC, string(str_BR), string(str_col_Bauxite));
+    5:  string(STR_LIVERY_DESC, string(str_NCB), string(str_col_Grey));
+    6:  string(STR_LIVERY_DESC, string(str_comp_gen_priv_owner), string(str_col_Grey));
+    7:  string(STR_LIVERY_DESC, string(str_comp_gen_priv_owner), string(str_col_Red));
+    8:  string(STR_LIVERY_DESC, string(str_comp_gen_priv_owner), string(str_col_Yellow));
+        CB_RESULT_NO_TEXT; }
 
 // loading sprite
 switch(FEAT_TRAINS, SELF, sw_loadstack_LNER_21t_Hopper, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
@@ -263,9 +262,5 @@ item (FEAT_TRAINS, item_LNER_21t_Hopper, 11801) {
         cargo_subtype_text:             sw_LNER_21t_Hopper_cargo_subtype_text; 
         colour_mapping:                 switch_generic_recolour;
         name:                           sw_name_LNER_21t_Hopper;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_wagon,
-                                                    string(str_LNER_21t_Hopper_liveries)));
     }
 }

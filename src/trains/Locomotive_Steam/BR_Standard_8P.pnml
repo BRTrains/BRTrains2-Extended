@@ -238,15 +238,15 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR_Standard_8_Tender, cargo_subtype) {
     6: spriteset_BR_1E_BR_Express_Blue; }
 
 // livery name refit switch
-switch(FEAT_TRAINS, SELF, sw_BR_Standard_8_cargo_subtype_text, cargo_subtype){
-	0: return string(str_BRGreen_Early);
-    1: return string(str_BRGreen_Late);
-    2: return string(str_BRLinedBlack_Early);
-    3: return string(str_BRLinedBlack_Late);
-    4: return string(str_BRPlainBlack_Early);
-    5: return string(str_BRPlainBlack_Late);
-    6: return string(str_BRExpressBlue);
-       return CB_RESULT_NO_TEXT; }
+switch(FEAT_TRAINS, SELF, sw_BR_Standard_8_cargo_subtype_text, cargo_subtype) {
+	0:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_EarlyEmblem));
+    1:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_LateCrest));
+    2:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_LinedBlack), string(str_BR_EarlyEmblem));
+    3:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_LinedBlack), string(str_BR_LateCrest));
+    4:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_PlainBlack), string(str_BR_EarlyEmblem));
+    5:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_PlainBlack), string(str_BR_LateCrest));
+    6:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_ExpressBlue));
+        CB_RESULT_NO_TEXT; }		
 
 // Animation sprite stacking
 switch(FEAT_TRAINS, SELF, sw_spritestack_BR_Standard_8, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
@@ -321,11 +321,5 @@ item (FEAT_TRAINS, item_BR_Standard_8, 7102) {
         cargo_subtype_text:             sw_BR_Standard_8_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_BR_Big_Standards_liveries)));
     }
 }

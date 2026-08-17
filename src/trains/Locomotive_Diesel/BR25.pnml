@@ -164,10 +164,9 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR25_1, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR25_1_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_BRGreenPanel);
-    1:  return string(str_BRBlueFront);
-       return CB_RESULT_NO_TEXT;
-}
+	0:	string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_YellowPanel));
+    1:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Blue), string(str_BR_YellowFront));
+        CB_RESULT_NO_TEXT; }
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR25_1, position_in_articulated_veh % 3) {
@@ -233,12 +232,6 @@ item (FEAT_TRAINS, item_BR25_1, 2500) {
         running_cost_factor:            5339;
         cargo_subtype_text:             sw_BR25_1_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_diesel),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_BR25_liveries)));
     }
 }
         
@@ -312,12 +305,6 @@ item (FEAT_TRAINS, item_BR25_2, 2501) {
         running_cost_factor:            5339;
         cargo_subtype_text:             sw_BR25_1_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_diesel),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_BR25_liveries)));
     }
 }
 
@@ -330,11 +317,10 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR25_3, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR25_3_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_BRGreenPanel);
-    1:  return string(str_BRBlueFront);
-    2:  return string(str_BRInterCity);
-       return CB_RESULT_NO_TEXT;
-}
+	0:	string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_YellowPanel));
+    1:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Blue), string(str_BR_YellowFront));
+    2:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_InterCity));
+        CB_RESULT_NO_TEXT; }
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR25_3, position_in_articulated_veh % 3) {
@@ -400,11 +386,5 @@ item (FEAT_TRAINS, item_BR25_3, 2503) {
         running_cost_factor:            4949;
         cargo_subtype_text:             sw_BR25_3_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_diesel),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_BR25_liveries)));
     }
 }

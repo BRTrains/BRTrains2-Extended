@@ -92,9 +92,8 @@ switch(FEAT_TRAINS, SELF, sw_spritestack_BR88, [STORE_TEMP((getbits(extra_callba
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR88_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_DRSCompass);
-       return CB_RESULT_NO_TEXT;
-}
+	0:	string(STR_LIVERY_DESC, string(str_DRS), string(str_DRS_Compass));
+        CB_RESULT_NO_TEXT; }
 
 
 // graphics switch
@@ -172,11 +171,5 @@ item (FEAT_TRAINS, item_BR88, 8800) {
         cargo_subtype_text:             sw_BR88_cargo_subtype_text; 
         power:                          sw_power_BR88;
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_bimode),
-                                                    string(str_usage_heavy_freight),
-                                                    string(str_BR88_liveries)));
     }
 }

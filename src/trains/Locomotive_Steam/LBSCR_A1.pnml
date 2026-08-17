@@ -462,31 +462,31 @@ switch(FEAT_TRAINS, SELF, sw_FX_LBSCR_A1_Steam, position_in_vehid_chain % 3) {
 // livery switch
 switch(FEAT_TRAINS, SELF, sw_livery_LBSCR_A1, cargo_subtype) {
     0: spriteset_LBSCR_A1_Stroudley_Golden_Ochre;
-    1: spriteset_LBSCR_A1_LBSCR_Marsh_Umber_Named;
-    2: spriteset_LBSCR_A1_LBSCR_Marsh_Umber_Unnamed;
+    1: spriteset_LBSCR_A1_LBSCR_Marsh_Umber_Unnamed;
+    2: spriteset_LBSCR_A1_LBSCR_Marsh_Umber_Named;
     3: spriteset_LBSCR_A1_SR_Olive;
     4: spriteset_LBSCR_A1_SR_IOW_Olive;
     5: spriteset_LBSCR_A1_SR_IOW_Olive_Extended;
     6: spriteset_LBSCR_A1_SR_Malachite_Green;
     7: spriteset_LBSCR_A1_SR_Black;
     8: spriteset_LBSCR_A1_BR_Early;
-    9: spriteset_LBSCR_A1_BR_Early_Unlined;
-    10: spriteset_LBSCR_A1_BR_Late;
+    9: spriteset_LBSCR_A1_BR_Late;
+    10: spriteset_LBSCR_A1_BR_Early_Unlined;
     11: spriteset_LBSCR_A1_BR_Late_Unlined;
     12: spriteset_LBSCR_A1_Industrial_Black; }
 
 switch(FEAT_TRAINS, SELF, sw_livery_LBSCR_A1X, cargo_subtype) {
     0: spriteset_LBSCR_A1X_Stroudley_Golden_Ochre;
-    1: spriteset_LBSCR_A1X_LBSCR_Marsh_Umber_Named;
-    2: spriteset_LBSCR_A1X_LBSCR_Marsh_Umber_Unnamed;
+    1: spriteset_LBSCR_A1X_LBSCR_Marsh_Umber_Unnamed;
+    2: spriteset_LBSCR_A1X_LBSCR_Marsh_Umber_Named;
     3: spriteset_LBSCR_A1X_SR_Olive;
     4: spriteset_LBSCR_A1X_SR_IOW_Olive;
     5: spriteset_LBSCR_A1X_SR_IOW_Olive_Extended;
     6: spriteset_LBSCR_A1X_SR_Malachite_Green;
     7: spriteset_LBSCR_A1X_SR_Black;
     8: spriteset_LBSCR_A1X_BR_Early;
-    9: spriteset_LBSCR_A1X_BR_Early_Unlined;
-    10: spriteset_LBSCR_A1X_BR_Late;
+    9: spriteset_LBSCR_A1X_BR_Late;
+    10: spriteset_LBSCR_A1X_BR_Early_Unlined;
     11: spriteset_LBSCR_A1X_BR_Late_Unlined;
     12: spriteset_LBSCR_A1X_Industrial_Black; }
 
@@ -501,21 +501,20 @@ switch(FEAT_TRAINS, SELF, sw_spritestack_LBSCR_A1X, [STORE_TEMP((getbits(extra_c
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_LBSCR_A1_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_LBSCR_GoldenOchre);
-    1:  return string(str_LBSCR_MarshUmber_Named);
-    2:  return string(str_LBSCR_MarshUmber_Unnamed);
-    3:  return string(str_SROlive);
-    4:  return string(str_SRIOWOlive);
-    5:  return string(str_SRIOWOlive_Extended);
-    6:  return string(str_SRMalachite);
-    7:  return string(str_SRBlack);
-    8:  return string(str_BRLinedBlack_Early);
-    9:  return string(str_BRPlainBlack_Early);
-    10: return string(str_BRLinedBlack_Late);
-    11: return string(str_BRPlainBlack_Late);
+	0:	string(STR_LIVERY_DESC, string(str_LBSCR), string(str_LBSCR_GoldenOchre));
+    1:  string(STR_LIVERY_DESC, string(str_LBSCR), string(str_LBSCR_MarshUmbre));
+    2:  string(STR_LIVERY_EXTENDED, string(str_LBSCR), string(str_LBSCR_MarshUmbre), string(str_var_Named));
+    3:  string(STR_LIVERY_DESC, string(str_SR), string(str_col_Olive));
+    4:  string(STR_LIVERY_EXTENDED, string(str_SR), string(str_col_Olive), string(str_SR_IOW));
+    5:  string(STR_LIVERY_EXTENDED, string(str_SR), string(str_col_Olive), string(str_SR_IOW_Extended));
+    6:  string(STR_LIVERY_DESC, string(str_SR), string(str_col_Malachite));
+    7:  string(STR_LIVERY_DESC, string(str_SR), string(str_col_Black));
+    8:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_LinedBlack), string(str_BR_EarlyEmblem));
+    9:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_LinedBlack), string(str_BR_LateCrest));
+    10: string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_PlainBlack), string(str_BR_EarlyEmblem));
+    11: string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_PlainBlack), string(str_BR_LateCrest));
     12: return string(STR_LIVERY, string(str_comp_gen_priv_owner), string(str_col_Black));
-       return CB_RESULT_NO_TEXT;
-}
+        CB_RESULT_NO_TEXT; }
 
 // unit definition
 item (FEAT_TRAINS, item_LBSCR_A1, 3260) {
@@ -570,12 +569,6 @@ item (FEAT_TRAINS, item_LBSCR_A1, 3260) {
         running_cost_factor:            1526;
         cargo_subtype_text:             sw_LBSCR_A1_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_pax),
-                                                    string(str_LBSCR_A1_liveries)));
     }
 }
 
@@ -632,11 +625,5 @@ item (FEAT_TRAINS, item_LBSCR_A1X, 3261) {
         running_cost_factor:            1526;
         cargo_subtype_text:             sw_LBSCR_A1_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_pax),
-                                                    string(str_LBSCR_A1_liveries)));
     }
 }

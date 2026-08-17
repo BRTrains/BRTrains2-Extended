@@ -160,11 +160,11 @@ switch(FEAT_TRAINS, SELF, sw_rear_LNER_Gresley_BTK_D261, num_vehs_in_consist >= 
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_LNER_Gresley_BTK_D261_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_LNERTeak);
-    1:  return string(str_BRMaroon);
-    2:  return string(str_BRCarmCream);
-    3:  return string(str_BRBlueGrey);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY_DESC, string(str_LNER), string(str_col_Teak));
+    1:  string(STR_LIVERY_DESC, string(str_BR), string(str_col_Maroon));
+    2:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_CarmineCream));
+    3:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_BlueGrey));
+        CB_RESULT_NO_TEXT; }
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_LNER_Gresley_BTK_D261, position_in_vehid_chain % 3) {
@@ -249,7 +249,6 @@ item (FEAT_TRAINS, item_LNER_Gresley_BTK_D261, 11505) {
 
         // purchase menu text
         additional_text:                return( string(str_purchase_coach,
-                                                string(str_coach_BTK),
-                                                string(str_LNER_Gresley_FS_liveries)));
+                                                string(str_coach_BTK)));
     }
 }

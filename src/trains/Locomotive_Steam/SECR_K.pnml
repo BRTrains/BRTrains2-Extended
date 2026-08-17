@@ -189,13 +189,13 @@ switch(FEAT_TRAINS, SELF, sw_livery_SECR_K, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_SECR_K_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_SECR_Green);
-    1:  return string(str_SROlive);
-    2:  return string(str_SRMalachite);
-    3:  return string(str_SRBlack);
-    4:  return string(str_BRLinedBlack_Early);
-    5:  return string(str_BRLinedBlack_Late);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY_DESC, string(str_SECR), string(str_col_Green));
+    1:  string(STR_LIVERY_DESC, string(str_SR), string(str_col_Olive));
+    2:  string(STR_LIVERY_DESC, string(str_SR), string(str_col_Malachite));
+    3:  string(STR_LIVERY_DESC, string(str_SR), string(str_col_Black));
+    4:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_LinedBlack), string(str_BR_EarlyEmblem));
+    5:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_LinedBlack), string(str_BR_LateCrest));
+        CB_RESULT_NO_TEXT; }
 
 switch(FEAT_TRAINS, SELF, sw_spritestack_SECR_K, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
     0: sw_livery_SECR_K;
@@ -254,12 +254,5 @@ item (FEAT_TRAINS, item_SECR_K, 3179) {
         cargo_subtype_text:             sw_SECR_K_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_SECR_K_liveries)));
     }
 }
-

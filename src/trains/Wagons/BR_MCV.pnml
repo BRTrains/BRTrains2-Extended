@@ -142,87 +142,45 @@ spritegroup spritegroup_BR_MCV_Load {
     loaded: [spriteset_empty, spriteset_BR_MCV_load_25, spriteset_BR_MCV_load_50, spriteset_BR_MCV_load_75, spriteset_BR_MCV_load_100];
     loading: [spriteset_empty, spriteset_BR_MCV_load_25, spriteset_BR_MCV_load_50, spriteset_BR_MCV_load_75, spriteset_BR_MCV_load_100]; }
 
-
-// loadstack sprites
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR_MCV_Early_BR_Grey, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
-    0: spriteset_BR_MCV_Early_BR_Grey;
-    1: spritegroup_BR_MCV_Load;
-}
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR_MCV_Late_BR_Grey, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
-    0: spriteset_BR_MCV_Late_BR_Grey;
-    1: spritegroup_BR_MCV_Load;
-}
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR_MCV_Late_BR_Bauxite, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
-    0: spriteset_BR_MCV_Late_BR_Bauxite;
-    1: spritegroup_BR_MCV_Load;
-}
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR_MCV_Late_NCB_Black, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
-    0: spriteset_BR_MCV_Late_NCB_Black;
-    1: spritegroup_BR_MCV_Load;
-}
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR_MCV_Late_NCB_Grey, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
-    0: spriteset_BR_MCV_Late_NCB_Grey;
-    1: spritegroup_BR_MCV_Load;
-}
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR_MCV_Late_Engineers_Dutch, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
-    0: spriteset_BR_MCV_Late_Engineers_Dutch;
-    1: spritegroup_BR_MCV_Load;
-}
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR_MCV_Late_BR_White, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
-    0: spriteset_BR_MCV_Late_BR_White;
-    1: spritegroup_BR_MCV_Load;
-}
-
-
 // Randomizer
 random_switch(FEAT_TRAINS, SELF, random_choose_BR_MCV) {
-    1: sw_loadstack_BR_MCV_Early_BR_Grey;
-    2: sw_loadstack_BR_MCV_Late_BR_Bauxite;
-    1: sw_loadstack_BR_MCV_Late_BR_White;
-    2: sw_loadstack_BR_MCV_Late_NCB_Grey;
-    1: sw_loadstack_BR_MCV_Late_NCB_Black;
-    3: sw_loadstack_BR_MCV_Late_BR_Grey; }
+    1: spriteset_BR_MCV_Early_BR_Grey;
+    2: spriteset_BR_MCV_Late_BR_Bauxite;
+    1: spriteset_BR_MCV_Late_BR_White;
+    2: spriteset_BR_MCV_Late_NCB_Grey;
+    1: spriteset_BR_MCV_Late_NCB_Black;
+    3: spriteset_BR_MCV_Late_BR_Grey; }
 
 // livery switch
 switch(FEAT_TRAINS, SELF, sw_livery_BR_MCV, cargo_subtype) {
     0: random_choose_BR_MCV;
-    1: sw_loadstack_BR_MCV_Early_BR_Grey;
-    2: sw_loadstack_BR_MCV_Late_BR_Grey;
-    3: sw_loadstack_BR_MCV_Late_BR_Bauxite;
-    4: sw_loadstack_BR_MCV_Late_NCB_Black;
-    5: sw_loadstack_BR_MCV_Late_NCB_Grey;
-    6: sw_loadstack_BR_MCV_Late_Engineers_Dutch;
-    7: sw_loadstack_BR_MCV_Late_BR_White;
-}
+    1: spriteset_BR_MCV_Early_BR_Grey;
+    2: spriteset_BR_MCV_Late_BR_Grey;
+    3: spriteset_BR_MCV_Late_BR_Bauxite;
+    4: spriteset_BR_MCV_Late_NCB_Black;
+    5: spriteset_BR_MCV_Late_NCB_Grey;
+    6: spriteset_BR_MCV_Late_Engineers_Dutch;
+    7: spriteset_BR_MCV_Late_BR_White; }
 
-// switch(FEAT_TRAINS, SELF, sw_loadstack_BR_MCV, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
-//     0: return sw_livery_BR_MCV;
-//     1: spritegroup_BR_MCV_Load;
-// }
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_MCV, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
+    0: sw_livery_BR_MCV;
+    1: spritegroup_BR_MCV_Load; }
 
 switch(FEAT_TRAINS, SELF, sw_BR_MCV_cargo_subtype_text, cargo_subtype) {
-    0:  return string(STR_LIVERY_SHORT, string(str_var_Random));
-    1:  return string(str_BRGreyEarly);
-    2:  return string(str_BRGreyLate);
-    3:  return string(str_BRBauxite);
-    4:  return string(STR_LIVERY, string(str_abbr_NCB), string(str_col_Black));
-    5:  return string(STR_LIVERY, string(str_abbr_NCB), string(str_col_Grey));
-    6:  return string(str_CivilDutch);
-    7:  return string(STR_LIVERY, string(str_abbr_BR), string(str_col_White));
-        return CB_RESULT_NO_TEXT;
-}
+    0:  string(STR_LIVERY, string(str_var_Random));
+    1:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Grey), string(str_var_Early));
+    2:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Grey), string(str_var_Late));
+    3:  string(STR_LIVERY_DESC, string(str_BR), string(str_col_Bauxite));
+    4:  string(STR_LIVERY_DESC, string(str_NCB), string(str_col_Black));
+    5:  string(STR_LIVERY_DESC, string(str_NCB), string(str_col_Grey));
+    6:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_CivilDutch));
+    7:  string(STR_LIVERY, string(str_BR), string(str_col_White));
+        CB_RESULT_NO_TEXT; }
 
 // speed switch
 switch(FEAT_TRAINS, SELF, sw_speed_BR_MCV, param_max_speed) {
     0: 40;
-    1: 60;
-}
+    1: 60; }
 
 // unit definition
 item (FEAT_TRAINS, item_BR_MCV, 12250) {
@@ -259,7 +217,7 @@ item (FEAT_TRAINS, item_BR_MCV, 12250) {
 
     graphics {
         // graphics
-        default:                        sw_livery_BR_MCV;
+        default:                        sw_loadstack_BR_MCV;
         purchase:                       spriteset_BR_MCV_purchase;
         
         // internal code
@@ -269,9 +227,5 @@ item (FEAT_TRAINS, item_BR_MCV, 12250) {
         cargo_subtype_text:             sw_BR_MCV_cargo_subtype_text;
         // colour_mapping:                 switch_bulk_recolour;
         colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_wagon,
-                                                    string(str_BR_MCV_liveries)));
     }
 }

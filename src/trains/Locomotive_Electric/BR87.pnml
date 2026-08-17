@@ -245,22 +245,22 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR87, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR87_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_BRBlueFront);
-    1:  return string(str_BRElectricBlue);
-    2:  return string(str_BRLLogo);
-    3:  return string(str_BRLLogoAlt);
-    4:  return string(str_BRInterCity);
-    5:  return string(str_BRInterCityExecutive);
-    6:  return string(str_BRInterCitySwallow);
-    7:  return string(str_NSE);
-    8:  return string(str_RFDistribution);
-    9:  return string(str_Virgin);
-    10:  return string(str_Porterbrook);
-    11: return string(str_DRS);
-    12: return string(str_GBRf);
-    13: return string(str_LNWRBlack);
-    14: return string(str_Caledonian);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_YellowFront));
+    1:  string(STR_LIVERY_DESC, string(str_BR), string(str_col_Blue));
+    2:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_LLogo));
+    3:  string(STR_LIVERY_DESC, string(str_BR), string(str_col_Grey));
+    4:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_InterCity));
+    5:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_InterCityExecutive));
+    6:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_InterCitySwallow));
+    7:  string(STR_LIVERY, string(str_NSE));
+    8:  string(STR_LIVERY_EXTENDED, string(str_Railfreight), string(str_Railfreight_TripleGrey), string(str_Railfreight_Distribution));
+    9:  string(STR_LIVERY, string(str_Virgin));
+    10: string(STR_LIVERY_DESC, string(str_Porterbrook), string(str_col_Purple));
+    11: string(STR_LIVERY, string(str_DRS));
+    12: string(STR_LIVERY_DESC, string(str_GBRf), string(str_col_Blue));
+    13: string(STR_LIVERY_DESC, string(str_LNWR), string(str_col_Black));
+    14: string(STR_LIVERY, string(str_Caledonian));
+        CB_RESULT_NO_TEXT; }
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR87, position_in_articulated_veh % 3) {
@@ -331,11 +331,5 @@ item (FEAT_TRAINS, item_BR87, 8700) {
         running_cost_factor:            11605;
         cargo_subtype_text:             sw_BR87_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_electric),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_BR87_liveries)));
     }
 }

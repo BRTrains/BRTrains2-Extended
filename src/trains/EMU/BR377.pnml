@@ -814,10 +814,10 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR377_7, cargo_subtype) {
     3: sw_graphics_BR377_7_Southeastern; }
 
 switch(FEAT_TRAINS, SELF, sw_BR377_cargo_subtype_text, cargo_subtype) {
-    0:  return string(str_Southern);
-    1:  return string(str_FCC);
-    2:  return string(str_FirstGroup);
-    3:  return string(str_Southeastern_blue);
+    0:  string(STR_LIVERY, string(str_Southern));
+    1:  string(STR_LIVERY, string(str_FCC));
+    2:  string(STR_LIVERY, string(str_FirstGroup));
+    3:  string(STR_LIVERY_DESC, string(str_Southeastern), string(str_col_Blue));
        return CB_RESULT_NO_TEXT;  }
 
 
@@ -921,12 +921,6 @@ item (FEAT_TRAINS, item_BR377_1_4, 3771) {
         running_cost_factor:            6446;
         cargo_subtype_text:             sw_BR377_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_pax),
-                                                    string(str_BR377_liveries)));
     }
 }
 
@@ -990,12 +984,6 @@ item (FEAT_TRAINS, item_BR377_2_5, 3772) {
         running_cost_factor:            7392;
         cargo_subtype_text:             sw_BR377_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_bmu),
-                                                    string(str_usage_pax),
-                                                    string(str_BR377_liveries)));
     }
 }
 
@@ -1059,12 +1047,6 @@ item (FEAT_TRAINS, item_BR377_3, 3773) {
         running_cost_factor:            5656;
         cargo_subtype_text:             sw_BR377_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_pax),
-                                                    string(str_BR377_liveries)));
     }
 }
 
@@ -1128,12 +1110,6 @@ item (FEAT_TRAINS, item_BR377_6, 3776) {
         running_cost_factor:            6929;
         cargo_subtype_text:             sw_BR377_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_pax),
-                                                    string(str_BR377_liveries)));
     }
 }
 
@@ -1196,11 +1172,5 @@ item (FEAT_TRAINS, item_BR377_7, 3777) {
         running_cost_factor:            7870;
         cargo_subtype_text:             sw_BR377_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_bmu),
-                                                    string(str_usage_pax),
-                                                    string(str_BR377_liveries)));
     }
 }

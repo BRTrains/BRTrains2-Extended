@@ -168,9 +168,10 @@ switch(FEAT_TRAINS, SELF, sw_livery_LMS_Ivatt_2, cargo_subtype) {
     2: spriteset_LMS_Ivatt_2_BR_Unlined_Black;
     3: spriteset_LMS_Ivatt_2_BR_Lined_Black;
     4: spriteset_LMS_Ivatt_2_BR_Lined_Black;
-    5: spriteset_LMS_Ivatt_2_BR_Lined_Green_Named;
+    5: spriteset_LMS_Ivatt_2_BR_Lined_Green;
     6: spriteset_LMS_Ivatt_2_BR_Lined_Green;
-    7: spriteset_LMS_Ivatt_2_BR_Crimson; }
+    7: spriteset_LMS_Ivatt_2_BR_Lined_Green_Named;
+    8: spriteset_LMS_Ivatt_2_BR_Crimson; }
 
 switch(FEAT_TRAINS, SELF, sw_livery_LMS_Ivatt_2_Tender, cargo_subtype) {
     0: spriteset_LMS_Ivatt_3000gal_LMS_Unlined_Black;
@@ -180,19 +181,21 @@ switch(FEAT_TRAINS, SELF, sw_livery_LMS_Ivatt_2_Tender, cargo_subtype) {
     4: spriteset_LMS_Ivatt_3000gal_BR_Lined_Black_Late;
     5: spriteset_LMS_Ivatt_3000gal_BR_Lined_Green_Early;
     6: spriteset_LMS_Ivatt_3000gal_BR_Lined_Green_Late;
-    7: spriteset_LMS_Ivatt_3000gal_BR_Crimson; }
+    7: spriteset_LMS_Ivatt_3000gal_BR_Lined_Green_Early;
+    8: spriteset_LMS_Ivatt_3000gal_BR_Crimson; }
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_LMS_Ivatt_2_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_BRCrimson);
-    1:  return string(str_BRPlainBlack_Early);
-    2:  return string(str_BRPlainBlack_Late);
-    3:  return string(str_BRLinedBlack_Early);
-    4:  return string(str_BRLinedBlack_Late);
-    5:  return string(str_BRGreen_Early);
-    6:  return string(str_BRGreen_Late);
-    7:  return string(str_BRCrimson);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY_DESC, string(str_LMS), string(str_col_CrimsonLake));
+    1:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_PlainBlack), string(str_BR_EarlyEmblem));
+    2:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_PlainBlack), string(str_BR_LateCrest));
+    3:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_LinedBlack), string(str_BR_EarlyEmblem));
+    4:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_LinedBlack), string(str_BR_LateCrest));
+    5:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_EarlyEmblem));
+    6:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_LateCrest));
+    7:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_var_Named));
+    8:  string(STR_LIVERY_DESC, string(str_BR), string(str_col_CrimsonLake));
+        CB_RESULT_NO_TEXT; }
 
 // Animation sprite stacking
 switch(FEAT_TRAINS, SELF, sw_spritestack_LMS_Ivatt_2, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
@@ -270,12 +273,6 @@ item (FEAT_TRAINS, item_LMS_Ivatt_2, 4640) {
         running_cost_factor:            4232;
         cargo_subtype_text:             sw_LMS_Ivatt_2_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_LMS_Ivatt_2_liveries)));
     }
 }
 

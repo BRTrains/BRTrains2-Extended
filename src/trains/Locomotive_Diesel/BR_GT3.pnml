@@ -242,14 +242,13 @@ switch(FEAT_TRAINS, SELF, sw_graphics_BR_GT3, position_in_articulated_veh % 2) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR_GT3_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_BRBeechLeafBrown);
-    1:  return string(str_BRLinedBlack_Early);
-    2:  return string(str_BRLinedBlack_Late);
-    3:  return string(str_BRGreen_Early);
-    4:  return string(str_BRGreen_Late);
-    5:  return string(str_BRBlue);
-       return CB_RESULT_NO_TEXT;
-}
+	0:	string(STR_LIVERY_DESC, string(str_BR), string(str_BR_BeechLeafBrown));
+    1:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_LinedBlack), string(str_BR_EarlyEmblem));
+    2:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_LinedBlack), string(str_BR_LateCrest));
+    3:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_EarlyEmblem));
+    4:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_LateCrest));
+    5:  string(STR_LIVERY_DESC, string(str_BR), string(str_col_Blue));
+        CB_RESULT_NO_TEXT; }
 
 // length switch
 switch(FEAT_TRAINS, SELF, sw_length_BR_GT3, position_in_articulated_veh % 2) {
@@ -317,12 +316,6 @@ item (FEAT_TRAINS, item_BR_GT3, 9807) {
         running_cost_factor:            7533;
         cargo_subtype_text:             sw_BR_GT3_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_gtu),
-                                                    string(str_usage_experimental),
-                                                    string(str_BR_GT3_liveries)));
     }
 }
 

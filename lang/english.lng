@@ -2,7 +2,6 @@
 
 # GRF name and description
 STR_GRF_NAME	:British Rail Extra-zoom Train Set (BRETS)
-STR_GRF_NAME_TEST	:BRETS DEVELOPER VERSION
 STR_GRF_DESC    :{GOLD}British Rail Extra-zoom Train Set{}{BLACK}An extended length, 4x zoom, real livery train set.{}{}{GOLD}Developer: {LTBLUE}Su1phur{}{BLACK}Special Thanks to:{GOLD}Timberwolf{BLACK},{}{GOLD}GarlicBread42 and The GETS Team{BLACK},{}{GOLD}Audigex and The BRTrainsV2 Team{BLACK},{}{GOLD}andythenorth, Simozzz, Emperor Jake, 2TallTyler{BLACK} and the whole {RED}Discord{BLACK}-community.
 
 # Concat without spaces etc
@@ -21,31 +20,10 @@ STR_CONCAT_3s	: {STRING} {STRING} {STRING}
 STR_CONCAT_4s	: {STRING} {STRING} {STRING} {STRING}
 STR_CONCAT_5s	: {STRING} {STRING} {STRING} {STRING} {STRING}
 
-STR_LIVERY_SHORT    : ({STRING})
-STR_LIVERY          : ({STRING} - {STRING})
+STR_LIVERY          : ({STRING})
+STR_LIVERY_DESC     : ({STRING} - {STRING})
 STR_LIVERY_EXTENDED : ({STRING} - {STRING}, {STRING})
-STR_LIVERY_SPECIAL  : ({STRING} - {STRING} - {SILVER}{STRING})
 STR_LIVERY_BRANDED  : (Private Owner - {STRING} with {STRING} Branding)
-
-# Abbreviations
-str_abbr_AWC            :AWC
-str_abbr_BR             :BR
-str_abbr_DRS            :DRS
-str_abbr_EMR            :EMR
-str_abbr_FR             :FR
-str_abbr_GCR            :GCR
-str_abbr_GWR            :GWR
-str_abbr_HNR            :HNR
-str_abbr_LNER           :LNER
-str_abbr_LNWR           :LNWR
-str_abbr_LSWR           :LSWR
-str_abbr_MR             :MR
-str_abbr_NCB            :NCB
-str_abbr_TPE            :TPE
-str_abbr_VXC            :VXC
-str_abbr_VTEC           :VTEC
-str_abbr_VTWC           :VTWC
-str_abbr_WMR            :WMR
 
 str_comp_gen_priv_owner         :Private Owner
 
@@ -57,37 +35,49 @@ str_sep_dashonly                :-
 str_col_Bauxite                 :Bauxite
 str_col_Brown                   :Brown
 str_col_Black                   :Black
-str_col_Lined_Black             :Lined Black
-str_col_Plain_Black             :Plain Black
+str_col_LinedBlack              :Lined Black
+str_col_PlainBlack              :Plain Black
+str_col_WartimeBlack            :Wartime Black
 str_col_Blue                    :Blue
+str_col_CaledonianBlue          :Caledonian Blue
+str_col_ChocCream               :Chocolate and Cream
 str_col_Cream                   :Cream
 str_col_Crimson                 :Crimson
+str_col_CrimsonLake             :Crimson Lake
 str_col_Green                   :Green
+str_col_PlainGreen              :Plain Green
 str_col_Grey                    :Grey
 str_col_Mahogany                :Mahogany
+str_col_Malachite               :Malachite Green
 str_col_Maroon                  :Maroon
 str_col_Orange                  :Orange
-str_col_Olive                   :Olive
+str_col_Olive                   :Olive Green
 str_col_Purple                  :Purple
 str_col_Red                     :Red
-str_col_Sage                    :Sage
+str_col_Sage                    :Sage Green
 str_col_Silver                  :Silver
 str_col_Teak                    :Teak
 str_col_White                   :White
 str_col_Yellow                  :Yellow
 
-str_var_Named                   :Named
-str_var_Cargowaggon             :Cargowaggon
-str_var_Olympics                :Olympics
-str_var_Unnamed                 :Unnamed
-str_var_Speedlink               :Speedlink
-str_var_Exhibition              :Exhibition
-str_var_Polybulk                :Polybulk
-str_var_Grainflow               :Grainflow
 str_var_Advertisement           :with Advertisement
-str_var_Early_Emblem            :Early Emblem
-str_var_Late_Crest              :Late Crest
+str_var_Alternate               :Alternate
+str_var_Cargowaggon             :Cargowaggon
+str_var_Concept                 :Concept
+str_var_Early                   :Early
+str_var_Exhibition              :Exhibition
+str_var_Grainflow               :Grainflow
+str_var_Heritage                :Heritage
+str_var_Late                    :Late
+str_var_Named                   :Named
+str_var_Olympics                :Olympics
+str_var_Speedlink               :Speedlink
+str_var_Polybulk                :Polybulk
+str_var_Pride                   :Pride
 str_var_Random                  :Random
+str_var_Refurbished             :Refurbished
+str_var_Revised                 :Revised
+str_var_Transitional            :Transitional
 
 # Variant group headers
 STR_Debug_Header                :BRTrains DEBUG units (see description)
@@ -174,11 +164,7 @@ STR_DESC_Empty                          :Empty Unit intended for internal use of
 STR_CANNOT_ATTACH						:Cannot attach a different class of train
 
 # Vehicle Descriptions
-str_purchase_loco_with_liveries	:{BLACK}Type: {STRING}{}{BLACK}Usage: {GOLD}{STRING}{}{BLACK}Liveries: {GOLD}{STRING}{BLACK}
-str_purchase_loco				:{BLACK}Type: {STRING}{}{BLACK}Usage: {GOLD}{STRING}{}{BLACK}
-str_purchase_steam_liveries		:{BLACK}Type: {STRING}{}{BLACK}Usage: {GOLD}{STRING}{}{BLACK}Liveries: {GOLD}{STRING}{BLACK}
-str_purchase_wagon			    :{BLACK}Liveries: {GOLD}{STRING}{BLACK}
-str_purchase_coach              :{BLACK}Type: {STRING}{}{BLACK}Liveries: {GOLD}{STRING}{BLACK}
+str_purchase_coach              :{BLACK}Type: {STRING}{}{BLACK}
 
 str_purchase_type_diesel		:{RED}Diesel locomotive
 str_purchase_type_steam			:{GREEN}Steam Locomotive
@@ -316,6 +302,7 @@ str_coach_TSO_T                 :{BLUE}Tourist Second Open Trolley (Micro Buffet
 str_coach_TU                    :Trailing Unclassified
 str_coach_VFV                   :{BROWN}Ventilated Fruit Van
 
+str_coach_Articulated_Train     :{BLUE}Articulated Coach Set
 str_coach_Train_Set             :{PURPLE}Semi-permanent Train Set
 
 # Usage Type
@@ -1585,475 +1572,316 @@ str_LU2009_liveries				:London Underground
 STR_NAME_LU2024					:London Underground 2024 Stock (9-car, Deep Level)
 str_LU2024_liveries				:London Underground
 
-str_AGA							: (Abellio Greater Anglia)
-str_AGAAltLights				: (Abellio Greater Anglia - Alternative Lights)
-str_ASR                         : (Abellio ScotRail)
-str_AggregateIndustries         : (Aggregate Industries)
-str_AlphaWales					: (Alphaline Wales and Borders)
-str_AlphaWessex					: (Alphaline Wessex)
-str_AngliaFestival				: (Anglia - Norwich & Norfolk Festival Ad.)
-str_Anglia						: (Anglia Trains)
-str_ARC					        : (ARC)
-str_ArrivaBlue					: (Arriva - Blue)
-str_ArrivaCream					: (Arriva - Cream)
-str_ArrivaGhost					: (Arriva - Ghost)
-str_ArrivaHeart					: (Arriva - Heart of Wales)
-str_ArrivaSilver				: (Arriva - Silver)
-str_ArrivaTimes					: (Arriva - Time Are Changing)
-str_ArrivaTPNS					: (Arriva - TransPennine Northern Spirit)
-str_ArrivaWales					: (Arriva Trains Wales)
-str_ArrivaWalesMail				: (Arriva Trains Wales - Western Mail)
-str_AvantiWestCoast             : (Avanti West Coast)
-str_BangerBlue_Stripe           : (Banger Blue with White Stripe)
-str_Biffa                       : (Biffa)
-str_BlackpoolTransport          : (Blackpool Transport)
-str_BoltonCorporation           : (BoltonCorporation)
-str_BP                          : (BP)
-str_BR2ToneGrey                 : (BR - 2 Tone Grey)
-str_BRAppleGreen                : (BR - Apple Green)
-str_BRBauxite                   : (BR - Bauxite)
-str_BRBeechLeafBrown            : (BR - Beech Leaf Brown)
-str_BRBlack						: (BR - Black)
-str_BRLion                      : (BR - Black & Lion)
-str_BRPlainBlack_Early          : (BR - Black, Early Emblem)
-str_BRPlainBlack_Late           : (BR - Black, Late Crest)
-str_BRLinedBlack_Early          : (BR - Lined Black, Early Emblem)
-str_BRLinedBlack_Late           : (BR - Lined Black, Late Crest)
-str_BRBlue						: (BR - Blue)
-str_BRBlueAlt					: (BR - Blue, Alternate)
-str_BRBlueWrap					: (BR - Blue, Wraparound)
-str_BRBlueHeadlight				: (BR - Blue with Headlight)
-str_BRBlueGrey					: (BR - Blue and Grey)
-str_BRBlueCentre				: (BR - Blue, Centre Headcode)
-str_BRBlueHeritage              : (BR - Blue, Heritage)
-str_BRBlueSplit					: (BR - Blue, Split Box)
-str_BRBlueFront				    : (BR - Blue, Yellow Front)
-str_BRBluePanel                 : (BR - Blue, Yellow Panel)
-str_BRBlue125                   : (BR - InterCity 125 Blue and Grey)
-str_BRCarmCream					: (BR - Carmine and Cream)
-str_BRCaledonianBlue            : (BR - Caledonian Blue)
-str_BRChocCream					: (BR - Chocolate and Cream)
-str_BRCrimson                   : (BR - Crimson)
-str_BRDesertSand                : (BR - Desert Sands)
-str_BRExpressBlue               : (BR - Express Passenger Blue)
-str_BRElectricBlue              : (BR - Electric Blue)
-str_BRGreen						: (BR - Green)
-str_BRGreen_Early               : (BR - Green, Early Emblem)
-str_BRGreen_Late                : (BR - Green, Late Crest)
-str_BRGreenCentre				: (BR - Green, Centre Headcode)
-str_BRGreenSplit				: (BR - Green, Split Box)
-str_BRGreenFront    			: (BR - Green, Yellow Front)
-str_BRGreenPanel				: (BR - Green, Yellow Panel)
-str_BRGrey						: (BR - Grey)
-str_BRGreyBlue					: (BR - Grey and Blue)
-str_BRGreyEarly                 : (BR - Grey, Early)
-str_BRGreyLate                  : (BR - Grey, Late)
-str_BRInterCity					: (InterCity)
-str_BRInterCityExecutive		: (InterCity Executive)
-str_BRInterCitySwallow			: (InterCity Swallow)
-str_BRLLogo				        : (BR Large Logo)
-str_BRLLogoAlt  				: (BR Large Logo - Alternate)
-str_BRLLogoCentre				: (BR Large Logo - Centre Headcode)
-str_BRLLogoSplit				: (BR Large Logo - Split Box)
-str_BRScotRail                  : (BR - ScotRail)
-str_BRMalachite					: (BR - Malachite Green)
-str_BRMaroon					: (BR - Maroon)
-str_BRMaroonFront               : (BR - Maroon, Yellow Front)
-str_BRMaroonPanel               : (BR - Maroon, Yellow Panel)
-str_BRNankingBlue               : (BR - Nanking Blue)
-str_BROchre                     : (BR - Golden Ochre)
-str_BRParcels                   : (BR - Parcels)
-str_BRPrototype					: (BR - Prototype)
-str_BRProvincial                : (BR - Provincial)
-str_BRProvincial_Prototype      : (BR - Provincial Prototype)
-str_BRResearch                  : (BR - Research Department)
-str_BRRefurb                    : (BR - Refurbished)
-str_BRTransitionalBlack         : (BR - Transitional Black)
-str_BRTransitionalGreen         : (BR - Transitional Green)
-str_BRTransitionalRed           : (BR - Transitional Red)
-str_BRTest						: (BR - Track Test Train)
-str_BRWartime					: (BR - Wartime Black)
-str_BristolElectricProto        : (Bristol Electric - Prototype)
-str_BSS							: (British Steel)
-str_BSS_Blue                    : (British Steel - Blue)
-str_C2C							: (C2C)
-str_C2CBlue						: (C2C - Blue)
-str_Caledonian					: (Caledonian Sleeper)
-str_Central						: (Central Trains)
-str_CentralAnglia				: (Central/Anglia Hybrid)
-str_Centro						: (Centro)
-str_Chiltern                    : (Chiltern Railways)
-str_ChilternRevised             : (Chiltern Railways - Revised)
-str_ChilternExplorer            : (Chiltern Railways - Chiltern Explorer)
-str_ChilternTurboBlue           : (Chiltern - Blue, Turbostar Cab)
-str_ChilternNetworkBlue			: (Chiltern - Blue, Networker Cab)
-str_ChilternTurboGrey           : (Chiltern - Grey, Turbostar Cab)
-str_ChilternNetworkGrey			: (Chiltern - Grey, Networker Cab)
-str_CivilDutch					: (Civil Engineers - Dutch)
-str_ColasRail					: (Colas Rail)
-str_Connex						: (Connex)
-str_Continental_Airlines		: (Continental Airlines)
-str_Corus						: (Corus)
-str_DB                          : (Deutsche Bahn)
-str_DBCargo                     : (DB Cargo)
-str_DBSCompany					: (DB Schenker - Company Train)
-str_DBSchenker					: (DB Schenker)
-str_DBSteel                     : (DB - Steel on Steel)
-str_DeptGrey					: (Departmental Grey)
-str_DLRRed                      : (Docklands Light Railway - Red)
-str_DRS							: (DRS)
-str_DRSGreen					: (DRS - Green)
-str_DRSCentre					: (DRS - Centre Headcode)
-str_DRSCompass					: (DRS - Compass)
-str_DRSCompass2					: (DRS - Compass - 2nd Version Lights)
-str_DRSRefurb					: (DRS - Refurbished)
-str_EastAnglia					: (East Anglia)
-str_EastCoast					: (East Coast)
-str_EMT							: (East Midland Trains)
-str_ECC                         : (English China Clay)
-str_EMRMaroon                   : (EMR - Maroon)
-str_EMRMaroonWhite              : (EMR - Maroon and White)
-str_EMRTransition               : (EMR - Transitional)
-str_Esso                        : (ESSO)
-str_Eurostar					: (Eurostar)
-str_EurostarNew					: (Eurostar - New Livery)
-str_EWSCentre					: (EWS - Centre Headcode)
-str_EWSCompany					: (EWS Company Train)
-str_EWSRed						: (EWS - Red and Gold)
-str_EWSSplit					: (EWS - Split Box)
-str_ExSWT						: (Ex-South West Trains)
-str_FastLine					: (Fastline)
-str_FGE							: (First Great Eastern)
-str_FGW							: (First Great Western)
-str_FGWFag						: (First Great Western - Fag Packet)
-str_FGWDL						: (First Great Western - Dynamic Lines)
-str_FGWL                        : (First Great Western Link)
-str_FCC							: (First Capital Connect)
-str_FirstGroup					: (First Group)
-str_FirstLink					: (First Link)
-str_FirstScotRail			    : (First ScotRail)
-str_FirstTPE                    : (First Transpennine Express)
-str_FirstTPEGeometric   		: (First TransPennine - Geometric)
-str_FNW							: (First North Western)
-str_FirstDynamic                : (First Transpennine - Dynamic Lines)
-str_FNWBarbie					: (First North Western - Barbie)
-str_FNWArriva					: (FNW/Arriva Hybrid)
-str_FosterYeoman                : (Foster Yeoman)
-str_Fragonset					: (Fragonset)
-str_Freightliner				: (Freightliner)
-str_FreightlinerGrey            : (Freightliner - Grey)
-str_FreightlinerGreen           : (Freightliner - Green)
-str_Freightliner2				: (Freightliner - 2nd Version Lights)
-str_FreightlinerSH				: (Freightliner/Shanks)
-str_FreightlinerPH				: (Freightliner - Powerhaul)
-str_FreightlinerOrange          : (Freightliner - Orange)
-str_FurnessRed                  : (Furness Railway - Red)
-str_GA                          : (Greater Anglia)
-str_GA_Blue                     : (Greater Anglia - Blue)
-str_GA_Pride                    : (Greater Anglia - Pride)
-str_GA_White					: (Greater Anglia - White)
-str_GatEx						: (Gatwick Express)
-str_GatEx_White                 : (Gatwick Express - White)
-str_GatExUn						: (Gatwick Express - Unbranded)
-str_GBRf						: (GBRf)
-str_GBRf2						: (GBRf - 2nd Version Lights)
-str_GBRf3						: (GBRf - 3rd Version Lights)
-str_GBRfTfLWhite				: (GBRf - London Underground 150 Years - White)
-str_GBRfTfLBlack				: (GBRf - London Underground 150 Years - Black)
-str_GBRfHB						: (GBRf - "Harry Beck")
-str_GBRfBlue					: (GBRf - Blue)
-str_GBRfBlack					: (GBRf - Black)
-str_GBRfMSC                     : (GBRf - MSC)
-str_GBRf2ToneGrey               : (GBRf - 2 Tone Grey)
-str_GBRfBarbie					: (GBRf - Barbie)
-str_GBRfHS2						: (GBRf - HS2)
-str_GBRfEveningStar             : (GBRf - Evening Star)
-str_GC							: (Grand Central)
-str_GCLined						: (Grand Central - Lined)
-str_GCRBlack                    : (GCR - Black)
-str_GCRLinedBlack               : (GCR - Lined Black)
-str_GERBlue						: (GER - Blue)
-str_GERBlack					: (GER - Black)
-str_GMPTE						: (GMPTE)
-str_GNER						: (Great North Eastern Railway)
-str_GlasgowCorporation          : (Glasgow Corporation)
-str_GoCoop                      : (Go Coperative)
-str_GreaterAnglia               : (Greater Anglia)
-str_GreatWestern                : (Great Western)
-str_GRFTest1				    : (GRF Test Livery)
-str_GRFTest2					: (GRF Test Livery)
-str_GGN                         : (Govia Great Northern)
-str_GTR							: (Govia Thameslink)
-str_GTR_TBW						: (Govia - Tunbridge Wells)
-str_GTRB						: (Govia Thameslink - Blue)
-str_GTRP						: (Govia Thameslink - Pink)
-str_GTRPride					: (Govia Thameslink - Pride)
-str_Gulf                        : (Gulf)
-str_GNRGreen					: (GNR - Green)
-str_GNRTeak                     : (GNR - Teak)
-str_GWR                         : (GWR)
-str_GWRBlack                    : (GWR - Black)
-str_GWRBlack_COA                : (GWR - Black, Coat of Arms)
-str_GWRBlack_Shirtbutton        : (GWR - Black, Shirtbutton)
-str_GWRBlack_Wartime            : (GWR - Wartime Black)
-str_GWRGreen                    : (GWR - Green)
-str_GWRGreenChrome				: (GWR - Chrome Green)
-str_GWRGreen_Lined              : (GWR - Lined Green)
-str_GWRGreen_LinedCOA           : (GWR - Lined Green, Coat of Arms)
-str_GWRGreen_LinedGC            : (GWR - Lined Green, Garter Crest)
-str_GWRGreen_LinedIndianRed     : (GWR - Lined Green, Indian Red Frames)
-str_GWRGreen_LinedFull          : (GWR - Lined Green, full lettering)
-str_GWRGreen_LinedShirtbutton   : (GWR - Lined Green, Shirtbutton)
-str_GWRGreen_Unlined            : (GWR - Unlined Green)
-str_GWRGreen_UnlinedCOA         : (GWR - Unlined Green, Coat of Arms)
-str_GWRGreen_UnlinedGC          : (GWR - Unlined Green, Garter Crest)
-str_GWRGreen_UnlinedFull        : (GWR - Unlined Green, full lettering)
-str_GWRGreen_UnlinedShirtbutton : (GWR - Unlined Green, Shirtbutton)
-str_GWRPride                    : (GWR - Pride)
-str_GWRGreenUn					: (GWR - Green Unbranded)
-str_GWRGrey                     : (GWR - Grey)
-str_GWT                         : (Great Western Trains)
-str_HansonHall                  : (Hanson & Hall)
-str_HarryNeedle					: (Harry Needle Railroad)
-str_HeathrowExpressPurple       : (Heathrow Express - Grey and Purple)
-str_Heidelberg                  : (Heidelberg)
-str_Hitachi						: (Hitachi)
-str_HitachiWhite				: (Hitachi - White)
-str_HogwartsExpress             : (Hogwarts Express)
-str_HT							: (Hull Trains)
-str_ICI                         : (Imperial Chemical Industries)
-str_Kestrel                     : (Kestrel Prototype - Yellow and Black)
-str_LaPoste					    : (La Poste)
-str_LBSCR_GoldenOchre           : (LBSCR - Golden Ochre)
-str_LBSCR_MarshUmber            : (LBSCR - Marsh Umbre)
-str_LBSCR_MarshUmber_Named      : (LBSCR - Marsh Umbre, Named)
-str_LBSCR_MarshUmber_Unnamed    : (LBSCR - Marsh Umbre, Unnamed)
-str_LMSBlack                    : (LMS - Black)
-str_LMSRed                      : (LMS - Crimson)
-str_LMR                         : (Longmoor Military Railway)
-str_LNERAppleGreen		        : (LNER - Apple Green)
-str_LNERBlack					: (LNER - Black)
-str_LNERCoronationSilver        : (LNER - Coronation Silver)
-str_LNERGarterBlue              : (LNER - Garter Blue)
-str_LNERRedWhite                : (LNER - Red and White)
-str_LNEROxblood                 : (LNER - Oxblood)
-str_LNERWartimeBlack            : (LNER - Wartime Black)
-str_LNERTeak					: (LNER - Teak)
-str_LNERFauxTeak                : (LNER - "Teak")
-str_LNWR					    : (London Northwestern Railway)
-str_LNWRBlack					: (LNWR - Black)
-str_LNWRSimple				    : (London Northwestern Railway - Transitional)
-str_Loadhaul					: (Loadhaul)
-str_LoadhaulGrey				: (Loadhaul - Grey)
-str_LondonMidland				: (London Midland)
-str_LSE							: (London and South East - Jaffa Cake)
-str_LSWRSageGreen               : (LSWR - Sage Green)
-str_LTS							: (LTS Rail)
-str_LO					        : (London Overground)
-str_LO_exSilverlink             : (London Overground - ex-Silverlink)
-str_LO_Aventra			        : (London Overground - Fake Aventra)
-str_LO_5_Celeb					: (London Overground - 5-Car Celebration)
-str_LO_Pride       				: (London Overground - Pride)
-str_LT                          : (London Transport)
-str_LU_TfL						: (London Underground)
-str_LU_Prefurb                  : (London Underground - Pre-Refurb)
-str_LULPoppies					: (London Underground - Poppies)
-str_LULUnwrapped				: (London Underground - Unwrapped)
-str_LU_Alt                      : (London Underground - Alternate Livery)
-str_LU_Unpainted                : (London Underground - Unpainted)
-str_LU_86Green                  : (London Underground - Green (Experimental))
-str_LU_86Blue                   : (London Underground - Blue (Experimental))
-str_LU_86Red                    : (London Underground - Red (Experimental))
-str_Lumo                        : (Lumo)
-str_MainlineFreight             : (Mainline Freight)
-str_Mainline_Blue				: (Mainline Freight - Blue)
-str_Mainline_Grey				: (Mainline Freight - Grey)
-str_MaritimeIntermodal          : (Maritime Intermodal)
-str_MerseyRail					: (MerseyRail)
-str_MerseyRailGoodComs			: (MerseyRail - Good Communications)
-str_MerseyRailOld				: (MerseyRail - Old)
-str_MetrolinkYellow             : (Manchester Metrolink - Yellow)
-str_MetropolitanRed             : (Metropolitan Railway - Red)
-str_Maersk      				: (Maersk)
-str_MaerskEyeCandy 				: (Maersk - Always show container)
-str_MRCrimson                   : (MR - Crimson)
-str_MMLBlue						: (Midland Mainline - Blue)
-str_MMLTealTang					: (Midland Mainline - Teal & Tangerine)
-str_Mobil                       : (Mobil)
-str_MoD                         : (Ministry of Defence)
-str_Murco                       : (Murco)
-str_NCB                         : (National Coal Board)
-str_NatEx						: (National Express)
-str_NatExScotRail				: (ScotRail - National Express)
-str_NationalPower				: (National Power)
-str_NetworkRail                 : (Network Rail)
-str_NetworkRailInfrastructure   : (Network Rail - Infrastructure)
-str_NetworkRailTopGear          : (Network Rail - Top Gear)
-str_Northern                    : (Northern)
-str_NorthernToY                 : (Northern - Tour of Yorkshire)
-str_NorthernExp1				: (Northern Rail - Experimental 1)
-str_NorthernExp2				: (Northern Rail - Experimental 2)
-str_NorthernPorterbrook			: (Northern Rail - Porterbrook)
-str_NorthernRail				: (Northern Rail)
-str_NorthernRailMetro			: (Northern Rail - Metro)
-str_NorthernSpirit				: (Northern Spirit)
-str_NorthWesternTrains          : (North Western Trains)
-str_NWR                         : (North Western Railway)
-str_NWR_RWS                     : (North Western Railway - Railway Series)
-str_NWR_TTTE                    : (North Western Railway - Thomas the Tank Engine)
-str_NRBlue						: (Network Rail - Blue)
-str_NROrange					: (Network Rail - Orange)
-str_NRTest						: (Network Rail - Test Train)
-str_NRWhite						: (Network Rail - White)
-str_NRYellow					: (Network Rail - Yellow)
-str_NS							: (Nederlandse Spoorwegen - Dutch Railways)
-str_NSE							: (Network South East)
-str_NSEAlt						: (Network South East - Alternative Scheme)
-str_NSEG						: (Network South East - Grey)
-str_NWM							: (Network West Midlands)
-str_NXEA						: (National Express East Anglia)
-str_NXEAAltLights				: (National Express East Anglia - Alternative Lights)
-str_ONE							: (One)
-str_ONEChapelf					: (One - Chapelfield)
-str_ONEGhost					: (One - Ghost White)
-str_ONETrans					: (One - Transitional)
-str_PLA                         : (Port of London Authority)
-str_Police						: (Police)
-str_PPMProto                    : (Parry People Mover - Prototype)
-str_Porterbrook					: (Porterbrook - Purple)
-str_Pullman                     : (Blue Pullman)
-str_PullmanPanels               : (Blue Pullman - Warning Panels)
-str_PullmanBrown                : (Brown Pullman)
-str_Random                      : (Random)
-str_RandomEyeCandy              : (Random - Always show container)
-str_RailAdventure               : (RailAdventure)
-str_Railtrack					: (Railtrack)
-str_Railfreight                 : (Railfreight)
-str_RailfreightGrey				: (Railfreight - Grey)
-str_RailfreightGrey_RedStripe   : (Railfreight - Grey, Red Stripe)
-str_Railfreight2Grey			: (Railfreight - 2 Tone Grey)
-str_Railfreight3Grey			: (Railfreight - 3 Tone Grey)
-str_Railfreight3GreyCoal		: (Railfreight - 3 Tone Grey - Coal)
-str_RailfreightMainlineGrey		: (Railfreight - Mainline Grey)
-str_RailfreightMainlineBlue		: (Railfreight - Mainline Blue)
-str_RailwayChildren             : (The Railway Children)
-str_Regional					: (Regional Railways)
-str_RegionalCnC                 : (Regional Railways - Chocolate and Cream)
-str_RegionalExpress				: (Regional Railways Express)
-str_RegionalGreen				: (Regional Railways - Green)
-str_RegionalGrey				: (Regional Railways - Grey)
-str_RegionalMersey				: (Regional Railways - Merseyrail)
-str_RegionalNSE					: (Regional Railways - Ex-NSE)
-str_RCS                         : (Rail Charter Services)
-str_REX                         : (Rail Express Systems)
-str_RFCoal						: (Railfreight - Coal)
-str_RFConstruction				: (Railfreight - Construction)
-str_RFDistribution				: (Railfreight - Distribution)
-str_RFMetal                     : (Railfreight - Metals)
-str_RFLLCentre					: (Railfreight Large Logo - Centre Headcode)
-str_RFLLSplit					: (Railfreight Large Logo - Split Box)
-str_RFPetrol					: (Railfreight - Petroleum)
-str_ROD                         : (Railway Operating Division)
-str_Royal						: (Royal Scotsman)
-str_RoyalClaret					: (British Royal Train)
-str_RoyalMail					: (Royal Mail)
-str_RoyalMailBoards				: (Royal Mail - Advertising boards)
-str_RoyalMailFictional			: (Royal Mail - Fictional Livery)
-str_ScotRail					: (ScotRail)
-str_ScotRailPride				: (ScotRail Pride)
-str_ScotRail_I7C                : (ScotRail - Inter7City)
-str_ScotRailSaltire				: (ScotRail - Saltire)
-str_SDJRBlue                    : (S&DJR - Blue)
-str_SECR_Green                  : (SECR - Green)
-str_SET                         : (South Eastern Trains)
-str_Shell                       : (Shell)
-str_Siemens						: (Siemens Demonstrator)
-str_Silverlink					: (Silverlink)
-str_SilverlinkCentral			: (Silverlink/Central Trains)
-str_SNCB                        : (Société Nationale des Chemins de fer Belges)
-str_SNCF                        : (Société Nationale des Chemins de fer Français)
-str_Southeastern				: (Southeastern)
-str_Southeastern_blue			: (Southeastern - Blue)
-str_Southeastern_blue_refurbished	: (Southeastern - Refurbished Blue)
-str_Southeastern_blue_stripe	: (Southeastern - Blue with Stripe)
-str_Southeastern_TBW			: (Southeastern - Tunbridge Wells)
-str_Southeastern_yellow			: (Southeastern - Yellow)
-str_Southeastern_yellow_stripe	: (Southeastern - Yellow with Stripe)
-str_Southern					: (Southern)
-str_SouthernCoastway            : (Southern - Coastway)
-str_SRBlack                    : (Southern Railway - Black)
-str_SRGrey                     : (Southern Railway - Grey)
-str_SROlive                    : (Southern Railway - Olive Green)
-str_SRIOWOlive                 : (Southern Railway - IOW Olive Green)
-str_SRIOWOlive_Extended        : (Southern Railway - IOW Olive Green, Extended)
-str_SRMalachite                : (Southern Railway - Malachite Green)
-str_SRWartimeBlack             : (Southern Railway - Wartime Black)
-str_Stagecoach                  : (Stagecoach)
-str_StagecoachWhite             : (Stagecoach - White)
-str_StagecoachBlue              : (Stagecoach - Blue)
-str_StobartRail                 : (Stobart Rail)
-str_StrathclydeOrange			: (SPT - Orange)
-str_StrathclydePTE				: (Strathclyde PTE)
-str_SuperSprinter				: (BR Super Sprinter)
-str_Suko                        : (Suko)
-str_SWT							: (South West Trains)
-str_SWTHeritage					: (South West Trains - Heritage)
-str_SWTOrange					: (South West Trains - Orange)
-str_SWTPink						: (South West Trains - Pink)
-str_SWT_refurb					: (South West Trains - Refurbished)
-str_SWT_stagecoach				: (South West Trains - Stagecoach)
-str_SWR				            : (South Western Railway)
-str_SWRPride		            : (South Western Railway - Pride)
-str_Teak                        : (Teak)
-str_Tesco                       : (Tesco)
-str_TfL							: (TfL Rail)
-str_TfLTrams					: (TfL London Trams)
-str_TfW         			    : (Transport For Wales)
-str_thameslink					: (BR Thameslink)
-str_ThamesTrains				: (Thames Trains)
-str_Total                       : (Total)
-str_TPE                         : (Transpennine Express)
-str_TPEPride                    : (Transpennine Express - Pride)
-str_Trainload                   : (Trainload)
-str_Transrail_Grey              : (Transrail - Grey)
-str_Transrail_Grey_Yellow       : (Transrail - Grey & Yellow)
-str_ROSCO						: (ROSCO Transitional Livery)
-str_ValleyLines                 : (Valley Lines)
-str_Virgin      				: (Virgin Trains)
-str_VirginEC					: (Virgin East Coast)
-str_VirginECLNER				: (LNER/Virgin East Coast)
-str_VirginSilk                  : (Virgin - Flowing Silk)
-str_VirginPretendolino          : (Virgin - Pretendolino)
-str_VirginPride                 : (Virgin - Pride)
-str_VivaRail                    : (VivaRail)
-str_VTG                         : (VTG)
-str_WAGNPu						: (WAGN - Purple)
-str_WAGNPro						: (WAGN - Promotional Livery)
-str_WAGNWh						: (WAGN - White)
-str_WAGNYg						: (WAGN - Yellow & Green)
-str_WalesWest					: (Wales and West)
-str_WDGrey                      : (War Department - Grey)
-str_WDKhaki                     : (War Department - Khaki Drab)
-str_WDOliveGreen                : (War Department - Olive Green)
-str_WDBronzeGreen               : (War Department - Bronze Green)
-str_Wessex						: (Wessex Trains)
-str_Wessex_Revised              : (Wessex Trains - Revised)
-str_WessexCornwall				: (Wessex Trains - Cornwall and Devon Ad.)
-str_WessexGinster				: (Wessex Trains - Ginsters)
-str_WessexHeart					: (Wessex Trains - Heart of Wessex)
-str_WessexLooe					: (Wessex Trains - Looe Valley Ad.)
-str_WessexYork                  : (Wessex Trains - York)
-str_WestCoast					: (West Coast Railway Company)
-str_WestMidlandsMetro           : (West Midlands Metro)
-str_WMR                         : (West Midlands Railway)
-str_Wrexham						: (Wrexham & Shropshire)
-str_WYPTEMetro					: (WYPTE Metro)
-str_WYPTEVerona                 : (WYPTE Verona - Green and Cream)
-str_XC							: (CrossCountry)
-str_XC_Pride                    : (CrossCountry - Pride)
-str_XC_Refurb                   : (CrossCountry - Refurbished)
-str_XC_Refurb_Concept           : (CrossCountry - Refurbished, Concept)
-str_xfcc						: (Thameslink - ex-First Capital Connect)
+
+str_Anglia                      :Anglia Trains
+str_ARC                         :ARC
+str_Abellio                     :Abellio
+str_AGA                         :Abellio Greater Anglia
+str_AggregateIndustries         :Aggregate Industries
+str_AlphaWales                  :Alphaline Wales and Borders
+str_AlphaWessex                 :Alphaline Wessex
+str_ArrivaWales                 :Arriva Trains Wales
+str_ArrivaWales_Premier         :Premier Service
+str_AvantiWestCoast             :Avanti West Coast
+
+str_Biffa                       :Biffa
+str_BP                          :BP
+
+str_BR                          :BR
+str_BR_Old_Long                 :British Railways
+str_BR_New_Long                 :British Rail
+str_BR_BeechLeafBrown           :Beech Leaf Brown
+str_BR_BlueGrey                 :Blue and Grey
+str_BR_CarmineCream             :Carmine and Cream (Blood and Custard)
+str_BR_CivilDutch               :Civil Engineers "Dutch"
+str_BR_DesertSand               :Desert Sands
+str_BR_Departmental             :Departmental Grey
+str_BR_ElectricBlue             :Electric Blue
+str_BR_ExpressBlue              :Express Passenger Blue
+str_BR_GoldenOchre              :Golden Ochre
+str_BR_GreyBlue                 :Grey and Blue
+str_BR_InterCity                :InterCity
+str_BR_InterCityExecutive       :InterCity Executive
+str_BR_InterCitySwallow         :InterCity Swallow
+str_BR_LLogo                    :Large Logo Blue
+str_BR_NankingBlue              :Nanking Blue
+str_BR_Parcels                  :Parcels
+str_BR_Provincial               :Provincial
+str_BR_ProvincialPrototype      :Provincial Prototype
+str_BR_Research                 :Research Department
+str_BR_RES                      :Rail Express Systems
+str_BR_TrackTest                :Track Test Train
+str_BR_CentreHeadcode           :Centre Headcode
+str_BR_EarlyEmblem              :Early Emblem
+str_BR_LateCrest                :Late Crest
+str_BR_InterCity125             :InterCity 125
+str_BR_SplitBox                 :Split Box
+str_BR_Transitional             :Transitional
+str_BR_YellowFront              :Yellow Front
+str_BR_YellowPanel              :Yellow Panel
+str_BSS                         :British Steel
+
+str_C2C                         :C2C
+str_Caledonian                  :Caledonian Sleeper
+str_Central                     :Central Trains
+str_Centro                      :Centro
+str_Chiltern                    :Chiltern Railways
+str_Chiltern_Explorer           :Chiltern Explorer
+str_ColasRail                   :Colas Rail
+str_Connex                      :Connex
+str_Continental                 :Continental Airlines
+str_Corus                       :Corus
+
+str_DB                          :Deutsche Bahn
+str_DBSchenker                  :DB Schenker
+str_DBS_Company                 :Company Train
+str_DRS                         :DRS
+str_DRS_Compass                 :Compass
+
+str_EastAnglia                  :East Anglia
+str_EastCoast                   :East Coast
+str_ECC                         :English China Clay
+str_EMT                         :East Midland Trains
+str_EMR                         :EMR
+str_EMR_Long                    :East Midlands Rail
+str_EMR_MaroonWhite             :Maroon and White
+str_Esso                        :ESSO
+str_Eurostar                    :Eurostar
+str_EWS                         :EWS
+str_EWS_Long                    :English, Welsh and Scottish
+str_EWS_Red                     :Red and Gold
+
+str_FastLine                    :Fastline
+str_FGE                         :FGE
+str_FGE_Long                    :First Great Eastern
+str_FGW                         :FGW
+str_FGW_Long                    :First Great Western
+str_FGW_Fag                     :Fag Packet
+str_FGW_DynamicLines            :Dynamic Lines
+str_FGWL                        :First Great Western Link
+str_FCC                         :First Capital Connect
+str_FirstGroup                  :First Group
+str_FirstScotRail               :First ScotRail
+str_FirstTPE                    :First Transpennine Express
+str_FNW                         :First North Western
+
+str_FosterYeoman                :Foster Yeoman
+str_Fragonset                   :Fragonset
+str_Freightliner                :Freightliner
+str_Freightliner_Powerhaul      :Powerhaul
+str_Furness                     :Furness Railway
+
+str_GatEx                       :Gatwick Express
+
+str_GBRf                        :GBRf
+str_GBRf_Long                   :GB Railfreight
+str_GBRf_TfLWhite               :London Underground 150 Years - White
+str_GBRf_TfLBlack               :London Underground 150 Years - Black
+str_GBRf_HB                     :"Harry Beck"
+str_GBRf_Barbie                 :Barbie
+str_GBRf_HS2                    :HS2
+str_GBRf_EveningStar            :Evening Star
+
+str_GC                          :Grand Central
+str_GCR                         :GCR
+str_GCR_Long                    :Great Central Railway
+str_GER                         :GER
+str_GER_Long                    :Great Eastern Railway
+str_GER_PrussianBlue            :Prussian Blue
+str_GMPTE                       :GMPTE
+str_GMPTE_Long                  :Greater Manchester PTE
+str_GNER                        :GNER
+str_GNER_Long                   :Great North Eastern Railway
+str_GreaterAnglia               :GA
+str_GreaterAnglia_Long          :Greater Anglia
+str_GreatWestern                :Great Western
+str_GoviaGreatNorthern          :Govia Great Northern
+str_GoviaThameslink             :Govia Thameslink
+str_Gulf                        :Gulf
+str_GNR                         :GNR
+str_GNR_Long                    :Great Northern Railway
+
+str_GWR                         :GWR
+str_GWR_Long                    :Great Western Railway
+str_GWR_ChromeGreen             :Chrome Green
+str_GWR_CoA                     :Coat of Arms
+str_GWR_GarterCrest             :Garter Crest
+str_GWR_IndianRed               :Indian Red
+str_GWR_Lettering               :Full lettering
+str_GWR_Shirtbutton             :Shirtbutton
+str_GWT                         :Great Western Trains
+
+str_HansonHall                  :Hanson & Hall
+str_HarryNeedle                 :Harry Needle Railroad
+str_HeathrowExpress             :Heathrow Express
+str_Hitachi                     :Hitachi
+str_HogwartsExpress             :Hogwarts Express
+str_HT                          :Hull Trains
+
+str_ICI                         :Imperial Chemical Industries
+str_Kestrel                     :Kestrel Prototype - Yellow and Black
+
+str_LaPoste                     :La Poste
+str_LBSCR                       :LBSCR
+str_LBSCR_Long                  :London, Brighton & South Coast Railway
+str_LBSCR_GoldenOchre           :Golden Ochre
+str_LBSCR_MarshUmbre            :Marsh Umbre
+str_LMR                         :Longmoor Military Railway
+str_LMS                         :LMS
+str_LMS_Long                    :London, Midland & Scotland Railway
+
+str_LNER                        :LNER
+str_LNER_Long                   :London & North Eastern Railway
+str_LNER_AppleGreen             :Apple Green
+str_LNER_CoronationSilver       :Coronation Silver
+str_LNER_GarterBlue             :Garter Blue
+str_LNER_Oxblood                :Oxblood
+
+str_LNWR                        :LNWR
+str_LNWR_Long                   :London & North Western Railway
+str_LNWR_ToC                    :London Northwestern Railway
+str_Loadhaul                    :Loadhaul
+str_LondonMidland               :London Midland
+str_LSE                         :London and South East - Jaffa Cake
+str_LSWR                        :LSWR
+str_LSWR_Long                   :London & South Western Railway
+str_LTS                         :LTS Rail
+str_LO                          :London Overground
+str_LO_exSilverlink             :ex-Silverlink
+str_LT                          :London Transport
+str_LU                          :London Underground
+str_Lumo                        :Lumo
+
+str_Mainline                    :Mainline Freight
+str_MaritimeIntermodal          :Maritime Intermodal
+str_MerseyRail                  :MerseyRail
+str_MetrolinkYellow             :Manchester Metrolink - Yellow
+str_MR                          :MR
+str_Metropolitan                :Metropolitan Railway
+str_Metropolitan_Midcared       :Midcared
+str_Maersk                      :Maersk
+str_Midland                     :Midland Railway
+str_MML                         :Midland Mainline
+str_MML_TealTang                :Teal & Tangerine
+str_MoD                         :Ministry of Defence
+str_Mobil                       :Mobil
+str_Murco                       :Murco
+str_NatEx                       :National Express
+str_NXEA                        :NXEA
+str_NXEA_Long                   :National Express East Anglia
+str_NationalPower               :National Power
+str_NCB                         :National Coal Board
+
+str_NetworkRail                 :Network Rail
+str_Northern                    :Northern
+str_NorthernRail                :Northern Rail
+str_NorthernSpirit              :Northern Spirit
+str_NS                          :Nederlandse Spoorwegen
+str_NSE                         :NSE
+str_NSE_Long                    :Network South East
+str_NWM                         :Network West Midlands
+str_NWR                         :North Western Railway
+str_NWR_TRS                     :NWR - The Railway Series
+str_NWR_TTTE                    :NWR - Thomas the Tank Engine
+
+str_ONE                         :One
+str_PLA                         :Port of London Authority
+str_Police                      :Police
+str_PPMProto                    :Parry People Mover - Prototype
+str_Porterbrook                 :Porterbrook
+str_RailAdventure               :RailAdventure
+str_Railtrack                   :Railtrack
+
+str_Railfreight                 :Railfreight
+str_Railfreight_RedStripe       :Red Stripe
+str_Railfreight_TwoTone         :Two Tone Grey
+str_Railfreight_TripleGrey      :Triple Grey
+str_Railfreight_Coal            :Coal
+str_Railfreight_Construction    :Construction
+str_Railfreight_Distribution    :Distribution
+str_Railfreight_Metal           :Metals
+str_Railfreight_Petrol          :Petroleum
+
+str_RailwayChildren             :The Railway Children
+str_Regional                    :Regional Railways
+str_RCS                         :Rail Charter Services
+str_REX                         :Rail Express Systems
+str_ROD                         :Railway Operating Division
+str_RoyalClaret                 :Royal Train - Royal Claret
+str_RoyalMail                   :Royal Mail
+
+str_ScotRail                    :Scotrail
+str_ScotRail_Inter7City         :Inter7City
+str_ScotRail_Saltire            :Saltire
+
+str_SDJR                        :S&DJR
+str_SDJR_Long                   :Somerset & Dorset Joint Railway
+str_SECR                        :SECR
+str_SECR_Long                   :South Eastern & Chatham Railway
+str_SET                         :SET
+str_SET_Long                    :South Eastern Trains
+str_Shell                       :Shell
+str_Siemens                     :Siemens Demonstrator
+str_Silverlink                  :Silverlink
+str_SilverlinkCentral           :Silverlink/Central Trains
+str_SNCB                        :Société Nationale des Chemins de fer Belges
+str_SNCF                        :Société Nationale des Chemins de fer Français
+str_Southeastern                :Southeastern
+str_Southern                    :Southern
+str_Southern_Coastway           :Coastway
+str_SR                          :SR
+str_SR_Long                     :Southern Railway
+str_SR_IOW                      :Isle of Wight
+str_SR_IOW_Extended             :Isle of Wight (Extended Tanks)
+str_Stagecoach                  :Stagecoach
+str_StobartRail                 :Stobart Rail
+str_SPT                         :SPT
+str_SPT_Long                    :Strathclyde Partnership for Transport
+str_StrathclydePTE              :Strathclyde PTE
+str_SuperSprinter               :BR Super Sprinter
+str_Suko                        :Suko
+str_SWT                         :South West Trains
+str_SWR                         :South Western Railway
+
+str_Tesco                       :Tesco
+str_TfL                         :TfL Rail
+str_TfW                         :Transport For Wales
+str_ThamesTrains                :Thames Trains
+str_TPE                         :Transpennine Express
+str_Trainload                   :Trainload
+str_Transrail                   :Transrail
+str_Transrail_GreyYellow        :Grey and Yellow
+
+str_ValleyLines                 :Valley Lines
+str_Virgin                      :Virgin Trains
+str_Virgin_EC                   :VTEC
+str_Virgin_EC_Long              :Virgin Trains East Coast
+str_Virgin_EC_LNER              :VTEC/LNER
+str_Virgin_Silk                 :Flowing Silk
+str_Virgin_Pretendolino         :Pretendolino
+str_VivaRail                    :VivaRail
+str_VTG                         :VTG
+
+str_WAGN                        :WAGN
+str_WAGN_Long                   :West Anglia Great Northern
+str_WAGN_YG                     :Yellow & Green
+
+str_WalesWest                   :Wales and West
+
+str_WarDepartment               :War Department
+str_WarDepartment_Khaki         :Khaki Drab
+str_WarDepartment_Olive         :Olive Green
+str_WarDepartment_Bronze        :Bronze Green
+
+str_Wessex                      :Wessex Trains
+
+str_WestCoast                   :West Coast Railway Company
+str_WestMidlandsMetro           :West Midlands Metro
+str_WMR                         :West Midlands Railway
+str_Wrexham                     :Wrexham & Shropshire
+str_WYPTE                       :WYPTE
+str_WYPTE_Long                  :West Yorkshire PTE
+str_XC                          :CrossCountry
 
 # Power types
 str_steam           :Steam

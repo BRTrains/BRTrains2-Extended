@@ -902,12 +902,12 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR365_RB, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR365_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_NSE);
-    1:  return string(str_Connex);
-    2:  return string(str_FCC);
-    3:  return string(str_GGN);
-    4:  return string(str_ASR);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY, string(str_NSE));
+    1:  string(STR_LIVERY, string(str_Connex));
+    2:  string(STR_LIVERY, string(str_FCC));
+    3:  string(STR_LIVERY, string(str_GoviaGreatNorthern));
+    4:  string(STR_LIVERY_DESC, string(str_Abellio), string(str_ScotRail));
+        CB_RESULT_NO_TEXT; }
 
 // length switch
 switch(FEAT_TRAINS, SELF, sw_length_BR365, position_in_articulated_veh % 12) {
@@ -992,12 +992,6 @@ item (FEAT_TRAINS, item_BR365, 3650) {
         // power:                          sw_power_BR365;
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_pax),
-                                                    string(str_BR365_liveries)));
     }
 }
 
@@ -1062,11 +1056,5 @@ item (FEAT_TRAINS, item_BR365_RB, 3651) {
         // power:                          sw_power_BR365;
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_pax),
-                                                    string(str_BR365_liveries)));
     }
 }

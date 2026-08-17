@@ -363,16 +363,16 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR142_REV, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR142_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_BRProvincial);
-    1:  return string(str_Regional);
-    2:  return string(str_RegionalCnC);
-    3:  return string(str_RegionalGrey);
-    4:  return string(str_GMPTE);
-    5:  return string(str_RegionalMersey);
-    6:  return string(str_NorthernSpirit);
-    7:  return string(str_ArrivaWales);
-    8:  return string(str_Northern);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY_DESC, string(str_BR), string(str_BR_Provincial));
+    1:  string(STR_LIVERY, string(str_Regional));
+    2:  string(STR_LIVERY_DESC, string(str_Regional), string(str_col_ChocCream));
+    3:  string(STR_LIVERY_DESC, string(str_Regional), string(str_col_Grey));
+    4:  string(STR_LIVERY, string(str_GMPTE));
+    5:  string(STR_LIVERY_DESC, string(str_Regional), string(str_MerseyRail));
+    6:  string(STR_LIVERY, string(str_NorthernSpirit));
+    7:  string(STR_LIVERY, string(str_ArrivaWales));
+    8:  string(STR_LIVERY, string(str_Northern));
+        CB_RESULT_NO_TEXT; }
 
 
 // graphics switch
@@ -452,12 +452,6 @@ item (FEAT_TRAINS, item_BR142, 1420) {
         running_cost_factor:            3681;
         cargo_subtype_text:             sw_BR142_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_dmu),
-                                                    string(str_usage_pax),
-                                                    string(str_BR142_liveries)));
     }
 }
 
@@ -527,11 +521,5 @@ item (FEAT_TRAINS, item_BR142_1, 1421) {
         running_cost_factor:            3681;
         cargo_subtype_text:             sw_BR142_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_dmu),
-                                                    string(str_usage_pax),
-                                                    string(str_BR142_liveries)));
     }
 }

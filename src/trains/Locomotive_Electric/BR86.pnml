@@ -276,23 +276,23 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR86, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR86_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_BRBlue);
-    1:  return string(str_BRElectricBlue);
-    2:  return string(str_BRBlueFront);
-    3:  return string(str_BRInterCity);
-    4:  return string(str_BRInterCityExecutive);
-    5:  return string(str_BRInterCitySwallow);
-    6:  return string(str_NSE);
-    7:  return string(str_BRParcels);
-    8:  return string(str_REX);
-    9:  return string(str_RFDistribution);
-    10: return string(str_EWSRed);
-    11: return string(str_FreightlinerGreen);
-    12: return string(str_Anglia);
-    13: return string(str_Virgin);
-    14: return string(str_NetworkRail);
-    15: return string(str_Caledonian);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY_DESC, string(str_BR), string(str_col_Blue));
+    1:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_ElectricBlue));
+    2:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Blue), string(str_BR_YellowFront));
+    3:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_InterCity));
+    4:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_InterCityExecutive));
+    5:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_InterCitySwallow));
+    6:  string(STR_LIVERY, string(str_NSE));
+    7:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_Parcels));
+    8:  string(STR_LIVERY, string(str_REX));
+    9:  string(STR_LIVERY_EXTENDED, string(str_Railfreight), string(str_Railfreight_TripleGrey), string(str_Railfreight_Distribution));
+    10: string(STR_LIVERY_DESC, string(str_EWS), string(str_EWS_Red));
+    11: string(STR_LIVERY_DESC, string(str_Freightliner), string(str_col_Green));
+    12: string(STR_LIVERY, string(str_Anglia));
+    13: string(STR_LIVERY, string(str_Virgin));
+    14: string(STR_LIVERY, string(str_NetworkRail));
+    15: string(STR_LIVERY, string(str_Caledonian));
+        CB_RESULT_NO_TEXT; }
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR86, position_in_articulated_veh % 3) {
@@ -370,12 +370,6 @@ item (FEAT_TRAINS, item_BR86_0, 8600) {
         running_cost_factor:            8387;
         cargo_subtype_text:             sw_BR86_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_electric),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_BR86_liveries)));
     }
 }
 
@@ -445,12 +439,6 @@ item (FEAT_TRAINS, item_BR86_1, 8601) {
         running_cost_factor:            8387;
         cargo_subtype_text:             sw_BR86_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_electric),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_BR86_liveries)));
     }
 }
 
@@ -519,12 +507,6 @@ item (FEAT_TRAINS, item_BR86_2, 8602) {
         running_cost_factor:            8387;
         cargo_subtype_text:             sw_BR86_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_electric),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_BR86_liveries)));
     }
 }
 
@@ -587,11 +569,5 @@ item (FEAT_TRAINS, item_BR86_6, 8606) {
         running_cost_factor:            8387;
         cargo_subtype_text:             sw_BR86_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_electric),
-                                                    string(str_usage_heavy_freight),
-                                                    string(str_BR86_liveries)));
     }
 }

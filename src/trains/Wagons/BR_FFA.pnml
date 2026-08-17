@@ -140,10 +140,10 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR_FFA_I, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR_FFA_cargo_subtype_text, cargo_subtype){
-    0:  return string(STR_LIVERY_SHORT, string(str_col_Blue));
-    1:  return string(STR_LIVERY_SHORT, string(str_col_Black));
-    2:  return string(STR_LIVERY_SHORT, string(str_col_Red));
-       return CB_RESULT_NO_TEXT; }
+    0:  string(STR_LIVERY, string(str_col_Blue));
+    1:  string(STR_LIVERY, string(str_col_Black));
+    2:  string(STR_LIVERY, string(str_col_Red));
+        CB_RESULT_NO_TEXT; }
 
 // container switch
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR_FFA_O_Dry_3Cont20_direction1, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 3 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
@@ -482,10 +482,6 @@ item (FEAT_TRAINS, item_BR_FFA_2, 12260) {
         running_cost_factor:            1384;
         cargo_subtype_text:             sw_BR_FFA_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_wagon,
-                                                    string(str_BR_FFA_liveries)));
     }
 }
 
@@ -539,10 +535,6 @@ item (FEAT_TRAINS, item_BR_FFA_3, 12261) {
         running_cost_factor:            1384;
         cargo_subtype_text:             sw_BR_FFA_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_wagon,
-                                                    string(str_BR_FFA_liveries)));
     }
 }
 
@@ -596,9 +588,5 @@ item (FEAT_TRAINS, item_BR_FFA_5, 12262) {
         running_cost_factor:            1384;
         cargo_subtype_text:             sw_BR_FFA_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_wagon,
-                                                    string(str_BR_FFA_liveries)));
     }
 }

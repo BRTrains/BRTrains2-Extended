@@ -560,5 +560,5 @@ switch(FEAT_TRAINS, SELF, sw_length_BR_Mk3, position_in_articulated_veh % 3) {
 	    4; }
 
 switch(FEAT_TRAINS, SELF, sw_EWS_DB_company_train_name, current_year) {
-    0..2012: string(str_EWSCompany);
-        return string(str_DBSCompany); }
+    0..2012: string(STR_LIVERY_DESC, string(str_EWS), string(str_DBS_Company));
+             string(STR_LIVERY_DESC, string(str_DBSchenker), string(str_DBS_Company)); }

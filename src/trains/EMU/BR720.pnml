@@ -557,14 +557,14 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR720_6_10, cargo_subtype) {
 
 // livery name switch
 switch(FEAT_TRAINS, SELF, sw_BR720_1_cargo_subtype_text, cargo_subtype) {
-    0:  return string(str_GreaterAnglia);
-    1:  return string(str_C2C);
-        return CB_RESULT_NO_TEXT; }
+    0:  string(STR_LIVERY, string(str_GreaterAnglia));
+    1:  string(STR_LIVERY, string(str_C2C));
+        CB_RESULT_NO_TEXT; }
         
 switch(FEAT_TRAINS, SELF, sw_BR720_6_cargo_subtype_text, cargo_subtype) {
-    0:  return string(str_C2C);
-    1:  return string(str_GreaterAnglia);
-        return CB_RESULT_NO_TEXT; }
+    0:  string(STR_LIVERY, string(str_C2C));
+    1:  string(STR_LIVERY, string(str_GreaterAnglia));
+        CB_RESULT_NO_TEXT; }
 
 // length switch
 switch(FEAT_TRAINS, SELF, sw_length_BR720_5_car, position_in_articulated_veh % 15) {
@@ -671,12 +671,6 @@ item (FEAT_TRAINS, item_BR720_1, 7200) {
         running_cost_factor:            8294;
         cargo_subtype_text:             sw_BR720_1_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_pax),
-                                                    string(str_BR720_1_liveries)));
     }
 }
 
@@ -738,12 +732,6 @@ item (FEAT_TRAINS, item_BR720_1_10, 7202) {
         running_cost_factor:            8294;
         cargo_subtype_text:             sw_BR720_1_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_pax),
-                                                    string(str_BR720_1_liveries)));
     }
 }
 
@@ -804,12 +792,6 @@ item (FEAT_TRAINS, item_BR720_6, 7206) {
         running_cost_factor:            8294;
         cargo_subtype_text:             sw_BR720_6_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_pax),
-                                                    string(str_BR720_6_liveries)));
     }
 }
 
@@ -871,11 +853,5 @@ item (FEAT_TRAINS, item_BR720_6_10, 7205) {
         running_cost_factor:            8294;
         cargo_subtype_text:             sw_BR720_6_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_pax),
-                                                    string(str_BR720_6_liveries)));
     }
 }

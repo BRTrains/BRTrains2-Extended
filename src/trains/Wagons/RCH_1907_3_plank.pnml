@@ -11,11 +11,10 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_RCH_1907_3_Plank_Cargo, [STORE_TEMP((getb
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_RCH_1907_3_Plank_cargo_subtype_text, cargo_subtype){
-	0:	return string(STR_LIVERY_SHORT, string(str_var_Random));
-    1:  return string(STR_LIVERY_SHORT, string(str_col_Grey));
-    2:  return string(STR_LIVERY_SHORT, string(str_col_Bauxite));
-       return CB_RESULT_NO_TEXT;
-}
+	0:	string(STR_LIVERY, string(str_var_Random));
+    1:  string(STR_LIVERY, string(str_col_Grey));
+    2:  string(STR_LIVERY, string(str_col_Bauxite));
+        CB_RESULT_NO_TEXT; }
 
 // unit definition
 item (FEAT_TRAINS, item_RCH_1907_3_Plank, 11403) {
@@ -61,9 +60,5 @@ item (FEAT_TRAINS, item_RCH_1907_3_Plank, 11403) {
         running_cost_factor:            365;
         cargo_subtype_text:             sw_RCH_1907_3_Plank_cargo_subtype_text; 
         colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_wagon,
-                                                    string(str_RCH_1907_liveries)));
     }
 }

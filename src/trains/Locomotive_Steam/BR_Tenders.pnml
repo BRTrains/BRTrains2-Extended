@@ -180,3 +180,28 @@ spriteset(spriteset_BR_1F_BR_Plain_Black_Late, "gfx/Tender/BR_1F/BR_1F_BR_Plain_
     alternative_sprites(spriteset_BR_1F_BR_Plain_Black_Late, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Tender/BR_1F/BR_1F_BR_Plain_Black_Late_4x_32bpp.png", "gfx/Tender/BR_1F/BR_1F_BR_Plain_Black_Late_4x_mask.png")
     { template_58trains_4x(0,0) }
 
+// basic sprite
+spriteset(spriteset_BR_1F_NWR_RWS, "gfx/Tender/BR_1F/BR_1F_NWR_RWS_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_1F_NWR_RWS, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Tender/BR_1F/BR_1F_NWR_RWS_1x_32bpp.png", "gfx/Tender/BR_1F/BR_1F_NWR_RWS_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_1F_NWR_RWS, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Tender/BR_1F/BR_1F_NWR_RWS_2x_32bpp.png", "gfx/Tender/BR_1F/BR_1F_NWR_RWS_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_1F_NWR_RWS, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Tender/BR_1F/BR_1F_NWR_RWS_4x_32bpp.png", "gfx/Tender/BR_1F/BR_1F_NWR_RWS_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_1F_NWR_TTTE, "gfx/Tender/BR_1F/BR_1F_NWR_TTTE_1x_8bpp.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_1F_NWR_TTTE, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Tender/BR_1F/BR_1F_NWR_TTTE_1x_32bpp.png", "gfx/Tender/BR_1F/BR_1F_NWR_TTTE_1x_mask.png")
+    { template_58trains_1x(0,0) }
+
+    alternative_sprites(spriteset_BR_1F_NWR_TTTE, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Tender/BR_1F/BR_1F_NWR_TTTE_2x_32bpp.png", "gfx/Tender/BR_1F/BR_1F_NWR_TTTE_2x_mask.png")
+    { template_58trains_2x(0,0) }
+
+    alternative_sprites(spriteset_BR_1F_NWR_TTTE, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Tender/BR_1F/BR_1F_NWR_TTTE_4x_32bpp.png", "gfx/Tender/BR_1F/BR_1F_NWR_TTTE_4x_mask.png")
+    { template_58trains_4x(0,0) }

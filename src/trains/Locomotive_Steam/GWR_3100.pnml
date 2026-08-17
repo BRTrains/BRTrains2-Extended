@@ -187,14 +187,14 @@ switch(FEAT_TRAINS, SELF, sw_livery_GWR_3100, cargo_subtype) {
     6: spriteset_GWR_3100_BR_Black_Late_Crest; }
 
 // livery name refit switch
-switch(FEAT_TRAINS, SELF, sw_GWR_3100_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_GWRGreen_Unlined);
-    1:  return string(str_GWRGreen_UnlinedFull);
-    2:  return string(str_GWRBlack);
-    3:  return string(str_BRGreen_Early);
-    4:  return string(str_BRGreen_Late);
-    5:  return string(str_BRPlainBlack_Early);
-    6:  return string(str_BRPlainBlack_Late);
+switch(FEAT_TRAINS, SELF, sw_GWR_3100_cargo_subtype_text, cargo_subtype) {
+	0:	string(STR_LIVERY_DESC, string(str_GWR), string(str_col_PlainGreen));
+    1:  string(STR_LIVERY_EXTENDED, string(str_GWR), string(str_col_PlainGreen), string(str_GWR_Lettering));
+    2:  string(STR_LIVERY_DESC, string(str_GWR), string(str_col_Black));
+    3:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_EarlyEmblem));
+    4:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_LateCrest));
+    5:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_PlainBlack), string(str_BR_EarlyEmblem));
+    6:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_PlainBlack), string(str_BR_LateCrest));
        return CB_RESULT_NO_TEXT; }
 
 // Animation sprite stacking
@@ -267,12 +267,6 @@ item (FEAT_TRAINS, item_GWR_3100, 310) {
         cargo_subtype_text:             sw_GWR_3100_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_GWR_Large_Prairie_liveries)));
     }
 }
 
@@ -391,13 +385,13 @@ switch(FEAT_TRAINS, SELF, sw_livery_GWR_5101, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_GWR_5101_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_GWRGreen_Unlined);
-    1:  return string(str_GWRGreen_UnlinedFull);
-    2:  return string(str_GWRBlack);
-    3:  return string(str_BRGreen_Early);
-    4:  return string(str_BRGreen_Late);
-    5:  return string(str_BRPlainBlack_Early);
-    6:  return string(str_BRPlainBlack_Late);
+	0:	string(STR_LIVERY_DESC, string(str_GWR), string(str_col_PlainGreen));
+    1:  string(STR_LIVERY_EXTENDED, string(str_GWR), string(str_col_PlainGreen), string(str_GWR_Lettering));
+    2:  string(STR_LIVERY_DESC, string(str_GWR), string(str_col_Black));
+    3:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_EarlyEmblem));
+    4:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_LateCrest));
+    5:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_PlainBlack), string(str_BR_EarlyEmblem));
+    6:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_PlainBlack), string(str_BR_LateCrest));
        return CB_RESULT_NO_TEXT; }
 
 // Animation sprite stacking
@@ -470,12 +464,6 @@ item (FEAT_TRAINS, item_GWR_3150, 315) {
         cargo_subtype_text:             sw_GWR_5101_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_GWR_Large_Prairie_liveries)));
     }
 }
 
@@ -532,12 +520,6 @@ item (FEAT_TRAINS, item_GWR_5101, 510) {
         cargo_subtype_text:             sw_GWR_5101_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_GWR_Large_Prairie_liveries)));
     }
 }
 
@@ -594,12 +576,6 @@ item (FEAT_TRAINS, item_GWR_6100, 610) {
         cargo_subtype_text:             sw_GWR_5101_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_GWR_Large_Prairie_liveries)));
     }
 }
 
@@ -656,12 +632,6 @@ item (FEAT_TRAINS, item_GWR_Collett_3100, 311) {
         cargo_subtype_text:             sw_GWR_5101_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_GWR_Large_Prairie_liveries)));
     }
 }
 
@@ -718,11 +688,5 @@ item (FEAT_TRAINS, item_GWR_8100, 810) {
         cargo_subtype_text:             sw_GWR_5101_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_GWR_Large_Prairie_liveries)));
     }
 }

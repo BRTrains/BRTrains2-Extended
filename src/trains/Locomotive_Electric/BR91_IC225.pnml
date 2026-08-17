@@ -99,13 +99,13 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR91_IC225, cargo_subtype) {
     
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR91_IC225_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_BRInterCitySwallow);
-    1:  return string(str_GNER);
-    2:  return string(str_EastCoast);
-    3:  return string(str_LNERRedWhite);
-    4:  return string(str_LNEROxblood);
-    5:  return string(str_TfW);
-       return CB_RESULT_NO_TEXT; }
+    0:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_InterCitySwallow));
+    1:  string(STR_LIVERY, string(str_GNER));
+    2:  string(STR_LIVERY, string(str_EastCoast));
+    3:  string(STR_LIVERY_DESC, string(str_Virgin_EC_LNER), string(str_Virgin_Silk));
+    4:  string(STR_LIVERY_DESC, string(str_LNER), string(str_LNER_Oxblood));
+    5:  string(STR_LIVERY, string(str_TfW));
+        CB_RESULT_NO_TEXT; }
 
 // length switch
 switch(FEAT_TRAINS, SELF, sw_length_BR91_IC225, position_in_articulated_veh % 33) {
@@ -193,12 +193,6 @@ item (FEAT_TRAINS, item_BR91_IC225, 9101) {
         running_cost_factor:            14336;
         cargo_subtype_text:             sw_BR91_IC225_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_BR91_liveries)));
     }
 }
 
@@ -370,11 +364,5 @@ item (FEAT_TRAINS, item_BR91_IC225_P, 9102) {
         running_cost_factor:            14336;
         cargo_subtype_text:             sw_BR91_IC225_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_BR91_liveries)));
     }
 }

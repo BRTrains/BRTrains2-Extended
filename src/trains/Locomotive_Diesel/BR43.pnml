@@ -748,33 +748,32 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR43_REV, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR43_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_BRBlueGrey);
-    1:  return string(str_BRInterCityExecutive);
-    2:  return string(str_BRInterCitySwallow);
-    3:  return string(str_GWT);
-    4:  return string(str_MMLTealTang);
-    5:  return string(str_MMLBlue);
-    6:  return string(str_GNER);
-    7:  return string(str_Virgin);
-    8:  return string(str_FGWFag);
-    9:  return string(str_FGW);
-    10: return string(str_FirstGroup);
-    11: return string(str_XC);
-    12: return string(str_EMT);
-    13: return string(str_GC);
-    14: return string(str_GCLined);
-    15: return string(str_EastCoast);
-    16: return string(str_VirginEC);
-    17: return string(str_ScotRail_I7C);
-    18: return string(str_GWR);
-    19: return string(str_LNERRedWhite);
-    20: return string(str_NetworkRail);
-    21: return string(str_BRNankingBlue);
-    22: return string(str_ColasRail);
-    23: return string(str_RailAdventure);
-    24: return string(str_RCS);
-       return CB_RESULT_NO_TEXT;
-}
+    0:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_BlueGrey));
+    1:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_InterCityExecutive));
+    2:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_InterCitySwallow));
+    3:  string(STR_LIVERY, string(str_GWT));
+    4:  string(STR_LIVERY_DESC, string(str_MML), string(str_MML_TealTang));
+    5:  string(STR_LIVERY_DESC, string(str_MML), string(str_col_Blue));
+    6:  string(STR_LIVERY, string(str_GNER));
+    7:  string(STR_LIVERY, string(str_Virgin));
+    8:  string(STR_LIVERY_DESC, string(str_FGW), string(str_FGW_Fag));
+    9:  string(STR_LIVERY, string(str_FGW));
+    10: string(STR_LIVERY, string(str_FirstGroup));
+    11: string(STR_LIVERY, string(str_XC));
+    12: string(STR_LIVERY, string(str_EMT));
+    13: string(STR_LIVERY_DESC, string(str_GC), string(str_col_Black));
+    14: string(STR_LIVERY_DESC, string(str_GC), string(str_col_LinedBlack));
+    15: string(STR_LIVERY, string(str_EastCoast));
+    16: string(STR_LIVERY, string(str_Virgin_EC));
+    17: string(STR_LIVERY_DESC, string(str_ScotRail), string(str_ScotRail_Inter7City));
+    18: string(STR_LIVERY, string(str_GWR));
+    19: string(STR_LIVERY_DESC, string(str_LNER), string(str_Virgin_Silk));
+    20: string(STR_LIVERY, string(str_NetworkRail));
+    21: string(STR_LIVERY_DESC, string(str_BR), string(str_BR_NankingBlue));
+    22: string(STR_LIVERY, string(str_ColasRail));
+    23: string(STR_LIVERY, string(str_RailAdventure));
+    24: string(STR_LIVERY, string(str_RCS));
+        CB_RESULT_NO_TEXT; }
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR43, position_in_consist % 6) {
@@ -859,11 +858,5 @@ item (FEAT_TRAINS, item_BR43_HST, 4301) {
         cargo_subtype_text:             sw_BR43_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 sw_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_diesel),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_BR43_liveries)));
     }
 }

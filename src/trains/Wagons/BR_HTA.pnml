@@ -96,9 +96,9 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_HTA, [STORE_TEMP((getbits(extra_callba
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR_HTA_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_EWSRed);
-    1:  return string(str_DBSchenker);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY_DESC, string(str_EWS), string(str_EWS_Red));
+    1:  string(STR_LIVERY, string(str_DBSchenker));
+        CB_RESULT_NO_TEXT; }
 
 
 // graphics switch
@@ -170,10 +170,6 @@ item (FEAT_TRAINS, item_BR_HTA, 12804) {
         running_cost_factor:            1350;
         cargo_subtype_text:             sw_BR_HTA_cargo_subtype_text; 
         colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_wagon,
-                                                    string(str_BR_HTA_liveries)));
     }
 }
 

@@ -203,13 +203,14 @@ switch(FEAT_TRAINS, SELF, sw_spritestack_GER_Y65, [STORE_TEMP((getbits(extra_cal
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_GER_Y65_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_GERBlue);
-    1:  return string(str_GERBlack);
-    2:  return string(str_LNERBlack);
-    3:  return string(str_LNERWartimeBlack);
-    4:  return string(str_BRLinedBlack_Early);
-    5:  return string(str_BRLinedBlack_Late);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY_DESC, string(str_GCR), string(str_col_Blue));
+    1:  string(STR_LIVERY_DESC, string(str_GCR), string(str_col_Black));
+    2:  string(STR_LIVERY_DESC, string(str_LNER), string(str_LNER_AppleGreen));
+    3:  string(STR_LIVERY_DESC, string(str_LNER), string(str_col_Black));
+    4:  string(STR_LIVERY_DESC, string(str_LNER), string(str_col_WartimeBlack));
+    5:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_LinedBlack), string(str_BR_EarlyEmblem));
+    6:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_LinedBlack), string(str_BR_LateCrest));
+        CB_RESULT_NO_TEXT; }
 
 // unit definition
 item (FEAT_TRAINS, item_GER_Y65, 6759) {
@@ -264,11 +265,5 @@ item (FEAT_TRAINS, item_GER_Y65, 6759) {
         running_cost_factor:            3106;
         cargo_subtype_text:             sw_GER_Y65_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_pax),
-                                                    string(str_GER_Y65_liveries)));
     }
 }

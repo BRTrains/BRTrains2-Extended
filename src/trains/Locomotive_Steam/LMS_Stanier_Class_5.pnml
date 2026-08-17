@@ -208,13 +208,12 @@ switch(FEAT_TRAINS, SELF, sw_livery_Stanier_4000gal_Class_5, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_LMS_Black_5_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_LMSBlack);
-    1: return string(str_BRLinedBlack_Early);
-    2: return string(str_BRLinedBlack_Late);
-    3: return string(str_BRPlainBlack_Early);
-    4: return string(str_BRPlainBlack_Late);
-       return CB_RESULT_NO_TEXT;
-}
+    0:	string(STR_LIVERY_DESC, string(str_LMS), string(str_col_Black));
+    1:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_LinedBlack), string(str_BR_EarlyEmblem));
+    2:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_LinedBlack), string(str_BR_LateCrest));
+    3:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_PlainBlack), string(str_BR_EarlyEmblem));
+    4:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_PlainBlack), string(str_BR_LateCrest));
+        CB_RESULT_NO_TEXT; }
 
 // animation sprite stacking
 // animation switch defined in LMS_Jubilee.pnml
@@ -331,12 +330,6 @@ item (FEAT_TRAINS, item_LMS_Black_5, 4461) { // BR Number range 44658-45499
         running_cost_factor:            5695;
         cargo_subtype_text:             sw_LMS_Black_5_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return(     string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_LMSBlack5_liveries)));
     }
 }
 
@@ -393,12 +386,6 @@ item (FEAT_TRAINS, item_LMS_Black_5_Domed, 4462) { // BR Number range 44658-4549
         running_cost_factor:            5695;
         cargo_subtype_text:             sw_LMS_Black_5_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return(     string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_LMSBlack5_liveries)));
     }
 }
 
@@ -469,12 +456,6 @@ item (FEAT_TRAINS, item_LMS_Black_5_Domeless, 4463) { // BR Number range 44658-4
         running_cost_factor:            5695;
         cargo_subtype_text:             sw_LMS_Black_5_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return(     string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_LMSBlack5_liveries)));
     }
 }
 
@@ -544,12 +525,6 @@ item (FEAT_TRAINS, item_LMS_Black_5_Forward_Top_Feed, 4464) { // BR Number range
         running_cost_factor:            5695;
         cargo_subtype_text:             sw_LMS_Black_5_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return(     string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_LMSBlack5_liveries)));
     }
 }
 
@@ -628,11 +603,5 @@ item (FEAT_TRAINS, item_LMS_Black_5_Named, 4464) { // BR Number range 44658-4549
         running_cost_factor:            5695;
         cargo_subtype_text:             sw_LMS_Black_5_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return(     string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_LMSBlack5_liveries)));
     }
 }

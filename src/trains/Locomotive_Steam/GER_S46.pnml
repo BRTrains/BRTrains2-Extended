@@ -112,12 +112,11 @@ switch(FEAT_TRAINS, SELF, sw_spritestack_GER_S46, [STORE_TEMP((getbits(extra_cal
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_GER_S46_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_GERBlue);
-    1:  return string(str_GERBlack);
-    2:  return string(str_LNERAppleGreen);
-    3:  return string(str_LNERBlack);
-       return CB_RESULT_NO_TEXT;
-}
+	0:	string(STR_LIVERY_DESC, string(str_GCR), string(str_col_Blue));
+    1:  string(STR_LIVERY_DESC, string(str_GCR), string(str_col_Black));
+    2:  string(STR_LIVERY_DESC, string(str_LNER), string(str_LNER_AppleGreen));
+    3:  string(STR_LIVERY_DESC, string(str_LNER), string(str_col_Black));
+        CB_RESULT_NO_TEXT; }
 
 
 // graphics switch
@@ -196,11 +195,5 @@ item (FEAT_TRAINS, item_GER_S46, ) {
         running_cost_factor:            3130;
         cargo_subtype_text:             sw_GER_S46_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_GER_S46_liveries)));
     }
 }

@@ -387,9 +387,9 @@ switch(FEAT_TRAINS, SELF, sw_livery_LNER_BT_T, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_LNER_BT_T_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_LNERTeak);
-    1:  return string(str_BRMaroon);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY_DESC, string(str_LNER), string(str_col_Teak));
+    1:  string(STR_LIVERY_DESC, string(str_BR), string(str_col_Maroon));
+        CB_RESULT_NO_TEXT; }
 
 // purchase sprite stacking
 switch(FEAT_TRAINS, PARENT, sw_LNER_BT_T_purchase_sprite, current_year) {
@@ -463,7 +463,6 @@ item (FEAT_TRAINS, item_LNER_BT_T, 11500) {
 
         // purchase menu text
         additional_text:                return(	string(str_purchase_coach,
-                                                string(str_coach_BT),
-												string(str_LNER_BT_T_liveries)));
+                                                string(str_coach_Articulated_Train)));
     }
 }

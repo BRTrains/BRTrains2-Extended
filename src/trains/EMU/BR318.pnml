@@ -457,10 +457,10 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR318_RF, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR318_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_StrathclydeOrange);
-    1:  return string(str_StrathclydePTE);
-    2:  return string(str_ScotRailSaltire);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY_DESC, string(str_StrathclydePTE), string(str_col_Orange));
+    1:  string(STR_LIVERY_DESC, string(str_SPT), string(str_BR_CarmineCream));
+    2:  string(STR_LIVERY_DESC, string(str_ScotRail), string(str_ScotRail_Saltire));
+       CB_RESULT_NO_TEXT; }
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR318, position_in_vehid_chain % 9) {
@@ -526,12 +526,6 @@ item (FEAT_TRAINS, item_BR318, 3180) {
         running_cost_factor:            5558;
         cargo_subtype_text:             sw_BR318_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_pax),
-                                                    string(str_BR318_liveries)));
     }
 }
 
@@ -592,11 +586,5 @@ item (FEAT_TRAINS, item_BR318_RF, 3181) {
         running_cost_factor:            5558;
         cargo_subtype_text:             sw_BR318_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_pax),
-                                                    string(str_BR318_liveries)));
     }
 }

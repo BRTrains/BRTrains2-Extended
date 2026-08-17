@@ -298,8 +298,8 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_MBA_Wood, [ STORE_TEMP((getbits(extra_
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR_MBA_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_EWSRed);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY_DESC, string(str_EWS), string(str_EWS_Red));
+        CB_RESULT_NO_TEXT; }
 
 // cargo type switch
 switch(FEAT_TRAINS, SELF, sw_BR_MBA_current_CC_Bulk, hasbit(cargo_classes, CC_BULK)) {
@@ -408,9 +408,5 @@ item (FEAT_TRAINS, item_BR_MBA, 12802) {
         running_cost_factor:            1340;
         cargo_subtype_text:             sw_BR_MBA_cargo_subtype_text; 
         colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_wagon,
-                                                    string(str_BR_MBA_liveries)));
     }
 }

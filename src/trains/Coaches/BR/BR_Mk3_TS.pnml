@@ -360,29 +360,29 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk3_TS, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR_Mk3_TS_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_BRBlueGrey);
-    1:  return string(str_BRInterCityExecutive);
-    2:  return string(str_BRInterCitySwallow);
-    3:  return string(str_GWT);
-    4:  return string(str_MMLTealTang);
-    5:  return string(str_MMLBlue);
-    6:  return string(str_GNER);
-    7:  return string(str_Virgin);
-    8:  return string(str_FGWFag);
-    9:  return string(str_FGW);
-    10: return string(str_FirstGroup);
-    11: return string(str_XC);
-    12: return string(str_EMT);
-    13: return string(str_GC);
-    14: return string(str_GCLined);
-    15: return string(str_EastCoast);
-    16: return string(str_VirginEC);
-    17: return string(str_ScotRail_I7C);
-    18: return string(str_GWR);
-    19: return string(str_LNERRedWhite);
-    20: return string(str_NetworkRail);
-    21: return string(str_BRNankingBlue);
-       return CB_RESULT_NO_TEXT; }
+    0:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_BlueGrey));
+    1:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_InterCityExecutive));
+    2:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_InterCitySwallow));
+    3:  string(STR_LIVERY, string(str_GWT));
+    4:  string(STR_LIVERY_DESC, string(str_MML), string(str_MML_TealTang));
+    5:  string(STR_LIVERY_DESC, string(str_MML), string(str_col_Blue));
+    6:  string(STR_LIVERY, string(str_GNER));
+    7:  string(STR_LIVERY, string(str_Virgin));
+    8:  string(STR_LIVERY_DESC, string(str_FGW), string(str_FGW_Fag));
+    9:  string(STR_LIVERY, string(str_FGW));
+    10: string(STR_LIVERY, string(str_FirstGroup));
+    11: string(STR_LIVERY, string(str_XC));
+    12: string(STR_LIVERY, string(str_EMT));
+    13: string(STR_LIVERY_DESC, string(str_GC), string(str_col_Black));
+    14: string(STR_LIVERY_DESC, string(str_GC), string(str_col_LinedBlack));
+    15: string(STR_LIVERY, string(str_EastCoast));
+    16: string(STR_LIVERY_DESC, string(str_Virgin_EC_LNER), string(str_Virgin_Silk));
+    17: string(STR_LIVERY_DESC, string(str_ScotRail), string(str_ScotRail_Inter7City));
+    18: string(STR_LIVERY, string(str_GWR));
+    19: string(STR_LIVERY_DESC, string(str_LNER), string(str_Virgin_Silk));
+    20: string(STR_LIVERY, string(str_NetworkRail));
+    21: string(STR_LIVERY_DESC, string(str_BR), string(str_BR_NankingBlue));
+        CB_RESULT_NO_TEXT; }
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR_Mk3_TS, position_in_articulated_veh % 3) {
@@ -450,8 +450,7 @@ item (FEAT_TRAINS, item_BR_Mk3_TS, 12129) {
 
         // purchase menu text
         additional_text:                return( string(str_purchase_coach,
-                                                    string(str_coach_TS),
-                                                    string(str_BR_Mk3_liveries)));
+                                                    string(str_coach_TS)));
     }
 }
 
@@ -693,20 +692,20 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk3_TSO, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR_Mk3_TSO_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_BRBlueGrey);
-    1:  return string(str_BRScotRail);
-    2:  return string(str_Chiltern);
-    3:  return sw_EWS_DB_company_train_name;
-    4:  return string(str_ArrivaWales);
-    5:  return string(str_NatEx);
-    6:  return string(str_ONE);
-    7:  return string(str_Wrexham);
-    8:  return string(str_VirginPretendolino);
-    9:  return string(str_DRS);
-    10: return string(str_AGA);
-    11: return string(str_StobartRail);
-    12: return string(str_RCS);
-       return CB_RESULT_NO_TEXT; }
+    0:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_BlueGrey));
+    1:  string(STR_LIVERY_DESC, string(str_BR), string(str_ScotRail));
+    2:  string(STR_LIVERY, string(str_Chiltern));
+    3:  sw_EWS_DB_company_train_name;
+    4:  string(STR_LIVERY_DESC, string(str_ArrivaWales), string(str_ArrivaWales_Premier));
+    5:  string(STR_LIVERY, string(str_NatEx));
+    6:  string(STR_LIVERY, string(str_ONE));
+    7:  string(STR_LIVERY, string(str_Wrexham));
+    8:  string(STR_LIVERY_DESC, string(str_Virgin), string(str_Virgin_Pretendolino));
+    9:  string(STR_LIVERY, string(str_DRS));
+    10: string(STR_LIVERY, string(str_AGA));
+    11: string(STR_LIVERY, string(str_StobartRail));
+    12: string(STR_LIVERY, string(str_RCS));
+        CB_RESULT_NO_TEXT; }
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR_Mk3_TSO, position_in_articulated_veh % 3) {
@@ -773,7 +772,6 @@ item (FEAT_TRAINS, item_BR_Mk3a_TSO, 12142) {
 
         // purchase menu text
         additional_text:                return( string(str_purchase_coach,
-                                                    string(str_coach_TSO),
-                                                    string(str_BR_Mk3a_liveries)));
+                                                    string(str_coach_TSO)));
     }
 }

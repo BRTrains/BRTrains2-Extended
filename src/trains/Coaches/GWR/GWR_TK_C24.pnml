@@ -119,11 +119,10 @@ switch(FEAT_TRAINS, SELF, sw_livery_GWR_TK_C24, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_GWR_TK_C24_cargo_subtype_text, cargo_subtype){
-	0:	return string(STR_LIVERY_SHORT, string(str_col_Cream));
-    1:  return string(STR_LIVERY_SHORT, string(str_col_Maroon));
-    2:  return string(str_BRCarmCream);
-       return CB_RESULT_NO_TEXT;
-}
+	0:	string(STR_LIVERY, string(str_col_ChocCream));
+    1:  string(STR_LIVERY, string(str_col_Maroon));
+    2:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_CarmineCream));
+       CB_RESULT_NO_TEXT; }
 
 
 // graphics switch
@@ -209,7 +208,6 @@ item (FEAT_TRAINS, item_GWR_TK_C24, 11501) { // GWR Diagram C24 Churchward "Drea
 
         // purchase menu text
         additional_text:                return( string(str_purchase_coach,
-                                                string(str_coach_TK),
-                                                string(str_GWR_TK_C24_liveries)));
+                                                string(str_coach_TK)));
     }
 }

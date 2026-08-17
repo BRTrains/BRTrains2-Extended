@@ -111,14 +111,13 @@ switch(FEAT_TRAINS, SELF, sw_BR66_graphics, position_in_articulated_veh % 3) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR66_cargo_subtype_text, cargo_subtype){
-	0:  return string(str_EWSRed);
-    1:  return string(str_FreightlinerGreen);
-    2:  return string(str_DRS);
-    3:  return string(str_GBRfBlue);
-    4:  return string(str_DBSchenker);
-    5:  return string(str_GBRfEveningStar);
-        return CB_RESULT_NO_TEXT;
-}
+	0:  string(STR_LIVERY_DESC, string(str_EWS), string(str_EWS_Red));
+    1:  string(STR_LIVERY_DESC, string(str_Freightliner), string(str_col_Green));
+    2:  string(STR_LIVERY, string(str_DRS));
+    3:  string(STR_LIVERY_DESC, string(str_GBRf), string(str_col_Blue));
+    4:  string(STR_LIVERY, string(str_DBSchenker));
+    5:  string(STR_LIVERY_DESC, string(str_GBRf), string(str_GBRf_EveningStar));
+        CB_RESULT_NO_TEXT; }
 
 // length switch
 switch(FEAT_TRAINS, SELF, sw_length_BR66, position_in_articulated_veh % 3) {
@@ -184,11 +183,5 @@ item (FEAT_TRAINS, item_BR66, 6600) { // TOPS Number range 66000-66957
         cargo_subtype_text:             sw_BR66_cargo_subtype_text; 
         // power:                          sw_power_BR66;
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return(string(str_purchase_loco_with_liveries,
-                                                string(str_purchase_type_diesel),
-                                                string(str_usage_heavy_freight),
-                                                string(str_BR66_liveries)));
     }
 }

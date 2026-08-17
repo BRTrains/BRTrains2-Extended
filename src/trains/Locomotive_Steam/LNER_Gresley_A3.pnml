@@ -274,12 +274,6 @@ item (FEAT_TRAINS, item_LNER_A3, 6002) {
         running_cost_factor:            6943;
         cargo_subtype_text:             sw_LNER_A1_A3_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_LNER_A1_A3_liveries)));
     }
 }
 
@@ -411,12 +405,6 @@ item (FEAT_TRAINS, item_LNER_A3_PD, 6003) {
         running_cost_factor:            6943;
         cargo_subtype_text:             sw_LNER_A1_A3_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_LNER_A1_A3_liveries)));
     }
 }
 
@@ -548,11 +536,5 @@ item (FEAT_TRAINS, item_LNER_A3_WD, 6006) {
         running_cost_factor:            6943;
         cargo_subtype_text:             sw_LNER_A1_A3_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_LNER_A1_A3_liveries)));
     }
 }

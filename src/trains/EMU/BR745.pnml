@@ -472,8 +472,8 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR745_1, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR745_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_GA);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY, string(str_GreaterAnglia));
+        CB_RESULT_NO_TEXT; }
 
 // length switch
 switch(FEAT_TRAINS, SELF, sw_length_BR745, position_in_articulated_veh % 36) {
@@ -552,12 +552,6 @@ item (FEAT_TRAINS, item_BR745_0, 7450) {
         running_cost_factor:            13628;
         cargo_subtype_text:             sw_BR745_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_pax),
-                                                    string(str_BR745_liveries)));
     }
 }
 
@@ -620,11 +614,5 @@ item (FEAT_TRAINS, item_BR745_1, 7451) {
         running_cost_factor:            13638;
         cargo_subtype_text:             sw_BR745_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_pax),
-                                                    string(str_BR745_liveries)));
     }
 }

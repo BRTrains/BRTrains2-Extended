@@ -131,11 +131,10 @@ switch(FEAT_TRAINS, SELF, sw_livery_LNER_O1_Tender, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_LNER_O1_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_LNERBlack);
-    1:  return string(str_BRPlainBlack_Early);
-    2:  return string(str_BRPlainBlack_Late);
-       return CB_RESULT_NO_TEXT;
-}
+	0:	string(STR_LIVERY_DESC, string(str_LNER), string(str_col_Black));
+    1:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_PlainBlack), string(str_BR_EarlyEmblem));
+    2:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_PlainBlack), string(str_BR_LateCrest));
+        CB_RESULT_NO_TEXT; }
 
 
 // graphics switch
@@ -221,11 +220,5 @@ item (FEAT_TRAINS, item_LNER_O1, 6357) {
         // power:                          sw_power_LNER_O1;
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_heavy_freight),
-                                                    string(str_LNER_O1_liveries)));
     }
 }

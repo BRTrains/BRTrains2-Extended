@@ -196,8 +196,8 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR325, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR325_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_RoyalMail);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY, string(str_RoyalMail));
+        CB_RESULT_NO_TEXT; }
 
 // length switch
 switch(FEAT_TRAINS, SELF, sw_length_BR325, position_in_articulated_veh % 12) {
@@ -261,11 +261,5 @@ item (FEAT_TRAINS, item_BR325, 3250) {
         // power:                          sw_power_BR325;
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_expr_mail),
-                                                    string(str_BR325_liveries)));
     }
 }

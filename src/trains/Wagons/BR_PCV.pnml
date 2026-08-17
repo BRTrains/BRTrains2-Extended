@@ -151,18 +151,17 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR_PCV, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR_PCV_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_BRBauxite);
-    1:  return string(str_BRGrey);
-    2:  return string(str_ARC);
-    3:  return string(str_ICI);
-    4:  return string(STR_LIVERY, string(str_comp_gen_priv_owner), string(str_col_Blue));
-    5:  return string(STR_LIVERY, string(str_comp_gen_priv_owner), string(str_col_Grey));
-    6:  return string(STR_LIVERY_EXTENDED, string(str_comp_gen_priv_owner), string(str_col_Grey), string(str_var_Advertisement));
-    7:  return string(STR_LIVERY, string(str_comp_gen_priv_owner), string(str_col_Orange));
-    8:  return string(STR_LIVERY, string(str_comp_gen_priv_owner), string(str_col_Red));
-    9:  return string(STR_LIVERY, string(str_comp_gen_priv_owner), string(str_col_Yellow));
-       return CB_RESULT_NO_TEXT;
-}
+	0:	string(STR_LIVERY_DESC, string(str_BR), string(str_col_Bauxite));
+    1:  string(STR_LIVERY_DESC, string(str_BR), string(str_col_Grey));
+    2:  string(STR_LIVERY, string(str_ARC));
+    3:  string(STR_LIVERY, string(str_ICI));
+    4:  string(STR_LIVERY_DESC, string(str_comp_gen_priv_owner), string(str_col_Blue));
+    5:  string(STR_LIVERY_DESC, string(str_comp_gen_priv_owner), string(str_col_Grey));
+    6:  string(STR_LIVERY_EXTENDED, string(str_comp_gen_priv_owner), string(str_col_Grey), string(str_var_Advertisement));
+    7:  string(STR_LIVERY_DESC, string(str_comp_gen_priv_owner), string(str_col_Orange));
+    8:  string(STR_LIVERY_DESC, string(str_comp_gen_priv_owner), string(str_col_Red));
+    9:  string(STR_LIVERY_DESC, string(str_comp_gen_priv_owner), string(str_col_Yellow));
+        CB_RESULT_NO_TEXT; }
 
 
 // unit definition
@@ -209,10 +208,6 @@ item (FEAT_TRAINS, item_BR_PCV, 12270) {
         // power:                          sw_power_BR_PCV;
         colour_mapping:                 return PALETTE_CC_FIRST;
         // colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_wagon,
-                                                    string(str_BR_PCV_liveries)));
     }
 }
 

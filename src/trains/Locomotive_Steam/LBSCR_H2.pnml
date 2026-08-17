@@ -210,14 +210,14 @@ switch(FEAT_TRAINS, SELF, sw_spritestack_LBSCR_H2, [STORE_TEMP((getbits(extra_ca
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_LBSCR_H2_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_LBSCR_MarshUmber);
-    1:  return string(str_LBSCR_GoldenOchre);
-    2:  return string(str_SROlive);
-    3:  return string(str_SRMalachite);
-    4:  return string(str_SRBlack);
-    5:  return string(str_BRLinedBlack_Early);
-    6:  return string(str_BRLinedBlack_Late);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY_DESC, string(str_LBSCR), string(str_LBSCR_GoldenOchre));
+    1:  string(STR_LIVERY_DESC, string(str_LBSCR), string(str_LBSCR_MarshUmbre));
+    2:  string(STR_LIVERY_DESC, string(str_SR), string(str_col_Olive));
+    3:  string(STR_LIVERY_DESC, string(str_SR), string(str_col_Malachite));
+    4:  string(STR_LIVERY_DESC, string(str_SR), string(str_col_Black));
+    5:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_LinedBlack), string(str_BR_EarlyEmblem));
+    6:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_LinedBlack), string(str_BR_LateCrest));
+        CB_RESULT_NO_TEXT; }
 
 
 // graphics switch
@@ -290,12 +290,6 @@ item (FEAT_TRAINS, item_LBSCR_H2, 3241) {
         running_cost_factor:            4710;
         cargo_subtype_text:             sw_LBSCR_H2_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_LBSCR_H2_liveries)));
     }
 }
 
@@ -357,11 +351,5 @@ item (FEAT_TRAINS, item_LBSCR_H2X, 3242) {
         running_cost_factor:            5451;
         cargo_subtype_text:             sw_LBSCR_H2_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_steam),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_LBSCR_H2_liveries)));
     }
 }

@@ -258,14 +258,14 @@ switch(FEAT_TRAINS, SELF, sw_livery_Evol_Arc_T, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_Evol_Arc_T_cargo_subtype_text, cargo_subtype){
-	0:	return string(STR_LIVERY_SHORT, string(str_col_Mahogany));
-    1: 	return string(STR_LIVERY_SHORT, string(str_col_Teak));
-    2: 	return string(STR_LIVERY_SHORT, string(str_col_Cream));
-    3: 	return string(STR_LIVERY_SHORT, string(str_col_Maroon));
-    4: 	return string(STR_LIVERY_SHORT, string(str_col_Olive));
-    5: 	return string(STR_LIVERY_SHORT, string(str_col_Sage));
-    6:  return string(str_BRCarmCream);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY, string(str_col_Mahogany));
+    1: 	string(STR_LIVERY, string(str_col_Teak));
+    2: 	string(STR_LIVERY, string(str_col_Cream));
+    3: 	string(STR_LIVERY, string(str_col_Maroon));
+    4: 	string(STR_LIVERY, string(str_col_Olive));
+    5: 	string(STR_LIVERY, string(str_col_Sage));
+    6:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_CarmineCream));
+        CB_RESULT_NO_TEXT; }
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_Evol_Arc_T, position_in_articulated_veh % 3) {
@@ -332,8 +332,7 @@ item (FEAT_TRAINS, item_Evol_Arc_T, 11207) {
 
         // purchase menu text
         additional_text:                return( string(str_purchase_coach,
-                                                    string(str_coach_T),
-                                                    string(str_Evolution_liveries)));
+                                                    string(str_coach_T)));
     }
 }
 
@@ -381,14 +380,14 @@ switch(FEAT_TRAINS, SELF, sw_livery_Evol_Clerestory_T, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_Evol_Clerestory_T_cargo_subtype_text, cargo_subtype){
-	0:	return string(STR_LIVERY_SHORT, string(str_col_Mahogany));
-    1: 	return string(STR_LIVERY_SHORT, string(str_col_Teak));
-    2: 	return string(STR_LIVERY_SHORT, string(str_col_Cream));
-    3: 	return string(STR_LIVERY_SHORT, string(str_col_Maroon));
-    4: 	return string(STR_LIVERY_SHORT, string(str_col_Olive));
-    5: 	return string(STR_LIVERY_SHORT, string(str_col_Sage));
-    6:  return string(str_BRCarmCream);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY, string(str_col_Mahogany));
+    1: 	string(STR_LIVERY, string(str_col_Teak));
+    2: 	string(STR_LIVERY, string(str_col_Cream));
+    3: 	string(STR_LIVERY, string(str_col_Maroon));
+    4: 	string(STR_LIVERY, string(str_col_Olive));
+    5: 	string(STR_LIVERY, string(str_col_Sage));
+    6:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_CarmineCream));
+        CB_RESULT_NO_TEXT; }
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_Evol_Clerestory_T, position_in_articulated_veh % 3) {
@@ -455,8 +454,7 @@ item (FEAT_TRAINS, item_Evol_Clerestory_T, 11212) {
 
         // purchase menu text
         additional_text:                return( string(str_purchase_coach,
-                                                    string(str_coach_T),
-                                                    string(str_Evolution_liveries)));
+                                                    string(str_coach_T)));
     }
 }
 
@@ -504,14 +502,14 @@ switch(FEAT_TRAINS, SELF, sw_livery_Evol_Ellip_T, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_Evol_Ellip_T_cargo_subtype_text, cargo_subtype){
-	0:	return string(STR_LIVERY_SHORT, string(str_col_Mahogany));
-    1: 	return string(STR_LIVERY_SHORT, string(str_col_Teak));
-    2: 	return string(STR_LIVERY_SHORT, string(str_col_Cream));
-    3: 	return string(STR_LIVERY_SHORT, string(str_col_Maroon));
-    4: 	return string(STR_LIVERY_SHORT, string(str_col_Olive));
-    5: 	return string(STR_LIVERY_SHORT, string(str_col_Sage));
-    6:  return string(str_BRCarmCream);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY, string(str_col_Mahogany));
+    1: 	string(STR_LIVERY, string(str_col_Teak));
+    2: 	string(STR_LIVERY, string(str_col_Cream));
+    3: 	string(STR_LIVERY, string(str_col_Maroon));
+    4: 	string(STR_LIVERY, string(str_col_Olive));
+    5: 	string(STR_LIVERY, string(str_col_Sage));
+    6:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_CarmineCream));
+        CB_RESULT_NO_TEXT; }
 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_Evol_Ellip_T, position_in_articulated_veh % 3) {
@@ -578,8 +576,7 @@ item (FEAT_TRAINS, item_Evol_Ellip_T, 11217) {
 
         // purchase menu text
         additional_text:                return( string(str_purchase_coach,
-                                                    string(str_coach_T),
-                                                    string(str_Evolution_liveries)));
+                                                    string(str_coach_T)));
     }
 }
 

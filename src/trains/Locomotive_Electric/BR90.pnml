@@ -378,35 +378,33 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR90, cargo_subtype) {
     18: spriteset_BR90_EWS;
     19: spriteset_BR90_DB_Schenker;
     20: spriteset_BR90_GCT_Lined;
-    21: spriteset_BR90_BR_LinedBlack;
-}
+    21: spriteset_BR90_BR_LinedBlack; }
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR90_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_BRInterCitySwallow);
-    1:  return string(str_RFDistribution);
-    2:  return string(str_DB);
-    3:  return string(str_SNCB);
-    4:  return string(str_SNCF);
-    5:  return string(str_BRParcels);
-    6:  return string(str_REX);
-    7:  return string(str_Virgin);
-    8:  return string(str_FirstScotRail);
-    9:  return string(str_GNER);
-    10: return string(str_NXEA);
-    11: return string(str_ONE);
-    12: return string(str_AGA);
-    13: return string(str_FreightlinerGrey);
-    14: return string(str_FreightlinerGreen);
-    15: return string(str_FreightlinerOrange);
-    16: return string(str_FreightlinerPH);
-    17: return string(str_DRS);
-    18: return string(str_EWSRed);
-    19: return string(str_DBSchenker);
-    20: return string(str_GCLined);
-    21: return string(STR_LIVERY, string(str_abbr_BR), string(str_col_Lined_Black));
-       return CB_RESULT_NO_TEXT;
-}
+	0:	string(STR_LIVERY_DESC, string(str_BR), string(str_BR_InterCitySwallow));
+    1:  string(STR_LIVERY_EXTENDED, string(str_Railfreight), string(str_Railfreight_TripleGrey), string(str_Railfreight_Distribution));
+    2:  string(STR_LIVERY, string(str_DB));
+    3:  string(STR_LIVERY, string(str_SNCB));
+    4:  string(STR_LIVERY, string(str_SNCF));
+    5:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_Parcels));
+    6:  string(STR_LIVERY, string(str_REX));
+    7:  string(STR_LIVERY, string(str_Virgin));
+    8:  string(STR_LIVERY, string(str_FirstScotRail));
+    9:  string(STR_LIVERY, string(str_GNER));
+    10: string(STR_LIVERY, string(str_NXEA));
+    11: string(STR_LIVERY, string(str_ONE));
+    12: string(STR_LIVERY, string(str_AGA));
+    13: string(STR_LIVERY_DESC, string(str_Freightliner), string(str_col_Grey));
+    14: string(STR_LIVERY_DESC, string(str_Freightliner), string(str_col_Green));
+    15: string(STR_LIVERY_DESC, string(str_Freightliner), string(str_col_Orange));
+    16: string(STR_LIVERY_DESC, string(str_Freightliner), string(str_Freightliner_Powerhaul));
+    17: string(STR_LIVERY, string(str_DRS));
+    18: string(STR_LIVERY_DESC, string(str_EWS), string(str_col_Red));
+    19: string(STR_LIVERY, string(str_DBSchenker));
+    20: string(STR_LIVERY_DESC, string(str_GC), string(str_col_LinedBlack));
+    21: string(STR_LIVERY_DESC, string(str_BR), string(str_col_LinedBlack));
+        CB_RESULT_NO_TEXT; }
 
 
 // graphics switch
@@ -473,12 +471,5 @@ item (FEAT_TRAINS, item_BR90, 9000) {
         running_cost_factor:            11605;
         cargo_subtype_text:             sw_BR90_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_electric),
-                                                    string(str_usage_mixed_traffic),
-                                                    string(str_BR90_liveries)));
     }
 }
-

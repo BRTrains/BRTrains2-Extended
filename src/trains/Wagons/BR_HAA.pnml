@@ -122,14 +122,13 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR_HAA, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR_HAA_cargo_subtype_text, cargo_subtype){
-	0:	return string(STR_LIVERY_SHORT, string(str_var_Random));
-    1:  return string(str_BRBauxite);
-    2:  return string(str_Railfreight);
-    3:  return string(str_Trainload);
-    4:  return string(str_MainlineFreight);
-    5:  return string(str_EWSRed);
-       return CB_RESULT_NO_TEXT;
-}
+	0:	string(STR_LIVERY, string(str_var_Random));
+    1:  string(STR_LIVERY_DESC, string(str_BR), string(str_col_Bauxite));
+    2:  string(STR_LIVERY_DESC, string(str_Railfreight), string(str_col_Grey));
+    3:  string(STR_LIVERY, string(str_Trainload));
+    4:  string(STR_LIVERY, string(str_Mainline));
+    5:  string(STR_LIVERY_DESC, string(str_EWS), string(str_EWS_Red));
+        CB_RESULT_NO_TEXT; }
 
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR_HAA_Bulk, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: sw_livery_BR_HAA;
@@ -185,9 +184,5 @@ item (FEAT_TRAINS, item_BR_HAA, 12253) {
         running_cost_factor:            638;
         cargo_subtype_text:             sw_BR_HAA_cargo_subtype_text; 
         colour_mapping:                 switch_generic_recolour;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_wagon,
-                                                    string(str_BR_HAA_liveries)));
     }
 }

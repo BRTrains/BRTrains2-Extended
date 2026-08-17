@@ -502,31 +502,6 @@ switch(FEAT_TRAINS, PARENT, sw_BR432_purchase_sprite, current_year) {
     1948..1965: spriteset_BR432_DMS_BR_Blue_purchase;
         spriteset_BR432_DMS_BR_BlueGrey_purchase; }
 
-// reversing switches
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR432_TBF_TRB_BR_Blue, vehicle_is_reversed) {
-    0:  sw_loadstack_BR432_TBF_BR_Blue;
-        spriteset_BR432_TRB_BR_Blue_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR432_TRB_TBF_BR_Blue, vehicle_is_reversed) {
-    0:  spriteset_BR432_TRB_BR_Blue;
-        sw_loadstack_BR432_TBF_BR_Blue_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR432_TBF_TRB_BR_BlueGrey, vehicle_is_reversed) {
-    0:  sw_loadstack_BR432_TBF_BR_BlueGrey;
-        spriteset_BR432_TRB_BR_BlueGrey_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR432_TRB_TBF_BR_BlueGrey, vehicle_is_reversed) {
-    0:  spriteset_BR432_TRB_BR_BlueGrey;
-        sw_loadstack_BR432_TBF_BR_BlueGrey_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR432_TBF_TRB_NSE, vehicle_is_reversed) {
-    0:  sw_loadstack_BR432_TBF_NSE;
-        spriteset_BR432_TRB_NSE_REV; }
-
-switch(FEAT_TRAINS, PARENT, sw_reverse_BR432_TRB_TBF_NSE, vehicle_is_reversed) {
-    0:  spriteset_BR432_TRB_NSE;
-        sw_loadstack_BR432_TBF_NSE_REV; }
-
 // FX effects
 switch(FEAT_TRAINS, SELF, sw_FX_BR432_Electric, position_in_vehid_chain % 12) { // front catenary
     0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
@@ -536,22 +511,22 @@ switch(FEAT_TRAINS, SELF, sw_FX_BR432_Electric, position_in_vehid_chain % 12) { 
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR432_BR_Blue, position_in_articulated_veh % 12) {
 	1:  sw_loadstack_BR432_DMS_BR_Blue;
-    4:  sw_reverse_BR432_TBF_TRB_BR_Blue;
-    7:  sw_reverse_BR432_TRB_TBF_BR_Blue;
+    4:  sw_loadstack_BR432_TBF_BR_Blue;
+    7:  spriteset_BR432_TRB_BR_Blue;
     10: sw_loadstack_BR432_DMS_BR_Blue_REV;
 	    spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR432_BR_BlueGrey, position_in_articulated_veh % 12) {
 	1:  sw_loadstack_BR432_DMS_BR_BlueGrey;
-    4:  sw_reverse_BR432_TBF_TRB_BR_BlueGrey;
-    7:  sw_reverse_BR432_TRB_TBF_BR_BlueGrey;
+    4:  sw_loadstack_BR432_TBF_BR_BlueGrey;
+    7:  spriteset_BR432_TRB_BR_BlueGrey;
     10: sw_loadstack_BR432_DMS_BR_BlueGrey_REV;
 	    spriteset_empty; }
 
 switch(FEAT_TRAINS, SELF, sw_graphics_BR432_NSE, position_in_articulated_veh % 12) {
 	1:  sw_loadstack_BR432_DMS_NSE;
-    4:  sw_reverse_BR432_TBF_TRB_NSE;
-    7:  sw_reverse_BR432_TRB_TBF_NSE;
+    4:  sw_loadstack_BR432_TBF_NSE;
+    7:  spriteset_BR432_TRB_NSE;
     10: sw_loadstack_BR432_DMS_NSE_REV;
 	    spriteset_empty; }
 
@@ -563,10 +538,10 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR432, cargo_subtype) {
 
 // livery name refit switch
 switch(FEAT_TRAINS, SELF, sw_BR432_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_BRBlue);
-    1:  return string(str_BRBlueGrey);
-    2:  return string(str_NSE);
-       return CB_RESULT_NO_TEXT; }
+	0:	string(STR_LIVERY_DESC, string(str_BR), string(str_col_Blue));
+    1:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_BlueGrey));
+    2:  string(STR_LIVERY, string(str_NSE));
+        CB_RESULT_NO_TEXT; }
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR432, position_in_vehid_chain % 12) {
@@ -634,11 +609,5 @@ item (FEAT_TRAINS, item_BR432, 4320) {
         running_cost_factor:            7538;
         cargo_subtype_text:             sw_BR432_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:                return( string(str_purchase_loco_with_liveries,
-                                                    string(str_purchase_type_emu),
-                                                    string(str_usage_expr_pax),
-                                                    string(str_BR432_liveries)));
     }
 }

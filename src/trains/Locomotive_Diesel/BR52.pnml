@@ -151,36 +151,32 @@ switch(FEAT_TRAINS, SELF, sw_FX_BR52_Diesel, position_in_vehid_chain % 3) {
 
 // livery switch
 switch(FEAT_TRAINS, SELF, sw_livery_BR52, cargo_subtype) {
-    0: spriteset_BR52_BRBlue_Small_Yellow;
-	1: spriteset_BR52_BRGreen;
+    0: spriteset_BR52_BRGreen;
+	1: spriteset_BR52_BRBlue_Small_Yellow;
 	2: spriteset_BR52_BRBlue_Full_Yellow;
     3: spriteset_BR52_BRGolden_Ochre;
     4: spriteset_BR52_BRDesert_Sands;
     5: spriteset_BR52_BRMaroon_Small_Yellow;
-    6: spriteset_BR52_BRMaroon_Full_Yellow;
-}
+    6: spriteset_BR52_BRMaroon_Full_Yellow; }
 
 switch(FEAT_TRAINS, SELF, sw_spritestack_BR52_Crimson_Nameplate, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
     0: sw_livery_BR52;
-    1: spriteset_BR52_Crimson_Nameplate;
-}
+    1: spriteset_BR52_Crimson_Nameplate; }
 
 switch(FEAT_TRAINS, SELF, sw_spritestack_BR52_Black_Nameplate, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
     0: sw_livery_BR52;
-    1: spriteset_BR52_Black_Nameplate;
-}
+    1: spriteset_BR52_Black_Nameplate; }
 
 // livery name switch
 switch(FEAT_TRAINS, SELF, sw_BR52_cargo_subtype_text, cargo_subtype){
-	0:	return string(str_BRBluePanel);
-	1: 	return string(str_BRGreenPanel);
-	2:  return string(str_BRBlueFront);
-    3:  return string(str_BROchre);
-    4:  return string(str_BRDesertSand);
-    5:  return string(str_BRMaroonPanel);
-    6:  return string(str_BRMaroonFront);
-       	return CB_RESULT_NO_TEXT;
-}
+	0:	string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_YellowPanel));
+	1: 	string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Blue), string(str_BR_YellowPanel));
+	2:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Blue), string(str_BR_YellowFront));
+    3:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_GoldenOchre));
+    4:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_DesertSand));
+    5:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Maroon), string(str_BR_YellowPanel));
+    6:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Maroon), string(str_BR_YellowFront));
+       	CB_RESULT_NO_TEXT; }
 
 // purchase sprite stacking
 switch(FEAT_TRAINS, SELF, sw_spritestack_BR52_BRGreen_purchase, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
@@ -272,11 +268,5 @@ item (FEAT_TRAINS, item_BR52, 5200) { // TOPS Number range 52000 - even though t
         running_cost_factor:            7460;
         cargo_subtype_text:             sw_BR52_cargo_subtype_text; 
         colour_mapping:                 return PALETTE_CC_FIRST;
-
-        // purchase menu text
-        additional_text:					return(	string(str_purchase_loco_with_liveries,
-													string(str_purchase_type_diesel),
-													string(str_usage_expr_pax),
-													string(str_BR52_liveries)));
     }
 }
