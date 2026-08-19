@@ -1,0 +1,205 @@
+// basic sprite
+spriteset(spriteset_BR_800_FishVan_BR_Blue, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Blue_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Blue_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR_800_FishVan_BR_Blue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Blue_1x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Blue_1x_mask.png")
+    { template_purchase(0,0) }
+
+spriteset(spriteset_BR_800_FishVan_BR_Blue_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Blue_Loading_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Blue_Loading_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_800_FishVan_BR_Blue_Loading {  
+    loaded: [spriteset_empty];
+    loading: [spriteset_BR_800_FishVan_BR_Blue_Loading]; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_800_FishVan_BR_Blue, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR_800_FishVan_BR_Blue;
+    1: spritegroup_BR_800_FishVan_BR_Blue_Loading; }
+
+// basic sprite
+spriteset(spriteset_BR_800_FishVan_BR_Departmental_Bauxite, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Bauxite_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Bauxite_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR_800_FishVan_BR_Departmental_Bauxite_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Bauxite_1x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Bauxite_1x_mask.png")
+    { template_purchase(0,0) }
+
+spriteset(spriteset_BR_800_FishVan_BR_Departmental_Bauxite_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Bauxite_Loading_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Bauxite_Loading_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_800_FishVan_BR_Departmental_Bauxite_Loading {  
+    loaded: [spriteset_empty];
+    loading: [spriteset_BR_800_FishVan_BR_Departmental_Bauxite_Loading]; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_800_FishVan_BR_Departmental_Bauxite, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR_800_FishVan_BR_Departmental_Bauxite;
+    1: spritegroup_BR_800_FishVan_BR_Departmental_Bauxite_Loading; }
+
+// basic sprite
+spriteset(spriteset_BR_800_FishVan_BR_Departmental_Red, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Red_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Red_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+spriteset(spriteset_BR_800_FishVan_BR_Departmental_Red_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Red_Loading_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Red_Loading_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_800_FishVan_BR_Departmental_Red_Loading {  
+    loaded: [spriteset_empty];
+    loading: [spriteset_BR_800_FishVan_BR_Departmental_Red_Loading]; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_800_FishVan_BR_Departmental_Red, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR_800_FishVan_BR_Departmental_Red;
+    1: spritegroup_BR_800_FishVan_BR_Departmental_Red_Loading; }
+
+// basic sprite
+spriteset(spriteset_BR_800_FishVan_BR_Departmental_Yellow, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Yellow_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Yellow_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+spriteset(spriteset_BR_800_FishVan_BR_Departmental_Yellow_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Yellow_Loading_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Yellow_Loading_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_800_FishVan_BR_Departmental_Yellow_Loading {  
+    loaded: [spriteset_empty];
+    loading: [spriteset_BR_800_FishVan_BR_Departmental_Yellow_Loading]; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_800_FishVan_BR_Departmental_Yellow, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR_800_FishVan_BR_Departmental_Yellow;
+    1: spritegroup_BR_800_FishVan_BR_Departmental_Yellow_Loading; }
+
+// basic sprite
+spriteset(spriteset_BR_800_FishVan_BR_IceBlue, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_IceBlue_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_IceBlue_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+spriteset(spriteset_BR_800_FishVan_BR_IceBlue_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_IceBlue_Loading_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_IceBlue_Loading_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_800_FishVan_BR_IceBlue_Loading {  
+    loaded: [spriteset_empty];
+    loading: [spriteset_BR_800_FishVan_BR_IceBlue_Loading]; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_800_FishVan_BR_IceBlue, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR_800_FishVan_BR_IceBlue;
+    1: spritegroup_BR_800_FishVan_BR_IceBlue_Loading; }
+
+// basic sprite
+spriteset(spriteset_BR_800_FishVan_BR_Parcels_Blue, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Parcels_Blue_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Parcels_Blue_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_800_FishVan_BR_Parcels_Blue, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR_800_FishVan_BR_Parcels_Blue;
+    1: spritegroup_BR_800_FishVan_BR_Blue_Loading; }
+
+// basic sprite
+spriteset(spriteset_BR_800_FishVan_BR_White, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_White_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_White_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR_800_FishVan_BR_White_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_White_1x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_White_1x_mask.png")
+    { template_purchase(0,0) }
+
+spriteset(spriteset_BR_800_FishVan_BR_White_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_White_Loading_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_White_Loading_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_800_FishVan_BR_White_Loading {  
+    loaded: [spriteset_empty];
+    loading: [spriteset_BR_800_FishVan_BR_White_Loading]; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_800_FishVan_BR_White, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR_800_FishVan_BR_White;
+    1: spritegroup_BR_800_FishVan_BR_White_Loading; }
+
+// basic sprite
+spriteset(spriteset_BR_800_FishVan_BR_White_BlueSpot, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_White_BlueSpot_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_White_BlueSpot_4x_mask.png")
+    { template_58trains_4x(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_800_FishVan_BR_White_BlueSpot, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR_800_FishVan_BR_White_BlueSpot;
+    1: spritegroup_BR_800_FishVan_BR_White_Loading; }
+
+
+switch(FEAT_TRAINS, PARENT, sw_BR_800_FishVan_purchase_sprite, current_year) {
+    1948..1968: spriteset_BR_800_FishVan_BR_White_purchase;
+    1969..1982: spriteset_BR_800_FishVan_BR_Blue_purchase;
+    1983..1999: spriteset_BR_800_FishVan_BR_Departmental_Bauxite_purchase;
+        spriteset_BR_800_FishVan_BR_White_purchase; }
+
+random_switch(FEAT_TRAINS, SELF, sw_random_BR_800_Blue) {
+    1: sw_loadstack_BR_800_FishVan_BR_Blue;
+    1: sw_loadstack_BR_800_FishVan_BR_Parcels_Blue; }
+
+random_switch(FEAT_TRAINS, SELF, sw_random_BR_800_Departmental) {
+    1: sw_loadstack_BR_800_FishVan_BR_Departmental_Bauxite;
+    1: sw_loadstack_BR_800_FishVan_BR_Departmental_Red;
+    2: sw_loadstack_BR_800_FishVan_BR_Departmental_Yellow; }
+
+random_switch(FEAT_TRAINS, SELF, sw_random_BR_800_FishVan_White) {
+    1: sw_loadstack_BR_800_FishVan_BR_White;
+    2: sw_loadstack_BR_800_FishVan_BR_White_BlueSpot;
+    1: sw_loadstack_BR_800_FishVan_BR_IceBlue; }
+
+switch(FEAT_TRAINS, SELF, sw_livery_BR_800_FishVan, cargo_subtype) {
+    0:  sw_random_BR_800_FishVan_White;
+    1:  sw_random_BR_800_Blue;
+    2:  sw_random_BR_800_Departmental; }
+
+switch(FEAT_TRAINS, SELF, sw_BR_800_FishVan_cargo_subtype_text, cargo_subtype) {
+    0:  string(STR_LIVERY_DESC, string(str_BR), string(str_col_White));
+    1:  string(STR_LIVERY_DESC, string(str_BR), string(str_col_Blue));
+    2:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_Departmental)); 
+        CB_RESULT_NO_TEXT; }
+
+
+// unit definition
+item (FEAT_TRAINS, item_BR_800_FishVan, 12277) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR_800_FishVan);
+        // variant_group:                  ; // unit ID or item
+		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        // extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);
+
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1955,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		// refittable_cargo_classes:        bitmask(CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_HAZARDOUS, CC_COVERED, CC_OVERSIZED, CC_POWDERIZED, CC_NON_POURABLE, CC_NEO_BULK, CC_POTABLE, CC_NON_POTABLE);	
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [MAIL, GOOD, VALU, GOLD, DIAM, FOOD, FRUT, BEER, FISH, JAVA, MILK, CHSE, CIGR, FRVG, MEAT, OYST, PCL_, TATO, SWET];
+        // cargo_disallow_refit:            [LVST];
+        default_cargo_type:             FISH;
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 12 * param_freight;
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          75 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        weight:                         11 ton;
+        dual_headed:                    0;
+        length:                         5;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_livery_BR_800_FishVan;
+        purchase:                       sw_BR_800_FishVan_purchase_sprite; // For dual mode units
+
+        // internal code
+        cost_factor:                    457;
+        running_cost_factor:            945;
+        cargo_subtype_text:             sw_BR_800_FishVan_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+    }
+}

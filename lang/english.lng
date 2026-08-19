@@ -1135,6 +1135,8 @@ STR_NAME_BR508_2				:BR Class 508/1 (3-Car)
 str_BR508_1_liveries			:BR Blue/Grey
 str_BR508_liveries				:BR Blue/Grey, MerseyRail (Classic), Southeastern Yellow, Southeastern Yellow Stripe, Southeastern Blue, Southeastern Blue Stripe, MerseyRail, MerseyRail (Good Communications)
 
+STR_NAME_BR599                  :BR Class 599 "Tyne and Wear Metrocar"
+
 STR_NAME_BR700					:BR Class 700/0 "Desiro City" (8-car)
 str_BR700_liveries				:Siemens Demonstrator, Govia Thameslink
 
@@ -1454,6 +1456,8 @@ str_BR_Conflat_P_liveries       :BR Bauxite
 STR_NAME_BR_Oxfit               :BR 'Oxfit' 12t Cattle Wagon
 str_BR_Oxfit_liveries           :BR Bauxite
 
+STR_NAME_BR_800_FishVan         :BR 12t Fish/Parcels Van
+
 STR_NAME_BR_BAA                 :BR BAA Steel Wagon
 STR_NAME_BR_BAA_75              :BR BAA Steel Wagon (75t)
 str_BR_BAA_liveries             :BR Bauxite, Railfreight, EWS
@@ -1766,11 +1770,14 @@ str_MML_TealTang                :Teal & Tangerine
 str_MoD                         :Ministry of Defence
 str_Mobil                       :Mobil
 str_Murco                       :Murco
+
 str_NatEx                       :National Express
 str_NXEA                        :NXEA
 str_NXEA_Long                   :National Express East Anglia
 str_NationalPower               :National Power
 str_NCB                         :National Coal Board
+str_NER                         :NER
+str_NER_Long                    :North Eastern Railway
 
 str_NetworkRail                 :Network Rail
 str_Northern                    :Northern
@@ -1851,6 +1858,9 @@ str_TPE                         :Transpennine Express
 str_Trainload                   :Trainload
 str_Transrail                   :Transrail
 str_Transrail_GreyYellow        :Grey and Yellow
+str_TWPTE                       :TWPTE
+str_TWPTE_Long                  :Tyne & Wear PTE
+str_TWPTE_Nexus                 :Nexus
 
 str_ValleyLines                 :Valley Lines
 str_Virgin                      :Virgin Trains
