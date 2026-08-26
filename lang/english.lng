@@ -1079,7 +1079,6 @@ STR_NAME_BR438_4				:BR Class 438 "4-TC"
 str_BR438_4_liveries			:BR Blue Grey, Network SouthEast
 
 STR_NAME_BR442					:BR Class 442 "Wessex Electric"
-str_BR442_liveries				:Network South East, Stagecoach South West Trains, South West Trains, South West Trains (Refurbished), Gatwick Express, Trasnsitional 
 
 STR_NAME_BR444					:BR Class 444 "Desiro"
 str_BR444_liveries				:South West Trains
