@@ -290,6 +290,7 @@ sort(FEAT_TRAINS, [
     item_BR_Conflat_A,
     item_BR_Conflat_P,
     item_BR_Consett_Hopper,
+    item_BR_800_FishVan,
     item_BR_Oxfit,
     item_BR_BAA,
         item_BR_BAA_75,
