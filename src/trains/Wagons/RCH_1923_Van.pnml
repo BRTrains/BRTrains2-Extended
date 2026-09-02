@@ -1,4 +1,16 @@
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_RCH_1923_Van, cargo_subtype) {
+    0: random_choose_RCH_1923_Van_Mixed;
+    1: random_choose_RCH_1923_Van_Grey;
+    2: random_choose_RCH_1923_Van_Bauxite; }
 
+// livery name refit switch
+switch(FEAT_TRAINS, SELF, sw_RCH_1923_Van_cargo_subtype_text, cargo_subtype){
+	0:	string(STR_LIVERY, string(str_var_Random));
+    1:  string(STR_LIVERY, string(str_col_Grey));
+    2:  string(STR_LIVERY, string(str_col_Bauxite));
+        CB_RESULT_NO_TEXT; }
+        
 // unit definition
 item (FEAT_TRAINS, item_RCH_1923_Van, 11812) {
     property {
@@ -33,14 +45,14 @@ item (FEAT_TRAINS, item_RCH_1923_Van, 11812) {
 
     graphics {
         // graphics
-        default:                        sw_livery_RCH_1907_Van;
-        purchase:                       spriteset_RCH_1907_Van_purchase;
+        default:                        sw_livery_RCH_1923_Van;
+        purchase:                       spriteset_RCH_1923_Van_Grey_purchase;
         
         // internal code
         speed:                          sw_speed_RCH_1923() * 1609 / 1000;
         cost_factor:                    276;
         running_cost_factor:            512;
-        cargo_subtype_text:             sw_RCH_1907_Van_cargo_subtype_text; 
+        cargo_subtype_text:             sw_RCH_1923_Van_cargo_subtype_text; 
         // colour_mapping:                 return PALETTE_CC_FIRST;
         colour_mapping:                 switch_generic_recolour;
     }

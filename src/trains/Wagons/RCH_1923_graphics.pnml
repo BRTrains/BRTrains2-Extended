@@ -103,8 +103,110 @@ random_switch(FEAT_TRAINS, SELF, random_choose_RCH_1923_12t_Private) {
     2: spriteset_RCH_1923_12t_Yellow_Dropend; }
 
 random_switch(FEAT_TRAINS, SELF, random_choose_RCH_1923_12t_Mixed) {
-    3: random_choose_RCH_1923_12t_Grey;
-    2: random_choose_RCH_1923_12t_Bauxite;
-    2: random_choose_RCH_1923_12t_Brown;
+    1: random_choose_RCH_1923_12t_Grey;
+    1: random_choose_RCH_1923_12t_Bauxite;
+    1: random_choose_RCH_1923_12t_Brown;
     1: random_choose_RCH_1923_12t_Private; }
 
+// basic sprite
+spriteset(spriteset_RCH_1923_Van_Bauxite, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Bauxite_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Bauxite_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_RCH_1923_Van_Bauxite_2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Bauxite_2_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Bauxite_2_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_RCH_1923_Van_Bauxite_3, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Bauxite_3_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Bauxite_3_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_RCH_1923_Van_Bauxite_4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Bauxite_4_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Bauxite_4_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_RCH_1923_Van_Blue, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Blue_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Blue_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_RCH_1923_Van_BnC, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_BnC_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_BnC_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_RCH_1923_Van_Brown, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Brown_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Brown_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_RCH_1923_Van_Brown_2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Brown_2_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Brown_2_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_RCH_1923_Van_Brown_3, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Brown_3_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Brown_3_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_RCH_1923_Van_Brown_4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Brown_4_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Brown_4_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_RCH_1923_Van_Green, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Green_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Green_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_RCH_1923_Van_Grey, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Grey_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Grey_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_RCH_1923_Van_Grey_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Grey_1x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Grey_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_RCH_1923_Van_Grey_2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Grey_2_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Grey_2_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_RCH_1923_Van_Grey_3, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Grey_3_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Grey_3_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_RCH_1923_Van_Grey_4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Grey_4_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Grey_4_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_RCH_1923_Van_Mint, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Mint_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Mint_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_RCH_1923_Van_Sand, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Sand_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Sand_4x_mask.png")
+    { template_48trains_4x(0,0) }
+
+random_switch(FEAT_TRAINS, SELF, random_choose_RCH_1923_Van_Grey) {
+    1: spriteset_RCH_1923_Van_Grey;
+    1: spriteset_RCH_1923_Van_Grey_2;
+    1: spriteset_RCH_1923_Van_Grey_3;
+    1: spriteset_RCH_1923_Van_Grey_4;  }
+
+random_switch(FEAT_TRAINS, SELF, random_choose_RCH_1923_Van_Bauxite) {
+    1: spriteset_RCH_1923_Van_Bauxite;
+    1: spriteset_RCH_1923_Van_Bauxite_2;
+    1: spriteset_RCH_1923_Van_Bauxite_3;
+    1: spriteset_RCH_1923_Van_Bauxite_4; }
+
+random_switch(FEAT_TRAINS, SELF, random_choose_RCH_1923_Van_Brown) {
+    1: spriteset_RCH_1923_Van_Brown;
+    1: spriteset_RCH_1923_Van_Brown_2;
+    1: spriteset_RCH_1923_Van_Brown_3;
+    1: spriteset_RCH_1923_Van_Brown_4; }
+
+random_switch(FEAT_TRAINS, SELF, random_choose_RCH_1923_Van_Private) {
+    2: spriteset_RCH_1923_Van_Blue;
+    2: spriteset_RCH_1923_Van_BnC;
+    2: spriteset_RCH_1923_Van_Green;
+    1: spriteset_RCH_1923_Van_Mint;
+    1: spriteset_RCH_1923_Van_Sand; }
+
+random_switch(FEAT_TRAINS, SELF, random_choose_RCH_1923_Van_Mixed) {
+    1: random_choose_RCH_1923_Van_Grey;
+    1: random_choose_RCH_1923_Van_Bauxite;
+    1: random_choose_RCH_1923_Van_Brown;
+    1: random_choose_RCH_1923_Van_Private; }
