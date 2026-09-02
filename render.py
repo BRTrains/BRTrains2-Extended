@@ -47,7 +47,7 @@ def is_fully_rendered(file_name):
 def render_file(file_name, palette_path, manifest_path):
     command = [str(gorender_path),
                "-i", str(file_name),
-               "-s", "4",
+               "-s", "1,4",
                "-palette", palette_path,
                "-m", manifest_path]
     

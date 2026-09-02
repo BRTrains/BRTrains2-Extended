@@ -164,7 +164,7 @@ STR_DESC_Empty                          :Empty Unit intended for internal use of
 STR_CANNOT_ATTACH						:Cannot attach a different class of train
 
 # Vehicle Descriptions
-str_purchase_coach              :{BLACK}Type: {STRING}{}{BLACK}
+str_purchase_coach              :{BLACK}Type: {STRING}
 
 str_purchase_type_diesel		:{RED}Diesel locomotive
 str_purchase_type_steam			:{GREEN}Steam Locomotive
@@ -1405,10 +1405,13 @@ STR_NAME_RCH_1907_1_Plank       :RCH 1907 Spec 1-plank Wagon
 STR_NAME_RCH_1907_Van           :RCH 1907 Spec Van
 str_RCH_1907_liveries           :Grey, Bauxite, Private Owners
 
-STR_NAME_RCH_1927_Mixed         :RCH 1927 Spec Wagons
-STR_NAME_RCH_1927_10t           :RCH 1927 Spec 10t Open Wagon
-STR_NAME_RCH_1927_Van           :RCH 1927 Spec Van
-str_RCH_1927_liveries           :Grey, Bauxite, Private Owners
+STR_NAME_RCH_1923_Mixed         :RCH 1923 Spec Wagons
+STR_NAME_RCH_1923_15t           :RCH 1923 Spec 15t Open Wagon
+STR_NAME_RCH_1923_12t           :RCH 1923 Spec 12t Open Wagon
+STR_NAME_RCH_1923_10t           :RCH 1923 Spec 10t Dropside Open Wagon
+STR_NAME_RCH_1923_15t_Tank      :RCH 1923 Spec 15t Tank Wagon
+STR_NAME_RCH_1923_20t_Tank      :RCH 1923 Spec 20t Tank Wagon
+STR_NAME_RCH_1923_Van           :RCH 1923 Spec Van
 
 # GWR Wagons
 STR_NAME_GWR_Open_C             :GWR "Open C" Open Wagon
