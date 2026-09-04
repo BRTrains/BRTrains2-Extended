@@ -103,10 +103,25 @@ random_switch(FEAT_TRAINS, SELF, random_choose_RCH_1923_12t_Private) {
     2: spriteset_RCH_1923_12t_Yellow_Dropend; }
 
 random_switch(FEAT_TRAINS, SELF, random_choose_RCH_1923_12t_Mixed) {
-    1: random_choose_RCH_1923_12t_Grey;
-    1: random_choose_RCH_1923_12t_Bauxite;
-    1: random_choose_RCH_1923_12t_Brown;
-    1: random_choose_RCH_1923_12t_Private; }
+    2: spriteset_RCH_1923_12t_Grey;
+    2: spriteset_RCH_1923_12t_Grey_2;
+    2: spriteset_RCH_1923_12t_Grey_Dropend;
+    2: spriteset_RCH_1923_12t_Grey_Dropend_2;
+    1: spriteset_RCH_1923_12t_Black;
+    3: spriteset_RCH_1923_12t_Bauxite;
+    2: spriteset_RCH_1923_12t_Bauxite_2;
+    1: spriteset_RCH_1923_12t_Bauxite_3;
+    2: spriteset_RCH_1923_12t_Bauxite_Dropend;
+    3: spriteset_RCH_1923_12t_Brown;
+    2: spriteset_RCH_1923_12t_Brown_2;
+    1: spriteset_RCH_1923_12t_Mahogany;
+    1: spriteset_RCH_1923_12t_Sand;
+    1: spriteset_RCH_1923_12t_Ex_Mint;
+    1: spriteset_RCH_1923_12t_Mint;
+    2: spriteset_RCH_1923_12t_Red_Dropend;
+    2: spriteset_RCH_1923_12t_Sand;
+    1: spriteset_RCH_1923_12t_Yellow;
+    2: spriteset_RCH_1923_12t_Yellow_Dropend; }
 
 // basic sprite
 spriteset(spriteset_RCH_1923_Van_Bauxite, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Bauxite_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Bauxite_4x_mask.png")
@@ -199,14 +214,26 @@ random_switch(FEAT_TRAINS, SELF, random_choose_RCH_1923_Van_Brown) {
     1: spriteset_RCH_1923_Van_Brown_4; }
 
 random_switch(FEAT_TRAINS, SELF, random_choose_RCH_1923_Van_Private) {
-    2: spriteset_RCH_1923_Van_Blue;
-    2: spriteset_RCH_1923_Van_BnC;
-    2: spriteset_RCH_1923_Van_Green;
-    1: spriteset_RCH_1923_Van_Mint;
-    1: spriteset_RCH_1923_Van_Sand; }
+    1: spriteset_RCH_1923_Van_Blue;
+    1: spriteset_RCH_1923_Van_BnC;
+    1: spriteset_RCH_1923_Van_Green;
+    1: spriteset_RCH_1923_Van_Mint; }
+    // 1: spriteset_RCH_1923_Van_Sand; }
 
 random_switch(FEAT_TRAINS, SELF, random_choose_RCH_1923_Van_Mixed) {
-    1: random_choose_RCH_1923_Van_Grey;
-    1: random_choose_RCH_1923_Van_Bauxite;
-    1: random_choose_RCH_1923_Van_Brown;
-    1: random_choose_RCH_1923_Van_Private; }
+    1: spriteset_RCH_1923_Van_Grey;
+    1: spriteset_RCH_1923_Van_Grey_2;
+    1: spriteset_RCH_1923_Van_Grey_3;
+    1: spriteset_RCH_1923_Van_Grey_4;
+    1: spriteset_RCH_1923_Van_Bauxite;
+    1: spriteset_RCH_1923_Van_Bauxite_2;
+    1: spriteset_RCH_1923_Van_Bauxite_3;
+    1: spriteset_RCH_1923_Van_Bauxite_4;
+    1: spriteset_RCH_1923_Van_Brown;
+    1: spriteset_RCH_1923_Van_Brown_2;
+    1: spriteset_RCH_1923_Van_Brown_3;
+    1: spriteset_RCH_1923_Van_Brown_4;
+    1: spriteset_RCH_1923_Van_Blue;
+    1: spriteset_RCH_1923_Van_BnC;
+    1: spriteset_RCH_1923_Van_Green;
+    1: spriteset_RCH_1923_Van_Mint; }
