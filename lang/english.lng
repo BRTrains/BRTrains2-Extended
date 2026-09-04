@@ -1510,9 +1510,8 @@ str_BR_MBA_liveries             :EWS
 STR_NAME_BR_MCV                 :BR MCO/MCV 16t Steel Mineral Wagon
 str_BR_MCV_liveries             :BR Grey
 
-STR_NAME_BRT_CovHop             :BRT PAA Covered Hopper
-STR_NAME_BRT_Whisky_CovHop      :BRT PAV Covered Hopper "Whisky CovHop"
-str_BRT_CovHop_liveries         :Grainflow, BR Grey, BR Brown, Private Owner Blue, Private Owner Blue with Advertising, Private Owner Yellow
+STR_NAME_BR_PAA                 :BRT PAA/PAV "Whiskey CovHop" Covered Hopper
+STR_NAME_BR_PAV                 :BRT PAV Covered Hopper
 
 STR_NAME_BR_PCV                 :BR PCV "Presflo" Wagon
 str_BR_PCV_liveries             :BR Bauxite, BR Grey, ARC, ICI, Private Owners
@@ -1625,6 +1624,8 @@ str_BR_SplitBox                 :Split Box
 str_BR_Transitional             :Transitional
 str_BR_YellowFront              :Yellow Front
 str_BR_YellowPanel              :Yellow Panel
+
+str_BRT_Grainflow               :Grainflow
 str_BSS                         :British Steel
 
 str_C2C                         :C2C
