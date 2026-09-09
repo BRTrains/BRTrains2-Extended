@@ -847,9 +847,8 @@ STR_NAME_BR25_2                 :BR Class 25/2 "Rat"
 STR_NAME_BR25_3                 :BR Class 25/3 "Rat"
 str_BR25_liveries               :BR Green, BR Blue
 
-STR_NAME_BR251_6		        :BR "Blue Pullman" (6 car)
-STR_NAME_BR251_8        		:BR "Blue Pullman" (8 car)
-str_BR251_liveries		        :Blue Pullman, Blue Pullman (Warning Panels), BR Grey and Blue
+STR_NAME_BR251_6		        :BR Class 251 "Blue Pullman" (6 car)
+STR_NAME_BR251_8        		:BR Class 251 "Blue Pullman" (8 car)
 
 STR_NAME_BR252					:BR Class 41 "HST Prototype" (2+9 car)
 str_BR252_liveries				:BR Blue
