@@ -1,0 +1,227 @@
+// basic sprite
+spriteset(spriteset_BR805_DPTF_AvantiWC_Nose_Closed, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR805/BR805_DPTF_AvantiWC_Nose_Closed_4x_32bpp.png", "gfx/EMU/BR805/BR805_DPTF_AvantiWC_Nose_Closed_4x_mask.png")
+    { template_1558fronttrains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR805_DPTF_AvantiWC_Nose_Closed_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR805/BR805_DPTF_AvantiWC_Nose_Closed_1x_32bpp.png", "gfx/EMU/BR805/BR805_DPTF_AvantiWC_Nose_Closed_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR805_DPTF_AvantiWC_Nose_Closed_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR805/BR805_DPTF_AvantiWC_Nose_Closed_4x_32bpp.png", "gfx/EMU/BR805/BR805_DPTF_AvantiWC_Nose_Closed_4x_mask.png")
+    { template_1558backtrains_REV_4x(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_BR805_AvantiWC_NoseClosed, position_in_consist) {
+    1:  spriteset_BR805_DPTF_AvantiWC_Nose_Closed;
+        spriteset_empty; }
+
+switch(FEAT_TRAINS, SELF, sw_BR805_AvantiWC_NoseClosed_REV, position_in_consist_from_end) {
+    1:  spriteset_BR805_DPTF_AvantiWC_Nose_Closed_REV;
+        spriteset_empty; }
+
+// basic sprite
+spriteset(spriteset_BR805_DPTF_AvantiWC_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR805/BR805_DPTF_AvantiWC_4x_32bpp.png", "gfx/EMU/BR805/BR805_DPTF_AvantiWC_4x_mask.png")
+    { template_1558backtrains_REV_4x(0,0) }
+
+spriteset(spriteset_BR805_DPTF_AvantiWC_Loading_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR805/BR805_DPTF_AvantiWC_Loading_4x_32bpp.png", "gfx/EMU/BR805/BR805_DPTF_AvantiWC_Loading_4x_mask.png")
+    { template_1558backtrains_REV_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR805_DPTF_AvantiWC_Loading_REV {  
+    loaded: [spriteset_empty];
+    loading: [spriteset_BR805_DPTF_AvantiWC_Loading_REV]; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR805_DPTF_AvantiWC_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 5 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR805_DPTF_AvantiWC_REV;
+    1: spritegroup_BR805_DPTF_AvantiWC_Loading_REV;
+    2: sw_BR805_AvantiWC_NoseClosed_REV;
+    3: sw_BR800_lights_back;
+    4: sw_panto_BR800_REV; }
+
+// basic sprite
+spriteset(spriteset_BR805_DPTS_AvantiWC, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR805/BR805_DPTS_AvantiWC_4x_32bpp.png", "gfx/EMU/BR805/BR805_DPTS_AvantiWC_4x_mask.png")
+    { template_1558fronttrains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR805_DPTS_AvantiWC_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR805/BR805_DPTS_AvantiWC_1x_32bpp.png", "gfx/EMU/BR805/BR805_DPTS_AvantiWC_1x_mask.png")
+    { template_purchase(0,0) }
+
+spriteset(spriteset_BR805_DPTS_AvantiWC_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR805/BR805_DPTS_AvantiWC_Loading_4x_32bpp.png", "gfx/EMU/BR805/BR805_DPTS_AvantiWC_Loading_4x_mask.png")
+    { template_1558fronttrains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR805_DPTS_AvantiWC_Loading {  
+    loaded: [spriteset_empty];
+    loading: [spriteset_BR805_DPTS_AvantiWC_Loading]; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR805_DPTS_AvantiWC, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 5 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR805_DPTS_AvantiWC;
+    1: spritegroup_BR805_DPTS_AvantiWC_Loading; 
+    2: sw_BR805_AvantiWC_NoseClosed;
+    3: sw_BR800_lights_front;
+    4: sw_panto_BR800; }
+
+// basic sprite
+spriteset(spriteset_BR805_MS_AvantiWC_Leading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR805/BR805_MS_AvantiWC_Leading_4x_32bpp.png", "gfx/EMU/BR805/BR805_MS_AvantiWC_Leading_4x_mask.png")
+    { template_1558middletrains_4x(0,0) }
+
+spriteset(spriteset_BR805_MS_AvantiWC_Leading_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR805/BR805_MS_AvantiWC_Leading_Loading_4x_32bpp.png", "gfx/EMU/BR805/BR805_MS_AvantiWC_Leading_Loading_4x_mask.png")
+    { template_1558middletrains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR805_MS_AvantiWC_Leading_Loading {  
+    loaded: [spriteset_empty];
+    loading: [spriteset_BR805_MS_AvantiWC_Leading_Loading]; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR805_MS_AvantiWC_Leading, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR805_MS_AvantiWC_Leading;
+    1: spritegroup_BR805_MS_AvantiWC_Leading_Loading; }
+
+spriteset(spriteset_BR805_MS_AvantiWC_Leading_Loading_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR805/BR805_MS_AvantiWC_Leading_Loading_4x_32bpp.png", "gfx/EMU/BR805/BR805_MS_AvantiWC_Leading_Loading_4x_mask.png")
+    { template_1558middletrains_REV_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR805_MS_AvantiWC_Leading_Loading_REV {  
+    loaded: [spriteset_empty];
+    loading: [spriteset_BR805_MS_AvantiWC_Leading_Loading_REV]; }
+
+// basic sprite
+spriteset(spriteset_BR805_MS_AvantiWC_Middle, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR805/BR805_MS_AvantiWC_Middle_4x_32bpp.png", "gfx/EMU/BR805/BR805_MS_AvantiWC_Middle_4x_mask.png")
+    { template_1558middletrains_4x(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR805_MS_AvantiWC_Middle, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR805_MS_AvantiWC_Middle;
+    1: spritegroup_BR805_MS_AvantiWC_Leading_Loading; }
+    
+// basic sprite
+spriteset(spriteset_BR805_MS_AvantiWC_Rear_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR805/BR805_MS_AvantiWC_Rear_4x_32bpp.png", "gfx/EMU/BR805/BR805_MS_AvantiWC_Rear_4x_mask.png")
+    { template_1558middletrains_REV_4x(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR805_MS_AvantiWC_Rear_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR805_MS_AvantiWC_Rear_REV;
+    1: spritegroup_BR805_MS_AvantiWC_Leading_Loading_REV; }
+
+switch(FEAT_TRAINS, SELF, sw_spritestack_BR805_purchase, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
+    0: spriteset_BR805_DPTS_AvantiWC_purchase;
+    1: spriteset_BR805_DPTF_AvantiWC_Nose_Closed_purchase; 
+    2: spriteset_BR800_panto_down_purchase; }
+
+switch(FEAT_TRAINS, PARENT, sw_power_BR805, tile_powers_railtype("ELRL")){
+    1:  3640;
+        2820; }	
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_BR805_AvantiWC, position_in_articulated_veh % 15) {
+    1:  sw_loadstack_BR805_DPTS_AvantiWC;
+    4:  sw_loadstack_BR805_MS_AvantiWC_Leading;
+    7:  sw_loadstack_BR805_MS_AvantiWC_Middle;
+    10: sw_loadstack_BR805_MS_AvantiWC_Rear_REV;
+    13: sw_loadstack_BR805_DPTF_AvantiWC_REV;
+	    spriteset_empty; }
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR805, cargo_subtype) {
+    0: sw_graphics_BR805_AvantiWC; }
+
+// livery name refit switch
+switch(FEAT_TRAINS, SELF, sw_BR805_cargo_subtype_text, cargo_subtype){
+	0:	string(STR_LIVERY, string(str_AvantiWestCoast));
+        CB_RESULT_NO_TEXT; }
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_BR805, position_in_articulated_veh % 15) {
+	1:  8;
+    4:  7;
+    7:  7;
+    10: 7;
+    13: 8;
+    14: 3;
+        4; }
+
+// capacity switch
+switch(FEAT_TRAINS, SELF, sw_capacity_BR805, position_in_vehid_chain % 15) {
+    0: 301 * param_pax; // all the capacity - (vehid chain number)
+        0;
+    // total
+}
+
+// speed switch
+switch(FEAT_TRAINS, SELF, sw_speed_power_BR805, tile_powers_railtype("ELRL")) {
+    0: 110; // Diesel
+    1: 125; // ELRL
+}
+
+switch(FEAT_TRAINS, SELF, sw_speed_BR805, param_max_speed) {
+    0: sw_speed_power_BR805; // operational speed
+    1: 140; // design speed
+}
+
+switch(FEAT_TRAINS, SELF, sw_running_cost_BR805, tile_powers_railtype("ELRL")) {
+    1:  9903; // Electric
+        9250; // Diesel
+}
+
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR805, extra_callback_info1) {
+	1..14: return item_BR805;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+
+// unit definition
+item (FEAT_TRAINS, item_BR805, 8050) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR805);
+        // variant_group:                  ; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);
+
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2021,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		refittable_cargo_classes:        bitmask(CC_PASSENGERS);
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [PASS, TOUR];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        loading_speed:					90; // Standard Class
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          125 mph;
+        refit_cost:                     0;
+        track_type:                     [RAIL, ELRL];
+        power:                          3640 hp;
+        weight:                         243 ton;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.06;
+        tractive_effort_coefficient:    0.1;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_livery_BR805;
+        visual_effect_and_powered:      sw_FX_BR800_5car;
+        purchase:                       sw_spritestack_BR805_purchase; // For dual mode units
+        sound_effect:                   sw_sound_BR800;
+
+        // internal code
+        length:                         sw_length_BR805;
+        articulated_part:               sw_articulated_BR805;
+        speed:                          sw_speed_BR805() * 1609 / 1000;  
+        purchase_cargo_capacity:        return (20 * param_pax); // divide by number of articulated parts and floor
+        cargo_capacity:                 sw_capacity_BR805;
+        cost_factor:                    275;
+        running_cost_factor:            sw_running_cost_BR805;
+        cargo_subtype_text:             sw_BR805_cargo_subtype_text; 
+        power:                          sw_power_BR805;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+    }
+}

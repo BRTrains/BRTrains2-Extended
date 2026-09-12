@@ -1174,9 +1174,6 @@ STR_NAME_BR800_1                :BR Class 800/1 "Azuma" (9-car)
 STR_NAME_BR800_2                :BR Class 800/2 "Azuma" (5-car)
 STR_NAME_BR800_3                :BR Class 800/3 "IET" (9-car)
 
-str_BR800_0_liveries			:GWR
-str_BR800_1_2_liveries          :LNER
-
 STR_NAME_BR801_1                :BR Class 801/1 "Azuma" (5-car)
 STR_NAME_BR801_2                :BR Class 801/2 "Azuma" (9-car)
 
@@ -1184,8 +1181,8 @@ STR_NAME_BR802_0                :BR Class 802/0 "IET" (5-car)
 STR_NAME_BR802_1                :BR Class 802/1 "IET" (9-car)
 STR_NAME_BR802_2                :BR Class 802/2 "Nova 1" (5-car)
 STR_NAME_BR802_3                :BR Class 802/3 "Paragon" (5-car)
-str_BR802_2_liveries            :Transpennine Express
-str_BR802_3_liveries            :Hull Trains, First Group
+
+STR_NAME_BR805                  :BR Class 805 "Evero" (5-car)
 
 # # # # # # # # 
 # # COACHES # #
