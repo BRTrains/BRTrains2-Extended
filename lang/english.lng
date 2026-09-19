@@ -1516,6 +1516,10 @@ str_BR_PCV_liveries             :BR Bauxite, BR Grey, ARC, ICI, Private Owners
 STR_NAME_BR_PTA                 :BR PTA/JTA/JUA Tippler Gondola
 str_BR_PTA_liveries             :British Steel, Foster Yeoman, ARC, VTG
 
+STR_NAME_BR_OAA                 :BR OAA/ZDA "Squid" Open Wagon
+STR_NAME_BR_OBA                 :BR OBA/ZDA "Bass" Open Wagon
+STR_NAME_BR_OCA                 :BR OCA Open Wagon
+
 STR_NAME_BR_OTA                 :BR OTA Timber Wagon
 str_BR_OTA_liveries             :Railfreight, EWS, Private Owners
 

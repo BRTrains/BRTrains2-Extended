@@ -1,0 +1,301 @@
+
+// basic sprite
+spriteset(spriteset_BR_OAA_BR_Bauxite, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_BR_Bauxite_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_BR_Bauxite_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR_OAA_BR_Bauxite_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_BR_Bauxite_1x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_BR_Bauxite_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_OAA_Bricks_100, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Bricks_100_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Bricks_100_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_OAA_Bricks_30, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Bricks_30_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Bricks_30_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_OAA_Bricks_60, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Bricks_60_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Bricks_60_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+spritegroup spritegroup_BR_OAA_Bricks {  
+    loaded: [spriteset_empty, spriteset_BR_OAA_Bricks_30, spriteset_BR_OAA_Bricks_60, spriteset_BR_OAA_Bricks_100];
+    loading: [spriteset_empty, spriteset_BR_OAA_Bricks_30, spriteset_BR_OAA_Bricks_60, spriteset_BR_OAA_Bricks_100]; }
+
+// basic sprite
+spriteset(spriteset_BR_OAA_EWS, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_EWS_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_EWS_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR_OAA_EWS_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_EWS_1x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_EWS_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_OAA_Railfreight, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Railfreight_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Railfreight_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR_OAA_Railfreight_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Railfreight_1x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Railfreight_1x_mask.png")
+    { template_purchase(0,0) }
+
+spriteset(spriteset_BR_OAA_Bulk_100, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_OAA/BR_OAA_Bulk_100_4x_8bpp.png")
+    { template_78trains_4x(0,0) }
+
+spriteset(spriteset_BR_OAA_Bulk_30, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_OAA/BR_OAA_Bulk_30_4x_8bpp.png")
+    { template_78trains_4x(0,0) }
+
+spriteset(spriteset_BR_OAA_Bulk_60, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_OAA/BR_OAA_Bulk_60_4x_8bpp.png")
+    { template_78trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_OAA_Bulk {  
+    loaded: [spriteset_empty, spriteset_BR_OAA_Bulk_30, spriteset_BR_OAA_Bulk_60, spriteset_BR_OAA_Bulk_100];
+    loading: [spriteset_empty, spriteset_BR_OAA_Bulk_30, spriteset_BR_OAA_Bulk_60, spriteset_BR_OAA_Bulk_100]; }
+
+
+spriteset(spriteset_BR_OAA_Bulk_Tarp, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Bulk_Tarp_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Bulk_Tarp_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_OAA_Bulk_Tarp {  
+    loaded: [spriteset_empty, spriteset_BR_OAA_Bulk_Tarp];
+    loading: [spriteset_empty, spriteset_BR_OAA_Bulk_30, spriteset_BR_OAA_Bulk_60, spriteset_BR_OAA_Bulk_100]; }
+
+spriteset(spriteset_BR_OAA_Box1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Box1_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Box1_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_OAA_Box1 {  
+    loaded: [spriteset_empty, spriteset_BR_OAA_Box1];
+    loading: [spriteset_empty, spriteset_BR_OAA_Box1]; }
+
+spriteset(spriteset_BR_OAA_Box2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Box2_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Box2_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_OAA_Box2 {  
+    loaded: [spriteset_empty, spriteset_BR_OAA_Box2];
+    loading: [spriteset_empty, spriteset_BR_OAA_Box2]; }
+
+spriteset(spriteset_BR_OAA_Box3, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Box3_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Box3_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_OAA_Box3 {  
+    loaded: [spriteset_empty, spriteset_BR_OAA_Box3];
+    loading: [spriteset_empty, spriteset_BR_OAA_Box3]; }
+
+spriteset(spriteset_BR_OAA_Box4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Box4_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Box4_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_OAA_Box4 {  
+    loaded: [spriteset_empty, spriteset_BR_OAA_Box4];
+    loading: [spriteset_empty, spriteset_BR_OAA_Box4]; }
+
+spriteset(spriteset_BR_OAA_CivilEngineers, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_CivilEngineers_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_CivilEngineers_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+spriteset(spriteset_BR_OAA_Rails_30, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Rails_30_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Rails_30_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+spriteset(spriteset_BR_OAA_Rails_60, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Rails_60_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Rails_60_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+spriteset(spriteset_BR_OAA_Rails_100, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Rails_100_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Rails_100_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_OAA_Rails {  
+    loaded: [spriteset_empty, spriteset_BR_OAA_Rails_30, spriteset_BR_OAA_Rails_60, spriteset_BR_OAA_Rails_100];
+    loading: [spriteset_empty, spriteset_BR_OAA_Rails_30, spriteset_BR_OAA_Rails_60, spriteset_BR_OAA_Rails_100]; }
+
+spriteset(spriteset_BR_OAA_Steel_100, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Steel_100_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Steel_100_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+spriteset(spriteset_BR_OAA_Steel_30, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Steel_30_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Steel_30_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+spriteset(spriteset_BR_OAA_Steel_60, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Steel_60_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Steel_60_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_OAA_Steel {  
+    loaded: [spriteset_empty, spriteset_BR_OAA_Steel_30, spriteset_BR_OAA_Steel_60, spriteset_BR_OAA_Steel_100];
+    loading: [spriteset_empty, spriteset_BR_OAA_Steel_30, spriteset_BR_OAA_Steel_60, spriteset_BR_OAA_Steel_100]; }
+
+spriteset(spriteset_BR_OAA_Tarp_1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Tarp_1_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Tarp_1_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_OAA_Tarp_1 {  
+    loaded: [spriteset_empty, spriteset_BR_OAA_Tarp_1];
+    loading: [spriteset_empty, spriteset_BR_OAA_Tarp_1]; }
+
+spritegroup spritegroup_BR_OAA_Bulk_Tarp_2 {  
+    loaded: [spriteset_empty, spriteset_BR_OAA_Tarp_1];
+    loading: [spriteset_empty, spriteset_BR_OAA_Bulk_30, spriteset_BR_OAA_Bulk_60, spriteset_BR_OAA_Bulk_100]; }
+
+spriteset(spriteset_BR_OAA_Tarp_2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Tarp_2_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Tarp_2_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_OAA_Tarp_2 {  
+    loaded: [spriteset_empty, spriteset_BR_OAA_Tarp_2];
+    loading: [spriteset_empty, spriteset_BR_OAA_Tarp_2]; }
+
+spriteset(spriteset_BR_OAA_Tarp_3, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Tarp_3_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Tarp_3_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_OAA_Tarp_3 {  
+    loaded: [spriteset_empty, spriteset_BR_OAA_Tarp_3];
+    loading: [spriteset_empty, spriteset_BR_OAA_Tarp_3]; }
+
+spriteset(spriteset_BR_OAA_Tarp_4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Tarp_4_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Tarp_4_4x_mask.png")
+    { template_78trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_OAA_Tarp_4 {  
+    loaded: [spriteset_empty, spriteset_BR_OAA_Tarp_4];
+    loading: [spriteset_empty, spriteset_BR_OAA_Tarp_4]; }
+
+switch(FEAT_TRAINS, PARENT, sw_BR_OAA_purchase_sprite, current_year) {
+    1982..1995: spriteset_BR_OAA_Railfreight_purchase;
+    1996..2016: spriteset_BR_OAA_EWS_purchase;
+        spriteset_BR_OAA_BR_Bauxite_purchase; }
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR_OAA, cargo_subtype) {
+    0: spriteset_BR_OAA_BR_Bauxite;
+    1: spriteset_BR_OAA_Railfreight;
+    2: spriteset_BR_OAA_EWS;
+    3: spriteset_BR_OAA_CivilEngineers; }
+
+// livery name refit switch
+switch(FEAT_TRAINS, SELF, sw_BR_OAA_cargo_subtype_text, cargo_subtype){
+	0:	string(STR_LIVERY_DESC, string(str_BR), string(str_col_Bauxite));
+    1:  string(STR_LIVERY_DESC, string(str_Railfreight), string(str_col_Grey));
+    2:  string(STR_LIVERY_DESC, string(str_EWS), string(str_EWS_Red));
+    3:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_CivilDutch));
+       return CB_RESULT_NO_TEXT; }
+
+// random switch
+random_switch(FEAT_TRAINS, SELF, random_choose_BR_OAA_Box, bitmask(TRIGGER_VEHICLE_UNLOAD_ALL, TRIGGER_VEHICLE_NEW_LOAD)) {
+    1: spritegroup_BR_OAA_Box1;
+    1: spritegroup_BR_OAA_Box2;
+    1: spritegroup_BR_OAA_Box3;
+    1: spritegroup_BR_OAA_Box4; }
+
+random_switch(FEAT_TRAINS, SELF, random_choose_BR_OAA_Tarp, bitmask(TRIGGER_VEHICLE_UNLOAD_ALL, TRIGGER_VEHICLE_NEW_LOAD)) {
+    1: spritegroup_BR_OAA_Tarp_1;
+    1: spritegroup_BR_OAA_Tarp_2;
+    1: spritegroup_BR_OAA_Tarp_3;
+    1: spritegroup_BR_OAA_Tarp_4; }
+
+random_switch(FEAT_TRAINS, SELF, random_choose_BR_OAA_Bulk_Tarp, bitmask(TRIGGER_VEHICLE_UNLOAD_ALL, TRIGGER_VEHICLE_NEW_LOAD)) {
+    1: spritegroup_BR_OAA_Bulk_Tarp;
+    1: spritegroup_BR_OAA_Bulk_Tarp_2; }
+
+// cargo sprite switch
+switch(FEAT_TRAINS, SELF, sw_BR_OAA_Powdered, hasbit(cargo_classes, CC_POWDERIZED)) {
+    0:  random_choose_BR_OAA_Box;
+        random_choose_BR_OAA_Bulk_Tarp; }
+
+switch(FEAT_TRAINS, SELF, sw_BR_OAA_Potable, hasbit(cargo_classes, CC_POTABLE)) {
+    0:  sw_BR_OAA_Powdered;
+        random_choose_BR_OAA_Tarp; }
+
+switch(FEAT_TRAINS, SELF, sw_BR_OAA_Liquid, hasbit(cargo_classes, CC_LIQUID)) {
+    0:  sw_BR_OAA_Potable;
+        random_choose_BR_OAA_Tarp; }
+
+switch(FEAT_TRAINS, SELF, sw_BR_OAA_Bulk, hasbit(cargo_classes, CC_BULK)) {
+    0:  sw_BR_OAA_Liquid;
+        spritegroup_BR_OAA_Bulk; }
+
+switch(FEAT_TRAINS, SELF, sw_BR_OAA_cargo_type, cargo_type_in_veh) {
+    STAL: spritegroup_BR_OAA_Steel;
+    ALUM: spritegroup_BR_OAA_Steel;
+    STCB: spritegroup_BR_OAA_Steel;
+    STST: spritegroup_BR_OAA_Steel;
+    STSH: spritegroup_BR_OAA_Rails;
+
+    POWR: random_choose_BR_OAA_Box;
+    VENG: random_choose_BR_OAA_Box;
+    VPTS: random_choose_BR_OAA_Box;
+    GOOD: random_choose_BR_OAA_Box;
+    GLAS: random_choose_BR_OAA_Box;
+
+    BDMT: spritegroup_BR_OAA_Bricks;
+    WDPR: random_choose_BR_OAA_Tarp;
+    WOOD: random_choose_BR_OAA_Tarp;
+
+    MNSP: random_choose_BR_OAA_Box;
+    MPTS: random_choose_BR_OAA_Box;
+    PAPR: random_choose_BR_OAA_Box;
+
+    sw_BR_OAA_Bulk; }
+
+// container switch
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_OAA, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
+    0: sw_livery_BR_OAA;
+    1: sw_BR_OAA_cargo_type; }
+
+// speed switch
+switch(FEAT_TRAINS, SELF, sw_speed_BR_OAA, param_max_speed) {
+    0: 60; // operational speed
+    1: 75; // design speed
+}
+
+// unit definition
+item (FEAT_TRAINS, item_BR_OAA, 12280) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR_OAA);
+        // variant_group:                  ; // unit ID or item
+		// extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+        // extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);
+
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1971,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+        refittable_cargo_classes:        bitmask(CC_PIECE_GOODS);	
+        non_refittable_cargo_classes:    bitmask(CC_LIQUID, CC_POTABLE, CC_HAZARDOUS, CC_OVERSIZED);
+        // cargo_allow_refit:               [MAIL, GOOD, VALU];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        cargo_capacity:                 31 * param_freight;
+        // for MUs, loading speed is multiplied by number of carriages * 0.75
+        loading_speed:				    5; // All freight / Locomotive
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          60 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        weight:                         14 ton;
+        dual_headed:                    0;
+        length:                         7;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_loadstack_BR_OAA;
+        purchase:                       sw_BR_OAA_purchase_sprite; // For dual mode units
+
+        // internal code
+        speed:                          sw_speed_BR_OAA() * 1609 / 1000;  
+        cost_factor:                    677;
+        running_cost_factor:            975;
+        cargo_subtype_text:             sw_BR_OAA_cargo_subtype_text; 
+        colour_mapping:                 switch_generic_recolour;
+    }
+}

@@ -311,6 +311,7 @@ sort(FEAT_TRAINS, [
     item_BR_IWB_B_3_Door,
     item_BR_MBA,
     item_BR_MCV,
+    item_BR_OAA,
     item_BR_OTA,
     item_BR_PAA,
     item_BR_PAV,
