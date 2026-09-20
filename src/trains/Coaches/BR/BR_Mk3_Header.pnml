@@ -53,7 +53,8 @@ switch(FEAT_TRAINS, SELF, sw_speed_BR_Mk3, param_max_speed) {
 item(FEAT_TRAINS, item_BR_Mk3_Header, 12120) {
     property {
         name:                           string(STR_NAME_BR_Mk3_Header);
-		climates_available: 			NO_CLIMATE;					
+		climates_available: 			NO_CLIMATE;		
+        introduction_date:              date(1975,01,01); 			
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 	}
 	graphics {	
@@ -65,7 +66,8 @@ item(FEAT_TRAINS, item_BR_Mk3_Header, 12120) {
 item(FEAT_TRAINS, item_BR_Mk3a_Header, 12135) {
     property {
         name:                           string(STR_NAME_BR_Mk3a_Header);
-		climates_available: 			NO_CLIMATE;					
+		climates_available: 			NO_CLIMATE;	
+        introduction_date:              date(1975,01,01); 				
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 	}
 	graphics {	

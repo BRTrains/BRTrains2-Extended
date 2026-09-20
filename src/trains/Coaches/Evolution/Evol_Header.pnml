@@ -61,7 +61,8 @@ switch(FEAT_TRAINS, PARENT, sw_Evol_Header_purchase_sprite, current_year) {
 item(FEAT_TRAINS, item_Evol_Header, 11201) {
     property {
         name:                           string(STR_NAME_Evol_Header);
-        climates_available: 			NO_CLIMATE;			
+        climates_available: 			NO_CLIMATE;		
+        introduction_date:              date(1885,01,01); 	
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);		
         sprite_id:						SPRITE_ID_NEW_TRAIN;
     }

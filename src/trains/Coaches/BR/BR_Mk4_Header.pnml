@@ -44,7 +44,8 @@ switch(FEAT_TRAINS, SELF, sw_length_BR_Mk4, position_in_articulated_veh % 3) {
 item(FEAT_TRAINS, item_BR_Mk4_Header, 12160) {
     property {
         name:                           string(STR_NAME_BR_Mk4_Header);
-		climates_available: 			NO_CLIMATE;					
+		climates_available: 			NO_CLIMATE;	
+        introduction_date:              date(1989,01,01); 				
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 	}
 	graphics {	

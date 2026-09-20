@@ -21,7 +21,8 @@ switch(FEAT_TRAINS, PARENT, sw_BR_Mk1_TSO_purchase_sprite, current_year) {
 item(FEAT_TRAINS, item_BR_Mk1_Header, 12000) {
     property {
         name:                           string(STR_NAME_BR_Mk1_Header);
-		climates_available: 			NO_CLIMATE;					
+		climates_available: 			NO_CLIMATE;			
+        introduction_date:              date(1950,01,01); 		
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 	}
 	graphics {	

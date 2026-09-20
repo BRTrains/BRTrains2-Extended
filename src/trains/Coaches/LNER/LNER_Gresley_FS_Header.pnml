@@ -1,7 +1,8 @@
 item(FEAT_TRAINS, item_LNER_Gresley_FS_Header, 11508) {
     property {
         name:                           string(STR_NAME_LNER_Gresley_FS);
-		climates_available: 			NO_CLIMATE;					
+		climates_available: 			NO_CLIMATE;				
+        introduction_date:              date(1938,01,01); 	
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 	}
 	graphics {	
