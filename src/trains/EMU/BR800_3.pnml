@@ -264,9 +264,12 @@ switch(FEAT_TRAINS, SELF, sw_BR800_3_GWR_cargo_subtype_text, cargo_subtype){
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR800_3, position_in_vehid_chain % 27) {
-    0: 624 * param_pax; // all the capacity - (vehid chain number)
-    1..26: 1 * param_pax;
-    // total 650
+    0: 650 * param_pax; // all the capacity - (vehid chain number)
+        0; }
+
+switch(FEAT_TRAINS, SELF, sw_running_cost_BR800_3, tile_powers_railtype("ELRL")) {
+    1:  13331; // Electric
+        11590; // Diesel
 }
 
 // articulation switch
@@ -326,7 +329,7 @@ item (FEAT_TRAINS, item_BR800_3, 8003) {
         purchase_cargo_capacity:        return (25 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR800_3;
         cost_factor:                    478;
-        running_cost_factor:            13331;
+        running_cost_factor:            sw_running_cost_BR800_3;
         cargo_subtype_text:             sw_BR800_3_GWR_cargo_subtype_text; 
         power:                          sw_power_BR800_9car;
         colour_mapping:                 return PALETTE_CC_FIRST;

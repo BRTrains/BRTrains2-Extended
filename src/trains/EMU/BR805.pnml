@@ -144,20 +144,9 @@ switch(FEAT_TRAINS, SELF, sw_capacity_BR805, position_in_vehid_chain % 15) {
     // total
 }
 
-// speed switch
-switch(FEAT_TRAINS, SELF, sw_speed_power_BR805, tile_powers_railtype("ELRL")) {
-    0: 110; // Diesel
-    1: 125; // ELRL
-}
-
-switch(FEAT_TRAINS, SELF, sw_speed_BR805, param_max_speed) {
-    0: sw_speed_power_BR805; // operational speed
-    1: 140; // design speed
-}
-
 switch(FEAT_TRAINS, SELF, sw_running_cost_BR805, tile_powers_railtype("ELRL")) {
     1:  9903; // Electric
-        9250; // Diesel
+        9835; // Diesel
 }
 
 
@@ -215,10 +204,10 @@ item (FEAT_TRAINS, item_BR805, 8050) {
         // internal code
         length:                         sw_length_BR805;
         articulated_part:               sw_articulated_BR805;
-        speed:                          sw_speed_BR805() * 1609 / 1000;  
+        speed:                          sw_speed_BR800() * 1609 / 1000;  
         purchase_cargo_capacity:        return (20 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR805;
-        cost_factor:                    275;
+        cost_factor:                    282;
         running_cost_factor:            sw_running_cost_BR805;
         cargo_subtype_text:             sw_BR805_cargo_subtype_text; 
         power:                          sw_power_BR805;

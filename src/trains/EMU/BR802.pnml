@@ -854,29 +854,40 @@ switch(FEAT_TRAINS, SELF, sw_BR802_3_cargo_subtype_text, cargo_subtype){
 
 // capacity switch 
 switch(FEAT_TRAINS, SELF, sw_capacity_BR802_0, position_in_vehid_chain % 15) {
-    0: 312 * param_pax; // all the capacity - (vehid chain number)
-    1..14: 1 * param_pax;
-    // total 326
-}
+    0: 326 * param_pax; // all the capacity - (vehid chain number)
+    1..14: 0; }
 
 switch(FEAT_TRAINS, SELF, sw_capacity_BR802_1, position_in_vehid_chain % 27) {
-    0: 621 * param_pax; // all the capacity - (vehid chain number)
-    1..26: 1 * param_pax;
-    // total 647
-}
+    0: 647 * param_pax; // all the capacity - (vehid chain number)
+    1..26: 0; }
 
 switch(FEAT_TRAINS, SELF, sw_capacity_BR802_2, position_in_vehid_chain % 15) {
-    0: 328 * param_pax; // all the capacity - (vehid chain number)
-    1..14: 1 * param_pax;
-    // total 342
-}
+    0: 342 * param_pax; // all the capacity - (vehid chain number)
+    1..14: 0; }
 
 switch(FEAT_TRAINS, SELF, sw_capacity_BR802_3, position_in_vehid_chain % 15) {
-    0: 313 * param_pax; // all the capacity - (vehid chain number)
-    1..14: 1 * param_pax;
-    // total 327
+    0: 327 * param_pax; // all the capacity - (vehid chain number)
+    1..14: 0; }
+
+switch(FEAT_TRAINS, SELF, sw_running_cost_BR802_0, tile_powers_railtype("ELRL")) {
+    1:  9913; // Electric
+        9845; // Diesel
 }
 
+switch(FEAT_TRAINS, SELF, sw_running_cost_BR802_1, tile_powers_railtype("ELRL")) {
+    1:  13326; // Electric
+        13199; // Diesel
+}
+
+switch(FEAT_TRAINS, SELF, sw_running_cost_BR802_2, tile_powers_railtype("ELRL")) {
+    1:  9923; // Electric
+        9854; // Diesel
+}
+
+switch(FEAT_TRAINS, SELF, sw_running_cost_BR802_3, tile_powers_railtype("ELRL")) {
+    1:  9923; // Electric
+        9845; // Diesel
+}
 
 // articulation switch
 switch(FEAT_TRAINS, SELF, sw_articulated_BR802_0, extra_callback_info1) {
@@ -934,8 +945,8 @@ item (FEAT_TRAINS, item_BR802_0, 8020) {
         speed:                          sw_speed_BR800() * 1609 / 1000;  
         purchase_cargo_capacity:        return (21 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR802_0;
-        cost_factor:                    286;
-        running_cost_factor:            9913;
+        cost_factor:                    293;
+        running_cost_factor:            sw_running_cost_BR802_0;
         cargo_subtype_text:             sw_BR802_0_1_GWR_cargo_subtype_text; 
         power:                          sw_power_BR802_5car;
         colour_mapping:                 return PALETTE_CC_FIRST;
@@ -1002,8 +1013,8 @@ item (FEAT_TRAINS, item_BR802_1, 8021) {
         speed:                          sw_speed_BR800() * 1609 / 1000;  
         purchase_cargo_capacity:        return (23 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR802_1;
-        cost_factor:                    477;
-        running_cost_factor:            13326;
+        cost_factor:                    489;
+        running_cost_factor:            sw_running_cost_BR802_1;
         cargo_subtype_text:             sw_BR802_0_1_GWR_cargo_subtype_text; 
         power:                          sw_power_BR802_9car;
         colour_mapping:                 return PALETTE_CC_FIRST;
@@ -1069,8 +1080,8 @@ item (FEAT_TRAINS, item_BR802_2, 8022) {
         speed:                          sw_speed_BR800() * 1609 / 1000;  
         purchase_cargo_capacity:        return (22 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR802_2;
-        cost_factor:                    293;
-        running_cost_factor:            9923;
+        cost_factor:                    300;
+        running_cost_factor:            sw_running_cost_BR802_2;
         cargo_subtype_text:             sw_BR802_2_cargo_subtype_text; 
         power:                          sw_power_BR802_5car;
         colour_mapping:                 return PALETTE_CC_FIRST;
@@ -1136,8 +1147,8 @@ item (FEAT_TRAINS, item_BR802_3, 8023) {
         speed:                          sw_speed_BR800() * 1609 / 1000;  
         purchase_cargo_capacity:        return (21 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR802_3;
-        cost_factor:                    286;
-        running_cost_factor:            9913;
+        cost_factor:                    294;
+        running_cost_factor:            sw_running_cost_BR802_3;
         cargo_subtype_text:             sw_BR802_3_cargo_subtype_text; 
         power:                          sw_power_BR802_5car;
         colour_mapping:                 return PALETTE_CC_FIRST;
