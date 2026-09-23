@@ -244,6 +244,7 @@ str_coach_RFK                   :{PURPLE}Restaurant First Kitchen
 str_coach_RK                    :{PURPLE}Kitchen Car
 str_coach_RKB                   :{PURPLE}Kitchen Buffet (no seats)
 str_coach_RLB                   :{PURPLE}Restaurant Lounge First Buffet
+str_coach_RLO                   :{PURPLE}Restaurant Lounge Open
 str_coach_RMB                   :{PURPLE}Restaurant Miniature Buffet
 str_coach_RMBT                  :{PURPLE}Micro Buffet
 str_coach_RS                    :{PURPLE}Restaurant Second
@@ -260,6 +261,7 @@ str_coach_SLB                   :{GREEN}Bullion Van
 str_coach_SLC                   :{DKGREEN}Sleeper Composite
 str_coach_SLCP                  :{DKGREEN}Sleeper Composite with Pantry
 str_coach_SLE                   :{DKGREEN}Sleeper Either Class
+str_coach_SLED                  :{DKGREEN}Sleeper Either Class, Disabled
 str_coach_SLEP                  :{DKGREEN}Sleeper Either Class with Pantry
 str_coach_SLF                   :{DKGREEN}Sleeper First
 str_coach_SLO                   :{BLUE}Open Second with Lavatory (Non-gangwayed)
@@ -1359,8 +1361,13 @@ str_BR_Mk4_liveries			    :InterCity, National Express, GNER, East Coast, Virgin
 
 STR_NAME_BRMk5_Header			:BR Mark 5 Coaches
 
-STR_NAME_BRMk5Sleeper			:BR Mark 5 Sleeper Coach
-str_BRMk5Sleeper_liveries		:Caledonian Sleaper
+STR_NAME_BR_Mk5CS_Header	    :BR Mark 5 Sleeper Coaches
+STR_NAME_BR_Mk5CS_BSO           :BR Mark 5 Sleeper Coach (BSO)
+STR_NAME_BR_Mk5CS_RLO           :BR Mark 5 Sleeper Coach (RLO)
+STR_NAME_BR_Mk5CS_SLC           :BR Mark 5 Sleeper Coach (SLC)
+STR_NAME_BR_Mk5CS_SLED          :BR Mark 5 Sleeper Coach (SLED)
+STR_NAME_BR_Mk5CS_Single        :BR Mark 5 Sleeper Train Set (Single PRM Set)
+STR_NAME_BR_Mk5CS_Double        :BR Mark 5 Sleeper Train Set (Double PRM Set)
 
 STR_NAME_BR_Mk5A_Nova3          :BR Mark 5a Train Set "Nova 3"
 STR_NAME_BR_Mk5A_Chiltern       :BR Mark 5a Train Set "Chiltern Explorer"

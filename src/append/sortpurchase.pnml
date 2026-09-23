@@ -266,6 +266,13 @@ sort(FEAT_TRAINS, [
         item_BR_Mk4_TS,
         item_BR_Mk4_TSD,
         item_BR_Mk4_TSE,
+    item_BR_Mk5CS_Header,
+        item_BR_Mk5CS_BSO,
+        item_BR_Mk5CS_RLO,
+        item_BR_Mk5CS_SLC,
+        item_BR_Mk5CS_SLED,
+        item_BR_Mk5CS_Single,
+        item_BR_Mk5CS_Double,
     item_BR_Mk5A_Nova3,
     // Generic Wagons
     item_RCH_1907_Mixed,

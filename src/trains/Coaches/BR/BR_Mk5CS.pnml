@@ -1,0 +1,549 @@
+// basic sprite
+spriteset(spriteset_BR_Mk5CS_BSO_CaledonianSleeper, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_BSO_CaledonianSleeper_4x_32bpp.png", "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_BSO_CaledonianSleeper_4x_mask.png")
+    { template_148trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR_Mk5CS_BSO_CaledonianSleeper_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_BSO_CaledonianSleeper_1x_32bpp.png", "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_BSO_CaledonianSleeper_1x_mask.png")
+    { template_purchase(0,0) }
+
+spriteset(spriteset_BR_Mk5CS_BSO_CaledonianSleeper_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_BSO_CaledonianSleeper_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_BSO_CaledonianSleeper_Loading_4x_mask.png")
+    { template_148trains_4x(0,0) }
+
+// loading sprite
+spritegroup spritegroup_BR_Mk5CS_BSO_CaledonianSleeper_Loading {  
+    loaded: [spriteset_empty];
+    loading: [spriteset_BR_Mk5CS_BSO_CaledonianSleeper_Loading]; }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk5CS_BSO_CaledonianSleeper, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR_Mk5CS_BSO_CaledonianSleeper;
+    1: spritegroup_BR_Mk5CS_BSO_CaledonianSleeper_Loading; }
+
+// basic sprite
+spriteset(spriteset_BR_Mk5CS_RLO_CaledonianSleeper, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_RLO_CaledonianSleeper_4x_32bpp.png", "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_RLO_CaledonianSleeper_4x_mask.png")
+    { template_148trains_4x(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk5CS_RLO_CaledonianSleeper, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR_Mk5CS_RLO_CaledonianSleeper;
+    1: spritegroup_BR_Mk5CS_BSO_CaledonianSleeper_Loading; }
+
+// purchase sprite
+spriteset(spriteset_BR_Mk5CS_RLO_CaledonianSleeper_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_RLO_CaledonianSleeper_1x_32bpp.png", "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_RLO_CaledonianSleeper_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_Mk5CS_SLC_CaledonianSleeper, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_SLC_CaledonianSleeper_4x_32bpp.png", "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_SLC_CaledonianSleeper_4x_mask.png")
+    { template_148trains_4x(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk5CS_SLC_CaledonianSleeper, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR_Mk5CS_SLC_CaledonianSleeper;
+    1: spritegroup_BR_Mk5CS_BSO_CaledonianSleeper_Loading; }
+
+// purchase sprite
+spriteset(spriteset_BR_Mk5CS_SLC_CaledonianSleeper_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_SLC_CaledonianSleeper_1x_32bpp.png", "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_SLC_CaledonianSleeper_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_Mk5CS_SLED_CaledonianSleeper, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_SLED_CaledonianSleeper_4x_32bpp.png", "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_SLED_CaledonianSleeper_4x_mask.png")
+    { template_148trains_4x(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk5CS_SLED_CaledonianSleeper, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR_Mk5CS_SLED_CaledonianSleeper;
+    1: spritegroup_BR_Mk5CS_BSO_CaledonianSleeper_Loading; }
+
+// purchase sprite
+spriteset(spriteset_BR_Mk5CS_SLED_CaledonianSleeper_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_SLED_CaledonianSleeper_1x_32bpp.png", "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_SLED_CaledonianSleeper_1x_mask.png")
+    { template_purchase(0,0) }
+
+// unit definition
+item (FEAT_TRAINS, item_BR_Mk5CS_Header, 12180) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR_Mk5CS_Header);
+        climates_available:             NO_CLIMATE;
+        introduction_date:              date(2016,01,01); 
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+    }
+
+    graphics {
+        // graphics
+        purchase:                       spriteset_BR_Mk5CS_SLC_CaledonianSleeper_purchase;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+    }
+}
+
+
+
+// livery name refit switch
+switch(FEAT_TRAINS, SELF, sw_BR_Mk5CS_cargo_subtype_text, cargo_subtype){
+	0:	string(STR_LIVERY, string(str_Caledonian));
+        CB_RESULT_NO_TEXT; }
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_BR_Mk5CS, position_in_articulated_veh % 3) {
+	1: 6;
+	    4; }
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk5CS_BSO, cargo_subtype) {
+    0: sw_loadstack_BR_Mk5CS_BSO_CaledonianSleeper; }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_BR_Mk5CS_BSO, position_in_articulated_veh % 3) {
+	1:  sw_livery_BR_Mk5CS_BSO;
+	    spriteset_empty; }
+
+// capacity switch
+switch(FEAT_TRAINS, SELF, sw_capacity_BR_Mk5CS_BSO, position_in_vehid_chain % 3) {
+    0: 29 * param_pax; // all the capacity - (vehid chain number)
+        1 * param_pax; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR_Mk5CS_BSO, extra_callback_info1) {
+	1..2:item_BR_Mk5CS_BSO;
+		CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+
+// unit definition
+item (FEAT_TRAINS, item_BR_Mk5CS_BSO, 12181) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR_Mk5CS_BSO);
+        variant_group:                  item_BR_Mk5CS_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2016,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		refittable_cargo_classes:        bitmask(CC_PASSENGERS);
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [PASS, TOUR];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        loading_speed:				    10; // First Class / Restaurant
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        weight:                         43 ton;
+        dual_headed:                    0;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_BR_Mk5CS_BSO;
+        purchase:                       spriteset_BR_Mk5CS_BSO_CaledonianSleeper_purchase;
+
+        // internal code
+        length:                         sw_length_BR_Mk5CS;
+        articulated_part:               sw_articulated_BR_Mk5CS_BSO;
+        purchase_cargo_capacity:        return (10 * param_pax); // divide by number of articulated parts and floor
+        cargo_capacity:                 sw_capacity_BR_Mk5CS_BSO;
+        cost_factor:                    894;
+        running_cost_factor:            1565;
+        cargo_subtype_text:             sw_BR_Mk5CS_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return(	string(str_purchase_coach,
+                                                string(str_coach_BSO)));
+    }
+}
+
+
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk5CS_RLO, cargo_subtype) {
+    0: sw_loadstack_BR_Mk5CS_RLO_CaledonianSleeper; }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_BR_Mk5CS_RLO, position_in_articulated_veh % 3) {
+	1:  sw_livery_BR_Mk5CS_RLO;
+	    spriteset_empty; }
+
+// capacity switch
+switch(FEAT_TRAINS, SELF, sw_capacity_BR_Mk5CS_RLO, position_in_vehid_chain % 3) {
+    0: 28 * param_pax; // all the capacity - (vehid chain number)
+        1 * param_pax; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR_Mk5CS_RLO, extra_callback_info1) {
+	1..2:item_BR_Mk5CS_RLO;
+		CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+
+// unit definition
+item (FEAT_TRAINS, item_BR_Mk5CS_RLO, 12182) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR_Mk5CS_RLO);
+        variant_group:                  item_BR_Mk5CS_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2016,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		refittable_cargo_classes:        bitmask(CC_PASSENGERS);
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [PASS, TOUR];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        loading_speed:				    10; // First Class / Restaurant
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        weight:                         43 ton;
+        dual_headed:                    0;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_BR_Mk5CS_RLO;
+        purchase:                       spriteset_BR_Mk5CS_RLO_CaledonianSleeper_purchase;
+
+        // internal code
+        length:                         sw_length_BR_Mk5CS;
+        articulated_part:               sw_articulated_BR_Mk5CS_RLO;
+        purchase_cargo_capacity:        return (10 * param_pax); // divide by number of articulated parts and floor
+        cargo_capacity:                 sw_capacity_BR_Mk5CS_RLO;
+        cost_factor:                    882;
+        running_cost_factor:            1565;
+        cargo_subtype_text:             sw_BR_Mk5CS_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return(	string(str_purchase_coach,
+                                                string(str_coach_RLO)));
+    }
+}
+
+
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk5CS_SLC, cargo_subtype) {
+    0: sw_loadstack_BR_Mk5CS_SLC_CaledonianSleeper; }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_BR_Mk5CS_SLC, position_in_articulated_veh % 3) {
+	1:  sw_livery_BR_Mk5CS_SLC;
+	    spriteset_empty; }
+
+// capacity switch
+switch(FEAT_TRAINS, SELF, sw_capacity_BR_Mk5CS_SLC, position_in_vehid_chain % 3) {
+    0: 20 * param_pax; // all the capacity - (vehid chain number)
+        1 * param_pax; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR_Mk5CS_SLC, extra_callback_info1) {
+	1..2:item_BR_Mk5CS_SLC;
+		CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+
+// unit definition
+item (FEAT_TRAINS, item_BR_Mk5CS_SLC, 12183) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR_Mk5CS_SLC);
+        variant_group:                  item_BR_Mk5CS_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2016,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		refittable_cargo_classes:        bitmask(CC_PASSENGERS);
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [PASS, TOUR];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        loading_speed:				    10; // First Class / Restaurant
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        weight:                         43 ton;
+        dual_headed:                    0;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_BR_Mk5CS_SLC;
+        purchase:                       spriteset_BR_Mk5CS_SLC_CaledonianSleeper_purchase;
+
+        // internal code
+        length:                         sw_length_BR_Mk5CS;
+        articulated_part:               sw_articulated_BR_Mk5CS_SLC;
+        purchase_cargo_capacity:        return (7 * param_pax); // divide by number of articulated parts and floor
+        cargo_capacity:                 sw_capacity_BR_Mk5CS_SLC;
+        cost_factor:                    783;
+        running_cost_factor:            1536;
+        cargo_subtype_text:             sw_BR_Mk5CS_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return(	string(str_purchase_coach,
+                                                string(str_coach_SLC)));
+    }
+}
+
+
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk5CS_SLED, cargo_subtype) {
+    0: sw_loadstack_BR_Mk5CS_SLED_CaledonianSleeper; }
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_BR_Mk5CS_SLED, position_in_articulated_veh % 3) {
+	1:  sw_livery_BR_Mk5CS_SLED;
+	    spriteset_empty; }
+
+// capacity switch
+switch(FEAT_TRAINS, SELF, sw_capacity_BR_Mk5CS_SLED, position_in_vehid_chain % 3) {
+    0: 10 * param_pax; // all the capacity - (vehid chain number)
+        1 * param_pax; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR_Mk5CS_SLED, extra_callback_info1) {
+	1..2:item_BR_Mk5CS_SLED;
+		CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+
+// unit definition
+item (FEAT_TRAINS, item_BR_Mk5CS_SLED, 12184) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR_Mk5CS_SLED);
+        variant_group:                  item_BR_Mk5CS_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2016,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		refittable_cargo_classes:        bitmask(CC_PASSENGERS);
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [PASS, TOUR];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        loading_speed:				    10; // First Class / Restaurant
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        weight:                         43 ton;
+        dual_headed:                    0;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_BR_Mk5CS_SLED;
+        purchase:                       spriteset_BR_Mk5CS_SLED_CaledonianSleeper_purchase;
+
+        // internal code
+        length:                         sw_length_BR_Mk5CS;
+        articulated_part:               sw_articulated_BR_Mk5CS_SLED;
+        purchase_cargo_capacity:        return (4 * param_pax); // divide by number of articulated parts and floor
+        cargo_capacity:                 sw_capacity_BR_Mk5CS_SLED;
+        cost_factor:                    660;
+        running_cost_factor:            1501;
+        cargo_subtype_text:             sw_BR_Mk5CS_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return(	string(str_purchase_coach,
+                                                string(str_coach_SLED)));
+    }
+}
+
+switch(FEAT_TRAINS, SELF, sw_graphics_BR_Mk5CS_Single_CaledonianSleeper, position_in_articulated_veh % 24) {
+    1:  sw_loadstack_BR_Mk5CS_SLC_CaledonianSleeper;
+    4:  sw_loadstack_BR_Mk5CS_SLC_CaledonianSleeper;
+    7:  sw_loadstack_BR_Mk5CS_SLC_CaledonianSleeper;
+    10: sw_loadstack_BR_Mk5CS_SLC_CaledonianSleeper;
+    13: sw_loadstack_BR_Mk5CS_SLC_CaledonianSleeper;
+    16: sw_loadstack_BR_Mk5CS_SLED_CaledonianSleeper;
+    19: sw_loadstack_BR_Mk5CS_RLO_CaledonianSleeper;
+    22: sw_loadstack_BR_Mk5CS_BSO_CaledonianSleeper;
+        spriteset_empty; }  
+        
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk5CS_Single, cargo_subtype) {
+    0: sw_graphics_BR_Mk5CS_Single_CaledonianSleeper; }
+
+// capacity switch
+switch(FEAT_TRAINS, SELF, sw_capacity_BR_Mk5CS_Single, position_in_vehid_chain % 24) {
+    0:  160 * param_pax; // all the capacity - (vehid chain number)
+        1 * param_pax; // total 183
+}
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR_Mk5CS_Single, extra_callback_info1) {
+	1..23: item_BR_Mk5CS_Single;
+		CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+
+// unit definition
+item (FEAT_TRAINS, item_BR_Mk5CS_Single, 12185) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR_Mk5CS_Single);
+        variant_group:                  item_BR_Mk5CS_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2016,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		refittable_cargo_classes:        bitmask(CC_PASSENGERS);
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [PASS, TOUR];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        loading_speed:				    80; // First Class / Restaurant
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        weight:                         344 ton;
+        dual_headed:                    0;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_livery_BR_Mk5CS_Single;
+        purchase:                       spriteset_BR_Mk5CS_SLC_CaledonianSleeper_purchase;
+
+        // internal code
+        length:                         sw_length_BR_Mk5CS;
+        articulated_part:               sw_articulated_BR_Mk5CS_Single;
+        purchase_cargo_capacity:        return (7 * param_pax); // divide by number of articulated parts and floor
+        cargo_capacity:                 sw_capacity_BR_Mk5CS_Single;
+        cost_factor:                    2775;
+        running_cost_factor:            2087;
+        cargo_subtype_text:             sw_BR_Mk5CS_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+    }
+}
+
+
+
+switch(FEAT_TRAINS, SELF, sw_graphics_BR_Mk5CS_Double_CaledonianSleeper, position_in_articulated_veh % 24) {
+    1:  sw_loadstack_BR_Mk5CS_SLC_CaledonianSleeper;
+    4:  sw_loadstack_BR_Mk5CS_SLC_CaledonianSleeper;
+    7:  sw_loadstack_BR_Mk5CS_SLC_CaledonianSleeper;
+    10: sw_loadstack_BR_Mk5CS_SLC_CaledonianSleeper;
+    13: sw_loadstack_BR_Mk5CS_SLC_CaledonianSleeper;
+    16: sw_loadstack_BR_Mk5CS_SLED_CaledonianSleeper;
+    19: sw_loadstack_BR_Mk5CS_RLO_CaledonianSleeper;
+    22: sw_loadstack_BR_Mk5CS_BSO_CaledonianSleeper;
+        spriteset_empty; }  
+        
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk5CS_Double, cargo_subtype) {
+    0: sw_graphics_BR_Mk5CS_Double_CaledonianSleeper; }
+
+// capacity switch
+switch(FEAT_TRAINS, SELF, sw_capacity_BR_Mk5CS_Double, position_in_vehid_chain % 24) {
+    0:  150 * param_pax; // all the capacity - (vehid chain number)
+        1 * param_pax; // total 173
+}
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR_Mk5CS_Double, extra_callback_info1) {
+	1..23: item_BR_Mk5CS_Double;
+		CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+
+// unit definition
+item (FEAT_TRAINS, item_BR_Mk5CS_Double, 12186) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR_Mk5CS_Double);
+        variant_group:                  item_BR_Mk5CS_Header; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_DISABLE_NEW_VEHICLE_MESSAGE, VEHICLE_FLAG_DISABLE_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_EXCLUSIVE_PREVIEW, VEHICLE_FLAG_SYNC_VARIANT_RELIABILITY);
+
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2016,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		refittable_cargo_classes:        bitmask(CC_PASSENGERS);
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [PASS, TOUR];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        loading_speed:				    80; // First Class / Restaurant
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        weight:                         344 ton;
+        dual_headed:                    0;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_livery_BR_Mk5CS_Double;
+        purchase:                       spriteset_BR_Mk5CS_SLC_CaledonianSleeper_purchase;
+
+        // internal code
+        length:                         sw_length_BR_Mk5CS;
+        articulated_part:               sw_articulated_BR_Mk5CS_Double;
+        purchase_cargo_capacity:        return (7 * param_pax); // divide by number of articulated parts and floor
+        cargo_capacity:                 sw_capacity_BR_Mk5CS_Double;
+        cost_factor:                    2652;
+        running_cost_factor:            2052;
+        cargo_subtype_text:             sw_BR_Mk5CS_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+    }
+}
+
