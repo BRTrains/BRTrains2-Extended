@@ -139,9 +139,8 @@ switch(FEAT_TRAINS, SELF, sw_length_BR805, position_in_articulated_veh % 15) {
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR805, position_in_vehid_chain % 15) {
-    0: 301 * param_pax; // all the capacity - (vehid chain number)
-        0;
-    // total
+    0: 287 * param_pax; // all the capacity - (vehid chain number)
+    1..14: 1 * param_pax; // total 301
 }
 
 switch(FEAT_TRAINS, SELF, sw_running_cost_BR805, tile_powers_railtype("ELRL")) {
@@ -318,10 +317,9 @@ switch(FEAT_TRAINS, SELF, sw_length_BR807, position_in_articulated_veh % 21) {
         4; }
 
 // capacity switch
-switch(FEAT_TRAINS, SELF, sw_capacity_BR807, position_in_vehid_chain % 3) {
-    0: 453  * param_pax; // all the capacity - (vehid chain number)
-        0;
-    // total
+switch(FEAT_TRAINS, SELF, sw_capacity_BR807, position_in_vehid_chain % 20) {
+    0: 434  * param_pax; // all the capacity - (vehid chain number)
+    1..19: 1 * param_pax; // total 453
 }
 
 // articulation switch

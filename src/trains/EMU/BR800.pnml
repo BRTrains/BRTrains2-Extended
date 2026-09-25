@@ -459,8 +459,9 @@ switch(FEAT_TRAINS, SELF, sw_length_BR800_9car, position_in_articulated_veh % 27
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR800_0, position_in_vehid_chain % 15) {
-    0: 326 * param_pax; // all the capacity - (vehid chain number)
-        0; }
+    0: 312 * param_pax; // all the capacity - (vehid chain number)
+    1..14: 1 * param_pax; // total 326
+}
 
 switch(FEAT_TRAINS, SELF, sw_speed_BR800, param_max_speed) {
     0: 125; // operational speed
@@ -539,8 +540,9 @@ item (FEAT_TRAINS, item_BR800_0, 8000) {
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR800_1, position_in_vehid_chain % 27) {
-    0: 596 * param_pax; // all the capacity - (vehid chain number)
-        0; }
+    0: 556 * param_pax; // all the capacity - (vehid chain number)
+    1..26: 1 * param_pax; // total 556
+}
 
 switch(FEAT_TRAINS, SELF, sw_running_cost_BR800_1, tile_powers_railtype("ELRL")) {
     1:  13302; // Electric
@@ -615,8 +617,9 @@ item (FEAT_TRAINS, item_BR800_1, 8001) {
 
 // capacity switch
 switch(FEAT_TRAINS, SELF, sw_capacity_BR800_2, position_in_vehid_chain % 15) {
-    0: 302 * param_pax; // all the capacity - (vehid chain number)
-        0; }
+    0: 288 * param_pax; // all the capacity - (vehid chain number)
+    1..14: 1 * param_pax; // total 302
+}
 
 switch(FEAT_TRAINS, SELF, sw_running_cost_BR800_2, tile_powers_railtype("ELRL")) {
     1:  13331; // Electric

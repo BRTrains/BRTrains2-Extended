@@ -854,20 +854,24 @@ switch(FEAT_TRAINS, SELF, sw_BR802_3_cargo_subtype_text, cargo_subtype){
 
 // capacity switch 
 switch(FEAT_TRAINS, SELF, sw_capacity_BR802_0, position_in_vehid_chain % 15) {
-    0: 326 * param_pax; // all the capacity - (vehid chain number)
-    1..14: 0; }
+    0: 312 * param_pax; // all the capacity - (vehid chain number)
+    1..14: 1 * param_pax; // total 326
+}
 
 switch(FEAT_TRAINS, SELF, sw_capacity_BR802_1, position_in_vehid_chain % 27) {
-    0: 647 * param_pax; // all the capacity - (vehid chain number)
-    1..26: 0; }
+    0: 621 * param_pax; // all the capacity - (vehid chain number)
+    1..26: 1 * param_pax; // total 647
+}
 
 switch(FEAT_TRAINS, SELF, sw_capacity_BR802_2, position_in_vehid_chain % 15) {
-    0: 342 * param_pax; // all the capacity - (vehid chain number)
-    1..14: 0; }
+    0: 307 * param_pax; // all the capacity - (vehid chain number)
+    1..14: 1 * param_pax; // total 321
+}
 
 switch(FEAT_TRAINS, SELF, sw_capacity_BR802_3, position_in_vehid_chain % 15) {
-    0: 327 * param_pax; // all the capacity - (vehid chain number)
-    1..14: 0; }
+    0: 313 * param_pax; // all the capacity - (vehid chain number)
+    1..14: 1 * param_pax; // total 327
+}
 
 switch(FEAT_TRAINS, SELF, sw_running_cost_BR802_0, tile_powers_railtype("ELRL")) {
     1:  9913; // Electric
