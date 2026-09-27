@@ -1,0 +1,208 @@
+
+// basic sprite
+spriteset(spriteset_BR92_CaledonianSleeper, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_CaledonianSleeper_4x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_CaledonianSleeper_4x_mask.png")
+    { template_138trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR92_CaledonianSleeper_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_CaledonianSleeper_1x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_CaledonianSleeper_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR92_DBSchenker, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_DBSchenker_4x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_DBSchenker_4x_mask.png")
+    { template_138trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR92_EWS, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_EWS_4x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_EWS_4x_mask.png")
+    { template_138trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR92_EWS_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_EWS_1x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_EWS_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR92_GBRf, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_GBRf_4x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_GBRf_4x_mask.png")
+    { template_138trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR92_GBRf_Europorte, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_GBRf_Europorte_4x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_GBRf_Europorte_4x_mask.png")
+    { template_138trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR92_GBRf_Europorte_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_GBRf_Europorte_1x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_GBRf_Europorte_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR92_Railfreight_Distribution, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_Railfreight_Distribution_4x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_Railfreight_Distribution_4x_mask.png")
+    { template_138trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR92_Railfreight_Distribution_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_Railfreight_Distribution_1x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_Railfreight_Distribution_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR92_Railfreight_TripleGrey, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_Railfreight_TripleGrey_4x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_Railfreight_TripleGrey_4x_mask.png")
+    { template_138trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR92_Railfreight_TripleGrey_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_Railfreight_TripleGrey_1x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_Railfreight_TripleGrey_1x_mask.png")
+    { template_purchase(0,0) }
+
+// pantograph sprite
+spriteset(spriteset_BR92_panto_up, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_panto_up_4x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_panto_up_4x_mask.png")
+    { template_138trains_4x(0,0) }
+
+spriteset(spriteset_BR92_panto_down, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_panto_down_4x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_panto_down_4x_mask.png")
+    { template_138trains_4x(0,0) }
+
+spriteset(spriteset_BR92_panto_down_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_panto_down_1x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_panto_down_1x_mask.png")
+    { template_purchase(0,0) }
+
+    
+// dual mode switches
+switch(FEAT_TRAINS, PARENT, sw_BR92_purchase_sprite, current_year) {
+    1993..1998: spriteset_BR92_Railfreight_TripleGrey_purchase;
+    1999..2010: spriteset_BR92_EWS_purchase;
+    2011..2014: spriteset_BR92_GBRf_Europorte_purchase;
+    2015..2030: spriteset_BR92_CaledonianSleeper_purchase;
+        spriteset_BR92_Railfreight_TripleGrey_purchase; }
+
+switch(FEAT_TRAINS, SELF, sw_spritestack_BR92_purchase, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
+    0: sw_BR92_purchase_sprite;
+    1: spriteset_BR92_panto_down_purchase; }
+							
+switch(FEAT_TRAINS, PARENT, sw_panto_BR92, tile_powers_railtype("ELRL")) {
+    1:  spriteset_BR92_panto_up;
+        spriteset_BR92_panto_down; }	
+        
+switch(FEAT_TRAINS, PARENT, sw_power_BR92, tile_powers_railtype("ELRL")){
+    1:  6760;
+        5360; }
+
+// FX effects
+switch(FEAT_TRAINS, SELF, sw_FX_BR92_OHLE, position_in_vehid_chain % 3) { // front catenary
+    0:  electric_create_visual_effect;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+
+switch(FEAT_TRAINS, SELF, sw_FX_BR92_SAA3, position_in_vehid_chain % 3) {
+    0:  electric_create_visual_effect_SAA3;
+    2:  electric_create_visual_effect_SAA3;
+        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); }
+
+switch(FEAT_TRAINS, SELF, sw_FX_BR92_Electric, tile_powers_railtype("ELRL")) {
+    1:  sw_FX_BR92_OHLE;
+        sw_FX_BR92_SAA3; }
+
+
+// livery switch
+switch(FEAT_TRAINS, SELF, sw_livery_BR92, cargo_subtype) {
+    0: spriteset_BR92_Railfreight_TripleGrey;
+    1: spriteset_BR92_Railfreight_Distribution;
+    2: spriteset_BR92_EWS;
+    3: spriteset_BR92_DBSchenker;
+    4: spriteset_BR92_GBRf;
+    5: spriteset_BR92_GBRf_Europorte;
+    6: spriteset_BR92_CaledonianSleeper; }
+
+switch(FEAT_TRAINS, SELF, sw_spritestack_BR92, [STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8)]) {
+    0: sw_livery_BR92;
+    1: sw_panto_BR92; }
+
+// livery name refit switch
+switch(FEAT_TRAINS, SELF, sw_BR92_cargo_subtype_text, cargo_subtype){
+	0:	string(STR_LIVERY_DESC, string(str_Railfreight), string(str_Railfreight_TripleGrey));
+    1:  string(STR_LIVERY_EXTENDED, string(str_Railfreight), string(str_Railfreight_TripleGrey), string(str_Railfreight_Distribution));
+    2:  string(STR_LIVERY_DESC, string(str_EWS), string(str_EWS_Red));
+    3:  string(STR_LIVERY, string(str_DBSchenker));
+    4:  string(STR_LIVERY_DESC, string(str_GBRf), string(str_col_Blue));
+    5:  string(STR_LIVERY_EXTENDED, string(str_GBRf), string(str_col_Blue), string(str_GBRf_Europorte));
+    6:  string(STR_LIVERY, string(str_Caledonian));
+        CB_RESULT_NO_TEXT;
+}
+
+
+// graphics switch
+switch(FEAT_TRAINS, SELF, sw_graphics_BR92, position_in_articulated_veh % 3) {
+	1:  sw_spritestack_BR92;
+	    spriteset_empty; }
+
+// length switch
+switch(FEAT_TRAINS, SELF, sw_length_BR92, position_in_articulated_veh % 3) {
+	1: 5;
+	    4; }
+
+// speed switch
+switch(FEAT_TRAINS, SELF, sw_speed_BR92, param_max_speed) {
+    0: 140; // operational speed
+    1: 160; // design speed
+}
+
+switch(FEAT_TRAINS, SELF, sw_running_cost_BR92, tile_powers_railtype("ELRL")) {
+    1:  14955;
+        12736; }
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, sw_articulated_BR92, extra_callback_info1) {
+	1..2:   item_BR92;
+		    CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+
+// unit definition
+item (FEAT_TRAINS, item_BR92, 9200) {
+    property {
+        // common properties
+        name:                           string(STR_NAME_BR92);
+        // variant_group:                  ; // unit ID or item
+		extra_flags:                    bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);
+
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1993,01,01); 
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+        
+		// refittable_cargo_classes:        bitmask(CC_PASSENGERS);
+        // non_refittable_cargo_classes:    bitmask();
+        cargo_allow_refit:               [PASS, GOOD];
+        // cargo_disallow_refit:            [LVST];
+        misc_flags: 					bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 1;
+        loading_speed:					15; // Standard Class
+        running_cost_base:			    RUNNING_COST_STEAM;		
+
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          140;
+        refit_cost:                     0;
+        track_type:                     [ELRL, BR_3RDR]; // custom track type defined
+        power:                          6760 hp;
+        weight:                         126 ton;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        dual_headed:                    0;
+        air_drag_coefficient:           0.07;
+        tractive_effort_coefficient:    0.29;
+        length:                         8;
+    }
+
+    graphics {
+        // graphics
+        default:                        sw_graphics_BR92;
+        // visual_effect_and_powered:      sw_FX_BR92_Electric;
+        purchase:                       sw_spritestack_BR92_purchase; // For dual mode units
+        sound_effect:                   sw_sound_electric_88;
+
+        // internal code
+        length:                         sw_length_BR92;
+        articulated_part:               sw_articulated_BR92;
+        speed:                          sw_speed_BR92;  
+        purchase_cargo_capacity:        0;
+        cargo_capacity:                 0;
+        cost_factor:                    267;
+        running_cost_factor:            sw_running_cost_BR92;
+        cargo_subtype_text:             sw_BR92_cargo_subtype_text; 
+        power:                          sw_power_BR92;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+        // colour_mapping:                 switch_generic_recolour;
+    }
+}
+

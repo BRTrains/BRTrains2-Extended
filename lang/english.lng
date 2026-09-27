@@ -716,6 +716,8 @@ STR_NAME_BR91_IC225				:BR Class 91 "InterCity 225" (10-car)
 STR_NAME_BR91_IC225_P           :BR Class 91 "InterCity 225 Pullman" (9-car)
 str_BR91_liveries				:InterCity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
+STR_NAME_BR92                   :BR Class 92
+
 STR_NAME_BR93					:BR Class 93 (Tri-Mode)
 str_BR93_liveries				:DRS
 
@@ -1690,12 +1692,13 @@ str_GatEx                       :Gatwick Express
 
 str_GBRf                        :GBRf
 str_GBRf_Long                   :GB Railfreight
+str_GBRf_Barbie                 :Barbie
+str_GBRf_EveningStar            :Evening Star
+str_GBRf_Europorte              :Europorte
+str_GBRf_HB                     :"Harry Beck"
+str_GBRf_HS2                    :HS2
 str_GBRf_TfLWhite               :London Underground 150 Years - White
 str_GBRf_TfLBlack               :London Underground 150 Years - Black
-str_GBRf_HB                     :"Harry Beck"
-str_GBRf_Barbie                 :Barbie
-str_GBRf_HS2                    :HS2
-str_GBRf_EveningStar            :Evening Star
 
 str_GC                          :Grand Central
 str_GCR                         :GCR
