@@ -111,6 +111,7 @@ sort(FEAT_TRAINS, [
     item_BR91,
         item_BR91_IC225,
         item_BR91_IC225_P,
+    item_BR92,
     // BR DMUs
     item_BR101,
         item_BR101_3,
