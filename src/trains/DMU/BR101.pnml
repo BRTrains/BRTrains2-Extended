@@ -1354,7 +1354,7 @@ switch(FEAT_TRAINS, SELF, sw_BR101_cargo_subtype_text, cargo_subtype){
     1:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Green), string(str_BR_YellowPanel));
     2:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Blue), string(str_BR_YellowPanel));
     3:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_col_Blue), string(str_BR_YellowFront));
-    4:  string(STR_LIVERY_EXTENDED, string(str_BR), string(str_BR_BlueGrey));
+    4:  string(STR_LIVERY_DESC, string(str_BR), string(str_BR_BlueGrey));
     5:  string(STR_LIVERY, string(str_Regional));
     6:  string(STR_LIVERY_DESC, string(str_SPT), string(str_col_Orange));
     7:  string(STR_LIVERY, string(str_NSE));
