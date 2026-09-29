@@ -1810,6 +1810,7 @@ str_PLA                         :Port of London Authority
 str_Police                      :Police
 str_PPMProto                    :Parry People Mover - Prototype
 str_Porterbrook                 :Porterbrook
+str_Pullman                     :Pullman
 str_RailAdventure               :RailAdventure
 str_Railtrack                   :Railtrack
 
