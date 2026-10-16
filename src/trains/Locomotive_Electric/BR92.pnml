@@ -187,7 +187,7 @@ item (FEAT_TRAINS, item_BR92, 9200) {
     graphics {
         // graphics
         default:                        sw_graphics_BR92;
-        // visual_effect_and_powered:      sw_FX_BR92_Electric;
+        visual_effect_and_powered:      sw_FX_BR92_Electric;
         purchase:                       sw_spritestack_BR92_purchase; // For dual mode units
         sound_effect:                   sw_sound_electric_88;
 
