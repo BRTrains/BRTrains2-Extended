@@ -554,7 +554,7 @@ switch (FEAT_TRAINS, SELF, sw_articulated_LMS_Black_5_Named, extra_callback_info
     1: return item_LMS_Black_5_Named;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
-item (FEAT_TRAINS, item_LMS_Black_5_Named, 4464) { // BR Number range 44658-45499 
+item (FEAT_TRAINS, item_LMS_Black_5_Named, 4465) { // BR Number range 44658-45499 
     property {
         // common properties
         name:                           string(STR_NAME_LMSBlack5_Named);
