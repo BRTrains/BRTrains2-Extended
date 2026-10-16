@@ -10,10 +10,10 @@ switch(FEAT_TRAINS, SELF, sw_FX_BR257_4_Diesel, position_in_vehid_chain % 18) {
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR257_4_ScotRail, position_in_articulated_veh % 18) {
     1: spriteset_BR43_ScotRail;
-    4: sw_loadstack_BR_Mk3_TGS_Scotrail;
-    7: sw_loadstack_BR_Mk3_TSD_Scotrail;
-    10: sw_loadstack_BR_Mk3_TS_Scotrail;
-    13: sw_loadstack_BR_Mk3_TS_Scotrail;
+    4: sw_loadstack_BR_Mk3_TGS_ScotRail;
+    7: sw_loadstack_BR_Mk3_TSD_ScotRail;
+    10: sw_loadstack_BR_Mk3_TS_ScotRail;
+    13: sw_loadstack_BR_Mk3_TS_ScotRail;
     16: spriteset_BR43_ScotRail_REV;
         spriteset_empty; }
 
@@ -115,11 +115,11 @@ switch(FEAT_TRAINS, SELF, sw_FX_BR257_5_Diesel, position_in_vehid_chain % 21) {
 // graphics switch
 switch(FEAT_TRAINS, SELF, sw_graphics_BR257_5_ScotRail, position_in_articulated_veh % 21) {
     1: spriteset_BR43_ScotRail;
-    4: sw_loadstack_BR_Mk3_TGS_Scotrail;
-    7: sw_loadstack_BR_Mk3_TSD_Scotrail;
-    10: sw_loadstack_BR_Mk3_TS_Scotrail;
-    13: sw_loadstack_BR_Mk3_TS_Scotrail;
-    16: sw_loadstack_BR_Mk3_TS_Scotrail;
+    4: sw_loadstack_BR_Mk3_TGS_ScotRail;
+    7: sw_loadstack_BR_Mk3_TSD_ScotRail;
+    10: sw_loadstack_BR_Mk3_TS_ScotRail;
+    13: sw_loadstack_BR_Mk3_TS_ScotRail;
+    16: sw_loadstack_BR_Mk3_TS_ScotRail;
     19: spriteset_BR43_ScotRail_REV;
         spriteset_empty; }
 

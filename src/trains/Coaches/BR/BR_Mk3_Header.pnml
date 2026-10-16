@@ -28,10 +28,10 @@ spriteset(spriteset_BR_Mk3_TS_GWR_purchase, "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TS_GWR
 
 
 // purchase sprite
-spriteset(spriteset_BR_Mk3_TS_Scotrail_purchase, "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TS_Scotrail_1x_8bpp.png")
+spriteset(spriteset_BR_Mk3_TS_ScotRail_purchase, "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TS_ScotRail_1x_8bpp.png")
     { template_purchase(0,0) }
 
-    alternative_sprites(spriteset_BR_Mk3_TS_Scotrail_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TS_Scotrail_1x_32bpp.png", "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TS_Scotrail_1x_mask.png")
+    alternative_sprites(spriteset_BR_Mk3_TS_ScotRail_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TS_ScotRail_1x_32bpp.png", "gfx/Coaches/BR_Mk3_TS/BR_Mk3_TS_ScotRail_1x_mask.png")
     { template_purchase(0,0) }
 
 // purchase year switch
@@ -41,7 +41,7 @@ switch(FEAT_TRAINS, PARENT, sw_BR_Mk3_TS_purchase_sprite, current_year) {
     1996..2007: spriteset_BR_Mk3_TS_GNER_purchase;
     // 2008..2015: spriteset_BR_Mk3_TS_FGW_Dynamic_Lines;
     2016..2019: spriteset_BR_Mk3_TS_GWR_purchase;
-    2020..2028: spriteset_BR_Mk3_TS_Scotrail_purchase;
+    2020..2028: spriteset_BR_Mk3_TS_ScotRail_purchase;
         spriteset_BR_Mk3_TS_Intercity_Swallow_purchase; }
 
 // speed switch
@@ -156,21 +156,21 @@ spritegroup spritegroup_BR_Mk3_BR_Intercity_Loading {
     loaded:     [spriteset_empty];
     loading:    [spriteset_BR_Mk3_BR_Intercity_Loading]; }
 
-spriteset(spriteset_BR_Mk3_BR_Scotrail_Loading, "gfx/Coaches/BR_Mk3_Loading/BR_Mk3_Base_BR_Scotrail_Loading_1x_8bpp.png")
+spriteset(spriteset_BR_Mk3_BR_ScotRail_Loading, "gfx/Coaches/BR_Mk3_Loading/BR_Mk3_Base_BR_ScotRail_Loading_1x_8bpp.png")
     { template_148trains_1x(0,0) }
 
-    alternative_sprites(spriteset_BR_Mk3_BR_Scotrail_Loading, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_Loading/BR_Mk3_Base_BR_Scotrail_Loading_1x_32bpp.png", "gfx/Coaches/BR_Mk3_Loading/BR_Mk3_Base_BR_Scotrail_Loading_1x_mask.png")
+    alternative_sprites(spriteset_BR_Mk3_BR_ScotRail_Loading, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_Loading/BR_Mk3_Base_BR_ScotRail_Loading_1x_32bpp.png", "gfx/Coaches/BR_Mk3_Loading/BR_Mk3_Base_BR_ScotRail_Loading_1x_mask.png")
     { template_148trains_1x(0,0) }
 
-    alternative_sprites(spriteset_BR_Mk3_BR_Scotrail_Loading, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_Loading/BR_Mk3_Base_BR_Scotrail_Loading_2x_32bpp.png", "gfx/Coaches/BR_Mk3_Loading/BR_Mk3_Base_BR_Scotrail_Loading_2x_mask.png")
+    alternative_sprites(spriteset_BR_Mk3_BR_ScotRail_Loading, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_Loading/BR_Mk3_Base_BR_ScotRail_Loading_2x_32bpp.png", "gfx/Coaches/BR_Mk3_Loading/BR_Mk3_Base_BR_ScotRail_Loading_2x_mask.png")
     { template_148trains_2x(0,0) }
 
-    alternative_sprites(spriteset_BR_Mk3_BR_Scotrail_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_Loading/BR_Mk3_Base_BR_Scotrail_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk3_Loading/BR_Mk3_Base_BR_Scotrail_Loading_4x_mask.png")
+    alternative_sprites(spriteset_BR_Mk3_BR_ScotRail_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_Loading/BR_Mk3_Base_BR_ScotRail_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk3_Loading/BR_Mk3_Base_BR_ScotRail_Loading_4x_mask.png")
     { template_148trains_4x(0,0) }
 
-spritegroup spritegroup_BR_Mk3_BR_Scotrail_Loading {
+spritegroup spritegroup_BR_Mk3_BR_ScotRail_Loading {
     loaded:     [spriteset_empty];
-    loading:    [spriteset_BR_Mk3_BR_Scotrail_Loading]; }
+    loading:    [spriteset_BR_Mk3_BR_ScotRail_Loading]; }
 
 spriteset(spriteset_BR_Mk3_Caledonian_Sleeper_Loading, "gfx/Coaches/BR_Mk3_Loading/BR_Mk3_Base_Caledonian_Sleeper_Loading_1x_8bpp.png")
     { template_148trains_1x(0,0) }

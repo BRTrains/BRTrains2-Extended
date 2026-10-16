@@ -46,16 +46,16 @@ spriteset(spriteset_BR47_BR_Provincial, "gfx/Locomotive_Diesel/BR47/BR47_BR_Prov
     { template_128trains_4x(0,0) }
 
 // basic sprite
-spriteset(spriteset_BR47_BR_Scotrail, "gfx/Locomotive_Diesel/BR47/BR47_BR_Scotrail_1x_8bpp.png")
+spriteset(spriteset_BR47_BR_ScotRail, "gfx/Locomotive_Diesel/BR47/BR47_BR_ScotRail_1x_8bpp.png")
     { template_128trains_1x(0,0) }
 
-    alternative_sprites(spriteset_BR47_BR_Scotrail, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR47/BR47_BR_Scotrail_1x_32bpp.png", "gfx/Locomotive_Diesel/BR47/BR47_BR_Scotrail_1x_mask.png")
+    alternative_sprites(spriteset_BR47_BR_ScotRail, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR47/BR47_BR_ScotRail_1x_32bpp.png", "gfx/Locomotive_Diesel/BR47/BR47_BR_ScotRail_1x_mask.png")
     { template_128trains_1x(0,0) }
 
-    alternative_sprites(spriteset_BR47_BR_Scotrail, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR47/BR47_BR_Scotrail_2x_32bpp.png", "gfx/Locomotive_Diesel/BR47/BR47_BR_Scotrail_2x_mask.png")
+    alternative_sprites(spriteset_BR47_BR_ScotRail, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR47/BR47_BR_ScotRail_2x_32bpp.png", "gfx/Locomotive_Diesel/BR47/BR47_BR_ScotRail_2x_mask.png")
     { template_128trains_2x(0,0) }
 
-    alternative_sprites(spriteset_BR47_BR_Scotrail, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR47/BR47_BR_Scotrail_4x_32bpp.png", "gfx/Locomotive_Diesel/BR47/BR47_BR_Scotrail_4x_mask.png")
+    alternative_sprites(spriteset_BR47_BR_ScotRail, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR47/BR47_BR_ScotRail_4x_32bpp.png", "gfx/Locomotive_Diesel/BR47/BR47_BR_ScotRail_4x_mask.png")
     { template_128trains_4x(0,0) }
 
 // basic sprite
@@ -390,7 +390,7 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR47, cargo_subtype) {
     4: spriteset_BR47_Intercity;
     5: spriteset_BR47_Intercity_Executive;
     6: spriteset_BR47_Intercity_Swallow;
-    7: spriteset_BR47_BR_Scotrail;
+    7: spriteset_BR47_BR_ScotRail;
     8: spriteset_BR47_BR_Provincial;
     9: spriteset_BR47_NSE;
     10: spriteset_BR47_NSE_Revised;

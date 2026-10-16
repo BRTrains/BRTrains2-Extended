@@ -11,6 +11,7 @@ template/autogen/
 
 # Test files
 *test*
+*Test*
 
 # VSCode Stuff
 .vscode/

@@ -101,22 +101,22 @@ spritegroup spritegroup_BR_Mk2_Late_BR_Intercity_Loading {
     loading: [spriteset_BR_Mk2_Late_BR_Intercity_Loading]; }
 
 
-spriteset(spriteset_BR_Mk2_Late_BR_Scotrail_Loading, "gfx/Coaches/BR_Mk2L_TSO/BR_Mk2_Late_TSO_BR_Scotrail_Loading_1x_8bpp.png")
+spriteset(spriteset_BR_Mk2_Late_BR_ScotRail_Loading, "gfx/Coaches/BR_Mk2L_TSO/BR_Mk2_Late_TSO_BR_ScotRail_Loading_1x_8bpp.png")
     { template_128trains_1x(0,0) }
 
-    alternative_sprites(spriteset_BR_Mk2_Late_BR_Scotrail_Loading, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk2L_TSO/BR_Mk2_Late_TSO_BR_Scotrail_Loading_1x_32bpp.png", "gfx/Coaches/BR_Mk2L_TSO/BR_Mk2_Late_TSO_BR_Scotrail_Loading_1x_mask.png")
+    alternative_sprites(spriteset_BR_Mk2_Late_BR_ScotRail_Loading, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk2L_TSO/BR_Mk2_Late_TSO_BR_ScotRail_Loading_1x_32bpp.png", "gfx/Coaches/BR_Mk2L_TSO/BR_Mk2_Late_TSO_BR_ScotRail_Loading_1x_mask.png")
     { template_128trains_1x(0,0) }
 
-    alternative_sprites(spriteset_BR_Mk2_Late_BR_Scotrail_Loading, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk2L_TSO/BR_Mk2_Late_TSO_BR_Scotrail_Loading_2x_32bpp.png", "gfx/Coaches/BR_Mk2L_TSO/BR_Mk2_Late_TSO_BR_Scotrail_Loading_2x_mask.png")
+    alternative_sprites(spriteset_BR_Mk2_Late_BR_ScotRail_Loading, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk2L_TSO/BR_Mk2_Late_TSO_BR_ScotRail_Loading_2x_32bpp.png", "gfx/Coaches/BR_Mk2L_TSO/BR_Mk2_Late_TSO_BR_ScotRail_Loading_2x_mask.png")
     { template_128trains_2x(0,0) }
 
-    alternative_sprites(spriteset_BR_Mk2_Late_BR_Scotrail_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk2L_TSO/BR_Mk2_Late_TSO_BR_Scotrail_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk2L_TSO/BR_Mk2_Late_TSO_BR_Scotrail_Loading_4x_mask.png")
+    alternative_sprites(spriteset_BR_Mk2_Late_BR_ScotRail_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk2L_TSO/BR_Mk2_Late_TSO_BR_ScotRail_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk2L_TSO/BR_Mk2_Late_TSO_BR_ScotRail_Loading_4x_mask.png")
     { template_128trains_4x(0,0) }
 
 // loading sprite
-spritegroup spritegroup_BR_Mk2_Late_BR_Scotrail_Loading {  
+spritegroup spritegroup_BR_Mk2_Late_BR_ScotRail_Loading {  
     loaded: [spriteset_empty];
-    loading: [spriteset_BR_Mk2_Late_BR_Scotrail_Loading]; }
+    loading: [spriteset_BR_Mk2_Late_BR_ScotRail_Loading]; }
 
 spriteset(spriteset_BR_Mk2_Late_FGW_Fag_Packet_Loading, "gfx/Coaches/BR_Mk2L_TSO/BR_Mk2_Late_TSO_FGW_Fag_Packet_Loading_1x_8bpp.png")
     { template_128trains_1x(0,0) }

@@ -417,20 +417,20 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk3_TF_Royal_Train, [ STORE_TEMP((getb
     1: spritegroup_BR_Mk3_Royal_Train_Loading; }
 
 // basic sprite
-spriteset(spriteset_BR_Mk3_TF_Scotrail, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_Scotrail_1x_8bpp.png")
+spriteset(spriteset_BR_Mk3_TF_ScotRail, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_ScotRail_1x_8bpp.png")
     { template_148trains_1x(0,0) }
 
-    alternative_sprites(spriteset_BR_Mk3_TF_Scotrail, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_Scotrail_1x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_Scotrail_1x_mask.png")
+    alternative_sprites(spriteset_BR_Mk3_TF_ScotRail, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_ScotRail_1x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_ScotRail_1x_mask.png")
     { template_148trains_1x(0,0) }
 
-    alternative_sprites(spriteset_BR_Mk3_TF_Scotrail, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_Scotrail_2x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_Scotrail_2x_mask.png")
+    alternative_sprites(spriteset_BR_Mk3_TF_ScotRail, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_ScotRail_2x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_ScotRail_2x_mask.png")
     { template_148trains_2x(0,0) }
 
-    alternative_sprites(spriteset_BR_Mk3_TF_Scotrail, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_Scotrail_4x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_Scotrail_4x_mask.png")
+    alternative_sprites(spriteset_BR_Mk3_TF_ScotRail, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_ScotRail_4x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TF_ScotRail_4x_mask.png")
     { template_148trains_4x(0,0) }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk3_TF_Scotrail, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR_Mk3_TF_Scotrail;
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk3_TF_ScotRail, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR_Mk3_TF_ScotRail;
     1: spritegroup_BR_Mk3_Sliding_Doors_Loading; }
 
 // basic sprite
@@ -554,7 +554,7 @@ switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk3_TF, cargo_subtype) {
     14: sw_loadstack_BR_Mk3_TF_GCT_Lined;
     15: sw_loadstack_BR_Mk3_TF_EC;
     16: sw_loadstack_BR_Mk3_TF_Virgin_EC;
-    17: sw_loadstack_BR_Mk3_TF_Scotrail;
+    17: sw_loadstack_BR_Mk3_TF_ScotRail;
     18: sw_loadstack_BR_Mk3_TF_GWR;
     19: sw_loadstack_BR_Mk3_TF_Virgin_EC;
     20: spriteset_BR_Mk3_TF_NetworkRail;
@@ -715,38 +715,38 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk3_TFO_Arriva_Trains_Executive, [ STO
     1: spritegroup_BR_Mk3_TFO_Arriva_Trains_Executive_Loading; }
 
 // basic sprite
-spriteset(spriteset_BR_Mk3_TFO_BR_Scotrail, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_Scotrail_1x_8bpp.png")
+spriteset(spriteset_BR_Mk3_TFO_BR_ScotRail, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_ScotRail_1x_8bpp.png")
     { template_148trains_1x(0,0) }
 
-    alternative_sprites(spriteset_BR_Mk3_TFO_BR_Scotrail, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_Scotrail_1x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_Scotrail_1x_mask.png")
+    alternative_sprites(spriteset_BR_Mk3_TFO_BR_ScotRail, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_ScotRail_1x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_ScotRail_1x_mask.png")
     { template_148trains_1x(0,0) }
 
-    alternative_sprites(spriteset_BR_Mk3_TFO_BR_Scotrail, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_Scotrail_2x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_Scotrail_2x_mask.png")
+    alternative_sprites(spriteset_BR_Mk3_TFO_BR_ScotRail, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_ScotRail_2x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_ScotRail_2x_mask.png")
     { template_148trains_2x(0,0) }
 
-    alternative_sprites(spriteset_BR_Mk3_TFO_BR_Scotrail, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_Scotrail_4x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_Scotrail_4x_mask.png")
+    alternative_sprites(spriteset_BR_Mk3_TFO_BR_ScotRail, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_ScotRail_4x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_ScotRail_4x_mask.png")
     { template_148trains_4x(0,0) }
 
-spriteset(spriteset_BR_Mk3_TFO_BR_Scotrail_Loading, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_Scotrail_Loading_1x_8bpp.png")
+spriteset(spriteset_BR_Mk3_TFO_BR_ScotRail_Loading, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_ScotRail_Loading_1x_8bpp.png")
     { template_148trains_1x(0,0) }
 
-    alternative_sprites(spriteset_BR_Mk3_TFO_BR_Scotrail_Loading, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_Scotrail_Loading_1x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_Scotrail_Loading_1x_mask.png")
+    alternative_sprites(spriteset_BR_Mk3_TFO_BR_ScotRail_Loading, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_ScotRail_Loading_1x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_ScotRail_Loading_1x_mask.png")
     { template_148trains_1x(0,0) }
 
-    alternative_sprites(spriteset_BR_Mk3_TFO_BR_Scotrail_Loading, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_Scotrail_Loading_2x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_Scotrail_Loading_2x_mask.png")
+    alternative_sprites(spriteset_BR_Mk3_TFO_BR_ScotRail_Loading, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_ScotRail_Loading_2x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_ScotRail_Loading_2x_mask.png")
     { template_148trains_2x(0,0) }
 
-    alternative_sprites(spriteset_BR_Mk3_TFO_BR_Scotrail_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_Scotrail_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_Scotrail_Loading_4x_mask.png")
+    alternative_sprites(spriteset_BR_Mk3_TFO_BR_ScotRail_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_ScotRail_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_BR_ScotRail_Loading_4x_mask.png")
     { template_148trains_4x(0,0) }
 
 // loading sprite
-spritegroup spritegroup_BR_Mk3_TFO_BR_Scotrail_Loading {  
+spritegroup spritegroup_BR_Mk3_TFO_BR_ScotRail_Loading {  
     loaded: [spriteset_empty];
-    loading: [spriteset_BR_Mk3_TFO_BR_Scotrail_Loading]; }
+    loading: [spriteset_BR_Mk3_TFO_BR_ScotRail_Loading]; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk3_TFO_BR_Scotrail, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR_Mk3_TFO_BR_Scotrail;
-    1: spritegroup_BR_Mk3_TFO_BR_Scotrail_Loading; }
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk3_TFO_BR_ScotRail, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+    0: spriteset_BR_Mk3_TFO_BR_ScotRail;
+    1: spritegroup_BR_Mk3_TFO_BR_ScotRail_Loading; }
 
 // basic sprite
 spriteset(spriteset_BR_Mk3_TFO_Chiltern, "gfx/Coaches/BR_Mk3_TF/BR_Mk3_TFO_Chiltern_1x_8bpp.png")
@@ -937,7 +937,7 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk3_TFO_Wrexham_And_Shropshire, [ STOR
 
 switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk3_TFO, cargo_subtype) {
     0:  sw_loadstack_BR_Mk3_TF_BR_Blue;
-    1:  sw_loadstack_BR_Mk3_TFO_BR_Scotrail;
+    1:  sw_loadstack_BR_Mk3_TFO_BR_ScotRail;
     2:  sw_loadstack_BR_Mk3_TFO_Chiltern;
     3:  sw_loadstack_BR_Mk3_TFO_EWS;
     4:  sw_loadstack_BR_Mk3_TFO_Arriva_Trains_Executive;

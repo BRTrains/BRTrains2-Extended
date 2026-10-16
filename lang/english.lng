@@ -772,7 +772,7 @@ str_BR156_liveries				:Regional Railways, Strathclyde Orange, Strathclyde PTE, S
 
 STR_NAME_BR158					:BR Class 158 "Express Sprinter" (2-car)
 STR_NAME_BR158_3				:BR Class 158 "Express Sprinter" (3-Car)
-str_BR158_liveries				:Regional Railways, NSE, WYPTE, SWT, NatEx Scotrail, Northern Spirit, Alphaline Wessex, Arriva Trains Wales, First Transpennine, First Scotrail, Northern Rail, ScotRail Saltire, GWR, Northern, SWR, TfW
+str_BR158_liveries				:Regional Railways, NSE, WYPTE, SWT, NatEx ScotRail, Northern Spirit, Alphaline Wessex, Arriva Trains Wales, First Transpennine, First ScotRail, Northern Rail, ScotRail Saltire, GWR, Northern, SWR, TfW
 
 STR_NAME_BR159					:BR Class 159 "South Western Turbo" (3-car)
 str_BR159_liveries				:NSE, SWT, SWR
@@ -1832,7 +1832,7 @@ str_ROD                         :Railway Operating Division
 str_RoyalClaret                 :Royal Train - Royal Claret
 str_RoyalMail                   :Royal Mail
 
-str_ScotRail                    :Scotrail
+str_ScotRail                    :ScotRail
 str_ScotRail_Inter7City         :Inter7City
 str_ScotRail_Saltire            :Saltire
 
