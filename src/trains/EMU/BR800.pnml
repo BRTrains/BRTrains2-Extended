@@ -326,10 +326,6 @@ switch(FEAT_TRAINS, PARENT, sw_power_BR800_9car, tile_powers_railtype("ELRL")){
     1: 6070;
         3750; }
 
-switch(FEAT_TRAINS, SELF, sw_sound_BR800, tile_powers_railtype("ELRL")) {
-    1:  sw_sound_electric_88;
-        sw_sound_diesel_dmu_gen2; }
-
 // FX effects
 switch(FEAT_TRAINS, SELF, sw_FX_BR800_5car_Diesel, position_in_vehid_chain % 15) {
     4:  visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -1, DISABLE_WAGON_POWER);
@@ -521,7 +517,7 @@ item (FEAT_TRAINS, item_BR800_0, 8000) {
         default:                        sw_livery_BR800_0;
         visual_effect_and_powered:      sw_FX_BR800_5car;
         purchase:                       sw_spritestack_BR800_0_purchase;
-        sound_effect:                   sw_sound_BR800;
+        sound_effect:                   sw_sound_hybrid_800;
 
         // internal code
         length:                         sw_length_BR800_5car;
@@ -597,7 +593,7 @@ item (FEAT_TRAINS, item_BR800_1, 8001) {
         default:                        sw_livery_BR800_1;
         visual_effect_and_powered:      sw_FX_BR800_9car;
         purchase:                       sw_spritestack_BR800_1_2_purchase;
-        sound_effect:                   sw_sound_BR800;
+        sound_effect:                   sw_sound_hybrid_800;
 
         // internal code
         length:                         sw_length_BR800_9car;
@@ -674,7 +670,7 @@ item (FEAT_TRAINS, item_BR800_2, 8002) {
         default:                        sw_livery_BR800_2;
         visual_effect_and_powered:      sw_FX_BR800_5car;
         purchase:                       sw_spritestack_BR800_1_2_purchase;
-        sound_effect:                   sw_sound_BR800;
+        sound_effect:                   sw_sound_hybrid_800;
 
         // internal code
         length:                         sw_length_BR800_5car;
@@ -683,7 +679,7 @@ item (FEAT_TRAINS, item_BR800_2, 8002) {
         purchase_cargo_capacity:        return (20 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR800_2;
         cost_factor:                    275;
-        running_cost_factor:            9903;
+        running_cost_factor:            sw_running_cost_BR800_2;
         cargo_subtype_text:             sw_BR800_LNER_cargo_subtype_text; 
         power:                          sw_power_BR800_5car;
         colour_mapping:                 return PALETTE_CC_FIRST;

@@ -941,7 +941,7 @@ item (FEAT_TRAINS, item_BR802_0, 8020) {
         default:                        sw_livery_BR802_0;
         visual_effect_and_powered:      sw_FX_BR800_5car;
         purchase:                       sw_spritestack_BR800_3_purchase;
-        sound_effect:                   sw_sound_BR800;
+        sound_effect:                   sw_sound_hybrid_800;
 
         // internal code
         length:                         sw_length_BR800_5car;
@@ -1009,7 +1009,7 @@ item (FEAT_TRAINS, item_BR802_1, 8021) {
         default:                        sw_livery_BR802_1;
         visual_effect_and_powered:      sw_FX_BR800_9car;
         purchase:                       sw_spritestack_BR800_3_purchase;
-        sound_effect:                   sw_sound_BR800;
+        sound_effect:                   sw_sound_hybrid_800;
 
         // internal code
         length:                         sw_length_BR800_9car;
@@ -1076,7 +1076,7 @@ item (FEAT_TRAINS, item_BR802_2, 8022) {
         default:                        sw_livery_BR802_2;
         visual_effect_and_powered:      sw_FX_BR800_5car;
         purchase:                       sw_spritestack_BR802_2_purchase;
-        sound_effect:                   sw_sound_BR800;
+        sound_effect:                   sw_sound_hybrid_800;
 
         // internal code
         length:                         sw_length_BR800_5car;
@@ -1143,7 +1143,7 @@ item (FEAT_TRAINS, item_BR802_3, 8023) {
         default:                        sw_livery_BR802_3;
         visual_effect_and_powered:      sw_FX_BR800_5car;
         purchase:                       sw_spritestack_BR802_3_purchase;
-        sound_effect:                   sw_sound_BR800;
+        sound_effect:                   sw_sound_hybrid_800;
 
         // internal code
         length:                         sw_length_BR800_5car;

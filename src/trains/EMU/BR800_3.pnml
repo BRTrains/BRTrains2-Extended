@@ -321,7 +321,7 @@ item (FEAT_TRAINS, item_BR800_3, 8003) {
         default:                        sw_livery_BR800_3;
         visual_effect_and_powered:      sw_FX_BR800_9car;
         purchase:                       sw_spritestack_BR800_3_purchase;
-        sound_effect:                   sw_sound_BR800;
+        sound_effect:                   sw_sound_hybrid_800;
 
         // internal code
         length:                         sw_length_BR800_9car;

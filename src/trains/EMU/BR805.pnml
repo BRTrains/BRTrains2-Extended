@@ -198,7 +198,7 @@ item (FEAT_TRAINS, item_BR805, 8050) {
         default:                        sw_livery_BR805;
         visual_effect_and_powered:      sw_FX_BR800_5car;
         purchase:                       sw_spritestack_BR805_purchase; // For dual mode units
-        sound_effect:                   sw_sound_BR800;
+        sound_effect:                   sw_sound_hybrid_800;
 
         // internal code
         length:                         sw_length_BR805;
@@ -371,7 +371,7 @@ item (FEAT_TRAINS, item_BR807, 8070) {
         default:                        sw_livery_BR807;
         visual_effect_and_powered:      sw_FX_BR807;
         purchase:                       sw_spritestack_BR805_purchase; // For dual mode units
-        sound_effect:                   sw_sound_BR800;
+        sound_effect:                   sw_sound_hybrid_800;
 
         // internal code
         length:                         sw_length_BR807;
