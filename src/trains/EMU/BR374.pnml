@@ -316,18 +316,10 @@ spritegroup spritegroup_BR374_TPF_Eurostar_Loading_REV{
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR374_TPF_Eurostar_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR374_TPF_Eurostar_REV;
     1: spritegroup_BR374_TPF_Eurostar_Loading_REV; }
-
-// basic sprite
-spriteset(spriteset_BR374_TPS_DB, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR374/BR374_TPS_DB_4x_32bpp.png", "gfx/EMU/BR374/BR374_TPS_DB_4x_mask.png")
-    { template_158trains_4x(0,0) }
-
+    
 // basic sprite
 spriteset(spriteset_BR374_TPS_DB_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR374/BR374_TPS_DB_4x_32bpp.png", "gfx/EMU/BR374/BR374_TPS_DB_4x_mask.png")
     { template_158trains_REV_4x(0,0) }
-
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR374_TPS_DB, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: spriteset_BR374_TPS_DB;
-    1: spritegroup_BR374_TPF_DB_Loading; }
 
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR374_TPS_DB_REV, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR374_TPS_DB_REV;
