@@ -407,7 +407,7 @@ switch(FEAT_TRAINS, SELF, sw_BR73_1_cargo_subtype_text, cargo_subtype){
     8:  string(STR_LIVERY, string(str_Stagecoach));
     9:  string(STR_LIVERY_DESC, string(str_EWS), string(str_EWS_Red));
     10:  string(STR_LIVERY_DESC, string(str_GBRf), string(str_col_Blue));
-    11:  string(STR_LIVERY_DESC, string(str_GBRf), string(str_Southern));
+    11:  string(STR_LIVERY, string(str_Southern));
     12:  string(STR_LIVERY_DESC, string(str_GBRf), string(str_FirstGroup));
     13:  string(STR_LIVERY, string(str_Pullman));
         CB_RESULT_NO_TEXT; }
