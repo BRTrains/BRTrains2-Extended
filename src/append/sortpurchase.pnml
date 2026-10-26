@@ -55,6 +55,9 @@ sort(FEAT_TRAINS, [
     item_GER_L77,
         item_LNER_N7_3,
     item_GER_S46,
+        item_GER_D56,
+        item_GER_H88,
+        item_LNER_D16_3,
     item_GER_Y65,
     item_Metropolitan_K,
     // LNER Steam Locomotives
