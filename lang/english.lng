@@ -492,10 +492,10 @@ STR_NAME_GER_D56_H88                :GER Class D56/H88 "Super Claud"
 STR_NAME_GER_D56_H88_LNER           :LNER Holden Class D15/D16 "Super Claud"
 
 STR_NAME_GER_D56                    :GER Class D56 "Claud Hamilton"
-str_NAME_GER_D56_LNER               :LNER Holden Class D15 "Claud Hamilton
+STR_NAME_GER_D56_LNER               :LNER Holden Class D15 "Claud Hamilton
 
 STR_NAME_GER_H88                    :GER Class H88 "Super Claud"
-str_NAME_GER_H88_LNER               :LNER Holden CLass D16 "Super Claud"
+STR_NAME_GER_H88_LNER               :LNER Holden CLass D16 "Super Claud"
 
 STR_NAME_LNER_D16_3                 :LNER D16/3 "Gresley Clauds"
 
