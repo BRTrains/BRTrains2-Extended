@@ -1,3 +1,49 @@
+// basic sprite
+spriteset(spriteset_BR_Mk1_B1_Bogie, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_B1_Bogie_4x_32bpp.png", "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_B1_Bogie_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR_Mk1_B1_Bogie_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_B1_Bogie_1x_32bpp.png", "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_B1_Bogie_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_Mk1_B2_Bogie, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_B2_Bogie_4x_32bpp.png", "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_B2_Bogie_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_Mk1_B4_Bogie, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_B4_Bogie_4x_32bpp.png", "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_B4_Bogie_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR_Mk1_B4_Bogie_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_B4_Bogie_1x_32bpp.png", "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_B4_Bogie_1x_mask.png")
+    { template_purchase(0,0) }
+
+// basic sprite
+spriteset(spriteset_BR_Mk1_Commonwealth_Bogie, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_Commonwealth_Bogie_4x_32bpp.png", "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_Commonwealth_Bogie_4x_mask.png")
+    { template_128trains_4x(0,0) }
+
+// purchase sprite
+spriteset(spriteset_BR_Mk1_Commonwealth_Bogie_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_Commonwealth_Bogie_1x_32bpp.png", "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_Commonwealth_Bogie_1x_mask.png")
+    { template_purchase(0,0) }
+
+// bogie randomizer
+switch(FEAT_TRAINS, SELF, sw_BR_Mk1_Bogie_Early, switch_alternative_var_random_bits(0,2)) {
+	0..2:	spriteset_BR_Mk1_B1_Bogie;	// 3/4
+	3:		spriteset_BR_Mk1_B2_Bogie;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR_Mk1_Bogie_All, switch_alternative_var_random_bits(0,4)) {
+	0..4:	spriteset_BR_Mk1_B1_Bogie; 				// 5/16
+	5..6:	spriteset_BR_Mk1_B2_Bogie;				// 2/16
+	7..11:	spriteset_BR_Mk1_Commonwealth_Bogie;	// 5/16
+	12..15:	spriteset_BR_Mk1_B4_Bogie;				// 4/16
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR_Mk1_Pick_Bogie, build_year) {
+	0..1959:	sw_BR_Mk1_Bogie_Early;
+	sw_BR_Mk1_Bogie_All;
+}
+
 // purchase sprite
 spriteset(spriteset_BR_Mk1_TSO_BR_Blue_purchase, "gfx/Coaches/BR_Mk1_TSO/BR_Mk1_TSO_BR_Blue_1x_8bpp.png")
     { template_purchase(0,0) }
