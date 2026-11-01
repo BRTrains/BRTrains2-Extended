@@ -237,6 +237,7 @@ sort(FEAT_TRAINS, [
     item_BR_Mk1_Header,
         item_BR_Mk1_BG,
         item_BR_Mk1_BSO,
+        item_BR_Mk1_FK,
         // item_BR_Mk1_SK,
         item_BR_Mk1_SO,
         item_BR_Mk1_TSO,
