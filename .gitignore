@@ -10,8 +10,9 @@ template/autogen/
 *.xcf
 
 # Test files
-*test*
-*Test*
+*_test*
+*_Test*
+*Testing*
 
 # VSCode Stuff
 .vscode/
