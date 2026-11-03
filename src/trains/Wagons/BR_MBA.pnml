@@ -12,12 +12,8 @@ spriteset(spriteset_BR_MBA_EWS, "gfx/Wagons/BR_MBA/BR_MBA_EWS_1x_8bpp.png")
         { template_118trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_MBA_EWS_purchase, "gfx/Wagons/BR_MBA/BR_MBA_EWS_1x_8bpp.png")
+spriteset(spriteset_BR_MBA_EWS_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_MBA/BR_MBA_EWS_4x_32bpp.png", "gfx/Wagons/BR_MBA/BR_MBA_EWS_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_MBA_EWS_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_MBA/BR_MBA_EWS_1x_32bpp.png", "gfx/Wagons/BR_MBA/BR_MBA_EWS_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // cargo sprite - Bulk
 spriteset(spriteset_BR_MBA_Bulk_100, "gfx/Wagons/BR_MBA/BR_MBA_Bulk_100_1x_8bpp.png")

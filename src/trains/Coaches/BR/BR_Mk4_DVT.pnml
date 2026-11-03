@@ -25,12 +25,9 @@ spriteset(spriteset_BR_Mk4_DVT_EastCoast_REV, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT
         { template_128trains_REV_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk4_DVT_EastCoast_purchase, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_EastCoast_1x_8bpp.png")
+spriteset(spriteset_BR_Mk4_DVT_EastCoast_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_EastCoast_4x_32bpp.png", "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_EastCoast_4x_mask.png")
     { template_purchase(0,0) }
 
-    alternative_sprites(spriteset_BR_Mk4_DVT_EastCoast_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_EastCoast_1x_32bpp.png", "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_EastCoast_1x_mask.png")
-    { template_purchase(0,0) }
-        
 // basic sprite
 spriteset(spriteset_BR_Mk4_DVT_GNER, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_GNER_1x_8bpp.png")
     { template_128trains_1x(0,0) }
@@ -58,12 +55,8 @@ spriteset(spriteset_BR_Mk4_DVT_GNER_REV, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_GNER
         { template_128trains_REV_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk4_DVT_GNER_purchase, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_GNER_1x_8bpp.png")
+spriteset(spriteset_BR_Mk4_DVT_GNER_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_GNER_4x_32bpp.png", "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_GNER_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Mk4_DVT_GNER_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_GNER_1x_32bpp.png", "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_GNER_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // basic sprite
 spriteset(spriteset_BR_Mk4_DVT_Intercity_Swallow, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_Intercity_Swallow_1x_8bpp.png")
@@ -92,12 +85,8 @@ spriteset(spriteset_BR_Mk4_DVT_Intercity_Swallow_REV, "gfx/Coaches/BR_Mk4_DVT/BR
         { template_128trains_REV_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk4_DVT_Intercity_Swallow_purchase, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_Intercity_Swallow_1x_8bpp.png")
+spriteset(spriteset_BR_Mk4_DVT_Intercity_Swallow_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_Intercity_Swallow_4x_32bpp.png", "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_Intercity_Swallow_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Mk4_DVT_Intercity_Swallow_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_Intercity_Swallow_1x_32bpp.png", "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_Intercity_Swallow_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // basic sprite
 spriteset(spriteset_BR_Mk4_DVT_LNER, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_LNER_1x_8bpp.png")
@@ -126,10 +115,7 @@ spriteset(spriteset_BR_Mk4_DVT_LNER_REV, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_LNER
         { template_128trains_REV_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk4_DVT_LNER_purchase, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_LNER_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Mk4_DVT_LNER_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_LNER_1x_32bpp.png", "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_LNER_1x_mask.png")
+spriteset(spriteset_BR_Mk4_DVT_LNER_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_LNER_4x_32bpp.png", "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_LNER_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -185,10 +171,7 @@ spriteset(spriteset_BR_Mk4_DVT_TfW_REV, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_TfW_1
         { template_128trains_REV_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk4_DVT_TfW_purchase, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_TfW_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Mk4_DVT_TfW_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_TfW_1x_32bpp.png", "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_TfW_1x_mask.png")
+spriteset(spriteset_BR_Mk4_DVT_TfW_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_TfW_4x_32bpp.png", "gfx/Coaches/BR_Mk4_DVT/BR_Mk4_DVT_TfW_4x_mask.png")
     { template_purchase(0,0) }
 
 // purchase year switch

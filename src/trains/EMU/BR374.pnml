@@ -59,7 +59,7 @@ spritegroup spritegroup_BR374_DMF_DB_Loading_REV {
     loading: [spriteset_BR374_DMF_DB_Loading_REV]; }
     
 // purchase sprite
-spriteset(spriteset_BR374_DMF_DB_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR374/BR374_DMF_DB_1x_32bpp.png", "gfx/EMU/BR374/BR374_DMF_DB_1x_mask.png")
+spriteset(spriteset_BR374_DMF_DB_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR374/BR374_DMF_DB_4x_32bpp.png", "gfx/EMU/BR374/BR374_DMF_DB_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -87,7 +87,7 @@ spriteset(spriteset_BR374_DMF_Eurostar_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "
     { template_158trains_REV_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR374_DMF_Eurostar_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR374/BR374_DMF_Eurostar_1x_32bpp.png", "gfx/EMU/BR374/BR374_DMF_Eurostar_1x_mask.png")
+spriteset(spriteset_BR374_DMF_Eurostar_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR374/BR374_DMF_Eurostar_4x_32bpp.png", "gfx/EMU/BR374/BR374_DMF_Eurostar_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR374_DMF_Eurostar_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR374/BR374_DMF_Eurostar_Loading_4x_32bpp.png", "gfx/EMU/BR374/BR374_DMF_Eurostar_Loading_4x_mask.png")

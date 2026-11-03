@@ -39,10 +39,7 @@ spriteset(spriteset_GER_Y65_GER_Black, "gfx/Locomotive_Steam/GER_Y65/GER_Y65_GER
     { template_68trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_GER_Y65_GER_Black_purchase, "gfx/Locomotive_Steam/GER_Y65/GER_Y65_GER_Black_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_GER_Y65_GER_Black_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_Y65/GER_Y65_GER_Black_1x_32bpp.png", "gfx/Locomotive_Steam/GER_Y65/GER_Y65_GER_Black_1x_mask.png")
+spriteset(spriteset_GER_Y65_GER_Black_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_Y65/GER_Y65_GER_Black_4x_32bpp.png", "gfx/Locomotive_Steam/GER_Y65/GER_Y65_GER_Black_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -59,10 +56,7 @@ spriteset(spriteset_GER_Y65_GER_Blue, "gfx/Locomotive_Steam/GER_Y65/GER_Y65_GER_
     { template_68trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_GER_Y65_GER_Blue_purchase, "gfx/Locomotive_Steam/GER_Y65/GER_Y65_GER_Blue_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_GER_Y65_GER_Blue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_Y65/GER_Y65_GER_Blue_1x_32bpp.png", "gfx/Locomotive_Steam/GER_Y65/GER_Y65_GER_Blue_1x_mask.png")
+spriteset(spriteset_GER_Y65_GER_Blue_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_Y65/GER_Y65_GER_Blue_4x_32bpp.png", "gfx/Locomotive_Steam/GER_Y65/GER_Y65_GER_Blue_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -79,10 +73,7 @@ spriteset(spriteset_GER_Y65_LNER_Black, "gfx/Locomotive_Steam/GER_Y65/GER_Y65_LN
     { template_68trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_GER_Y65_LNER_Black_purchase, "gfx/Locomotive_Steam/GER_Y65/GER_Y65_LNER_Black_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_GER_Y65_LNER_Black_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_Y65/GER_Y65_LNER_Black_1x_32bpp.png", "gfx/Locomotive_Steam/GER_Y65/GER_Y65_LNER_Black_1x_mask.png")
+spriteset(spriteset_GER_Y65_LNER_Black_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_Y65/GER_Y65_LNER_Black_4x_32bpp.png", "gfx/Locomotive_Steam/GER_Y65/GER_Y65_LNER_Black_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -147,10 +138,7 @@ spriteset(spriteset_GER_Y65_Anim4, "gfx/Locomotive_Steam/GER_Y65/GER_Y65_Anim_4_
     alternative_sprites(spriteset_GER_Y65_Anim4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_Y65/GER_Y65_Anim_4_4x_32bpp.png", "gfx/Locomotive_Steam/GER_Y65/GER_Y65_Anim_4_4x_mask.png")
     { template_68trains_4x(0,0) }
 
-spriteset(spriteset_GER_Y65_Anim_purchase, "gfx/Locomotive_Steam/GER_Y65/GER_Y65_Anim_1_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_GER_Y65_Anim_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_Y65/GER_Y65_Anim_1_1x_32bpp.png", "gfx/Locomotive_Steam/GER_Y65/GER_Y65_Anim_1_1x_mask.png")
+spriteset(spriteset_GER_Y65_Anim_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GER_Y65/GER_Y65_Anim_1_4x_32bpp.png", "gfx/Locomotive_Steam/GER_Y65/GER_Y65_Anim_1_4x_mask.png")
     { template_purchase(0,0) }
 
 switch(FEAT_TRAINS, SELF, sw_animation_GER_Y65, motion_counter % 4) {

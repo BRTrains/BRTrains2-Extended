@@ -43,7 +43,7 @@ spriteset(spriteset_BR800_DPTS_GWR_Nose_Closed_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH_
     { template_1558backtrains_REV_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR800_DPTS_GWR_Nose_Closed_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR800/BR800_DPTS_GWR_Nose_Closed_1x_32bpp.png", "gfx/EMU/BR800/BR800_DPTS_GWR_Nose_Closed_1x_mask.png")
+spriteset(spriteset_BR800_DPTS_GWR_Nose_Closed_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR800/BR800_DPTS_GWR_Nose_Closed_4x_32bpp.png", "gfx/EMU/BR800/BR800_DPTS_GWR_Nose_Closed_4x_mask.png")
     { template_purchase(0,0) }
 
 switch(FEAT_TRAINS, SELF, sw_BR800_GWR_NoseClosed, position_in_consist) {
@@ -82,7 +82,7 @@ spriteset(spriteset_BR800_DPTS_LNER_Nose_Closed_REV, ZOOM_LEVEL_IN_4X, BIT_DEPTH
     { template_1558backtrains_REV_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR800_DPTS_LNER_Nose_Closed_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR800/BR800_DPTS_LNER_Nose_Closed_1x_32bpp.png", "gfx/EMU/BR800/BR800_DPTS_LNER_Nose_Closed_1x_mask.png")
+spriteset(spriteset_BR800_DPTS_LNER_Nose_Closed_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR800/BR800_DPTS_LNER_Nose_Closed_4x_32bpp.png", "gfx/EMU/BR800/BR800_DPTS_LNER_Nose_Closed_4x_mask.png")
     { template_purchase(0,0) }
 
 switch(FEAT_TRAINS, SELF, sw_BR800_LNER_NoseClosed, position_in_consist) {
@@ -124,7 +124,7 @@ spriteset(spriteset_BR800_DPTS_GWR, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/
     { template_1558fronttrains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR800_DPTS_GWR_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR800/BR800_DPTS_GWR_1x_32bpp.png", "gfx/EMU/BR800/BR800_DPTS_GWR_1x_mask.png")
+spriteset(spriteset_BR800_DPTS_GWR_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR800/BR800_DPTS_GWR_4x_32bpp.png", "gfx/EMU/BR800/BR800_DPTS_GWR_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR800_DPTS_GWR_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR800/BR800_DPTS_GWR_Loading_4x_32bpp.png", "gfx/EMU/BR800/BR800_DPTS_GWR_Loading_4x_mask.png")
@@ -147,7 +147,7 @@ spriteset(spriteset_BR800_DPTS_LNER, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU
     { template_1558fronttrains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR800_DPTS_LNER_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR800/BR800_DPTS_LNER_1x_32bpp.png", "gfx/EMU/BR800/BR800_DPTS_LNER_1x_mask.png")
+spriteset(spriteset_BR800_DPTS_LNER_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR800/BR800_DPTS_LNER_4x_32bpp.png", "gfx/EMU/BR800/BR800_DPTS_LNER_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR800_DPTS_LNER_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR800/BR800_DPTS_LNER_Loading_4x_32bpp.png", "gfx/EMU/BR800/BR800_DPTS_LNER_Loading_4x_mask.png")
@@ -301,10 +301,7 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR800_TSRB_LNER, [ STORE_TEMP((getbits(ex
     1: spritegroup_BR800_MS_LNER_Loading; }
 
 // purchase sprite
-spriteset(spriteset_BR800_panto_down_purchase, "gfx/EMU/BR800/BR800_panto_down_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR800_panto_down_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR800/BR800_panto_down_1x_32bpp.png", "gfx/EMU/BR800/BR800_panto_down_1x_mask.png")
+spriteset(spriteset_BR800_panto_down_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR800/BR800_panto_down_4x_32bpp.png", "gfx/EMU/BR800/BR800_panto_down_4x_mask.png")
     { template_purchase(0,0) }
 
 // dual mode switches

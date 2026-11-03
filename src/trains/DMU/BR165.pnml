@@ -33,10 +33,7 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR165_0_DMCL_NSE, [ STORE_TEMP((getbits(e
     1: spritegroup_BR165_0_DMCL_NSE_Loading; }
 
 // purchase sprite
-spriteset(spriteset_BR165_0_DMCL_NSE_purchase, "gfx/DMU/BR165/BR165_0_DMCL_NSE_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR165_0_DMCL_NSE_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR165/BR165_0_DMCL_NSE_1x_32bpp.png", "gfx/DMU/BR165/BR165_0_DMCL_NSE_1x_mask.png")
+spriteset(spriteset_BR165_0_DMCL_NSE_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR165/BR165_0_DMCL_NSE_4x_32bpp.png", "gfx/DMU/BR165/BR165_0_DMCL_NSE_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -123,10 +120,7 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR165_1_DMCL_NSE, [ STORE_TEMP((getbits(e
     1: spritegroup_BR165_0_DMCL_NSE_Loading; }
 
 // purchase sprite
-spriteset(spriteset_BR165_1_DMCL_NSE_purchase, "gfx/DMU/BR165/BR165_1_DMCL_NSE_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR165_1_DMCL_NSE_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR165/BR165_1_DMCL_NSE_1x_32bpp.png", "gfx/DMU/BR165/BR165_1_DMCL_NSE_1x_mask.png")
+spriteset(spriteset_BR165_1_DMCL_NSE_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR165/BR165_1_DMCL_NSE_4x_32bpp.png", "gfx/DMU/BR165/BR165_1_DMCL_NSE_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -198,10 +192,7 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR165_DMCL_Chiltern, [ STORE_TEMP((getbit
     1: spritegroup_BR165_DMCL_Chiltern_Loading; }
 
 // purchase sprite
-spriteset(spriteset_BR165_DMCL_Chiltern_purchase, "gfx/DMU/BR165/BR165_DMCL_Chiltern_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR165_DMCL_Chiltern_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR165/BR165_DMCL_Chiltern_1x_32bpp.png", "gfx/DMU/BR165/BR165_DMCL_Chiltern_1x_mask.png")
+spriteset(spriteset_BR165_DMCL_Chiltern_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR165/BR165_DMCL_Chiltern_4x_32bpp.png", "gfx/DMU/BR165/BR165_DMCL_Chiltern_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -239,10 +230,7 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR165_DMCL_Chiltern_Revised, [ STORE_TEMP
     1: spritegroup_BR165_DMCL_Chiltern_Revised_Loading; }
 
 // purchase sprite
-spriteset(spriteset_BR165_DMCL_Chiltern_Revised_purchase, "gfx/DMU/BR165/BR165_DMCL_Chiltern_Revised_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR165_DMCL_Chiltern_Revised_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR165/BR165_DMCL_Chiltern_Revised_1x_32bpp.png", "gfx/DMU/BR165/BR165_DMCL_Chiltern_Revised_1x_mask.png")
+spriteset(spriteset_BR165_DMCL_Chiltern_Revised_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR165/BR165_DMCL_Chiltern_Revised_4x_32bpp.png", "gfx/DMU/BR165/BR165_DMCL_Chiltern_Revised_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -333,10 +321,7 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR165_DMCL_FGWL, [ STORE_TEMP((getbits(ex
     1: spritegroup_BR165_DMCL_FGWL_Loading; }
 
 // purchase sprite
-spriteset(spriteset_BR165_DMCL_FGW_purchase, "gfx/DMU/BR165/BR165_DMCL_FGW_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR165_DMCL_FGW_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR165/BR165_DMCL_FGW_1x_32bpp.png", "gfx/DMU/BR165/BR165_DMCL_FGW_1x_mask.png")
+spriteset(spriteset_BR165_DMCL_FGW_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR165/BR165_DMCL_FGW_4x_32bpp.png", "gfx/DMU/BR165/BR165_DMCL_FGW_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -359,10 +344,7 @@ spritegroup spritegroup_BR165_DMCL_FGWL_Loading_REV {
     loading: [spriteset_BR165_DMCL_FGWL_Loading_REV]; }
 
 // purchase sprite
-spriteset(spriteset_BR165_DMCL_FGWL_purchase, "gfx/DMU/BR165/BR165_DMCL_FGWL_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR165_DMCL_FGWL_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR165/BR165_DMCL_FGWL_1x_32bpp.png", "gfx/DMU/BR165/BR165_DMCL_FGWL_1x_mask.png")
+spriteset(spriteset_BR165_DMCL_FGWL_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR165/BR165_DMCL_FGWL_4x_32bpp.png", "gfx/DMU/BR165/BR165_DMCL_FGWL_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -400,10 +382,7 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR165_DMCL_GWR, [ STORE_TEMP((getbits(ext
     1: spritegroup_BR165_DMCL_GWR_Loading; }
 
 // purchase sprite
-spriteset(spriteset_BR165_DMCL_GWR_purchase, "gfx/DMU/BR165/BR165_DMCL_GWR_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR165_DMCL_GWR_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR165/BR165_DMCL_GWR_1x_32bpp.png", "gfx/DMU/BR165/BR165_DMCL_GWR_1x_mask.png")
+spriteset(spriteset_BR165_DMCL_GWR_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR165/BR165_DMCL_GWR_4x_32bpp.png", "gfx/DMU/BR165/BR165_DMCL_GWR_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR165_DMSL_Chiltern_Loading, "gfx/DMU/BR165/BR165_DMSL_Chiltern_Loading_1x_8bpp.png")

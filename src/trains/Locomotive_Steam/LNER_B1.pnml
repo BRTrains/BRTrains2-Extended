@@ -25,10 +25,7 @@ spriteset(spriteset_LNER_B1_BR_LinedBlack, "gfx/Locomotive_Steam/LNER_B1/LNER_B1
     { template_78trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LNER_B1_BR_LinedBlack_purchase, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_BR_LinedBlack_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LNER_B1_BR_LinedBlack_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_BR_LinedBlack_1x_32bpp.png", "gfx/Locomotive_Steam/LNER_B1/LNER_B1_BR_LinedBlack_1x_mask.png")
+spriteset(spriteset_LNER_B1_BR_LinedBlack_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_BR_LinedBlack_4x_32bpp.png", "gfx/Locomotive_Steam/LNER_B1/LNER_B1_BR_LinedBlack_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -71,10 +68,7 @@ spriteset(spriteset_LNER_B1_LNER_Green, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_LN
     { template_78trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LNER_B1_LNER_Green_purchase, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_LNER_Green_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LNER_B1_LNER_Green_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_LNER_Green_1x_32bpp.png", "gfx/Locomotive_Steam/LNER_B1/LNER_B1_LNER_Green_1x_mask.png")
+spriteset(spriteset_LNER_B1_LNER_Green_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_LNER_Green_4x_32bpp.png", "gfx/Locomotive_Steam/LNER_B1/LNER_B1_LNER_Green_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -91,10 +85,7 @@ spriteset(spriteset_LNER_B1_LNER_Wartime_Black, "gfx/Locomotive_Steam/LNER_B1/LN
     { template_78trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LNER_B1_LNER_Wartime_Black_purchase, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_LNER_Wartime_Black_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LNER_B1_LNER_Wartime_Black_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_LNER_Wartime_Black_1x_32bpp.png", "gfx/Locomotive_Steam/LNER_B1/LNER_B1_LNER_Wartime_Black_1x_mask.png")
+spriteset(spriteset_LNER_B1_LNER_Wartime_Black_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_LNER_Wartime_Black_4x_32bpp.png", "gfx/Locomotive_Steam/LNER_B1/LNER_B1_LNER_Wartime_Black_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -111,10 +102,7 @@ spriteset(spriteset_LNER_B1_Nameplates, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_Na
     { template_78trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LNER_B1_Nameplates_purchase, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_Nameplates_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LNER_B1_Nameplates_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_Nameplates_1x_32bpp.png", "gfx/Locomotive_Steam/LNER_B1/LNER_B1_Nameplates_1x_mask.png")
+spriteset(spriteset_LNER_B1_Nameplates_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_Nameplates_4x_32bpp.png", "gfx/Locomotive_Steam/LNER_B1/LNER_B1_Nameplates_4x_mask.png")
     { template_purchase(0,0) }
 
 // Anim_sprites
@@ -166,10 +154,7 @@ spriteset(spriteset_LNER_B1_Anim4, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_Anim_4_
     alternative_sprites(spriteset_LNER_B1_Anim4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_Anim_4_4x_32bpp.png", "gfx/Locomotive_Steam/LNER_B1/LNER_B1_Anim_4_4x_mask.png")
     { template_78trains_4x(0,0) }
 
-spriteset(spriteset_LNER_B1_Anim_purchase, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_Anim_1_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LNER_B1_Anim_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_Anim_1_1x_32bpp.png", "gfx/Locomotive_Steam/LNER_B1/LNER_B1_Anim_1_1x_mask.png")
+spriteset(spriteset_LNER_B1_Anim_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LNER_B1/LNER_B1_Anim_1_4x_32bpp.png", "gfx/Locomotive_Steam/LNER_B1/LNER_B1_Anim_1_4x_mask.png")
     { template_purchase(0,0) }
 
 switch(FEAT_TRAINS, SELF, sw_animation_LNER_B1, motion_counter % 4) {

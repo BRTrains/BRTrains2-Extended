@@ -38,12 +38,8 @@ spriteset(spriteset_BR_IIA_D_Grey_Blue_Curve, "gfx/Wagons/BR_IIA_D/BR_IIA_D_Grey
     { template_118trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_IIA_D_Grey_Blue_Curve_purchase, "gfx/Wagons/BR_IIA_D/BR_IIA_D_Grey_Blue_Curve_1x_8bpp.png")
+spriteset(spriteset_BR_IIA_D_Grey_Blue_Curve_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_IIA_D/BR_IIA_D_Grey_Blue_Curve_4x_32bpp.png", "gfx/Wagons/BR_IIA_D/BR_IIA_D_Grey_Blue_Curve_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_IIA_D_Grey_Blue_Curve_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_IIA_D/BR_IIA_D_Grey_Blue_Curve_1x_32bpp.png", "gfx/Wagons/BR_IIA_D/BR_IIA_D_Grey_Blue_Curve_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // livery switch
 random_switch(FEAT_TRAINS, SELF, sw_random_choose_Grey_Blue_BR_IIA) {

@@ -103,10 +103,7 @@ spriteset(spriteset_BR_Standard_4MT_Tank_BR_Lined_BlackEarly_REV, "gfx/Locomotiv
     { template_98trains_REV_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Standard_4MT_Tank_BR_Lined_BlackEarly_purchase, "gfx/Locomotive_Steam/BR_Standard_4MT_Tank/BR_Standard_4MT_Tank_BR_Lined_BlackEarly_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Standard_4MT_Tank_BR_Lined_BlackEarly_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/BR_Standard_4MT_Tank/BR_Standard_4MT_Tank_BR_Lined_BlackEarly_1x_32bpp.png", "gfx/Locomotive_Steam/BR_Standard_4MT_Tank/BR_Standard_4MT_Tank_BR_Lined_BlackEarly_1x_mask.png")
+spriteset(spriteset_BR_Standard_4MT_Tank_BR_Lined_BlackEarly_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/BR_Standard_4MT_Tank/BR_Standard_4MT_Tank_BR_Lined_BlackEarly_4x_32bpp.png", "gfx/Locomotive_Steam/BR_Standard_4MT_Tank/BR_Standard_4MT_Tank_BR_Lined_BlackEarly_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -288,10 +285,7 @@ spriteset(spriteset_BR_Standard_4MT_Tank_Anim4, "gfx/Locomotive_Steam/BR_Standar
     alternative_sprites(spriteset_BR_Standard_4MT_Tank_Anim4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/BR_Standard_4MT_Tank/BR_Standard_4MT_Tank_Anim_4_4x_32bpp.png", "gfx/Locomotive_Steam/BR_Standard_4MT_Tank/BR_Standard_4MT_Tank_Anim_4_4x_mask.png")
     { template_98trains_4x(0,0) }
 
-spriteset(spriteset_BR_Standard_4MT_Tank_Anim_purchase, "gfx/Locomotive_Steam/BR_Standard_4MT_Tank/BR_Standard_4MT_Tank_Anim_1_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Standard_4MT_Tank_Anim_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/BR_Standard_4MT_Tank/BR_Standard_4MT_Tank_Anim_1_1x_32bpp.png", "gfx/Locomotive_Steam/BR_Standard_4MT_Tank/BR_Standard_4MT_Tank_Anim_1_1x_mask.png")
+spriteset(spriteset_BR_Standard_4MT_Tank_Anim_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/BR_Standard_4MT_Tank/BR_Standard_4MT_Tank_Anim_1_4x_32bpp.png", "gfx/Locomotive_Steam/BR_Standard_4MT_Tank/BR_Standard_4MT_Tank_Anim_1_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR_Standard_4MT_Tank_Anim1_REV, "gfx/Locomotive_Steam/BR_Standard_4MT_Tank/BR_Standard_4MT_Tank_Anim_1_1x_8bpp.png")

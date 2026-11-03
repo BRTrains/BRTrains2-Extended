@@ -153,12 +153,8 @@ switch(FEAT_TRAINS, SELF, sw_spritestack_BR325_PMV_REV, [STORE_TEMP((getbits(ext
     1: return sw_panto_BR325_REV; }
 
 // purchase sprite
-spriteset(spriteset_BR325_DTV_RoyalMail_purchase, "gfx/EMU/BR325/BR325_DTV_RoyalMail_1x_8bpp.png")
+spriteset(spriteset_BR325_DTV_RoyalMail_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR325/BR325_DTV_RoyalMail_4x_32bpp.png", "gfx/EMU/BR325/BR325_DTV_RoyalMail_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR325_DTV_RoyalMail_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR325/BR325_DTV_RoyalMail_1x_32bpp.png", "gfx/EMU/BR325/BR325_DTV_RoyalMail_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // reversing switches
 switch(FEAT_TRAINS, PARENT, sw_BR325_PMV_TAV_RoyalMail, vehicle_is_reversed) {

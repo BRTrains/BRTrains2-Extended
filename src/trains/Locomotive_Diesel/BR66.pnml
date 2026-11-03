@@ -78,10 +78,7 @@ spriteset(spriteset_BR66_DRS_Plain, "gfx/Locomotive_Diesel/BR66/BR66_DRS_Plain_1
     { template_138trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR66_purchase, "gfx/Locomotive_Diesel/BR66/BR66_Freightliner_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR66_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR66/BR66_Freightliner_1x_32bpp.png", "gfx/Locomotive_Diesel/BR66/BR66_Freightliner_1x_mask.png")
+spriteset(spriteset_BR66_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR66/BR66_Freightliner_4x_32bpp.png", "gfx/Locomotive_Diesel/BR66/BR66_Freightliner_4x_mask.png")
     { template_purchase(0,0) }
 
 // FX effects

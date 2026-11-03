@@ -12,12 +12,8 @@ spriteset(spriteset_BR_VAA_BR_Bauxite, "gfx/Wagons/BR_VAA/BR_VAA_BR_Bauxite_1x_8
         { template_78trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_VAA_BR_Bauxite_purchase, "gfx/Wagons/BR_VAA/BR_VAA_BR_Bauxite_1x_8bpp.png")
+spriteset(spriteset_BR_VAA_BR_Bauxite_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_VAA/BR_VAA_BR_Bauxite_4x_32bpp.png", "gfx/Wagons/BR_VAA/BR_VAA_BR_Bauxite_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_VAA_BR_Bauxite_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_VAA/BR_VAA_BR_Bauxite_1x_32bpp.png", "gfx/Wagons/BR_VAA/BR_VAA_BR_Bauxite_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // basic sprite
 spriteset(spriteset_BR_VAA_BR_Research_Dept, "gfx/Wagons/BR_VAA/BR_VAA_BR_Research_Dept_1x_8bpp.png")
@@ -46,12 +42,8 @@ spriteset(spriteset_BR_VAA_EWS, "gfx/Wagons/BR_VAA/BR_VAA_EWS_1x_8bpp.png")
         { template_78trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_VAA_EWS_purchase, "gfx/Wagons/BR_VAA/BR_VAA_EWS_1x_8bpp.png")
+spriteset(spriteset_BR_VAA_EWS_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_VAA/BR_VAA_EWS_4x_32bpp.png", "gfx/Wagons/BR_VAA/BR_VAA_EWS_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_VAA_EWS_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_VAA/BR_VAA_EWS_1x_32bpp.png", "gfx/Wagons/BR_VAA/BR_VAA_EWS_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // basic sprite
 spriteset(spriteset_BR_VAA_Private_Bauxite, "gfx/Wagons/BR_VAA/BR_VAA_Private_Bauxite_1x_8bpp.png")
@@ -80,12 +72,8 @@ spriteset(spriteset_BR_VAA_Railfreight, "gfx/Wagons/BR_VAA/BR_VAA_Railfreight_1x
         { template_78trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_VAA_Railfreight_purchase, "gfx/Wagons/BR_VAA/BR_VAA_Railfreight_1x_8bpp.png")
+spriteset(spriteset_BR_VAA_Railfreight_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_VAA/BR_VAA_Railfreight_4x_32bpp.png", "gfx/Wagons/BR_VAA/BR_VAA_Railfreight_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_VAA_Railfreight_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_VAA/BR_VAA_Railfreight_1x_32bpp.png", "gfx/Wagons/BR_VAA/BR_VAA_Railfreight_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // basic sprite
 spriteset(spriteset_BR_VAA_Railfreight_Bauxite, "gfx/Wagons/BR_VAA/BR_VAA_Railfreight_Bauxite_1x_8bpp.png")

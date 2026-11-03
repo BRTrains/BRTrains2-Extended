@@ -3,7 +3,7 @@ spriteset(spriteset_BR_Mk5CS_BSO_CaledonianSleeper, ZOOM_LEVEL_IN_4X, BIT_DEPTH_
     { template_148trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk5CS_BSO_CaledonianSleeper_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_BSO_CaledonianSleeper_1x_32bpp.png", "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_BSO_CaledonianSleeper_1x_mask.png")
+spriteset(spriteset_BR_Mk5CS_BSO_CaledonianSleeper_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_BSO_CaledonianSleeper_4x_32bpp.png", "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_BSO_CaledonianSleeper_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR_Mk5CS_BSO_CaledonianSleeper_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_BSO_CaledonianSleeper_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_BSO_CaledonianSleeper_Loading_4x_mask.png")
@@ -27,7 +27,7 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk5CS_RLO_CaledonianSleeper, [ STORE_T
     1: spritegroup_BR_Mk5CS_BSO_CaledonianSleeper_Loading; }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk5CS_RLO_CaledonianSleeper_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_RLO_CaledonianSleeper_1x_32bpp.png", "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_RLO_CaledonianSleeper_1x_mask.png")
+spriteset(spriteset_BR_Mk5CS_RLO_CaledonianSleeper_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_RLO_CaledonianSleeper_4x_32bpp.png", "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_RLO_CaledonianSleeper_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -39,7 +39,7 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk5CS_SLC_CaledonianSleeper, [ STORE_T
     1: spritegroup_BR_Mk5CS_BSO_CaledonianSleeper_Loading; }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk5CS_SLC_CaledonianSleeper_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_SLC_CaledonianSleeper_1x_32bpp.png", "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_SLC_CaledonianSleeper_1x_mask.png")
+spriteset(spriteset_BR_Mk5CS_SLC_CaledonianSleeper_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_SLC_CaledonianSleeper_4x_32bpp.png", "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_SLC_CaledonianSleeper_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -51,7 +51,7 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk5CS_SLED_CaledonianSleeper, [ STORE_
     1: spritegroup_BR_Mk5CS_BSO_CaledonianSleeper_Loading; }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk5CS_SLED_CaledonianSleeper_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_SLED_CaledonianSleeper_1x_32bpp.png", "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_SLED_CaledonianSleeper_1x_mask.png")
+spriteset(spriteset_BR_Mk5CS_SLED_CaledonianSleeper_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_SLED_CaledonianSleeper_4x_32bpp.png", "gfx/Coaches/BR_Mk5CS/BR_Mk5CS_SLED_CaledonianSleeper_4x_mask.png")
     { template_purchase(0,0) }
 
 // unit definition

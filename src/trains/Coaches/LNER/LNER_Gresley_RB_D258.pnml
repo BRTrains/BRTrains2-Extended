@@ -4,7 +4,7 @@ spriteset(spriteset_LNER_Gresley_RB_D258_BR_Blue, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LNER_Gresley_RB_D258_BR_Blue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_BR_Blue_1x_32bpp.png", "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_BR_Blue_1x_mask.png")
+spriteset(spriteset_LNER_Gresley_RB_D258_BR_Blue_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_BR_Blue_4x_32bpp.png", "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_BR_Blue_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_LNER_Gresley_RB_D258_BR_Blue_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_BR_Blue_Loading_4x_32bpp.png", "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_BR_Blue_Loading_4x_mask.png")
@@ -24,7 +24,7 @@ spriteset(spriteset_LNER_Gresley_RB_D258_BR_BnC, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32B
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LNER_Gresley_RB_D258_BR_BnC_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_BR_BnC_1x_32bpp.png", "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_BR_BnC_1x_mask.png")
+spriteset(spriteset_LNER_Gresley_RB_D258_BR_BnC_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_BR_BnC_4x_32bpp.png", "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_BR_BnC_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_LNER_Gresley_RB_D258_BR_BnC_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_BR_BnC_Loading_4x_32bpp.png", "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_BR_BnC_Loading_4x_mask.png")
@@ -44,7 +44,7 @@ spriteset(spriteset_LNER_Gresley_RB_D258_BR_Maroon, ZOOM_LEVEL_IN_4X, BIT_DEPTH_
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LNER_Gresley_RB_D258_BR_Maroon_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_BR_Maroon_1x_32bpp.png", "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_BR_Maroon_1x_mask.png")
+spriteset(spriteset_LNER_Gresley_RB_D258_BR_Maroon_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_BR_Maroon_4x_32bpp.png", "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_BR_Maroon_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_LNER_Gresley_RB_D258_BR_Maroon_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_BR_Maroon_Loading_4x_32bpp.png", "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_BR_Maroon_Loading_4x_mask.png")
@@ -64,7 +64,7 @@ spriteset(spriteset_LNER_Gresley_RB_D258_LNER_Teak, ZOOM_LEVEL_IN_4X, BIT_DEPTH_
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LNER_Gresley_RB_D258_LNER_Teak_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_LNER_Teak_1x_32bpp.png", "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_LNER_Teak_1x_mask.png")
+spriteset(spriteset_LNER_Gresley_RB_D258_LNER_Teak_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_LNER_Teak_4x_32bpp.png", "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_LNER_Teak_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_LNER_Gresley_RB_D258_LNER_Teak_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_LNER_Teak_Loading_4x_32bpp.png", "gfx/Coaches/LNER_Gresley_RB_D258/LNER_Gresley_RB_D258_LNER_Teak_Loading_4x_mask.png")

@@ -119,10 +119,7 @@ spriteset(spriteset_BR_TTA_Private_Red, "gfx/Wagons/BR_TTA/BR_TTA_Private_Red_1x
     { template_68trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_TTA_purchase, "gfx/Wagons/BR_TTA/BR_TTA_Grey_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_TTA_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_TTA/BR_TTA_Grey_1x_32bpp.png", "gfx/Wagons/BR_TTA/BR_TTA_Grey_1x_mask.png")
+spriteset(spriteset_BR_TTA_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_TTA/BR_TTA_Grey_4x_32bpp.png", "gfx/Wagons/BR_TTA/BR_TTA_Grey_4x_mask.png")
     { template_purchase(0,0) }
 
 // Randomizer

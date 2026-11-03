@@ -4,7 +4,7 @@ spriteset(spriteset_BR_Mk1_TK_BR_Blue, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/C
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk1_TK_BR_Blue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Blue_1x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Blue_1x_mask.png")
+spriteset(spriteset_BR_Mk1_TK_BR_Blue_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Blue_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Blue_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR_Mk1_TK_BR_Blue_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Blue_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Blue_Loading_4x_mask.png")
@@ -24,7 +24,7 @@ spriteset(spriteset_BR_Mk1_TK_BR_BnC, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Co
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk1_TK_BR_BnC_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_BnC_1x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_BnC_1x_mask.png")
+spriteset(spriteset_BR_Mk1_TK_BR_BnC_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_BnC_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_BnC_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR_Mk1_TK_BR_BnC_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_BnC_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_BnC_Loading_4x_mask.png")
@@ -43,10 +43,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_TK_BR_BnC, [ STORE_TEMP((getbits(e
 spriteset(spriteset_BR_Mk1_TK_BR_CnC, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_CnC_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_CnC_4x_mask.png")
     { template_128trains_4x(0,0) }
 
-// purchase sprite
-spriteset(spriteset_BR_Mk1_TK_BR_CnC_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_CnC_1x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_CnC_1x_mask.png")
-    { template_purchase(0,0) }
-
 spriteset(spriteset_BR_Mk1_TK_BR_CnC_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_CnC_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_CnC_Loading_4x_mask.png")
     { template_128trains_4x(0,0) }
 
@@ -64,7 +60,7 @@ spriteset(spriteset_BR_Mk1_TK_BR_Maroon, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk1_TK_BR_Maroon_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Maroon_1x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Maroon_1x_mask.png")
+spriteset(spriteset_BR_Mk1_TK_BR_Maroon_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Maroon_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Maroon_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR_Mk1_TK_BR_Maroon_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Maroon_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Maroon_Loading_4x_mask.png")
@@ -83,10 +79,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_TK_BR_Maroon, [ STORE_TEMP((getbit
 spriteset(spriteset_BR_Mk1_TK_BR_Southern_Green, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Southern_Green_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Southern_Green_4x_mask.png")
     { template_128trains_4x(0,0) }
 
-// purchase sprite
-spriteset(spriteset_BR_Mk1_TK_BR_Southern_Green_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Southern_Green_1x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Southern_Green_1x_mask.png")
-    { template_purchase(0,0) }
-
 spriteset(spriteset_BR_Mk1_TK_BR_Southern_Green_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Southern_Green_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Southern_Green_Loading_4x_mask.png")
     { template_128trains_4x(0,0) }
 
@@ -102,10 +94,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_TK_BR_Southern_Green, [ STORE_TEMP
 // basic sprite
 spriteset(spriteset_BR_Mk1_TK_InterCity, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_InterCity_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_InterCity_4x_mask.png")
     { template_128trains_4x(0,0) }
-
-// purchase sprite
-spriteset(spriteset_BR_Mk1_TK_InterCity_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_InterCity_1x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_InterCity_1x_mask.png")
-    { template_purchase(0,0) }
 
 spriteset(spriteset_BR_Mk1_TK_InterCity_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_InterCity_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_InterCity_Loading_4x_mask.png")
     { template_128trains_4x(0,0) }
@@ -123,10 +111,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_TK_InterCity, [ STORE_TEMP((getbit
 spriteset(spriteset_BR_Mk1_TK_NSE, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_NSE_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_NSE_4x_mask.png")
     { template_128trains_4x(0,0) }
 
-// purchase sprite
-spriteset(spriteset_BR_Mk1_TK_NSE_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_NSE_1x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_NSE_1x_mask.png")
-    { template_purchase(0,0) }
-
 spriteset(spriteset_BR_Mk1_TK_NSE_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_NSE_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_NSE_Loading_4x_mask.png")
     { template_128trains_4x(0,0) }
 
@@ -143,10 +127,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_TK_NSE, [ STORE_TEMP((getbits(extr
 spriteset(spriteset_BR_Mk1_TK_RegionalRailways, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_RegionalRailways_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_RegionalRailways_4x_mask.png")
     { template_128trains_4x(0,0) }
 
-// purchase sprite
-spriteset(spriteset_BR_Mk1_TK_RegionalRailways_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_RegionalRailways_1x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_RegionalRailways_1x_mask.png")
-    { template_purchase(0,0) }
-
 spriteset(spriteset_BR_Mk1_TK_RegionalRailways_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_RegionalRailways_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_RegionalRailways_Loading_4x_mask.png")
     { template_128trains_4x(0,0) }
 
@@ -162,10 +142,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_TK_RegionalRailways, [ STORE_TEMP(
 // basic sprite
 spriteset(spriteset_BR_Mk1_TK_WestCoastRailway, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_WestCoastRailway_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_WestCoastRailway_4x_mask.png")
     { template_128trains_4x(0,0) }
-
-// purchase sprite
-spriteset(spriteset_BR_Mk1_TK_WestCoastRailway_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_WestCoastRailway_1x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_WestCoastRailway_1x_mask.png")
-    { template_purchase(0,0) }
 
 spriteset(spriteset_BR_Mk1_TK_WestCoastRailway_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_WestCoastRailway_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_WestCoastRailway_Loading_4x_mask.png")
     { template_128trains_4x(0,0) }
@@ -226,13 +202,6 @@ switch(FEAT_TRAINS, SELF, switch_BR_Mk1_TK_graphics, position_in_articulated_veh
 	    spriteset_empty;
 }
 
-// capacity switch
-switch(FEAT_TRAINS, SELF, sw_capacity_BR_Mk1_TK, position_in_vehid_chain % 3) {
-    0: 62 * param_pax; // all the capacity - (vehid chain number - 1)
-    1..2: 1 * param_pax;
-    // total 64
-}
-
 // articulation switch
 switch(FEAT_TRAINS, SELF, switch_articulated_BR_Mk1_TK, extra_callback_info1) {
 	1..2: return item_BR_Mk1_TK;
@@ -264,7 +233,7 @@ item (FEAT_TRAINS, item_BR_Mk1_TK, 12031) { // Diagram 146/147 BR Mk1 TK/SK
 		refittable_cargo_classes:		bitmask(CC_PASSENGERS);
         cargo_allow_refit:              [PASS, TOUR];
         misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
-        cargo_capacity:                 1;
+        cargo_capacity:                 21 * param_pax;
         loading_speed:					15;
         running_cost_base:			    RUNNING_COST_STEAM;		
 		
@@ -273,7 +242,7 @@ item (FEAT_TRAINS, item_BR_Mk1_TK, 12031) { // Diagram 146/147 BR Mk1 TK/SK
         speed:                          100 mph;
         refit_cost:                     0;
         track_type:                     RAIL;
-        weight:                         36 ton;
+        weight:                         33 ton;
         length:                         4;
 	}
     
@@ -286,7 +255,6 @@ item (FEAT_TRAINS, item_BR_Mk1_TK, 12031) { // Diagram 146/147 BR Mk1 TK/SK
         name:                           sw_BR_Mk1_TK_name;
         articulated_part:               switch_articulated_BR_Mk1_TK;
         purchase_cargo_capacity:        return (21 * param_pax); // divide by number of articulated parts and floor
-        cargo_capacity:                 sw_capacity_BR_Mk1_TK;
         cost_factor:                    1163;
         running_cost_factor:            1404;
         cargo_subtype_text:             sw_BR_Mk1_TK_cargo_subtype_text; 
@@ -294,5 +262,116 @@ item (FEAT_TRAINS, item_BR_Mk1_TK, 12031) { // Diagram 146/147 BR Mk1 TK/SK
 
         // purchase menu text
         additional_text:                sw_BR_Mk1_TK_desc;
+    }
+}
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, switch_articulated_BR_Mk1_SO, extra_callback_info1) {
+	1..2: return item_BR_Mk1_SO;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+item (FEAT_TRAINS, item_BR_Mk1_SO, 12037) { // Diagram 94 BR Mk1 SO
+    property {
+		// common properties
+        name:                           string(STR_NAME_BR_Mk1_SO);
+        variant_group:                  item_BR_Mk1_Header; // unit ID or item
+
+        climates_available:              ALL_CLIMATES;
+		introduction_date:				date(1954,01,01);
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+		refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        cargo_allow_refit:              [PASS, TOUR];
+        misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 16 * param_pax;
+        loading_speed:					15;
+        running_cost_base:			    RUNNING_COST_STEAM;		
+		
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        weight:                         33 ton;
+        length:                         4;
+	}
+    
+	graphics {
+        // graphics
+        default:                        switch_BR_Mk1_TK_graphics;
+        purchase:                       sw_spritestack_BR_Mk1_TK_purchase;
+
+        // internal code
+        articulated_part:               switch_articulated_BR_Mk1_SO;
+        cost_factor:                    979;
+        running_cost_factor:            1355;
+        cargo_subtype_text:             sw_BR_Mk1_TK_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return(	string(str_purchase_coach,
+                                                string(str_coach_SO)));
+    }
+}
+
+// no sprites, externally identical to Mk1 SO
+// capacity switch
+switch(FEAT_TRAINS, SELF, sw_capacity_BR_Mk1_TSO, position_in_vehid_chain % 3) {
+    0: 62 * param_pax; // all the capacity - (vehid chain number - 1)
+    1..2: 1 * param_pax;
+    // total 64
+}
+
+// articulation switch
+switch(FEAT_TRAINS, SELF, switch_articulated_BR_Mk1_TSO, extra_callback_info1) {
+	1..2: return item_BR_Mk1_TSO;
+		return CB_RESULT_NO_MORE_ARTICULATED_PARTS; }
+
+item (FEAT_TRAINS, item_BR_Mk1_TSO, 12038) { // Diagram 93 BR Mk1 TSO
+    property {
+		// common properties
+        name:                           string(STR_NAME_BR_Mk1_TSO);
+        variant_group:                  item_BR_Mk1_Header; // unit ID or item
+
+        climates_available:              ALL_CLIMATES;
+		introduction_date:				date(1953,01,01);
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 					40;
+        retire_early: 					-10;							
+        reliability_decay: 				20;
+		refittable_cargo_classes:		bitmask(CC_PASSENGERS);
+        cargo_allow_refit:              [PASS, TOUR];
+        misc_flags: 					bitmask(TRAIN_FLAG_SPRITE_STACK);
+        cargo_capacity:                 21 * param_pax;
+        loading_speed:					15;
+        running_cost_base:			    RUNNING_COST_STEAM;		
+		
+        //specific properties
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        speed:                          100 mph;
+        refit_cost:                     0;
+        track_type:                     RAIL;
+        weight:                         33 ton;
+        length:                         4;
+	}
+    
+	graphics {
+        // graphics
+        default:                        switch_BR_Mk1_TK_graphics;
+        purchase:                       sw_spritestack_BR_Mk1_TK_purchase;
+
+        // internal code
+        articulated_part:               switch_articulated_BR_Mk1_TSO;
+        purchase_cargo_capacity:        return (21 * param_pax); // divide by number of articulated parts and floor
+        cost_factor:                    1163;
+        running_cost_factor:            1404;
+        cargo_subtype_text:             sw_BR_Mk1_TK_cargo_subtype_text; 
+        colour_mapping:                 return PALETTE_CC_FIRST;
+
+        // purchase menu text
+        additional_text:                return(	string(str_purchase_coach,
+                                                string(str_coach_TSO)));
     }
 }

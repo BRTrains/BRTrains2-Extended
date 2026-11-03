@@ -25,10 +25,7 @@ spriteset(spriteset_BR_Standard_9F_BR_Green, "gfx/Locomotive_Steam/BR_Standard_9
     { template_98trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Standard_9F_BR_Green_purchase, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_BR_Green_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Standard_9F_BR_Green_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_BR_Green_1x_32bpp.png", "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_BR_Green_1x_mask.png")
+spriteset(spriteset_BR_Standard_9F_BR_Green_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_BR_Green_4x_32bpp.png", "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_BR_Green_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -58,10 +55,7 @@ spriteset(spriteset_BR_Standard_9F_BR_Plain_Black, "gfx/Locomotive_Steam/BR_Stan
     { template_98trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Standard_9F_BR_Plain_Black_purchase, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_BR_Plain_Black_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Standard_9F_BR_Plain_Black_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_BR_Plain_Black_1x_32bpp.png", "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_BR_Plain_Black_1x_mask.png")
+spriteset(spriteset_BR_Standard_9F_BR_Plain_Black_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_BR_Plain_Black_4x_32bpp.png", "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_BR_Plain_Black_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -78,10 +72,7 @@ spriteset(spriteset_BR_Standard_9F_Double_Chimney, "gfx/Locomotive_Steam/BR_Stan
     { template_98trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Standard_9F_Double_Chimney_purchase, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Double_Chimney_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Standard_9F_Double_Chimney_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Double_Chimney_1x_32bpp.png", "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Double_Chimney_1x_mask.png")
+spriteset(spriteset_BR_Standard_9F_Double_Chimney_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Double_Chimney_4x_32bpp.png", "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Double_Chimney_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -98,10 +89,7 @@ spriteset(spriteset_BR_Standard_9F_Nameplate, "gfx/Locomotive_Steam/BR_Standard_
     { template_98trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Standard_9F_Nameplate_purchase, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Nameplate_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Standard_9F_Nameplate_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Nameplate_1x_32bpp.png", "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Nameplate_1x_mask.png")
+spriteset(spriteset_BR_Standard_9F_Nameplate_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Nameplate_4x_32bpp.png", "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Nameplate_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -144,10 +132,7 @@ spriteset(spriteset_BR_Standard_9F_Single_Chimney, "gfx/Locomotive_Steam/BR_Stan
     { template_98trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Standard_9F_Single_Chimney_purchase, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Single_Chimney_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Standard_9F_Single_Chimney_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Single_Chimney_1x_32bpp.png", "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Single_Chimney_1x_mask.png")
+spriteset(spriteset_BR_Standard_9F_Single_Chimney_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Single_Chimney_4x_32bpp.png", "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Single_Chimney_4x_mask.png")
     { template_purchase(0,0) }
 
 // Animsprites
@@ -199,10 +184,7 @@ spriteset(spriteset_BR_Standard_9F_Anim4, "gfx/Locomotive_Steam/BR_Standard_9F/B
     alternative_sprites(spriteset_BR_Standard_9F_Anim4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Anim4_4x_32bpp.png", "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Anim4_4x_mask.png")
     { template_98trains_4x(0,0) }
 
-spriteset(spriteset_BR_Standard_9F_Anim_purchase, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Anim1_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Standard_9F_Anim_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Anim1_1x_32bpp.png", "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Anim1_1x_mask.png")
+spriteset(spriteset_BR_Standard_9F_Anim_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Anim1_4x_32bpp.png", "gfx/Locomotive_Steam/BR_Standard_9F/BR_Standard_9F_Anim1_4x_mask.png")
     { template_purchase(0,0) }
 
 switch(FEAT_TRAINS, SELF, sw_animation_BR_Standard_9F, motion_counter % 4) {

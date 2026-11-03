@@ -12,10 +12,7 @@ spriteset(spriteset_BR101_DM_Base_BR_Blue_YellowFront, "gfx/DMU/BR101/BR101_DM_B
     { template_118trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR101_DM_Base_BR_Blue_YellowFront_purchase, "gfx/DMU/BR101/BR101_DM_Base_BR_Blue_YellowFront_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR101_DM_Base_BR_Blue_YellowFront_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_DM_Base_BR_Blue_YellowFront_1x_32bpp.png", "gfx/DMU/BR101/BR101_DM_Base_BR_Blue_YellowFront_1x_mask.png")
+spriteset(spriteset_BR101_DM_Base_BR_Blue_YellowFront_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_DM_Base_BR_Blue_YellowFront_4x_32bpp.png", "gfx/DMU/BR101/BR101_DM_Base_BR_Blue_YellowFront_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -71,10 +68,7 @@ spriteset(spriteset_BR101_DM_Base_BR_Green, "gfx/DMU/BR101/BR101_DM_Base_BR_Gree
     { template_118trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR101_DM_Base_BR_Green_purchase, "gfx/DMU/BR101/BR101_DM_Base_BR_Green_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR101_DM_Base_BR_Green_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_DM_Base_BR_Green_1x_32bpp.png", "gfx/DMU/BR101/BR101_DM_Base_BR_Green_1x_mask.png")
+spriteset(spriteset_BR101_DM_Base_BR_Green_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_DM_Base_BR_Green_4x_32bpp.png", "gfx/DMU/BR101/BR101_DM_Base_BR_Green_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -130,10 +124,7 @@ spriteset(spriteset_BR101_DM_Exhaust, "gfx/DMU/BR101/BR101_DM_Exhaust_1x_8bpp.pn
     { template_118trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR101_DM_Exhaust_purchase, "gfx/DMU/BR101/BR101_DM_Exhaust_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR101_DM_Exhaust_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_DM_Exhaust_1x_32bpp.png", "gfx/DMU/BR101/BR101_DM_Exhaust_1x_mask.png")
+spriteset(spriteset_BR101_DM_Exhaust_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_DM_Exhaust_4x_32bpp.png", "gfx/DMU/BR101/BR101_DM_Exhaust_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -163,10 +154,7 @@ spriteset(spriteset_BR101_DMBS_BR_Blue_Loaded, "gfx/DMU/BR101/BR101_DMBS_BR_Blue
     { template_118trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR101_DMBS_BR_Blue_Loaded_purchase, "gfx/DMU/BR101/BR101_DMBS_BR_Blue_Loaded_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR101_DMBS_BR_Blue_Loaded_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_DMBS_BR_Blue_Loaded_1x_32bpp.png", "gfx/DMU/BR101/BR101_DMBS_BR_Blue_Loaded_1x_mask.png")
+spriteset(spriteset_BR101_DMBS_BR_Blue_Loaded_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_DMBS_BR_Blue_Loaded_4x_32bpp.png", "gfx/DMU/BR101/BR101_DMBS_BR_Blue_Loaded_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR101_DMBS_BR_Blue_Loading, "gfx/DMU/BR101/BR101_DMBS_BR_Blue_Loading_1x_8bpp.png")
@@ -209,10 +197,7 @@ spriteset(spriteset_BR101_DMBS_BR_BlueGrey, "gfx/DMU/BR101/BR101_DMBS_BR_BlueGre
     { template_118trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR101_DMBS_BR_BlueGrey_purchase, "gfx/DMU/BR101/BR101_DMBS_BR_BlueGrey_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR101_DMBS_BR_BlueGrey_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_DMBS_BR_BlueGrey_1x_32bpp.png", "gfx/DMU/BR101/BR101_DMBS_BR_BlueGrey_1x_mask.png")
+spriteset(spriteset_BR101_DMBS_BR_BlueGrey_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_DMBS_BR_BlueGrey_4x_32bpp.png", "gfx/DMU/BR101/BR101_DMBS_BR_BlueGrey_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR101_DMBS_BR_BlueGrey_Loading, "gfx/DMU/BR101/BR101_DMBS_BR_BlueGrey_Loading_1x_8bpp.png")
@@ -293,10 +278,7 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR101_DMBS_BR_Green_YellowPanel, [ STORE_
     2: spriteset_BR101_DM_Exhaust; }
 
 // purchase sprite
-spriteset(spriteset_BR101_DMBS_BR_Green_Loaded_purchase, "gfx/DMU/BR101/BR101_DMBS_BR_Green_Loaded_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR101_DMBS_BR_Green_Loaded_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_DMBS_BR_Green_Loaded_1x_32bpp.png", "gfx/DMU/BR101/BR101_DMBS_BR_Green_Loaded_1x_mask.png")
+spriteset(spriteset_BR101_DMBS_BR_Green_Loaded_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_DMBS_BR_Green_Loaded_4x_32bpp.png", "gfx/DMU/BR101/BR101_DMBS_BR_Green_Loaded_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -313,10 +295,7 @@ spriteset(spriteset_BR101_DMBS_NSE, "gfx/DMU/BR101/BR101_DMBS_NSE_1x_8bpp.png")
     { template_118trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR101_DMBS_NSE_purchase, "gfx/DMU/BR101/BR101_DMBS_NSE_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR101_DMBS_NSE_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_DMBS_NSE_1x_32bpp.png", "gfx/DMU/BR101/BR101_DMBS_NSE_1x_mask.png")
+spriteset(spriteset_BR101_DMBS_NSE_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_DMBS_NSE_4x_32bpp.png", "gfx/DMU/BR101/BR101_DMBS_NSE_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR101_DMBS_NSE_Loading, "gfx/DMU/BR101/BR101_DMBS_NSE_Loading_1x_8bpp.png")
@@ -485,10 +464,7 @@ spriteset(spriteset_BR101_DTCL_BR_Blue_Loading, "gfx/DMU/BR101/BR101_DTCL_BR_Blu
     { template_118trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR101_DTCL_BR_Blue_Loaded_purchase, "gfx/DMU/BR101/BR101_DTCL_BR_Blue_Loaded_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR101_DTCL_BR_Blue_Loaded_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_DTCL_BR_Blue_Loaded_1x_32bpp.png", "gfx/DMU/BR101/BR101_DTCL_BR_Blue_Loaded_1x_mask.png")
+spriteset(spriteset_BR101_DTCL_BR_Blue_Loaded_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_DTCL_BR_Blue_Loaded_4x_32bpp.png", "gfx/DMU/BR101/BR101_DTCL_BR_Blue_Loaded_4x_mask.png")
     { template_purchase(0,0) }
 
 spritegroup spritegroup_BR101_DTCL_BR_Blue_Loading {  
@@ -982,10 +958,7 @@ spriteset(spriteset_BR101_TBS_SPT, "gfx/DMU/BR101/BR101_TBS_SPT_1x_8bpp.png")
     { template_118trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR101_TBS_SPT_purchase, "gfx/DMU/BR101/BR101_TBS_SPT_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR101_TBS_SPT_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_TBS_SPT_1x_32bpp.png", "gfx/DMU/BR101/BR101_TBS_SPT_1x_mask.png")
+spriteset(spriteset_BR101_TBS_SPT_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_TBS_SPT_4x_32bpp.png", "gfx/DMU/BR101/BR101_TBS_SPT_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR101_TBS_SPT_Loading, "gfx/DMU/BR101/BR101_TBS_SPT_Loading_1x_8bpp.png")
@@ -1023,10 +996,7 @@ spriteset(spriteset_BR101_TC_BR_Blue, "gfx/DMU/BR101/BR101_TC_BR_Blue_1x_8bpp.pn
     { template_118trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR101_TC_BR_Blue_purchase, "gfx/DMU/BR101/BR101_TC_BR_Blue_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR101_TC_BR_Blue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_TC_BR_Blue_1x_32bpp.png", "gfx/DMU/BR101/BR101_TC_BR_Blue_1x_mask.png")
+spriteset(spriteset_BR101_TC_BR_Blue_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR101/BR101_TC_BR_Blue_4x_32bpp.png", "gfx/DMU/BR101/BR101_TC_BR_Blue_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR101_TC_BR_Blue_Loading, "gfx/DMU/BR101/BR101_TC_BR_Blue_Loading_1x_8bpp.png")

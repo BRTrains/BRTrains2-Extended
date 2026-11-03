@@ -1206,4 +1206,4 @@ template template_168trains_REV_4x (x,y) {
 //###Templates for Purchase Sprites###				
 //####################################
 
-template template_purchase (x,y) {[ 234,    0,       62,    17,     -8,      -12]}
+template template_purchase (x,y) {[ 942,    0,       242,    68,     -32,      -48]}

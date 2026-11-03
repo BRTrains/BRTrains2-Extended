@@ -91,10 +91,7 @@ spriteset(spriteset_6_Wheeled_Milk_Tank_Red, "gfx/Wagons/6_Wheeled_Milk_Tank/6_W
 
 
 // purchase sprite
-spriteset(spriteset_6_Wheeled_Milk_Tank_Purchase, "gfx/Wagons/6_Wheeled_Milk_Tank/6_Wheeled_Milk_Tank_Private_Green_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_6_Wheeled_Milk_Tank_Purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/6_Wheeled_Milk_Tank/6_Wheeled_Milk_Tank_Private_Green_1x_32bpp.png", "gfx/Wagons/6_Wheeled_Milk_Tank/6_Wheeled_Milk_Tank_Private_Green_1x_mask.png")
+spriteset(spriteset_6_Wheeled_Milk_Tank_Purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/6_Wheeled_Milk_Tank/6_Wheeled_Milk_Tank_Private_Green_4x_32bpp.png", "gfx/Wagons/6_Wheeled_Milk_Tank/6_Wheeled_Milk_Tank_Private_Green_4x_mask.png")
     { template_purchase(0,0) }
 
 // random liveries

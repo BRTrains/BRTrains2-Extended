@@ -3,7 +3,7 @@ spriteset(spriteset_BR805_DPTF_AvantiWC_Nose_Closed, ZOOM_LEVEL_IN_4X, BIT_DEPTH
     { template_1558fronttrains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR805_DPTF_AvantiWC_Nose_Closed_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR805/BR805_DPTF_AvantiWC_Nose_Closed_1x_32bpp.png", "gfx/EMU/BR805/BR805_DPTF_AvantiWC_Nose_Closed_1x_mask.png")
+spriteset(spriteset_BR805_DPTF_AvantiWC_Nose_Closed_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR805/BR805_DPTF_AvantiWC_Nose_Closed_4x_32bpp.png", "gfx/EMU/BR805/BR805_DPTF_AvantiWC_Nose_Closed_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -42,7 +42,7 @@ spriteset(spriteset_BR805_DPTS_AvantiWC, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx
     { template_1558fronttrains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR805_DPTS_AvantiWC_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR805/BR805_DPTS_AvantiWC_1x_32bpp.png", "gfx/EMU/BR805/BR805_DPTS_AvantiWC_1x_mask.png")
+spriteset(spriteset_BR805_DPTS_AvantiWC_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR805/BR805_DPTS_AvantiWC_4x_32bpp.png", "gfx/EMU/BR805/BR805_DPTS_AvantiWC_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR805_DPTS_AvantiWC_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR805/BR805_DPTS_AvantiWC_Loading_4x_32bpp.png", "gfx/EMU/BR805/BR805_DPTS_AvantiWC_Loading_4x_mask.png")

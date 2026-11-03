@@ -42,10 +42,7 @@ spriteset(spriteset_BR745_DMFO_GA, "gfx/EMU/BR745/BR745_DMFO_GA_1x_8bpp.png")
     { template_138trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR745_DMFO_GA_purchase, "gfx/EMU/BR745/BR745_DMFO_GA_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR745_DMFO_GA_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_DMFO_GA_1x_32bpp.png", "gfx/EMU/BR745/BR745_DMFO_GA_1x_mask.png")
+spriteset(spriteset_BR745_DMFO_GA_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_DMFO_GA_4x_32bpp.png", "gfx/EMU/BR745/BR745_DMFO_GA_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR745_DMFO_GA_Loading, "gfx/EMU/BR745/BR745_DMFO_GA_Loading_1x_8bpp.png")
@@ -105,10 +102,7 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR745_DMSO_GA, [ STORE_TEMP((getbits(extr
     1: spritegroup_BR745_DMFO_GA_Loading; }
 
 // purchase sprite
-spriteset(spriteset_BR745_DMSO_GA_purchase, "gfx/EMU/BR745/BR745_DMSO_GA_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR745_DMSO_GA_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_DMSO_GA_1x_32bpp.png", "gfx/EMU/BR745/BR745_DMSO_GA_1x_mask.png")
+spriteset(spriteset_BR745_DMSO_GA_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR745/BR745_DMSO_GA_4x_32bpp.png", "gfx/EMU/BR745/BR745_DMSO_GA_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite

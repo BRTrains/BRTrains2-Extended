@@ -19,7 +19,7 @@ spriteset(spriteset_BR599_A_End_Nexus_Grey, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "
     { template_98trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR599_A_End_Nexus_Grey_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR599/BR599_A_End_Nexus_Grey_1x_32bpp.png", "gfx/EMU/BR599/BR599_A_End_Nexus_Grey_1x_mask.png")
+spriteset(spriteset_BR599_A_End_Nexus_Grey_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR599/BR599_A_End_Nexus_Grey_4x_32bpp.png", "gfx/EMU/BR599/BR599_A_End_Nexus_Grey_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR599_A_End_Nexus_Grey_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR599/BR599_A_End_Nexus_Grey_Loading_4x_32bpp.png", "gfx/EMU/BR599/BR599_A_End_Nexus_Grey_Loading_4x_mask.png")
@@ -87,7 +87,7 @@ spriteset(spriteset_BR599_A_End_RGB_Red, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx
     { template_98trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR599_A_End_RGB_Red_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR599/BR599_A_End_RGB_Red_1x_32bpp.png", "gfx/EMU/BR599/BR599_A_End_RGB_Red_1x_mask.png")
+spriteset(spriteset_BR599_A_End_RGB_Red_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR599/BR599_A_End_RGB_Red_4x_32bpp.png", "gfx/EMU/BR599/BR599_A_End_RGB_Red_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR599_A_End_RGB_Red_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR599/BR599_A_End_RGB_Red_Loading_4x_32bpp.png", "gfx/EMU/BR599/BR599_A_End_RGB_Red_Loading_4x_mask.png")
@@ -107,7 +107,7 @@ spriteset(spriteset_BR599_A_End_TWPTE, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/E
     { template_98trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR599_A_End_TWPTE_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR599/BR599_A_End_TWPTE_1x_32bpp.png", "gfx/EMU/BR599/BR599_A_End_TWPTE_1x_mask.png")
+spriteset(spriteset_BR599_A_End_TWPTE_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR599/BR599_A_End_TWPTE_4x_32bpp.png", "gfx/EMU/BR599/BR599_A_End_TWPTE_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR599_A_End_TWPTE_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR599/BR599_A_End_TWPTE_Loading_4x_32bpp.png", "gfx/EMU/BR599/BR599_A_End_TWPTE_Loading_4x_mask.png")

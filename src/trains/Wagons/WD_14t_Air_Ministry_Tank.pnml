@@ -12,10 +12,7 @@ spriteset(spriteset_WD_14t_Tank_Black, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_1
     { template_48trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_WD_14t_Tank_Black_purchase, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Black_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_WD_14t_Tank_Black_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Black_1x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Black_1x_mask.png")
+spriteset(spriteset_WD_14t_Tank_Black_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Black_4x_32bpp.png", "gfx/Wagons/WD_14t_Air_Ministry_Tank/WD_14t_Tank_Black_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite

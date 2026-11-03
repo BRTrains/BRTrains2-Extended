@@ -25,10 +25,7 @@ spriteset(spriteset_BR87_BR_Intercity_Mainline, "gfx/Locomotive_Electric/BR87/BR
     { template_118trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR87_BR_Intercity_Mainline_purchase, "gfx/Locomotive_Electric/BR87/BR87_BR_Intercity_Mainline_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR87_BR_Intercity_Mainline_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR87/BR87_BR_Intercity_Mainline_1x_32bpp.png", "gfx/Locomotive_Electric/BR87/BR87_BR_Intercity_Mainline_1x_mask.png")
+spriteset(spriteset_BR87_BR_Intercity_Mainline_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR87/BR87_BR_Intercity_Mainline_4x_32bpp.png", "gfx/Locomotive_Electric/BR87/BR87_BR_Intercity_Mainline_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -71,10 +68,7 @@ spriteset(spriteset_BR87_BRBlue_YellowFront, "gfx/Locomotive_Electric/BR87/BR87_
     { template_118trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR87_BRBlue_YellowFront_purchase, "gfx/Locomotive_Electric/BR87/BR87_BRBlue_YellowFront_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR87_BRBlue_YellowFront_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR87/BR87_BRBlue_YellowFront_1x_32bpp.png", "gfx/Locomotive_Electric/BR87/BR87_BRBlue_YellowFront_1x_mask.png")
+spriteset(spriteset_BR87_BRBlue_YellowFront_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR87/BR87_BRBlue_YellowFront_4x_32bpp.png", "gfx/Locomotive_Electric/BR87/BR87_BRBlue_YellowFront_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -208,10 +202,7 @@ spriteset(spriteset_BR87_Virgin, "gfx/Locomotive_Electric/BR87/BR87_Virgin_1x_8b
     { template_118trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR87_Virgin_purchase, "gfx/Locomotive_Electric/BR87/BR87_Virgin_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR87_Virgin_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR87/BR87_Virgin_1x_32bpp.png", "gfx/Locomotive_Electric/BR87/BR87_Virgin_1x_mask.png")
+spriteset(spriteset_BR87_Virgin_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR87/BR87_Virgin_4x_32bpp.png", "gfx/Locomotive_Electric/BR87/BR87_Virgin_4x_mask.png")
     { template_purchase(0,0) }
 
 switch(FEAT_TRAINS, PARENT, sw_BR87_purchase_sprite, current_year) {

@@ -12,10 +12,7 @@ spriteset(spriteset_BR_IWB_B_3_Door_Cargowaggon, "gfx/Wagons/BR_IWB_B_3_Door/BR_
     { template_138trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_IWB_B_3_Door_Cargowaggon_purchase, "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Cargowaggon_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_IWB_B_3_Door_Cargowaggon_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Cargowaggon_1x_32bpp.png", "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Cargowaggon_1x_mask.png")
+spriteset(spriteset_BR_IWB_B_3_Door_Cargowaggon_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Cargowaggon_4x_32bpp.png", "gfx/Wagons/BR_IWB_B_3_Door/BR_IWB_B_3_Door_Cargowaggon_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite

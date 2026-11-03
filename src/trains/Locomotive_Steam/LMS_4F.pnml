@@ -12,10 +12,7 @@ spriteset(spriteset_LMS_4F_Black, "gfx/Locomotive_Steam/LMS_4F/LMS_4F_Black_1x_8
         { template_68trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LMS_4F_Black_purchase, "gfx/Locomotive_Steam/LMS_4F/LMS_4F_Black_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LMS_4F_Black_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_4F/LMS_4F_Black_1x_32bpp.png", "gfx/Locomotive_Steam/LMS_4F/LMS_4F_Black_1x_mask.png")
+spriteset(spriteset_LMS_4F_Black_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_4F/LMS_4F_Black_4x_32bpp.png", "gfx/Locomotive_Steam/LMS_4F/LMS_4F_Black_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -45,12 +42,8 @@ spriteset(spriteset_LMS_4F_SDJR_Blue, "gfx/Locomotive_Steam/LMS_4F/LMS_4F_SDJR_B
         { template_68trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LMS_4F_SDJR_Blue_purchase, "gfx/Locomotive_Steam/LMS_4F/LMS_4F_SDJR_Blue_1x_8bpp.png")
+spriteset(spriteset_LMS_4F_SDJR_Blue_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_4F/LMS_4F_SDJR_Blue_4x_32bpp.png", "gfx/Locomotive_Steam/LMS_4F/LMS_4F_SDJR_Blue_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LMS_4F_SDJR_Blue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_4F/LMS_4F_SDJR_Blue_1x_32bpp.png", "gfx/Locomotive_Steam/LMS_4F/LMS_4F_SDJR_Blue_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // Anim_sprites
 spriteset(spriteset_LMS_4F_Anim1, "gfx/Locomotive_Steam/LMS_4F/LMS_4F_Anim_1_1x_8bpp.png")
@@ -101,10 +94,7 @@ spriteset(spriteset_LMS_4F_Anim4, "gfx/Locomotive_Steam/LMS_4F/LMS_4F_Anim_4_1x_
     alternative_sprites(spriteset_LMS_4F_Anim4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_4F/LMS_4F_Anim_4_4x_32bpp.png", "gfx/Locomotive_Steam/LMS_4F/LMS_4F_Anim_4_4x_mask.png")
     { template_68trains_4x(0,0) }
 
-spriteset(spriteset_LMS_4F_Anim_purchase, "gfx/Locomotive_Steam/LMS_4F/LMS_4F_Anim_1_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LMS_4F_Anim_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_4F/LMS_4F_Anim_1_1x_32bpp.png", "gfx/Locomotive_Steam/LMS_4F/LMS_4F_Anim_1_1x_mask.png")
+spriteset(spriteset_LMS_4F_Anim_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_4F/LMS_4F_Anim_1_4x_32bpp.png", "gfx/Locomotive_Steam/LMS_4F/LMS_4F_Anim_1_4x_mask.png")
     { template_purchase(0,0) }
 
 switch (FEAT_TRAINS, SELF, sw_Animation_LMS_4F, motion_counter % 4) {

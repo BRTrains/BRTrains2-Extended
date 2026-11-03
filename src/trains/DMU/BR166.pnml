@@ -12,10 +12,7 @@ spriteset(spriteset_BR166_DMCL_FGW, "gfx/DMU/BR166/BR166_DMCL_FGW_1x_8bpp.png")
     { template_148trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR166_DMCL_FGW_purchase, "gfx/DMU/BR166/BR166_DMCL_FGW_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR166_DMCL_FGW_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR166/BR166_DMCL_FGW_1x_32bpp.png", "gfx/DMU/BR166/BR166_DMCL_FGW_1x_mask.png")
+spriteset(spriteset_BR166_DMCL_FGW_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR166/BR166_DMCL_FGW_4x_32bpp.png", "gfx/DMU/BR166/BR166_DMCL_FGW_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR166_DMCL_FGW_Loading, "gfx/DMU/BR166/BR166_DMCL_FGW_Loading_1x_8bpp.png")
@@ -140,10 +137,7 @@ spriteset(spriteset_BR166_DMCL_GWR, "gfx/DMU/BR166/BR166_DMCL_GWR_1x_8bpp.png")
     { template_148trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR166_DMCL_GWR_purchase, "gfx/DMU/BR166/BR166_DMCL_GWR_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR166_DMCL_GWR_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR166/BR166_DMCL_GWR_1x_32bpp.png", "gfx/DMU/BR166/BR166_DMCL_GWR_1x_mask.png")
+spriteset(spriteset_BR166_DMCL_GWR_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR166/BR166_DMCL_GWR_4x_32bpp.png", "gfx/DMU/BR166/BR166_DMCL_GWR_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR166_DMCL_GWR_Loading, "gfx/DMU/BR166/BR166_DMCL_GWR_Loading_1x_8bpp.png")
@@ -181,10 +175,7 @@ spriteset(spriteset_BR166_DMCL_NSE, "gfx/DMU/BR166/BR166_DMCL_NSE_1x_8bpp.png")
     { template_148trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR166_DMCL_NSE_purchase, "gfx/DMU/BR166/BR166_DMCL_NSE_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR166_DMCL_NSE_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR166/BR166_DMCL_NSE_1x_32bpp.png", "gfx/DMU/BR166/BR166_DMCL_NSE_1x_mask.png")
+spriteset(spriteset_BR166_DMCL_NSE_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR166/BR166_DMCL_NSE_4x_32bpp.png", "gfx/DMU/BR166/BR166_DMCL_NSE_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR166_DMCL_NSE_Loading, "gfx/DMU/BR166/BR166_DMCL_NSE_Loading_1x_8bpp.png")

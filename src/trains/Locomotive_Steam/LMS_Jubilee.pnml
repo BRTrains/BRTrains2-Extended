@@ -24,10 +24,7 @@ spriteset(spriteset_LMS_Jubilee_LMS_Crimson, "gfx/Locomotive_Steam/LMS_Jubilee/L
     alternative_sprites(spriteset_LMS_Jubilee_LMS_Crimson, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Jubilee/LMS_Jubilee_LMS_Crimson_4x_32bpp.png", "gfx/Locomotive_Steam/LMS_Jubilee/LMS_Jubilee_LMS_Crimson_4x_mask.png")
     { template_78trains_4x(0,0) }
 
-spriteset(spriteset_LMS_Jubilee_LMS_Crimson_purchase, "gfx/Locomotive_Steam/LMS_Jubilee/LMS_Jubilee_LMS_Crimson_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LMS_Jubilee_LMS_Crimson_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Jubilee/LMS_Jubilee_LMS_Crimson_1x_32bpp.png", "gfx/Locomotive_Steam/LMS_Jubilee/LMS_Jubilee_LMS_Crimson_1x_mask.png")
+spriteset(spriteset_LMS_Jubilee_LMS_Crimson_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Jubilee/LMS_Jubilee_LMS_Crimson_4x_32bpp.png", "gfx/Locomotive_Steam/LMS_Jubilee/LMS_Jubilee_LMS_Crimson_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprites
@@ -82,10 +79,7 @@ spriteset(spriteset_LMS_Jubilee_BR_Green, "gfx/Locomotive_Steam/LMS_Jubilee/LMS_
     alternative_sprites(spriteset_LMS_Jubilee_BR_Green, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Jubilee/LMS_Jubilee_BR_Green_4x_32bpp.png", "gfx/Locomotive_Steam/LMS_Jubilee/LMS_Jubilee_BR_Green_4x_mask.png")
     { template_78trains_4x(0,0) }
 
-spriteset(spriteset_LMS_Jubilee_BR_Green_Purchase, "gfx/Locomotive_Steam/LMS_Jubilee/LMS_Jubilee_BR_Green_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LMS_Jubilee_BR_Green_Purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Jubilee/LMS_Jubilee_BR_Green_1x_32bpp.png", "gfx/Locomotive_Steam/LMS_Jubilee/LMS_Jubilee_BR_Green_1x_mask.png")
+spriteset(spriteset_LMS_Jubilee_BR_Green_Purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Jubilee/LMS_Jubilee_BR_Green_4x_32bpp.png", "gfx/Locomotive_Steam/LMS_Jubilee/LMS_Jubilee_BR_Green_4x_mask.png")
     { template_purchase(0,0) }
 
 // FX effects

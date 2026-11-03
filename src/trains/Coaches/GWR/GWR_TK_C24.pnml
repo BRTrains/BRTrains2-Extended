@@ -101,10 +101,7 @@ spriteset(spriteset_GWR_TK_C24_Maroon, "gfx/Coaches/GWR_TK_C24/GWR_TK_C24_Maroon
 //     1: spritegroup_GWR_TK_C24_Maroon_Loading; }
 
 // purchase sprite
-spriteset(spriteset_GWR_TK_C24_Cream_purchase, "gfx/Coaches/GWR_TK_C24/GWR_TK_C24_Cream_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_GWR_TK_C24_Cream_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/GWR_TK_C24/GWR_TK_C24_Cream_1x_32bpp.png", "gfx/Coaches/GWR_TK_C24/GWR_TK_C24_Cream_1x_mask.png")
+spriteset(spriteset_GWR_TK_C24_Cream_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/GWR_TK_C24/GWR_TK_C24_Cream_4x_32bpp.png", "gfx/Coaches/GWR_TK_C24/GWR_TK_C24_Cream_4x_mask.png")
     { template_purchase(0,0) }
 
 // livery switch

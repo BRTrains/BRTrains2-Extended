@@ -48,10 +48,7 @@ spriteset(spriteset_BR_FEA_Yellow, "gfx/Wagons/BR_FEA/BR_FEA_Yellow_1x_8bpp.png"
     { template_138trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_FEA_Blue_purchase, "gfx/Wagons/BR_FEA/BR_FEA_Blue_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_FEA_Blue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_FEA/BR_FEA_Blue_1x_32bpp.png", "gfx/Wagons/BR_FEA/BR_FEA_Blue_1x_mask.png")
+spriteset(spriteset_BR_FEA_Blue_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_FEA/BR_FEA_Blue_4x_32bpp.png", "gfx/Wagons/BR_FEA/BR_FEA_Blue_4x_mask.png")
     { template_purchase(0,0) }
 
 // livery switch

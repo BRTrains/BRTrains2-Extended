@@ -13,10 +13,7 @@ spriteset(spriteset_BR90_Abellio_GA, "gfx/Locomotive_Electric/BR90/BR90_Abellio_
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR90_Abellio_GA_purchase, "gfx/Locomotive_Electric/BR90/BR90_Abellio_GA_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR90_Abellio_GA_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Abellio_GA_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Abellio_GA_1x_mask.png")
+spriteset(spriteset_BR90_Abellio_GA_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Abellio_GA_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Abellio_GA_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -98,10 +95,7 @@ spriteset(spriteset_BR90_EWS, "gfx/Locomotive_Electric/BR90/BR90_EWS_1x_8bpp.png
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR90_EWS_purchase, "gfx/Locomotive_Electric/BR90/BR90_EWS_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR90_EWS_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_EWS_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_EWS_1x_mask.png")
+spriteset(spriteset_BR90_EWS_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_EWS_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_EWS_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -131,10 +125,7 @@ spriteset(spriteset_BR90_Freightliner_Green, "gfx/Locomotive_Electric/BR90/BR90_
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR90_Freightliner_Green_purchase, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Green_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR90_Freightliner_Green_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Green_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Green_1x_mask.png")
+spriteset(spriteset_BR90_Freightliner_Green_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Green_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Freightliner_Green_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -216,10 +207,7 @@ spriteset(spriteset_BR90_Intercity_Swallow, "gfx/Locomotive_Electric/BR90/BR90_I
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR90_Intercity_Swallow_purchase, "gfx/Locomotive_Electric/BR90/BR90_Intercity_Swallow_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR90_Intercity_Swallow_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Intercity_Swallow_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Intercity_Swallow_1x_mask.png")
+spriteset(spriteset_BR90_Intercity_Swallow_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Intercity_Swallow_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Intercity_Swallow_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -236,10 +224,7 @@ spriteset(spriteset_BR90_NXEA, "gfx/Locomotive_Electric/BR90/BR90_NXEA_1x_8bpp.p
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR90_NXEA_purchase, "gfx/Locomotive_Electric/BR90/BR90_NXEA_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR90_NXEA_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_NXEA_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_NXEA_1x_mask.png")
+spriteset(spriteset_BR90_NXEA_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_NXEA_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_NXEA_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -256,10 +241,7 @@ spriteset(spriteset_BR90_ONE, "gfx/Locomotive_Electric/BR90/BR90_ONE_1x_8bpp.png
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR90_ONE_purchase, "gfx/Locomotive_Electric/BR90/BR90_ONE_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR90_ONE_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_ONE_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_ONE_1x_mask.png")
+spriteset(spriteset_BR90_ONE_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_ONE_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_ONE_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -276,10 +258,7 @@ spriteset(spriteset_BR90_Railfreight_Distribution, "gfx/Locomotive_Electric/BR90
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR90_Railfreight_Distribution_purchase, "gfx/Locomotive_Electric/BR90/BR90_Railfreight_Distribution_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR90_Railfreight_Distribution_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Railfreight_Distribution_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Railfreight_Distribution_1x_mask.png")
+spriteset(spriteset_BR90_Railfreight_Distribution_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Railfreight_Distribution_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Railfreight_Distribution_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -335,10 +314,7 @@ spriteset(spriteset_BR90_Virgin, "gfx/Locomotive_Electric/BR90/BR90_Virgin_1x_8b
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR90_Virgin_purchase, "gfx/Locomotive_Electric/BR90/BR90_Virgin_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR90_Virgin_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Virgin_1x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Virgin_1x_mask.png")
+spriteset(spriteset_BR90_Virgin_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR90/BR90_Virgin_4x_32bpp.png", "gfx/Locomotive_Electric/BR90/BR90_Virgin_4x_mask.png")
     { template_purchase(0,0) }
 
 switch(FEAT_TRAINS, PARENT, sw_BR90_purchase_sprite, current_year) {

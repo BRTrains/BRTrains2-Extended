@@ -35,7 +35,7 @@ spriteset(spriteset_RCH_1923_12t_Grey, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/W
     { template_48trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_RCH_1923_12t_Grey_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_12t/RCH_1923_12t_Grey_1x_32bpp.png", "gfx/Wagons/RCH_1923_12t/RCH_1923_12t_Grey_1x_mask.png")
+spriteset(spriteset_RCH_1923_12t_Grey_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_12t/RCH_1923_12t_Grey_4x_32bpp.png", "gfx/Wagons/RCH_1923_12t/RCH_1923_12t_Grey_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -172,7 +172,7 @@ spriteset(spriteset_RCH_1923_Van_Grey, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/W
     { template_48trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_RCH_1923_Van_Grey_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Grey_1x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Grey_1x_mask.png")
+spriteset(spriteset_RCH_1923_Van_Grey_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Grey_4x_32bpp.png", "gfx/Wagons/RCH_1923_Van/RCH_1923_Van_Grey_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite

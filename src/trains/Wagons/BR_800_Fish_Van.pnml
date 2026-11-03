@@ -3,7 +3,7 @@ spriteset(spriteset_BR_800_FishVan_BR_Blue, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "
     { template_58trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_800_FishVan_BR_Blue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Blue_1x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Blue_1x_mask.png")
+spriteset(spriteset_BR_800_FishVan_BR_Blue_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Blue_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Blue_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR_800_FishVan_BR_Blue_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Blue_Loading_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Blue_Loading_4x_mask.png")
@@ -23,7 +23,7 @@ spriteset(spriteset_BR_800_FishVan_BR_Departmental_Bauxite, ZOOM_LEVEL_IN_4X, BI
     { template_58trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_800_FishVan_BR_Departmental_Bauxite_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Bauxite_1x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Bauxite_1x_mask.png")
+spriteset(spriteset_BR_800_FishVan_BR_Departmental_Bauxite_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Bauxite_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Bauxite_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR_800_FishVan_BR_Departmental_Bauxite_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Bauxite_Loading_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_Departmental_Bauxite_Loading_4x_mask.png")
@@ -99,7 +99,7 @@ spriteset(spriteset_BR_800_FishVan_BR_White, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, 
     { template_58trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_800_FishVan_BR_White_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_White_1x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_White_1x_mask.png")
+spriteset(spriteset_BR_800_FishVan_BR_White_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_White_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_White_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR_800_FishVan_BR_White_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_White_Loading_4x_32bpp.png", "gfx/Wagons/BR_800_Fish_Van/BR_800_FishVan_BR_White_Loading_4x_mask.png")

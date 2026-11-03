@@ -12,10 +12,7 @@ spriteset(spriteset_BR_Mk3_TRUK_BR_Blue, "gfx/Coaches/BR_Mk3_TRUK/BR_Mk3_TRUK_BR
         { template_148trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk3_TRUK_BR_Blue_purchase, "gfx/Coaches/BR_Mk3_TRUK/BR_Mk3_TRUK_BR_Blue_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Mk3_TRUK_BR_Blue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TRUK/BR_Mk3_TRUK_BR_Blue_1x_32bpp.png", "gfx/Coaches/BR_Mk3_TRUK/BR_Mk3_TRUK_BR_Blue_1x_mask.png")
+spriteset(spriteset_BR_Mk3_TRUK_BR_Blue_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TRUK/BR_Mk3_TRUK_BR_Blue_4x_32bpp.png", "gfx/Coaches/BR_Mk3_TRUK/BR_Mk3_TRUK_BR_Blue_4x_mask.png")
     { template_purchase(0,0) }
 
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk3_TRUK_BR_Blue, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
@@ -53,10 +50,7 @@ spriteset(spriteset_BR_Mk3_TRUK_Intercity_Executive, "gfx/Coaches/BR_Mk3_TRUK/BR
         { template_148trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk3_TRUK_Intercity_Executive_purchase, "gfx/Coaches/BR_Mk3_TRUK/BR_Mk3_TRUK_Intercity_Executive_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Mk3_TRUK_Intercity_Executive_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TRUK/BR_Mk3_TRUK_Intercity_Executive_1x_32bpp.png", "gfx/Coaches/BR_Mk3_TRUK/BR_Mk3_TRUK_Intercity_Executive_1x_mask.png")
+spriteset(spriteset_BR_Mk3_TRUK_Intercity_Executive_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk3_TRUK/BR_Mk3_TRUK_Intercity_Executive_4x_32bpp.png", "gfx/Coaches/BR_Mk3_TRUK/BR_Mk3_TRUK_Intercity_Executive_4x_mask.png")
     { template_purchase(0,0) }
 
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk3_TRUK_Intercity_Executive, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {

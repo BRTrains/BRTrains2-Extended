@@ -150,10 +150,7 @@ spriteset(spriteset_LNER_21t_Hopper_Private_Yellow, "gfx/Wagons/LNER_21t_Hopper/
     { template_58trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LNER_21t_Hopper_Grey_purchase, "gfx/Wagons/LNER_21t_Hopper/LNER_21t_Hopper_Grey_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LNER_21t_Hopper_Grey_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/LNER_21t_Hopper/LNER_21t_Hopper_Grey_1x_32bpp.png", "gfx/Wagons/LNER_21t_Hopper/LNER_21t_Hopper_Grey_1x_mask.png")
+spriteset(spriteset_LNER_21t_Hopper_Grey_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/LNER_21t_Hopper/LNER_21t_Hopper_Grey_4x_32bpp.png", "gfx/Wagons/LNER_21t_Hopper/LNER_21t_Hopper_Grey_4x_mask.png")
     { template_purchase(0,0) }
 
 // random LNER era

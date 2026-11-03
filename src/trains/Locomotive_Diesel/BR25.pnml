@@ -13,10 +13,7 @@ spriteset(spriteset_BR25_1_BRBlue_YellowFront, "gfx/Locomotive_Diesel/BR25/BR25_
     { template_108trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR25_1_BRBlue_YellowFront_purchase, "gfx/Locomotive_Diesel/BR25/BR25_1_BRBlue_YellowFront_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR25_1_BRBlue_YellowFront_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR25/BR25_1_BRBlue_YellowFront_1x_32bpp.png", "gfx/Locomotive_Diesel/BR25/BR25_1_BRBlue_YellowFront_1x_mask.png")
+spriteset(spriteset_BR25_1_BRBlue_YellowFront_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR25/BR25_1_BRBlue_YellowFront_4x_32bpp.png", "gfx/Locomotive_Diesel/BR25/BR25_1_BRBlue_YellowFront_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -33,10 +30,7 @@ spriteset(spriteset_BR25_1_BRGreen_YellowPanel, "gfx/Locomotive_Diesel/BR25/BR25
     { template_108trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR25_1_BRGreen_YellowPanel_purchase, "gfx/Locomotive_Diesel/BR25/BR25_1_BRGreen_YellowPanel_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR25_1_BRGreen_YellowPanel_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR25/BR25_1_BRGreen_YellowPanel_1x_32bpp.png", "gfx/Locomotive_Diesel/BR25/BR25_1_BRGreen_YellowPanel_1x_mask.png")
+spriteset(spriteset_BR25_1_BRGreen_YellowPanel_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR25/BR25_1_BRGreen_YellowPanel_4x_32bpp.png", "gfx/Locomotive_Diesel/BR25/BR25_1_BRGreen_YellowPanel_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -53,10 +47,7 @@ spriteset(spriteset_BR25_2_BRBlue_YellowFront, "gfx/Locomotive_Diesel/BR25/BR25_
     { template_108trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR25_2_BRBlue_YellowFront_purchase, "gfx/Locomotive_Diesel/BR25/BR25_2_BRBlue_YellowFront_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR25_2_BRBlue_YellowFront_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR25/BR25_2_BRBlue_YellowFront_1x_32bpp.png", "gfx/Locomotive_Diesel/BR25/BR25_2_BRBlue_YellowFront_1x_mask.png")
+spriteset(spriteset_BR25_2_BRBlue_YellowFront_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR25/BR25_2_BRBlue_YellowFront_4x_32bpp.png", "gfx/Locomotive_Diesel/BR25/BR25_2_BRBlue_YellowFront_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -73,10 +64,7 @@ spriteset(spriteset_BR25_2_BRGreen_YellowPanel, "gfx/Locomotive_Diesel/BR25/BR25
     { template_108trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR25_2_BRGreen_YellowPanel_purchase, "gfx/Locomotive_Diesel/BR25/BR25_2_BRGreen_YellowPanel_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR25_2_BRGreen_YellowPanel_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR25/BR25_2_BRGreen_YellowPanel_1x_32bpp.png", "gfx/Locomotive_Diesel/BR25/BR25_2_BRGreen_YellowPanel_1x_mask.png")
+spriteset(spriteset_BR25_2_BRGreen_YellowPanel_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR25/BR25_2_BRGreen_YellowPanel_4x_32bpp.png", "gfx/Locomotive_Diesel/BR25/BR25_2_BRGreen_YellowPanel_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -106,10 +94,7 @@ spriteset(spriteset_BR25_3_BRBlue_YellowFront, "gfx/Locomotive_Diesel/BR25/BR25_
     { template_108trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR25_3_BRBlue_YellowFront_purchase, "gfx/Locomotive_Diesel/BR25/BR25_3_BRBlue_YellowFront_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR25_3_BRBlue_YellowFront_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR25/BR25_3_BRBlue_YellowFront_1x_32bpp.png", "gfx/Locomotive_Diesel/BR25/BR25_3_BRBlue_YellowFront_1x_mask.png")
+spriteset(spriteset_BR25_3_BRBlue_YellowFront_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR25/BR25_3_BRBlue_YellowFront_4x_32bpp.png", "gfx/Locomotive_Diesel/BR25/BR25_3_BRBlue_YellowFront_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -126,12 +111,8 @@ spriteset(spriteset_BR25_3_BRGreen_YellowPanel, "gfx/Locomotive_Diesel/BR25/BR25
     { template_108trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR25_3_BRGreen_YellowPanel_purchase, "gfx/Locomotive_Diesel/BR25/BR25_3_BRGreen_YellowPanel_1x_8bpp.png")
+spriteset(spriteset_BR25_3_BRGreen_YellowPanel_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR25/BR25_3_BRGreen_YellowPanel_4x_32bpp.png", "gfx/Locomotive_Diesel/BR25/BR25_3_BRGreen_YellowPanel_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR25_3_BRGreen_YellowPanel_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR25/BR25_3_BRGreen_YellowPanel_1x_32bpp.png", "gfx/Locomotive_Diesel/BR25/BR25_3_BRGreen_YellowPanel_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 switch(FEAT_TRAINS, SELF, sw_purchase_BR25_1, current_year) {
     1948..1965: spriteset_BR25_1_BRGreen_YellowPanel_purchase;

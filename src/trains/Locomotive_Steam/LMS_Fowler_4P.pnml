@@ -47,10 +47,7 @@ spriteset(spriteset_LMS_Fowler_4P_Anim4, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS
     alternative_sprites(spriteset_LMS_Fowler_4P_Anim4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_Anim_4_4x_32bpp.png", "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_Anim_4_4x_mask.png")
     { template_68trains_4x(0,0) }
 
-spriteset(spriteset_LMS_Fowler_4P_Anim_purchase, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_Anim_1_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LMS_Fowler_4P_Anim_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_Anim_1_1x_32bpp.png", "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_Anim_1_1x_mask.png")
+spriteset(spriteset_LMS_Fowler_4P_Anim_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_Anim_1_4x_32bpp.png", "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_Anim_1_4x_mask.png")
     { template_purchase(0,0) }
 
 switch (FEAT_TRAINS, SELF, sw_Animation_LMS_Fowler_4P, motion_counter % 4) {
@@ -73,12 +70,8 @@ spriteset(spriteset_LMS_Fowler_4P_BR_Lined_Black, "gfx/Locomotive_Steam/LMS_Fowl
         { template_68trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LMS_Fowler_4P_BR_Lined_Black_purchase, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_BR_Lined_Black_1x_8bpp.png")
+spriteset(spriteset_LMS_Fowler_4P_BR_Lined_Black_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_BR_Lined_Black_4x_32bpp.png", "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_BR_Lined_Black_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LMS_Fowler_4P_BR_Lined_Black_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_BR_Lined_Black_1x_32bpp.png", "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_BR_Lined_Black_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // basic sprite
 spriteset(spriteset_LMS_Fowler_4P_BR_Plain_Black, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_BR_Plain_Black_1x_8bpp.png")
@@ -94,12 +87,8 @@ spriteset(spriteset_LMS_Fowler_4P_BR_Plain_Black, "gfx/Locomotive_Steam/LMS_Fowl
         { template_68trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LMS_Fowler_4P_BR_Plain_Black_purchase, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_BR_Plain_Black_1x_8bpp.png")
+spriteset(spriteset_LMS_Fowler_4P_BR_Plain_Black_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_BR_Plain_Black_4x_32bpp.png", "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_BR_Plain_Black_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LMS_Fowler_4P_BR_Plain_Black_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_BR_Plain_Black_1x_32bpp.png", "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_BR_Plain_Black_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // basic sprite
 spriteset(spriteset_LMS_Fowler_4P_LMS_Black, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_LMS_Black_1x_8bpp.png")
@@ -115,12 +104,8 @@ spriteset(spriteset_LMS_Fowler_4P_LMS_Black, "gfx/Locomotive_Steam/LMS_Fowler_4P
         { template_68trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LMS_Fowler_4P_LMS_Black_purchase, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_LMS_Black_1x_8bpp.png")
+spriteset(spriteset_LMS_Fowler_4P_LMS_Black_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_LMS_Black_4x_32bpp.png", "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_LMS_Black_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LMS_Fowler_4P_LMS_Black_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_LMS_Black_1x_32bpp.png", "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_LMS_Black_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // basic sprite
 spriteset(spriteset_LMS_Fowler_4P_LMS_Crimson, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_LMS_Crimson_1x_8bpp.png")
@@ -136,12 +121,8 @@ spriteset(spriteset_LMS_Fowler_4P_LMS_Crimson, "gfx/Locomotive_Steam/LMS_Fowler_
         { template_68trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LMS_Fowler_4P_LMS_Crimson_purchase, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_LMS_Crimson_1x_8bpp.png")
+spriteset(spriteset_LMS_Fowler_4P_LMS_Crimson_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_LMS_Crimson_4x_32bpp.png", "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_LMS_Crimson_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LMS_Fowler_4P_LMS_Crimson_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_LMS_Crimson_1x_32bpp.png", "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_LMS_Crimson_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // basic sprite
 spriteset(spriteset_LMS_Fowler_4P_MR_Black, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_MR_Black_1x_8bpp.png")
@@ -157,12 +138,8 @@ spriteset(spriteset_LMS_Fowler_4P_MR_Black, "gfx/Locomotive_Steam/LMS_Fowler_4P/
         { template_68trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LMS_Fowler_4P_MR_Black_purchase, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_MR_Black_1x_8bpp.png")
+spriteset(spriteset_LMS_Fowler_4P_MR_Black_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_MR_Black_4x_32bpp.png", "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_MR_Black_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LMS_Fowler_4P_MR_Black_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_MR_Black_1x_32bpp.png", "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_MR_Black_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // basic sprite
 spriteset(spriteset_LMS_Fowler_4P_MR_Crimson, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_MR_Crimson_1x_8bpp.png")
@@ -178,12 +155,8 @@ spriteset(spriteset_LMS_Fowler_4P_MR_Crimson, "gfx/Locomotive_Steam/LMS_Fowler_4
         { template_68trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LMS_Fowler_4P_MR_Crimson_purchase, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_MR_Crimson_1x_8bpp.png")
+spriteset(spriteset_LMS_Fowler_4P_MR_Crimson_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_MR_Crimson_4x_32bpp.png", "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_MR_Crimson_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LMS_Fowler_4P_MR_Crimson_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_MR_Crimson_1x_32bpp.png", "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_MR_Crimson_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // basic sprite
 spriteset(spriteset_LMS_Fowler_4P_SDJR_Blue, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_SDJR_Blue_1x_8bpp.png")
@@ -199,10 +172,7 @@ spriteset(spriteset_LMS_Fowler_4P_SDJR_Blue, "gfx/Locomotive_Steam/LMS_Fowler_4P
         { template_68trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LMS_Fowler_4P_SDJR_Blue_purchase, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_SDJR_Blue_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LMS_Fowler_4P_SDJR_Blue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_SDJR_Blue_1x_32bpp.png", "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_SDJR_Blue_1x_mask.png")
+spriteset(spriteset_LMS_Fowler_4P_SDJR_Blue_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_SDJR_Blue_4x_32bpp.png", "gfx/Locomotive_Steam/LMS_Fowler_4P/LMS_Fowler_4P_SDJR_Blue_4x_mask.png")
     { template_purchase(0,0) }
 
 // Specific tenders

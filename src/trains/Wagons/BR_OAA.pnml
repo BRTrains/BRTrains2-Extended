@@ -4,7 +4,7 @@ spriteset(spriteset_BR_OAA_BR_Bauxite, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/W
     { template_78trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_OAA_BR_Bauxite_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_BR_Bauxite_1x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_BR_Bauxite_1x_mask.png")
+spriteset(spriteset_BR_OAA_BR_Bauxite_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_BR_Bauxite_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_BR_Bauxite_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -28,7 +28,7 @@ spriteset(spriteset_BR_OAA_EWS, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/B
     { template_78trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_OAA_EWS_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_EWS_1x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_EWS_1x_mask.png")
+spriteset(spriteset_BR_OAA_EWS_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_EWS_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_EWS_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -36,7 +36,7 @@ spriteset(spriteset_BR_OAA_Railfreight, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/
     { template_78trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_OAA_Railfreight_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Railfreight_1x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Railfreight_1x_mask.png")
+spriteset(spriteset_BR_OAA_Railfreight_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_OAA/BR_OAA_Railfreight_4x_32bpp.png", "gfx/Wagons/BR_OAA/BR_OAA_Railfreight_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR_OAA_Bulk_100, ZOOM_LEVEL_IN_4X, BIT_DEPTH_8BPP, "gfx/Wagons/BR_OAA/BR_OAA_Bulk_100_4x_8bpp.png")

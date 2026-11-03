@@ -3,7 +3,7 @@ spriteset(spriteset_BR432_DMS_BR_Blue, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/E
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR432_DMS_BR_Blue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR432/BR432_DMS_BR_Blue_1x_32bpp.png", "gfx/EMU/BR432/BR432_DMS_BR_Blue_1x_mask.png")
+spriteset(spriteset_BR432_DMS_BR_Blue_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR432/BR432_DMS_BR_Blue_4x_32bpp.png", "gfx/EMU/BR432/BR432_DMS_BR_Blue_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR432_DMS_BR_Blue_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR432/BR432_DMS_BR_Blue_Loading_4x_32bpp.png", "gfx/EMU/BR432/BR432_DMS_BR_Blue_Loading_4x_mask.png")
@@ -39,7 +39,7 @@ spriteset(spriteset_BR432_DMS_BR_BlueGrey, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "g
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR432_DMS_BR_BlueGrey_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR432/BR432_DMS_BR_BlueGrey_1x_32bpp.png", "gfx/EMU/BR432/BR432_DMS_BR_BlueGrey_1x_mask.png")
+spriteset(spriteset_BR432_DMS_BR_BlueGrey_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR432/BR432_DMS_BR_BlueGrey_4x_32bpp.png", "gfx/EMU/BR432/BR432_DMS_BR_BlueGrey_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR432_DMS_BR_BlueGrey_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR432/BR432_DMS_BR_BlueGrey_Loading_4x_32bpp.png", "gfx/EMU/BR432/BR432_DMS_BR_BlueGrey_Loading_4x_mask.png")

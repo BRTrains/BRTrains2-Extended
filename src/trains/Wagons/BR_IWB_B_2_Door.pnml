@@ -39,10 +39,7 @@ spriteset(spriteset_BR_IWB_B_2_Door_Blue_Cargowaggon, "gfx/Wagons/BR_IWB_B_2_Doo
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_IWB_B_2_Door_Blue_Cargowaggon_purchase, "gfx/Wagons/BR_IWB_B_2_Door/BR_IWB_B_2_Door_Blue_Cargowaggon_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_IWB_B_2_Door_Blue_Cargowaggon_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_IWB_B_2_Door/BR_IWB_B_2_Door_Blue_Cargowaggon_1x_32bpp.png", "gfx/Wagons/BR_IWB_B_2_Door/BR_IWB_B_2_Door_Blue_Cargowaggon_1x_mask.png")
+spriteset(spriteset_BR_IWB_B_2_Door_Blue_Cargowaggon_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_IWB_B_2_Door/BR_IWB_B_2_Door_Blue_Cargowaggon_4x_32bpp.png", "gfx/Wagons/BR_IWB_B_2_Door/BR_IWB_B_2_Door_Blue_Cargowaggon_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -85,10 +82,7 @@ spriteset(spriteset_BR_IWB_B_2_Door_Silver, "gfx/Wagons/BR_IWB_B_2_Door/BR_IWB_B
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_IWB_B_2_Door_Silver_purchase, "gfx/Wagons/BR_IWB_B_2_Door/BR_IWB_B_2_Door_Silver_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_IWB_B_2_Door_Silver_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_IWB_B_2_Door/BR_IWB_B_2_Door_Silver_1x_32bpp.png", "gfx/Wagons/BR_IWB_B_2_Door/BR_IWB_B_2_Door_Silver_1x_mask.png")
+spriteset(spriteset_BR_IWB_B_2_Door_Silver_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_IWB_B_2_Door/BR_IWB_B_2_Door_Silver_4x_32bpp.png", "gfx/Wagons/BR_IWB_B_2_Door/BR_IWB_B_2_Door_Silver_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite

@@ -129,10 +129,7 @@ spriteset(spriteset_BR_TEA_Private_Red, "gfx/Wagons/BR_TEA/BR_TEA_Private_Red_1x
     { template_118trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_TEA_purchase, "gfx/Wagons/BR_TEA/BR_TEA_Black_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_TEA_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_TEA/BR_TEA_Black_1x_32bpp.png", "gfx/Wagons/BR_TEA/BR_TEA_Black_1x_mask.png")
+spriteset(spriteset_BR_TEA_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_TEA/BR_TEA_Black_4x_32bpp.png", "gfx/Wagons/BR_TEA/BR_TEA_Black_4x_mask.png")
     { template_purchase(0,0) }
 
 // Randomizer

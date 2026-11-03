@@ -46,7 +46,7 @@ spriteset(spriteset_BR_Mk1_B1_Bogie, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coa
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk1_B1_Bogie_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_B1_Bogie_1x_32bpp.png", "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_B1_Bogie_1x_mask.png")
+spriteset(spriteset_BR_Mk1_B1_Bogie_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_B1_Bogie_4x_32bpp.png", "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_B1_Bogie_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -58,7 +58,7 @@ spriteset(spriteset_BR_Mk1_B4_Bogie, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coa
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk1_B4_Bogie_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_B4_Bogie_1x_32bpp.png", "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_B4_Bogie_1x_mask.png")
+spriteset(spriteset_BR_Mk1_B4_Bogie_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_B4_Bogie_4x_32bpp.png", "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_B4_Bogie_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -66,7 +66,7 @@ spriteset(spriteset_BR_Mk1_Commonwealth_Bogie, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk1_Commonwealth_Bogie_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_Commonwealth_Bogie_1x_32bpp.png", "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_Commonwealth_Bogie_1x_mask.png")
+spriteset(spriteset_BR_Mk1_Commonwealth_Bogie_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_Commonwealth_Bogie_4x_32bpp.png", "gfx/Coaches/BR_Mk1_Spritestacks/BR_Mk1_Commonwealth_Bogie_4x_mask.png")
     { template_purchase(0,0) }
 
 // bogie randomizer

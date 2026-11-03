@@ -38,10 +38,7 @@ spriteset(spriteset_BR_PTA_Hook_Front, "gfx/Wagons/BR_PTA/BR_PTA_Hook_Front_1x_8
     { template_88trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_PTA_Hook_Front_purchase, "gfx/Wagons/BR_PTA/BR_PTA_Hook_Front_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_PTA_Hook_Front_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_PTA/BR_PTA_Hook_Front_1x_32bpp.png", "gfx/Wagons/BR_PTA/BR_PTA_Hook_Front_1x_mask.png")
+spriteset(spriteset_BR_PTA_Hook_Front_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_PTA/BR_PTA_Hook_Front_4x_32bpp.png", "gfx/Wagons/BR_PTA/BR_PTA_Hook_Front_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -142,10 +139,7 @@ spriteset(spriteset_BR_PTA_VTG_Grey, "gfx/Wagons/BR_PTA/BR_PTA_VTG_Grey_1x_8bpp.
     { template_88trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_PTA_VTG_Grey_purchase, "gfx/Wagons/BR_PTA/BR_PTA_VTG_Grey_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_PTA_VTG_Grey_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_PTA/BR_PTA_VTG_Grey_1x_32bpp.png", "gfx/Wagons/BR_PTA/BR_PTA_VTG_Grey_1x_mask.png")
+spriteset(spriteset_BR_PTA_VTG_Grey_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_PTA/BR_PTA_VTG_Grey_4x_32bpp.png", "gfx/Wagons/BR_PTA/BR_PTA_VTG_Grey_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -186,10 +180,7 @@ spriteset(spriteset_BR_PTA_British_Steel_Grey, "gfx/Wagons/BR_PTA/BR_PTA_British
     alternative_sprites(spriteset_BR_PTA_British_Steel_Grey, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_PTA/BR_PTA_British_Steel_Grey_4x_32bpp.png", "gfx/Wagons/BR_PTA/BR_PTA_British_Steel_Grey_4x_mask.png")
     { template_88trains_4x(0,0) }
 
-spriteset(spriteset_BR_PTA_British_Steel_Grey_purchase, "gfx/Wagons/BR_PTA/BR_PTA_British_Steel_Grey_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_PTA_British_Steel_Grey_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_PTA/BR_PTA_British_Steel_Grey_1x_32bpp.png", "gfx/Wagons/BR_PTA/BR_PTA_British_Steel_Grey_1x_mask.png")
+spriteset(spriteset_BR_PTA_British_Steel_Grey_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_PTA/BR_PTA_British_Steel_Grey_4x_32bpp.png", "gfx/Wagons/BR_PTA/BR_PTA_British_Steel_Grey_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR_PTA_British_Steel_Orange, "gfx/Wagons/BR_PTA/BR_PTA_British_Steel_Orange_1x_8bpp.png")

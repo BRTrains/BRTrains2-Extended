@@ -103,10 +103,7 @@ spriteset(spriteset_WD_10t_Chemical_Tank_WD_Grey, "gfx/Wagons/WD_10t_Chemical_Ta
     { template_48trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_WD_10t_Chemical_Tank_WD_Grey_purchase, "gfx/Wagons/WD_10t_Chemical_Tank/WD_10t_Chemical_Tank_WD_Grey_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_WD_10t_Chemical_Tank_WD_Grey_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/WD_10t_Chemical_Tank/WD_10t_Chemical_Tank_WD_Grey_1x_32bpp.png", "gfx/Wagons/WD_10t_Chemical_Tank/WD_10t_Chemical_Tank_WD_Grey_1x_mask.png")
+spriteset(spriteset_WD_10t_Chemical_Tank_WD_Grey_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/WD_10t_Chemical_Tank/WD_10t_Chemical_Tank_WD_Grey_4x_32bpp.png", "gfx/Wagons/WD_10t_Chemical_Tank/WD_10t_Chemical_Tank_WD_Grey_4x_mask.png")
     { template_purchase(0,0) }
 
 // livery switch

@@ -47,10 +47,7 @@ spriteset(spriteset_LSWR_N15_Anim4, "gfx/Locomotive_Steam/LSWR_N15/LSWR_N15_Anim
     alternative_sprites(spriteset_LSWR_N15_Anim4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LSWR_N15/LSWR_N15_Anim_4_4x_32bpp.png", "gfx/Locomotive_Steam/LSWR_N15/LSWR_N15_Anim_4_4x_mask.png")
     { template_88trains_4x(0,0) }
 
-spriteset(spriteset_LSWR_N15_Anim_purchase, "gfx/Locomotive_Steam/LSWR_N15/LSWR_N15_Anim_1_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LSWR_N15_Anim_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LSWR_N15/LSWR_N15_Anim_1_1x_32bpp.png", "gfx/Locomotive_Steam/LSWR_N15/LSWR_N15_Anim_1_1x_mask.png")
+spriteset(spriteset_LSWR_N15_Anim_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LSWR_N15/LSWR_N15_Anim_1_4x_32bpp.png", "gfx/Locomotive_Steam/LSWR_N15/LSWR_N15_Anim_1_4x_mask.png")
     { template_purchase(0,0) }
 
 switch (FEAT_TRAINS, SELF, sw_Animation_LSWR_N15, motion_counter % 4) {
@@ -127,10 +124,7 @@ spriteset(spriteset_LSWR_N15_SR_Wartime_Black, "gfx/Locomotive_Steam/LSWR_N15/LS
 
 
 // purchase sprite
-spriteset(spriteset_LSWR_N15_purchase, "gfx/Locomotive_Steam/LSWR_N15/LSWR_N15_LSWR_Green_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LSWR_N15_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LSWR_N15/LSWR_N15_LSWR_Green_1x_32bpp.png", "gfx/Locomotive_Steam/LSWR_N15/LSWR_N15_LSWR_Green_1x_mask.png")
+spriteset(spriteset_LSWR_N15_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LSWR_N15/LSWR_N15_LSWR_Green_4x_32bpp.png", "gfx/Locomotive_Steam/LSWR_N15/LSWR_N15_LSWR_Green_4x_mask.png")
     { template_purchase(0,0) }
 
 switch(FEAT_TRAINS, SELF, sw_spritestack_LSWR_N15_purchase, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {

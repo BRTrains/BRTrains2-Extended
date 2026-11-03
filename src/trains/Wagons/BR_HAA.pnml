@@ -51,10 +51,7 @@ spriteset(spriteset_BR_HAA_Railfreight_Red, "gfx/Wagons/BR_HAA/BR_HAA_Railfreigh
         { template_58trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_HAA_Railfreight_Red_purchase, "gfx/Wagons/BR_HAA/BR_HAA_Railfreight_Red_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_HAA_Railfreight_Red_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Wagons/BR_HAA/BR_HAA_Railfreight_Red_1x_32bpp.png", "gfx/Wagons/BR_HAA/BR_HAA_Railfreight_Red_1x_mask.png")
+spriteset(spriteset_BR_HAA_Railfreight_Red_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Wagons/BR_HAA/BR_HAA_Railfreight_Red_4x_32bpp.png", "gfx/Wagons/BR_HAA/BR_HAA_Railfreight_Red_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite

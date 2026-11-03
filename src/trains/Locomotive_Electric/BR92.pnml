@@ -4,7 +4,7 @@ spriteset(spriteset_BR92_CaledonianSleeper, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "
     { template_138trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR92_CaledonianSleeper_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_CaledonianSleeper_1x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_CaledonianSleeper_1x_mask.png")
+spriteset(spriteset_BR92_CaledonianSleeper_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_CaledonianSleeper_4x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_CaledonianSleeper_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -16,7 +16,7 @@ spriteset(spriteset_BR92_EWS, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive
     { template_138trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR92_EWS_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_EWS_1x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_EWS_1x_mask.png")
+spriteset(spriteset_BR92_EWS_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_EWS_4x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_EWS_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -28,7 +28,7 @@ spriteset(spriteset_BR92_GBRf_Europorte, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx
     { template_138trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR92_GBRf_Europorte_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_GBRf_Europorte_1x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_GBRf_Europorte_1x_mask.png")
+spriteset(spriteset_BR92_GBRf_Europorte_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_GBRf_Europorte_4x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_GBRf_Europorte_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -36,7 +36,7 @@ spriteset(spriteset_BR92_Railfreight_Distribution, ZOOM_LEVEL_IN_4X, BIT_DEPTH_3
     { template_138trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR92_Railfreight_Distribution_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_Railfreight_Distribution_1x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_Railfreight_Distribution_1x_mask.png")
+spriteset(spriteset_BR92_Railfreight_Distribution_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_Railfreight_Distribution_4x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_Railfreight_Distribution_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -44,7 +44,7 @@ spriteset(spriteset_BR92_Railfreight_TripleGrey, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32B
     { template_138trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR92_Railfreight_TripleGrey_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_Railfreight_TripleGrey_1x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_Railfreight_TripleGrey_1x_mask.png")
+spriteset(spriteset_BR92_Railfreight_TripleGrey_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_Railfreight_TripleGrey_4x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_Railfreight_TripleGrey_4x_mask.png")
     { template_purchase(0,0) }
 
 // pantograph sprite
@@ -54,10 +54,9 @@ spriteset(spriteset_BR92_panto_up, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locom
 spriteset(spriteset_BR92_panto_down, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_panto_down_4x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_panto_down_4x_mask.png")
     { template_138trains_4x(0,0) }
 
-spriteset(spriteset_BR92_panto_down_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_panto_down_1x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_panto_down_1x_mask.png")
+spriteset(spriteset_BR92_panto_down_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Electric/BR92/BR92_panto_down_4x_32bpp.png", "gfx/Locomotive_Electric/BR92/BR92_panto_down_4x_mask.png")
     { template_purchase(0,0) }
 
-    
 // dual mode switches
 switch(FEAT_TRAINS, PARENT, sw_BR92_purchase_sprite, current_year) {
     1993..1998: spriteset_BR92_Railfreight_TripleGrey_purchase;

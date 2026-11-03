@@ -48,10 +48,7 @@ spriteset(spriteset_BR_Mk2_Late_DBSO_BR_Blue, "gfx/Coaches/BR_Mk2L_DBSO/BR_Mk2_L
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk2_Late_DBSO_BR_Blue_purchase, "gfx/Coaches/BR_Mk2L_DBSO/BR_Mk2_Late_DBSO_BR_Blue_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Mk2_Late_DBSO_BR_Blue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk2L_DBSO/BR_Mk2_Late_DBSO_BR_Blue_1x_32bpp.png", "gfx/Coaches/BR_Mk2L_DBSO/BR_Mk2_Late_DBSO_BR_Blue_1x_mask.png")
+spriteset(spriteset_BR_Mk2_Late_DBSO_BR_Blue_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk2L_DBSO/BR_Mk2_Late_DBSO_BR_Blue_4x_32bpp.png", "gfx/Coaches/BR_Mk2L_DBSO/BR_Mk2_Late_DBSO_BR_Blue_4x_mask.png")
     { template_purchase(0,0) }
 
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk2_Late_DBSO_BR_Blue, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
@@ -228,10 +225,7 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk2_Late_DBSO_FGW_Fag_Packet, [ STORE_
 }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk2_Late_DBSO_FGW_Fag_Packet_purchase, "gfx/Coaches/BR_Mk2L_DBSO/BR_Mk2_Late_DBSO_FGW_Fag_Packet_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Mk2_Late_DBSO_FGW_Fag_Packet_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk2L_DBSO/BR_Mk2_Late_DBSO_FGW_Fag_Packet_1x_32bpp.png", "gfx/Coaches/BR_Mk2L_DBSO/BR_Mk2_Late_DBSO_FGW_Fag_Packet_1x_mask.png")
+spriteset(spriteset_BR_Mk2_Late_DBSO_FGW_Fag_Packet_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk2L_DBSO/BR_Mk2_Late_DBSO_FGW_Fag_Packet_4x_32bpp.png", "gfx/Coaches/BR_Mk2L_DBSO/BR_Mk2_Late_DBSO_FGW_Fag_Packet_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR_Mk2_Late_DBSO_FGW_Fag_Packet_REV, "gfx/Coaches/BR_Mk2L_DBSO/BR_Mk2_Late_DBSO_FGW_Fag_Packet_1x_8bpp.png")

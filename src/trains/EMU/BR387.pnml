@@ -156,7 +156,7 @@ spriteset(spriteset_BR387_DMSO_GWR, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/
     { template_138trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR387_DMSO_GWR_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR387/BR387_DMSO_GWR_1x_32bpp.png", "gfx/EMU/BR387/BR387_DMSO_GWR_1x_mask.png")
+spriteset(spriteset_BR387_DMSO_GWR_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR387/BR387_DMSO_GWR_4x_32bpp.png", "gfx/EMU/BR387/BR387_DMSO_GWR_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR387_DMSO_GWR_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR387/BR387_DMSO_GWR_Loading_4x_32bpp.png", "gfx/EMU/BR387/BR387_DMSO_GWR_Loading_4x_mask.png")
@@ -256,9 +256,9 @@ spriteset(spriteset_BR387_panto_up, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/
 spriteset(spriteset_BR387_panto_down, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR387/BR387_panto_down_4x_32bpp.png", "gfx/EMU/BR387/BR387_panto_down_4x_mask.png")
     { template_138trains_4x(0,0) }
 
-spriteset(spriteset_BR387_panto_down_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR387/BR387_panto_down_1x_32bpp.png", "gfx/EMU/BR387/BR387_panto_down_1x_mask.png")
+spriteset(spriteset_BR387_panto_down_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR387/BR387_panto_down_4x_32bpp.png", "gfx/EMU/BR387/BR387_panto_down_4x_mask.png")
     { template_purchase(0,0) }
-    
+
 // dual mode switches
 switch(FEAT_TRAINS, PARENT, sw_panto_BR387, tile_powers_railtype("ELRL")) {
     1: return spriteset_BR387_panto_up;

@@ -66,12 +66,8 @@ spriteset(spriteset_BR380_Loading, "gfx/EMU/BR380_Desiro/BR380_Desiro_Loading_1x
 
 
 // purchase sprite
-spriteset(spriteset_BR380_purchase, "gfx/EMU/BR380_Desiro/BR380_Desiro_DMSO_ScotRail_1x_8bpp.png")
+spriteset(spriteset_BR380_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR380_Desiro/BR380_Desiro_DMSO_ScotRail_4x_32bpp.png", "gfx/EMU/BR380_Desiro/BR380_Desiro_DMSO_ScotRail_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR380_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR380_Desiro/BR380_Desiro_DMSO_ScotRail_1x_32bpp.png", "gfx/EMU/BR380_Desiro/BR380_Desiro_DMSO_ScotRail_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // loading switches
 spritegroup spritegroup_BR380_ScotRail_loading {

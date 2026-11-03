@@ -13,10 +13,7 @@ spriteset(spriteset_BR318_DMSO_Gangway, "gfx/EMU/BR318/BR318_DMSO_Gangway_1x_8bp
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR318_DMSO_Gangway_purchase, "gfx/EMU/BR318/BR318_DMSO_Gangway_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR318_DMSO_Gangway_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSO_Gangway_1x_32bpp.png", "gfx/EMU/BR318/BR318_DMSO_Gangway_1x_mask.png")
+spriteset(spriteset_BR318_DMSO_Gangway_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSO_Gangway_4x_32bpp.png", "gfx/EMU/BR318/BR318_DMSO_Gangway_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -46,10 +43,7 @@ spriteset(spriteset_BR318_DMSOB_ScotRail, "gfx/EMU/BR318/BR318_DMSOB_ScotRail_1x
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR318_DMSOB_ScotRail_purchase, "gfx/EMU/BR318/BR318_DMSOB_ScotRail_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR318_DMSOB_ScotRail_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSOB_ScotRail_1x_32bpp.png", "gfx/EMU/BR318/BR318_DMSOB_ScotRail_1x_mask.png")
+spriteset(spriteset_BR318_DMSOB_ScotRail_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSOB_ScotRail_4x_32bpp.png", "gfx/EMU/BR318/BR318_DMSOB_ScotRail_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -79,12 +73,8 @@ spriteset(spriteset_BR318_DMSO_SPT, "gfx/EMU/BR318/BR318_DMSO_SPT_1x_8bpp.png")
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR318_DMSO_SPT_purchase, "gfx/EMU/BR318/BR318_DMSO_SPT_1x_8bpp.png")
+spriteset(spriteset_BR318_DMSO_SPT_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSO_SPT_4x_32bpp.png", "gfx/EMU/BR318/BR318_DMSO_SPT_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR318_DMSO_SPT_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSO_SPT_1x_32bpp.png", "gfx/EMU/BR318/BR318_DMSO_SPT_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // basic sprite
 spriteset(spriteset_BR318_DMSO_SPTE, "gfx/EMU/BR318/BR318_DMSO_SPTE_1x_8bpp.png")
@@ -100,10 +90,7 @@ spriteset(spriteset_BR318_DMSO_SPTE, "gfx/EMU/BR318/BR318_DMSO_SPTE_1x_8bpp.png"
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR318_DMSO_SPTE_purchase, "gfx/EMU/BR318/BR318_DMSO_SPTE_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR318_DMSO_SPTE_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSO_SPTE_1x_32bpp.png", "gfx/EMU/BR318/BR318_DMSO_SPTE_1x_mask.png")
+spriteset(spriteset_BR318_DMSO_SPTE_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR318/BR318_DMSO_SPTE_4x_32bpp.png", "gfx/EMU/BR318/BR318_DMSO_SPTE_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite

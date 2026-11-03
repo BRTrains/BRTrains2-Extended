@@ -42,10 +42,7 @@ spriteset(spriteset_BR365_DMOC_Abellio_ScotRail, "gfx/EMU/BR365/BR365_DMOC_Abell
         { template_138trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR365_DMOC_Abellio_ScotRail_purchase, "gfx/EMU/BR365/BR365_DMOC_Abellio_ScotRail_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR365_DMOC_Abellio_ScotRail_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR365/BR365_DMOC_Abellio_ScotRail_1x_32bpp.png", "gfx/EMU/BR365/BR365_DMOC_Abellio_ScotRail_1x_mask.png")
+spriteset(spriteset_BR365_DMOC_Abellio_ScotRail_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR365/BR365_DMOC_Abellio_ScotRail_4x_32bpp.png", "gfx/EMU/BR365/BR365_DMOC_Abellio_ScotRail_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR365_DMOC_Abellio_ScotRail_Loading, "gfx/EMU/BR365/BR365_DMOC_Abellio_ScotRail_Loading_1x_8bpp.png")
@@ -185,10 +182,7 @@ spriteset(spriteset_BR365_DMOC_FCC, "gfx/EMU/BR365/BR365_DMOC_FCC_1x_8bpp.png")
         { template_138trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR365_DMOC_FCC_purchase, "gfx/EMU/BR365/BR365_DMOC_FCC_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR365_DMOC_FCC_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR365/BR365_DMOC_FCC_1x_32bpp.png", "gfx/EMU/BR365/BR365_DMOC_FCC_1x_mask.png")
+spriteset(spriteset_BR365_DMOC_FCC_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR365/BR365_DMOC_FCC_4x_32bpp.png", "gfx/EMU/BR365/BR365_DMOC_FCC_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR365_DMOC_FCC_Loading, "gfx/EMU/BR365/BR365_DMOC_FCC_Loading_1x_8bpp.png")
@@ -260,10 +254,7 @@ spriteset(spriteset_BR365_DMOC_GN, "gfx/EMU/BR365/BR365_DMOC_GN_1x_8bpp.png")
         { template_138trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR365_DMOC_GN_purchase, "gfx/EMU/BR365/BR365_DMOC_GN_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR365_DMOC_GN_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR365/BR365_DMOC_GN_1x_32bpp.png", "gfx/EMU/BR365/BR365_DMOC_GN_1x_mask.png")
+spriteset(spriteset_BR365_DMOC_GN_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR365/BR365_DMOC_GN_4x_32bpp.png", "gfx/EMU/BR365/BR365_DMOC_GN_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR365_DMOC_GN_Loading, "gfx/EMU/BR365/BR365_DMOC_GN_Loading_1x_8bpp.png")
@@ -335,10 +326,7 @@ spriteset(spriteset_BR365_DMOC_NSE, "gfx/EMU/BR365/BR365_DMOC_NSE_1x_8bpp.png")
         { template_138trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR365_DMOC_NSE_purchase, "gfx/EMU/BR365/BR365_DMOC_NSE_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR365_DMOC_NSE_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR365/BR365_DMOC_NSE_1x_32bpp.png", "gfx/EMU/BR365/BR365_DMOC_NSE_1x_mask.png")
+spriteset(spriteset_BR365_DMOC_NSE_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR365/BR365_DMOC_NSE_4x_32bpp.png", "gfx/EMU/BR365/BR365_DMOC_NSE_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_BR365_DMOC_NSE_Loading, "gfx/EMU/BR365/BR365_DMOC_NSE_Loading_1x_8bpp.png")
@@ -409,10 +397,7 @@ spriteset(spriteset_BR365_DMOC_RB_Abellio_ScotRail, "gfx/EMU/BR365/BR365_DMOC_RB
         { template_138trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR365_DMOC_RB_Abellio_ScotRail_purchase, "gfx/EMU/BR365/BR365_DMOC_RB_Abellio_ScotRail_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR365_DMOC_RB_Abellio_ScotRail_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR365/BR365_DMOC_RB_Abellio_ScotRail_1x_32bpp.png", "gfx/EMU/BR365/BR365_DMOC_RB_Abellio_ScotRail_1x_mask.png")
+spriteset(spriteset_BR365_DMOC_RB_Abellio_ScotRail_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR365/BR365_DMOC_RB_Abellio_ScotRail_4x_32bpp.png", "gfx/EMU/BR365/BR365_DMOC_RB_Abellio_ScotRail_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -487,10 +472,7 @@ spriteset(spriteset_BR365_DMOC_RB_FCC, "gfx/EMU/BR365/BR365_DMOC_RB_FCC_1x_8bpp.
         { template_138trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR365_DMOC_RB_FCC_purchase, "gfx/EMU/BR365/BR365_DMOC_RB_FCC_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR365_DMOC_RB_FCC_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR365/BR365_DMOC_RB_FCC_1x_32bpp.png", "gfx/EMU/BR365/BR365_DMOC_RB_FCC_1x_mask.png")
+spriteset(spriteset_BR365_DMOC_RB_FCC_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR365/BR365_DMOC_RB_FCC_4x_32bpp.png", "gfx/EMU/BR365/BR365_DMOC_RB_FCC_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -529,10 +511,7 @@ spriteset(spriteset_BR365_DMOC_RB_GN, "gfx/EMU/BR365/BR365_DMOC_RB_GN_1x_8bpp.pn
         { template_138trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR365_DMOC_RB_GN_purchase, "gfx/EMU/BR365/BR365_DMOC_RB_GN_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR365_DMOC_RB_GN_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR365/BR365_DMOC_RB_GN_1x_32bpp.png", "gfx/EMU/BR365/BR365_DMOC_RB_GN_1x_mask.png")
+spriteset(spriteset_BR365_DMOC_RB_GN_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR365/BR365_DMOC_RB_GN_4x_32bpp.png", "gfx/EMU/BR365/BR365_DMOC_RB_GN_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -572,10 +551,7 @@ spriteset(spriteset_BR365_DMOC_RB_NSE, "gfx/EMU/BR365/BR365_DMOC_RB_NSE_1x_8bpp.
         { template_138trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR365_DMOC_RB_NSE_purchase, "gfx/EMU/BR365/BR365_DMOC_RB_NSE_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR365_DMOC_RB_NSE_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR365/BR365_DMOC_RB_NSE_1x_32bpp.png", "gfx/EMU/BR365/BR365_DMOC_RB_NSE_1x_mask.png")
+spriteset(spriteset_BR365_DMOC_RB_NSE_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR365/BR365_DMOC_RB_NSE_4x_32bpp.png", "gfx/EMU/BR365/BR365_DMOC_RB_NSE_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite

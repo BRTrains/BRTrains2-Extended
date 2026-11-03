@@ -12,10 +12,7 @@ spriteset(spriteset_LBSCR_H2_BR_Lined_Black, "gfx/Locomotive_Steam/LBSCR_H2/LBSC
     { template_78trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LBSCR_H2_BR_Lined_Black_purchase, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_BR_Lined_Black_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LBSCR_H2_BR_Lined_Black_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_BR_Lined_Black_1x_32bpp.png", "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_BR_Lined_Black_1x_mask.png")
+spriteset(spriteset_LBSCR_H2_BR_Lined_Black_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_BR_Lined_Black_4x_32bpp.png", "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_BR_Lined_Black_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -32,10 +29,7 @@ spriteset(spriteset_LBSCR_H2_Marsh_Umber, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H
     { template_78trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LBSCR_H2_Marsh_Umber_purchase, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_Marsh_Umber_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LBSCR_H2_Marsh_Umber_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_Marsh_Umber_1x_32bpp.png", "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_Marsh_Umber_1x_mask.png")
+spriteset(spriteset_LBSCR_H2_Marsh_Umber_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_Marsh_Umber_4x_32bpp.png", "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_Marsh_Umber_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -78,10 +72,7 @@ spriteset(spriteset_LBSCR_H2_SR_Olive, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_S
     { template_78trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LBSCR_H2_SR_Olive_purchase, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_SR_Olive_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LBSCR_H2_SR_Olive_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_SR_Olive_1x_32bpp.png", "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_SR_Olive_1x_mask.png")
+spriteset(spriteset_LBSCR_H2_SR_Olive_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_SR_Olive_4x_32bpp.png", "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_SR_Olive_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -98,10 +89,7 @@ spriteset(spriteset_LBSCR_H2_Stroudley_Golden_Ochre, "gfx/Locomotive_Steam/LBSCR
     { template_78trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_LBSCR_H2_Stroudley_Golden_Ochre_purchase, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_Stroudley_Golden_Ochre_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LBSCR_H2_Stroudley_Golden_Ochre_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_Stroudley_Golden_Ochre_1x_32bpp.png", "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_Stroudley_Golden_Ochre_1x_mask.png")
+spriteset(spriteset_LBSCR_H2_Stroudley_Golden_Ochre_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_Stroudley_Golden_Ochre_4x_32bpp.png", "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_Stroudley_Golden_Ochre_4x_mask.png")
     { template_purchase(0,0) }
 
 // Anim_sprites
@@ -153,10 +141,7 @@ spriteset(spriteset_LBSCR_H2_Anim4, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_Anim
     alternative_sprites(spriteset_LBSCR_H2_Anim4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_Anim_4_4x_32bpp.png", "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_Anim_4_4x_mask.png")
     { template_78trains_4x(0,0) }
 
-spriteset(spriteset_LBSCR_H2_Anim_purchase, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_Anim_1_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_LBSCR_H2_Anim_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_Anim_1_1x_32bpp.png", "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_Anim_1_1x_mask.png")
+spriteset(spriteset_LBSCR_H2_Anim_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_Anim_1_4x_32bpp.png", "gfx/Locomotive_Steam/LBSCR_H2/LBSCR_H2_Anim_1_4x_mask.png")
     { template_purchase(0,0) }
 
 switch(FEAT_TRAINS, SELF, sw_animation_LBSCR_H2, motion_counter % 4) {

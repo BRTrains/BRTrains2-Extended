@@ -24,12 +24,8 @@ spriteset(spriteset_BR415_DMBSO_BR_Blue_REV, "gfx/EMU/BR415/BR415_DMBSO_BR_Blue_
         { template_128trains_REV_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR415_DMBSO_BR_Blue_purchase, "gfx/EMU/BR415/BR415_DMBSO_BR_Blue_1x_8bpp.png")
+spriteset(spriteset_BR415_DMBSO_BR_Blue_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR415/BR415_DMBSO_BR_Blue_4x_32bpp.png", "gfx/EMU/BR415/BR415_DMBSO_BR_Blue_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR415_DMBSO_BR_Blue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR415/BR415_DMBSO_BR_Blue_1x_32bpp.png", "gfx/EMU/BR415/BR415_DMBSO_BR_Blue_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // basic sprite
 spriteset(spriteset_BR415_DMBSO_BR_BlueGrey, "gfx/EMU/BR415/BR415_DMBSO_BR_BlueGrey_1x_8bpp.png")
@@ -82,12 +78,8 @@ spriteset(spriteset_BR415_DMBSO_BR_Green_REV, "gfx/EMU/BR415/BR415_DMBSO_BR_Gree
         { template_128trains_REV_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR415_DMBSO_BR_Green_purchase, "gfx/EMU/BR415/BR415_DMBSO_BR_Green_1x_8bpp.png")
+spriteset(spriteset_BR415_DMBSO_BR_Green_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR415/BR415_DMBSO_BR_Green_4x_32bpp.png", "gfx/EMU/BR415/BR415_DMBSO_BR_Green_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR415_DMBSO_BR_Green_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR415/BR415_DMBSO_BR_Green_1x_32bpp.png", "gfx/EMU/BR415/BR415_DMBSO_BR_Green_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // basic sprite
 spriteset(spriteset_BR415_DMBSO_BR_Southern_Green, "gfx/EMU/BR415/BR415_DMBSO_BR_Southern_Green_1x_8bpp.png")
@@ -140,10 +132,7 @@ spriteset(spriteset_BR415_DMBSO_NSE_REV, "gfx/EMU/BR415/BR415_DMBSO_NSE_1x_8bpp.
         { template_128trains_REV_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR415_DMBSO_NSE_purchase, "gfx/EMU/BR415/BR415_DMBSO_NSE_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR415_DMBSO_NSE_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/EMU/BR415/BR415_DMBSO_NSE_1x_32bpp.png", "gfx/EMU/BR415/BR415_DMBSO_NSE_1x_mask.png")
+spriteset(spriteset_BR415_DMBSO_NSE_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/EMU/BR415/BR415_DMBSO_NSE_4x_32bpp.png", "gfx/EMU/BR415/BR415_DMBSO_NSE_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite

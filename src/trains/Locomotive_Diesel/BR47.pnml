@@ -13,10 +13,7 @@ spriteset(spriteset_BR47_Anglia_Railways, "gfx/Locomotive_Diesel/BR47/BR47_Angli
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR47_Anglia_Railways_purchase, "gfx/Locomotive_Diesel/BR47/BR47_Anglia_Railways_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR47_Anglia_Railways_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR47/BR47_Anglia_Railways_1x_32bpp.png", "gfx/Locomotive_Diesel/BR47/BR47_Anglia_Railways_1x_mask.png")
+spriteset(spriteset_BR47_Anglia_Railways_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR47/BR47_Anglia_Railways_4x_32bpp.png", "gfx/Locomotive_Diesel/BR47/BR47_Anglia_Railways_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -72,10 +69,7 @@ spriteset(spriteset_BR47_BRBlue, "gfx/Locomotive_Diesel/BR47/BR47_BRBlue_1x_8bpp
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR47_BRBlue_purchase, "gfx/Locomotive_Diesel/BR47/BR47_BRBlue_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR47_BRBlue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR47/BR47_BRBlue_1x_32bpp.png", "gfx/Locomotive_Diesel/BR47/BR47_BRBlue_1x_mask.png")
+spriteset(spriteset_BR47_BRBlue_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR47/BR47_BRBlue_4x_32bpp.png", "gfx/Locomotive_Diesel/BR47/BR47_BRBlue_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -118,10 +112,7 @@ spriteset(spriteset_BR47_BRGreen_YellowPanel, "gfx/Locomotive_Diesel/BR47/BR47_B
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR47_BRGreen_YellowPanel_purchase, "gfx/Locomotive_Diesel/BR47/BR47_BRGreen_YellowPanel_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR47_BRGreen_YellowPanel_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR47/BR47_BRGreen_YellowPanel_1x_32bpp.png", "gfx/Locomotive_Diesel/BR47/BR47_BRGreen_YellowPanel_1x_mask.png")
+spriteset(spriteset_BR47_BRGreen_YellowPanel_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR47/BR47_BRGreen_YellowPanel_4x_32bpp.png", "gfx/Locomotive_Diesel/BR47/BR47_BRGreen_YellowPanel_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -164,10 +155,7 @@ spriteset(spriteset_BR47_Freightliner_Green, "gfx/Locomotive_Diesel/BR47/BR47_Fr
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR47_Freightliner_Green_purchase, "gfx/Locomotive_Diesel/BR47/BR47_Freightliner_Green_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR47_Freightliner_Green_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR47/BR47_Freightliner_Green_1x_32bpp.png", "gfx/Locomotive_Diesel/BR47/BR47_Freightliner_Green_1x_mask.png")
+spriteset(spriteset_BR47_Freightliner_Green_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR47/BR47_Freightliner_Green_4x_32bpp.png", "gfx/Locomotive_Diesel/BR47/BR47_Freightliner_Green_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -210,12 +198,8 @@ spriteset(spriteset_BR47_Intercity_Executive, "gfx/Locomotive_Diesel/BR47/BR47_I
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR47_Intercity_Executive_purchase, "gfx/Locomotive_Diesel/BR47/BR47_Intercity_Executive_1x_8bpp.png")
+spriteset(spriteset_BR47_Intercity_Executive_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR47/BR47_Intercity_Executive_4x_32bpp.png", "gfx/Locomotive_Diesel/BR47/BR47_Intercity_Executive_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR47_Intercity_Executive_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR47/BR47_Intercity_Executive_1x_32bpp.png", "gfx/Locomotive_Diesel/BR47/BR47_Intercity_Executive_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // basic sprite
 spriteset(spriteset_BR47_Intercity_Swallow, "gfx/Locomotive_Diesel/BR47/BR47_Intercity_Swallow_1x_8bpp.png")
@@ -348,12 +332,8 @@ spriteset(spriteset_BR47_Virgin, "gfx/Locomotive_Diesel/BR47/BR47_Virgin_1x_8bpp
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR47_Virgin_purchase, "gfx/Locomotive_Diesel/BR47/BR47_Virgin_1x_8bpp.png")
+spriteset(spriteset_BR47_Virgin_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR47/BR47_Virgin_4x_32bpp.png", "gfx/Locomotive_Diesel/BR47/BR47_Virgin_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR47_Virgin_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR47/BR47_Virgin_1x_32bpp.png", "gfx/Locomotive_Diesel/BR47/BR47_Virgin_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 spriteset(spriteset_BR47_BR_CivilEngineers_Dutch, "gfx/Locomotive_Diesel/BR47/BR47_BR_CivilEngineers_Dutch_1x_8bpp.png")
     { template_128trains_1x(0,0) }

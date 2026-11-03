@@ -30,10 +30,7 @@ spritegroup spritegroup_BR153_BR_Regional_Railways_Loading {
 }
 
 // purchase sprite
-spriteset(spriteset_BR153_purchase, "gfx/DMU/BR153/BR153_BR_Regional_Railways_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR153_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/DMU/BR153/BR153_BR_Regional_Railways_1x_32bpp.png", "gfx/DMU/BR153/BR153_BR_Regional_Railways_1x_mask.png")
+spriteset(spriteset_BR153_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/DMU/BR153/BR153_BR_Regional_Railways_4x_32bpp.png", "gfx/DMU/BR153/BR153_BR_Regional_Railways_4x_mask.png")
     { template_purchase(0,0) }
 
 switch(FEAT_TRAINS, SELF, sw_loadstack_BR153_BR_Regional_Railways, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {

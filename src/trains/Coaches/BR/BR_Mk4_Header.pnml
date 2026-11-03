@@ -1,31 +1,18 @@
 // purchase sprite
-spriteset(spriteset_BR_Mk4_TS_EastCoast_purchase, "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_EastCoast_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Mk4_TS_EastCoast_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_EastCoast_1x_32bpp.png", "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_EastCoast_1x_mask.png")
+spriteset(spriteset_BR_Mk4_TS_EastCoast_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_EastCoast_4x_32bpp.png", "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_EastCoast_4x_mask.png")
     { template_purchase(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk4_TS_Intercity_purchase, "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_Intercity_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Mk4_TS_Intercity_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_Intercity_1x_32bpp.png", "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_Intercity_1x_mask.png")
+spriteset(spriteset_BR_Mk4_TS_Intercity_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_Intercity_4x_32bpp.png", "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_Intercity_4x_mask.png")
     { template_purchase(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk4_TS_GNER_purchase, "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_GNER_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Mk4_TS_GNER_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_GNER_1x_32bpp.png", "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_GNER_1x_mask.png")
+spriteset(spriteset_BR_Mk4_TS_GNER_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_GNER_4x_32bpp.png", "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_GNER_4x_mask.png")
     { template_purchase(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR_Mk4_TS_LNER_purchase, "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_LNER_1x_8bpp.png")
+spriteset(spriteset_BR_Mk4_TS_LNER_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_LNER_4x_32bpp.png", "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_LNER_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR_Mk4_TS_LNER_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_LNER_1x_32bpp.png", "gfx/Coaches/BR_Mk4_TS/BR_Mk4_TS_LNER_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // purchase year switch
 switch(FEAT_TRAINS, PARENT, sw_BR_Mk4_TS_purchase_sprite, current_year) {

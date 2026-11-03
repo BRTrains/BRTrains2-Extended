@@ -51,10 +51,7 @@ spriteset(spriteset_BR37_BRGreen_CentreHeadcode, "gfx/Locomotive_Diesel/BR37/BR3
     { template_128trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_BR37_BRGreen_purchase, "gfx/Locomotive_Diesel/BR37/BR37_BRGreen_LateCrest_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR37_BRGreen_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR37/BR37_BRGreen_LateCrest_1x_32bpp.png", "gfx/Locomotive_Diesel/BR37/BR37_BRGreen_LateCrest_1x_mask.png")
+spriteset(spriteset_BR37_BRGreen_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR37/BR37_BRGreen_LateCrest_4x_32bpp.png", "gfx/Locomotive_Diesel/BR37/BR37_BRGreen_LateCrest_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprites
@@ -86,10 +83,7 @@ spriteset(spriteset_BR37_BRBlue_SplitBox, "gfx/Locomotive_Diesel/BR37/BR37_BRBlu
 
 
 // purchase sprite
-spriteset(spriteset_BR37_BRBlue_purchase, "gfx/Locomotive_Diesel/BR37/BR37_BRBlue_CentreHeadcode_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR37_BRBlue_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR37/BR37_BRBlue_CentreHeadcode_1x_32bpp.png", "gfx/Locomotive_Diesel/BR37/BR37_BRBlue_CentreHeadcode_1x_mask.png")
+spriteset(spriteset_BR37_BRBlue_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR37/BR37_BRBlue_CentreHeadcode_4x_32bpp.png", "gfx/Locomotive_Diesel/BR37/BR37_BRBlue_CentreHeadcode_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprites
@@ -106,10 +100,7 @@ spriteset(spriteset_BR37_BRBlue_LargeLogo, "gfx/Locomotive_Diesel/BR37/BR37_BRBl
     { template_128trains_4x(0,0) }
 
 // purchase sprites
-spriteset(spriteset_BR37_BRBlue_LargeLogo_purchase, "gfx/Locomotive_Diesel/BR37/BR37_BRBlue_LargeLogo_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_BR37_BRBlue_LargeLogo_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR37/BR37_BRBlue_LargeLogo_1x_32bpp.png", "gfx/Locomotive_Diesel/BR37/BR37_BRBlue_LargeLogo_1x_mask.png")
+spriteset(spriteset_BR37_BRBlue_LargeLogo_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Diesel/BR37/BR37_BRBlue_LargeLogo_4x_32bpp.png", "gfx/Locomotive_Diesel/BR37/BR37_BRBlue_LargeLogo_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprites

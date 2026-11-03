@@ -72,10 +72,7 @@ spriteset(spriteset_Evol_F_Mahogany_Loaded, "gfx/Coaches/Evol_F/Evol_F_Mahogany_
     { template_98trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_Evol_F_Mahogany_Loaded_purchase, "gfx/Coaches/Evol_F/Evol_F_Mahogany_Loaded_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_Evol_F_Mahogany_Loaded_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/Evol_F/Evol_F_Mahogany_Loaded_1x_32bpp.png", "gfx/Coaches/Evol_F/Evol_F_Mahogany_Loaded_1x_mask.png")
+spriteset(spriteset_Evol_F_Mahogany_Loaded_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/Evol_F/Evol_F_Mahogany_Loaded_4x_32bpp.png", "gfx/Coaches/Evol_F/Evol_F_Mahogany_Loaded_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_Evol_F_Mahogany_Loading, "gfx/Coaches/Evol_F/Evol_F_Mahogany_Loading_1x_8bpp.png")
@@ -109,10 +106,7 @@ spriteset(spriteset_Evol_F_Maroon_Loaded, "gfx/Coaches/Evol_F/Evol_F_Maroon_Load
     { template_98trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_Evol_F_Maroon_Loaded_purchase, "gfx/Coaches/Evol_F/Evol_F_Maroon_Loaded_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_Evol_F_Maroon_Loaded_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/Evol_F/Evol_F_Maroon_Loaded_1x_32bpp.png", "gfx/Coaches/Evol_F/Evol_F_Maroon_Loaded_1x_mask.png")
+spriteset(spriteset_Evol_F_Maroon_Loaded_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/Evol_F/Evol_F_Maroon_Loaded_4x_32bpp.png", "gfx/Coaches/Evol_F/Evol_F_Maroon_Loaded_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_Evol_F_Maroon_Loading, "gfx/Coaches/Evol_F/Evol_F_Maroon_Loading_1x_8bpp.png")
@@ -206,10 +200,7 @@ spriteset(spriteset_Evol_F_Teak_Loaded, "gfx/Coaches/Evol_F/Evol_F_Teak_Loaded_1
     { template_98trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_Evol_F_Teak_Loaded_purchase, "gfx/Coaches/Evol_F/Evol_F_Teak_Loaded_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_Evol_F_Teak_Loaded_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Coaches/Evol_F/Evol_F_Teak_Loaded_1x_32bpp.png", "gfx/Coaches/Evol_F/Evol_F_Teak_Loaded_1x_mask.png")
+spriteset(spriteset_Evol_F_Teak_Loaded_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/Evol_F/Evol_F_Teak_Loaded_4x_32bpp.png", "gfx/Coaches/Evol_F/Evol_F_Teak_Loaded_4x_mask.png")
     { template_purchase(0,0) }
 
 spriteset(spriteset_Evol_F_Teak_Loading, "gfx/Coaches/Evol_F/Evol_F_Teak_Loading_1x_8bpp.png")

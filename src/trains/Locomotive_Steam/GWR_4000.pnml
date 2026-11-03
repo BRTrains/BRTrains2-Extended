@@ -52,10 +52,7 @@ spriteset(spriteset_GWR_4000_Late_GWR_Lined_Green, "gfx/Locomotive_Steam/GWR_400
     { template_78trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_GWR_4000_Late_GWR_Lined_Green_purchase, "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Late_GWR_Lined_Green_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_GWR_4000_Late_GWR_Lined_Green_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Late_GWR_Lined_Green_1x_32bpp.png", "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Late_GWR_Lined_Green_1x_mask.png")
+spriteset(spriteset_GWR_4000_Late_GWR_Lined_Green_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Late_GWR_Lined_Green_4x_32bpp.png", "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Late_GWR_Lined_Green_4x_mask.png")
     { template_purchase(0,0) }
 
 // basic sprite
@@ -124,12 +121,8 @@ spriteset(spriteset_GWR_4000_Launch_GWR_Lined_Green, "gfx/Locomotive_Steam/GWR_4
     { template_78trains_4x(0,0) }
 
 // purchase sprite
-spriteset(spriteset_GWR_4000_Launch_GWR_Lined_Green_purchase, "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Launch_GWR_Lined_Green_1x_8bpp.png")
+spriteset(spriteset_GWR_4000_Launch_GWR_Lined_Green_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Launch_GWR_Lined_Green_4x_32bpp.png", "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Launch_GWR_Lined_Green_4x_mask.png")
     { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_GWR_4000_Launch_GWR_Lined_Green_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Launch_GWR_Lined_Green_1x_32bpp.png", "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Launch_GWR_Lined_Green_1x_mask.png")
-    { template_purchase(0,0) }
-
 
 // basic sprite
 spriteset(spriteset_GWR_4000_Launch_GWR_Unlined_Green, "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Launch_GWR_Unlined_Green_1x_8bpp.png")
@@ -193,10 +186,7 @@ spriteset(spriteset_GWR_4000_Anim4, "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Anim
     alternative_sprites(spriteset_GWR_4000_Anim4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Anim_4_4x_32bpp.png", "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Anim_4_4x_mask.png")
     { template_78trains_4x(0,0) }
 
-spriteset(spriteset_GWR_4000_Anim_purchase, "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Anim_1_1x_8bpp.png")
-    { template_purchase(0,0) }
-
-    alternative_sprites(spriteset_GWR_4000_Anim_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Anim_1_1x_32bpp.png", "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Anim_1_1x_mask.png")
+spriteset(spriteset_GWR_4000_Anim_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Anim_1_4x_32bpp.png", "gfx/Locomotive_Steam/GWR_4000/GWR_4000_Anim_1_4x_mask.png")
     { template_purchase(0,0) }
 
 switch(FEAT_TRAINS, SELF, sw_animation_GWR_4000, motion_counter % 4) {
