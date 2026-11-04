@@ -783,7 +783,7 @@ switch(FEAT_TRAINS, SELF, sw_BR313_cargo_subtype_text, cargo_subtype) {
         CB_RESULT_NO_TEXT; }
 
 // capacity switch
-switch(FEAT_TRAINS, SELF, sw_capacity_BR313, position_in_vehid_chain % 3) {
+switch(FEAT_TRAINS, SELF, sw_capacity_BR313, position_in_vehid_chain % 9) {
     0: 224 * param_pax; // all the capacity - (vehid chain number)
     1..8: 1 * param_pax;
     // total 232
