@@ -294,14 +294,6 @@ item (FEAT_TRAINS, item_BR_Mk1_SO, 12037) { // Diagram 94 BR Mk1 SO
     }
 }
 
-// no sprites, externally identical to Mk1 SO
-// capacity switch
-switch(FEAT_TRAINS, SELF, sw_capacity_BR_Mk1_TSO, position_in_vehid_chain % 3) {
-    0: 62 * param_pax; // all the capacity - (vehid chain number - 1)
-    1..2: 1 * param_pax;
-    // total 64
-}
-
 // articulation switch
 switch(FEAT_TRAINS, SELF, switch_articulated_BR_Mk1_TSO, extra_callback_info1) {
 	1..2: return item_BR_Mk1_TSO;
