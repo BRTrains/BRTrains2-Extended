@@ -1,11 +1,6 @@
-
 // basic sprite
 spriteset(spriteset_BR_Mk1_TK_BR_Blue, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Blue_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Blue_4x_mask.png")
     { template_128trains_4x(0,0) }
-
-// purchase sprite
-spriteset(spriteset_BR_Mk1_TK_BR_Blue_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Blue_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Blue_4x_mask.png")
-    { template_purchase(0,0) }
 
 spriteset(spriteset_BR_Mk1_TK_BR_Blue_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Blue_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Blue_Loading_4x_mask.png")
     { template_128trains_4x(0,0) }
@@ -22,10 +17,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_TK_BR_Blue, [ STORE_TEMP((getbits(
 // basic sprite
 spriteset(spriteset_BR_Mk1_TK_BR_BnC, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_BnC_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_BnC_4x_mask.png")
     { template_128trains_4x(0,0) }
-
-// purchase sprite
-spriteset(spriteset_BR_Mk1_TK_BR_BnC_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_BnC_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_BnC_4x_mask.png")
-    { template_purchase(0,0) }
 
 spriteset(spriteset_BR_Mk1_TK_BR_BnC_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_BnC_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_BnC_Loading_4x_mask.png")
     { template_128trains_4x(0,0) }
@@ -58,10 +49,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_TK_BR_CnC, [ STORE_TEMP((getbits(e
 // basic sprite
 spriteset(spriteset_BR_Mk1_TK_BR_Maroon, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Maroon_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Maroon_4x_mask.png")
     { template_128trains_4x(0,0) }
-
-// purchase sprite
-spriteset(spriteset_BR_Mk1_TK_BR_Maroon_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Maroon_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Maroon_4x_mask.png")
-    { template_purchase(0,0) }
 
 spriteset(spriteset_BR_Mk1_TK_BR_Maroon_Loading, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Maroon_Loading_4x_32bpp.png", "gfx/Coaches/BR_Mk1_TK/BR_Mk1_TK_BR_Maroon_Loading_4x_mask.png")
     { template_128trains_4x(0,0) }
@@ -156,15 +143,6 @@ switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_TK_WestCoastRailway, [ STORE_TEMP(
     1: spritegroup_BR_Mk1_TK_WestCoastRailway_Loading; }
 
 
-switch(FEAT_TRAINS, SELF, sw_purchase_sprite_BR_Mk1_TK, current_year) {
-	1948..1956: spriteset_BR_Mk1_TK_BR_BnC_purchase;
-    1966..2002: spriteset_BR_Mk1_TK_BR_Blue_purchase;
-        spriteset_BR_Mk1_TK_BR_Maroon_purchase;
-}
-
-switch(FEAT_TRAINS, SELF, sw_spritestack_BR_Mk1_TK_purchase, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: sw_purchase_sprite_BR_Mk1_TK;
-    1: spriteset_BR_Mk1_B1_Bogie_purchase; }
 
 // livery switch
 switch(FEAT_TRAINS, SELF, sw_livery_BR_Mk1_TK, cargo_subtype) {
