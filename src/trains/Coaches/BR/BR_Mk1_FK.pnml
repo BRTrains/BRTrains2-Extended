@@ -14,9 +14,10 @@ spritegroup spritegroup_BR_Mk1_FK_BR_Blue_Loading {
     loaded: [spriteset_empty];
     loading: [spriteset_BR_Mk1_FK_BR_Blue_Loading]; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_FK_BR_Blue, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_FK_BR_Blue, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR_Mk1_FK_BR_Blue;
-    1: spritegroup_BR_Mk1_FK_BR_Blue_Loading; }
+    1: spritegroup_BR_Mk1_FK_BR_Blue_Loading;
+    2: sw_BR_Mk1_Pick_Bogie_Expensive;  }
 
 // basic sprite
 spriteset(spriteset_BR_Mk1_FK_BR_BnC, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_FK/BR_Mk1_FK_BR_BnC_4x_32bpp.png", "gfx/Coaches/BR_Mk1_FK/BR_Mk1_FK_BR_BnC_4x_mask.png")
@@ -34,9 +35,10 @@ spritegroup spritegroup_BR_Mk1_FK_BR_BnC_Loading {
     loaded: [spriteset_empty];
     loading: [spriteset_BR_Mk1_FK_BR_BnC_Loading]; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_FK_BR_BnC, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_FK_BR_BnC, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR_Mk1_FK_BR_BnC;
-    1: spritegroup_BR_Mk1_FK_BR_BnC_Loading; }
+    1: spritegroup_BR_Mk1_FK_BR_BnC_Loading;
+    2: sw_BR_Mk1_Pick_Bogie_Expensive;  }
 
 // basic sprite
 spriteset(spriteset_BR_Mk1_FK_BR_CnC, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_FK/BR_Mk1_FK_BR_CnC_4x_32bpp.png", "gfx/Coaches/BR_Mk1_FK/BR_Mk1_FK_BR_CnC_4x_mask.png")
@@ -54,9 +56,10 @@ spritegroup spritegroup_BR_Mk1_FK_BR_CnC_Loading {
     loaded: [spriteset_empty];
     loading: [spriteset_BR_Mk1_FK_BR_CnC_Loading]; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_FK_BR_CnC, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_FK_BR_CnC, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR_Mk1_FK_BR_CnC;
-    1: spritegroup_BR_Mk1_FK_BR_CnC_Loading; }
+    1: spritegroup_BR_Mk1_FK_BR_CnC_Loading;
+    2: sw_BR_Mk1_Pick_Bogie_Expensive;  }
 
 // basic sprite
 spriteset(spriteset_BR_Mk1_FK_BR_Maroon, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_FK/BR_Mk1_FK_BR_Maroon_4x_32bpp.png", "gfx/Coaches/BR_Mk1_FK/BR_Mk1_FK_BR_Maroon_4x_mask.png")
@@ -74,9 +77,10 @@ spritegroup spritegroup_BR_Mk1_FK_BR_Maroon_Loading {
     loaded: [spriteset_empty];
     loading: [spriteset_BR_Mk1_FK_BR_Maroon_Loading]; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_FK_BR_Maroon, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_FK_BR_Maroon, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR_Mk1_FK_BR_Maroon;
-    1: spritegroup_BR_Mk1_FK_BR_Maroon_Loading; }
+    1: spritegroup_BR_Mk1_FK_BR_Maroon_Loading;
+    2: sw_BR_Mk1_Pick_Bogie_Expensive;  }
 
 // basic sprite
 spriteset(spriteset_BR_Mk1_FK_BR_Southern_Green, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_FK/BR_Mk1_FK_BR_Southern_Green_4x_32bpp.png", "gfx/Coaches/BR_Mk1_FK/BR_Mk1_FK_BR_Southern_Green_4x_mask.png")
@@ -94,9 +98,10 @@ spritegroup spritegroup_BR_Mk1_FK_BR_Southern_Green_Loading {
     loaded: [spriteset_empty];
     loading: [spriteset_BR_Mk1_FK_BR_Southern_Green_Loading]; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_FK_BR_Southern_Green, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_FK_BR_Southern_Green, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR_Mk1_FK_BR_Southern_Green;
-    1: spritegroup_BR_Mk1_FK_BR_Southern_Green_Loading; }
+    1: spritegroup_BR_Mk1_FK_BR_Southern_Green_Loading;
+    2: sw_BR_Mk1_Pick_Bogie_Expensive;  }
 
 // basic sprite
 spriteset(spriteset_BR_Mk1_FK_InterCity, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_FK/BR_Mk1_FK_InterCity_4x_32bpp.png", "gfx/Coaches/BR_Mk1_FK/BR_Mk1_FK_InterCity_4x_mask.png")
@@ -114,9 +119,10 @@ spritegroup spritegroup_BR_Mk1_FK_InterCity_Loading {
     loaded: [spriteset_empty];
     loading: [spriteset_BR_Mk1_FK_InterCity_Loading]; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_FK_InterCity, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_FK_InterCity, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR_Mk1_FK_InterCity;
-    1: spritegroup_BR_Mk1_FK_InterCity_Loading; }
+    1: spritegroup_BR_Mk1_FK_InterCity_Loading;
+    2: sw_BR_Mk1_Pick_Bogie_Expensive;  }
 
 // basic sprite
 spriteset(spriteset_BR_Mk1_FK_NSE, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_FK/BR_Mk1_FK_NSE_4x_32bpp.png", "gfx/Coaches/BR_Mk1_FK/BR_Mk1_FK_NSE_4x_mask.png")
@@ -134,9 +140,10 @@ spritegroup spritegroup_BR_Mk1_FK_NSE_Loading {
     loaded: [spriteset_empty];
     loading: [spriteset_BR_Mk1_FK_NSE_Loading]; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_FK_NSE, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_FK_NSE, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR_Mk1_FK_NSE;
-    1: spritegroup_BR_Mk1_FK_NSE_Loading; }
+    1: spritegroup_BR_Mk1_FK_NSE_Loading;
+    2: sw_BR_Mk1_Pick_Bogie_Expensive;  }
 
 // basic sprite
 spriteset(spriteset_BR_Mk1_FK_RegionalRailways, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_FK/BR_Mk1_FK_RegionalRailways_4x_32bpp.png", "gfx/Coaches/BR_Mk1_FK/BR_Mk1_FK_RegionalRailways_4x_mask.png")
@@ -154,9 +161,10 @@ spritegroup spritegroup_BR_Mk1_FK_RegionalRailways_Loading {
     loaded: [spriteset_empty];
     loading: [spriteset_BR_Mk1_FK_RegionalRailways_Loading]; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_FK_RegionalRailways, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_FK_RegionalRailways, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR_Mk1_FK_RegionalRailways;
-    1: spritegroup_BR_Mk1_FK_RegionalRailways_Loading; }
+    1: spritegroup_BR_Mk1_FK_RegionalRailways_Loading;
+    2: sw_BR_Mk1_Pick_Bogie_Expensive;  }
 
 // basic sprite
 spriteset(spriteset_BR_Mk1_FK_WestCoastRailway, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "gfx/Coaches/BR_Mk1_FK/BR_Mk1_FK_WestCoastRailway_4x_32bpp.png", "gfx/Coaches/BR_Mk1_FK/BR_Mk1_FK_WestCoastRailway_4x_mask.png")
@@ -174,9 +182,10 @@ spritegroup spritegroup_BR_Mk1_FK_WestCoastRailway_Loading {
     loaded: [spriteset_empty];
     loading: [spriteset_BR_Mk1_FK_WestCoastRailway_Loading]; }
 
-switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_FK_WestCoastRailway, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+switch(FEAT_TRAINS, SELF, sw_loadstack_BR_Mk1_FK_WestCoastRailway, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: spriteset_BR_Mk1_FK_WestCoastRailway;
-    1: spritegroup_BR_Mk1_FK_WestCoastRailway_Loading; }
+    1: spritegroup_BR_Mk1_FK_WestCoastRailway_Loading;
+    2: sw_BR_Mk1_Pick_Bogie_Expensive;  }
 
 
 switch(FEAT_TRAINS, SELF, sw_purchase_sprite_BR_Mk1_FK, current_year) {
@@ -185,7 +194,7 @@ switch(FEAT_TRAINS, SELF, sw_purchase_sprite_BR_Mk1_FK, current_year) {
         spriteset_BR_Mk1_FK_BR_Maroon_purchase;
 }
 
-switch(FEAT_TRAINS, SELF, sw_spritestack_BR_Mk1_FK_purchase, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
+switch(FEAT_TRAINS, SELF, sw_spritestack_BR_Mk1_FK_purchase, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 2 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
     0: sw_purchase_sprite_BR_Mk1_FK;
     1: spriteset_BR_Mk1_B1_Bogie_purchase; }
 
@@ -216,12 +225,8 @@ switch(FEAT_TRAINS, SELF, sw_BR_Mk1_FK_cargo_subtype_text, cargo_subtype){
         CB_RESULT_NO_TEXT; }
 
 // graphics switch
-switch(FEAT_TRAINS, SELF, sw_spritestack_BR_Mk1_FK_Bogie, [ STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 1 ? CB_FLAG_MORE_SPRITES : 0) | PALETTE_USE_DEFAULT, 0x100), getbits(extra_callback_info1, 8, 8) ] ) {
-    0: sw_livery_BR_Mk1_FK;
-    1: sw_BR_Mk1_Pick_Bogie_Expensive; }
-
-switch(FEAT_TRAINS, SELF, switch_BR_Mk1_FK_graphics, position_in_articulated_veh % 3) {
-	1:  sw_spritestack_BR_Mk1_FK_Bogie;
+switch(FEAT_TRAINS, SELF, sw_BR_Mk1_FK_graphics, position_in_articulated_veh % 3) {
+	1:  sw_livery_BR_Mk1_FK;
 	    spriteset_empty;
 }
 
@@ -233,7 +238,7 @@ switch(FEAT_TRAINS, SELF, sw_capacity_BR_Mk1_FK, position_in_vehid_chain % 3) {
 }
 
 // articulation switch
-switch(FEAT_TRAINS, SELF, switch_articulated_BR_Mk1_FK, extra_callback_info1) {
+switch(FEAT_TRAINS, SELF, sw_articulated_BR_Mk1_FK, extra_callback_info1) {
 	1..2: return item_BR_Mk1_FK;
 		return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
@@ -268,11 +273,11 @@ item (FEAT_TRAINS, item_BR_Mk1_FK, 12012) { // Diagram 116 BR Mk1 FK
     
 	graphics {
         // graphics
-        default:                        switch_BR_Mk1_FK_graphics;
+        default:                        sw_BR_Mk1_FK_graphics;
         purchase:                       sw_spritestack_BR_Mk1_FK_purchase;
 
         // internal code
-        articulated_part:               switch_articulated_BR_Mk1_FK;
+        articulated_part:               sw_articulated_BR_Mk1_FK;
         purchase_cargo_capacity:        return (14 * param_pax); // divide by number of articulated parts and floor
         cargo_capacity:                 sw_capacity_BR_Mk1_FK;
         cost_factor:                    909;

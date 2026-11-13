@@ -267,8 +267,9 @@ str_coach_SLF                   :{DKGREEN}Sleeper First
 str_coach_SLO                   :{BLUE}Open Second with Lavatory (Non-gangwayed)
 str_coach_SLSC                  :{DKGREEN}Sleeper Support Coach
 str_coach_SLSTP                 :{DKGREEN}Sleeper Second Twin-Berth with Pantry
-str_coach_SO                    :{BLUE}Open Second
+str_coach_SecO                  :{BLUE}Open Second
 str_coach_SO_NG                 :{BLUE}Open Second (Non-gangwayed)
+str_coach_SO                    :{BLUE}Open Standard
 str_coach_SPV                   :{GREEN}Special Parcels Van
 str_coach_T                     :{BLUE}Compartment Third
 str_coach_TAV                   :{GREEN}Trailing Auxiliary Van
@@ -297,7 +298,8 @@ str_coach_TRUK                  :{PURPLE}Trailing Restaurant Unclassified Kitche
 str_coach_TS                    :{BLUE}Trailing Second
 str_coach_TSD                   :{BLUE}Trailing Second Disabled
 str_coach_TSE                   :{BLUE}Trailing Second End
-str_coach_TSO                   :{BLUE}Tourist Second Open
+str_coach_TSecO                 :{BLUE}Tourist Second Open
+str_coach_TSO                   :{BLUE}Tourist Standard Open
 str_coach_TSOD                  :{BLUE}Tourist Standard Open Disabled
 str_coach_TSOE                  :{BLUE}Tourist Standard Open End Coach
 str_coach_TSO_T                 :{BLUE}Tourist Second Open Trolley (Micro Buffet)
