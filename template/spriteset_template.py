@@ -6,7 +6,7 @@ spriteset(spriteset_{unit}{rev}, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "{path}/{uni
 
 PURCHASE_TEMPLATE = """
 // purchase sprite
-spriteset(spriteset_{unit}_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "{path}/{unit}_1x_32bpp.png", "{path}/{unit}_1x_mask.png")
+spriteset(spriteset_{unit}_purchase, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "{path}/{unit}_4x_32bpp.png", "{path}/{unit}_4x_mask.png")
     {{ template_purchase(0,0) }}
 """
 
@@ -64,7 +64,7 @@ spriteset(spriteset_{unit}_Anim3, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "{path}/{un
 spriteset(spriteset_{unit}_Anim4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "{path}/{unit}_Anim_4_4x_32bpp.png", "{path}/{unit}_Anim_4_4x_mask.png")
     {{ template_XXtrains_4x(0,0) }}
 
-spriteset(spriteset_{unit}_Anim_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "{path}/{unit}_Anim_1_1x_32bpp.png", "{path}/{unit}_Anim_1_1x_mask.png")
+spriteset(spriteset_{unit}_Anim_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "{path}/{unit}_Anim_1_4x_32bpp.png", "{path}/{unit}_Anim_1_4x_mask.png")
     {{ template_purchase(0,0) }}
 
 switch(FEAT_TRAINS, SELF, sw_animation_{unit}, motion_counter % 4) {{
@@ -96,7 +96,7 @@ spriteset(spriteset_{unit}_panto_up, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "{path}/
 spriteset(spriteset_{unit}_panto_down, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP, "{path}/{unit}_panto_down_4x_32bpp.png", "{path}/{unit}_panto_down_4x_mask.png")
     {{ template_XXtrains_4x(0,0) }}
 
-spriteset(spriteset_{unit}_panto_down_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "{path}/{unit}_panto_down_1x_32bpp.png", "{path}/{unit}_panto_down_1x_mask.png")
+spriteset(spriteset_{unit}_panto_down_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "{path}/{unit}_panto_down_4x_32bpp.png", "{path}/{unit}_panto_down_4x_mask.png")
     {{ template_purchase(0,0) }}
 
     
