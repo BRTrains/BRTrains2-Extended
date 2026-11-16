@@ -92,6 +92,11 @@ switch(FEAT_TRAINS, SELF, sw_BR_Mk1_Pick_Bogie, build_year) {
 	sw_BR_Mk1_Bogie_All;
 }
 
+switch(FEAT_TRAINS, SELF, sw_BR_Mk1_Pick_Bogie_Commonwealth, build_year) {
+	0..1959:	spriteset_BR_Mk1_B1_Bogie;
+	spriteset_BR_Mk1_Commonwealth_Bogie;
+}
+
 switch(FEAT_TRAINS, SELF, sw_BR_Mk1_Pick_Bogie_Expensive, build_year) {
 	0..1959:	spriteset_BR_Mk1_B1_Bogie;
 	sw_BR_Mk1_Bogie_Late;
